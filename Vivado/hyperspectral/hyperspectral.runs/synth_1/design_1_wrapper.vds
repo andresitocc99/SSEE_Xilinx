@@ -1,0 +1,343 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Jul  5 15:46:34 2024
+# Process ID: 259299
+# Current directory: /home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1
+# Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: /home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/design_1_wrapper.vds
+# Journal file: /home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/vivado.jou
+# Running On: andresitocc99, OS: Linux, CPU Frequency: 3800.000 MHz, CPU Physical cores: 16, Host memory: 33547 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/andresitocc99/Documentos/Hyperspectral/solution1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+Command: synth_design -top design_1_wrapper -part xczu3eg-sbva484-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 259341
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2837.969 ; gain = 206.828 ; free physical = 19537 ; free virtual = 53151
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_axi_dma_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_0' (0#1) [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_axi_dma_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:186]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:186]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:186]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:186]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:186]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'design_1_axi_dma_0_0' has 64 connections declared, but only 59 given [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:186]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_1' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_axi_smc_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_1' (0#1) [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_axi_smc_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_timer_0_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_timer_0_0' (0#1) [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_axi_timer_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'generateout0' of module 'design_1_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:315]
+WARNING: [Synth 8-7071] port 'generateout1' of module 'design_1_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:315]
+WARNING: [Synth 8-7071] port 'pwm0' of module 'design_1_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:315]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:315]
+WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'design_1_axi_timer_0_0' has 26 connections declared, but only 22 given [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:315]
+INFO: [Synth 8-6157] synthesizing module 'design_1_hyperspectral_hw_wra_0_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_hyperspectral_hw_wra_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_hyperspectral_hw_wra_0_0' (0#1) [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_hyperspectral_hw_wra_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps8_0_axi_periph_1' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:603]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_QJIMLI' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:1283]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_QJIMLI' (0#1) [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:1283]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1D3SAH3' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:1408]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1D3SAH3' (0#1) [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:1408]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_P3UMW5' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:1540]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_P3UMW5' (0#1) [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:1540]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1A7ZMW4' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:1686]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_auto_ds_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (0#1) [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_auto_ds_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1A7ZMW4' (0#1) [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:1686]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps8_0_axi_periph_1' (0#1) [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:603]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_100M_1' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_rst_ps8_0_100M_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_100M_1' (0#1) [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_rst_ps8_0_100M_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps8_0_100M_1' is unconnected for instance 'rst_ps8_0_100M' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:477]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps8_0_100M_1' is unconnected for instance 'rst_ps8_0_100M' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:477]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps8_0_100M_1' is unconnected for instance 'rst_ps8_0_100M' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:477]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps8_0_100M_1' is unconnected for instance 'rst_ps8_0_100M' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:477]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_100M' of module 'design_1_rst_ps8_0_100M_1' has 10 connections declared, but only 6 given [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:477]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:484]
+INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_0_1' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_system_ila_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_0_1' (0#1) [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_system_ila_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (0#1) [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/.Xil/Vivado-259299-andresitocc99/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:521]
+WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:521]
+WARNING: [Synth 8-7071] port 'saxigp2_bid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:521]
+WARNING: [Synth 8-7071] port 'saxigp2_rid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:521]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' has 83 connections declared, but only 79 given [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:521]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_dma_0'. This will prevent further optimization [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:186]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'system_ila_0'. This will prevent further optimization [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:484]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'hyperspectral_hw_wra_0'. This will prevent further optimization [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:338]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'zynq_ultra_ps_e_0'. This will prevent further optimization [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:521]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ps8_0_axi_periph'. This will prevent further optimization [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/synth/design_1.v:377]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1A7ZMW4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1A7ZMW4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m02_couplers_imp_P3UMW5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m02_couplers_imp_P3UMW5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m02_couplers_imp_P3UMW5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m02_couplers_imp_P3UMW5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_1D3SAH3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_1D3SAH3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_1D3SAH3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_1D3SAH3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_QJIMLI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_QJIMLI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_QJIMLI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_QJIMLI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_ps8_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_ps8_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_ps8_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_ps8_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module design_1_ps8_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module design_1_ps8_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_ps8_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_ps8_0_axi_periph_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2906.875 ; gain = 275.734 ; free physical = 20425 ; free virtual = 54041
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2924.688 ; gain = 293.547 ; free physical = 20425 ; free virtual = 54041
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2924.688 ; gain = 293.547 ; free physical = 20425 ; free virtual = 54041
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2924.688 ; gain = 0.000 ; free physical = 20425 ; free virtual = 54041
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0/design_1_axi_timer_0_0_in_context.xdc] for cell 'design_1_i/axi_timer_0'
+Finished Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0/design_1_axi_timer_0_0_in_context.xdc] for cell 'design_1_i/axi_timer_0'
+Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/axi_dma_0'
+Finished Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/axi_dma_0'
+Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/design_1_hyperspectral_hw_wra_0_0/design_1_hyperspectral_hw_wra_0_0_in_context.xdc] for cell 'design_1_i/hyperspectral_hw_wra_0'
+Finished Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/design_1_hyperspectral_hw_wra_0_0/design_1_hyperspectral_hw_wra_0_0_in_context.xdc] for cell 'design_1_i/hyperspectral_hw_wra_0'
+Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/xbar'
+Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Finished Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_1/design_1_rst_ps8_0_100M_1/design_1_rst_ps8_0_100M_1_in_context.xdc] for cell 'design_1_i/rst_ps8_0_100M'
+Finished Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_1/design_1_rst_ps8_0_100M_1/design_1_rst_ps8_0_100M_1_in_context.xdc] for cell 'design_1_i/rst_ps8_0_100M'
+Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/design_1_axi_smc_1/design_1_axi_smc_1_in_context.xdc] for cell 'design_1_i/axi_smc'
+Finished Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/design_1_axi_smc_1/design_1_axi_smc_1_in_context.xdc] for cell 'design_1_i/axi_smc'
+Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/design_1_system_ila_0_1/design_1_system_ila_0_1_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Finished Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/design_1_system_ila_0_1/design_1_system_ila_0_1_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3006.531 ; gain = 0.000 ; free physical = 20453 ; free virtual = 54069
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3006.531 ; gain = 0.000 ; free physical = 20453 ; free virtual = 54069
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3006.531 ; gain = 375.391 ; free physical = 20566 ; free virtual = 54182
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3006.531 ; gain = 375.391 ; free physical = 20566 ; free virtual = 54182
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_timer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_dma_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hyperspectral_hw_wra_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps8_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/system_ila_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3006.531 ; gain = 375.391 ; free physical = 20566 ; free virtual = 54182
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3006.531 ; gain = 375.391 ; free physical = 20565 ; free virtual = 54182
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_ps8_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_ps8_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_ps8_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_ps8_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module design_1_ps8_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module design_1_ps8_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_ps8_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_ps8_0_axi_periph_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3006.531 ; gain = 375.391 ; free physical = 20577 ; free virtual = 54198
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 3398.938 ; gain = 767.797 ; free physical = 20094 ; free virtual = 53715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 3398.938 ; gain = 767.797 ; free physical = 20094 ; free virtual = 53715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 3418.977 ; gain = 787.836 ; free physical = 20073 ; free virtual = 53694
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 3424.914 ; gain = 793.773 ; free physical = 20092 ; free virtual = 53713
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 3424.914 ; gain = 793.773 ; free physical = 20092 ; free virtual = 53713
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 3424.914 ; gain = 793.773 ; free physical = 20092 ; free virtual = 53713
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 3424.914 ; gain = 793.773 ; free physical = 20092 ; free virtual = 53713
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 3424.914 ; gain = 793.773 ; free physical = 20092 ; free virtual = 53713
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 3424.914 ; gain = 793.773 ; free physical = 20092 ; free virtual = 53713
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |design_1_xbar_0                   |         1|
+|2     |design_1_auto_ds_0                |         1|
+|3     |design_1_auto_pc_0                |         1|
+|4     |design_1_axi_dma_0_0              |         1|
+|5     |design_1_axi_smc_1                |         1|
+|6     |design_1_axi_timer_0_0            |         1|
+|7     |design_1_hyperspectral_hw_wra_0_0 |         1|
+|8     |design_1_rst_ps8_0_100M_1         |         1|
+|9     |design_1_system_ila_0_1           |         1|
+|10    |design_1_zynq_ultra_ps_e_0_0      |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |design_1_auto_ds                |     1|
+|2     |design_1_auto_pc                |     1|
+|3     |design_1_axi_dma_0              |     1|
+|4     |design_1_axi_smc                |     1|
+|5     |design_1_axi_timer_0            |     1|
+|6     |design_1_hyperspectral_hw_wra_0 |     1|
+|7     |design_1_rst_ps8_0_100M         |     1|
+|8     |design_1_system_ila_0           |     1|
+|9     |design_1_xbar                   |     1|
+|10    |design_1_zynq_ultra_ps_e_0      |     1|
++------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 3424.914 ; gain = 793.773 ; free physical = 20092 ; free virtual = 53713
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 3424.914 ; gain = 711.930 ; free physical = 20094 ; free virtual = 53715
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 3424.922 ; gain = 793.773 ; free physical = 20094 ; free virtual = 53715
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3424.922 ; gain = 0.000 ; free physical = 20194 ; free virtual = 53815
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3455.633 ; gain = 0.000 ; free physical = 20175 ; free virtual = 53796
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 451834e
+INFO: [Common 17-83] Releasing license: Synthesis
+55 Infos, 54 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 3469.570 ; gain = 842.430 ; free physical = 20221 ; free virtual = 53841
+INFO: [Common 17-1381] The checkpoint '/home/andresitocc99/Documentos/Vivado/hyperspectral/hyperspectral.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  5 15:47:12 2024...

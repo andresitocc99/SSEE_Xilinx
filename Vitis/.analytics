@@ -1,0 +1,38 @@
+timestamp=[2024-07-05 20:53:41], mode=WORKBENCH_START, duration=0:00:17.806, duration_ms=17806, data={}
+timestamp=[2024-07-05 20:53:42], mode=WORKBENCH_UI_INIT, duration=0:00:00.965, duration_ms=965, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-07-05 20:53:44], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.824, duration_ms=1824, data={}
+timestamp=[2024-07-05 21:01:58], mode=APP_CREATION, duration=0:00:34.451, duration_ms=34451, data={name=Hyperspectral, project_type=sdk, os=standalone, processor=psu_cortexa53, runtime=cpp, platform=design_1_hyperspectral, application_type=application}
+timestamp=[2024-07-05 21:10:27], mode=PLATFORM_GENERATION, duration=0:00:30.841, duration_ms=30841, data={name=design_1_hyperspectral}
+timestamp=[2024-07-05 21:10:36], mode=BUILD, duration=0:00:00.540, duration_ms=540, data={name=Hyperspectral, configuration=Debug, clean_build=false}
+timestamp=[2024-07-05 23:27:48], mode=BUILD, duration=0:00:00.286, duration_ms=286, data={name=Hyperspectral, configuration=Debug, clean_build=true}
+timestamp=[2024-07-05 23:27:48], mode=BUILD, duration=0:00:00.284, duration_ms=284, data={name=Hyperspectral, configuration=Debug, clean_build=false}
+timestamp=[2024-07-05 23:28:46], mode=WORKBENCH_START, duration=0:00:03.889, duration_ms=3889, data={}
+timestamp=[2024-07-05 23:28:46], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.176, duration_ms=176, data={}
+timestamp=[2024-07-05 23:28:46], mode=WORKBENCH_UI_INIT, duration=0:00:00.659, duration_ms=659, data={editors_count=7, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=Hyperspectral,Hyperspectral_system,RemoteSystemsTempFiles,design_1_hyperspectral}
+timestamp=[2024-07-05 23:29:38], mode=WORKBENCH_START, duration=0:00:03.993, duration_ms=3993, data={}
+timestamp=[2024-07-05 23:29:39], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.144, duration_ms=144, data={}
+timestamp=[2024-07-05 23:29:39], mode=WORKBENCH_UI_INIT, duration=0:00:00.719, duration_ms=719, data={editors_count=7, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=Hyperspectral,Hyperspectral_system,RemoteSystemsTempFiles,design_1_hyperspectral}
+timestamp=[2024-07-05 23:30:25], mode=WORKBENCH_START, duration=0:00:04.027, duration_ms=4027, data={}
+timestamp=[2024-07-05 23:30:25], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.101, duration_ms=101, data={}
+timestamp=[2024-07-05 23:30:26], mode=WORKBENCH_UI_INIT, duration=0:00:00.668, duration_ms=668, data={editors_count=7, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=Hyperspectral,Hyperspectral_system,RemoteSystemsTempFiles,design_1_hyperspectral}
+timestamp=[2024-07-05 23:30:56], mode=PLATFORM_GENERATION, duration=0:00:22.759, duration_ms=22759, data={name=design_1_hyperspectral}
+timestamp=[2024-07-05 23:31:05], mode=BUILD, duration=0:00:00.288, duration_ms=288, data={name=Hyperspectral, configuration=Debug, clean_build=false}
+timestamp=[2024-07-05 23:31:32], mode=BUILD, duration=0:00:00.278, duration_ms=278, data={name=Hyperspectral, configuration=Debug, clean_build=false}
+timestamp=[2024-07-05 23:37:33], mode=BUILD, duration=0:00:00.330, duration_ms=330, data={name=Hyperspectral, configuration=Debug, clean_build=false}
+timestamp=[2024-07-05 23:43:27], mode=BUILD, duration=0:00:00.278, duration_ms=278, data={name=Hyperspectral, configuration=Debug, clean_build=false}
+timestamp=[2024-07-05 23:48:21], mode=PLATFORM_GENERATION, duration=0:00:04.574, duration_ms=4574, data={name=design_1_hyperspectral}
+timestamp=[2024-07-05 23:48:30], mode=BUILD, duration=0:00:00.380, duration_ms=380, data={name=Hyperspectral, configuration=Debug, clean_build=false}
+timestamp=[2024-07-05 23:50:08], mode=PLATFORM_GENERATION, duration=0:00:08.455, duration_ms=8455, data={name=design_1_hyperspectral}
+timestamp=[2024-07-05 23:50:18], mode=BUILD, duration=0:00:00.388, duration_ms=388, data={name=Hyperspectral, configuration=Debug, clean_build=false}
+timestamp=[2024-07-05 23:52:19], mode=BUILD, duration=0:00:00.284, duration_ms=284, data={name=Hyperspectral, configuration=Debug, clean_build=false}
+timestamp=[2024-07-05 23:53:33], mode=BUILD, duration=0:00:00.333, duration_ms=333, data={name=Hyperspectral, configuration=Debug, clean_build=false}
+timestamp=[2024-07-05 23:53:56], mode=BUILD, duration=0:00:00.283, duration_ms=283, data={name=Hyperspectral, configuration=Debug, clean_build=false}
+timestamp=[2024-07-05 23:55:48], mode=BUILD, duration=0:00:00.282, duration_ms=282, data={name=Hyperspectral, configuration=Debug, clean_build=false}
+timestamp=[2024-07-05 23:56:54], mode=BUILD, duration=0:00:00.285, duration_ms=285, data={name=Hyperspectral, configuration=Debug, clean_build=false}
+timestamp=[2024-07-05 23:58:18], mode=BUILD, duration=0:00:00.282, duration_ms=282, data={name=Hyperspectral, configuration=Debug, clean_build=false}
+timestamp=[2024-07-05 23:58:50], mode=BUILD, duration=0:00:00.333, duration_ms=333, data={name=Hyperspectral, configuration=Debug, clean_build=false}
+timestamp=[2024-07-05 23:59:13], mode=BUILD, duration=0:00:00.285, duration_ms=285, data={name=Hyperspectral, configuration=Debug, clean_build=false}
+timestamp=[2024-07-05 23:59:30], mode=BUILD, duration=0:00:00.483, duration_ms=483, data={name=Hyperspectral, configuration=Debug, clean_build=false}
+timestamp=[2024-07-05 23:59:37], mode=BUILD, duration=0:00:06.394, duration_ms=6394, data={name=Hyperspectral_system, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 00:03:35], mode=BUILD, duration=0:00:00.385, duration_ms=385, data={name=Hyperspectral, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 00:03:41], mode=BUILD, duration=0:00:05.688, duration_ms=5688, data={name=Hyperspectral_system, configuration=Debug, clean_build=false}

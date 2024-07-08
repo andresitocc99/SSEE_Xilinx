@@ -1,0 +1,18 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "hyperspectral_hw_wrapped",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/home\/andresitocc99\/Documentos\/SSEE_Xilinx\/Vitis_HLS\/Hyperspectral\/solution1\/csynth.tcl",
+          "sourceLine": "16",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "hyperspectral_hw_wrapped"
+              }]
+          }
+        }]
+    }]}

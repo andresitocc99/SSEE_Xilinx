@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="Hyperspectral" solutionName="solution1" date="2024-07-08T10:50:21.677+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L3' (loop 'L3'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation ('sum_write_ln18', ../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp:18) of variable 'sum', ../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp:20 on local variable 'sum' and 'load' operation ('sum_load', ../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp:20) on local variable 'sum'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="Hyperspectral" solutionName="solution1" date="2024-07-08T10:50:19.083+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L3' (loop 'L3'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation ('sum_write_ln18', ../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp:18) of variable 'sum', ../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp:20 on local variable 'sum' and 'load' operation ('sum_load', ../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp:20) on local variable 'sum'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="Hyperspectral" solutionName="solution1" date="2024-07-08T10:50:19.079+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L3' (loop 'L3'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation ('sum_write_ln18', ../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp:18) of variable 'sum', ../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp:20 on local variable 'sum' and 'load' operation ('sum_load', ../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp:20) on local variable 'sum'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="Hyperspectral" solutionName="solution1" date="2024-07-08T10:50:19.075+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_83_1_VITIS_LOOP_84_2_VITIS_LOOP_85_' to 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_83_1_VITIS_LOOP_84_2_VITIS_LOOP_85_s'." projectName="Hyperspectral" solutionName="solution1" date="2024-07-08T10:50:18.511+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'L2' (../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp:17:15) in function 'hyperspectral_hw_wrapped' the outer loop is not a perfect loop.&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-960.html" projectName="Hyperspectral" solutionName="solution1" date="2024-07-08T10:50:18.252+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

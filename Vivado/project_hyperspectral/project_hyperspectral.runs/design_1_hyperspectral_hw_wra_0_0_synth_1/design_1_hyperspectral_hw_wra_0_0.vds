@@ -1,0 +1,639 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Jul  5 16:29:42 2024
+# Process ID: 339197
+# Current directory: /home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1
+# Command line: vivado -log design_1_hyperspectral_hw_wra_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_hyperspectral_hw_wra_0_0.tcl
+# Log file: /home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1/design_1_hyperspectral_hw_wra_0_0.vds
+# Journal file: /home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1/vivado.jou
+# Running On: andresitocc99, OS: Linux, CPU Frequency: 3792.856 MHz, CPU Physical cores: 16, Host memory: 33547 MB
+#-----------------------------------------------------------
+source design_1_hyperspectral_hw_wra_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2613.145 ; gain = 3.996 ; free physical = 13744 ; free virtual = 49279
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/andresitocc99/Documentos/Hyperspectral/solution1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+Command: synth_design -top design_1_hyperspectral_hw_wra_0_0 -part xczu3eg-sbva484-1-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 339593
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 2758.973 ; gain = 145.828 ; free physical = 4142 ; free virtual = 36034
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_hyperspectral_hw_wra_0_0' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/synth/design_1_hyperspectral_hw_wra_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped.v:10]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_83_1_VITIS_LOOP_84_2_VITIS_LOOP_85_s' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_83_1_VITIS_LOOP_84_2_VITIS_LOOP_85_s.v:10]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_am_addmul_12ns_11ns_8ns_19_4_1' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_am_addmul_12ns_11ns_8ns_19_4_1.v:47]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_am_addmul_12ns_11ns_8ns_19_4_1_DSP48_0' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_am_addmul_12ns_11ns_8ns_19_4_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_am_addmul_12ns_11ns_8ns_19_4_1_DSP48_0' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_am_addmul_12ns_11ns_8ns_19_4_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_am_addmul_12ns_11ns_8ns_19_4_1' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_am_addmul_12ns_11ns_8ns_19_4_1.v:47]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_flow_control_loop_pipe_sequential_init' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_flow_control_loop_pipe_sequential_init' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_83_1_VITIS_LOOP_84_2_VITIS_LOOP_85_s' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_83_1_VITIS_LOOP_84_2_VITIS_LOOP_85_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_98_5' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_98_5.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_98_5' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_98_5.v:10]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L1_L2_L3' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L1_L2_L3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1_DSP48_1' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1_DSP48_1' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L1_L2_L3' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L1_L2_L3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L3' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_faddfsub_32ns_32ns_32_5_full_dsp_1' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_faddfsub_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_faddfsub_32ns_32ns_32_5_full_dsp_1_ip' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/ip/hyperspectral_hw_wrapped_faddfsub_32ns_32ns_32_5_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/tools/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [/tools/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_faddfsub_32ns_32ns_32_5_full_dsp_1_ip' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/ip/hyperspectral_hw_wrapped_faddfsub_32ns_32ns_32_5_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_faddfsub_32ns_32ns_32_5_full_dsp_1' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_faddfsub_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1_ip' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/ip/hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1_ip' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/ip/hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/ip/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/ip/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L3' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_113_6' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_113_6.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_113_6' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_113_6.v:10]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_148_7' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_148_7.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_148_7' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_148_7.v:10]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_CONTROL_BUS_s_axi' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_CONTROL_BUS_s_axi.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_CONTROL_BUS_s_axi.v:193]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_CONTROL_BUS_s_axi' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_CONTROL_BUS_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1_ip' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/ip/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1_ip' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/ip/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/ip/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/ip/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_mul_mul_19s_8ns_19_4_1' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_19s_8ns_19_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_mul_mul_19s_8ns_19_4_1_DSP48_2' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_19s_8ns_19_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_mul_mul_19s_8ns_19_4_1_DSP48_2' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_19s_8ns_19_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_mul_mul_19s_8ns_19_4_1' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_19s_8ns_19_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/ip/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/ip/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_regslice_both' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_regslice_both' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_regslice_both__parameterized0' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_regslice_both__parameterized0' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_regslice_both__parameterized1' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_regslice_both__parameterized1' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_regslice_both__parameterized2' [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_regslice_both__parameterized2' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_hyperspectral_hw_wra_0_0' (0#1) [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/synth/design_1_hyperspectral_hw_wra_0_0.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln37_reg_620_pp0_iter4_reg_reg' and it is trimmed from '2' to '1' bits. [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L1_L2_L3.v:390]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln37_reg_620_pp0_iter3_reg_reg' and it is trimmed from '2' to '1' bits. [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L1_L2_L3.v:389]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln37_reg_620_pp0_iter2_reg_reg' and it is trimmed from '2' to '1' bits. [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L1_L2_L3.v:388]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln47_reg_634_pp0_iter4_reg_reg' and it is trimmed from '11' to '10' bits. [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L1_L2_L3.v:411]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln47_reg_634_pp0_iter3_reg_reg' and it is trimmed from '11' to '10' bits. [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L1_L2_L3.v:410]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln47_reg_634_pp0_iter2_reg_reg' and it is trimmed from '11' to '10' bits. [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L1_L2_L3.v:409]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_CONTROL_BUS_s_axi.v:250]
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DIVIDE_BY_ZERO_IN in module flt_dec_op__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[30] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[29] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[28] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[27] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[26] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[25] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[24] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[23] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[22] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[21] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[20] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[19] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[18] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[17] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[16] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[15] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[14] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[13] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[12] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[11] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[10] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[9] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[8] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[7] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[6] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[5] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[4] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[3] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[2] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[1] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[0] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[11] in module carry_chain__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized76 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized76 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized76 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized76 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized76 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port NORMALIZE[1] in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIXED_POINT in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIX_MANT_SIGN in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SIGN in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[7] in module renorm_and_round_logic__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[6] in module renorm_and_round_logic__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[5] in module renorm_and_round_logic__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[4] in module renorm_and_round_logic__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[3] in module renorm_and_round_logic__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[2] in module renorm_and_round_logic__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[1] in module renorm_and_round_logic__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[0] in module renorm_and_round_logic__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_INC_IN in module renorm_and_round_logic__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized74 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized74 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:38 . Memory (MB): peak = 3055.355 ; gain = 442.211 ; free physical = 3703 ; free virtual = 35782
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:38 . Memory (MB): peak = 3055.355 ; gain = 442.211 ; free physical = 3692 ; free virtual = 35776
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:38 . Memory (MB): peak = 3055.355 ; gain = 442.211 ; free physical = 3692 ; free virtual = 35776
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3055.355 ; gain = 0.000 ; free physical = 3641 ; free virtual = 35747
+INFO: [Netlist 29-17] Analyzing 1228 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/constraints/hyperspectral_hw_wrapped_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/constraints/hyperspectral_hw_wrapped_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3119.387 ; gain = 0.000 ; free physical = 2339 ; free virtual = 34482
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 5 instances
+  FDE => FDRE: 3 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3119.387 ; gain = 0.000 ; free physical = 2314 ; free virtual = 34457
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 3119.387 ; gain = 506.242 ; free physical = 1204 ; free virtual = 33372
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 3119.387 ; gain = 506.242 ; free physical = 1194 ; free virtual = 33363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 3119.387 ; gain = 506.242 ; free physical = 1184 ; free virtual = 33352
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln37_reg_620_reg' and it is trimmed from '2' to '1' bits. [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L1_L2_L3.v:377]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln47_reg_634_reg' and it is trimmed from '11' to '10' bits. [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L1_L2_L3.v:382]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'hyperspectral_hw_wrapped_CONTROL_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'hyperspectral_hw_wrapped_CONTROL_BUS_s_axi'
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln28_reg_793_reg' and it is trimmed from '11' to '10' bits. [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped.v:1033]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5800] Cascade chain of height 8 reduced to 2 because memory depth for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg" is not power of 2. 
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 4 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 4 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 4 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 4 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 4 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5800] Cascade chain of height 8 reduced to 5 because memory depth for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg" is not power of 2. 
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 5 and width 4 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 2 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 2 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5800] Cascade chain of height 8 reduced to 7 because memory depth for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg" is not power of 2. 
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 7 and width 2 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 1 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5800] Cascade chain of height 8 reduced to 4 because memory depth for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg" is not power of 2. 
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 1 for RAM "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-3971] The signal "hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'hyperspectral_hw_wrapped_CONTROL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'hyperspectral_hw_wrapped_CONTROL_BUS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:56 . Memory (MB): peak = 3119.387 ; gain = 506.242 ; free physical = 234 ; free virtual = 31871
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/faddfsub_32ns_32ns_32_5_full_dsp_1_U20/hyperspectral_hw_wrapped_faddfsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/faddfsub_32ns_32ns_32_5_full_dsp_1_U20/hyperspectral_hw_wrapped_faddfsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/faddfsub_32ns_32ns_32_5_full_dsp_1_U20/hyperspectral_hw_wrapped_faddfsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/faddfsub_32ns_32ns_32_5_full_dsp_1_U20/hyperspectral_hw_wrapped_faddfsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/faddfsub_32ns_32ns_32_5_full_dsp_1_U20/hyperspectral_hw_wrapped_faddfsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/faddfsub_32ns_32ns_32_5_full_dsp_1_U20/hyperspectral_hw_wrapped_faddfsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/fmul_32ns_32ns_32_4_max_dsp_1_U21/hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/fmul_32ns_32ns_32_4_max_dsp_1_U21/hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/fmul_32ns_32ns_32_4_max_dsp_1_U21/hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/fmul_32ns_32ns_32_4_max_dsp_1_U21/hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/uitofp_32ns_32_4_no_dsp_1_U22/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/uitofp_32ns_32_4_no_dsp_1_U22/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/uitofp_32ns_32_4_no_dsp_1_U22/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/uitofp_32ns_32_4_no_dsp_1_U22/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/uitofp_32ns_32_4_no_dsp_1_U22/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized27) to 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/uitofp_32ns_32_4_no_dsp_1_U22/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/uitofp_32ns_32_4_no_dsp_1_U22/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized27) to 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/uitofp_32ns_32_4_no_dsp_1_U22/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/uitofp_32ns_32_4_no_dsp_1_U22/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/uitofp_32ns_32_4_no_dsp_1_U22/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/uitofp_32ns_32_4_no_dsp_1_U22/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/uitofp_32ns_32_4_no_dsp_1_U22/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/uitofp_32ns_32_4_no_dsp_1_U22/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/uitofp_32ns_32_4_no_dsp_1_U22/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/uitofp_32ns_32_4_no_dsp_1_U22/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/uitofp_32ns_32_4_no_dsp_1_U22/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/uitofp_32ns_32_4_no_dsp_1_U22/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_257/uitofp_32ns_32_4_no_dsp_1_U22/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U55/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U55/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U55/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U55/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U55/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U55/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U55/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U55/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U56/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U56/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U56/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U56/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U56/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized27) to 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U56/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U56/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized27) to 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U56/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U56/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U56/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U56/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U56/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U56/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U56/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U56/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U56/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32ns_32_4_no_dsp_1_U59/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'inst/sitofp_32ns_32_4_no_dsp_1_U59/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32ns_32_4_no_dsp_1_U59/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'inst/sitofp_32ns_32_4_no_dsp_1_U59/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32ns_32_4_no_dsp_1_U59/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized27) to 'inst/sitofp_32ns_32_4_no_dsp_1_U59/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32ns_32_4_no_dsp_1_U59/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized27) to 'inst/sitofp_32ns_32_4_no_dsp_1_U59/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32ns_32_4_no_dsp_1_U59/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/sitofp_32ns_32_4_no_dsp_1_U59/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32ns_32_4_no_dsp_1_U59/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/sitofp_32ns_32_4_no_dsp_1_U59/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32ns_32_4_no_dsp_1_U59/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/sitofp_32ns_32_4_no_dsp_1_U59/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32ns_32_4_no_dsp_1_U59/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/sitofp_32ns_32_4_no_dsp_1_U59/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32ns_32_4_no_dsp_1_U59/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/sitofp_32ns_32_4_no_dsp_1_U59/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'am_addmul_12ns_11ns_8ns_19_4_1_U1/hyperspectral_hw_wrapped_am_addmul_12ns_11ns_8ns_19_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '45' to '19' bits. [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_am_addmul_12ns_11ns_8ns_19_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'am_addmul_12ns_11ns_8ns_19_4_1_U1/hyperspectral_hw_wrapped_am_addmul_12ns_11ns_8ns_19_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '19' bits. [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_am_addmul_12ns_11ns_8ns_19_4_1.v:36]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1_U30/hyperspectral_hw_wrapped_ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '19' bits. [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1_U30/hyperspectral_hw_wrapped_ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '19' bits. [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'am_addmul_12ns_11ns_8ns_19_4_1_U58/hyperspectral_hw_wrapped_am_addmul_12ns_11ns_8ns_19_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '45' to '19' bits. [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_am_addmul_12ns_11ns_8ns_19_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'am_addmul_12ns_11ns_8ns_19_4_1_U58/hyperspectral_hw_wrapped_am_addmul_12ns_11ns_8ns_19_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '19' bits. [/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.gen/sources_1/bd/design_1/ipshared/33d5/hdl/verilog/hyperspectral_hw_wrapped_am_addmul_12ns_11ns_8ns_19_4_1.v:36]
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5800] Cascade chain of height 8 reduced to 2 because memory depth for RAM "inst/image_U/ram_reg" is not power of 2. 
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 4 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 4 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 4 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 4 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 4 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5800] Cascade chain of height 8 reduced to 5 because memory depth for RAM "inst/image_U/ram_reg" is not power of 2. 
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 5 and width 4 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 2 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 2 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5800] Cascade chain of height 8 reduced to 7 because memory depth for RAM "inst/image_U/ram_reg" is not power of 2. 
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 7 and width 2 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 1 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5800] Cascade chain of height 8 reduced to 4 because memory depth for RAM "inst/image_U/ram_reg" is not power of 2. 
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 1 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/image_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_14_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_14_viv.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module hyperspectral_hw_wrapped_CONTROL_BUS_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module hyperspectral_hw_wrapped_CONTROL_BUS_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:01:08 . Memory (MB): peak = 3119.387 ; gain = 506.242 ; free physical = 2667 ; free virtual = 34127
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:17 . Memory (MB): peak = 3388.613 ; gain = 775.469 ; free physical = 12926 ; free virtual = 44391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5556] The block RAM "inst/image_U/ram_reg" may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5800] Cascade chain of height 8 reduced to 2 because memory depth for RAM "inst/image_U/ram_reg" is not power of 2. 
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 4 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 4 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 4 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 4 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 4 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5800] Cascade chain of height 8 reduced to 5 because memory depth for RAM "inst/image_U/ram_reg" is not power of 2. 
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 5 and width 4 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 2 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 2 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5800] Cascade chain of height 8 reduced to 7 because memory depth for RAM "inst/image_U/ram_reg" is not power of 2. 
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 7 and width 2 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 1 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-5800] Cascade chain of height 8 reduced to 4 because memory depth for RAM "inst/image_U/ram_reg" is not power of 2. 
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 1 for RAM "inst/image_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/image_U/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:20 . Memory (MB): peak = 3464.660 ; gain = 851.516 ; free physical = 12888 ; free virtual = 44355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_39 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_39 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_47 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_47 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_55 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_55 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_63 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_63 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_71 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_71 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_79 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_79 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_87 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_87 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_89 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_89 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_97 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_97 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_105 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_105 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_113 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_113 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_121 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_121 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_129 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_129 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_134 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_134 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_142 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_142 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_150 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_150 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_157 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_157 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_165 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_165 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_169 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_U/ram_reg_bram_169 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:01:22 . Memory (MB): peak = 3505.684 ; gain = 892.539 ; free physical = 12659 ; free virtual = 44127
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:01:26 . Memory (MB): peak = 3505.684 ; gain = 892.539 ; free physical = 14063 ; free virtual = 45533
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:01:26 . Memory (MB): peak = 3505.684 ; gain = 892.539 ; free physical = 14063 ; free virtual = 45533
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:01:26 . Memory (MB): peak = 3505.684 ; gain = 892.539 ; free physical = 13969 ; free virtual = 45438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:01:26 . Memory (MB): peak = 3505.684 ; gain = 892.539 ; free physical = 13969 ; free virtual = 45438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:27 . Memory (MB): peak = 3505.684 ; gain = 892.539 ; free physical = 13937 ; free virtual = 45407
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:27 . Memory (MB): peak = 3505.684 ; gain = 892.539 ; free physical = 13935 ; free virtual = 45405
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------------------------------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                                             | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------------------------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|hyperspectral_hw_wrapped_am_addmul_12ns_11ns_8ns_19_4_1_DSP48_0         | (((D+A)'*B)')'    | 11     | 8      | -      | 12     | 19     | 0    | 0    | -    | 0    | 1     | 1    | 1    | 
+|hyperspectral_hw_wrapped_ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1_DSP48_1 | (C'+((D+A)'*B)')' | 11     | 8      | 8      | 12     | 19     | 0    | 0    | 0    | 0    | 1     | 1    | 1    | 
+|dsp48e1_wrapper                                                         | Dynamic           | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0                                         | C+A'*B'           | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1                                         | (A*B)'            | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2                                         | PCIN>>17+(A*B)'   | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3                                         | PCIN+A:B+C        | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|hyperspectral_hw_wrapped_am_addmul_12ns_11ns_8ns_19_4_1_DSP48_0         | (((D+A)'*B)')'    | 11     | 8      | -      | 12     | 19     | 0    | 0    | -    | 0    | 1     | 1    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_19s_8ns_19_4_1_DSP48_2                 | ((A'*B)')'        | 30     | 8      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 1    | 
++------------------------------------------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |    41|
+|2     |DSP48E1         |     5|
+|3     |DSP_ALU         |     4|
+|4     |DSP_A_B_DATA    |     4|
+|6     |DSP_C_DATA      |     4|
+|7     |DSP_MULTIPLIER  |     4|
+|9     |DSP_M_DATA      |     4|
+|10    |DSP_OUTPUT      |     4|
+|11    |DSP_PREADD      |     4|
+|12    |DSP_PREADD_DATA |     4|
+|14    |LUT1            |    45|
+|15    |LUT2            |   240|
+|16    |LUT3            |   881|
+|17    |LUT4            |   301|
+|18    |LUT5            |   615|
+|19    |LUT6            |  1155|
+|20    |MUXCY           |   662|
+|21    |MUXF7           |     5|
+|22    |RAMB36E2        |   170|
+|34    |SRL16E          |    40|
+|35    |XORCY           |   507|
+|36    |FDE             |     3|
+|37    |FDRE            |  2029|
+|38    |FDSE            |    34|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:27 . Memory (MB): peak = 3505.684 ; gain = 892.539 ; free physical = 13935 ; free virtual = 45405
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 532 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:01:19 . Memory (MB): peak = 3505.684 ; gain = 828.508 ; free physical = 13935 ; free virtual = 45405
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:27 . Memory (MB): peak = 3505.691 ; gain = 892.539 ; free physical = 13938 ; free virtual = 45408
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3505.691 ; gain = 0.000 ; free physical = 13998 ; free virtual = 45468
+INFO: [Netlist 29-17] Analyzing 1227 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3561.176 ; gain = 0.000 ; free physical = 13860 ; free virtual = 45331
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 117 instances were transformed.
+  (CARRY4) => CARRY8: 105 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 5 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 4 instances
+  FDE => FDRE: 3 instances
+
+Synth Design complete, checksum: 93eeb0ef
+INFO: [Common 17-83] Releasing license: Synthesis
+266 Infos, 122 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:35 . Memory (MB): peak = 3561.176 ; gain = 948.031 ; free physical = 14016 ; free virtual = 45487
+INFO: [Common 17-1381] The checkpoint '/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1/design_1_hyperspectral_hw_wra_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_hyperspectral_hw_wra_0_0, cache-ID = be4d0d046fa9c4c3
+INFO: [Coretcl 2-1174] Renamed 323 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/andresitocc99/Documentos/Vivado/project_hyperspectral/project_hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1/design_1_hyperspectral_hw_wra_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_hyperspectral_hw_wra_0_0_utilization_synth.rpt -pb design_1_hyperspectral_hw_wra_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  5 16:31:35 2024...

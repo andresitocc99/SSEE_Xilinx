@@ -1,0 +1,71 @@
+20:53:33 DEBUG : Logs will be stored at '/home/andresitocc99/Documentos/Xilinx_workspace/Vitis/IDE.log'.
+20:53:43 INFO  : Launching XSCT server: xsct -n  -interactive /home/andresitocc99/Documentos/Xilinx_workspace/Vitis/temp_xsdb_launch_script.tcl
+20:53:43 INFO  : Registering command handlers for Vitis TCF services
+20:53:44 INFO  : Platform repository initialization has completed.
+20:53:49 INFO  : XSCT server has started successfully.
+20:53:49 INFO  : plnx-install-location is set to ''
+20:53:49 INFO  : Successfully done setting XSCT server connection channel  
+20:53:50 INFO  : Successfully done setting workspace for the tool. 
+20:53:50 INFO  : Successfully done query RDI_DATADIR 
+21:01:44 INFO  : Result from executing command 'getProjects': design_1_hyperspectral
+21:01:44 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+21:01:44 WARN  : An unexpected exception occurred in the module 'platform project logging'
+21:01:44 INFO  : Platform 'design_1_hyperspectral' is added to custom repositories.
+21:01:58 INFO  : Platform 'design_1_hyperspectral' is added to custom repositories.
+21:10:23 INFO  : Result from executing command 'getProjects': design_1_hyperspectral
+21:10:23 INFO  : Result from executing command 'getPlatforms': design_1_hyperspectral|/home/andresitocc99/Documentos/Xilinx_workspace/Vitis/design_1_hyperspectral/export/design_1_hyperspectral/design_1_hyperspectral.xpfm;xilinx_zcu102_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+21:10:27 INFO  : Checking for BSP changes to sync application flags for project 'Hyperspectral'...
+21:10:35 INFO  : Updating application flags with new BSP settings...
+21:10:35 INFO  : Successfully updated application flags for project Hyperspectral.
+23:27:48 INFO  : Checking for BSP changes to sync application flags for project 'Hyperspectral'...
+23:28:44 DEBUG : Logs will be stored at '/home/andresitocc99/Documentos/Xilinx_workspace/Vitis/IDE.log'.
+23:28:45 INFO  : Launching XSCT server: xsct -n  -interactive /home/andresitocc99/Documentos/Xilinx_workspace/Vitis/temp_xsdb_launch_script.tcl
+23:28:46 INFO  : Registering command handlers for Vitis TCF services
+23:28:46 INFO  : Platform repository initialization has completed.
+23:28:47 INFO  : XSCT server has started successfully.
+23:28:47 INFO  : Successfully done setting XSCT server connection channel  
+23:28:47 INFO  : plnx-install-location is set to ''
+23:28:47 INFO  : Successfully done setting workspace for the tool. 
+23:28:47 INFO  : Successfully done query RDI_DATADIR 
+23:29:37 DEBUG : Logs will be stored at '/home/andresitocc99/Documentos/Xilinx_workspace/Vitis/IDE.log'.
+23:29:38 INFO  : Launching XSCT server: xsct -n  -interactive /home/andresitocc99/Documentos/Xilinx_workspace/Vitis/temp_xsdb_launch_script.tcl
+23:29:39 INFO  : Platform repository initialization has completed.
+23:29:39 INFO  : Registering command handlers for Vitis TCF services
+23:29:40 INFO  : XSCT server has started successfully.
+23:29:40 INFO  : Successfully done setting XSCT server connection channel  
+23:29:40 INFO  : plnx-install-location is set to ''
+23:29:40 INFO  : Successfully done setting workspace for the tool. 
+23:29:40 INFO  : Successfully done query RDI_DATADIR 
+23:30:24 DEBUG : Logs will be stored at '/home/andresitocc99/Documentos/Xilinx_workspace/Vitis/IDE.log'.
+23:30:24 INFO  : Launching XSCT server: xsct -n  -interactive /home/andresitocc99/Documentos/Xilinx_workspace/Vitis/temp_xsdb_launch_script.tcl
+23:30:25 INFO  : Platform repository initialization has completed.
+23:30:25 INFO  : Registering command handlers for Vitis TCF services
+23:30:26 INFO  : XSCT server has started successfully.
+23:30:26 INFO  : Successfully done setting XSCT server connection channel  
+23:30:26 INFO  : plnx-install-location is set to ''
+23:30:26 INFO  : Successfully done query RDI_DATADIR 
+23:30:26 INFO  : Successfully done setting workspace for the tool. 
+23:30:53 INFO  : Result from executing command 'getProjects': design_1_hyperspectral
+23:30:53 INFO  : Result from executing command 'getPlatforms': design_1_hyperspectral|/home/andresitocc99/Documentos/Xilinx_workspace/Vitis/design_1_hyperspectral/export/design_1_hyperspectral/design_1_hyperspectral.xpfm;xilinx_zcu102_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+23:30:56 INFO  : Checking for BSP changes to sync application flags for project 'Hyperspectral'...
+23:31:31 INFO  : Checking for BSP changes to sync application flags for project 'Hyperspectral'...
+23:37:33 INFO  : Checking for BSP changes to sync application flags for project 'Hyperspectral'...
+23:43:27 INFO  : Checking for BSP changes to sync application flags for project 'Hyperspectral'...
+23:48:18 INFO  : Result from executing command 'getProjects': design_1_hyperspectral
+23:48:18 INFO  : Result from executing command 'getPlatforms': design_1_hyperspectral|/home/andresitocc99/Documentos/Xilinx_workspace/Vitis/design_1_hyperspectral/export/design_1_hyperspectral/design_1_hyperspectral.xpfm;xilinx_zcu102_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+23:48:21 INFO  : Checking for BSP changes to sync application flags for project 'Hyperspectral'...
+23:50:05 INFO  : Result from executing command 'getProjects': design_1_hyperspectral
+23:50:05 INFO  : Result from executing command 'getPlatforms': design_1_hyperspectral|/home/andresitocc99/Documentos/Xilinx_workspace/Vitis/design_1_hyperspectral/export/design_1_hyperspectral/design_1_hyperspectral.xpfm;xilinx_zcu102_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+23:50:08 INFO  : Checking for BSP changes to sync application flags for project 'Hyperspectral'...
+23:50:17 INFO  : Updating application flags with new BSP settings...
+23:50:17 INFO  : Successfully updated application flags for project Hyperspectral.
+23:52:19 INFO  : Checking for BSP changes to sync application flags for project 'Hyperspectral'...
+23:53:32 INFO  : Checking for BSP changes to sync application flags for project 'Hyperspectral'...
+23:53:56 INFO  : Checking for BSP changes to sync application flags for project 'Hyperspectral'...
+23:55:47 INFO  : Checking for BSP changes to sync application flags for project 'Hyperspectral'...
+23:56:54 INFO  : Checking for BSP changes to sync application flags for project 'Hyperspectral'...
+23:58:17 INFO  : Checking for BSP changes to sync application flags for project 'Hyperspectral'...
+23:58:49 INFO  : Checking for BSP changes to sync application flags for project 'Hyperspectral'...
+23:59:12 INFO  : Checking for BSP changes to sync application flags for project 'Hyperspectral'...
+23:59:30 INFO  : Checking for BSP changes to sync application flags for project 'Hyperspectral'...
+00:03:34 INFO  : Checking for BSP changes to sync application flags for project 'Hyperspectral'...

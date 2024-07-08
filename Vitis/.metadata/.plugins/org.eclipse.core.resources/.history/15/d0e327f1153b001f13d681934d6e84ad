@@ -1,0 +1,26 @@
+#ifndef H_LIB_EXAMPLE_HW_H
+#define H_LIB_EXAMPLE_HW_H
+
+#define FILAS 2
+#define COLUMNAS 1024
+#define BANDAS 180
+
+//#define DIM    256
+//#define ROWS   (DIM+1)
+//#define COLS   (DIM+1)
+//#define SIZE  ((ROWS)*(COLS))
+
+//int Setup_HW_Accelerator (uint16_t image[FILAS][COLUMNAS][BANDAS], int refPixel[2],
+//        int maxBrightness[2], float *minDistance, int closestPixel[2],
+//        unsigned int dma_sizeImage, unsigned int dma_sizeRefPixel,
+//        unsigned int dma_sizeMaxBrightness, unsigned int dma_sizeMinDistance,
+//        unsigned int dma_sizeClosestPixel);
+
+int Run_HW_Accelerator(uint16_t image[FILAS][COLUMNAS][BANDAS], int refPixel[2], int maxBrightness[2],
+                       float *minDistance, int closestPixel[2],
+                       unsigned int dma_sizeImage, unsigned int dma_sizeRefPixel,
+                       unsigned int dma_sizeMaxBrightness, unsigned int dma_sizeMinDistance,
+                       unsigned int dma_sizeClosestPixel);
+int Start_HW_Accelerator(void);
+
+#endif

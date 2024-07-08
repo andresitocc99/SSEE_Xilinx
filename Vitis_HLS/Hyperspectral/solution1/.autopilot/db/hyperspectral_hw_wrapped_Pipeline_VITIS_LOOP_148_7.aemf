@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1720428621612">
+  <ports id="1" name="j_07_i_i641" type="PortType" coreId="3621216858" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="i_08_i_i639" type="PortType" coreId="1885414944" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="out_stream_V_data_V" type="PortType" originalName="this" coreId="2147483647" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="4" name="out_stream_V_keep_V" type="PortType" originalName="this" coreId="742273587" bitwidth="4" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="5" name="out_stream_V_strb_V" type="PortType" originalName="this" coreId="643748096" bitwidth="4" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="6" name="out_stream_V_user_V" type="PortType" originalName="this" coreId="643169296" bitwidth="4" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="7" name="out_stream_V_last_V" type="PortType" originalName="this" coreId="1663069952" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="8" name="out_stream_V_id_V" type="PortType" originalName="this" coreId="642862704" bitwidth="5" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="9" name="out_stream_V_dest_V" type="PortType" originalName="this" coreId="1412077135" bitwidth="5" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="46" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="48" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="51" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="52" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="53" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="54" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="57" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="60" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="61" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="62" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="63" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="64" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="65" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="66" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="67" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="68" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="69" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="73" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@ports.2"/>
+  <edges id="74" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@ports.3"/>
+  <edges id="75" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@ports.4"/>
+  <edges id="76" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@ports.5"/>
+  <edges id="77" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@ports.6"/>
+  <edges id="78" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@ports.7"/>
+  <edges id="79" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@ports.8"/>
+  <edges id="80" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="86" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="91" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="92" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="93" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="251" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="252" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="253" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="254" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="255" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="256" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="257" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <blocks id="22" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>for.inc129</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="i" originalName="i" coreId="1411670225" bitwidth="2" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="i_08_i_i639_read" coreId="0" bitwidth="32" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataInputObjs>i_08_i_i639</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="j_07_i_i641_read" coreId="643109632" bitwidth="32" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataInputObjs>j_07_i_i641</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="i_write_ln0" coreId="643359080" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="br_ln0" coreId="643366912" opcode="br" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <controlInputObjs>for.inc129</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="41" name="for.end133.exitStub" type="BlockType">
+    <controlInputObjs>for.inc129</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="_ln0" coreId="6775156" opcode="ret" nodeLabel="2.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1"/>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="130" pipe_depth="4" RegionName="VITIS_LOOP_148_7">
+    <basic_blocks id="29" name="for.inc129" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>for.inc129.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.end133.exitStub</controlOutputObjs>
+      <controlOutputObjs>for.inc129.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="i_2" lineNumber="150" originalName="i" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="0" contextFuncName="hyperspectral_hw_wrapped" bitwidth="2" opcode="load" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="150" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw_wrapped"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="icmp_ln148" lineNumber="148" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="icmp_ln148_fu_119_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="hyperspectral_hw_wrapped" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.51" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="148" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw_wrapped"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="add_ln148" lineNumber="148" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="add_ln148_fu_125_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="hyperspectral_hw_wrapped" bitwidth="2" opcode="add" m_display="0" m_delay="0.62" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="148" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw_wrapped"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="br_ln148" lineNumber="148" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="642962128" contextFuncName="hyperspectral_hw_wrapped" opcode="br" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="148" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw_wrapped"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.inc129.split</controlInputObjs>
+        <controlInputObjs>for.end133.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp">
+        <validLinenumbers>150</validLinenumbers>
+        <validLinenumbers>148</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="39" name="for.inc129.split" type="BlockType">
+      <controlInputObjs>for.inc129</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc129</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="trunc_ln150" lineNumber="150" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="trunc_ln150_fu_131_p1" coreId="643769264" contextFuncName="hyperspectral_hw_wrapped" bitwidth="1" opcode="trunc" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="150" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw_wrapped"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="select_ln165" lineNumber="165" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln165_fu_135_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="convert2_int" bitwidth="32" opcode="select" m_display="0" m_delay="0.52" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="165" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="convert2_int"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>sitofp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="c" lineNumber="165" originalName="c" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreName="Int2Float" implIndex="auto" control="no" opType="sitofp" coreId="62" contextFuncName="convert2_int" bitwidth="32" opcode="sitofp" nodeLatency="3" m_display="0" m_delay="6.67" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="165" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="convert2_int"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="p_w_V" lineNumber="166" originalName="_w.V" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="out_stream_TDATA" coreId="0" contextFuncName="convert2_int" bitwidth="32" opcode="bitcast" nodeLabel="3.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="166" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="convert2_int"/>
+        <dataInputObjs>sitofp</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="e_last_V" lineNumber="154" originalName="e.last.V" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="e_last_V_fu_144_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="hyperspectral_hw_wrapped" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.51" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="154" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw_wrapped"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="out_stream_V_data_V_write_ln304" lineNumber="304" fileName="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="123" contextFuncName="write" opcode="write" nodeLabel="3.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="write"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>out_stream_V_data_V</dataOutputObjs>
+        <dataOutputObjs>out_stream_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>out_stream_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>out_stream_V_user_V</dataOutputObjs>
+        <dataOutputObjs>out_stream_V_last_V</dataOutputObjs>
+        <dataOutputObjs>out_stream_V_id_V</dataOutputObjs>
+        <dataOutputObjs>out_stream_V_dest_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="i_write_ln148" lineNumber="148" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="643353008" contextFuncName="hyperspectral_hw_wrapped" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="148" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw_wrapped"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="br_ln148" lineNumber="148" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="1819113532" contextFuncName="hyperspectral_hw_wrapped" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="148" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw_wrapped"/>
+        <controlInputObjs>for.inc129</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp">
+        <validLinenumbers>150</validLinenumbers>
+        <validLinenumbers>165</validLinenumbers>
+        <validLinenumbers>166</validLinenumbers>
+        <validLinenumbers>154</validLinenumbers>
+        <validLinenumbers>148</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h">
+        <validLinenumbers>304</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <regnodes realName="i_reg_160">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln148_reg_167">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln165_reg_171">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="e_last_V_reg_176">
+    <nodeIds>35</nodeIds>
+  </regnodes>
+  <expressionNodes realName="select_ln165_fu_135">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="e_last_V_fu_144">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln148_fu_119">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_62">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln148_fu_125">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_w_V_fu_155">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln150_fu_131">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_108">
+    <nodeIds>33</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="store_ln148_store_fu_150">
+    <nodeIds>37</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_08_i_i639_read_read_fu_66">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_111">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="j_07_i_i641_read_read_fu_72">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_2_load_fu_116">
+    <nodeIds>23</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln304_write_fu_78">
+    <nodeIds>36</nodeIds>
+  </ioNodes>
+  <ioPorts name="i_08_i_i639">
+    <contents name="read">
+      <nodeIds>18</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="j_07_i_i641">
+    <contents name="read">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_stream_V_data_V">
+    <contents name="write">
+      <nodeIds>36</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_stream_V_dest_V">
+    <contents name="write">
+      <nodeIds>36</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_stream_V_id_V">
+    <contents name="write">
+      <nodeIds>36</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_stream_V_keep_V">
+    <contents name="write">
+      <nodeIds>36</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_stream_V_last_V">
+    <contents name="write">
+      <nodeIds>36</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_stream_V_strb_V">
+    <contents name="write">
+      <nodeIds>36</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_stream_V_user_V">
+    <contents name="write">
+      <nodeIds>36</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="4" latency="4"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="33" stage="3" latency="4"/>
+    </states>
+    <states id="3">
+      <operations id="33" stage="2" latency="4"/>
+      <operations id="40" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="4"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+    </states>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_148_7" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="6" mMaxLatency="6">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>22</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_148_7" mII="1" mDepth="4" mMinTripCount="2" mMaxTripCount="2" mMinLatency="4" mMaxLatency="4" mType="1">
+      <basicBlocks>29</basicBlocks>
+      <basicBlocks>39</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>41</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

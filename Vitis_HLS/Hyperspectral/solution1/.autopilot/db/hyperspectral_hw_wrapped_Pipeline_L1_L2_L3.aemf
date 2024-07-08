@@ -1,0 +1,1301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1720428621485">
+  <ports id="1" name="image_r" type="PortType" coreName="RAM" coreId="3621216858" bitwidth="16" iftype="IfTypeRegister" arraysize="368640">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="select_ln44_2_out" type="PortType" coreId="4294967295" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="3" name="select_ln44_3_out" type="PortType" coreId="4294967295" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="123" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="126" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="128" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="131" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="134" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="137" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="140" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="141" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.16"/>
+  <edges id="144" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@ports.1"/>
+  <edges id="145" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="147" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@ports.2"/>
+  <edges id="148" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="149" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="150" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="151" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="152" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="153" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="154" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="155" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="156" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="157" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="158" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="159" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="160" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="161" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="162" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="163" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="164" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="165" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="166" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="167" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="168" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="169" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.15"/>
+  <edges id="172" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="175" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="176" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="177" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="178" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="179" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="180" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="183" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="186" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="188" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="189" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="190" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="191" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="192" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="193" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="194" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="195" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="196" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="197" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="198" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="199" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="200" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="201" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="202" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="203" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="206" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="209" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="210" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="211" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="212" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="213" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="214" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="215" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="217" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="218" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="219" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="222" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="225" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="226" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="227" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="228" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="229" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="230" source_obj="//@regions.0/@basic_blocks.1/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.22"/>
+  <edges id="231" source_obj="//@regions.0/@basic_blocks.1/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="232" source_obj="//@regions.0/@basic_blocks.1/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="233" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="234" source_obj="//@regions.0/@basic_blocks.1/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.24"/>
+  <edges id="235" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.24"/>
+  <edges id="236" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.24"/>
+  <edges id="237" source_obj="//@regions.0/@basic_blocks.1/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.25"/>
+  <edges id="238" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.25"/>
+  <edges id="239" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.25"/>
+  <edges id="240" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.26"/>
+  <edges id="243" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.27"/>
+  <edges id="244" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.27"/>
+  <edges id="245" source_obj="//@regions.0/@basic_blocks.1/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.28"/>
+  <edges id="247" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.28"/>
+  <edges id="248" source_obj="//@regions.0/@basic_blocks.1/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.29"/>
+  <edges id="250" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.29"/>
+  <edges id="251" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.30"/>
+  <edges id="252" source_obj="//@regions.0/@basic_blocks.1/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.30"/>
+  <edges id="253" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.30"/>
+  <edges id="254" source_obj="//@regions.0/@basic_blocks.1/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.31"/>
+  <edges id="255" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.32"/>
+  <edges id="256" source_obj="//@regions.0/@basic_blocks.1/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.32"/>
+  <edges id="257" source_obj="//@regions.0/@basic_blocks.1/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.33"/>
+  <edges id="258" source_obj="//@regions.0/@basic_blocks.1/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.34"/>
+  <edges id="261" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
+  <edges id="262" source_obj="//@regions.0/@basic_blocks.1/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
+  <edges id="263" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
+  <edges id="264" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="265" source_obj="//@regions.0/@basic_blocks.1/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="266" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="267" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.37"/>
+  <edges id="268" source_obj="//@regions.0/@basic_blocks.1/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.37"/>
+  <edges id="269" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.37"/>
+  <edges id="270" source_obj="//@regions.0/@basic_blocks.1/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.38"/>
+  <edges id="271" source_obj="//@regions.0/@basic_blocks.1/@node_objs.34" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.39"/>
+  <edges id="272" source_obj="//@regions.0/@basic_blocks.1/@node_objs.38" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.39"/>
+  <edges id="273" source_obj="//@regions.0/@basic_blocks.1/@node_objs.39" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.40"/>
+  <edges id="274" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.41"/>
+  <edges id="277" source_obj="//@regions.0/@basic_blocks.1/@node_objs.40" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.41"/>
+  <edges id="278" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="279" source_obj="//@regions.0/@basic_blocks.1/@node_objs.42" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.43"/>
+  <edges id="280" source_obj="//@regions.0/@basic_blocks.1/@node_objs.43" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.44"/>
+  <edges id="281" source_obj="//@regions.0/@basic_blocks.1/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.44"/>
+  <edges id="282" source_obj="//@regions.0/@basic_blocks.1/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.45"/>
+  <edges id="285" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.46"/>
+  <edges id="287" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.47"/>
+  <edges id="289" source_obj="//@regions.0/@basic_blocks.1/@node_objs.46" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.47"/>
+  <edges id="290" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.48"/>
+  <edges id="291" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.48"/>
+  <edges id="292" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.49"/>
+  <edges id="293" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.49"/>
+  <edges id="294" source_obj="//@regions.0/@basic_blocks.1/@node_objs.47" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.50"/>
+  <edges id="295" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.50"/>
+  <edges id="296" source_obj="//@regions.0/@basic_blocks.1/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.51"/>
+  <edges id="297" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.51"/>
+  <edges id="298" source_obj="//@regions.0/@basic_blocks.1/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.52"/>
+  <edges id="299" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.52"/>
+  <edges id="300" source_obj="//@regions.0/@basic_blocks.1/@node_objs.36" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.53"/>
+  <edges id="301" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.53"/>
+  <edges id="302" source_obj="//@regions.0/@basic_blocks.1/@node_objs.37" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.54"/>
+  <edges id="303" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.54"/>
+  <edges id="304" source_obj="//@regions.0/@basic_blocks.1/@node_objs.45" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.55"/>
+  <edges id="305" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.55"/>
+  <edges id="306" source_obj="//@regions.0/@basic_blocks.1/@node_objs.44" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.56"/>
+  <edges id="307" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.56"/>
+  <edges id="308" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.57"/>
+  <edges id="346" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="347" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="348" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="349" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="350" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.50"/>
+  <edges id="351" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.55"/>
+  <edges id="352" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="353" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="354" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="355" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="356" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="357" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.48"/>
+  <edges id="358" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.49"/>
+  <edges id="359" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="360" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.50"/>
+  <edges id="361" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.51"/>
+  <edges id="362" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.54"/>
+  <edges id="363" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="364" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.55"/>
+  <edges id="365" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.56"/>
+  <edges id="366" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.56"/>
+  <edges id="367" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.54"/>
+  <edges id="368" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.53"/>
+  <edges id="369" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.52"/>
+  <edges id="370" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.51"/>
+  <edges id="371" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.49"/>
+  <edges id="372" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.48"/>
+  <blocks id="21" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>for.inc.i11.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="currentBrightness" originalName="currentBrightness" coreId="540680308" bitwidth="24" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="k" originalName="k" coreId="256" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="empty" coreId="642626960" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="i_06_i_i631" coreId="1411621843" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="j_05_i_i633" coreId="642933568" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="j" originalName="j" coreId="642766064" bitwidth="11" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="indvar_flatten31" coreId="642788752" bitwidth="19" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="i_3" originalName="i" coreId="0" bitwidth="2" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="indvar_flatten52" coreId="642789632" bitwidth="19" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="indvar_flatten52_write_ln0" coreId="642434784" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="i_3_write_ln0" coreId="1413405403" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="indvar_flatten31_write_ln0" coreId="0" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="j_write_ln0" coreId="642117328" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="empty_write_ln0" coreId="645161728" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="k_write_ln0" coreId="642566000" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="currentBrightness_write_ln0" coreId="642616248" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="br_ln0" coreId="1920230245" opcode="br" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <controlInputObjs>for.inc.i11.i</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="110" name="for.inc78.preheader.exitStub" type="BlockType">
+    <controlInputObjs>for.inc.i11.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="107" name="select_ln44_2_out_write_ln44" lineNumber="44" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="0" contextFuncName="calculate_brightness" opcode="write" nodeLabel="5.0" m_display="0" m_topoIndex="94" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="44" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>select_ln44_2_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="108" name="select_ln44_3_out_write_ln44" lineNumber="44" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="642723192" contextFuncName="calculate_brightness" opcode="write" nodeLabel="5.0" m_display="0" m_topoIndex="95" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="44" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>select_ln44_3_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="109" name="_ln0" coreId="224" opcode="ret" nodeLabel="5.0" m_display="0" m_topoIndex="96" m_clusterGroupNumber="-1"/>
+    <fileValidLineNumbers fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp">
+      <validLinenumbers>44</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="448" pipe_depth="5" RegionName="L1_L2_L3">
+    <basic_blocks id="41" name="for.inc.i11.i" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>for.inc19.i.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc78.preheader.exitStub</controlOutputObjs>
+      <controlOutputObjs>for.inc19.i.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="currentBrightness_2" originalName="currentBrightness" coreId="1668183398" bitwidth="24" opcode="load" nodeLabel="5.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="p_load" lineNumber="44" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="0" contextFuncName="calculate_brightness" bitwidth="32" opcode="load" nodeLabel="5.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="44" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="i_06_i_i631_load" lineNumber="47" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="642933568" contextFuncName="calculate_brightness" bitwidth="32" opcode="load" nodeLabel="5.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="47" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="j_05_i_i633_load" lineNumber="47" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="757932605" contextFuncName="calculate_brightness" bitwidth="32" opcode="load" nodeLabel="5.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="47" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="j_1" lineNumber="44" originalName="j" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="1701869928" contextFuncName="calculate_brightness" bitwidth="11" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="44" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="i" originalName="i" coreId="642632016" bitwidth="2" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="indvar_flatten52_load" lineNumber="37" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="1936942413" contextFuncName="calculate_brightness" bitwidth="19" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="37" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="empty_20" rtlName="empty_20_fu_171_p1" coreId="642933568" bitwidth="1" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="i_3_cast_cast" rtlName="i_3_cast_cast_fu_351_p1" coreId="574451200" bitwidth="32" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="currentBrightness_cast" rtlName="currentBrightness_cast_fu_354_p1" coreId="176" bitwidth="32" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="icmp_ln44_1" lineNumber="44" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="icmp_ln44_1_fu_358_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="calculate_brightness" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="1.11" m_topoIndex="64" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="44" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="trunc_ln44" lineNumber="44" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="trunc_ln44_fu_175_p1" coreId="642619160" contextFuncName="calculate_brightness" bitwidth="10" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="44" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="zext_ln44_1" lineNumber="44" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="zext_ln44_1_fu_364_p1" coreId="642619952" contextFuncName="calculate_brightness" bitwidth="32" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="44" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="select_ln44_2" lineNumber="44" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln44_2_fu_367_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="32" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.52" m_topoIndex="66" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="44" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="select_ln44_3" lineNumber="44" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln44_3_fu_376_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="32" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.52" m_topoIndex="67" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="44" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="icmp_ln37" lineNumber="37" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="icmp_ln37_fu_179_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="calculate_brightness" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.91" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="37" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="add_ln37_1" lineNumber="37" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="add_ln37_1_fu_185_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="calculate_brightness" bitwidth="19" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.05" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="37" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="br_ln37" lineNumber="37" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="0" contextFuncName="calculate_brightness" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="37" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.inc19.i.i</controlInputObjs>
+        <controlInputObjs>for.inc78.preheader.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp">
+        <validLinenumbers>44</validLinenumbers>
+        <validLinenumbers>47</validLinenumbers>
+        <validLinenumbers>37</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="106" name="for.inc19.i.i" type="BlockType">
+      <controlInputObjs>for.inc.i11.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc.i11.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="k_load" lineNumber="40" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="642646232" contextFuncName="calculate_brightness" bitwidth="8" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="40" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="indvar_flatten31_load" lineNumber="38" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="0" contextFuncName="calculate_brightness" bitwidth="19" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="38" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="add_ln37" lineNumber="37" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="add_ln37_fu_197_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="calculate_brightness" bitwidth="2" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.62" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="37" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="icmp_ln38" lineNumber="38" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="icmp_ln38_fu_203_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="calculate_brightness" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.91" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="38" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="select_ln47" lineNumber="47" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln47_fu_209_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="11" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.45" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="47" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="select_ln47_1" lineNumber="47" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln47_1_fu_385_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="32" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.52" m_topoIndex="68" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="47" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="select_ln47_2" lineNumber="47" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln47_2_fu_392_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="32" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.52" m_topoIndex="69" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="47" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="select_ln44_4" lineNumber="44" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln44_4_fu_399_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="32" opcode="select" nodeLabel="5.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="44" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="select_ln47_3" lineNumber="47" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln47_3_fu_407_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="32" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.52" m_topoIndex="71" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="47" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="select_ln47_4" lineNumber="47" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln47_4_fu_217_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="2" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.26" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="47" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="tmp_s" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="tmp_s_fu_225_p3" coreId="1634038272" contextFuncName="calculate_brightness" bitwidth="12" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="tmp_11_cast" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="grp_fu_533_p00" coreId="0" contextFuncName="calculate_brightness" bitwidth="13" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="empty_22" lineNumber="37" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="empty_22_fu_414_p1" coreId="0" contextFuncName="calculate_brightness" bitwidth="1" opcode="trunc" nodeLabel="5.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="37" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="select_ln47_5" lineNumber="47" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln47_5_fu_417_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="1" opcode="select" nodeLabel="5.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="47" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="zext_ln47" lineNumber="47" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="zext_ln47_fu_423_p1" coreId="642663656" contextFuncName="calculate_brightness" bitwidth="32" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="47" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="select_ln47_6" lineNumber="47" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln47_6_fu_427_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="24" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.43" m_topoIndex="75" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="47" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="select_ln47_7_cast" lineNumber="47" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln47_7_cast_fu_434_p1" coreId="1936876912" contextFuncName="calculate_brightness" bitwidth="32" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="47" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="xor_ln47" lineNumber="47" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="xor_ln47_fu_237_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="calculate_brightness" bitwidth="1" opcode="xor" nodeLabel="1.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="47" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="icmp_ln40" lineNumber="40" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="icmp_ln40_fu_243_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="calculate_brightness" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.85" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="40" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="and_ln47" lineNumber="47" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="and_ln47_fu_249_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="calculate_brightness" bitwidth="1" opcode="and" nodeLabel="1.0" m_display="0" m_delay="0.33" m_topoIndex="36" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="47" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="icmp_ln44" lineNumber="44" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="icmp_ln44_fu_438_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="calculate_brightness" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="1.11" m_topoIndex="77" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="44" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="trunc_ln44_1" lineNumber="44" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="trunc_ln44_1_fu_444_p1" coreId="176" contextFuncName="calculate_brightness" bitwidth="10" opcode="trunc" nodeLabel="5.0" m_display="0" m_topoIndex="78" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="44" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="zext_ln44" lineNumber="44" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="zext_ln44_fu_447_p1" coreId="1701998624" contextFuncName="calculate_brightness" bitwidth="32" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="44" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="select_ln44" lineNumber="44" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln44_fu_451_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="32" opcode="select" nodeLabel="5.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="44" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="select_ln44_1" lineNumber="44" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln44_1_fu_459_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="32" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.52" m_topoIndex="81" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="44" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="maxBrightness" lineNumber="44" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="maxBrightness_fu_467_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="32" opcode="select" nodeLabel="5.0" m_display="0" m_topoIndex="82" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="44" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="add_ln38" lineNumber="38" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="add_ln38_fu_255_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="calculate_brightness" bitwidth="11" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.94" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="38" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="or_ln38" lineNumber="38" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="or_ln38_fu_261_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="calculate_brightness" bitwidth="1" opcode="or" nodeLabel="1.0" m_display="0" m_delay="0.33" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="38" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="select_ln38" lineNumber="38" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln38_fu_267_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="8" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.44" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="38" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="select_ln38_1" lineNumber="38" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln38_1_fu_475_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="24" opcode="select" nodeLabel="5.0" m_display="0" m_topoIndex="83" m_clusterGroupNumber="6">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="38" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="select_ln38_2" lineNumber="38" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln38_2_fu_275_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="11" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.45" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="38" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="zext_ln41_1" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="grp_fu_533_p10" coreId="1413283337" contextFuncName="calculate_brightness" bitwidth="13" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="add_ln41" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1_U30" coreName="DSP48" implIndex="dsp48" control="no" opType="add" coreId="127" contextFuncName="calculate_brightness" bitwidth="13" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.78" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="add_ln41_cast" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1_U30" coreName="DSP48" implIndex="dsp48" control="no" opType="zext" coreId="127" contextFuncName="calculate_brightness" bitwidth="19" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="mul_ln41" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1_U30" coreName="DSP48" implIndex="dsp48" control="no" opType="mul" coreId="127" contextFuncName="calculate_brightness" bitwidth="19" opcode="mul" nodeLabel="1.0" nodeLatency="2" m_display="0" m_delay="1.08" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="select_ln38_3" lineNumber="38" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln38_3_fu_482_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="32" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.52" m_topoIndex="84" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="38" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="select_ln38_4" lineNumber="38" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln38_4_fu_489_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="32" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.52" m_topoIndex="85" m_clusterGroupNumber="7">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="38" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="select_ln38_5" lineNumber="38" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln38_5_fu_496_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="32" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.52" m_topoIndex="86" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="38" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="zext_ln41_2" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="grp_fu_533_p30" coreId="608" contextFuncName="calculate_brightness" bitwidth="19" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="add_ln41_1" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1_U30" coreName="DSP48" implIndex="dsp48" control="no" opType="add" coreId="127" contextFuncName="calculate_brightness" bitwidth="19" opcode="add" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="0.83" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="zext_ln41_3" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="zext_ln41_3_fu_335_p1" coreId="608" contextFuncName="calculate_brightness" bitwidth="64" opcode="zext" nodeLabel="4.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="image_addr_2" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="642627600" contextFuncName="calculate_brightness" bitwidth="19" opcode="getelementptr" nodeLabel="4.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>image_r</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="image_load" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="calculate_brightness" bitwidth="16" opcode="load" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="1.35" m_topoIndex="57" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="zext_ln41" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="zext_ln41_fu_503_p1" coreId="0" contextFuncName="calculate_brightness" bitwidth="24" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="87" m_clusterGroupNumber="6">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="92" name="currentBrightness_3" lineNumber="41" originalName="currentBrightness" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="currentBrightness_3_fu_507_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="calculate_brightness" bitwidth="24" opcode="add" nodeLabel="5.0" m_display="0" m_delay="1.1" m_topoIndex="88" m_clusterGroupNumber="6">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="add_ln40" lineNumber="40" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="add_ln40_fu_287_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="calculate_brightness" bitwidth="8" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.9" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="40" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="94" name="add_ln38_1" lineNumber="38" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="add_ln38_1_fu_293_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="calculate_brightness" bitwidth="19" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.05" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="38" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="select_ln38_6" lineNumber="38" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln38_6_fu_299_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness" bitwidth="19" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.43" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="38" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="indvar_flatten52_write_ln40" lineNumber="40" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="642707968" contextFuncName="calculate_brightness" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.48" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="40" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="i_3_write_ln40" lineNumber="40" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="642708464" contextFuncName="calculate_brightness" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.48" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="40" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="indvar_flatten31_write_ln40" lineNumber="40" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="784" contextFuncName="calculate_brightness" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.48" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="40" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="j_write_ln40" lineNumber="40" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="304" contextFuncName="calculate_brightness" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.48" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="40" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="j_05_i_i633_write_ln40" lineNumber="40" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="642713616" contextFuncName="calculate_brightness" opcode="store" nodeLabel="5.0" m_display="0" m_topoIndex="89" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="40" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="101" name="i_06_i_i631_write_ln40" lineNumber="40" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="1413312752" contextFuncName="calculate_brightness" opcode="store" nodeLabel="5.0" m_display="0" m_topoIndex="90" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="40" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="empty_write_ln40" lineNumber="40" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="0" contextFuncName="calculate_brightness" opcode="store" nodeLabel="5.0" m_display="0" m_delay="0.48" m_topoIndex="91" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="40" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="k_write_ln40" lineNumber="40" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="642715104" contextFuncName="calculate_brightness" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.48" m_topoIndex="52" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="40" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="currentBrightness_write_ln40" lineNumber="40" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="0" contextFuncName="calculate_brightness" opcode="store" nodeLabel="5.0" m_display="0" m_delay="0.48" m_topoIndex="92" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="40" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="br_ln40" lineNumber="40" fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" fileDirectory=".." coreId="0" contextFuncName="calculate_brightness" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="93" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp" linenumber="40" fileDirectory="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness"/>
+        <controlInputObjs>for.inc.i11.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../Archivos_Fuente/Hyperspectral/hyperspectral_accel.cpp">
+        <validLinenumbers>40</validLinenumbers>
+        <validLinenumbers>38</validLinenumbers>
+        <validLinenumbers>37</validLinenumbers>
+        <validLinenumbers>47</validLinenumbers>
+        <validLinenumbers>44</validLinenumbers>
+        <validLinenumbers>41</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <regnodes realName="add_ln37_reg_620">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln37_reg_616">
+    <nodeIds>38</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln44_reg_611">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten52_reg_598">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_20_reg_605">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="j_05_i_i633_reg_571">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="j_reg_577">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <regnodes realName="or_ln38_reg_646">
+    <nodeIds>73</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln38_reg_651">
+    <nodeIds>74</nodeIds>
+  </regnodes>
+  <regnodes realName="i_06_i_i631_reg_565">
+    <nodeIds>7</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten31_reg_584">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="image_addr_2_reg_661">
+    <nodeIds>88</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_reg_558">
+    <nodeIds>6</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln41_2_reg_656">
+    <nodeIds>85</nodeIds>
+  </regnodes>
+  <regnodes realName="currentBrightness_reg_544">
+    <nodeIds>4</nodeIds>
+  </regnodes>
+  <regnodes realName="k_reg_551">
+    <nodeIds>5</nodeIds>
+  </regnodes>
+  <regnodes realName="and_ln47_reg_639">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln47_reg_634">
+    <nodeIds>48</nodeIds>
+  </regnodes>
+  <regnodes realName="i_3_reg_591">
+    <nodeIds>11</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln38_reg_625">
+    <nodeIds>47</nodeIds>
+  </regnodes>
+  <expressionNodes realName="add_ln37_1_fu_185">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln40_fu_243">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln38_fu_261">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln47_fu_237">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln41_fu_503">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln44_1_fu_358">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln47_7_cast_fu_434">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_3_cast_cast_fu_351">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten52_fu_96">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_fu_84">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="currentBrightness_cast_fu_354">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln47_3_fu_407">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln38_4_fu_489">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="currentBrightness_3_fu_507">
+    <nodeIds>92</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten31_fu_88">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln44_2_fu_367">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln40_fu_287">
+    <nodeIds>93</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln44_fu_438">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln47_fu_209">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln38_3_fu_482">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln47_fu_249">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln41_1_fu_283">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln47_2_fu_392">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln38_1_fu_475">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln38_6_fu_299">
+    <nodeIds>95</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln47_5_fu_417">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln41_3_fu_335">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_3_fu_92">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln41_2_fu_332">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_22_fu_414">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln47_1_fu_385">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln44_fu_175">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln44_fu_447">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln38_1_fu_293">
+    <nodeIds>94</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_20_fu_171">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln38_fu_267">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln37_fu_179">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln47_6_fu_427">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_225">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="currentBrightness_fu_64">
+    <nodeIds>4</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_fu_72">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="maxBrightness_fu_467">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln44_1_fu_459">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln47_fu_423">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_05_i_i633_fu_80">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="image_addr_2_gep_fu_114">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln44_1_fu_444">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln44_1_fu_364">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_11_cast_fu_233">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln37_fu_197">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_06_i_i631_fu_76">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln38_fu_255">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="k_fu_68">
+    <nodeIds>5</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln38_2_fu_275">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln38_5_fu_496">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln47_4_fu_217">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln44_fu_451">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln44_3_fu_376">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln38_fu_203">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln44_4_fu_399">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_533">
+    <nodeIds>78</nodeIds>
+    <nodeIds>79</nodeIds>
+    <nodeIds>80</nodeIds>
+    <nodeIds>86</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="write_ln44_write_fu_100">
+    <nodeIds>107</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln40_store_fu_528">
+    <nodeIds>104</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln40_store_fu_307">
+    <nodeIds>96</nodeIds>
+  </ioNodes>
+  <ioNodes realName="j_05_i_i633_load_load_fu_348">
+    <nodeIds>25</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln40_store_fu_327">
+    <nodeIds>103</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln40_store_fu_523">
+    <nodeIds>102</nodeIds>
+  </ioNodes>
+  <ioNodes realName="indvar_flatten31_load_load_fu_194">
+    <nodeIds>43</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln40_store_fu_322">
+    <nodeIds>99</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_147">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_127">
+    <nodeIds>13</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_142">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="indvar_flatten52_load_load_fu_168">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="currentBrightness_2_load_fu_339">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_load_fu_165">
+    <nodeIds>27</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln40_store_fu_518">
+    <nodeIds>101</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln40_store_fu_317">
+    <nodeIds>98</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln40_store_fu_513">
+    <nodeIds>100</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_06_i_i631_load_load_fu_345">
+    <nodeIds>24</nodeIds>
+  </ioNodes>
+  <ioNodes realName="k_load_load_fu_191">
+    <nodeIds>42</nodeIds>
+  </ioNodes>
+  <ioNodes realName="j_1_load_fu_162">
+    <nodeIds>26</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln40_store_fu_312">
+    <nodeIds>97</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_157">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_load_load_fu_342">
+    <nodeIds>23</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_137">
+    <nodeIds>15</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_132">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_152">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln44_write_fu_107">
+    <nodeIds>108</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="image_r">
+    <nodeIds>90</nodeIds>
+  </memoryPorts>
+  <ioPorts name="image_r(p0)">
+    <contents name="load">
+      <nodeIds>90</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="select_ln44_2_out">
+    <contents name="write">
+      <nodeIds>107</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="select_ln44_3_out">
+    <contents name="write">
+      <nodeIds>108</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="3" latency="3"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="80" stage="2" latency="3"/>
+    </states>
+    <states id="4">
+      <operations id="80" stage="1" latency="3"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="86" stage="1" latency="2"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="90" stage="2" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="2"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="hyperspectral_hw_wrapped_Pipeline_L1_L2_L3" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="368646" mMaxLatency="368646">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>21</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="L1_L2_L3" mII="1" mDepth="5" mMinTripCount="368640" mMaxTripCount="368640" mMinLatency="368644" mMaxLatency="368644" mType="1">
+      <basicBlocks>41</basicBlocks>
+      <basicBlocks>106</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>110</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>
