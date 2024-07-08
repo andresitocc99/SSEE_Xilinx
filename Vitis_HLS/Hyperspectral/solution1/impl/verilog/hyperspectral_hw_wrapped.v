@@ -1732,4 +1732,11 @@ assign zext_ln28_1_fu_488_p1 = trunc_ln28_reg_803;
 
 assign zext_ln28_fu_485_p1 = select_ln28_1_reg_798;
 
+
+reg find_kernel_block = 0;
+// synthesis translate_off
+`include "hyperspectral_hw_wrapped_hls_deadlock_kernel_monitor_top.vh"
+// synthesis translate_on
+
 endmodule //hyperspectral_hw_wrapped
+

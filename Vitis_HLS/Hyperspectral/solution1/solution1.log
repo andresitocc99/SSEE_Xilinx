@@ -200,3 +200,8 @@ INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeli
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L1_L2_L3' pipeline 'L1_L2_L3' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'ama_addmuladd_12ns_11ns_8ns_8ns_19_4_1': 1 instance(s).
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="hyperspectral_hw_wrapped" xd:componentRef="hyperspectral_hw_wrapped" xd:initiationInterval="2099245" xd:clockPeriod="10" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="in_stream" xd:originalName="in_stream" xd:direction="in" xd:interfaceRef="in_stream" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="out_stream" xd:originalName="out_stream" xd:direction="out" xd:interfaceRef="out_stream" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="2099244" xd:worst-case="2099244" xd:average-case="2099244"/>
+  <xd:resourceEstimates xd:LUT="4114" xd:FF="2297" xd:BRAM="0" xd:DSP="9"/>
+</xd:acceleratorMap>
