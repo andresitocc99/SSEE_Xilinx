@@ -6,6 +6,7 @@
 #include "xaxidma.h"
 #include "xhyperspectral_hw_wrapped.h"
 #include "xil_printf.h"
+#include <stdint.h>
 
 #define XPAR_FABRIC_HYPERSPECTRAL_HW_0_INTERRUPT_INTR XPAR_FABRIC_HYPERSPECTRAL_HW_WRA_0_INTERRUPT_INTR
 #define XPAR_HYPERSPECTRAL_HW_0_S_AXI_CONTROL_BUS_BASEADDR XPAR_XHYPERSPECTRAL_HW_WRAPPED_0_S_AXI_CONTROL_BUS_BASEADDR
@@ -130,14 +131,14 @@ int Run_HW_Accelerator(uint16_t image[FILAS][COLUMNAS][BANDAS], int refPixel[2],
                        unsigned int dma_sizeClosestPixel) {
 
 	// Transfer image to the hardware accelerator
-	int status = XAxiDma_SimpleTransfer(&AxiDma, (unsigned int)image, dma_sizeImage, XAXIDMA_DMA_TO_DEVICE);
+	int status = XAxiDma_SimpleTransfer(&AxiDma, (uintptr_t)image, dma_sizeImage, XAXIDMA_DMA_TO_DEVICE);
 	if (status != XST_SUCCESS) {
 		xil_printf("Error: DMA transfer of image to device failed\n");
 		return XST_FAILURE;
 	}
 
     // Transfer refPixel to the hardware accelerator
-	status = XAxiDma_SimpleTransfer(&AxiDma, (unsigned int)refPixel, dma_sizeRefPixel, XAXIDMA_DMA_TO_DEVICE);
+	status = XAxiDma_SimpleTransfer(&AxiDma, (uintptr_t)refPixel, dma_sizeRefPixel, XAXIDMA_DMA_TO_DEVICE);
 	if (status != XST_SUCCESS) {
 		xil_printf("Error: DMA transfer of refPixel to device failed\n");
 		return XST_FAILURE;
@@ -148,21 +149,21 @@ int Run_HW_Accelerator(uint16_t image[FILAS][COLUMNAS][BANDAS], int refPixel[2],
 	while (XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE)) {}
 
 	// Transfer maxBrightness from the hardware accelerator
-	status = XAxiDma_SimpleTransfer(&AxiDma, (unsigned int)maxBrightness, dma_sizeMaxBrightness, XAXIDMA_DEVICE_TO_DMA);
+	status = XAxiDma_SimpleTransfer(&AxiDma, (uintptr_t)maxBrightness, dma_sizeMaxBrightness, XAXIDMA_DEVICE_TO_DMA);
 	if (status != XST_SUCCESS) {
 		xil_printf("Error: DMA transfer of maxBrightness from device failed\n");
 		return XST_FAILURE;
 	}
 
 	// Transfer minDistance from the hardware accelerator
-	status = XAxiDma_SimpleTransfer(&AxiDma, (unsigned int)minDistance, dma_sizeMinDistance, XAXIDMA_DEVICE_TO_DMA);
+	status = XAxiDma_SimpleTransfer(&AxiDma, (uintptr_t)minDistance, dma_sizeMinDistance, XAXIDMA_DEVICE_TO_DMA);
 	if (status != XST_SUCCESS) {
 		xil_printf("Error: DMA transfer of minDistance from device failed\n");
 		return XST_FAILURE;
 	}
 
 	// Transfer closestPixel from the hardware accelerator
-	status = XAxiDma_SimpleTransfer(&AxiDma, (unsigned int)closestPixel, dma_sizeClosestPixel, XAXIDMA_DEVICE_TO_DMA);
+	status = XAxiDma_SimpleTransfer(&AxiDma, (uintptr_t)closestPixel, dma_sizeClosestPixel, XAXIDMA_DEVICE_TO_DMA);
 	if (status != XST_SUCCESS) {
 		xil_printf("Error: DMA transfer of closestPixel from device failed\n");
 		return XST_FAILURE;

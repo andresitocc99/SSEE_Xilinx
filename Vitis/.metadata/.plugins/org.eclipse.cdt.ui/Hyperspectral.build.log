@@ -1,13 +1,13 @@
-00:03:34 **** Incremental Build of configuration Debug for project Hyperspectral ****
+11:21:20 **** Incremental Build of configuration Debug for project Hyperspectral ****
 make all 
-Building file: ../src/main.c
+Building file: ../src/lib_hyperspectral_hw.c
 Invoking: ARM v8 gcc compiler
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I/home/andresitocc99/Documentos/Xilinx_workspace/Vitis/design_1_hyperspectral/export/design_1_hyperspectral/sw/design_1_hyperspectral/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lib_hyperspectral_hw.o" -I/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/design_1_hyperspectral/export/design_1_hyperspectral/sw/design_1_hyperspectral/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/lib_hyperspectral_hw.d" -MT"src/lib_hyperspectral_hw.o" -o "src/lib_hyperspectral_hw.o" "../src/lib_hyperspectral_hw.c"
+Finished building: ../src/lib_hyperspectral_hw.c
  
 Building target: Hyperspectral.elf
 Invoking: ARM v8 gcc linker
-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/andresitocc99/Documentos/Xilinx_workspace/Vitis/design_1_hyperspectral/export/design_1_hyperspectral/sw/design_1_hyperspectral/standalone_psu_cortexa53_0/bsplib/lib -o "Hyperspectral.elf" ./src/lib_hyperspectral_hw.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/design_1_hyperspectral/export/design_1_hyperspectral/sw/design_1_hyperspectral/standalone_psu_cortexa53_0/bsplib/lib -o "Hyperspectral.elf" ./src/lib_hyperspectral_hw.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
 Finished building target: Hyperspectral.elf
  
 Invoking: ARM v8 Print Size
@@ -17,5 +17,5 @@ aarch64-none-elf-size Hyperspectral.elf  |tee "Hyperspectral.elf.size"
 Finished building: Hyperspectral.elf.size
  
 
-00:03:35 Build Finished (took 380ms)
+11:21:21 Build Finished (took 380ms)
 

@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Hyperspectral/src/hyperspectral.h&apos; to &apos;lib_hyperspectral_hw.h&apos;" description="Rename resource &apos;hyperspectral.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/hyperspectral.h" name="lib_hyperspectral_hw.h" stamp="1720209736394" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Hyperspectral/src/helloworld.c&apos; to &apos;main.c&apos;" description="Rename resource &apos;helloworld.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/helloworld.c" name="main.c" stamp="1720213649749" updateReferences="true"/>
-</session>
