@@ -1,0 +1,35 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "hyperspectral_hw_wrapped",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/home\/andresitocc99\/Documentos\/GitHub\/SSEE_Xilinx\/Vitis_HLS\/Hyperspectral_DataFlow\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "hyperspectral_hw_wrapped"
+              }]
+          }
+        },
+        {
+          "functionName": "hyperspectral_hw_wrapped",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "\/home\/andresitocc99\/Documentos\/GitHub\/SSEE_Xilinx\/Vitis_HLS\/Hyperspectral_DataFlow\/solution1\/csynth.tcl",
+          "sourceLine": "16",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "hyperspectral_hw_wrapped"
+              }]
+          }
+        }
+      ]
+    }]}

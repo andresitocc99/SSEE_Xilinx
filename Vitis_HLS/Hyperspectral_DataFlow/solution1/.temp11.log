@@ -1,0 +1,60 @@
+Archivo cargado correctamente
+DEBUGGING AXI4 STREAMING DATA TYPES!
+2Stream in the image
+LLEGO AQUI!
+STREAM IMAGE HECHO!
+STREAM REFPIXEL HECHO!
+maxBrightnessIdx[0] = 0
+maxBrightnessIdx[1] = 26
+minDistance = 41.4849
+maxBrightness_hw[0] = 0
+maxBrightness_hw[1] = 26
+closestPixelIdx_hw[0] = 1
+closestPixelIdx_hw[1] = 40
+minDistance_hw = 41.4849, minDistance_sw = 41.4849
+Test OK!
+Archivo cargado correctamente
+DEBUGGING AXI4 STREAMING DATA TYPES!
+2Stream in the image
+LLEGO AQUI!
+STREAM IMAGE HECHO!
+STREAM REFPIXEL HECHO!
+maxBrightnessIdx[0] = 0
+maxBrightnessIdx[1] = 26
+minDistance = 41.4849
+maxBrightness_hw[0] = 0
+maxBrightness_hw[1] = 26
+closestPixelIdx_hw[0] = 1
+closestPixelIdx_hw[1] = 40
+minDistance_hw = 41.4849, minDistance_sw = 41.4849
+Test OK!
+Archivo cargado correctamente
+DEBUGGING AXI4 STREAMING DATA TYPES!
+2Stream in the image
+LLEGO AQUI!
+STREAM IMAGE HECHO!
+STREAM REFPIXEL HECHO!
+maxBrightnessIdx[0] = 0
+maxBrightnessIdx[1] = 26
+minDistance = 41.4849
+maxBrightness_hw[0] = 0
+maxBrightness_hw[1] = 26
+closestPixelIdx_hw[0] = 1
+closestPixelIdx_hw[1] = 40
+minDistance_hw = 41.4849, minDistance_sw = 41.4849
+Test OK!
+Archivo cargado correctamente
+DEBUGGING AXI4 STREAMING DATA TYPES!
+2Stream in the image
+LLEGO AQUI!
+STREAM IMAGE HECHO!
+STREAM REFPIXEL HECHO!
+maxBrightnessIdx[0] = 0
+maxBrightnessIdx[1] = 26
+minDistance = 41.4849
+maxBrightness_hw[0] = 0
+maxBrightness_hw[1] = 26
+closestPixelIdx_hw[0] = 1
+closestPixelIdx_hw[1] = 40
+minDistance_hw = 41.4849, minDistance_sw = 41.4849
+Test OK!

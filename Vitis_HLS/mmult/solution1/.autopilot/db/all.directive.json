@@ -1,0 +1,18 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "mmult_hw_wrapped",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/home\/andresitocc99\/Documentos\/GitHub\/SSEE_Xilinx\/Vitis_HLS\/mmult\/solution1\/csynth.tcl",
+          "sourceLine": "15",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "mmult_hw_wrapped"
+              }]
+          }
+        }]
+    }]}

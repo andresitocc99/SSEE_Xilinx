@@ -1,0 +1,344 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0 seconds; current allocated memory: 1.139 GB.
+INFO: [HLS 200-10] Analyzing design file '../Archivos_Fuente/mmult/mmult_accel.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 4.44 seconds. CPU system time: 0.52 seconds. Elapsed time: 3.59 seconds; current allocated memory: 132.461 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_120_9' is marked as complete unroll implied by the pipeline pragma (../Archivos_Fuente/mmult/mmult_accel.cpp:120:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_102_6' is marked as complete unroll implied by the pipeline pragma (../Archivos_Fuente/mmult/mmult_accel.cpp:102:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_89_3' is marked as complete unroll implied by the pipeline pragma (../Archivos_Fuente/mmult/mmult_accel.cpp:89:21)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_120_9' (../Archivos_Fuente/mmult/mmult_accel.cpp:120:22) in function 'mmult_hw_wrapped' completely with a factor of 1 (../Archivos_Fuente/mmult/mmult_accel.cpp:68:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_102_6' (../Archivos_Fuente/mmult/mmult_accel.cpp:102:22) in function 'mmult_hw_wrapped' completely with a factor of 1 (../Archivos_Fuente/mmult/mmult_accel.cpp:68:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_89_3' (../Archivos_Fuente/mmult/mmult_accel.cpp:89:21) in function 'mmult_hw_wrapped' completely with a factor of 1 (../Archivos_Fuente/mmult/mmult_accel.cpp:68:0)
+INFO: [HLS 214-178] Inlining function 'mmult_hw(float (*) [32], float (*) [32], float (*) [32])' into 'mmult_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/mmult/mmult_accel.cpp:68:0)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<32>s.i32' into 'mmult_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i5.s_struct.ap_uint<5>s' into 'mmult_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'mmult_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i4.s_struct.ap_uint<4>s' into 'mmult_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.s_struct.ap_uint<32>s' into 'mmult_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<5>s.i5' into 'mmult_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<1>s.i1' into 'mmult_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<4>s.i4' into 'mmult_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.05 seconds. CPU system time: 0.37 seconds. Elapsed time: 3.43 seconds; current allocated memory: 133.422 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 133.422 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 140.902 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 150.512 MB.
+INFO: [XFORM 203-510] Pipelining loop 'L2' (../Archivos_Fuente/mmult/mmult_accel.cpp:17) in function 'mmult_hw_wrapped' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'L2' (../Archivos_Fuente/mmult/mmult_accel.cpp:17) in function 'mmult_hw_wrapped' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'L3' (../Archivos_Fuente/mmult/mmult_accel.cpp:17) in function 'mmult_hw_wrapped' completely with a factor of 32.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.16 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.19 seconds; current allocated memory: 183.141 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_83_1' (../Archivos_Fuente/mmult/mmult_accel.cpp:83:27) in function 'mmult_hw_wrapped'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_96_4' (../Archivos_Fuente/mmult/mmult_accel.cpp:96:27) in function 'mmult_hw_wrapped'.
+INFO: [XFORM 203-541] Flattening a loop nest 'L1' (../Archivos_Fuente/mmult/mmult_accel.cpp:14:14) in function 'mmult_hw_wrapped'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_113_7' (../Archivos_Fuente/mmult/mmult_accel.cpp:113:28) in function 'mmult_hw_wrapped'.
+INFO: [HLS 200-472] Inferring partial write operation for 'a' (../Archivos_Fuente/mmult/mmult_accel.cpp:91:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'b' (../Archivos_Fuente/mmult/mmult_accel.cpp:104:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'out' (../Archivos_Fuente/mmult/mmult_accel.cpp:22:16)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.15 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.17 seconds; current allocated memory: 218.141 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'mmult_hw_wrapped' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_83_1_VITIS_LOOP_84_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'a'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_83_1_VITIS_LOOP_84_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_83_1_VITIS_LOOP_84_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.07 seconds; current allocated memory: 219.176 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 219.176 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_96_4_VITIS_LOOP_97_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'b'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_96_4_VITIS_LOOP_97_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_96_4_VITIS_LOOP_97_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 219.551 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 219.551 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mmult_hw_wrapped_Pipeline_L1_L2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'b'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'a'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'L1_L2'.
+WARNING: [HLS 200-885] The II Violation in module 'mmult_hw_wrapped_Pipeline_L1_L2' (loop 'L1_L2'): Unable to schedule 'load' operation ('a_load_16', ../Archivos_Fuente/mmult/mmult_accel.cpp:14) on array 'a' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 166, loop 'L1_L2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1 seconds; current allocated memory: 222.863 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1 seconds; current allocated memory: 222.863 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_113_7_VITIS_LOOP_114_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_113_7_VITIS_LOOP_114_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_113_7_VITIS_LOOP_114_8'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.65 seconds. CPU system time: 0 seconds. Elapsed time: 0.65 seconds; current allocated memory: 223.941 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 223.941 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mmult_hw_wrapped' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 224.164 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 224.164 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_83_1_VITIS_LOOP_84_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_83_1_VITIS_LOOP_84_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.32 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.36 seconds; current allocated memory: 224.164 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_96_4_VITIS_LOOP_97_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_96_4_VITIS_LOOP_97_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 225.105 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mmult_hw_wrapped_Pipeline_L1_L2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'mmult_hw_wrapped_Pipeline_L1_L2' pipeline 'L1_L2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'mmult_hw_wrapped_Pipeline_L1_L2' is 30587 from HDL expression: ((1'b0 == ap_block_pp0_stage1_11001) & (1'b1 == ap_CS_fsm_pp0_stage1))
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mmult_hw_wrapped_Pipeline_L1_L2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.25 seconds. CPU system time: 0 seconds. Elapsed time: 0.32 seconds; current allocated memory: 233.746 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_113_7_VITIS_LOOP_114_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_113_7_VITIS_LOOP_114_8' pipeline 'VITIS_LOOP_113_7_VITIS_LOOP_114_8' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_113_7_VITIS_LOOP_114_8'.
+INFO: ==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.139 GB.
+INFO: [HLS 200-10] Analyzing design file '../Archivos_Fuente/mmult/mmult_accel.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 4.34 seconds. CPU system time: 0.56 seconds. Elapsed time: 3.58 seconds; current allocated memory: 132.496 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_120_9' is marked as complete unroll implied by the pipeline pragma (../Archivos_Fuente/mmult/mmult_accel.cpp:120:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_102_6' is marked as complete unroll implied by the pipeline pragma (../Archivos_Fuente/mmult/mmult_accel.cpp:102:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_89_3' is marked as complete unroll implied by the pipeline pragma (../Archivos_Fuente/mmult/mmult_accel.cpp:89:21)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_120_9' (../Archivos_Fuente/mmult/mmult_accel.cpp:120:22) in function 'mmult_hw_wrapped' completely with a factor of 1 (../Archivos_Fuente/mmult/mmult_accel.cpp:68:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_102_6' (../Archivos_Fuente/mmult/mmult_accel.cpp:102:22) in function 'mmult_hw_wrapped' completely with a factor of 1 (../Archivos_Fuente/mmult/mmult_accel.cpp:68:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_89_3' (../Archivos_Fuente/mmult/mmult_accel.cpp:89:21) in function 'mmult_hw_wrapped' completely with a factor of 1 (../Archivos_Fuente/mmult/mmult_accel.cpp:68:0)
+INFO: [HLS 214-178] Inlining function 'dataflow_func(float (*) [32], float (*) [32], float (*) [32], int, int)' into 'mmult_hw(float (*) [32], float (*) [32], float (*) [32])' (../Archivos_Fuente/mmult/mmult_accel.cpp:45:0)
+INFO: [HLS 214-178] Inlining function 'mmult_hw(float (*) [32], float (*) [32], float (*) [32])' into 'mmult_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/mmult/mmult_accel.cpp:68:0)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<32>s.i32' into 'mmult_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i5.s_struct.ap_uint<5>s' into 'mmult_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'mmult_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i4.s_struct.ap_uint<4>s' into 'mmult_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.s_struct.ap_uint<32>s' into 'mmult_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<5>s.i5' into 'mmult_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<1>s.i1' into 'mmult_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<4>s.i4' into 'mmult_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.62 seconds. CPU system time: 0.33 seconds. Elapsed time: 4 seconds; current allocated memory: 133.621 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 133.621 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 141.305 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 150.770 MB.
+INFO: [XFORM 203-510] Pipelining loop 'L2' (../Archivos_Fuente/mmult/mmult_accel.cpp:49) in function 'mmult_hw_wrapped' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'L2' (../Archivos_Fuente/mmult/mmult_accel.cpp:49) in function 'mmult_hw_wrapped' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'L3' (../Archivos_Fuente/mmult/mmult_accel.cpp:34) in function 'mmult_hw_wrapped' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'L4' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:0) in function 'mmult_hw_wrapped' completely with a factor of 32.
+WARNING: [HLS 200-805] An internal stream 'sum_v' (../Archivos_Fuente/mmult/mmult_accel.cpp:32) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.22 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.25 seconds; current allocated memory: 184.355 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_83_1' (../Archivos_Fuente/mmult/mmult_accel.cpp:83:27) in function 'mmult_hw_wrapped'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_96_4' (../Archivos_Fuente/mmult/mmult_accel.cpp:96:27) in function 'mmult_hw_wrapped'.
+INFO: [XFORM 203-541] Flattening a loop nest 'L1' (../Archivos_Fuente/mmult/mmult_accel.cpp:48:14) in function 'mmult_hw_wrapped'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_113_7' (../Archivos_Fuente/mmult/mmult_accel.cpp:113:28) in function 'mmult_hw_wrapped'.
+INFO: [HLS 200-472] Inferring partial write operation for 'a' (../Archivos_Fuente/mmult/mmult_accel.cpp:91:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'b' (../Archivos_Fuente/mmult/mmult_accel.cpp:104:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'out' (../Archivos_Fuente/mmult/mmult_accel.cpp:41:14)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 219.738 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'mmult_hw_wrapped' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_83_1_VITIS_LOOP_84_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'a'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_83_1_VITIS_LOOP_84_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_83_1_VITIS_LOOP_84_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 220.535 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 220.535 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_96_4_VITIS_LOOP_97_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'b'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_96_4_VITIS_LOOP_97_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_96_4_VITIS_LOOP_97_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 220.879 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 220.879 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mmult_hw_wrapped_Pipeline_L1_L2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'b'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'a'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'L1_L2'.
+WARNING: [HLS 200-880] The II Violation in module 'mmult_hw_wrapped_Pipeline_L1_L2' (loop 'L1_L2'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between fifo write operation ('sum_v_write_ln174', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'sum_v' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) and fifo write operation ('sum_v_write_ln174', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'sum_v' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174).
+WARNING: [HLS 200-880] The II Violation in module 'mmult_hw_wrapped_Pipeline_L1_L2' (loop 'L1_L2'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between fifo write operation ('sum_v_write_ln174', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'sum_v' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) and fifo write operation ('sum_v_write_ln174', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'sum_v' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174).
+WARNING: [HLS 200-880] The II Violation in module 'mmult_hw_wrapped_Pipeline_L1_L2' (loop 'L1_L2'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between fifo write operation ('sum_v_write_ln174', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'sum_v' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) and fifo write operation ('sum_v_write_ln174', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'sum_v' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174).
+WARNING: [HLS 200-880] The II Violation in module 'mmult_hw_wrapped_Pipeline_L1_L2' (loop 'L1_L2'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between fifo write operation ('sum_v_write_ln174', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'sum_v' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) and fifo write operation ('sum_v_write_ln174', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'sum_v' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174).
+WARNING: [HLS 200-880] The II Violation in module 'mmult_hw_wrapped_Pipeline_L1_L2' (loop 'L1_L2'): Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 0) between fifo read operation ('sum_v_read_4', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) on port 'sum_v' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) and fifo write operation ('sum_v_write_ln174', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'sum_v' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174).
+WARNING: [HLS 200-880] The II Violation in module 'mmult_hw_wrapped_Pipeline_L1_L2' (loop 'L1_L2'): Unable to enforce a carried dependence constraint (II = 51, distance = 1, offset = 0) between fifo read operation ('sum_v_read_20', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) on port 'sum_v' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) and fifo write operation ('sum_v_write_ln174', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'sum_v' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174).
+WARNING: [HLS 200-880] The II Violation in module 'mmult_hw_wrapped_Pipeline_L1_L2' (loop 'L1_L2'): Unable to enforce a carried dependence constraint (II = 59, distance = 1, offset = 0) between fifo read operation ('sum_v_read_28', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) on port 'sum_v' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) and fifo write operation ('sum_v_write_ln174', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'sum_v' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174).
+WARNING: [HLS 200-880] The II Violation in module 'mmult_hw_wrapped_Pipeline_L1_L2' (loop 'L1_L2'): Unable to enforce a carried dependence constraint (II = 61, distance = 1, offset = 0) between fifo read operation ('sum_v_read_30', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) on port 'sum_v' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) and fifo write operation ('sum_v_write_ln174', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'sum_v' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174).
+WARNING: [HLS 200-880] The II Violation in module 'mmult_hw_wrapped_Pipeline_L1_L2' (loop 'L1_L2'): Unable to enforce a carried dependence constraint (II = 62, distance = 1, offset = 0) between fifo read operation ('sum_v_read_31', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) on port 'sum_v' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) and fifo write operation ('sum_v_write_ln174', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'sum_v' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 63, Depth = 198, loop 'L1_L2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.66 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.67 seconds; current allocated memory: 236.074 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1.11 seconds. CPU system time: 0 seconds. Elapsed time: 1.12 seconds; current allocated memory: 236.074 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_113_7_VITIS_LOOP_114_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_113_7_VITIS_LOOP_114_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_113_7_VITIS_LOOP_114_8'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.53 seconds. CPU system time: 0 seconds. Elapsed time: 0.53 seconds; current allocated memory: 236.074 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 236.074 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mmult_hw_wrapped' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 236.074 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 236.074 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_83_1_VITIS_LOOP_84_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_83_1_VITIS_LOOP_84_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 236.074 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_96_4_VITIS_LOOP_97_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_96_4_VITIS_LOOP_97_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 236.074 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mmult_hw_wrapped_Pipeline_L1_L2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'mmult_hw_wrapped_Pipeline_L1_L2' pipeline 'L1_L2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mmult_hw_wrapped_Pipeline_L1_L2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.2 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.22 seconds; current allocated memory: 236.074 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_113_7_VITIS_LOOP_114_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_113_7_VITIS_LOOP_114_8' pipeline 'VITIS_LOOP_113_7_VITIS_LOOP_114_8' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_113_7_VITIS_LOOP_114_8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.97 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.02 seconds; current allocated memory: 242.113 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mmult_hw_wrapped' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mmult_hw_wrapped/INPUT_STREAM_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mmult_hw_wrapped/INPUT_STREAM_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mmult_hw_wrapped/INPUT_STREAM_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mmult_hw_wrapped/INPUT_STREAM_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mmult_hw_wrapped/INPUT_STREAM_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mmult_hw_wrapped/INPUT_STREAM_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mmult_hw_wrapped/INPUT_STREAM_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mmult_hw_wrapped/OUTPUT_STREAM_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mmult_hw_wrapped/OUTPUT_STREAM_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mmult_hw_wrapped/OUTPUT_STREAM_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mmult_hw_wrapped/OUTPUT_STREAM_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mmult_hw_wrapped/OUTPUT_STREAM_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mmult_hw_wrapped/OUTPUT_STREAM_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'mmult_hw_wrapped/OUTPUT_STREAM_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'mmult_hw_wrapped' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port CONTROL_BUS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mmult_hw_wrapped'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 242.730 MB.
+INFO: [RTMG 210-278] Implementing memory 'mmult_hw_wrapped_a_RAM_1WNR_AUTO_1R1W_ram (RAM_1WnR)' using auto RAMs.
+INFO: 

@@ -1,0 +1,163 @@
+
+
+================================================================
+== Vitis HLS Report for 'mmult_hw_wrapped_Pipeline_VITIS_LOOP_83_1_VITIS_LOOP_84_2'
+================================================================
+* Date:           Tue Jul  9 12:48:37 2024
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        mmult
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.614 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     1026|     1026|  10.260 us|  10.260 us|  1026|  1026|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |             Loop Name             |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_83_1_VITIS_LOOP_84_2  |     1024|     1024|         1|          1|          1|  1024|       yes|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.61>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%j = alloca i32 1"   --->   Operation 4 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 5 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%indvar_flatten = alloca i32 1"   --->   Operation 6 'alloca' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i5 %INPUT_STREAM_V_dest_V, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i5 %INPUT_STREAM_V_id_V, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %INPUT_STREAM_V_last_V, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i4 %INPUT_STREAM_V_user_V, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i4 %INPUT_STREAM_V_strb_V, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i4 %INPUT_STREAM_V_keep_V, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %INPUT_STREAM_V_data_V, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.48ns)   --->   "%store_ln0 = store i11 0, i11 %indvar_flatten"   --->   Operation 14 'store' 'store_ln0' <Predicate = true> <Delay = 0.48>
+ST_1 : Operation 15 [1/1] (0.48ns)   --->   "%store_ln0 = store i6 0, i6 %i"   --->   Operation 15 'store' 'store_ln0' <Predicate = true> <Delay = 0.48>
+ST_1 : Operation 16 [1/1] (0.48ns)   --->   "%store_ln0 = store i6 0, i6 %j"   --->   Operation 16 'store' 'store_ln0' <Predicate = true> <Delay = 0.48>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 17 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%indvar_flatten_load = load i11 %indvar_flatten" [../Archivos_Fuente/mmult/mmult_accel.cpp:83]   --->   Operation 18 'load' 'indvar_flatten_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.85ns)   --->   "%icmp_ln83 = icmp_eq  i11 %indvar_flatten_load, i11 1024" [../Archivos_Fuente/mmult/mmult_accel.cpp:83]   --->   Operation 19 'icmp' 'icmp_ln83' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.94ns)   --->   "%add_ln83_1 = add i11 %indvar_flatten_load, i11 1" [../Archivos_Fuente/mmult/mmult_accel.cpp:83]   --->   Operation 20 'add' 'add_ln83_1' <Predicate = true> <Delay = 0.94> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%br_ln83 = br i1 %icmp_ln83, void %for.inc20, void %for.inc57.preheader.exitStub" [../Archivos_Fuente/mmult/mmult_accel.cpp:83]   --->   Operation 21 'br' 'br_ln83' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%j_load = load i6 %j" [../Archivos_Fuente/mmult/mmult_accel.cpp:84]   --->   Operation 22 'load' 'j_load' <Predicate = (!icmp_ln83)> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%i_load = load i6 %i" [../Archivos_Fuente/mmult/mmult_accel.cpp:83]   --->   Operation 23 'load' 'i_load' <Predicate = (!icmp_ln83)> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.88ns)   --->   "%add_ln83 = add i6 %i_load, i6 1" [../Archivos_Fuente/mmult/mmult_accel.cpp:83]   --->   Operation 24 'add' 'add_ln83' <Predicate = (!icmp_ln83)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_83_1_VITIS_LOOP_84_2_str"   --->   Operation 25 'specloopname' 'specloopname_ln0' <Predicate = (!icmp_ln83)> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 1024, i64 1024, i64 1024"   --->   Operation 26 'speclooptripcount' 'empty' <Predicate = (!icmp_ln83)> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.87ns)   --->   "%icmp_ln84 = icmp_eq  i6 %j_load, i6 32" [../Archivos_Fuente/mmult/mmult_accel.cpp:84]   --->   Operation 27 'icmp' 'icmp_ln84' <Predicate = (!icmp_ln83)> <Delay = 0.87> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 28 [1/1] (0.44ns)   --->   "%select_ln83 = select i1 %icmp_ln84, i6 0, i6 %j_load" [../Archivos_Fuente/mmult/mmult_accel.cpp:83]   --->   Operation 28 'select' 'select_ln83' <Predicate = (!icmp_ln83)> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 29 [1/1] (0.44ns)   --->   "%select_ln83_1 = select i1 %icmp_ln84, i6 %add_ln83, i6 %i_load" [../Archivos_Fuente/mmult/mmult_accel.cpp:83]   --->   Operation 29 'select' 'select_ln83_1' <Predicate = (!icmp_ln83)> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%trunc_ln91 = trunc i6 %select_ln83_1" [../Archivos_Fuente/mmult/mmult_accel.cpp:91]   --->   Operation 30 'trunc' 'trunc_ln91' <Predicate = (!icmp_ln83)> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i5.i5, i5 %trunc_ln91, i5 0" [../Archivos_Fuente/mmult/mmult_accel.cpp:91]   --->   Operation 31 'bitconcatenate' 'tmp' <Predicate = (!icmp_ln83)> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%zext_ln91 = zext i6 %select_ln83" [../Archivos_Fuente/mmult/mmult_accel.cpp:91]   --->   Operation 32 'zext' 'zext_ln91' <Predicate = (!icmp_ln83)> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.93ns)   --->   "%add_ln91 = add i10 %tmp, i10 %zext_ln91" [../Archivos_Fuente/mmult/mmult_accel.cpp:91]   --->   Operation 33 'add' 'add_ln91' <Predicate = (!icmp_ln83)> <Delay = 0.93> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.93> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln91_1 = zext i10 %add_ln91" [../Archivos_Fuente/mmult/mmult_accel.cpp:91]   --->   Operation 34 'zext' 'zext_ln91_1' <Predicate = (!icmp_ln83)> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%a_addr = getelementptr i32 %a, i64 0, i64 %zext_ln91_1" [../Archivos_Fuente/mmult/mmult_accel.cpp:91]   --->   Operation 35 'getelementptr' 'a_addr' <Predicate = (!icmp_ln83)> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%specpipeline_ln86 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty" [../Archivos_Fuente/mmult/mmult_accel.cpp:86]   --->   Operation 36 'specpipeline' 'specpipeline_ln86' <Predicate = (!icmp_ln83)> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8"   --->   Operation 37 'specloopname' 'specloopname_ln0' <Predicate = (!icmp_ln83)> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%empty_15 = read i55 @_ssdm_op_Read.axis.volatile.i32P0A.i4P0A.i4P0A.i4P0A.i1P0A.i5P0A.i5P0A, i32 %INPUT_STREAM_V_data_V, i4 %INPUT_STREAM_V_keep_V, i4 %INPUT_STREAM_V_strb_V, i4 %INPUT_STREAM_V_user_V, i1 %INPUT_STREAM_V_last_V, i5 %INPUT_STREAM_V_id_V, i5 %INPUT_STREAM_V_dest_V"   --->   Operation 38 'read' 'empty_15' <Predicate = (!icmp_ln83)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%tmp_data_V = extractvalue i55 %empty_15"   --->   Operation 39 'extractvalue' 'tmp_data_V' <Predicate = (!icmp_ln83)> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%bitcast_ln91 = bitcast i32 %tmp_data_V" [../Archivos_Fuente/mmult/mmult_accel.cpp:91]   --->   Operation 40 'bitcast' 'bitcast_ln91' <Predicate = (!icmp_ln83)> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (1.35ns)   --->   "%store_ln91 = store i32 %bitcast_ln91, i10 %a_addr" [../Archivos_Fuente/mmult/mmult_accel.cpp:91]   --->   Operation 41 'store' 'store_ln91' <Predicate = (!icmp_ln83)> <Delay = 1.35> <CoreInst = "RAM_1WnR">   --->   Core 84 'RAM_1WnR' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 17> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 42 [1/1] (0.88ns)   --->   "%add_ln84 = add i6 %select_ln83, i6 1" [../Archivos_Fuente/mmult/mmult_accel.cpp:84]   --->   Operation 42 'add' 'add_ln84' <Predicate = (!icmp_ln83)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 43 [1/1] (0.48ns)   --->   "%store_ln84 = store i11 %add_ln83_1, i11 %indvar_flatten" [../Archivos_Fuente/mmult/mmult_accel.cpp:84]   --->   Operation 43 'store' 'store_ln84' <Predicate = (!icmp_ln83)> <Delay = 0.48>
+ST_1 : Operation 44 [1/1] (0.48ns)   --->   "%store_ln84 = store i6 %select_ln83_1, i6 %i" [../Archivos_Fuente/mmult/mmult_accel.cpp:84]   --->   Operation 44 'store' 'store_ln84' <Predicate = (!icmp_ln83)> <Delay = 0.48>
+ST_1 : Operation 45 [1/1] (0.48ns)   --->   "%store_ln84 = store i6 %add_ln84, i6 %j" [../Archivos_Fuente/mmult/mmult_accel.cpp:84]   --->   Operation 45 'store' 'store_ln84' <Predicate = (!icmp_ln83)> <Delay = 0.48>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%br_ln84 = br void %for.inc" [../Archivos_Fuente/mmult/mmult_accel.cpp:84]   --->   Operation 46 'br' 'br_ln84' <Predicate = (!icmp_ln83)> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 47 'ret' 'ret_ln0' <Predicate = (icmp_ln83)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 3.61ns
+The critical path consists of the following:
+	'alloca' operation ('i') [10]  (0 ns)
+	'load' operation ('i_load', ../Archivos_Fuente/mmult/mmult_accel.cpp:83) on local variable 'i' [30]  (0 ns)
+	'add' operation ('add_ln83', ../Archivos_Fuente/mmult/mmult_accel.cpp:83) [31]  (0.887 ns)
+	'select' operation ('select_ln83_1', ../Archivos_Fuente/mmult/mmult_accel.cpp:83) [36]  (0.44 ns)
+	'add' operation ('add_ln91', ../Archivos_Fuente/mmult/mmult_accel.cpp:91) [40]  (0.934 ns)
+	'getelementptr' operation ('a_addr', ../Archivos_Fuente/mmult/mmult_accel.cpp:91) [42]  (0 ns)
+	'store' operation ('store_ln91', ../Archivos_Fuente/mmult/mmult_accel.cpp:91) of variable 'bitcast_ln91', ../Archivos_Fuente/mmult/mmult_accel.cpp:91 on array 'a' [48]  (1.35 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

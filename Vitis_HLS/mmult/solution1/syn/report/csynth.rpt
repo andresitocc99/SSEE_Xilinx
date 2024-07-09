@@ -1,0 +1,234 @@
+
+
+================================================================
+== Synthesis Summary Report of 'mmult_hw_wrapped'
+================================================================
++ General Information: 
+    * Date:           Tue Jul  9 12:48:43 2024
+    * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+    * Project:        mmult
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu3eg-sbva484-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+--------+-----------+-----------+-----+
+    |                             Modules                            | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |        |        |           |           |     |
+    |                             & Loops                            | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM  |   DSP  |     FF    |    LUT    | URAM|
+    +----------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+--------+-----------+-----------+-----+
+    |+ mmult_hw_wrapped                                              |     -|  0.46|    67738|  6.774e+05|         -|    67739|     -|        no|  6 (1%)|  5 (1%)|  2424 (1%)|  2919 (4%)|    -|
+    | + mmult_hw_wrapped_Pipeline_VITIS_LOOP_83_1_VITIS_LOOP_84_2    |     -|  3.69|     1026|  1.026e+04|         -|     1026|     -|        no|       -|       -|   25 (~0%)|  171 (~0%)|    -|
+    |  o VITIS_LOOP_83_1_VITIS_LOOP_84_2                             |     -|  7.30|     1024|  1.024e+04|         1|        1|  1024|       yes|       -|       -|          -|          -|    -|
+    | + mmult_hw_wrapped_Pipeline_VITIS_LOOP_96_4_VITIS_LOOP_97_5    |     -|  3.69|     1026|  1.026e+04|         -|     1026|     -|        no|       -|       -|   25 (~0%)|  171 (~0%)|    -|
+    |  o VITIS_LOOP_96_4_VITIS_LOOP_97_5                             |     -|  7.30|     1024|  1.024e+04|         1|        1|  1024|       yes|       -|       -|          -|          -|    -|
+    | + mmult_hw_wrapped_Pipeline_L1_L2                              |     -|  0.46|    64648|  6.465e+05|         -|    64648|     -|        no|       -|  5 (1%)|  2195 (1%)|  2046 (2%)|    -|
+    |  o L1_L2                                                       |    II|  7.30|    64646|  6.465e+05|       198|       63|  1024|       yes|       -|       -|          -|          -|    -|
+    | + mmult_hw_wrapped_Pipeline_VITIS_LOOP_113_7_VITIS_LOOP_114_8  |     -|  3.69|     1026|  1.026e+04|         -|     1026|     -|        no|       -|       -|   27 (~0%)|  214 (~0%)|    -|
+    |  o VITIS_LOOP_113_7_VITIS_LOOP_114_8                           |     -|  7.30|     1024|  1.024e+04|         2|        1|  1024|       yes|       -|       -|          -|          -|    -|
+    +----------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+--------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++-------------------+------------+---------------+
+| Interface         | Data Width | Address Width |
++-------------------+------------+---------------+
+| s_axi_CONTROL_BUS | 32         | 4             |
++-------------------+------------+---------------+
+
+* S_AXILITE Registers
++-------------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface         | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++-------------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_CONTROL_BUS | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_CONTROL_BUS | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_CONTROL_BUS | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_CONTROL_BUS | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
++-------------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++---------------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface     | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++---------------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| INPUT_STREAM  | both          | 32    | 5     | 5   | 4     | 1     | 1      | 4     | 4     | 1      |
+| OUTPUT_STREAM | both          | 32    | 5     | 5   | 4     | 1     | 1      | 4     | 4     | 1      |
++---------------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++---------------+-----------+---------------------------------------------+
+| Argument      | Direction | Datatype                                    |
++---------------+-----------+---------------------------------------------+
+| INPUT_STREAM  | in        | stream<hls::axis<ap_uint<32>, 4, 5, 5>, 0>& |
+| OUTPUT_STREAM | out       | stream<hls::axis<ap_uint<32>, 4, 5, 5>, 0>& |
++---------------+-----------+---------------------------------------------+
+
+* SW-to-HW Mapping
++---------------+---------------+-----------+
+| Argument      | HW Interface  | HW Type   |
++---------------+---------------+-----------+
+| INPUT_STREAM  | INPUT_STREAM  | interface |
+| OUTPUT_STREAM | OUTPUT_STREAM | interface |
++---------------+---------------+-----------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------------------------------------+-----+--------+-------------+------+---------+---------+
+| Name                                                           | DSP | Pragma | Variable    | Op   | Impl    | Latency |
++----------------------------------------------------------------+-----+--------+-------------+------+---------+---------+
+| + mmult_hw_wrapped                                             | 5   |        |             |      |         |         |
+|  + mmult_hw_wrapped_Pipeline_VITIS_LOOP_83_1_VITIS_LOOP_84_2   | 0   |        |             |      |         |         |
+|    add_ln83_1_fu_129_p2                                        | -   |        | add_ln83_1  | add  | fabric  | 0       |
+|    add_ln83_fu_141_p2                                          | -   |        | add_ln83    | add  | fabric  | 0       |
+|    add_ln91_fu_185_p2                                          | -   |        | add_ln91    | add  | fabric  | 0       |
+|    add_ln84_fu_205_p2                                          | -   |        | add_ln84    | add  | fabric  | 0       |
+|  + mmult_hw_wrapped_Pipeline_VITIS_LOOP_96_4_VITIS_LOOP_97_5   | 0   |        |             |      |         |         |
+|    add_ln96_1_fu_129_p2                                        | -   |        | add_ln96_1  | add  | fabric  | 0       |
+|    add_ln96_fu_141_p2                                          | -   |        | add_ln96    | add  | fabric  | 0       |
+|    add_ln104_fu_185_p2                                         | -   |        | add_ln104   | add  | fabric  | 0       |
+|    add_ln97_fu_205_p2                                          | -   |        | add_ln97    | add  | fabric  | 0       |
+|  + mmult_hw_wrapped_Pipeline_L1_L2                             | 5   |        |             |      |         |         |
+|    add_ln48_1_fu_815_p2                                        | -   |        | add_ln48_1  | add  | fabric  | 0       |
+|    add_ln48_fu_827_p2                                          | -   |        | add_ln48    | add  | fabric  | 0       |
+|    add_ln35_fu_911_p2                                          | -   |        | add_ln35    | add  | fabric  | 0       |
+|    add_ln35_1_fu_957_p2                                        | -   |        | add_ln35_1  | add  | fabric  | 0       |
+|    add_ln35_2_fu_1005_p2                                       | -   |        | add_ln35_2  | add  | fabric  | 0       |
+|    add_ln35_3_fu_1056_p2                                       | -   |        | add_ln35_3  | add  | fabric  | 0       |
+|    add_ln35_4_fu_1109_p2                                       | -   |        | add_ln35_4  | add  | fabric  | 0       |
+|    add_ln35_5_fu_1161_p2                                       | -   |        | add_ln35_5  | add  | fabric  | 0       |
+|    add_ln35_6_fu_1258_p2                                       | -   |        | add_ln35_6  | add  | fabric  | 0       |
+|    add_ln35_7_fu_1311_p2                                       | -   |        | add_ln35_7  | add  | fabric  | 0       |
+|    add_ln35_8_fu_1363_p2                                       | -   |        | add_ln35_8  | add  | fabric  | 0       |
+|    add_ln35_9_fu_1415_p2                                       | -   |        | add_ln35_9  | add  | fabric  | 0       |
+|    add_ln35_10_fu_1467_p2                                      | -   |        | add_ln35_10 | add  | fabric  | 0       |
+|    add_ln41_fu_1667_p2                                         | -   |        | add_ln41    | add  | fabric  | 0       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i     | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_1   | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_2   | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_3   | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_4   | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_5   | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_6   | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_7   | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_8   | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_9   | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_s   | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_10  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_11  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_12  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_13  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_14  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_15  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_16  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_17  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_18  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_19  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_20  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_21  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_22  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_23  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_24  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_25  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_26  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_27  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_28  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_29  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U18                           | 3   |        | mul_i_i_30  | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1     | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_1   | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_2   | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_3   | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_4   | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_5   | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_6   | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_7   | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_8   | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_9   | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_s   | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_10  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_11  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_12  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_13  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_14  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_15  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_16  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_17  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_18  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_19  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_20  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_21  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_22  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_23  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_24  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_25  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_26  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_27  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_28  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_29  | fadd | fulldsp | 4       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U17                          | 2   |        | p_sum_1_30  | fadd | fulldsp | 4       |
+|    add_ln49_fu_877_p2                                          | -   |        | add_ln49    | add  | fabric  | 0       |
+|  + mmult_hw_wrapped_Pipeline_VITIS_LOOP_113_7_VITIS_LOOP_114_8 | 0   |        |             |      |         |         |
+|    add_ln113_1_fu_149_p2                                       | -   |        | add_ln113_1 | add  | fabric  | 0       |
+|    add_ln113_fu_161_p2                                         | -   |        | add_ln113   | add  | fabric  | 0       |
+|    add_ln122_fu_225_p2                                         | -   |        | add_ln122   | add  | fabric  | 0       |
+|    add_ln114_fu_248_p2                                         | -   |        | add_ln114   | add  | fabric  | 0       |
++----------------------------------------------------------------+-----+--------+-------------+------+---------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++--------------------+------+------+--------+----------+---------+------+---------+
+| Name               | BRAM | URAM | Pragma | Variable | Storage | Impl | Latency |
++--------------------+------+------+--------+----------+---------+------+---------+
+| + mmult_hw_wrapped | 6    | 0    |        |          |         |      |         |
+|   sum_v_fifo_U     | -    | -    |        | sum_v    | fifo    | srl  | 0       |
+|   a_U              | 2    | -    |        | a        | rom_np  | auto | 1       |
+|   b_U              | 2    | -    |        | b        | rom_np  | auto | 1       |
+|   out_U            | 2    | -    |        | out      | ram_1p  | auto | 1       |
++--------------------+------+------+--------+----------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+------------------------------------------+--------------------------------------------------------------------------------+
+| Type      | Options                                  | Location                                                                       |
++-----------+------------------------------------------+--------------------------------------------------------------------------------+
+| interface | s_axilite port=return bundle=CONTROL_BUS | ../Archivos_Fuente/mmult/mmult_accel.cpp:69 in mmult_hw_wrapped, return        |
+| interface | axis port=INPUT_STREAM                   | ../Archivos_Fuente/mmult/mmult_accel.cpp:70 in mmult_hw_wrapped, INPUT_STREAM  |
+| interface | axis port=OUTPUT_STREAM                  | ../Archivos_Fuente/mmult/mmult_accel.cpp:71 in mmult_hw_wrapped, OUTPUT_STREAM |
+| pipeline  | II=1                                     | ../Archivos_Fuente/mmult/mmult_accel.cpp:86 in mmult_hw_wrapped                |
+| pipeline  | II=1                                     | ../Archivos_Fuente/mmult/mmult_accel.cpp:99 in mmult_hw_wrapped                |
+| pipeline  | II=1                                     | ../Archivos_Fuente/mmult/mmult_accel.cpp:116 in mmult_hw_wrapped               |
++-----------+------------------------------------------+--------------------------------------------------------------------------------+
+
+

@@ -1,0 +1,2024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1720526573828">
+  <ports id="1" name="in_stream_V_data_V" type="PortType" originalName="in_stream" coreId="4294967291" bitwidth="32">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="in_stream_V_keep_V" type="PortType" originalName="in_stream" coreId="0" bitwidth="4">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="3" name="in_stream_V_strb_V" type="PortType" originalName="in_stream" coreId="4294967295" bitwidth="4">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="4" name="in_stream_V_user_V" type="PortType" originalName="in_stream" coreId="3013145536" bitwidth="4">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="5" name="in_stream_V_last_V" type="PortType" originalName="in_stream" coreId="64" bitwidth="1">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="6" name="in_stream_V_id_V" type="PortType" originalName="in_stream" coreId="3013174000" bitwidth="5">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="7" name="in_stream_V_dest_V" type="PortType" originalName="in_stream" coreId="1330007625" bitwidth="5">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="8" name="out_stream_V_data_V" type="PortType" originalName="out_stream" coreId="3012750128" bitwidth="32" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="9" name="out_stream_V_keep_V" type="PortType" originalName="out_stream" coreId="3033136640" bitwidth="4" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="10" name="out_stream_V_strb_V" type="PortType" originalName="out_stream" coreId="1409537054" bitwidth="4" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="11" name="out_stream_V_user_V" type="PortType" originalName="out_stream" coreId="3013144344" bitwidth="4" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="12" name="out_stream_V_last_V" type="PortType" originalName="out_stream" coreId="1409543165" bitwidth="1" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="13" name="out_stream_V_id_V" type="PortType" originalName="out_stream" coreId="3013137400" bitwidth="5" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="14" name="out_stream_V_dest_V" type="PortType" originalName="out_stream" coreId="0" bitwidth="5" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <edges id="196" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="197" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="198" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="199" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="200" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="201" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="202" source_obj="//@ports.5" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="203" source_obj="//@ports.6" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="208" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="209" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="210" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="211" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="212" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="213" source_obj="//@ports.5" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="214" source_obj="//@ports.6" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="215" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="216" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="217" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.21"/>
+  <edges id="218" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="219" source_obj="//@blocks.0/@node_objs.22" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="223" source_obj="//@blocks.0/@node_objs.23" sink_obj="//@blocks.0/@node_objs.25"/>
+  <edges id="226" source_obj="//@blocks.0/@node_objs.21" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="227" source_obj="//@blocks.0/@node_objs.25" sink_obj="//@blocks.0/@node_objs.27"/>
+  <edges id="228" source_obj="//@blocks.0/@node_objs.26" sink_obj="//@blocks.0/@node_objs.27"/>
+  <edges id="229" source_obj="//@blocks.0/@node_objs.27" sink_obj="//@blocks.0/@node_objs.28"/>
+  <edges id="234" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.29"/>
+  <edges id="237" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.30"/>
+  <edges id="240" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.31"/>
+  <edges id="243" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.32"/>
+  <edges id="246" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.33"/>
+  <edges id="247" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.34"/>
+  <edges id="248" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="249" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="250" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="251" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="252" source_obj="//@blocks.0/@node_objs.22" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="253" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="256" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="259" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.1/@node_objs.6"/>
+  <edges id="260" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.6"/>
+  <edges id="261" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.6"/>
+  <edges id="262" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="263" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="264" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="265" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="266" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="270" source_obj="//@blocks.3/@node_objs.4" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="271" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="272" source_obj="//@blocks.3/@node_objs.6" sink_obj="//@ports.7"/>
+  <edges id="273" source_obj="//@blocks.3/@node_objs.6" sink_obj="//@ports.8"/>
+  <edges id="274" source_obj="//@blocks.3/@node_objs.6" sink_obj="//@ports.9"/>
+  <edges id="275" source_obj="//@blocks.3/@node_objs.6" sink_obj="//@ports.10"/>
+  <edges id="276" source_obj="//@blocks.3/@node_objs.6" sink_obj="//@ports.11"/>
+  <edges id="277" source_obj="//@blocks.3/@node_objs.6" sink_obj="//@ports.12"/>
+  <edges id="278" source_obj="//@blocks.3/@node_objs.6" sink_obj="//@ports.13"/>
+  <edges id="280" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.8"/>
+  <edges id="283" source_obj="//@blocks.3/@node_objs.9" sink_obj="//@ports.7"/>
+  <edges id="284" source_obj="//@blocks.3/@node_objs.9" sink_obj="//@ports.8"/>
+  <edges id="285" source_obj="//@blocks.3/@node_objs.9" sink_obj="//@ports.9"/>
+  <edges id="286" source_obj="//@blocks.3/@node_objs.9" sink_obj="//@ports.10"/>
+  <edges id="287" source_obj="//@blocks.3/@node_objs.9" sink_obj="//@ports.11"/>
+  <edges id="288" source_obj="//@blocks.3/@node_objs.9" sink_obj="//@ports.12"/>
+  <edges id="289" source_obj="//@blocks.3/@node_objs.9" sink_obj="//@ports.13"/>
+  <edges id="290" source_obj="//@blocks.3/@node_objs.8" sink_obj="//@blocks.3/@node_objs.9"/>
+  <edges id="305" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.11"/>
+  <edges id="306" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.11"/>
+  <edges id="307" source_obj="//@blocks.3/@node_objs.11" sink_obj="//@ports.7"/>
+  <edges id="308" source_obj="//@blocks.3/@node_objs.11" sink_obj="//@ports.8"/>
+  <edges id="309" source_obj="//@blocks.3/@node_objs.11" sink_obj="//@ports.9"/>
+  <edges id="310" source_obj="//@blocks.3/@node_objs.11" sink_obj="//@ports.10"/>
+  <edges id="311" source_obj="//@blocks.3/@node_objs.11" sink_obj="//@ports.11"/>
+  <edges id="312" source_obj="//@blocks.3/@node_objs.11" sink_obj="//@ports.12"/>
+  <edges id="313" source_obj="//@blocks.3/@node_objs.11" sink_obj="//@ports.13"/>
+  <edges id="314" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="315" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="316" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="317" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="318" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="319" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="320" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="321" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="324" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="327" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="329" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="330" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="331" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="332" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="335" source_obj="//@blocks.2/@node_objs.10" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="337" source_obj="//@blocks.2/@node_objs.11" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="338" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="339" source_obj="//@blocks.2/@node_objs.13" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="340" source_obj="//@blocks.0/@node_objs.22" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="341" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.15"/>
+  <edges id="342" source_obj="//@blocks.2/@node_objs.14" sink_obj="//@blocks.2/@node_objs.15"/>
+  <edges id="343" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.2/@node_objs.15"/>
+  <edges id="344" source_obj="//@blocks.2/@node_objs.10" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="345" source_obj="//@blocks.2/@node_objs.16" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="346" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.18"/>
+  <edges id="347" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@blocks.2/@node_objs.19"/>
+  <edges id="348" source_obj="//@blocks.2/@node_objs.18" sink_obj="//@blocks.2/@node_objs.19"/>
+  <edges id="349" source_obj="//@blocks.2/@node_objs.19" sink_obj="//@blocks.2/@node_objs.20"/>
+  <edges id="350" source_obj="//@blocks.2/@node_objs.20" sink_obj="//@blocks.2/@node_objs.21"/>
+  <edges id="352" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.22"/>
+  <edges id="356" source_obj="//@blocks.2/@node_objs.21" sink_obj="//@blocks.2/@node_objs.24"/>
+  <edges id="357" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.2/@node_objs.24"/>
+  <edges id="358" source_obj="//@blocks.0/@node_objs.28" sink_obj="//@blocks.2/@node_objs.24"/>
+  <edges id="359" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.2/@node_objs.24"/>
+  <edges id="364" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.2/@node_objs.27"/>
+  <edges id="365" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.2/@node_objs.27"/>
+  <edges id="366" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.2/@node_objs.28"/>
+  <edges id="371" source_obj="//@blocks.2/@node_objs.21" sink_obj="//@blocks.2/@node_objs.31"/>
+  <edges id="372" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.2/@node_objs.31"/>
+  <edges id="373" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.2/@node_objs.31"/>
+  <edges id="378" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.2/@node_objs.34"/>
+  <edges id="379" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.2/@node_objs.34"/>
+  <edges id="380" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.2/@node_objs.35"/>
+  <edges id="383" source_obj="//@blocks.2/@node_objs.28" sink_obj="//@blocks.2/@node_objs.36"/>
+  <edges id="384" source_obj="//@blocks.2/@node_objs.22" sink_obj="//@blocks.2/@node_objs.37"/>
+  <edges id="385" source_obj="//@blocks.0/@node_objs.21" sink_obj="//@blocks.2/@node_objs.37"/>
+  <edges id="386" source_obj="//@blocks.2/@node_objs.36" sink_obj="//@blocks.2/@node_objs.38"/>
+  <edges id="389" source_obj="//@blocks.2/@node_objs.38" sink_obj="//@blocks.2/@node_objs.39"/>
+  <edges id="394" source_obj="//@blocks.2/@node_objs.38" sink_obj="//@blocks.2/@node_objs.40"/>
+  <edges id="395" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.41"/>
+  <edges id="397" source_obj="//@blocks.2/@node_objs.41" sink_obj="//@blocks.2/@node_objs.42"/>
+  <edges id="400" source_obj="//@blocks.2/@node_objs.41" sink_obj="//@blocks.2/@node_objs.43"/>
+  <edges id="401" source_obj="//@blocks.2/@node_objs.39" sink_obj="//@blocks.2/@node_objs.44"/>
+  <edges id="404" source_obj="//@blocks.2/@node_objs.40" sink_obj="//@blocks.2/@node_objs.45"/>
+  <edges id="407" source_obj="//@blocks.2/@node_objs.45" sink_obj="//@blocks.2/@node_objs.46"/>
+  <edges id="408" source_obj="//@blocks.2/@node_objs.44" sink_obj="//@blocks.2/@node_objs.46"/>
+  <edges id="409" source_obj="//@blocks.2/@node_objs.42" sink_obj="//@blocks.2/@node_objs.47"/>
+  <edges id="411" source_obj="//@blocks.2/@node_objs.43" sink_obj="//@blocks.2/@node_objs.48"/>
+  <edges id="413" source_obj="//@blocks.2/@node_objs.48" sink_obj="//@blocks.2/@node_objs.49"/>
+  <edges id="414" source_obj="//@blocks.2/@node_objs.47" sink_obj="//@blocks.2/@node_objs.49"/>
+  <edges id="415" source_obj="//@blocks.2/@node_objs.46" sink_obj="//@blocks.2/@node_objs.50"/>
+  <edges id="416" source_obj="//@blocks.2/@node_objs.49" sink_obj="//@blocks.2/@node_objs.50"/>
+  <edges id="417" source_obj="//@blocks.2/@node_objs.36" sink_obj="//@blocks.2/@node_objs.51"/>
+  <edges id="418" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.51"/>
+  <edges id="419" source_obj="//@blocks.2/@node_objs.50" sink_obj="//@blocks.2/@node_objs.52"/>
+  <edges id="420" source_obj="//@blocks.2/@node_objs.51" sink_obj="//@blocks.2/@node_objs.52"/>
+  <edges id="421" source_obj="//@blocks.2/@node_objs.15" sink_obj="//@blocks.2/@node_objs.53"/>
+  <edges id="422" source_obj="//@blocks.2/@node_objs.37" sink_obj="//@blocks.2/@node_objs.53"/>
+  <edges id="423" source_obj="//@blocks.2/@node_objs.52" sink_obj="//@blocks.2/@node_objs.54"/>
+  <edges id="424" source_obj="//@blocks.2/@node_objs.53" sink_obj="//@blocks.2/@node_objs.54"/>
+  <edges id="425" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.55"/>
+  <edges id="426" source_obj="//@blocks.2/@node_objs.55" sink_obj="//@blocks.2/@node_objs.56"/>
+  <edges id="427" source_obj="//@blocks.2/@node_objs.54" sink_obj="//@blocks.2/@node_objs.57"/>
+  <edges id="428" source_obj="//@blocks.2/@node_objs.17" sink_obj="//@blocks.2/@node_objs.57"/>
+  <edges id="429" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.57"/>
+  <edges id="430" source_obj="//@blocks.2/@node_objs.54" sink_obj="//@blocks.2/@node_objs.58"/>
+  <edges id="431" source_obj="//@blocks.2/@node_objs.56" sink_obj="//@blocks.2/@node_objs.58"/>
+  <edges id="432" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.58"/>
+  <edges id="433" source_obj="//@blocks.2/@node_objs.54" sink_obj="//@blocks.2/@node_objs.59"/>
+  <edges id="434" source_obj="//@blocks.2/@node_objs.36" sink_obj="//@blocks.2/@node_objs.59"/>
+  <edges id="435" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.59"/>
+  <edges id="436" source_obj="//@blocks.2/@node_objs.35" sink_obj="//@blocks.2/@node_objs.60"/>
+  <edges id="437" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.60"/>
+  <edges id="438" source_obj="//@blocks.2/@node_objs.60" sink_obj="//@blocks.2/@node_objs.61"/>
+  <edges id="439" source_obj="//@blocks.2/@node_objs.56" sink_obj="//@blocks.2/@node_objs.61"/>
+  <edges id="440" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.2/@node_objs.61"/>
+  <edges id="441" source_obj="//@blocks.2/@node_objs.60" sink_obj="//@blocks.2/@node_objs.62"/>
+  <edges id="442" source_obj="//@blocks.2/@node_objs.17" sink_obj="//@blocks.2/@node_objs.62"/>
+  <edges id="443" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.62"/>
+  <edges id="444" source_obj="//@blocks.2/@node_objs.60" sink_obj="//@blocks.2/@node_objs.63"/>
+  <edges id="445" source_obj="//@blocks.2/@node_objs.35" sink_obj="//@blocks.2/@node_objs.63"/>
+  <edges id="446" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.63"/>
+  <edges id="447" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.64"/>
+  <edges id="450" source_obj="//@blocks.1/@node_objs.5" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="451" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="452" source_obj="//@blocks.2/@node_objs.10" sink_obj="//@blocks.2/@node_objs.66"/>
+  <edges id="453" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.2/@node_objs.66"/>
+  <edges id="454" source_obj="//@blocks.2/@node_objs.64" sink_obj="//@blocks.2/@node_objs.67"/>
+  <edges id="455" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.2/@node_objs.67"/>
+  <edges id="456" source_obj="//@blocks.2/@node_objs.61" sink_obj="//@blocks.2/@node_objs.68"/>
+  <edges id="457" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.2/@node_objs.68"/>
+  <edges id="458" source_obj="//@blocks.2/@node_objs.62" sink_obj="//@blocks.2/@node_objs.69"/>
+  <edges id="459" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.2/@node_objs.69"/>
+  <edges id="460" source_obj="//@blocks.2/@node_objs.58" sink_obj="//@blocks.2/@node_objs.70"/>
+  <edges id="461" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.2/@node_objs.70"/>
+  <edges id="462" source_obj="//@blocks.2/@node_objs.57" sink_obj="//@blocks.2/@node_objs.71"/>
+  <edges id="463" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.2/@node_objs.71"/>
+  <edges id="464" source_obj="//@blocks.2/@node_objs.59" sink_obj="//@blocks.2/@node_objs.72"/>
+  <edges id="465" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.72"/>
+  <edges id="466" source_obj="//@blocks.2/@node_objs.63" sink_obj="//@blocks.2/@node_objs.73"/>
+  <edges id="467" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.73"/>
+  <edges id="468" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.74"/>
+  <edges id="653" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="654" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="655" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="656" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="657" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.24" sink_obj="//@blocks.2/@node_objs.31"/>
+  <edges id="658" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="659" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="660" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.0/@node_objs.24"/>
+  <edges id="661" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="662" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="663" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="664" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@blocks.0/@node_objs.24"/>
+  <edges id="665" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.23" sink_obj="//@blocks.2/@node_objs.25"/>
+  <edges id="666" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.25" sink_obj="//@blocks.2/@node_objs.26"/>
+  <edges id="667" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.26" sink_obj="//@blocks.2/@node_objs.29"/>
+  <edges id="668" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.29" sink_obj="//@blocks.2/@node_objs.30"/>
+  <edges id="669" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.30" sink_obj="//@blocks.2/@node_objs.32"/>
+  <edges id="670" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.32" sink_obj="//@blocks.2/@node_objs.33"/>
+  <edges id="671" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.23" sink_obj="//@blocks.2/@node_objs.24"/>
+  <edges id="672" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.24" sink_obj="//@blocks.2/@node_objs.25"/>
+  <edges id="673" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.26" sink_obj="//@blocks.2/@node_objs.27"/>
+  <edges id="674" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.27" sink_obj="//@blocks.2/@node_objs.29"/>
+  <edges id="675" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.30" sink_obj="//@blocks.2/@node_objs.31"/>
+  <edges id="676" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.31" sink_obj="//@blocks.2/@node_objs.32"/>
+  <edges id="677" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.33" sink_obj="//@blocks.2/@node_objs.34"/>
+  <edges id="678" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.5" sink_obj="//@blocks.3/@node_objs.7"/>
+  <edges id="679" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.7" sink_obj="//@blocks.3/@node_objs.10"/>
+  <edges id="680" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.5" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="681" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.6" sink_obj="//@blocks.3/@node_objs.7"/>
+  <edges id="682" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.7" sink_obj="//@blocks.3/@node_objs.9"/>
+  <edges id="683" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.9" sink_obj="//@blocks.3/@node_objs.10"/>
+  <edges id="684" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.10" sink_obj="//@blocks.3/@node_objs.11"/>
+  <edges id="685" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="686" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.23"/>
+  <edges id="687" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@blocks.0/@node_objs.21"/>
+  <edges id="688" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="689" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="690" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.34" sink_obj="//@blocks.2/@node_objs.35"/>
+  <edges id="691" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.31" sink_obj="//@blocks.2/@node_objs.34"/>
+  <edges id="692" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.27" sink_obj="//@blocks.2/@node_objs.28"/>
+  <edges id="693" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.24" sink_obj="//@blocks.2/@node_objs.27"/>
+  <edges id="694" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.67"/>
+  <edges id="695" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.2/@node_objs.68"/>
+  <edges id="696" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.69"/>
+  <edges id="697" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.70"/>
+  <edges id="698" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.71"/>
+  <edges id="699" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.72"/>
+  <edges id="700" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.73"/>
+  <edges id="701" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.9" sink_obj="//@blocks.3/@node_objs.11"/>
+  <edges id="702" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.6" sink_obj="//@blocks.3/@node_objs.9"/>
+  <edges id="703" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.29" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="704" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.30" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="705" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.32" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="706" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.29" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="707" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.30" sink_obj="//@blocks.2/@node_objs.66"/>
+  <edges id="708" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.31" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="709" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.31" sink_obj="//@blocks.2/@node_objs.67"/>
+  <edges id="710" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.32" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="711" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.32" sink_obj="//@blocks.2/@node_objs.72"/>
+  <edges id="712" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.33" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="713" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.33" sink_obj="//@blocks.2/@node_objs.73"/>
+  <edges id="714" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.66"/>
+  <edges id="715" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="716" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="717" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.24" sink_obj="//@blocks.2/@node_objs.27"/>
+  <edges id="718" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.6" sink_obj="//@blocks.3/@node_objs.11"/>
+  <edges id="719" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.2/@node_objs.24"/>
+  <edges id="720" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.2/@node_objs.31"/>
+  <blocks id="72" name="entry" type="BlockType">
+    <controlOutputObjs>for.body4.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="maxBrightness_1" originalName="maxBrightness" coreId="566" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="minDistance" originalName="minDistance" coreId="3" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="i_04_i627" coreId="566" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="j_02_i629" coreId="3" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="i_04_i631" coreId="0" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="j_02_i633" coreId="0" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="j_1" originalName="j" coreId="0" bitwidth="11" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="i_2" originalName="i" coreId="0" bitwidth="2" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="indvar_flatten20" coreId="0" bitwidth="12" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="current_brightness_loc" coreId="0" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="sum_loc" coreId="0" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="refPixel_0_033_loc" coreId="0" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="refPixel_1_034_loc" coreId="0" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="brightness_stream" lineNumber="44" originalName="brightness_stream" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="brightness_stream_fifo_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="calculate_brightness_stream" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="44" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness_stream"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="sum_stream" lineNumber="14" originalName="sum_stream" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="sum_stream_fifo_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="calculate_distance_stream" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="14" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_distance_stream"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="image" lineNumber="94" originalName="image" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="image_U" coreName="RAM" implIndex="auto" control="no" opType="ram_t2p" coreId="83" contextFuncName="hyperspectral_hw_wrapped" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="94" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw_wrapped"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="empty_26" coreId="0" bitwidth="32" opcode="wait" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="_ln0" rtlName="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239" coreId="0" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>in_stream_V_data_V</dataInputObjs>
+      <dataInputObjs>in_stream_V_keep_V</dataInputObjs>
+      <dataInputObjs>in_stream_V_strb_V</dataInputObjs>
+      <dataInputObjs>in_stream_V_user_V</dataInputObjs>
+      <dataInputObjs>in_stream_V_last_V</dataInputObjs>
+      <dataInputObjs>in_stream_V_id_V</dataInputObjs>
+      <dataInputObjs>in_stream_V_dest_V</dataInputObjs>
+      <constName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="empty_27" coreId="0" bitwidth="32" opcode="wait" nodeLabel="3.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="empty_28" coreId="0" bitwidth="32" opcode="wait" nodeLabel="4.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="_ln0" rtlName="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258" coreId="3013212800" opcode="call" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="5.07" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <dataInputObjs>in_stream_V_data_V</dataInputObjs>
+      <dataInputObjs>in_stream_V_keep_V</dataInputObjs>
+      <dataInputObjs>in_stream_V_strb_V</dataInputObjs>
+      <dataInputObjs>in_stream_V_user_V</dataInputObjs>
+      <dataInputObjs>in_stream_V_last_V</dataInputObjs>
+      <dataInputObjs>in_stream_V_id_V</dataInputObjs>
+      <dataInputObjs>in_stream_V_dest_V</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="refPixel_1_034_loc_load" coreId="0" bitwidth="32" opcode="load" nodeLabel="6.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="refPixel_0_033_loc_load" coreId="0" bitwidth="32" opcode="load" nodeLabel="6.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="empty_29" rtlName="empty_29_fu_405_p1" coreId="3013668368" bitwidth="9" opcode="trunc" nodeLabel="6.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="empty_30" coreId="0" bitwidth="32" opcode="wait" nodeLabel="6.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="tmp_8" lineNumber="17" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="tmp_8_fu_409_p3" coreId="3013668368" contextFuncName="calculate_distance_stream" bitwidth="19" opcode="bitconcatenate" nodeLabel="6.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="17" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_distance_stream"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="trunc_ln17" lineNumber="17" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="trunc_ln17_fu_417_p1" coreId="0" contextFuncName="calculate_distance_stream" bitwidth="19" opcode="trunc" nodeLabel="6.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="17" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_distance_stream"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="add_ln17" lineNumber="17" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="grp_fu_749_p0" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="calculate_distance_stream" bitwidth="19" opcode="add" nodeLabel="6.0" m_display="0" m_delay="1.05" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="17" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_distance_stream"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="mul_ln17" lineNumber="17" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="mul_mul_19s_8ns_19_4_1_U62" coreName="DSP48" implIndex="dsp48" control="no" opType="mul" coreId="127" contextFuncName="calculate_distance_stream" bitwidth="19" opcode="mul" nodeLabel="6.0" nodeLatency="3" m_display="0" m_delay="0.69" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="17" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_distance_stream"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="indvar_flatten20_write_ln64" lineNumber="64" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="3013686208" contextFuncName="hyperspectral_hw" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="64" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="i_2_write_ln64" lineNumber="64" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="3013608784" contextFuncName="hyperspectral_hw" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="64" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="j_1_write_ln64" lineNumber="64" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="3013622808" contextFuncName="hyperspectral_hw" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="64" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="minDistance_write_ln64" lineNumber="64" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="0" contextFuncName="hyperspectral_hw" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="64" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="maxBrightness_1_write_ln64" lineNumber="64" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="0" contextFuncName="hyperspectral_hw" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="64" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="br_ln64" lineNumber="64" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="3012855552" contextFuncName="hyperspectral_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="64" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <controlInputObjs>for.body4.i</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp">
+      <validLinenumbers>44</validLinenumbers>
+      <validLinenumbers>14</validLinenumbers>
+      <validLinenumbers>94</validLinenumbers>
+      <validLinenumbers>17</validLinenumbers>
+      <validLinenumbers>64</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="80" name="for.body4.i" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>for.inc7.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.inc76.preheader</controlOutputObjs>
+    <controlOutputObjs>for.inc7.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="i" lineNumber="64" originalName="i" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="3013692976" contextFuncName="hyperspectral_hw" bitwidth="2" opcode="load" nodeLabel="10.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="64" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="indvar_flatten20_load" lineNumber="64" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="3013694112" contextFuncName="hyperspectral_hw" bitwidth="12" opcode="load" nodeLabel="10.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="64" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="zext_ln41" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="zext_ln41_fu_433_p1" coreId="3013696256" contextFuncName="calculate_brightness_stream" bitwidth="32" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness_stream"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="cmp1_i_i" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="cmp1_i_i_fu_437_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="calculate_brightness_stream" bitwidth="1" opcode="icmp" nodeLabel="10.0" m_display="0" m_delay="1.11" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness_stream"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="icmp_ln64" lineNumber="64" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="icmp_ln64_fu_442_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="hyperspectral_hw" bitwidth="1" opcode="icmp" nodeLabel="10.0" m_display="0" m_delay="0.86" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="64" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="add_ln64_1" lineNumber="64" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="add_ln64_1_fu_448_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="hyperspectral_hw" bitwidth="12" opcode="add" nodeLabel="10.0" m_display="0" m_delay="0.96" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="64" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="br_ln64" lineNumber="64" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="0" contextFuncName="hyperspectral_hw" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="64" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>for.inc7.i</controlInputObjs>
+      <controlInputObjs>for.inc76.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp">
+      <validLinenumbers>64</validLinenumbers>
+      <validLinenumbers>41</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="159" name="for.inc7.i" type="BlockType">
+    <controlInputObjs>for.body4.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.body4.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="maxBrightness_1_load" lineNumber="75" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="3012855552" contextFuncName="hyperspectral_hw" bitwidth="32" opcode="load" nodeLabel="29.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="75" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="minDistance_load_1" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="1414419794" contextFuncName="update_closest_pixel" bitwidth="32" opcode="load" nodeLabel="28.0" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <dataOutputObjs>fcmp</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="i_04_i627_load_1" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="0" contextFuncName="update_closest_pixel" bitwidth="32" opcode="load" nodeLabel="29.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="j_02_i629_load_1" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="3013690912" contextFuncName="update_closest_pixel" bitwidth="32" opcode="load" nodeLabel="29.0" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="i_04_i631_load_1" lineNumber="75" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="3012708832" contextFuncName="hyperspectral_hw" bitwidth="32" opcode="load" nodeLabel="29.0" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="75" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="j_02_i633_load_1" lineNumber="75" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="3013169744" contextFuncName="hyperspectral_hw" bitwidth="32" opcode="load" nodeLabel="29.0" m_display="0" m_topoIndex="83" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="75" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="j_1_load" lineNumber="65" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="3013177984" contextFuncName="hyperspectral_hw" bitwidth="11" opcode="load" nodeLabel="10.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="65" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="add_ln64" lineNumber="64" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="add_ln64_fu_457_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="hyperspectral_hw" bitwidth="2" opcode="add" nodeLabel="10.0" m_display="0" m_delay="0.62" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="64" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="icmp_ln65" lineNumber="65" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="icmp_ln65_fu_463_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="hyperspectral_hw" bitwidth="1" opcode="icmp" nodeLabel="10.0" m_display="0" m_delay="0.85" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="65" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="select_ln41" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln41_fu_469_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness_stream" bitwidth="11" opcode="select" nodeLabel="10.0" m_display="0" m_delay="0.45" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness_stream"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="select_ln41_1" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln41_1_fu_477_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness_stream" bitwidth="2" opcode="select" nodeLabel="10.0" m_display="0" m_delay="0.26" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness_stream"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="94" name="tmp_s" lineNumber="17" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="tmp_s_fu_485_p3" coreId="0" contextFuncName="calculate_distance_stream" bitwidth="12" opcode="bitconcatenate" nodeLabel="10.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="17" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_distance_stream"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="zext_ln41_2" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="grp_fu_755_p00" coreId="0" contextFuncName="calculate_brightness_stream" bitwidth="13" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness_stream"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="zext_ln41_1" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="zext_ln41_1_fu_497_p1" coreId="3013464272" contextFuncName="calculate_brightness_stream" bitwidth="32" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness_stream"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="cmp1_i_i_mid1" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="cmp1_i_i_mid1_fu_501_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="calculate_brightness_stream" bitwidth="1" opcode="icmp" nodeLabel="10.0" m_display="0" m_delay="1.11" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness_stream"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="select_ln41_2" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln41_2_fu_555_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="calculate_brightness_stream" bitwidth="1" opcode="select" nodeLabel="29.0" m_display="0" m_topoIndex="84" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness_stream"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="trunc_ln41" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="trunc_ln41_fu_506_p1" coreId="3013175680" contextFuncName="calculate_brightness_stream" bitwidth="1" opcode="trunc" nodeLabel="10.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness_stream"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="100" name="zext_ln41_4" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="zext_ln41_4_fu_560_p1" coreId="1409623650" contextFuncName="calculate_brightness_stream" bitwidth="32" opcode="zext" nodeLabel="29.0" m_display="0" m_topoIndex="85" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness_stream"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="zext_ln17" lineNumber="17" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="grp_fu_755_p10" coreId="3013573856" contextFuncName="calculate_distance_stream" bitwidth="13" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="17" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_distance_stream"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="102" name="add_ln17_1" lineNumber="17" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="am_addmul_12ns_11ns_8ns_19_4_1_U63" coreName="DSP48" implIndex="dsp48" control="no" opType="add" coreId="127" contextFuncName="calculate_distance_stream" bitwidth="13" opcode="add" nodeLabel="10.0" m_display="0" m_delay="2.48" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="17" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_distance_stream"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="103" name="zext_ln41_5" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="am_addmul_12ns_11ns_8ns_19_4_1_U63" coreName="DSP48" implIndex="dsp48" control="no" opType="zext" coreId="127" contextFuncName="calculate_brightness_stream" bitwidth="19" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness_stream"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="mul_ln41" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="am_addmul_12ns_11ns_8ns_19_4_1_U63" coreName="DSP48" implIndex="dsp48" control="no" opType="mul" coreId="127" contextFuncName="calculate_brightness_stream" bitwidth="19" opcode="mul" nodeLabel="10.0" nodeLatency="3" m_display="0" m_delay="1.08" m_topoIndex="56" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness_stream"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="zext_ln41_3" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="zext_ln41_3_fu_514_p1" coreId="0" contextFuncName="calculate_brightness_stream" bitwidth="32" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness_stream"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="107" name="empty_35" coreId="3013662760" bitwidth="32" opcode="wait" nodeLabel="10.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="108" name="_ln41" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278" coreId="0" contextFuncName="calculate_brightness_stream" opcode="call" nodeLabel="13.0" nodeLatency="1" m_display="0" m_delay="2.4" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness_stream"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>hyperspectral_hw_wrapped_Pipeline_L3</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="109" name="empty_36" coreId="0" bitwidth="32" opcode="wait" nodeLabel="15.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="110" name="empty_37" coreId="3013665040" bitwidth="32" opcode="wait" nodeLabel="16.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="111" name="_ln0" rtlName="grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286" coreId="3013666032" opcode="call" nodeLabel="16.0" nodeLatency="1" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>hyperspectral_hw_wrapped_Pipeline_L4</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="112" name="sum_loc_load" coreId="3013666608" bitwidth="32" opcode="load" nodeLabel="18.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>fsqrt</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="113" name="empty_38" coreId="1702258035" bitwidth="32" opcode="wait" nodeLabel="18.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="114" name="empty_39" coreId="3013667824" bitwidth="32" opcode="wait" nodeLabel="19.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="115" name="_ln41" lineNumber="41" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292" coreId="1413207294" contextFuncName="calculate_brightness_stream" opcode="call" nodeLabel="19.0" nodeLatency="1" m_display="0" m_delay="2.4" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="41" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="calculate_brightness_stream"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>hyperspectral_hw_wrapped_Pipeline_L5</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="116" name="empty_40" coreId="1413209343" bitwidth="32" opcode="wait" nodeLabel="21.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="117" name="empty_41" coreId="176" bitwidth="32" opcode="wait" nodeLabel="22.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="118" name="_ln0" rtlName="grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299" coreId="0" opcode="call" nodeLabel="22.0" nodeLatency="1" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>hyperspectral_hw_wrapped_Pipeline_L6</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="119" name="current_brightness_loc_load" coreId="1413202431" bitwidth="32" opcode="load" nodeLabel="29.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="120" name="minDistance_3" lineNumber="8" originalName="minDistance" fileName="/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp" fileDirectory="../../../../../../../wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" rtlName="fsqrt_32ns_32ns_32_10_no_dsp_1_U61" coreName="FSqrt" implIndex="fabric" control="no" opType="fsqrt" coreId="35" contextFuncName="sqrt" bitwidth="32" opcode="fsqrt" nodeLabel="18.0" nodeLatency="9" m_display="0" m_delay="6.47" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp" linenumber="8" fileDirectory="/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared" functionName="sqrt"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <dataOutputObjs>fcmp</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="121" name="icmp_ln34" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="icmp_ln34_fu_518_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="update_closest_pixel" bitwidth="1" opcode="icmp" nodeLabel="10.0" m_display="0" m_delay="1.11" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="122" name="bitcast_ln34" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="bitcast_ln34_fu_566_p1" coreId="0" contextFuncName="update_closest_pixel" bitwidth="32" opcode="bitcast" nodeLabel="29.0" m_display="0" m_topoIndex="87" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>fsqrt</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="123" name="tmp_5" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="tmp_5_fu_569_p4" coreId="3013676480" contextFuncName="update_closest_pixel" bitwidth="8" opcode="partselect" nodeLabel="29.0" m_display="0" m_topoIndex="88" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="124" name="trunc_ln34" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="trunc_ln34_fu_579_p1" coreId="0" contextFuncName="update_closest_pixel" bitwidth="23" opcode="trunc" nodeLabel="29.0" m_display="0" m_topoIndex="89" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="125" name="bitcast_ln34_1" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="bitcast_ln34_1_fu_583_p1" coreId="1769239916" contextFuncName="update_closest_pixel" bitwidth="32" opcode="bitcast" nodeLabel="29.0" m_display="0" m_topoIndex="90" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="126" name="tmp_6" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="tmp_6_fu_586_p4" coreId="0" contextFuncName="update_closest_pixel" bitwidth="8" opcode="partselect" nodeLabel="29.0" m_display="0" m_topoIndex="91" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="127" name="trunc_ln34_1" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="trunc_ln34_1_fu_596_p1" coreId="3013150784" contextFuncName="update_closest_pixel" bitwidth="23" opcode="trunc" nodeLabel="29.0" m_display="0" m_topoIndex="92" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="128" name="icmp_ln34_1" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="icmp_ln34_1_fu_600_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="update_closest_pixel" bitwidth="1" opcode="icmp" nodeLabel="29.0" m_display="0" m_delay="0.85" m_topoIndex="93" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="129" name="icmp_ln34_2" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="icmp_ln34_2_fu_606_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="update_closest_pixel" bitwidth="1" opcode="icmp" nodeLabel="29.0" m_display="0" m_delay="0.97" m_topoIndex="94" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="130" name="or_ln34_1" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="or_ln34_1_fu_612_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="update_closest_pixel" bitwidth="1" opcode="or" nodeLabel="29.0" m_display="0" m_topoIndex="95" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="131" name="icmp_ln34_3" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="icmp_ln34_3_fu_618_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="update_closest_pixel" bitwidth="1" opcode="icmp" nodeLabel="29.0" m_display="0" m_delay="0.85" m_topoIndex="96" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="132" name="icmp_ln34_4" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="icmp_ln34_4_fu_624_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="update_closest_pixel" bitwidth="1" opcode="icmp" nodeLabel="29.0" m_display="0" m_delay="0.97" m_topoIndex="97" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="133" name="or_ln34_2" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="or_ln34_2_fu_630_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="update_closest_pixel" bitwidth="1" opcode="or" nodeLabel="29.0" m_display="0" m_topoIndex="98" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="134" name="and_ln34_1" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="and_ln34_1_fu_636_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="update_closest_pixel" bitwidth="1" opcode="and" nodeLabel="29.0" m_display="0" m_topoIndex="99" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="135" name="tmp_7" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="fcmp_32ns_32ns_1_2_no_dsp_1_U60" coreName="FCompare" implIndex="auto" control="no" opType="fcmp" coreId="19" contextFuncName="update_closest_pixel" bitwidth="1" opcode="fcmp" nodeLabel="28.0" nodeLatency="1" m_display="0" m_delay="3.34" m_topoIndex="78" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>fsqrt</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="136" name="and_ln34_2" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="and_ln34_2_fu_642_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="update_closest_pixel" bitwidth="1" opcode="and" nodeLabel="29.0" m_display="0" m_delay="0.33" m_topoIndex="100" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>fcmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="137" name="or_ln34" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="or_ln34_fu_648_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="update_closest_pixel" bitwidth="1" opcode="or" nodeLabel="29.0" m_display="0" m_topoIndex="101" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="138" name="and_ln34" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="and_ln34_fu_653_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="update_closest_pixel" bitwidth="1" opcode="and" nodeLabel="29.0" m_display="0" m_delay="0.33" m_topoIndex="102" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="139" name="trunc_ln34_2" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="trunc_ln34_2_fu_523_p1" coreId="0" contextFuncName="update_closest_pixel" bitwidth="10" opcode="trunc" nodeLabel="10.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="140" name="zext_ln34" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="zext_ln34_fu_659_p1" coreId="3013603440" contextFuncName="update_closest_pixel" bitwidth="32" opcode="zext" nodeLabel="29.0" m_display="0" m_topoIndex="103" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="141" name="select_ln34" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln34_fu_662_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="update_closest_pixel" bitwidth="32" opcode="select" nodeLabel="29.0" m_display="0" m_delay="0.52" m_topoIndex="104" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="142" name="select_ln34_1" lineNumber="34" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln34_1_fu_670_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="update_closest_pixel" bitwidth="32" opcode="select" nodeLabel="29.0" m_display="0" m_delay="0.52" m_topoIndex="105" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="143" name="c" lineNumber="34" originalName="minDistance" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="c_fu_678_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="update_closest_pixel" bitwidth="32" opcode="select" nodeLabel="29.0" m_display="0" m_delay="0.52" m_topoIndex="106" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="34" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="update_closest_pixel"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>fsqrt</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="144" name="icmp_ln75" lineNumber="75" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="icmp_ln75_fu_684_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="hyperspectral_hw" bitwidth="1" opcode="icmp" nodeLabel="29.0" m_display="0" m_delay="1.11" m_topoIndex="107" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="75" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="145" name="select_ln75" lineNumber="75" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln75_fu_690_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="hyperspectral_hw" bitwidth="32" opcode="select" nodeLabel="29.0" m_display="0" m_delay="0.52" m_topoIndex="108" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="75" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="146" name="select_ln75_1" lineNumber="75" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="select_ln75_1_fu_698_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="hyperspectral_hw" bitwidth="32" opcode="select" nodeLabel="29.0" m_display="0" m_delay="0.52" m_topoIndex="109" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="75" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="147" name="maxBrightness" lineNumber="75" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="maxBrightness_fu_706_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="hyperspectral_hw" bitwidth="32" opcode="select" nodeLabel="29.0" m_display="0" m_delay="0.52" m_topoIndex="110" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="75" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="148" name="add_ln65" lineNumber="65" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="add_ln65_fu_527_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="hyperspectral_hw" bitwidth="11" opcode="add" nodeLabel="10.0" m_display="0" m_delay="0.94" m_topoIndex="61" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="65" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="149" name="indvar_flatten20_write_ln65" lineNumber="65" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="3013615856" contextFuncName="hyperspectral_hw" opcode="store" nodeLabel="10.0" m_display="0" m_delay="0.48" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="65" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="150" name="i_2_write_ln65" lineNumber="65" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="3013608784" contextFuncName="hyperspectral_hw" opcode="store" nodeLabel="10.0" m_display="0" m_delay="0.48" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="65" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="151" name="j_1_write_ln65" lineNumber="65" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="0" contextFuncName="hyperspectral_hw" opcode="store" nodeLabel="10.0" m_display="0" m_delay="0.48" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="65" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="152" name="j_02_i633_write_ln65" lineNumber="65" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="0" contextFuncName="hyperspectral_hw" opcode="store" nodeLabel="29.0" m_display="0" m_topoIndex="111" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="65" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="153" name="i_04_i631_write_ln65" lineNumber="65" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="3013546320" contextFuncName="hyperspectral_hw" opcode="store" nodeLabel="29.0" m_display="0" m_topoIndex="112" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="65" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="154" name="j_02_i629_write_ln65" lineNumber="65" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="0" contextFuncName="hyperspectral_hw" opcode="store" nodeLabel="29.0" m_display="0" m_topoIndex="113" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="65" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="155" name="i_04_i627_write_ln65" lineNumber="65" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="0" contextFuncName="hyperspectral_hw" opcode="store" nodeLabel="29.0" m_display="0" m_topoIndex="114" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="65" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="156" name="minDistance_write_ln65" lineNumber="65" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="3013568336" contextFuncName="hyperspectral_hw" opcode="store" nodeLabel="29.0" m_display="0" m_delay="0.48" m_topoIndex="115" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="65" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="157" name="maxBrightness_1_write_ln65" lineNumber="65" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="3013546320" contextFuncName="hyperspectral_hw" opcode="store" nodeLabel="29.0" m_display="0" m_delay="0.48" m_topoIndex="116" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="65" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="158" name="br_ln65" lineNumber="65" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="3013571488" contextFuncName="hyperspectral_hw" opcode="br" nodeLabel="29.0" m_display="0" m_topoIndex="117" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="65" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw"/>
+      <controlInputObjs>for.body4.i</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp">
+      <validLinenumbers>8</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp">
+      <validLinenumbers>75</validLinenumbers>
+      <validLinenumbers>34</validLinenumbers>
+      <validLinenumbers>65</validLinenumbers>
+      <validLinenumbers>64</validLinenumbers>
+      <validLinenumbers>41</validLinenumbers>
+      <validLinenumbers>17</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="173" name="for.inc76.preheader" type="BlockType">
+    <controlInputObjs>for.body4.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="160" name="minDistance_load" lineNumber="154" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="176" contextFuncName="hyperspectral_hw_wrapped" bitwidth="32" opcode="load" nodeLabel="32.0" m_display="0" m_topoIndex="122" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="154" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw_wrapped"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="161" name="i_04_i627_load" coreId="3013574960" bitwidth="32" opcode="load" nodeLabel="34.0" m_display="0" m_topoIndex="126" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="162" name="j_02_i629_load" coreId="1145981250" bitwidth="32" opcode="load" nodeLabel="34.0" m_display="0" m_topoIndex="127" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="163" name="i_04_i631_load" coreId="3013576176" bitwidth="32" opcode="load" nodeLabel="30.0" m_display="0" m_topoIndex="118" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="164" name="j_02_i633_load" coreId="3013576752" bitwidth="32" opcode="load" nodeLabel="30.0" m_display="0" m_topoIndex="119" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="165" name="empty_31" coreId="1330007625" bitwidth="32" opcode="wait" nodeLabel="30.0" m_display="0" m_topoIndex="120" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="166" name="_ln0" rtlName="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305" coreId="3013578048" opcode="call" nodeLabel="30.0" nodeLatency="1" m_display="0" m_delay="7.2" m_topoIndex="121" m_clusterGroupNumber="-1">
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>out_stream_V_data_V</dataOutputObjs>
+      <dataOutputObjs>out_stream_V_keep_V</dataOutputObjs>
+      <dataOutputObjs>out_stream_V_strb_V</dataOutputObjs>
+      <dataOutputObjs>out_stream_V_user_V</dataOutputObjs>
+      <dataOutputObjs>out_stream_V_last_V</dataOutputObjs>
+      <dataOutputObjs>out_stream_V_id_V</dataOutputObjs>
+      <dataOutputObjs>out_stream_V_dest_V</dataOutputObjs>
+      <constName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="167" name="empty_32" coreId="0" bitwidth="32" opcode="wait" nodeLabel="32.0" m_display="0" m_topoIndex="123" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="168" name="w_V" lineNumber="154" originalName="w.V" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." rtlName="w_V_fu_744_p1" coreId="3013579264" contextFuncName="hyperspectral_hw_wrapped" bitwidth="32" opcode="bitcast" nodeLabel="32.0" m_display="0" m_topoIndex="124" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="154" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw_wrapped"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="169" name="out_stream_V_data_V_write_ln304" lineNumber="304" fileName="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="123" contextFuncName="write" opcode="write" nodeLabel="32.0" nodeLatency="1" m_display="0" m_topoIndex="125" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="write"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>out_stream_V_data_V</dataOutputObjs>
+      <dataOutputObjs>out_stream_V_keep_V</dataOutputObjs>
+      <dataOutputObjs>out_stream_V_strb_V</dataOutputObjs>
+      <dataOutputObjs>out_stream_V_user_V</dataOutputObjs>
+      <dataOutputObjs>out_stream_V_last_V</dataOutputObjs>
+      <dataOutputObjs>out_stream_V_id_V</dataOutputObjs>
+      <dataOutputObjs>out_stream_V_dest_V</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="170" name="empty_33" coreId="1819113532" bitwidth="32" opcode="wait" nodeLabel="34.0" m_display="0" m_topoIndex="128" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="171" name="_ln0" rtlName="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325" coreId="3013586400" opcode="call" nodeLabel="34.0" nodeLatency="1" m_display="0" m_delay="7.2" m_topoIndex="129" m_clusterGroupNumber="-1">
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>out_stream_V_data_V</dataOutputObjs>
+      <dataOutputObjs>out_stream_V_keep_V</dataOutputObjs>
+      <dataOutputObjs>out_stream_V_strb_V</dataOutputObjs>
+      <dataOutputObjs>out_stream_V_user_V</dataOutputObjs>
+      <dataOutputObjs>out_stream_V_last_V</dataOutputObjs>
+      <dataOutputObjs>out_stream_V_id_V</dataOutputObjs>
+      <dataOutputObjs>out_stream_V_dest_V</dataOutputObjs>
+      <constName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="172" name="_ln178" lineNumber="178" fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" fileDirectory=".." coreId="3013585248" contextFuncName="hyperspectral_hw_wrapped" opcode="ret" nodeLabel="36.0" m_display="0" m_topoIndex="130" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" linenumber="178" fileDirectory="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS" functionName="hyperspectral_hw_wrapped"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp">
+      <validLinenumbers>154</validLinenumbers>
+      <validLinenumbers>178</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h">
+      <validLinenumbers>304</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <ScheduleInfo time="21"/>
+  <ScheduleInfo time="22"/>
+  <ScheduleInfo time="23"/>
+  <ScheduleInfo time="24"/>
+  <ScheduleInfo time="25"/>
+  <ScheduleInfo time="26"/>
+  <ScheduleInfo time="27"/>
+  <ScheduleInfo time="28"/>
+  <ScheduleInfo time="29"/>
+  <ScheduleInfo time="30"/>
+  <ScheduleInfo time="31"/>
+  <ScheduleInfo time="32"/>
+  <ScheduleInfo time="33"/>
+  <ScheduleInfo time="34"/>
+  <ScheduleInfo time="35"/>
+  <ScheduleInfo time="36"/>
+  <regnodes realName="i_2_reg_809">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln65_reg_883">
+    <nodeIds>91</nodeIds>
+  </regnodes>
+  <regnodes realName="j_02_i629_reg_784">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="i_04_i627_load_reg_946">
+    <nodeIds>161</nodeIds>
+  </regnodes>
+  <regnodes realName="j_02_i633_load_reg_936">
+    <nodeIds>164</nodeIds>
+  </regnodes>
+  <regnodes realName="maxBrightness_1_reg_764">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="i_04_i631_reg_790">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln41_reg_893">
+    <nodeIds>99</nodeIds>
+  </regnodes>
+  <regnodes realName="j_02_i633_reg_796">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="w_V_reg_941">
+    <nodeIds>168</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten20_reg_816">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="minDistance_reg_771">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="minDistance_3_reg_917">
+    <nodeIds>120</nodeIds>
+  </regnodes>
+  <regnodes realName="sum_loc_reg_829">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln34_2_reg_903">
+    <nodeIds>139</nodeIds>
+  </regnodes>
+  <regnodes realName="j_02_i629_load_reg_951">
+    <nodeIds>162</nodeIds>
+  </regnodes>
+  <regnodes realName="brightness_stream_reg_847">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="cmp1_i_i_mid1_reg_888">
+    <nodeIds>97</nodeIds>
+  </regnodes>
+  <regnodes realName="current_brightness_loc_reg_823">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="refPixel_0_033_loc_reg_835">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_ln41_reg_908">
+    <nodeIds>104</nodeIds>
+  </regnodes>
+  <regnodes realName="minDistance_load_1_reg_924">
+    <nodeIds>82</nodeIds>
+  </regnodes>
+  <regnodes realName="sum_stream_reg_853">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="i_04_i627_reg_778">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln17_reg_865">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="cmp1_i_i_reg_875">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="refPixel_1_034_loc_reg_841">
+    <nodeIds>27</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_ln17_reg_870">
+    <nodeIds>65</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln34_reg_898">
+    <nodeIds>121</nodeIds>
+  </regnodes>
+  <regnodes realName="i_04_i631_load_reg_931">
+    <nodeIds>163</nodeIds>
+  </regnodes>
+  <regnodes realName="j_1_reg_802">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <expressionNodes realName="or_ln34_2_fu_630">
+    <nodeIds>133</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln41_3_fu_514">
+    <nodeIds>105</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln75_1_fu_698">
+    <nodeIds>146</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_2_fu_172">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln41_fu_506">
+    <nodeIds>99</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln34_1_fu_670">
+    <nodeIds>142</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_29_fu_405">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sum_loc_fu_184">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln34_4_fu_624">
+    <nodeIds>132</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="image_alloca_fu_204">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="w_V_fu_744">
+    <nodeIds>168</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_485">
+    <nodeIds>94</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln41_4_fu_560">
+    <nodeIds>100</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln64_fu_457">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cmp1_i_i_fu_437">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_8_fu_409">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="maxBrightness_1_fu_144">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln17_fu_421">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cmp1_i_i_mid1_fu_501">
+    <nodeIds>97</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sum_stream_fu_200">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_5_fu_569">
+    <nodeIds>123</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_02_i633_fu_164">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="refPixel_1_034_loc_fu_192">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln34_fu_662">
+    <nodeIds>141</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln34_fu_566">
+    <nodeIds>122</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln34_1_fu_596">
+    <nodeIds>127</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln34_1_fu_583">
+    <nodeIds>125</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="c_fu_678">
+    <nodeIds>143</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln34_2_fu_606">
+    <nodeIds>129</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln75_fu_684">
+    <nodeIds>144</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln34_fu_579">
+    <nodeIds>124</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln64_1_fu_448">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln64_fu_442">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten20_fu_176">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln34_3_fu_618">
+    <nodeIds>131</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln65_fu_463">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln34_fu_659">
+    <nodeIds>140</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln17_fu_510">
+    <nodeIds>101</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln41_2_fu_555">
+    <nodeIds>98</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln34_fu_648">
+    <nodeIds>137</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_1_fu_168">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln41_1_fu_497">
+    <nodeIds>96</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln34_1_fu_612">
+    <nodeIds>130</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln34_2_fu_523">
+    <nodeIds>139</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="refPixel_0_033_loc_fu_188">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_04_i631_fu_160">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln41_2_fu_493">
+    <nodeIds>95</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_6_fu_586">
+    <nodeIds>126</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln34_1_fu_636">
+    <nodeIds>134</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="current_brightness_loc_fu_180">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln34_fu_653">
+    <nodeIds>138</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_02_i629_fu_156">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln41_fu_469">
+    <nodeIds>92</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_04_i627_fu_152">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln34_fu_518">
+    <nodeIds>121</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="minDistance_fu_148">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln34_1_fu_600">
+    <nodeIds>128</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln75_fu_690">
+    <nodeIds>145</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln17_fu_417">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln41_fu_433">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln41_1_fu_477">
+    <nodeIds>93</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln65_fu_527">
+    <nodeIds>148</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln34_2_fu_642">
+    <nodeIds>136</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="brightness_stream_fu_196">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="maxBrightness_fu_706">
+    <nodeIds>147</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_749">
+    <nodeIds>65</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239">
+    <nodeIds>54</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325">
+    <nodeIds>171</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_755">
+    <nodeIds>102</nodeIds>
+    <nodeIds>103</nodeIds>
+    <nodeIds>104</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_349">
+    <nodeIds>120</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292">
+    <nodeIds>115</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286">
+    <nodeIds>111</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_345">
+    <nodeIds>135</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258">
+    <nodeIds>57</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278">
+    <nodeIds>108</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299">
+    <nodeIds>118</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305">
+    <nodeIds>166</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="grp_load_fu_362">
+    <nodeIds>84</nodeIds>
+    <nodeIds>162</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln64_store_fu_384">
+    <nodeIds>68</nodeIds>
+  </ioNodes>
+  <ioNodes realName="refPixel_0_033_loc_load_load_fu_402">
+    <nodeIds>59</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_208">
+    <nodeIds>169</nodeIds>
+  </ioNodes>
+  <ioNodes realName="maxBrightness_1_load_load_fu_552">
+    <nodeIds>81</nodeIds>
+  </ioNodes>
+  <ioNodes realName="refPixel_1_034_loc_load_load_fu_399">
+    <nodeIds>58</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_load_fu_427">
+    <nodeIds>73</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln65_store_fu_739">
+    <nodeIds>157</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln65_store_fu_538">
+    <nodeIds>150</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln65_store_fu_714">
+    <nodeIds>152</nodeIds>
+  </ioNodes>
+  <ioNodes realName="j_1_load_load_fu_454">
+    <nodeIds>87</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln65_store_fu_719">
+    <nodeIds>153</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_load_fu_358">
+    <nodeIds>83</nodeIds>
+    <nodeIds>161</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln64_store_fu_379">
+    <nodeIds>67</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln65_store_fu_533">
+    <nodeIds>149</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln65_store_fu_734">
+    <nodeIds>156</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_load_fu_354">
+    <nodeIds>82</nodeIds>
+    <nodeIds>160</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln64_store_fu_394">
+    <nodeIds>70</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln64_store_fu_374">
+    <nodeIds>66</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_load_fu_370">
+    <nodeIds>86</nodeIds>
+    <nodeIds>164</nodeIds>
+  </ioNodes>
+  <ioNodes realName="indvar_flatten20_load_load_fu_430">
+    <nodeIds>74</nodeIds>
+  </ioNodes>
+  <ioNodes realName="current_brightness_loc_load_load_fu_563">
+    <nodeIds>119</nodeIds>
+  </ioNodes>
+  <ioNodes realName="sum_loc_load_load_fu_548">
+    <nodeIds>112</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln65_store_fu_729">
+    <nodeIds>155</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln65_store_fu_543">
+    <nodeIds>151</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln65_store_fu_724">
+    <nodeIds>154</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_load_fu_366">
+    <nodeIds>85</nodeIds>
+    <nodeIds>163</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln64_store_fu_389">
+    <nodeIds>69</nodeIds>
+  </ioNodes>
+  <ioPorts name="in_stream_V_data_V">
+    <contents name="call">
+      <nodeIds>54</nodeIds>
+      <nodeIds>57</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="in_stream_V_dest_V">
+    <contents name="call">
+      <nodeIds>54</nodeIds>
+      <nodeIds>57</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="in_stream_V_id_V">
+    <contents name="call">
+      <nodeIds>54</nodeIds>
+      <nodeIds>57</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="in_stream_V_keep_V">
+    <contents name="call">
+      <nodeIds>54</nodeIds>
+      <nodeIds>57</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="in_stream_V_last_V">
+    <contents name="call">
+      <nodeIds>54</nodeIds>
+      <nodeIds>57</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="in_stream_V_strb_V">
+    <contents name="call">
+      <nodeIds>54</nodeIds>
+      <nodeIds>57</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="in_stream_V_user_V">
+    <contents name="call">
+      <nodeIds>54</nodeIds>
+      <nodeIds>57</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_stream_V_data_V">
+    <contents name="call">
+      <nodeIds>166</nodeIds>
+      <nodeIds>171</nodeIds>
+    </contents>
+    <contents name="write">
+      <nodeIds>169</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_stream_V_dest_V">
+    <contents name="call">
+      <nodeIds>166</nodeIds>
+      <nodeIds>171</nodeIds>
+    </contents>
+    <contents name="write">
+      <nodeIds>169</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_stream_V_id_V">
+    <contents name="call">
+      <nodeIds>166</nodeIds>
+      <nodeIds>171</nodeIds>
+    </contents>
+    <contents name="write">
+      <nodeIds>169</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_stream_V_keep_V">
+    <contents name="call">
+      <nodeIds>166</nodeIds>
+      <nodeIds>171</nodeIds>
+    </contents>
+    <contents name="write">
+      <nodeIds>169</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_stream_V_last_V">
+    <contents name="call">
+      <nodeIds>166</nodeIds>
+      <nodeIds>171</nodeIds>
+    </contents>
+    <contents name="write">
+      <nodeIds>169</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_stream_V_strb_V">
+    <contents name="call">
+      <nodeIds>166</nodeIds>
+      <nodeIds>171</nodeIds>
+    </contents>
+    <contents name="write">
+      <nodeIds>169</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_stream_V_user_V">
+    <contents name="call">
+      <nodeIds>166</nodeIds>
+      <nodeIds>171</nodeIds>
+    </contents>
+    <contents name="write">
+      <nodeIds>169</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="54" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="54" stage="1" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="55" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="2" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="57" stage="1" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="4" latency="4"/>
+    </states>
+    <states id="8">
+      <operations id="65" stage="3" latency="4"/>
+    </states>
+    <states id="9">
+      <operations id="65" stage="2" latency="4"/>
+    </states>
+    <states id="10">
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="4"/>
+      <operations id="71" stage="1" latency="1"/>
+    </states>
+    <states id="11">
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="104" stage="4" latency="4"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="121" stage="1" latency="1"/>
+      <operations id="139" stage="1" latency="1"/>
+      <operations id="148" stage="1" latency="1"/>
+      <operations id="149" stage="1" latency="1"/>
+      <operations id="150" stage="1" latency="1"/>
+      <operations id="151" stage="1" latency="1"/>
+    </states>
+    <states id="12">
+      <operations id="104" stage="3" latency="4"/>
+    </states>
+    <states id="13">
+      <operations id="104" stage="2" latency="4"/>
+    </states>
+    <states id="14">
+      <operations id="104" stage="1" latency="4"/>
+      <operations id="108" stage="2" latency="2"/>
+    </states>
+    <states id="15">
+      <operations id="108" stage="1" latency="2"/>
+    </states>
+    <states id="16">
+      <operations id="109" stage="1" latency="1"/>
+    </states>
+    <states id="17">
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="111" stage="2" latency="2"/>
+    </states>
+    <states id="18">
+      <operations id="111" stage="1" latency="2"/>
+    </states>
+    <states id="19">
+      <operations id="112" stage="1" latency="1"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="120" stage="10" latency="10"/>
+    </states>
+    <states id="20">
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="115" stage="2" latency="2"/>
+      <operations id="120" stage="9" latency="10"/>
+    </states>
+    <states id="21">
+      <operations id="115" stage="1" latency="2"/>
+      <operations id="120" stage="8" latency="10"/>
+    </states>
+    <states id="22">
+      <operations id="116" stage="1" latency="1"/>
+      <operations id="120" stage="7" latency="10"/>
+    </states>
+    <states id="23">
+      <operations id="117" stage="1" latency="1"/>
+      <operations id="118" stage="2" latency="2"/>
+      <operations id="120" stage="6" latency="10"/>
+    </states>
+    <states id="24">
+      <operations id="118" stage="1" latency="2"/>
+      <operations id="120" stage="5" latency="10"/>
+    </states>
+    <states id="25">
+      <operations id="120" stage="4" latency="10"/>
+    </states>
+    <states id="26">
+      <operations id="120" stage="3" latency="10"/>
+    </states>
+    <states id="27">
+      <operations id="120" stage="2" latency="10"/>
+    </states>
+    <states id="28">
+      <operations id="120" stage="1" latency="10"/>
+    </states>
+    <states id="29">
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="135" stage="2" latency="2"/>
+    </states>
+    <states id="30">
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="122" stage="1" latency="1"/>
+      <operations id="123" stage="1" latency="1"/>
+      <operations id="124" stage="1" latency="1"/>
+      <operations id="125" stage="1" latency="1"/>
+      <operations id="126" stage="1" latency="1"/>
+      <operations id="127" stage="1" latency="1"/>
+      <operations id="128" stage="1" latency="1"/>
+      <operations id="129" stage="1" latency="1"/>
+      <operations id="130" stage="1" latency="1"/>
+      <operations id="131" stage="1" latency="1"/>
+      <operations id="132" stage="1" latency="1"/>
+      <operations id="133" stage="1" latency="1"/>
+      <operations id="134" stage="1" latency="1"/>
+      <operations id="135" stage="1" latency="2"/>
+      <operations id="136" stage="1" latency="1"/>
+      <operations id="137" stage="1" latency="1"/>
+      <operations id="138" stage="1" latency="1"/>
+      <operations id="140" stage="1" latency="1"/>
+      <operations id="141" stage="1" latency="1"/>
+      <operations id="142" stage="1" latency="1"/>
+      <operations id="143" stage="1" latency="1"/>
+      <operations id="144" stage="1" latency="1"/>
+      <operations id="145" stage="1" latency="1"/>
+      <operations id="146" stage="1" latency="1"/>
+      <operations id="147" stage="1" latency="1"/>
+      <operations id="152" stage="1" latency="1"/>
+      <operations id="153" stage="1" latency="1"/>
+      <operations id="154" stage="1" latency="1"/>
+      <operations id="155" stage="1" latency="1"/>
+      <operations id="156" stage="1" latency="1"/>
+      <operations id="157" stage="1" latency="1"/>
+      <operations id="158" stage="1" latency="1"/>
+    </states>
+    <states id="31">
+      <operations id="163" stage="1" latency="1"/>
+      <operations id="164" stage="1" latency="1"/>
+      <operations id="165" stage="1" latency="1"/>
+      <operations id="166" stage="2" latency="2"/>
+    </states>
+    <states id="32">
+      <operations id="166" stage="1" latency="2"/>
+    </states>
+    <states id="33">
+      <operations id="160" stage="1" latency="1"/>
+      <operations id="167" stage="1" latency="1"/>
+      <operations id="168" stage="1" latency="1"/>
+      <operations id="169" stage="2" latency="2"/>
+    </states>
+    <states id="34">
+      <operations id="169" stage="1" latency="2"/>
+    </states>
+    <states id="35">
+      <operations id="161" stage="1" latency="1"/>
+      <operations id="162" stage="1" latency="1"/>
+      <operations id="170" stage="1" latency="1"/>
+      <operations id="171" stage="2" latency="2"/>
+    </states>
+    <states id="36">
+      <operations id="171" stage="1" latency="2"/>
+    </states>
+    <states id="37">
+      <operations id="172" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="31">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="20" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="22">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="22" outState="23">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="23" outState="24">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="24" outState="25">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="25" outState="26">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="26" outState="27">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="27" outState="28">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="28" outState="29">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="29" outState="30">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="30" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="31" outState="32">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="32" outState="33">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="33" outState="34">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="34" outState="35">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="35" outState="36">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="36" outState="37">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="hyperspectral_hw_wrapped" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="2484261" mMaxLatency="2484261">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="184337" mMaxLatency="184337">
+      <basicBlocks>72</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="L1_L2" mII="-1" mDepth="-1" mMinTripCount="2048" mMaxTripCount="2048" mMinLatency="2299904" mMaxLatency="2299904" mType="1">
+      <basicBlocks>80</basicBlocks>
+      <basicBlocks>159</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="18" mMaxLatency="18">
+      <basicBlocks>173</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <simLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Hyperspectral_DataFlow" solutionName="solution1" date="2024-07-09T14:32:40.002+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Hyperspectral_DataFlow" solutionName="solution1" date="2024-07-09T14:29:37.539+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Hyperspectral_DataFlow" solutionName="solution1" date="2024-07-09T14:28:12.728+0200"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <simLog>
+        <logs message="WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:57]&#xA;Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor&#xA;Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...&#xA;Compiling module xil_defaultlib.nodf_module_intf&#xA;Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=37)&#xA;Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)&#xA;Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=3)&#xA;Compiling module xil_defaultlib.dataflow_monitor_1&#xA;Compiling module xil_defaultlib.apatb_hyperspectral_hw_wrapped_t...&#xA;Compiling module work.glbl&#xA;Built simulation snapshot hyperspectral_hw_wrapped&#xA;&#xA;&#xA;****** xsim v2022.1 (64-bit)&#xA;  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022&#xA;  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022&#xA;    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.&#xA;&#xA;&#xA;source xsim.dir/hyperspectral_hw_wrapped/xsim_script.tcl&#xA;# xsim {hyperspectral_hw_wrapped} -autoloadwcfg -tclbatch {hyperspectral_hw_wrapped.tcl}&#xA;Time resolution is 1 ps&#xA;source hyperspectral_hw_wrapped.tcl&#xA;## run all&#xA;////////////////////////////////////////////////////////////////////////////////////&#xA;// Inter-Transaction Progress: Completed Transaction / Total Transaction&#xA;// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%&#xA;//&#xA;// RTL Simulation : &quot;Inter-Transaction Progress&quot; [&quot;Intra-Transaction Progress&quot;] @ &quot;Simulation Time&quot;&#xA;////////////////////////////////////////////////////////////////////////////////////&#xA;// RTL Simulation : 0 / 1 [0.00%] @ &quot;125000&quot;&#xA;// RTL Simulation : 0 / 1 [402.53%] @ &quot;100000145000&quot;&#xA;" projectName="Hyperspectral_DataFlow" solutionName="solution1" date="2024-07-09T14:28:00.663+0200" type="Warning"/>
+      </simLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

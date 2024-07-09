@@ -1,0 +1,294 @@
+
+
+================================================================
+== Vitis HLS Report for 'hyperspectral_hw_wrapped'
+================================================================
+* Date:           Tue Jul  9 14:02:53 2024
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        Hyperspectral_DataFlow
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.200 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+---------+---------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |      Interval     | Pipeline|
+    |   min   |   max   |    min    |    max    |   min   |   max   |   Type  |
+    +---------+---------+-----------+-----------+---------+---------+---------+
+    |  2484261|  2484261|  24.843 ms|  24.843 ms|  2484262|  2484262|       no|
+    +---------+---------+-----------+-----------+---------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---------+-----------+-----------+--------+--------+---------+
+        |                                                                                             |                                                                                  |  Latency (cycles) |   Latency (absolute)  |     Interval    | Pipeline|
+        |                                           Instance                                          |                                      Module                                      |   min   |   max   |    min    |    max    |   min  |   max  |   Type  |
+        +---------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---------+-----------+-----------+--------+--------+---------+
+        |grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239  |hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1  |   184324|   184324|   1.843 ms|   1.843 ms|  184324|  184324|       no|
+        |grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258                                |hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5                                |        4|        4|  40.000 ns|  40.000 ns|       4|       4|       no|
+        |grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278                                              |hyperspectral_hw_wrapped_Pipeline_L3                                              |      195|      195|   1.950 us|   1.950 us|     195|     195|       no|
+        |grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286                                              |hyperspectral_hw_wrapped_Pipeline_L4                                              |      544|      544|   5.440 us|   5.440 us|     544|     544|       no|
+        |grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292                                              |hyperspectral_hw_wrapped_Pipeline_L5                                              |      182|      182|   1.820 us|   1.820 us|     182|     182|       no|
+        |grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299                                              |hyperspectral_hw_wrapped_Pipeline_L6                                              |      182|      182|   1.820 us|   1.820 us|     182|     182|       no|
+        |grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305                                |hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6                                |        6|        6|  60.000 ns|  60.000 ns|       6|       6|       no|
+        |grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325                                |hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7                                |        6|        6|  60.000 ns|  60.000 ns|       6|       6|       no|
+        +---------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---------+-----------+-----------+--------+--------+---------+
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- L1_L2   |  2299904|  2299904|      1123|          -|          -|  2048|        no|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    2|       -|      -|    -|
+|Expression       |        -|    -|       0|    452|    -|
+|FIFO             |        -|    -|     198|    134|    -|
+|Instance         |        0|    6|    1298|   2709|    0|
+|Memory           |      340|    -|       0|      0|    0|
+|Multiplexer      |        -|    -|       -|    547|    -|
+|Register         |        -|    -|     507|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |      340|    8|    2003|   3842|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      432|  360|  141120|  70560|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |       78|    2|       1|      5|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+-----+-----+-----+
+    |                                           Instance                                          |                                      Module                                      | BRAM_18K| DSP|  FF | LUT | URAM|
+    +---------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+-----+-----+-----+
+    |CONTROL_BUS_s_axi_U                                                                          |CONTROL_BUS_s_axi                                                                 |        0|   0|   36|   40|    0|
+    |fcmp_32ns_32ns_1_2_no_dsp_1_U60                                                              |fcmp_32ns_32ns_1_2_no_dsp_1                                                       |        0|   0|    0|    0|    0|
+    |fsqrt_32ns_32ns_32_10_no_dsp_1_U61                                                           |fsqrt_32ns_32ns_32_10_no_dsp_1                                                    |        0|   0|    0|    0|    0|
+    |grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278                                              |hyperspectral_hw_wrapped_Pipeline_L3                                              |        0|   5|  513|  473|    0|
+    |grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286                                              |hyperspectral_hw_wrapped_Pipeline_L4                                              |        0|   0|  247|  563|    0|
+    |grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292                                              |hyperspectral_hw_wrapped_Pipeline_L5                                              |        0|   0|   11|  101|    0|
+    |grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299                                              |hyperspectral_hw_wrapped_Pipeline_L6                                              |        0|   0|   43|  123|    0|
+    |grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239  |hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1  |        0|   1|  297|  430|    0|
+    |grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258                                |hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5                                |        0|   0|   68|  743|    0|
+    |grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305                                |hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6                                |        0|   0|    9|   98|    0|
+    |grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325                                |hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7                                |        0|   0|   74|  138|    0|
+    |sitofp_32ns_32_4_no_dsp_1_U64                                                                |sitofp_32ns_32_4_no_dsp_1                                                         |        0|   0|    0|    0|    0|
+    +---------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+-----+-----+-----+
+    |Total                                                                                        |                                                                                  |        0|   6| 1298| 2709|    0|
+    +---------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    +------------------------------------+--------------------------------+----------------+
+    |              Instance              |             Module             |   Expression   |
+    +------------------------------------+--------------------------------+----------------+
+    |am_addmul_12ns_11ns_8ns_19_4_1_U63  |am_addmul_12ns_11ns_8ns_19_4_1  |  (i0 + i1) * i2|
+    |mul_mul_19s_8ns_19_4_1_U62          |mul_mul_19s_8ns_19_4_1          |         i0 * i1|
+    +------------------------------------+--------------------------------+----------------+
+
+    * Memory: 
+    +---------+---------------------+---------+---+----+-----+--------+-----+------+-------------+
+    |  Memory |        Module       | BRAM_18K| FF| LUT| URAM|  Words | Bits| Banks| W*Bits*Banks|
+    +---------+---------------------+---------+---+----+-----+--------+-----+------+-------------+
+    |image_U  |image_RAM_AUTO_1R1W  |      340|  0|   0|    0|  368640|   16|     1|      5898240|
+    +---------+---------------------+---------+---+----+-----+--------+-----+------+-------------+
+    |Total    |                     |      340|  0|   0|    0|  368640|   16|     1|      5898240|
+    +---------+---------------------+---------+---+----+-----+--------+-----+------+-------------+
+
+    * FIFO: 
+    +--------------------------+---------+----+----+-----+------+-----+---------+
+    |           Name           | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +--------------------------+---------+----+----+-----+------+-----+---------+
+    |brightness_stream_fifo_U  |        0|  99|   0|    -|     2|   32|       64|
+    |sum_stream_fifo_U         |        0|  99|   0|    -|     2|   32|       64|
+    +--------------------------+---------+----+----+-----+------+-----+---------+
+    |Total                     |        0| 198|   0|    0|     4|   64|      128|
+    +--------------------------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +---------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                                  Variable Name                                  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |add_ln64_1_fu_448_p2                                                             |         +|   0|  0|  19|          12|           1|
+    |add_ln64_fu_457_p2                                                               |         +|   0|  0|   9|           2|           1|
+    |add_ln65_fu_527_p2                                                               |         +|   0|  0|  18|          11|           1|
+    |grp_fu_749_p0                                                                    |         +|   0|  0|  26|          19|          19|
+    |and_ln34_1_fu_636_p2                                                             |       and|   0|  0|   2|           1|           1|
+    |and_ln34_2_fu_642_p2                                                             |       and|   0|  0|   2|           1|           1|
+    |and_ln34_fu_653_p2                                                               |       and|   0|  0|   2|           1|           1|
+    |grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TREADY  |       and|   0|  0|   2|           1|           1|
+    |grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TREADY  |       and|   0|  0|   2|           1|           1|
+    |cmp1_i_i_fu_437_p2                                                               |      icmp|   0|  0|  20|          32|          32|
+    |cmp1_i_i_mid1_fu_501_p2                                                          |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln34_1_fu_600_p2                                                            |      icmp|   0|  0|  11|           8|           2|
+    |icmp_ln34_2_fu_606_p2                                                            |      icmp|   0|  0|  16|          23|           1|
+    |icmp_ln34_3_fu_618_p2                                                            |      icmp|   0|  0|  11|           8|           2|
+    |icmp_ln34_4_fu_624_p2                                                            |      icmp|   0|  0|  16|          23|           1|
+    |icmp_ln34_fu_518_p2                                                              |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln64_fu_442_p2                                                              |      icmp|   0|  0|  12|          12|          13|
+    |icmp_ln65_fu_463_p2                                                              |      icmp|   0|  0|  12|          11|          12|
+    |icmp_ln75_fu_684_p2                                                              |      icmp|   0|  0|  20|          32|          32|
+    |or_ln34_1_fu_612_p2                                                              |        or|   0|  0|   2|           1|           1|
+    |or_ln34_2_fu_630_p2                                                              |        or|   0|  0|   2|           1|           1|
+    |or_ln34_fu_648_p2                                                                |        or|   0|  0|   2|           1|           1|
+    |c_fu_678_p3                                                                      |    select|   0|  0|  32|           1|          32|
+    |maxBrightness_fu_706_p3                                                          |    select|   0|  0|  32|           1|          32|
+    |select_ln34_1_fu_670_p3                                                          |    select|   0|  0|  32|           1|          32|
+    |select_ln34_fu_662_p3                                                            |    select|   0|  0|  32|           1|          32|
+    |select_ln41_1_fu_477_p3                                                          |    select|   0|  0|   2|           1|           2|
+    |select_ln41_2_fu_555_p3                                                          |    select|   0|  0|   2|           1|           1|
+    |select_ln41_fu_469_p3                                                            |    select|   0|  0|  10|           1|           1|
+    |select_ln75_1_fu_698_p3                                                          |    select|   0|  0|  32|           1|          32|
+    |select_ln75_fu_690_p3                                                            |    select|   0|  0|  32|           1|          32|
+    +---------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                                            |          |   0|  0| 452|         274|         385|
+    +---------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------+-----+-----------+-----+-----------+
+    |              Name              | LUT | Input Size| Bits| Total Bits|
+    +--------------------------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm                       |  169|         38|    1|         38|
+    |brightness_stream_read          |    9|          2|    1|          2|
+    |brightness_stream_write         |    9|          2|    1|          2|
+    |grp_fu_956_ce                   |   14|          3|    1|          3|
+    |grp_fu_956_p0                   |   14|          3|   32|         96|
+    |i_2_fu_172                      |    9|          2|    2|          4|
+    |image_address0                  |   20|          4|   19|         76|
+    |image_address1                  |   14|          3|   19|         57|
+    |image_ce0                       |   20|          4|    1|          4|
+    |image_ce1                       |   14|          3|    1|          3|
+    |image_we0                       |    9|          2|    1|          2|
+    |image_we1                       |    9|          2|    1|          2|
+    |in_stream_TREADY_int_regslice   |   14|          3|    1|          3|
+    |indvar_flatten20_fu_176         |    9|          2|   12|         24|
+    |j_1_fu_168                      |    9|          2|   11|         22|
+    |maxBrightness_1_fu_144          |    9|          2|   32|         64|
+    |minDistance_fu_148              |    9|          2|   32|         64|
+    |out_stream_TDATA_blk_n          |    9|          2|    1|          2|
+    |out_stream_TDATA_int_regslice   |   20|          4|   32|        128|
+    |out_stream_TDEST_int_regslice   |   20|          4|    5|         20|
+    |out_stream_TID_int_regslice     |   20|          4|    5|         20|
+    |out_stream_TKEEP_int_regslice   |   20|          4|    4|         16|
+    |out_stream_TLAST_int_regslice   |   20|          4|    1|          4|
+    |out_stream_TSTRB_int_regslice   |   20|          4|    4|         16|
+    |out_stream_TUSER_int_regslice   |   20|          4|    4|         16|
+    |out_stream_TVALID_int_regslice  |   20|          4|    1|          4|
+    |sum_stream_read                 |    9|          2|    1|          2|
+    |sum_stream_write                |    9|          2|    1|          2|
+    +--------------------------------+-----+-----------+-----+-----------+
+    |Total                           |  547|        117|  227|        696|
+    +--------------------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                                   Name                                                   | FF | LUT| Bits| Const Bits|
+    +----------------------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                                                                 |  37|   0|   37|          0|
+    |cmp1_i_i_mid1_reg_888                                                                                     |   1|   0|    1|          0|
+    |cmp1_i_i_reg_875                                                                                          |   1|   0|    1|          0|
+    |grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_start_reg                                              |   1|   0|    1|          0|
+    |grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_start_reg                                              |   1|   0|    1|          0|
+    |grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_start_reg                                              |   1|   0|    1|          0|
+    |grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_start_reg                                              |   1|   0|    1|          0|
+    |grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_start_reg  |   1|   0|    1|          0|
+    |grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_start_reg                                |   1|   0|    1|          0|
+    |grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_start_reg                                |   1|   0|    1|          0|
+    |grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_start_reg                                |   1|   0|    1|          0|
+    |i_04_i627_fu_152                                                                                          |  32|   0|   32|          0|
+    |i_04_i627_load_reg_946                                                                                    |  32|   0|   32|          0|
+    |i_04_i631_fu_160                                                                                          |  32|   0|   32|          0|
+    |i_04_i631_load_reg_931                                                                                    |  32|   0|   32|          0|
+    |i_2_fu_172                                                                                                |   2|   0|    2|          0|
+    |icmp_ln34_reg_898                                                                                         |   1|   0|    1|          0|
+    |icmp_ln65_reg_883                                                                                         |   1|   0|    1|          0|
+    |indvar_flatten20_fu_176                                                                                   |  12|   0|   12|          0|
+    |j_02_i629_fu_156                                                                                          |  32|   0|   32|          0|
+    |j_02_i629_load_reg_951                                                                                    |  32|   0|   32|          0|
+    |j_02_i633_fu_164                                                                                          |  32|   0|   32|          0|
+    |j_02_i633_load_reg_936                                                                                    |  32|   0|   32|          0|
+    |j_1_fu_168                                                                                                |  11|   0|   11|          0|
+    |maxBrightness_1_fu_144                                                                                    |  32|   0|   32|          0|
+    |minDistance_3_reg_917                                                                                     |  32|   0|   32|          0|
+    |minDistance_fu_148                                                                                        |  32|   0|   32|          0|
+    |minDistance_load_1_reg_924                                                                                |  32|   0|   32|          0|
+    |mul_ln17_reg_870                                                                                          |  19|   0|   19|          0|
+    |mul_ln41_reg_908                                                                                          |  19|   0|   19|          0|
+    |trunc_ln34_2_reg_903                                                                                      |  10|   0|   10|          0|
+    |trunc_ln41_reg_893                                                                                        |   1|   0|    1|          0|
+    +----------------------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                                                     | 507|   0|  507|          0|
+    +----------------------------------------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------+-----+-----+------------+--------------------------+--------------+
+|         RTL Ports         | Dir | Bits|  Protocol  |       Source Object      |    C Type    |
++---------------------------+-----+-----+------------+--------------------------+--------------+
+|s_axi_CONTROL_BUS_AWVALID  |   in|    1|       s_axi|               CONTROL_BUS|   return void|
+|s_axi_CONTROL_BUS_AWREADY  |  out|    1|       s_axi|               CONTROL_BUS|   return void|
+|s_axi_CONTROL_BUS_AWADDR   |   in|    4|       s_axi|               CONTROL_BUS|   return void|
+|s_axi_CONTROL_BUS_WVALID   |   in|    1|       s_axi|               CONTROL_BUS|   return void|
+|s_axi_CONTROL_BUS_WREADY   |  out|    1|       s_axi|               CONTROL_BUS|   return void|
+|s_axi_CONTROL_BUS_WDATA    |   in|   32|       s_axi|               CONTROL_BUS|   return void|
+|s_axi_CONTROL_BUS_WSTRB    |   in|    4|       s_axi|               CONTROL_BUS|   return void|
+|s_axi_CONTROL_BUS_ARVALID  |   in|    1|       s_axi|               CONTROL_BUS|   return void|
+|s_axi_CONTROL_BUS_ARREADY  |  out|    1|       s_axi|               CONTROL_BUS|   return void|
+|s_axi_CONTROL_BUS_ARADDR   |   in|    4|       s_axi|               CONTROL_BUS|   return void|
+|s_axi_CONTROL_BUS_RVALID   |  out|    1|       s_axi|               CONTROL_BUS|   return void|
+|s_axi_CONTROL_BUS_RREADY   |   in|    1|       s_axi|               CONTROL_BUS|   return void|
+|s_axi_CONTROL_BUS_RDATA    |  out|   32|       s_axi|               CONTROL_BUS|   return void|
+|s_axi_CONTROL_BUS_RRESP    |  out|    2|       s_axi|               CONTROL_BUS|   return void|
+|s_axi_CONTROL_BUS_BVALID   |  out|    1|       s_axi|               CONTROL_BUS|   return void|
+|s_axi_CONTROL_BUS_BREADY   |   in|    1|       s_axi|               CONTROL_BUS|   return void|
+|s_axi_CONTROL_BUS_BRESP    |  out|    2|       s_axi|               CONTROL_BUS|   return void|
+|ap_clk                     |   in|    1|  ap_ctrl_hs|  hyperspectral_hw_wrapped|  return value|
+|ap_rst_n                   |   in|    1|  ap_ctrl_hs|  hyperspectral_hw_wrapped|  return value|
+|interrupt                  |  out|    1|  ap_ctrl_hs|  hyperspectral_hw_wrapped|  return value|
+|in_stream_TDATA            |   in|   32|        axis|        in_stream_V_data_V|       pointer|
+|in_stream_TVALID           |   in|    1|        axis|        in_stream_V_dest_V|       pointer|
+|in_stream_TREADY           |  out|    1|        axis|        in_stream_V_dest_V|       pointer|
+|in_stream_TDEST            |   in|    5|        axis|        in_stream_V_dest_V|       pointer|
+|in_stream_TKEEP            |   in|    4|        axis|        in_stream_V_keep_V|       pointer|
+|in_stream_TSTRB            |   in|    4|        axis|        in_stream_V_strb_V|       pointer|
+|in_stream_TUSER            |   in|    4|        axis|        in_stream_V_user_V|       pointer|
+|in_stream_TLAST            |   in|    1|        axis|        in_stream_V_last_V|       pointer|
+|in_stream_TID              |   in|    5|        axis|          in_stream_V_id_V|       pointer|
+|out_stream_TDATA           |  out|   32|        axis|       out_stream_V_data_V|       pointer|
+|out_stream_TVALID          |  out|    1|        axis|       out_stream_V_dest_V|       pointer|
+|out_stream_TREADY          |   in|    1|        axis|       out_stream_V_dest_V|       pointer|
+|out_stream_TDEST           |  out|    5|        axis|       out_stream_V_dest_V|       pointer|
+|out_stream_TKEEP           |  out|    4|        axis|       out_stream_V_keep_V|       pointer|
+|out_stream_TSTRB           |  out|    4|        axis|       out_stream_V_strb_V|       pointer|
+|out_stream_TUSER           |  out|    4|        axis|       out_stream_V_user_V|       pointer|
+|out_stream_TLAST           |  out|    1|        axis|       out_stream_V_last_V|       pointer|
+|out_stream_TID             |  out|    5|        axis|         out_stream_V_id_V|       pointer|
++---------------------------+-----+-----+------------+--------------------------+--------------+
+

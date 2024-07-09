@@ -1,0 +1,189 @@
+
+
+================================================================
+== Synthesis Summary Report of 'hyperspectral_hw_wrapped'
+================================================================
++ General Information: 
+    * Date:           Tue Jul  9 14:02:53 2024
+    * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+    * Project:        Hyperspectral_DataFlow
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu3eg-sbva484-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+--------+----------+-----------+---------+-----------+-----------+-----+
+    |                                       Modules                                       | Issue|      | Latency |  Latency  | Iteration|         |  Trip  |          |           |         |           |           |     |
+    |                                       & Loops                                       | Type | Slack| (cycles)|    (ns)   |  Latency | Interval|  Count | Pipelined|   BRAM    |   DSP   |     FF    |    LUT    | URAM|
+    +-------------------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+--------+----------+-----------+---------+-----------+-----------+-----+
+    |+ hyperspectral_hw_wrapped                                                           |     -|  0.10|  2484261|  2.484e+07|         -|  2484262|       -|        no|  340 (78%)|   8 (2%)|  2003 (1%)|  3842 (5%)|    -|
+    | + hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1  |     -|  0.98|   184324|  1.843e+06|         -|   184324|       -|        no|          -|  1 (~0%)|  297 (~0%)|  430 (~0%)|    -|
+    |  o VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3                               |     -|  7.30|   184322|  1.843e+06|         4|        1|  184320|       yes|          -|        -|          -|          -|    -|
+    | + hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5                                |     -|  2.23|        4|     40.000|         -|        4|       -|        no|          -|        -|   68 (~0%)|   743 (1%)|    -|
+    |  o VITIS_LOOP_117_5                                                                 |     -|  7.30|        2|     20.000|         1|        1|       2|       yes|          -|        -|          -|          -|    -|
+    | + hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6                                |     -|  0.10|        6|     60.000|         -|        6|       -|        no|          -|        -|    9 (~0%)|   98 (~0%)|    -|
+    |  o VITIS_LOOP_132_6                                                                 |     -|  7.30|        4|     40.000|         4|        1|       2|       yes|          -|        -|          -|          -|    -|
+    | + hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7                                |     -|  0.10|        6|     60.000|         -|        6|       -|        no|          -|        -|   74 (~0%)|  138 (~0%)|    -|
+    |  o VITIS_LOOP_167_7                                                                 |     -|  7.30|        4|     40.000|         4|        1|       2|       yes|          -|        -|          -|          -|    -|
+    | o L1_L2                                                                             |     -|  7.30|  2299904|  2.300e+07|      1123|        -|    2048|        no|          -|        -|          -|          -|    -|
+    |  + hyperspectral_hw_wrapped_Pipeline_L3                                             |     -|  0.46|      195|  1.950e+03|         -|      195|       -|        no|          -|   5 (1%)|  513 (~0%)|  473 (~0%)|    -|
+    |   o L3                                                                              |     -|  7.30|      193|  1.930e+03|        15|        1|     180|       yes|          -|        -|          -|          -|    -|
+    |  + hyperspectral_hw_wrapped_Pipeline_L4                                             |     -|  0.59|      544|  5.440e+03|         -|      544|       -|        no|          -|        -|  247 (~0%)|  563 (~0%)|    -|
+    |   o L4                                                                              |    II|  7.30|      542|  5.420e+03|         6|        3|     180|       yes|          -|        -|          -|          -|    -|
+    |  + hyperspectral_hw_wrapped_Pipeline_L5                                             |     -|  3.78|      182|  1.820e+03|         -|      182|       -|        no|          -|        -|   11 (~0%)|  101 (~0%)|    -|
+    |   o L5                                                                              |     -|  7.30|      180|  1.800e+03|         2|        1|     180|       yes|          -|        -|          -|          -|    -|
+    |  + hyperspectral_hw_wrapped_Pipeline_L6                                             |     -|  3.44|      182|  1.820e+03|         -|      182|       -|        no|          -|        -|   43 (~0%)|  123 (~0%)|    -|
+    |   o L6                                                                              |     -|  7.30|      180|  1.800e+03|         2|        1|     180|       yes|          -|        -|          -|          -|    -|
+    +-------------------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+--------+----------+-----------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++-------------------+------------+---------------+
+| Interface         | Data Width | Address Width |
++-------------------+------------+---------------+
+| s_axi_CONTROL_BUS | 32         | 4             |
++-------------------+------------+---------------+
+
+* S_AXILITE Registers
++-------------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface         | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++-------------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_CONTROL_BUS | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_CONTROL_BUS | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_CONTROL_BUS | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_CONTROL_BUS | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
++-------------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++------------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface  | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++------------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| in_stream  | both          | 32    | 5     | 5   | 4     | 1     | 1      | 4     | 4     | 1      |
+| out_stream | both          | 32    | 5     | 5   | 4     | 1     | 1      | 4     | 4     | 1      |
++------------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+---------------------------------------------+
+| Argument   | Direction | Datatype                                    |
++------------+-----------+---------------------------------------------+
+| in_stream  | in        | stream<hls::axis<ap_uint<32>, 4, 5, 5>, 0>& |
+| out_stream | out       | stream<hls::axis<ap_uint<32>, 4, 5, 5>, 0>& |
++------------+-----------+---------------------------------------------+
+
+* SW-to-HW Mapping
++------------+--------------+-----------+
+| Argument   | HW Interface | HW Type   |
++------------+--------------+-----------+
+| in_stream  | in_stream    | interface |
+| out_stream | out_stream   | interface |
++------------+--------------+-----------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------------------------------------------------------+-----+--------+----------------------+-------+---------+---------+
+| Name                                                                                | DSP | Pragma | Variable             | Op    | Impl    | Latency |
++-------------------------------------------------------------------------------------+-----+--------+----------------------+-------+---------+---------+
+| + hyperspectral_hw_wrapped                                                          | 8   |        |                      |       |         |         |
+|   grp_fu_749_p0                                                                     | -   |        | add_ln17             | add   | fabric  | 0       |
+|   mul_mul_19s_8ns_19_4_1_U62                                                        | 1   |        | mul_ln17             | mul   | dsp48   | 3       |
+|   add_ln64_1_fu_448_p2                                                              | -   |        | add_ln64_1           | add   | fabric  | 0       |
+|   add_ln64_fu_457_p2                                                                | -   |        | add_ln64             | add   | fabric  | 0       |
+|   am_addmul_12ns_11ns_8ns_19_4_1_U63                                                | 1   |        | add_ln17_1           | add   | dsp48   | 3       |
+|   am_addmul_12ns_11ns_8ns_19_4_1_U63                                                | 1   |        | mul_ln41             | mul   | dsp48   | 3       |
+|   fsqrt_32ns_32ns_32_10_no_dsp_1_U61                                                | -   |        | minDistance_3        | fsqrt | fabric  | 9       |
+|   add_ln65_fu_527_p2                                                                | -   |        | add_ln65             | add   | fabric  | 0       |
+|  + hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1 | 1   |        |                      |       |         |         |
+|    add_ln102_1_fu_181_p2                                                            | -   |        | add_ln102_1          | add   | fabric  | 0       |
+|    add_ln102_fu_199_p2                                                              | -   |        | add_ln102            | add   | fabric  | 0       |
+|    add_ln103_fu_259_p2                                                              | -   |        | add_ln103            | add   | fabric  | 0       |
+|    am_addmul_12ns_11ns_8ns_19_4_1_U1                                                | 1   |        | add_ln108            | add   | dsp48   | 3       |
+|    am_addmul_12ns_11ns_8ns_19_4_1_U1                                                | 1   |        | mul_ln103            | mul   | dsp48   | 3       |
+|    add_ln108_1_fu_351_p2                                                            | -   |        | add_ln108_1          | add   | fabric  | 0       |
+|    add_ln108_2_fu_370_p2                                                            | -   |        | add_ln108_2          | add   | fabric  | 0       |
+|    add_ln104_fu_303_p2                                                              | -   |        | add_ln104            | add   | fabric  | 0       |
+|    add_ln103_1_fu_309_p2                                                            | -   |        | add_ln103_1          | add   | fabric  | 0       |
+|  + hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5                               | 0   |        |                      |       |         |         |
+|    add_ln117_fu_144_p2                                                              | -   |        | add_ln117            | add   | fabric  | 0       |
+|    add_ln346_fu_200_p2                                                              | -   |        | add_ln346            | add   | fabric  | 0       |
+|    sub_ln1512_fu_214_p2                                                             | -   |        | sub_ln1512           | sub   | fabric  | 0       |
+|    result_V_2_fu_282_p2                                                             | -   |        | result_V_2           | sub   | fabric  | 0       |
+|  + hyperspectral_hw_wrapped_Pipeline_L3                                             | 5   |        |                      |       |         |         |
+|    add_ln16_fu_120_p2                                                               | -   |        | add_ln16             | add   | fabric  | 0       |
+|    add_ln17_fu_130_p2                                                               | -   |        | add_ln17             | add   | fabric  | 0       |
+|    add_ln17_1_fu_141_p2                                                             | -   |        | add_ln17_1           | add   | fabric  | 0       |
+|    fsub_32ns_32ns_32_5_full_dsp_1_U20                                               | 2   |        | diff                 | fsub  | fulldsp | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U21                                                | 3   |        | mul_i_i              | fmul  | maxdsp  | 3       |
+|  + hyperspectral_hw_wrapped_Pipeline_L4                                             | 0   |        |                      |       |         |         |
+|    k_4_fu_82_p2                                                                     | -   |        | k_4                  | add   | fabric  | 0       |
+|    fadd_32ns_32ns_32_4_no_dsp_1_U31                                                 | -   |        | sum_1                | fadd  | fabric  | 3       |
+|  + hyperspectral_hw_wrapped_Pipeline_L5                                             | 0   |        |                      |       |         |         |
+|    add_ln46_fu_86_p2                                                                | -   |        | add_ln46             | add   | fabric  | 0       |
+|    add_ln47_fu_96_p2                                                                | -   |        | add_ln47             | add   | fabric  | 0       |
+|  + hyperspectral_hw_wrapped_Pipeline_L6                                             | 0   |        |                      |       |         |         |
+|    k_2_fu_78_p2                                                                     | -   |        | k_2                  | add   | fabric  | 0       |
+|    current_brightness_1_fu_92_p2                                                    | -   |        | current_brightness_1 | add   | fabric  | 0       |
+|  + hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6                               | 0   |        |                      |       |         |         |
+|    add_ln132_fu_126_p2                                                              | -   |        | add_ln132            | add   | fabric  | 0       |
+|  + hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7                               | 0   |        |                      |       |         |         |
+|    add_ln167_fu_125_p2                                                              | -   |        | add_ln167            | add   | fabric  | 0       |
++-------------------------------------------------------------------------------------+-----+--------+----------------------+-------+---------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++----------------------------+------+------+--------+-------------------+---------+------+---------+
+| Name                       | BRAM | URAM | Pragma | Variable          | Storage | Impl | Latency |
++----------------------------+------+------+--------+-------------------+---------+------+---------+
+| + hyperspectral_hw_wrapped | 340  | 0    |        |                   |         |      |         |
+|   brightness_stream_fifo_U | -    | -    |        | brightness_stream | fifo    | srl  | 0       |
+|   sum_stream_fifo_U        | -    | -    |        | sum_stream        | fifo    | srl  | 0       |
+|   image_U                  | 340  | -    |        | image             | ram_t2p | auto | 1       |
++----------------------------+------+------+--------+-------------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+| Type      | Options                                  | Location                                                                                                       |
++-----------+------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+| pipeline  | II=1                                     | ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24 in calculate_distance_stream            |
+| interface | s_axilite port=return bundle=CONTROL_BUS | ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:86 in hyperspectral_hw_wrapped, return     |
+| interface | axis port=in_stream                      | ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:87 in hyperspectral_hw_wrapped, in_stream  |
+| interface | axis port=out_stream                     | ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:88 in hyperspectral_hw_wrapped, out_stream |
+| pipeline  | II=1                                     | ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:105 in hyperspectral_hw_wrapped            |
+| pipeline  | II=1                                     | ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:133 in hyperspectral_hw_wrapped            |
++-----------+------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+
+

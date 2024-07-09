@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="mmult.h" path="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Archivos_Fuente/mmult/mmult.h"/>
+    <originFiles name="mmult_accel.cpp" path="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Archivos_Fuente/mmult/mmult_accel.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="mmult_test.cpp" path="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Archivos_Fuente/mmult/mmult_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
