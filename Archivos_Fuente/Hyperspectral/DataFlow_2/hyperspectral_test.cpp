@@ -169,7 +169,6 @@ int main_axi (void) {
 
 
     printf("DEBUGGING AXI4 STREAMING DATA TYPES!\r\n");
-    printf("%lu", NUM_ELEMS_UIT);
 
 	// prepare data for the DUT
 	hls::stream<AXI_VAL> inp_stream("INSW");
@@ -181,21 +180,17 @@ int main_axi (void) {
 	for (int i = 0; i < FILAS; i++) {
 		for (int j = 0; j < COLUMNAS; j++) {
 			for (int k = 0; k < BANDAS; k += NUM_ELEMS_UIT) {
-                uint16_t temp[NUM_ELEMS_UIT] = {0};
 
-                for (int n = 0; n < NUM_ELEMS_UIT; n++) {
-                    if (k + n < BANDAS) {
-                        temp[n] = image[i][j][k + n];
-                    }
-                }
-
-				convert2word_uint16_t (e.data, temp);
+                uint16_t temp[NUM_ELEMS_UIT];
+                temp[0] = image[i][j][k];
+                temp[1] = image[i][j][k + 1];
+                convert2word_uint16_t (e.data, temp);
 				e.strb = -1;
 				e.keep = 15;
 				e.user = 0;
 				e.last = 0;
-				e.id = 3;
-				e.dest = 4;
+				e.id = 1;
+				e.dest = 2;
 				inp_stream.write(e);
 			}
 		}
@@ -206,24 +201,20 @@ int main_axi (void) {
         e.strb = -1;
         e.keep = 15;
         e.user = 0;
-        e.last = (i == (2 - NUM_ELEMS_IN));
-        e.id = 1;
-        e.dest = 2;
+        e.last = (i == 1);
+        e.id = 2;
+        e.dest = 3;
         inp_stream.write(e);
     }
 
-
-    std::cout << "Stream in the image" << std::endl;
     hyperspectral_hw_wrapped (inp_stream, out_stream);
-
-
+    
     for (int i = 0; i < 2; i++) {
         e = out_stream.read();
         WORD_MEM w_maxBrightness = e.data;
         conv_t c;
         c.in = w_maxBrightness;
         maxBrightness_hw[i] = c.out;
-        std::cout << "maxBrightness_hw[" << i << "] = " << maxBrightness_hw[i] << std::endl;
     }
 
     e = out_stream.read();
@@ -236,15 +227,12 @@ int main_axi (void) {
         conv_t c;
         c.in = w_closestPixel;
         closestPixelIdx_hw[i] = c.out;
-        std::cout << "closestPixelIdx_hw[" << i << "] = " << closestPixelIdx_hw[i] << std::endl;
     }
 
     hyperspectral_sw (image, refPixel, maxBrightness_sw, minDistance_sw, closestPixelIdx_sw);
 
 
     err = 0;
-
-    std::cout << "minDistance_hw = " << minDistance_hw << ", minDistance_sw = " << minDistance_sw << std::endl;
     if (minDistance_hw != minDistance_sw) {
         printf("MAIN AXI Error: minDistance_hw = %f, minDistance_sw = %f\r\n", minDistance_hw, minDistance_sw);
         err++;
@@ -280,12 +268,18 @@ void convert2array_IN (WORD_MEM w, int out[NUM_ELEMS_IN]) {
 }
 
 void convert2word_uint16_t(WORD_MEM &w, uint16_t in[NUM_ELEMS_UIT]) {
-    WORD_MEM _w; 
+    conv_t c;
+    WORD_MEM _w;
 
-    convert2uint_label:for (int k = 0; k < NUM_ELEMS_UIT; k++) {
-        _w((k + 1) * 16 - 1, k * 16) = in[k];
-    }
+    _w(15,0) = in[0];
+    _w(31,16) = in[1];
     w = _w;
+
+    /*convert2uint_label:for (int k = 0; k < NUM_ELEMS_UIT; k++) {
+        c.out = in[k];
+        _w((k + 1) * 16 - 1, k * 16) = c.in;
+        std::cout << "Escribiendo en el stream: in[" << k << "] = " << in[k] << std::endl;
+    }*/
 }
 
 void convert2word_int (WORD_MEM &w, int in[NUM_ELEMS_IN]) {
@@ -295,6 +289,7 @@ void convert2word_int (WORD_MEM &w, int in[NUM_ELEMS_IN]) {
     convert2word_intlabel0:for (int k=0; k<NUM_ELEMS_IN;k++) {
         c.out = in[k];
         _w((k+1)*32-1,k*32)= c.in;
+        
     }
     w = _w;
 }

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'hyperspectral_hw_wrapped'" level="0">
-<item name = "Date">Tue Jul  9 14:02:53 2024
+<item name = "Date">Wed Jul 10 00:10:07 2024
 </item>
 <item name = "Version">2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)</item>
 <item name = "Project">Hyperspectral_DataFlow</item>
@@ -31,14 +31,14 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1, 184324, 184324, 1.843 ms, 1.843 ms, 184324, 184324, no</column>
-<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5, 4, 4, 40.000 ns, 40.000 ns, 4, 4, no</column>
+<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1, 184324, 184324, 1.843 ms, 1.843 ms, 184324, 184324, no</column>
+<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5, 4, 4, 40.000 ns, 40.000 ns, 4, 4, no</column>
 <column name="grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278">hyperspectral_hw_wrapped_Pipeline_L3, 195, 195, 1.950 us, 1.950 us, 195, 195, no</column>
 <column name="grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286">hyperspectral_hw_wrapped_Pipeline_L4, 544, 544, 5.440 us, 5.440 us, 544, 544, no</column>
 <column name="grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292">hyperspectral_hw_wrapped_Pipeline_L5, 182, 182, 1.820 us, 1.820 us, 182, 182, no</column>
 <column name="grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299">hyperspectral_hw_wrapped_Pipeline_L6, 182, 182, 1.820 us, 1.820 us, 182, 182, no</column>
-<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6, 6, 6, 60.000 ns, 60.000 ns, 6, 6, no</column>
-<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7, 6, 6, 60.000 ns, 60.000 ns, 6, 6, no</column>
+<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6, 6, 6, 60.000 ns, 60.000 ns, 6, 6, no</column>
+<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7, 6, 6, 60.000 ns, 60.000 ns, 6, 6, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -77,10 +77,10 @@
 <column name="grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286">hyperspectral_hw_wrapped_Pipeline_L4, 0, 0, 247, 563, 0</column>
 <column name="grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292">hyperspectral_hw_wrapped_Pipeline_L5, 0, 0, 11, 101, 0</column>
 <column name="grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299">hyperspectral_hw_wrapped_Pipeline_L6, 0, 0, 43, 123, 0</column>
-<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1, 0, 1, 297, 430, 0</column>
-<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5, 0, 0, 68, 743, 0</column>
-<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6, 0, 0, 9, 98, 0</column>
-<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7, 0, 0, 74, 138, 0</column>
+<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1, 0, 1, 297, 430, 0</column>
+<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5, 0, 0, 68, 743, 0</column>
+<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6, 0, 0, 9, 98, 0</column>
+<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7, 0, 0, 74, 138, 0</column>
 <column name="sitofp_32ns_32_4_no_dsp_1_U64">sitofp_32ns_32_4_no_dsp_1, 0, 0, 0, 0, 0</column>
 </table>
 </item>
@@ -103,15 +103,15 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln64_1_fu_448_p2">+, 0, 0, 19, 12, 1</column>
-<column name="add_ln64_fu_457_p2">+, 0, 0, 9, 2, 1</column>
-<column name="add_ln65_fu_527_p2">+, 0, 0, 18, 11, 1</column>
+<column name="add_ln63_1_fu_448_p2">+, 0, 0, 19, 12, 1</column>
+<column name="add_ln63_fu_457_p2">+, 0, 0, 9, 2, 1</column>
+<column name="add_ln64_fu_527_p2">+, 0, 0, 18, 11, 1</column>
 <column name="grp_fu_749_p0">+, 0, 0, 26, 19, 19</column>
 <column name="and_ln34_1_fu_636_p2">and, 0, 0, 2, 1, 1</column>
 <column name="and_ln34_2_fu_642_p2">and, 0, 0, 2, 1, 1</column>
 <column name="and_ln34_fu_653_p2">and, 0, 0, 2, 1, 1</column>
-<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TREADY">and, 0, 0, 2, 1, 1</column>
-<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TREADY">and, 0, 0, 2, 1, 1</column>
+<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TREADY">and, 0, 0, 2, 1, 1</column>
+<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TREADY">and, 0, 0, 2, 1, 1</column>
 <column name="cmp1_i_i_fu_437_p2">icmp, 0, 0, 20, 32, 32</column>
 <column name="cmp1_i_i_mid1_fu_501_p2">icmp, 0, 0, 20, 32, 32</column>
 <column name="icmp_ln34_1_fu_600_p2">icmp, 0, 0, 11, 8, 2</column>
@@ -119,9 +119,9 @@
 <column name="icmp_ln34_3_fu_618_p2">icmp, 0, 0, 11, 8, 2</column>
 <column name="icmp_ln34_4_fu_624_p2">icmp, 0, 0, 16, 23, 1</column>
 <column name="icmp_ln34_fu_518_p2">icmp, 0, 0, 20, 32, 32</column>
-<column name="icmp_ln64_fu_442_p2">icmp, 0, 0, 12, 12, 13</column>
-<column name="icmp_ln65_fu_463_p2">icmp, 0, 0, 12, 11, 12</column>
-<column name="icmp_ln75_fu_684_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln63_fu_442_p2">icmp, 0, 0, 12, 12, 13</column>
+<column name="icmp_ln64_fu_463_p2">icmp, 0, 0, 12, 11, 12</column>
+<column name="icmp_ln74_fu_684_p2">icmp, 0, 0, 20, 32, 32</column>
 <column name="or_ln34_1_fu_612_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln34_2_fu_630_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln34_fu_648_p2">or, 0, 0, 2, 1, 1</column>
@@ -132,8 +132,8 @@
 <column name="select_ln41_1_fu_477_p3">select, 0, 0, 2, 1, 2</column>
 <column name="select_ln41_2_fu_555_p3">select, 0, 0, 2, 1, 1</column>
 <column name="select_ln41_fu_469_p3">select, 0, 0, 10, 1, 1</column>
-<column name="select_ln75_1_fu_698_p3">select, 0, 0, 32, 1, 32</column>
-<column name="select_ln75_fu_690_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln74_1_fu_698_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln74_fu_690_p3">select, 0, 0, 32, 1, 32</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -177,17 +177,17 @@
 <column name="grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_start_reg">1, 0, 1, 0</column>
 <column name="i_04_i627_fu_152">32, 0, 32, 0</column>
 <column name="i_04_i627_load_reg_946">32, 0, 32, 0</column>
 <column name="i_04_i631_fu_160">32, 0, 32, 0</column>
 <column name="i_04_i631_load_reg_931">32, 0, 32, 0</column>
 <column name="i_2_fu_172">2, 0, 2, 0</column>
 <column name="icmp_ln34_reg_898">1, 0, 1, 0</column>
-<column name="icmp_ln65_reg_883">1, 0, 1, 0</column>
+<column name="icmp_ln64_reg_883">1, 0, 1, 0</column>
 <column name="indvar_flatten20_fu_176">12, 0, 12, 0</column>
 <column name="j_02_i629_fu_156">32, 0, 32, 0</column>
 <column name="j_02_i629_load_reg_951">32, 0, 32, 0</column>

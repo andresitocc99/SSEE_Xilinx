@@ -70,7 +70,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3011396528</coreId>
+						<coreId>259806752</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -110,7 +110,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3009895296</coreId>
+						<coreId>2958447674</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -152,7 +152,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1885684768</coreId>
+						<coreId>259432688</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -194,7 +194,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3011277840</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -237,7 +237,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3011407296</coreId>
+						<coreId>2958421518</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -280,7 +280,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3011263232</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -306,7 +306,7 @@
 						<id>10</id>
 						<name>k_1</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>50</lineNumber>
 						<contextFuncName>calculate_brightness_stream</contextFuncName>
 						<contextNormFuncName>calculate_brightness_stream</contextNormFuncName>
@@ -314,7 +314,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="11" tracking_level="0" version="0">
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second class_id="12" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -336,7 +336,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1424427683</coreId>
+						<coreId>260235216</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -363,7 +363,7 @@
 						<id>12</id>
 						<name>icmp_ln50</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>50</lineNumber>
 						<contextFuncName>calculate_brightness_stream</contextFuncName>
 						<contextNormFuncName>calculate_brightness_stream</contextNormFuncName>
@@ -371,7 +371,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -420,7 +420,7 @@
 						<id>14</id>
 						<name>k_2</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>50</lineNumber>
 						<contextFuncName>calculate_brightness_stream</contextFuncName>
 						<contextNormFuncName>calculate_brightness_stream</contextNormFuncName>
@@ -428,7 +428,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -477,7 +477,7 @@
 						<id>15</id>
 						<name>br_ln50</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>50</lineNumber>
 						<contextFuncName>calculate_brightness_stream</contextFuncName>
 						<contextNormFuncName>calculate_brightness_stream</contextNormFuncName>
@@ -485,7 +485,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -507,7 +507,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3011271504</coreId>
+						<coreId>608</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -535,7 +535,7 @@
 						<id>17</id>
 						<name>current_brightness_load</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>calculate_brightness_stream</contextFuncName>
 						<contextNormFuncName>calculate_brightness_stream</contextNormFuncName>
@@ -543,7 +543,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -565,7 +565,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3011170240</coreId>
+						<coreId>259912624</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -592,7 +592,7 @@
 						<id>19</id>
 						<name>tmp</name>
 						<fileName>/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>145</lineNumber>
 						<contextFuncName>read</contextFuncName>
 						<contextNormFuncName>read</contextNormFuncName>
@@ -600,7 +600,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -649,7 +649,7 @@
 						<id>20</id>
 						<name>current_brightness_1</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>calculate_brightness_stream</contextFuncName>
 						<contextNormFuncName>calculate_brightness_stream</contextNormFuncName>
@@ -657,7 +657,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -706,7 +706,7 @@
 						<id>21</id>
 						<name>k_write_ln50</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>50</lineNumber>
 						<contextFuncName>calculate_brightness_stream</contextFuncName>
 						<contextNormFuncName>calculate_brightness_stream</contextNormFuncName>
@@ -714,7 +714,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -736,7 +736,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1424074169</coreId>
+						<coreId>260040800</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -765,7 +765,7 @@
 						<id>22</id>
 						<name>current_brightness_write_ln50</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>50</lineNumber>
 						<contextFuncName>calculate_brightness_stream</contextFuncName>
 						<contextNormFuncName>calculate_brightness_stream</contextNormFuncName>
@@ -773,7 +773,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -795,7 +795,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3010540288</coreId>
+						<coreId>259231232</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -824,7 +824,7 @@
 						<id>23</id>
 						<name>br_ln50</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>50</lineNumber>
 						<contextFuncName>calculate_brightness_stream</contextFuncName>
 						<contextNormFuncName>calculate_brightness_stream</contextNormFuncName>
@@ -832,7 +832,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -854,7 +854,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1424394923</coreId>
+						<coreId>259967136</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -896,7 +896,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3011531808</coreId>
+						<coreId>259112176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -939,7 +939,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3011232808</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -983,7 +983,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1424495362</coreId>
+						<coreId>259912624</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1028,7 +1028,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3011452584</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1090,7 +1090,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3010668304</coreId>
+						<coreId>259113352</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1121,7 +1121,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1347374924</coreId>
+						<coreId>1885684768</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -1152,7 +1152,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>259112480</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -1186,7 +1186,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>3011060992</coreId>
+					<coreId>176</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1221,7 +1221,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>1818325620</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1291,7 +1291,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>259967840</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>

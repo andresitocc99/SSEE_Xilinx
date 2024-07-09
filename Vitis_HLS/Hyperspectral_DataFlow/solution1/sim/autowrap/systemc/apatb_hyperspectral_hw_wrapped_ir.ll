@@ -1,4 +1,4 @@
-; ModuleID = '/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/.autopilot/db/a.g.ld.5.gdce.bc'
+; ModuleID = '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/.autopilot/db/a.g.ld.5.gdce.bc'
 source_filename = "llvm-link"
 target datalayout = "e-m:e-i64:64-i128:128-i256:256-i512:512-i1024:1024-i2048:2048-i4096:4096-n8:16:32:64-S128-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024"
 target triple = "fpga64-xilinx-none"
@@ -18,7 +18,7 @@ target triple = "fpga64-xilinx-none"
 %"struct.ap_int_base<5, false>" = type { %"struct.ssdm_int<5, false>" }
 %"struct.ssdm_int<5, false>" = type { i5 }
 
-; Function Attrs: noinline
+; Function Attrs: inaccessiblemem_or_argmemonly noinline
 define void @apatb_hyperspectral_hw_wrapped_ir(%"class.hls::stream<hls::axis<ap_uint<32>, 4, 5, 5>, 0>"* noalias nonnull dereferenceable(12) %in_stream, %"class.hls::stream<hls::axis<ap_uint<32>, 4, 5, 5>, 0>"* noalias nonnull dereferenceable(12) %out_stream) local_unnamed_addr #0 {
 entry:
   %in_stream_copy.data = alloca i32
@@ -273,7 +273,7 @@ declare void @fpga_fifo_push_12(i8*, i8*)
 
 declare void @fpga_fifo_push_1(i8*, i8*)
 
-attributes #0 = { noinline "fpga.wrapper.func"="wrapper" }
+attributes #0 = { inaccessiblemem_or_argmemonly noinline "fpga.wrapper.func"="wrapper" }
 attributes #1 = { argmemonly noinline "fpga.wrapper.func"="copyin" }
 attributes #2 = { argmemonly noinline "fpga.wrapper.func"="copyout" }
 attributes #3 = { argmemonly noinline "fpga.wrapper.func"="onebyonecpy_hls" }

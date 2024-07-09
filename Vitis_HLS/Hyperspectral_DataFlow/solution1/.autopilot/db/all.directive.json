@@ -6,7 +6,7 @@
           "label": "",
           "functionLabel": "",
           "id": "1",
-          "sourceFile": "\/home\/andresitocc99\/Documentos\/GitHub\/SSEE_Xilinx\/Vitis_HLS\/Hyperspectral_DataFlow\/solution1\/directives.tcl",
+          "sourceFile": "\/home\/andresitocc99\/Documentos\/SSEE_Xilinx\/Vitis_HLS\/Hyperspectral_DataFlow\/solution1\/directives.tcl",
           "sourceLine": "6",
           "pragma": {
             "name": "TOP",
@@ -21,7 +21,7 @@
           "label": "",
           "functionLabel": "",
           "id": "2",
-          "sourceFile": "\/home\/andresitocc99\/Documentos\/GitHub\/SSEE_Xilinx\/Vitis_HLS\/Hyperspectral_DataFlow\/solution1\/csynth.tcl",
+          "sourceFile": "\/home\/andresitocc99\/Documentos\/SSEE_Xilinx\/Vitis_HLS\/Hyperspectral_DataFlow\/solution1\/csynth.tcl",
           "sourceLine": "16",
           "pragma": {
             "name": "TOP",

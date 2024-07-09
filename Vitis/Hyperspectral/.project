@@ -3,7 +3,7 @@
 	<name>Hyperspectral</name>
 	<comment>Created by Vitis v2022.1</comment>
 	<projects>
-		<project>design_1_hyperspectral</project>
+		<project>design_1_wrapper</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -143,68 +143,68 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "in_stream_V_data_V", "Type" : "Axis", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239", "Port" : "in_stream_V_data_V", "Inst_start_state" : "2", "Inst_end_state" : "3"},
-					{"ID" : "5", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258", "Port" : "in_stream_V_data_V", "Inst_start_state" : "5", "Inst_end_state" : "6"}]},
+					{"ID" : "2", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239", "Port" : "in_stream_V_data_V", "Inst_start_state" : "2", "Inst_end_state" : "3"},
+					{"ID" : "5", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258", "Port" : "in_stream_V_data_V", "Inst_start_state" : "5", "Inst_end_state" : "6"}]},
 			{"Name" : "in_stream_V_keep_V", "Type" : "Axis", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239", "Port" : "in_stream_V_keep_V", "Inst_start_state" : "2", "Inst_end_state" : "3"},
-					{"ID" : "5", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258", "Port" : "in_stream_V_keep_V", "Inst_start_state" : "5", "Inst_end_state" : "6"}]},
+					{"ID" : "2", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239", "Port" : "in_stream_V_keep_V", "Inst_start_state" : "2", "Inst_end_state" : "3"},
+					{"ID" : "5", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258", "Port" : "in_stream_V_keep_V", "Inst_start_state" : "5", "Inst_end_state" : "6"}]},
 			{"Name" : "in_stream_V_strb_V", "Type" : "Axis", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239", "Port" : "in_stream_V_strb_V", "Inst_start_state" : "2", "Inst_end_state" : "3"},
-					{"ID" : "5", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258", "Port" : "in_stream_V_strb_V", "Inst_start_state" : "5", "Inst_end_state" : "6"}]},
+					{"ID" : "2", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239", "Port" : "in_stream_V_strb_V", "Inst_start_state" : "2", "Inst_end_state" : "3"},
+					{"ID" : "5", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258", "Port" : "in_stream_V_strb_V", "Inst_start_state" : "5", "Inst_end_state" : "6"}]},
 			{"Name" : "in_stream_V_user_V", "Type" : "Axis", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239", "Port" : "in_stream_V_user_V", "Inst_start_state" : "2", "Inst_end_state" : "3"},
-					{"ID" : "5", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258", "Port" : "in_stream_V_user_V", "Inst_start_state" : "5", "Inst_end_state" : "6"}]},
+					{"ID" : "2", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239", "Port" : "in_stream_V_user_V", "Inst_start_state" : "2", "Inst_end_state" : "3"},
+					{"ID" : "5", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258", "Port" : "in_stream_V_user_V", "Inst_start_state" : "5", "Inst_end_state" : "6"}]},
 			{"Name" : "in_stream_V_last_V", "Type" : "Axis", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239", "Port" : "in_stream_V_last_V", "Inst_start_state" : "2", "Inst_end_state" : "3"},
-					{"ID" : "5", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258", "Port" : "in_stream_V_last_V", "Inst_start_state" : "5", "Inst_end_state" : "6"}]},
+					{"ID" : "2", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239", "Port" : "in_stream_V_last_V", "Inst_start_state" : "2", "Inst_end_state" : "3"},
+					{"ID" : "5", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258", "Port" : "in_stream_V_last_V", "Inst_start_state" : "5", "Inst_end_state" : "6"}]},
 			{"Name" : "in_stream_V_id_V", "Type" : "Axis", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239", "Port" : "in_stream_V_id_V", "Inst_start_state" : "2", "Inst_end_state" : "3"},
-					{"ID" : "5", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258", "Port" : "in_stream_V_id_V", "Inst_start_state" : "5", "Inst_end_state" : "6"}]},
+					{"ID" : "2", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239", "Port" : "in_stream_V_id_V", "Inst_start_state" : "2", "Inst_end_state" : "3"},
+					{"ID" : "5", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258", "Port" : "in_stream_V_id_V", "Inst_start_state" : "5", "Inst_end_state" : "6"}]},
 			{"Name" : "in_stream_V_dest_V", "Type" : "Axis", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239", "Port" : "in_stream_V_dest_V", "Inst_start_state" : "2", "Inst_end_state" : "3"},
-					{"ID" : "5", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258", "Port" : "in_stream_V_dest_V", "Inst_start_state" : "5", "Inst_end_state" : "6"}]},
+					{"ID" : "2", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239", "Port" : "in_stream_V_dest_V", "Inst_start_state" : "2", "Inst_end_state" : "3"},
+					{"ID" : "5", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258", "Port" : "in_stream_V_dest_V", "Inst_start_state" : "5", "Inst_end_state" : "6"}]},
 			{"Name" : "out_stream_V_data_V", "Type" : "Axis", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "out_stream_TDATA_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "22", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325", "Port" : "out_stream_V_data_V", "Inst_start_state" : "35", "Inst_end_state" : "36"},
-					{"ID" : "20", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305", "Port" : "out_stream_V_data_V", "Inst_start_state" : "31", "Inst_end_state" : "32"}]},
+					{"ID" : "20", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305", "Port" : "out_stream_V_data_V", "Inst_start_state" : "31", "Inst_end_state" : "32"},
+					{"ID" : "22", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325", "Port" : "out_stream_V_data_V", "Inst_start_state" : "35", "Inst_end_state" : "36"}]},
 			{"Name" : "out_stream_V_keep_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "22", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325", "Port" : "out_stream_V_keep_V", "Inst_start_state" : "35", "Inst_end_state" : "36"},
-					{"ID" : "20", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305", "Port" : "out_stream_V_keep_V", "Inst_start_state" : "31", "Inst_end_state" : "32"}]},
+					{"ID" : "20", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305", "Port" : "out_stream_V_keep_V", "Inst_start_state" : "31", "Inst_end_state" : "32"},
+					{"ID" : "22", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325", "Port" : "out_stream_V_keep_V", "Inst_start_state" : "35", "Inst_end_state" : "36"}]},
 			{"Name" : "out_stream_V_strb_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "22", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325", "Port" : "out_stream_V_strb_V", "Inst_start_state" : "35", "Inst_end_state" : "36"},
-					{"ID" : "20", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305", "Port" : "out_stream_V_strb_V", "Inst_start_state" : "31", "Inst_end_state" : "32"}]},
+					{"ID" : "20", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305", "Port" : "out_stream_V_strb_V", "Inst_start_state" : "31", "Inst_end_state" : "32"},
+					{"ID" : "22", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325", "Port" : "out_stream_V_strb_V", "Inst_start_state" : "35", "Inst_end_state" : "36"}]},
 			{"Name" : "out_stream_V_user_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "22", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325", "Port" : "out_stream_V_user_V", "Inst_start_state" : "35", "Inst_end_state" : "36"},
-					{"ID" : "20", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305", "Port" : "out_stream_V_user_V", "Inst_start_state" : "31", "Inst_end_state" : "32"}]},
+					{"ID" : "20", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305", "Port" : "out_stream_V_user_V", "Inst_start_state" : "31", "Inst_end_state" : "32"},
+					{"ID" : "22", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325", "Port" : "out_stream_V_user_V", "Inst_start_state" : "35", "Inst_end_state" : "36"}]},
 			{"Name" : "out_stream_V_last_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "22", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325", "Port" : "out_stream_V_last_V", "Inst_start_state" : "35", "Inst_end_state" : "36"},
-					{"ID" : "20", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305", "Port" : "out_stream_V_last_V", "Inst_start_state" : "31", "Inst_end_state" : "32"}]},
+					{"ID" : "20", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305", "Port" : "out_stream_V_last_V", "Inst_start_state" : "31", "Inst_end_state" : "32"},
+					{"ID" : "22", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325", "Port" : "out_stream_V_last_V", "Inst_start_state" : "35", "Inst_end_state" : "36"}]},
 			{"Name" : "out_stream_V_id_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "22", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325", "Port" : "out_stream_V_id_V", "Inst_start_state" : "35", "Inst_end_state" : "36"},
-					{"ID" : "20", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305", "Port" : "out_stream_V_id_V", "Inst_start_state" : "31", "Inst_end_state" : "32"}]},
+					{"ID" : "20", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305", "Port" : "out_stream_V_id_V", "Inst_start_state" : "31", "Inst_end_state" : "32"},
+					{"ID" : "22", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325", "Port" : "out_stream_V_id_V", "Inst_start_state" : "35", "Inst_end_state" : "36"}]},
 			{"Name" : "out_stream_V_dest_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "22", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325", "Port" : "out_stream_V_dest_V", "Inst_start_state" : "35", "Inst_end_state" : "36"},
-					{"ID" : "20", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305", "Port" : "out_stream_V_dest_V", "Inst_start_state" : "31", "Inst_end_state" : "32"}]}],
+					{"ID" : "20", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305", "Port" : "out_stream_V_dest_V", "Inst_start_state" : "31", "Inst_end_state" : "32"},
+					{"ID" : "22", "SubInstance" : "grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325", "Port" : "out_stream_V_dest_V", "Inst_start_state" : "35", "Inst_end_state" : "36"}]}],
 		"Loop" : [
 			{"Name" : "L1_L2", "PipelineType" : "no",
 				"LoopDec" : {"FSMBitwidth" : "37", "FirstState" : "ap_ST_fsm_state11", "LastState" : ["ap_ST_fsm_state30"], "QuitState" : ["ap_ST_fsm_state11"], "PreState" : ["ap_ST_fsm_state10"], "PostState" : ["ap_ST_fsm_state31"], "OneDepthLoop" : "0", "OneStateBlock": ""}}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.image_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239", "Parent" : "0", "Child" : ["3", "4"],
-		"CDFG" : "hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1",
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239", "Parent" : "0", "Child" : ["3", "4"],
+		"CDFG" : "hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -229,12 +229,12 @@ set RtlHierarchyInfo {[
 			{"Name" : "in_stream_V_id_V", "Type" : "Axis", "Direction" : "I"},
 			{"Name" : "in_stream_V_dest_V", "Type" : "Axis", "Direction" : "I"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3", "PipelineType" : "UPC",
+			{"Name" : "VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter1", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter4", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter4", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239.am_addmul_12ns_11ns_8ns_19_4_1_U1", "Parent" : "2"},
-	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239.flow_control_loop_pipe_sequential_init_U", "Parent" : "2"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258", "Parent" : "0", "Child" : ["6"],
-		"CDFG" : "hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5",
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239.am_addmul_12ns_11ns_8ns_19_4_1_U1", "Parent" : "2"},
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239.flow_control_loop_pipe_sequential_init_U", "Parent" : "2"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258", "Parent" : "0", "Child" : ["6"],
+		"CDFG" : "hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -260,8 +260,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "refPixel_1_034_out", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "refPixel_0_033_out", "Type" : "Vld", "Direction" : "O"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_117_5", "PipelineType" : "NotSupport"}]},
-	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258.flow_control_loop_pipe_sequential_init_U", "Parent" : "5"},
+			{"Name" : "VITIS_LOOP_114_5", "PipelineType" : "NotSupport"}]},
+	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258.flow_control_loop_pipe_sequential_init_U", "Parent" : "5"},
 	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278", "Parent" : "0", "Child" : ["8", "9", "10", "11", "12"],
 		"CDFG" : "hyperspectral_hw_wrapped_Pipeline_L3",
 		"Protocol" : "ap_ctrl_hs",
@@ -362,8 +362,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "L6", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
 	{"ID" : "19", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299.flow_control_loop_pipe_sequential_init_U", "Parent" : "18"},
-	{"ID" : "20", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305", "Parent" : "0", "Child" : ["21"],
-		"CDFG" : "hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6",
+	{"ID" : "20", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305", "Parent" : "0", "Child" : ["21"],
+		"CDFG" : "hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -389,11 +389,11 @@ set RtlHierarchyInfo {[
 			{"Name" : "out_stream_V_id_V", "Type" : "Axis", "Direction" : "O"},
 			{"Name" : "out_stream_V_dest_V", "Type" : "Axis", "Direction" : "O"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_132_6", "PipelineType" : "UPC",
+			{"Name" : "VITIS_LOOP_129_6", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter3", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter3", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "21", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305.flow_control_loop_pipe_sequential_init_U", "Parent" : "20"},
-	{"ID" : "22", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325", "Parent" : "0", "Child" : ["23"],
-		"CDFG" : "hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7",
+	{"ID" : "21", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305.flow_control_loop_pipe_sequential_init_U", "Parent" : "20"},
+	{"ID" : "22", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325", "Parent" : "0", "Child" : ["23"],
+		"CDFG" : "hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -419,9 +419,9 @@ set RtlHierarchyInfo {[
 			{"Name" : "out_stream_V_id_V", "Type" : "Axis", "Direction" : "O"},
 			{"Name" : "out_stream_V_dest_V", "Type" : "Axis", "Direction" : "O"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_167_7", "PipelineType" : "UPC",
+			{"Name" : "VITIS_LOOP_161_7", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter3", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter3", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "23", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325.flow_control_loop_pipe_sequential_init_U", "Parent" : "22"},
+	{"ID" : "23", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325.flow_control_loop_pipe_sequential_init_U", "Parent" : "22"},
 	{"ID" : "24", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.CONTROL_BUS_s_axi_U", "Parent" : "0"},
 	{"ID" : "25", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fcmp_32ns_32ns_1_2_no_dsp_1_U60", "Parent" : "0"},
 	{"ID" : "26", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fsqrt_32ns_32ns_32_10_no_dsp_1_U61", "Parent" : "0"},
@@ -462,7 +462,7 @@ set ArgLastReadFirstWriteLatency {
 		out_stream_V_last_V {Type O LastRead -1 FirstWrite 3}
 		out_stream_V_id_V {Type O LastRead -1 FirstWrite 3}
 		out_stream_V_dest_V {Type O LastRead -1 FirstWrite 3}}
-	hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1 {
+	hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1 {
 		image_r {Type O LastRead -1 FirstWrite 4}
 		in_stream_V_data_V {Type I LastRead 1 FirstWrite -1}
 		in_stream_V_keep_V {Type I LastRead 1 FirstWrite -1}
@@ -471,7 +471,7 @@ set ArgLastReadFirstWriteLatency {
 		in_stream_V_last_V {Type I LastRead 1 FirstWrite -1}
 		in_stream_V_id_V {Type I LastRead 1 FirstWrite -1}
 		in_stream_V_dest_V {Type I LastRead 1 FirstWrite -1}}
-	hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5 {
+	hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5 {
 		in_stream_V_data_V {Type I LastRead 0 FirstWrite -1}
 		in_stream_V_keep_V {Type I LastRead 0 FirstWrite -1}
 		in_stream_V_strb_V {Type I LastRead 0 FirstWrite -1}
@@ -496,7 +496,7 @@ set ArgLastReadFirstWriteLatency {
 	hyperspectral_hw_wrapped_Pipeline_L6 {
 		brightness_stream {Type I LastRead 1 FirstWrite -1}
 		current_brightness_out {Type O LastRead -1 FirstWrite 0}}
-	hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6 {
+	hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6 {
 		j_02_i633 {Type I LastRead 0 FirstWrite -1}
 		i_04_i631 {Type I LastRead 0 FirstWrite -1}
 		out_stream_V_data_V {Type O LastRead -1 FirstWrite 3}
@@ -506,7 +506,7 @@ set ArgLastReadFirstWriteLatency {
 		out_stream_V_last_V {Type O LastRead -1 FirstWrite 3}
 		out_stream_V_id_V {Type O LastRead -1 FirstWrite 3}
 		out_stream_V_dest_V {Type O LastRead -1 FirstWrite 3}}
-	hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7 {
+	hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7 {
 		j_02_i629 {Type I LastRead 0 FirstWrite -1}
 		i_04_i627 {Type I LastRead 0 FirstWrite -1}
 		out_stream_V_data_V {Type O LastRead -1 FirstWrite 3}

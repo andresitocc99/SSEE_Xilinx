@@ -15,8 +15,8 @@ reg [3:0] monitor_axis_block_info;
 reg monitor_find_block;
 wire idx1_block;
 wire idx2_block;
-wire idx4_block;
 wire idx3_block;
+wire idx4_block;
 wire sub_parallel_block;
 wire all_sub_parallel_has_block;
 wire all_sub_single_has_block;
@@ -27,10 +27,10 @@ assign axis_block_info = (monitor_find_block == 1'b1) ? monitor_axis_block_info 
 assign block = monitor_find_block;
 assign idx1_block = axis_block_sigs[1];
 assign idx2_block = axis_block_sigs[2];
-assign idx4_block = axis_block_sigs[4];
 assign idx3_block = axis_block_sigs[3];
+assign idx4_block = axis_block_sigs[4];
 assign all_sub_parallel_has_block = 1'b0;
-assign all_sub_single_has_block = 1'b0 | (idx1_block & (axis_block_sigs[1])) | (idx2_block & (axis_block_sigs[2])) | (idx4_block & (axis_block_sigs[4])) | (idx3_block & (axis_block_sigs[3]));
+assign all_sub_single_has_block = 1'b0 | (idx1_block & (axis_block_sigs[1])) | (idx2_block & (axis_block_sigs[2])) | (idx3_block & (axis_block_sigs[3])) | (idx4_block & (axis_block_sigs[4]));
 assign cur_axis_has_block = 1'b0 | axis_block_sigs[0];
 assign seq_is_axis_block = all_sub_parallel_has_block | all_sub_single_has_block | cur_axis_has_block;
 

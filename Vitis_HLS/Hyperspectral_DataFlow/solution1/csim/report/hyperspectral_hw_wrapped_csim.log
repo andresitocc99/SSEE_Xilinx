@@ -1,44 +1,9 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-   Compiling ../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp in debug mode
-../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp: In function ‘void hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4, 5, 5> >&, hls::stream<hls::axis<ap_uint<32>, 4, 5, 5> >&)’:
-../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:120:44: error: no match for call to ‘(ap_uint<32>) ()’
-         WORD_MEM w = in_stream.read().data();
-                                            ^
-In file included from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_int.h:57,
-                 from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_fixed_base.h:62,
-                 from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_fixed.h:56,
-                 from /tools/Xilinx/Vitis_HLS/2022.1/include/hls_hotbm_apfixed.h:42,
-                 from /tools/Xilinx/Vitis_HLS/2022.1/include/hls_math.h:1065,
-                 from ../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:1:
-/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1130:37: note: candidate: ‘ap_range_ref<_AP_W, _AP_S> ap_int_base<_AP_W, _AP_S>::operator()(int, int) [with int _AP_W = 32; bool _AP_S = false]’
-   INLINE ap_range_ref<_AP_W, _AP_S> operator()(int Hi, int Lo) {
-                                     ^~~~~~~~
-/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1130:37: note:   candidate expects 2 arguments, 0 provided
-/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1134:37: note: candidate: ‘ap_range_ref<_AP_W, _AP_S> ap_int_base<_AP_W, _AP_S>::operator()(int, int) const [with int _AP_W = 32; bool _AP_S = false]’
-   INLINE ap_range_ref<_AP_W, _AP_S> operator()(int Hi, int Lo) const {
-                                     ^~~~~~~~
-/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1134:37: note:   candidate expects 2 arguments, 0 provided
-/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1139:37: note: candidate: ‘template<int _AP_W2, bool _AP_S2, int _AP_W3, bool _AP_S3> ap_range_ref<_AP_W, _AP_S> ap_int_base<_AP_W, _AP_S>::operator()(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W2 = _AP_W2; bool _AP_S2 = _AP_S2; int _AP_W3 = _AP_W3; bool _AP_S3 = _AP_S3; int _AP_W = 32; bool _AP_S = false]’
-   INLINE ap_range_ref<_AP_W, _AP_S> operator()(
-                                     ^~~~~~~~
-/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1139:37: note:   template argument deduction/substitution failed:
-../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:120:44: note:   candidate expects 2 arguments, 0 provided
-         WORD_MEM w = in_stream.read().data();
-                                            ^
-In file included from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_int.h:57,
-                 from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_fixed_base.h:62,
-                 from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_fixed.h:56,
-                 from /tools/Xilinx/Vitis_HLS/2022.1/include/hls_hotbm_apfixed.h:42,
-                 from /tools/Xilinx/Vitis_HLS/2022.1/include/hls_math.h:1065,
-                 from ../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:1:
-/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1148:37: note: candidate: ‘template<int _AP_W2, bool _AP_S2, int _AP_W3, bool _AP_S3> ap_range_ref<_AP_W, _AP_S> ap_int_base<_AP_W, _AP_S>::operator()(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) const [with int _AP_W2 = _AP_W2; bool _AP_S2 = _AP_S2; int _AP_W3 = _AP_W3; bool _AP_S3 = _AP_S3; int _AP_W = 32; bool _AP_S = false]’
-   INLINE ap_range_ref<_AP_W, _AP_S> operator()(
-                                     ^~~~~~~~
-/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1148:37: note:   template argument deduction/substitution failed:
-../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:120:44: note:   candidate expects 2 arguments, 0 provided
-         WORD_MEM w = in_stream.read().data();
-                                            ^
-make: *** [csim.mk:80: obj/hyperspectral_accel.o] Error 1
-ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+   Compiling ../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp in debug mode
+   Generating csim.exe
+Archivo cargado correctamente
+DEBUGGING AXI4 STREAMING DATA TYPES!
+Test OK!
+INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

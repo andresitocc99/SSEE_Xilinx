@@ -33,546 +33,6 @@ Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
 Tool Version Limit: 2022.04
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ==============================================================
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
-INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
-INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.139 GB.
-INFO: [HLS 200-10] Analyzing design file '../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 22.83 seconds. CPU system time: 1.32 seconds. Elapsed time: 27.42 seconds; current allocated memory: 136.496 MB.
-INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_107_4' is marked as complete unroll implied by the pipeline pragma (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:107:35)
-INFO: [HLS 214-291] Loop 'convert2word_intlabel0' is marked as complete unroll implied by the pipeline pragma (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:183:28)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_107_4' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:107:35) in function 'hyperspectral_hw_wrapped' completely with a factor of 2 (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:84:0)
-INFO: [HLS 214-186] Unrolling loop 'convert2word_intlabel0' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:183:28) in function 'convert2_int' completely with a factor of 1 (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:180:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
-INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, float>(float, bool)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
-INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, float>(float, bool)' into '__hls_fptosi_float_i32' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51:0)
-INFO: [HLS 214-178] Inlining function 'hls::sqrt(float)' into 'calculate_distance_stream(unsigned short (*) [1024][180], int*, float&, int, int)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:12:0)
-INFO: [HLS 214-178] Inlining function 'calculate_distance_stream(unsigned short (*) [1024][180], int*, float&, int, int)' into 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:57:0)
-INFO: [HLS 214-178] Inlining function 'update_closest_pixel(float, float&, int*, int*, int, int)' into 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:57:0)
-INFO: [HLS 214-178] Inlining function 'calculate_brightness_stream(unsigned short (*) [1024][180], unsigned int&, int, int)' into 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:57:0)
-INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i32' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:84:0)
-INFO: [HLS 214-178] Inlining function 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:84:0)
-INFO: [HLS 214-178] Inlining function 'convert2_int(ap_uint<32>&, int*)' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:84:0)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<32>s.i32' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i5.s_struct.ap_uint<5>s' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i4.s_struct.ap_uint<4>s' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.s_struct.ap_uint<32>s' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<5>s.i5' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<1>s.i1' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<4>s.i4' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.88 seconds. CPU system time: 0.49 seconds. Elapsed time: 7.02 seconds; current allocated memory: 137.273 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 137.273 MB.
-INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.44 seconds; current allocated memory: 165.836 MB.
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.27 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.3 seconds; current allocated memory: 204.664 MB.
-INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_117_5' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:118) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'L3' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:16) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'L4' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:0) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'L3' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:45) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'L4' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:0) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_167_7' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:167) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-102] Automatically partitioning small array 'refPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:95) completely based on array size.
-INFO: [XFORM 203-102] Automatically partitioning small array 'maxBrightnessIdx' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:96) completely based on array size.
-INFO: [XFORM 203-102] Automatically partitioning small array 'closestPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:98) completely based on array size.
-INFO: [XFORM 203-101] Partitioning array 'refPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:95) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'maxBrightnessIdx' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:96) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'closestPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:98) in dimension 1 completely.
-WARNING: [HLS 200-805] An internal stream 'brightness_stream' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:43) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
-WARNING: [HLS 200-805] An internal stream 'sum_stream' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:14) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.4 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.6 seconds; current allocated memory: 266.848 MB.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_103_2' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:103:36) in function 'hyperspectral_hw_wrapped'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_102_1' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:102:32) in function 'hyperspectral_hw_wrapped'.
-WARNING: [HLS 200-960] Cannot flatten loop 'L2' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:97:7) in function 'hyperspectral_hw_wrapped' more than one sub loop.
-INFO: [XFORM 203-541] Flattening a loop nest 'L1' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:97:7) in function 'hyperspectral_hw_wrapped'.
-INFO: [HLS 200-472] Inferring partial write operation for 'image' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:108:38)
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.26 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.31 seconds; current allocated memory: 346.848 MB.
-INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO: [HLS 200-10] Synthesizing 'hyperspectral_hw_wrapped' ...
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln108) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.39 seconds; current allocated memory: 348.500 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 348.500 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_117_5'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_117_5'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 348.996 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 348.996 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'L3'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 15, loop 'L3'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 349.492 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 349.492 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L4' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'L4'.
-WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L4' (loop 'L4'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation ('sum_write_ln23', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:23) of variable 'x', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24 on local variable 'sum' and 'load' operation ('sum_load', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24) on local variable 'sum'.
-WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L4' (loop 'L4'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation ('sum_write_ln23', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:23) of variable 'x', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24 on local variable 'sum' and 'load' operation ('sum_load', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24) on local variable 'sum'.
-WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L4' (loop 'L4'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation ('sum_write_ln23', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:23) of variable 'x', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24 on local variable 'sum' and 'load' operation ('sum_load', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24) on local variable 'sum'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 7, loop 'L4'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 349.863 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 349.863 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L31' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'L3'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'L3'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 350.074 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 350.074 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L42' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'L4'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'L4'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 350.438 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 350.438 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_132_6'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_132_6'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 350.641 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 350.641 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_167_7'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'VITIS_LOOP_167_7'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 351.117 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 351.117 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=mul_ln17) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln17_1) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 352.324 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.23 seconds. CPU system time: 0 seconds. Elapsed time: 0.24 seconds; current allocated memory: 352.324 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1' pipeline 'VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'am_addmul_12ns_11ns_8ns_19_4_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.27 seconds; current allocated memory: 352.324 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 353.926 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L3' pipeline 'L3' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'uitofp_32ns_32_4_no_dsp_1': 2 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.34 seconds; current allocated memory: 355.449 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L4' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L4' pipeline 'L4' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L4'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 356.617 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L31' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L31' pipeline 'L3' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L31'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 357.496 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L42' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L42' pipeline 'L4' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L42'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 358.289 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6' pipeline 'VITIS_LOOP_132_6' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_4_no_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 359.164 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7' pipeline 'VITIS_LOOP_167_7' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_4_no_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 360.082 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_data_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_keep_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_strb_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_user_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_last_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_id_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_dest_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_data_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_keep_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_strb_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_user_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_last_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_id_V' to 'axis' (register, both mode).
-==============================================================
-Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
-Tool Version Limit: 2022.04
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-==============================================================
-==============================================================
-Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
-Tool Version Limit: 2022.04
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-==============================================================
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
-INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
-INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.139 GB.
-INFO: [HLS 200-10] Analyzing design file '../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 22.87 seconds. CPU system time: 1.19 seconds. Elapsed time: 22.64 seconds; current allocated memory: 136.496 MB.
-INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_107_4' is marked as complete unroll implied by the pipeline pragma (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:107:35)
-INFO: [HLS 214-291] Loop 'convert2word_intlabel0' is marked as complete unroll implied by the pipeline pragma (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:183:28)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_107_4' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:107:35) in function 'hyperspectral_hw_wrapped' completely with a factor of 2 (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:84:0)
-INFO: [HLS 214-186] Unrolling loop 'convert2word_intlabel0' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:183:28) in function 'convert2_int' completely with a factor of 1 (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:180:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
-INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, float>(float, bool)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
-INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, float>(float, bool)' into '__hls_fptosi_float_i32' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51:0)
-INFO: [HLS 214-178] Inlining function 'hls::sqrt(float)' into 'calculate_distance_stream(unsigned short (*) [1024][180], int*, float&, int, int)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:12:0)
-INFO: [HLS 214-178] Inlining function 'calculate_distance_stream(unsigned short (*) [1024][180], int*, float&, int, int)' into 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:57:0)
-INFO: [HLS 214-178] Inlining function 'update_closest_pixel(float, float&, int*, int*, int, int)' into 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:57:0)
-INFO: [HLS 214-178] Inlining function 'calculate_brightness_stream(unsigned short (*) [1024][180], unsigned int&, int, int)' into 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:57:0)
-INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i32' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:84:0)
-INFO: [HLS 214-178] Inlining function 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:84:0)
-INFO: [HLS 214-178] Inlining function 'convert2_int(ap_uint<32>&, int*)' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:84:0)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<32>s.i32' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i5.s_struct.ap_uint<5>s' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i4.s_struct.ap_uint<4>s' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.s_struct.ap_uint<32>s' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<5>s.i5' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<1>s.i1' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<4>s.i4' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.76 seconds. CPU system time: 0.48 seconds. Elapsed time: 4.25 seconds; current allocated memory: 137.273 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 137.273 MB.
-INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.13 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.14 seconds; current allocated memory: 165.836 MB.
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.25 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.29 seconds; current allocated memory: 204.660 MB.
-INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_117_5' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:118) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'L3' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:16) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'L4' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:0) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'L5' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:45) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'L6' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:0) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_167_7' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:167) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-102] Automatically partitioning small array 'refPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:95) completely based on array size.
-INFO: [XFORM 203-102] Automatically partitioning small array 'maxBrightnessIdx' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:96) completely based on array size.
-INFO: [XFORM 203-102] Automatically partitioning small array 'closestPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:98) completely based on array size.
-INFO: [XFORM 203-101] Partitioning array 'refPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:95) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'maxBrightnessIdx' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:96) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'closestPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:98) in dimension 1 completely.
-WARNING: [HLS 200-805] An internal stream 'brightness_stream' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:43) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
-WARNING: [HLS 200-805] An internal stream 'sum_stream' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:14) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.41 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.42 seconds; current allocated memory: 266.973 MB.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_103_2' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:103:36) in function 'hyperspectral_hw_wrapped'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_102_1' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:102:32) in function 'hyperspectral_hw_wrapped'.
-WARNING: [HLS 200-960] Cannot flatten loop 'L2' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:97:7) in function 'hyperspectral_hw_wrapped' more than one sub loop.
-INFO: [XFORM 203-541] Flattening a loop nest 'L1' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:97:7) in function 'hyperspectral_hw_wrapped'.
-INFO: [HLS 200-472] Inferring partial write operation for 'image' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:108:38)
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.23 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.27 seconds; current allocated memory: 346.840 MB.
-INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO: [HLS 200-10] Synthesizing 'hyperspectral_hw_wrapped' ...
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln108) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.13 seconds; current allocated memory: 348.504 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 348.504 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_117_5'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_117_5'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 349.000 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 349.000 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'L3'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 15, loop 'L3'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 349.496 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 349.496 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L4' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'L4'.
-WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L4' (loop 'L4'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation ('sum_write_ln23', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:23) of variable 'x', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24 on local variable 'sum' and 'load' operation ('sum_load', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24) on local variable 'sum'.
-WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L4' (loop 'L4'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation ('sum_write_ln23', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:23) of variable 'x', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24 on local variable 'sum' and 'load' operation ('sum_load', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24) on local variable 'sum'.
-WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L4' (loop 'L4'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation ('sum_write_ln23', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:23) of variable 'x', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24 on local variable 'sum' and 'load' operation ('sum_load', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24) on local variable 'sum'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 7, loop 'L4'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 349.859 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 349.859 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L5' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'L5'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'L5'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 350.078 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 350.078 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L6' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'L6'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'L6'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 350.438 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 350.438 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_132_6'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_132_6'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 350.688 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 350.688 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_167_7'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'VITIS_LOOP_167_7'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 351.121 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 351.121 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=mul_ln17) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln17_1) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 352.328 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.24 seconds. CPU system time: 0 seconds. Elapsed time: 0.25 seconds; current allocated memory: 352.328 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1' pipeline 'VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'am_addmul_12ns_11ns_8ns_19_4_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.27 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 352.328 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.2 seconds; current allocated memory: 353.922 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L3' pipeline 'L3' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'uitofp_32ns_32_4_no_dsp_1': 2 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.14 seconds; current allocated memory: 355.449 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L4' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L4' pipeline 'L4' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L4'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 356.617 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L5' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L5' pipeline 'L5' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L5'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 357.496 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L6' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L6' pipeline 'L6' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L6'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 358.289 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6' pipeline 'VITIS_LOOP_132_6' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_4_no_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 359.164 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7' pipeline 'VITIS_LOOP_167_7' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_4_no_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 360.082 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_data_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_keep_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_strb_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_user_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_last_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_id_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_dest_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_data_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_keep_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_strb_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_user_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_last_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_id_V' to 'axis' (register, both mode).
 ==============================================================
 Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
 Tool Version Limit: 2022.04
@@ -588,271 +48,161 @@ Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
 Tool Version Limit: 2022.04
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ==============================================================
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
-INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
-INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 1.136 GB.
-INFO: [HLS 200-10] Analyzing design file '../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 23.25 seconds. CPU system time: 1.18 seconds. Elapsed time: 23.72 seconds; current allocated memory: 133.734 MB.
-INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_106_4' is marked as complete unroll implied by the pipeline pragma (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:106:35)
-INFO: [HLS 214-291] Loop 'convert2word_intlabel0' is marked as complete unroll implied by the pipeline pragma (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:182:28)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_106_4' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:106:35) in function 'hyperspectral_hw_wrapped' completely with a factor of 2 (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:83:0)
-INFO: [HLS 214-186] Unrolling loop 'convert2word_intlabel0' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:182:28) in function 'convert2_int' completely with a factor of 1 (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:179:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
-INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, float>(float, bool)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
-INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, float>(float, bool)' into '__hls_fptosi_float_i32' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51:0)
-INFO: [HLS 214-178] Inlining function 'hls::sqrt(float)' into 'calculate_distance_stream(unsigned short (*) [1024][180], int*, float&, int, int)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:12:0)
-INFO: [HLS 214-178] Inlining function 'calculate_distance_stream(unsigned short (*) [1024][180], int*, float&, int, int)' into 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:57:0)
-INFO: [HLS 214-178] Inlining function 'update_closest_pixel(float, float&, int*, int*, int, int)' into 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:57:0)
-INFO: [HLS 214-178] Inlining function 'calculate_brightness_stream(unsigned short (*) [1024][180], unsigned int&, int, int)' into 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:57:0)
-INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i32' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:83:0)
-INFO: [HLS 214-178] Inlining function 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:83:0)
-INFO: [HLS 214-178] Inlining function 'convert2_int(ap_uint<32>&, int*)' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:83:0)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<32>s.i32' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i5.s_struct.ap_uint<5>s' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i4.s_struct.ap_uint<4>s' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.s_struct.ap_uint<32>s' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<5>s.i5' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<1>s.i1' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<4>s.i4' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.82 seconds. CPU system time: 0.4 seconds. Elapsed time: 4.23 seconds; current allocated memory: 134.539 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 134.539 MB.
-INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.1 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.13 seconds; current allocated memory: 163.082 MB.
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.25 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.28 seconds; current allocated memory: 201.910 MB.
-INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_116_5' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:117) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'L3' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:16) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'L4' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:0) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'L5' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:45) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'L6' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:0) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_166_7' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:166) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-102] Automatically partitioning small array 'refPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:94) completely based on array size.
-INFO: [XFORM 203-102] Automatically partitioning small array 'maxBrightnessIdx' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:95) completely based on array size.
-INFO: [XFORM 203-102] Automatically partitioning small array 'closestPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:97) completely based on array size.
-INFO: [XFORM 203-101] Partitioning array 'refPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:94) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'maxBrightnessIdx' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:95) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'closestPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:97) in dimension 1 completely.
-WARNING: [HLS 200-805] An internal stream 'brightness_stream' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:43) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
-WARNING: [HLS 200-805] An internal stream 'sum_stream' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:14) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.38 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.41 seconds; current allocated memory: 264.090 MB.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_102_2' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:102:36) in function 'hyperspectral_hw_wrapped'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_101_1' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:101:32) in function 'hyperspectral_hw_wrapped'.
-WARNING: [HLS 200-960] Cannot flatten loop 'L2' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:96:7) in function 'hyperspectral_hw_wrapped' more than one sub loop.
-INFO: [XFORM 203-541] Flattening a loop nest 'L1' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:96:7) in function 'hyperspectral_hw_wrapped'.
-INFO: [HLS 200-472] Inferring partial write operation for 'image' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:107:38)
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.25 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.28 seconds; current allocated memory: 344.066 MB.
-INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO: [HLS 200-10] Synthesizing 'hyperspectral_hw_wrapped' ...
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_101_1_VITIS_LOOP_102_2_VITIS_LOOP_1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln107) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_101_1_VITIS_LOOP_102_2_VITIS_LOOP_103_3'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_101_1_VITIS_LOOP_102_2_VITIS_LOOP_103_3'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.14 seconds; current allocated memory: 345.699 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 345.699 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_116_5' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_116_5'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_116_5'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 346.223 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 346.223 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'L3'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 15, loop 'L3'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 346.707 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 346.707 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L4' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'L4'.
-WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L4' (loop 'L4'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation ('sum_write_ln23', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:23) of variable 'x', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24 on local variable 'sum' and 'load' operation ('sum_load', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24) on local variable 'sum'.
-WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L4' (loop 'L4'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation ('sum_write_ln23', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:23) of variable 'x', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24 on local variable 'sum' and 'load' operation ('sum_load', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24) on local variable 'sum'.
-WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L4' (loop 'L4'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation ('sum_write_ln23', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:23) of variable 'x', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24 on local variable 'sum' and 'load' operation ('sum_load', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24) on local variable 'sum'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 7, loop 'L4'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 347.102 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 347.102 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L5' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'L5'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'L5'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 347.324 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 347.324 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L6' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'L6'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'L6'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 347.617 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 347.617 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_131_6' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_131_6'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_131_6'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 347.887 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 347.887 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_166_7' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_166_7'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'VITIS_LOOP_166_7'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 348.355 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 348.355 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=mul_ln17) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln17_1) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 349.582 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.24 seconds. CPU system time: 0 seconds. Elapsed time: 0.24 seconds; current allocated memory: 349.582 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_101_1_VITIS_LOOP_102_2_VITIS_LOOP_1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_101_1_VITIS_LOOP_102_2_VITIS_LOOP_1' pipeline 'VITIS_LOOP_101_1_VITIS_LOOP_102_2_VITIS_LOOP_103_3' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'am_addmul_12ns_11ns_8ns_19_4_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_101_1_VITIS_LOOP_102_2_VITIS_LOOP_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.27 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 349.582 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_116_5' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_116_5'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 351.176 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L3' pipeline 'L3' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'uitofp_32ns_32_4_no_dsp_1': 2 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 352.703 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L4' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L4' pipeline 'L4' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L4'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 353.887 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L5' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L5' pipeline 'L5' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L5'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 354.719 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L6' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L6' pipeline 'L6' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L6'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 355.535 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_131_6' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_131_6' pipeline 'VITIS_LOOP_131_6' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_4_no_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_131_6'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 356.395 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_166_7' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_166_7' pipeline 'VITIS_LOOP_166_7' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_4_no_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_166_7'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 357.359 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_data_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_keep_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_strb_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_user_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_last_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_id_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_dest_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_data_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_keep_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_strb_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_user_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_last_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_id_V' to 'axis' (register, both mode).
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
 ==============================================================
 Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
 Tool Version Limit: 2022.04
@@ -881,14 +231,14 @@ INFO: [HLS 200-1510] Running: create_clock -period 10 -name default
 INFO: [HLS 200-1510] Running: source ./Hyperspectral_DataFlow/solution1/directives.tcl
 INFO: [HLS 200-1510] Running: set_directive_top -name hyperspectral_hw_wrapped hyperspectral_hw_wrapped 
 INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.139 GB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 1.139 GB.
 INFO: [HLS 200-10] Analyzing design file '../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 24.43 seconds. CPU system time: 1.36 seconds. Elapsed time: 24.4 seconds; current allocated memory: 136.582 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 19.82 seconds. CPU system time: 1.77 seconds. Elapsed time: 22.11 seconds; current allocated memory: 136.312 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_107_4' is marked as complete unroll implied by the pipeline pragma (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:107:35)
-INFO: [HLS 214-291] Loop 'convert2word_intlabel0' is marked as complete unroll implied by the pipeline pragma (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:183:28)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_107_4' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:107:35) in function 'hyperspectral_hw_wrapped' completely with a factor of 2 (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:84:0)
-INFO: [HLS 214-186] Unrolling loop 'convert2word_intlabel0' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:183:28) in function 'convert2_int' completely with a factor of 1 (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:180:0)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_105_4' is marked as complete unroll implied by the pipeline pragma (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:105:35)
+INFO: [HLS 214-291] Loop 'convert2word_intlabel0' is marked as complete unroll implied by the pipeline pragma (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:178:28)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_105_4' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:105:35) in function 'hyperspectral_hw_wrapped' completely with a factor of 2 (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:83:0)
+INFO: [HLS 214-186] Unrolling loop 'convert2word_intlabel0' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:178:28) in function 'convert2_int' completely with a factor of 1 (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:175:0)
 INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
 INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
 INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
@@ -899,9 +249,9 @@ INFO: [HLS 214-178] Inlining function 'hls::sqrt(float)' into 'calculate_distanc
 INFO: [HLS 214-178] Inlining function 'calculate_distance_stream(unsigned short (*) [1024][180], int*, float&, int, int)' into 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:58:0)
 INFO: [HLS 214-178] Inlining function 'update_closest_pixel(float, float&, int*, int*, int, int)' into 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:58:0)
 INFO: [HLS 214-178] Inlining function 'calculate_brightness_stream(unsigned short (*) [1024][180], unsigned int&, int, int)' into 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:58:0)
-INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i32' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:84:0)
-INFO: [HLS 214-178] Inlining function 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:84:0)
-INFO: [HLS 214-178] Inlining function 'convert2_int(ap_uint<32>&, int*)' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:84:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i32' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:83:0)
+INFO: [HLS 214-178] Inlining function 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:83:0)
+INFO: [HLS 214-178] Inlining function 'convert2_int(ap_uint<32>&, int*)' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:83:0)
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<32>s.i32' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i5.s_struct.ap_uint<5>s' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
@@ -910,63 +260,62 @@ INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.s_struct.ap_uint
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<5>s.i5' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<1>s.i1' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<4>s.i4' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.05 seconds. CPU system time: 0.4 seconds. Elapsed time: 4.45 seconds; current allocated memory: 137.383 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 137.383 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.16 seconds. CPU system time: 0.61 seconds. Elapsed time: 4.76 seconds; current allocated memory: 137.086 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 137.086 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.11 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.13 seconds; current allocated memory: 165.941 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.09 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.37 seconds; current allocated memory: 165.621 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.29 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.31 seconds; current allocated memory: 204.773 MB.
-INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_117_5' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:118) in function 'hyperspectral_hw_wrapped' automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.2 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.24 seconds; current allocated memory: 204.449 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_114_5' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:115) in function 'hyperspectral_hw_wrapped' automatically.
 INFO: [XFORM 203-510] Pipelining loop 'L3' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:16) in function 'hyperspectral_hw_wrapped' automatically.
 INFO: [XFORM 203-510] Pipelining loop 'L5' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:46) in function 'hyperspectral_hw_wrapped' automatically.
 INFO: [XFORM 203-510] Pipelining loop 'L6' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:0) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_167_7' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:167) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-102] Automatically partitioning small array 'refPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:95) completely based on array size.
-INFO: [XFORM 203-102] Automatically partitioning small array 'maxBrightnessIdx' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:96) completely based on array size.
-INFO: [XFORM 203-102] Automatically partitioning small array 'closestPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:98) completely based on array size.
-INFO: [XFORM 203-101] Partitioning array 'refPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:95) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'maxBrightnessIdx' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:96) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'closestPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:98) in dimension 1 completely.
+INFO: [XFORM 203-102] Automatically partitioning small array 'refPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:94) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'maxBrightnessIdx' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:95) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'closestPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:97) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'refPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:94) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'maxBrightnessIdx' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:95) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'closestPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:97) in dimension 1 completely.
 WARNING: [HLS 200-805] An internal stream 'brightness_stream' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:44) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
 WARNING: [HLS 200-805] An internal stream 'sum_stream' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:14) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.37 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.41 seconds; current allocated memory: 266.949 MB.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_103_2' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:103:36) in function 'hyperspectral_hw_wrapped'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_102_1' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:102:32) in function 'hyperspectral_hw_wrapped'.
-WARNING: [HLS 200-960] Cannot flatten loop 'L2' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:97:7) in function 'hyperspectral_hw_wrapped' more than one sub loop.
-INFO: [XFORM 203-541] Flattening a loop nest 'L1' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:97:7) in function 'hyperspectral_hw_wrapped'.
-INFO: [HLS 200-472] Inferring partial write operation for 'image' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:108:38)
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.24 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.27 seconds; current allocated memory: 346.918 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.27 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.43 seconds; current allocated memory: 266.867 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_101_2' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:101:36) in function 'hyperspectral_hw_wrapped'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_100_1' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:100:32) in function 'hyperspectral_hw_wrapped'.
+WARNING: [HLS 200-960] Cannot flatten loop 'L2' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:96:7) in function 'hyperspectral_hw_wrapped' more than one sub loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'L1' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:96:7) in function 'hyperspectral_hw_wrapped'.
+INFO: [HLS 200-472] Inferring partial write operation for 'image' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:106:38)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.17 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.3 seconds; current allocated memory: 346.668 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'hyperspectral_hw_wrapped' ...
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1' 
+INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln108) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3'
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln106) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.13 seconds; current allocated memory: 348.562 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.25 seconds; current allocated memory: 348.309 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 348.562 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 348.309 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5' 
+INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_117_5'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_117_5'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_114_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_114_5'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 349.117 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 348.828 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 349.117 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 348.828 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -974,13 +323,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'L3'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 15, loop 'L3'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 349.566 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 349.293 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 349.566 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 349.293 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -990,13 +339,13 @@ WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipe
 WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L4' (loop 'L4'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation ('sum_write_ln23', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:23) of variable 'x', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:25 on local variable 'sum' and 'load' operation ('sum_load', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:25) on local variable 'sum'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 3, Depth = 6, loop 'L4'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 349.902 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 349.652 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 349.902 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 349.652 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L5' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1004,13 +353,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'L5'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'L5'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 350.168 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 349.891 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 350.168 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 349.891 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L6' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1018,41 +367,41 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'L6'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'L6'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 350.500 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 350.223 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 350.500 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 350.223 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6' 
+INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_132_6'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_132_6'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_129_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_129_6'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 350.723 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 350.426 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 350.723 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 350.426 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7' 
+INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_167_7'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'VITIS_LOOP_167_7'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_161_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_161_7'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 351.191 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 350.840 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 351.191 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 350.840 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1060,25 +409,25 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [HLS 200-486] Changing DSP latency (root=mul_ln17) to 3 in order to utilize available DSP registers.
 INFO: [HLS 200-486] Changing DSP latency (root=add_ln17_1) to 3 in order to utilize available DSP registers.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 352.453 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 352.141 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.24 seconds. CPU system time: 0 seconds. Elapsed time: 0.3 seconds; current allocated memory: 352.453 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 352.141 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1' 
+INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1' pipeline 'VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3' pipeline type 'loop pipeline'
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1' pipeline 'VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'am_addmul_12ns_11ns_8ns_19_4_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.27 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 352.453 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.21 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 352.141 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5' 
+INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.2 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 354.020 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 353.699 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1087,40 +436,40 @@ INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 1 
 INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'uitofp_32ns_32_4_no_dsp_1': 2 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 355.531 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 355.207 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L4' pipeline 'L4' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_no_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L4'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 356.676 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 356.367 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L5' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L5' pipeline 'L5' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L5'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 357.594 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 357.297 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L6' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L6' pipeline 'L6' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L6'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 358.328 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 358.016 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6' 
+INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6' pipeline 'VITIS_LOOP_132_6' pipeline type 'loop pipeline'
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6' pipeline 'VITIS_LOOP_129_6' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_4_no_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 359.203 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 358.887 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7' 
+INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7' pipeline 'VITIS_LOOP_167_7' pipeline type 'loop pipeline'
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7' pipeline 'VITIS_LOOP_161_7' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_4_no_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 360.152 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 359.805 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1145,302 +494,9 @@ INFO: [RTGEN 206-100] Generating core module 'am_addmul_12ns_11ns_8ns_19_4_1': 1
 INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mul_mul_19s_8ns_19_4_1': 1 instance(s).
-==============================================================
-Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
-Tool Version Limit: 2022.04
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-==============================================================
-==============================================================
-Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
-Tool Version Limit: 2022.04
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-==============================================================
-==============================================================
-Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
-Tool Version Limit: 2022.04
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-==============================================================
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
-INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
-INFO: [HLS 200-1510] Running: source ./Hyperspectral_DataFlow/solution1/directives.tcl
-INFO: [HLS 200-1510] Running: set_directive_top -name hyperspectral_hw_wrapped hyperspectral_hw_wrapped 
-INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0 seconds; current allocated memory: 1.139 GB.
-INFO: [HLS 200-10] Analyzing design file '../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 24.05 seconds. CPU system time: 1.29 seconds. Elapsed time: 23.9 seconds; current allocated memory: 136.617 MB.
-INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_107_4' is marked as complete unroll implied by the pipeline pragma (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:107:35)
-INFO: [HLS 214-291] Loop 'convert2word_intlabel0' is marked as complete unroll implied by the pipeline pragma (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:183:28)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_107_4' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:107:35) in function 'hyperspectral_hw_wrapped' completely with a factor of 2 (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:84:0)
-INFO: [HLS 214-186] Unrolling loop 'convert2word_intlabel0' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:183:28) in function 'convert2_int' completely with a factor of 1 (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:180:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
-INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, float>(float, bool)' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
-INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, float>(float, bool)' into '__hls_fptosi_float_i32' (/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51:0)
-INFO: [HLS 214-178] Inlining function 'hls::sqrt(float)' into 'calculate_distance_stream(unsigned short (*) [1024][180], int*, float&, int, int)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:12:0)
-INFO: [HLS 214-178] Inlining function 'calculate_distance_stream(unsigned short (*) [1024][180], int*, float&, int, int)' into 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:58:0)
-INFO: [HLS 214-178] Inlining function 'update_closest_pixel(float, float&, int*, int*, int, int)' into 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:58:0)
-INFO: [HLS 214-178] Inlining function 'calculate_brightness_stream(unsigned short (*) [1024][180], unsigned int&, int, int)' into 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:58:0)
-INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i32' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:84:0)
-INFO: [HLS 214-178] Inlining function 'hyperspectral_hw(unsigned short (*) [1024][180], int*, int*, float&, int*)' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:84:0)
-INFO: [HLS 214-178] Inlining function 'convert2_int(ap_uint<32>&, int*)' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:84:0)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<32>s.i32' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i5.s_struct.ap_uint<5>s' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i4.s_struct.ap_uint<4>s' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.s_struct.ap_uint<32>s' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<5>s.i5' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<1>s.i1' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<4>s.i4' into 'hyperspectral_hw_wrapped(hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 4ul, 5ul, 5ul>, 0>&)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4 seconds. CPU system time: 0.47 seconds. Elapsed time: 4.47 seconds; current allocated memory: 137.406 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 137.406 MB.
-INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 165.957 MB.
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.21 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.26 seconds; current allocated memory: 204.781 MB.
-INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_117_5' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:118) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'L3' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:16) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'L5' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:46) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'L6' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:0) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_167_7' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:167) in function 'hyperspectral_hw_wrapped' automatically.
-INFO: [XFORM 203-102] Automatically partitioning small array 'refPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:95) completely based on array size.
-INFO: [XFORM 203-102] Automatically partitioning small array 'maxBrightnessIdx' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:96) completely based on array size.
-INFO: [XFORM 203-102] Automatically partitioning small array 'closestPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:98) completely based on array size.
-INFO: [XFORM 203-101] Partitioning array 'refPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:95) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'maxBrightnessIdx' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:96) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'closestPixel' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:98) in dimension 1 completely.
-WARNING: [HLS 200-805] An internal stream 'brightness_stream' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:44) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
-WARNING: [HLS 200-805] An internal stream 'sum_stream' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:14) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.39 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.43 seconds; current allocated memory: 266.965 MB.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_103_2' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:103:36) in function 'hyperspectral_hw_wrapped'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_102_1' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:102:32) in function 'hyperspectral_hw_wrapped'.
-WARNING: [HLS 200-960] Cannot flatten loop 'L2' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:97:7) in function 'hyperspectral_hw_wrapped' more than one sub loop.
-INFO: [XFORM 203-541] Flattening a loop nest 'L1' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:97:7) in function 'hyperspectral_hw_wrapped'.
-INFO: [HLS 200-472] Inferring partial write operation for 'image' (../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:108:38)
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.33 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.38 seconds; current allocated memory: 346.945 MB.
-INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO: [HLS 200-10] Synthesizing 'hyperspectral_hw_wrapped' ...
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln108) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.16 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.17 seconds; current allocated memory: 348.586 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 348.586 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_117_5'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_117_5'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 349.125 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 349.125 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'L3'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 15, loop 'L3'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 349.578 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 349.578 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L4' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'L4'.
-WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L4' (loop 'L4'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation ('sum_write_ln23', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:23) of variable 'x', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:25 on local variable 'sum' and 'load' operation ('sum_load', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:25) on local variable 'sum'.
-WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L4' (loop 'L4'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation ('sum_write_ln23', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:23) of variable 'x', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:25 on local variable 'sum' and 'load' operation ('sum_load', ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:25) on local variable 'sum'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 3, Depth = 6, loop 'L4'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 349.984 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 349.984 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L5' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'L5'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'L5'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 350.195 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 350.195 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_L6' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'L6'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'L6'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 350.512 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 350.512 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_132_6'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_132_6'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 350.797 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 350.797 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_167_7'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'VITIS_LOOP_167_7'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 351.113 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 351.113 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hyperspectral_hw_wrapped' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=mul_ln17) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln17_1) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 352.469 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 352.469 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1' pipeline 'VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'am_addmul_12ns_11ns_8ns_19_4_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.25 seconds. CPU system time: 0 seconds. Elapsed time: 0.25 seconds; current allocated memory: 352.469 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 354.047 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L3' pipeline 'L3' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'uitofp_32ns_32_4_no_dsp_1': 2 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 355.559 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L4' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L4' pipeline 'L4' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_no_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L4'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 356.691 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L5' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L5' pipeline 'L5' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L5'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 357.590 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_L6' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_L6' pipeline 'L6' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_L6'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 358.344 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6' pipeline 'VITIS_LOOP_132_6' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_4_no_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 359.219 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7' pipeline 'VITIS_LOOP_167_7' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_4_no_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 360.168 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hyperspectral_hw_wrapped' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_data_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_keep_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_strb_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_user_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_last_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_id_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/in_stream_V_dest_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_data_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_keep_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_strb_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_user_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_last_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_id_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'hyperspectral_hw_wrapped/out_stream_V_dest_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on function 'hyperspectral_hw_wrapped' to 's_axilite & ap_ctrl_hs'.
-INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port CONTROL_BUS.
-INFO: [RTGEN 206-100] Generating core module 'am_addmul_12ns_11ns_8ns_19_4_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100]==============================================================
-Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
-Tool Version Limit: 2022.04
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-==============================================================
-==============================================================
-Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
-Tool Version Limit: 2022.04
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-==============================================================
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hyperspectral_hw_wrapped'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 362.496 MB.
 ==============================================================
 Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
 Tool Version Limit: 2022.04

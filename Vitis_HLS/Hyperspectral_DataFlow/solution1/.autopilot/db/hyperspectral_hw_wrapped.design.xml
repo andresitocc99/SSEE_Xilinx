@@ -5,14 +5,14 @@
 <ModuleName>hyperspectral_hw_wrapped</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239</InstName>
-<ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1</ModuleName>
+<InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239</InstName>
+<ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>239</ID>
 </Instance>
 <Instance>
-<InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258</InstName>
-<ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5</ModuleName>
+<InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258</InstName>
+<ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>258</ID>
 </Instance>
@@ -41,14 +41,14 @@
 <ID>299</ID>
 </Instance>
 <Instance>
-<InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305</InstName>
-<ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6</ModuleName>
+<InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305</InstName>
+<ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>305</ID>
 </Instance>
 <Instance>
-<InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325</InstName>
-<ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7</ModuleName>
+<InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325</InstName>
+<ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>325</ID>
 </Instance>
@@ -58,9 +58,9 @@
 
 <ModuleInformation>
 <Module>
-<Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1</Name>
+<Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1</Name>
 <Loops>
-<VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3></VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3>
+<VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3></VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -79,8 +79,8 @@
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3>
-<Name>VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3</Name>
+<VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3>
+<Name>VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3</Name>
 <TripCount>184320</TripCount>
 <Latency>184322</Latency>
 <AbsoluteTimeLatency>1.843 ms</AbsoluteTimeLatency>
@@ -89,7 +89,7 @@
 <PipelineType>yes</PipelineType>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3>
+</VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -114,7 +114,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -125,7 +125,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -136,7 +136,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -147,7 +147,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -158,7 +158,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -169,7 +169,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -368,9 +368,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5</Name>
+<Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5</Name>
 <Loops>
-<VITIS_LOOP_117_5></VITIS_LOOP_117_5>
+<VITIS_LOOP_114_5></VITIS_LOOP_114_5>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -389,8 +389,8 @@
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_117_5>
-<Name>VITIS_LOOP_117_5</Name>
+<VITIS_LOOP_114_5>
+<Name>VITIS_LOOP_114_5</Name>
 <TripCount>2</TripCount>
 <Latency>2</Latency>
 <AbsoluteTimeLatency>20.000 ns</AbsoluteTimeLatency>
@@ -399,7 +399,7 @@
 <PipelineType>yes</PipelineType>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_117_5>
+</VITIS_LOOP_114_5>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -424,7 +424,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -435,7 +435,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -446,7 +446,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -457,7 +457,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -468,7 +468,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -479,7 +479,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1434,9 +1434,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6</Name>
+<Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6</Name>
 <Loops>
-<VITIS_LOOP_132_6></VITIS_LOOP_132_6>
+<VITIS_LOOP_129_6></VITIS_LOOP_129_6>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -1455,8 +1455,8 @@
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_132_6>
-<Name>VITIS_LOOP_132_6</Name>
+<VITIS_LOOP_129_6>
+<Name>VITIS_LOOP_129_6</Name>
 <TripCount>2</TripCount>
 <Latency>4</Latency>
 <AbsoluteTimeLatency>40.000 ns</AbsoluteTimeLatency>
@@ -1465,7 +1465,7 @@
 <PipelineType>yes</PipelineType>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_132_6>
+</VITIS_LOOP_129_6>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -1490,7 +1490,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1501,7 +1501,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1512,7 +1512,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1523,7 +1523,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1534,7 +1534,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1545,7 +1545,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1556,7 +1556,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_956_p_din0</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1567,7 +1567,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_956_p_dout0</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1578,7 +1578,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_956_p_ce</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1711,9 +1711,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7</Name>
+<Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7</Name>
 <Loops>
-<VITIS_LOOP_167_7></VITIS_LOOP_167_7>
+<VITIS_LOOP_161_7></VITIS_LOOP_161_7>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -1732,8 +1732,8 @@
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_167_7>
-<Name>VITIS_LOOP_167_7</Name>
+<VITIS_LOOP_161_7>
+<Name>VITIS_LOOP_161_7</Name>
 <TripCount>2</TripCount>
 <Latency>4</Latency>
 <AbsoluteTimeLatency>40.000 ns</AbsoluteTimeLatency>
@@ -1742,7 +1742,7 @@
 <PipelineType>yes</PipelineType>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_167_7>
+</VITIS_LOOP_161_7>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -1767,7 +1767,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1778,7 +1778,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1789,7 +1789,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1800,7 +1800,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1811,7 +1811,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1822,7 +1822,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1833,7 +1833,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_956_p_din0</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1844,7 +1844,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_956_p_dout0</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1855,7 +1855,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_956_p_ce</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>

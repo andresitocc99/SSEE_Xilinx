@@ -497,18 +497,18 @@
             <ModuleName>hyperspectral_hw_wrapped</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239</InstName>
-                    <ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1</ModuleName>
+                    <InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239</InstName>
+                    <ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>239</ID>
-                    <BindInstances>add_ln102_1_fu_181_p2 add_ln102_fu_199_p2 add_ln103_fu_259_p2 am_addmul_12ns_11ns_8ns_19_4_1_U1 am_addmul_12ns_11ns_8ns_19_4_1_U1 add_ln108_1_fu_351_p2 add_ln108_2_fu_370_p2 add_ln104_fu_303_p2 add_ln103_1_fu_309_p2</BindInstances>
+                    <BindInstances>add_ln100_1_fu_181_p2 add_ln100_fu_199_p2 add_ln101_fu_259_p2 am_addmul_12ns_11ns_8ns_19_4_1_U1 am_addmul_12ns_11ns_8ns_19_4_1_U1 add_ln106_1_fu_351_p2 add_ln106_2_fu_370_p2 add_ln102_fu_303_p2 add_ln101_1_fu_309_p2</BindInstances>
                 </Instance>
                 <Instance>
-                    <InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258</InstName>
-                    <ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5</ModuleName>
+                    <InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258</InstName>
+                    <ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>258</ID>
-                    <BindInstances>add_ln117_fu_144_p2 add_ln346_fu_200_p2 sub_ln1512_fu_214_p2 result_V_2_fu_282_p2</BindInstances>
+                    <BindInstances>add_ln114_fu_144_p2 add_ln346_fu_200_p2 sub_ln1512_fu_214_p2 result_V_2_fu_282_p2</BindInstances>
                 </Instance>
                 <Instance>
                     <InstName>grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278</InstName>
@@ -539,28 +539,28 @@
                     <BindInstances>k_2_fu_78_p2 current_brightness_1_fu_92_p2</BindInstances>
                 </Instance>
                 <Instance>
-                    <InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305</InstName>
-                    <ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6</ModuleName>
+                    <InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305</InstName>
+                    <ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>305</ID>
-                    <BindInstances>add_ln132_fu_126_p2</BindInstances>
+                    <BindInstances>add_ln129_fu_126_p2</BindInstances>
                 </Instance>
                 <Instance>
-                    <InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325</InstName>
-                    <ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7</ModuleName>
+                    <InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325</InstName>
+                    <ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>325</ID>
-                    <BindInstances>add_ln167_fu_125_p2</BindInstances>
+                    <BindInstances>add_ln161_fu_123_p2</BindInstances>
                 </Instance>
             </InstancesList>
-            <BindInstances>brightness_stream_fifo_U sum_stream_fifo_U image_U grp_fu_749_p0 mul_mul_19s_8ns_19_4_1_U62 add_ln64_1_fu_448_p2 add_ln64_fu_457_p2 am_addmul_12ns_11ns_8ns_19_4_1_U63 am_addmul_12ns_11ns_8ns_19_4_1_U63 fsqrt_32ns_32ns_32_10_no_dsp_1_U61 add_ln65_fu_527_p2</BindInstances>
+            <BindInstances>brightness_stream_fifo_U sum_stream_fifo_U image_U grp_fu_749_p0 mul_mul_19s_8ns_19_4_1_U62 add_ln63_1_fu_448_p2 add_ln63_fu_457_p2 am_addmul_12ns_11ns_8ns_19_4_1_U63 am_addmul_12ns_11ns_8ns_19_4_1_U63 fsqrt_32ns_32ns_32_10_no_dsp_1_U61 add_ln64_fu_527_p2</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
         <Module>
-            <Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1</Name>
+            <Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1</Name>
             <Loops>
-                <VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3/>
+                <VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -579,8 +579,8 @@
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3>
-                        <Name>VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3</Name>
+                    <VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3>
+                        <Name>VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3</Name>
                         <TripCount>184320</TripCount>
                         <Latency>184322</Latency>
                         <AbsoluteTimeLatency>1.843 ms</AbsoluteTimeLatency>
@@ -588,7 +588,7 @@
                         <PipelineDepth>4</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3>
+                    </VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -611,21 +611,21 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln102_1_fu_181_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:102" URAM="0" VARIABLE="add_ln102_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln102_fu_199_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:102" URAM="0" VARIABLE="add_ln102"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln103_fu_259_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:103" URAM="0" VARIABLE="add_ln103"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3" OPTYPE="add" PRAGMA="" RTLNAME="am_addmul_12ns_11ns_8ns_19_4_1_U1" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:108" URAM="0" VARIABLE="add_ln108"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3" OPTYPE="mul" PRAGMA="" RTLNAME="am_addmul_12ns_11ns_8ns_19_4_1_U1" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:103" URAM="0" VARIABLE="mul_ln103"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln108_1_fu_351_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:108" URAM="0" VARIABLE="add_ln108_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln108_2_fu_370_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:108" URAM="0" VARIABLE="add_ln108_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln104_fu_303_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:104" URAM="0" VARIABLE="add_ln104"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln103_1_fu_309_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:103" URAM="0" VARIABLE="add_ln103_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln100_1_fu_181_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:100" URAM="0" VARIABLE="add_ln100_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln100_fu_199_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:100" URAM="0" VARIABLE="add_ln100"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln101_fu_259_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:101" URAM="0" VARIABLE="add_ln101"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3" OPTYPE="add" PRAGMA="" RTLNAME="am_addmul_12ns_11ns_8ns_19_4_1_U1" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:106" URAM="0" VARIABLE="add_ln106"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3" OPTYPE="mul" PRAGMA="" RTLNAME="am_addmul_12ns_11ns_8ns_19_4_1_U1" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:101" URAM="0" VARIABLE="mul_ln101"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln106_1_fu_351_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:106" URAM="0" VARIABLE="add_ln106_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln106_2_fu_370_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:106" URAM="0" VARIABLE="add_ln106_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln102_fu_303_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:102" URAM="0" VARIABLE="add_ln102"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_102_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln101_1_fu_309_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:101" URAM="0" VARIABLE="add_ln101_1"/>
             </BindNodes>
         </Module>
         <Module>
-            <Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5</Name>
+            <Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5</Name>
             <Loops>
-                <VITIS_LOOP_117_5/>
+                <VITIS_LOOP_114_5/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -644,8 +644,8 @@
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_117_5>
-                        <Name>VITIS_LOOP_117_5</Name>
+                    <VITIS_LOOP_114_5>
+                        <Name>VITIS_LOOP_114_5</Name>
                         <TripCount>2</TripCount>
                         <Latency>2</Latency>
                         <AbsoluteTimeLatency>20.000 ns</AbsoluteTimeLatency>
@@ -653,7 +653,7 @@
                         <PipelineDepth>1</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_117_5>
+                    </VITIS_LOOP_114_5>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -676,10 +676,10 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_117_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln117_fu_144_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:117" URAM="0" VARIABLE="add_ln117"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_117_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln346_fu_200_p2" SOURCE="/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:346" URAM="0" VARIABLE="add_ln346"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_117_5" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln1512_fu_214_p2" SOURCE="/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files/ap_fixed_base.h:1512" URAM="0" VARIABLE="sub_ln1512"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_117_5" OPTYPE="sub" PRAGMA="" RTLNAME="result_V_2_fu_282_p2" SOURCE="/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files/ap_fixed_base.h:813" URAM="0" VARIABLE="result_V_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_114_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln114_fu_144_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:114" URAM="0" VARIABLE="add_ln114"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_114_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln346_fu_200_p2" SOURCE="/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:346" URAM="0" VARIABLE="add_ln346"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_114_5" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln1512_fu_214_p2" SOURCE="/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files/ap_fixed_base.h:1512" URAM="0" VARIABLE="sub_ln1512"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_114_5" OPTYPE="sub" PRAGMA="" RTLNAME="result_V_2_fu_282_p2" SOURCE="/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/include/header_files/ap_fixed_base.h:813" URAM="0" VARIABLE="result_V_2"/>
             </BindNodes>
         </Module>
         <Module>
@@ -918,9 +918,9 @@
             </BindNodes>
         </Module>
         <Module>
-            <Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6</Name>
+            <Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6</Name>
             <Loops>
-                <VITIS_LOOP_132_6/>
+                <VITIS_LOOP_129_6/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -939,8 +939,8 @@
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_132_6>
-                        <Name>VITIS_LOOP_132_6</Name>
+                    <VITIS_LOOP_129_6>
+                        <Name>VITIS_LOOP_129_6</Name>
                         <TripCount>2</TripCount>
                         <Latency>4</Latency>
                         <AbsoluteTimeLatency>40.000 ns</AbsoluteTimeLatency>
@@ -948,7 +948,7 @@
                         <PipelineDepth>4</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_132_6>
+                    </VITIS_LOOP_129_6>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -971,13 +971,13 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_132_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln132_fu_126_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:132" URAM="0" VARIABLE="add_ln132"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_129_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln129_fu_126_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:129" URAM="0" VARIABLE="add_ln129"/>
             </BindNodes>
         </Module>
         <Module>
-            <Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7</Name>
+            <Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7</Name>
             <Loops>
-                <VITIS_LOOP_167_7/>
+                <VITIS_LOOP_161_7/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -996,8 +996,8 @@
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_167_7>
-                        <Name>VITIS_LOOP_167_7</Name>
+                    <VITIS_LOOP_161_7>
+                        <Name>VITIS_LOOP_161_7</Name>
                         <TripCount>2</TripCount>
                         <Latency>4</Latency>
                         <AbsoluteTimeLatency>40.000 ns</AbsoluteTimeLatency>
@@ -1005,7 +1005,7 @@
                         <PipelineDepth>4</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_167_7>
+                    </VITIS_LOOP_161_7>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -1028,7 +1028,7 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_167_7" OPTYPE="add" PRAGMA="" RTLNAME="add_ln167_fu_125_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:167" URAM="0" VARIABLE="add_ln167"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_161_7" OPTYPE="add" PRAGMA="" RTLNAME="add_ln161_fu_123_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:161" URAM="0" VARIABLE="add_ln161"/>
             </BindNodes>
         </Module>
         <Module>
@@ -1092,15 +1092,15 @@
             <BindNodes>
                 <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="brightness_stream_fifo_U" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:44" URAM="0" VARIABLE="brightness_stream"/>
                 <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="sum_stream_fifo_U" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:14" URAM="0" VARIABLE="sum_stream"/>
-                <BindNode BINDTYPE="storage" BRAM="340" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="image_U" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:94" URAM="0" VARIABLE="image"/>
+                <BindNode BINDTYPE="storage" BRAM="340" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="image_U" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:93" URAM="0" VARIABLE="image"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_749_p0" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:17" URAM="0" VARIABLE="add_ln17"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_19s_8ns_19_4_1_U62" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:17" URAM="0" VARIABLE="mul_ln17"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="L1_L2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln64_1_fu_448_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:64" URAM="0" VARIABLE="add_ln64_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="L1_L2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln64_fu_457_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:64" URAM="0" VARIABLE="add_ln64"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="L1_L2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_1_fu_448_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:63" URAM="0" VARIABLE="add_ln63_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="L1_L2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_fu_457_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:63" URAM="0" VARIABLE="add_ln63"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="L1_L2" OPTYPE="add" PRAGMA="" RTLNAME="am_addmul_12ns_11ns_8ns_19_4_1_U63" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:17" URAM="0" VARIABLE="add_ln17_1"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="L1_L2" OPTYPE="mul" PRAGMA="" RTLNAME="am_addmul_12ns_11ns_8ns_19_4_1_U63" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:41" URAM="0" VARIABLE="mul_ln41"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fsqrt" DSP="0" ID="" IMPL="fabric" LATENCY="9" LOOP="L1_L2" OPTYPE="fsqrt" PRAGMA="" RTLNAME="fsqrt_32ns_32ns_32_10_no_dsp_1_U61" SOURCE="/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:8" URAM="0" VARIABLE="minDistance_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="L1_L2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln65_fu_527_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:65" URAM="0" VARIABLE="add_ln65"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="L1_L2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln64_fu_527_p2" SOURCE="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:64" URAM="0" VARIABLE="add_ln64"/>
             </BindNodes>
         </Module>
     </ModuleInformation>
@@ -1335,11 +1335,12 @@
     </ReportBurst>
     <PragmaReport>
         <Pragma type="pipeline" location="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:24" status="valid" parentFunction="calculate_distance_stream" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="interface" location="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:86" status="valid" parentFunction="hyperspectral_hw_wrapped" variable="return" isDirective="0" options="s_axilite port=return bundle=CONTROL_BUS"/>
-        <Pragma type="interface" location="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:87" status="valid" parentFunction="hyperspectral_hw_wrapped" variable="in_stream" isDirective="0" options="axis port=in_stream"/>
-        <Pragma type="interface" location="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:88" status="valid" parentFunction="hyperspectral_hw_wrapped" variable="out_stream" isDirective="0" options="axis port=out_stream"/>
-        <Pragma type="pipeline" location="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:105" status="valid" parentFunction="hyperspectral_hw_wrapped" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:133" status="valid" parentFunction="hyperspectral_hw_wrapped" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="interface" location="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:85" status="valid" parentFunction="hyperspectral_hw_wrapped" variable="return" isDirective="0" options="s_axilite port=return bundle=CONTROL_BUS"/>
+        <Pragma type="interface" location="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:86" status="valid" parentFunction="hyperspectral_hw_wrapped" variable="in_stream" isDirective="0" options="axis port=in_stream"/>
+        <Pragma type="interface" location="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:87" status="valid" parentFunction="hyperspectral_hw_wrapped" variable="out_stream" isDirective="0" options="axis port=out_stream"/>
+        <Pragma type="pipeline" location="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:103" status="valid" parentFunction="hyperspectral_hw_wrapped" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:130" status="valid" parentFunction="hyperspectral_hw_wrapped" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp:162" status="valid" parentFunction="hyperspectral_hw_wrapped" variable="" isDirective="0" options="II=1"/>
     </PragmaReport>
 </profile>
 

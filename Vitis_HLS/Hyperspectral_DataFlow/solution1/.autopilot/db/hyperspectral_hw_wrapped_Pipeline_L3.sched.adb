@@ -70,7 +70,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>997420912</coreId>
+						<coreId>791555643</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -106,7 +106,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3009162960</coreId>
+						<coreId>257788560</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>19</bitwidth>
@@ -142,7 +142,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3010561168</coreId>
+						<coreId>258671456</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -182,7 +182,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1030185332</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -310,7 +310,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -353,7 +353,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>875574074</coreId>
+						<coreId>259164688</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -379,7 +379,7 @@
 						<id>12</id>
 						<name>k</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>16</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -387,7 +387,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="11" tracking_level="0" version="0">
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second class_id="12" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -409,7 +409,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>123</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -436,7 +436,7 @@
 						<id>14</id>
 						<name>icmp_ln16</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>16</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -444,7 +444,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -493,7 +493,7 @@
 						<id>16</id>
 						<name>add_ln16</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>16</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -501,7 +501,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -550,7 +550,7 @@
 						<id>17</id>
 						<name>br_ln16</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>16</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -558,7 +558,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -608,7 +608,7 @@
 						<id>19</id>
 						<name>zext_ln17</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -616,7 +616,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -638,7 +638,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3010687936</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>19</bitwidth>
@@ -664,7 +664,7 @@
 						<id>20</id>
 						<name>add_ln17</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -672,7 +672,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -721,7 +721,7 @@
 						<id>21</id>
 						<name>zext_ln17_1</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -729,7 +729,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -777,7 +777,7 @@
 						<id>22</id>
 						<name>image_addr</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -785,7 +785,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -807,7 +807,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>25</coreId>
+						<coreId>1869833586</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>19</bitwidth>
@@ -835,7 +835,7 @@
 						<id>23</id>
 						<name>add_ln17_1</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -843,7 +843,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -865,7 +865,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1424569968</coreId>
+						<coreId>258671456</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>19</bitwidth>
@@ -892,7 +892,7 @@
 						<id>24</id>
 						<name>zext_ln17_2</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -900,7 +900,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -922,7 +922,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3010592624</coreId>
+						<coreId>259053232</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -948,7 +948,7 @@
 						<id>25</id>
 						<name>image_addr_2</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -956,7 +956,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -978,7 +978,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3010561168</coreId>
+						<coreId>259248096</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>19</bitwidth>
@@ -1006,7 +1006,7 @@
 						<id>27</id>
 						<name>image_load</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -1014,7 +1014,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1036,7 +1036,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3010592496</coreId>
+						<coreId>259268832</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -1062,7 +1062,7 @@
 						<id>28</id>
 						<name>zext_ln17_3</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -1070,7 +1070,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1092,7 +1092,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3010501872</coreId>
+						<coreId>774776864</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1118,7 +1118,7 @@
 						<id>29</id>
 						<name>conv_i_i</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -1126,7 +1126,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1148,7 +1148,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3010629296</coreId>
+						<coreId>1211065716</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1174,7 +1174,7 @@
 						<id>30</id>
 						<name>image_load_1</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -1182,7 +1182,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1204,7 +1204,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3010630176</coreId>
+						<coreId>1936018748</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>16</bitwidth>
@@ -1230,7 +1230,7 @@
 						<id>31</id>
 						<name>zext_ln17_4</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -1238,7 +1238,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1260,7 +1260,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1852402805</coreId>
+						<coreId>1599098703</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1286,7 +1286,7 @@
 						<id>32</id>
 						<name>conv13_i_i</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -1294,7 +1294,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1316,7 +1316,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2020173413</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1342,7 +1342,7 @@
 						<id>33</id>
 						<name>diff</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -1350,7 +1350,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1372,7 +1372,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1869357100</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1399,7 +1399,7 @@
 						<id>34</id>
 						<name>mul_i_i</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -1407,7 +1407,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1429,7 +1429,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3010635984</coreId>
+						<coreId>1769218148</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1456,7 +1456,7 @@
 						<id>35</id>
 						<name>bitcast_ln174</name>
 						<fileName>/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>174</lineNumber>
 						<contextFuncName>write</contextFuncName>
 						<contextNormFuncName>write</contextNormFuncName>
@@ -1464,7 +1464,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1512,7 +1512,7 @@
 						<id>36</id>
 						<name>sum_stream_write_ln174</name>
 						<fileName>/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>174</lineNumber>
 						<contextFuncName>write</contextFuncName>
 						<contextNormFuncName>write</contextNormFuncName>
@@ -1520,7 +1520,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1542,7 +1542,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3010636448</coreId>
+						<coreId>544239471</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1570,7 +1570,7 @@
 						<id>37</id>
 						<name>k_1_write_ln16</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>16</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -1578,7 +1578,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1600,7 +1600,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>258671456</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1629,7 +1629,7 @@
 						<id>38</id>
 						<name>br_ln16</name>
 						<fileName>../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</fileName>
-						<fileDirectory>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</fileDirectory>
+						<fileDirectory>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</fileDirectory>
 						<lineNumber>16</lineNumber>
 						<contextFuncName>calculate_distance_stream</contextFuncName>
 						<contextNormFuncName>calculate_distance_stream</contextNormFuncName>
@@ -1637,7 +1637,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS</first>
+								<first>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1659,7 +1659,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3010685456</coreId>
+						<coreId>259287832</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1701,7 +1701,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>259245616</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1777,7 +1777,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3010696664</coreId>
+						<coreId>259245616</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -1808,7 +1808,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3010697376</coreId>
+						<coreId>140</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -1870,7 +1870,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3010698896</coreId>
+						<coreId>259256848</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1939,7 +1939,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>742273587</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1973,7 +1973,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>3758096880</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -2022,7 +2022,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>3010694704</coreId>
+					<coreId>176</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>

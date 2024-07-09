@@ -57,7 +57,6 @@ void calculate_brightness_stream (UIT image[FILAS][COLUMNAS][BANDAS], uint32_t& 
 
 void hyperspectral_hw(UIT image[FILAS][COLUMNAS][BANDAS], IN refPixel[2], IN maxBrightnessIdx[2], T& minDistance, IN closestPixelIdx[2]) {
     
-    
     minDistance = std::numeric_limits<T>::max();
     uint32_t maxBrightness = 0;
     
@@ -97,33 +96,30 @@ void hyperspectral_hw_wrapped (hls::stream<AXI_VAL>& in_stream, hls::stream<AXI_
     T minDistance;
     IN closestPixel [2];
 
-    std::cout << "## STARTING STREAMING IN!\r\n";
 
     for (int i = 0; i < FILAS; i++) {
         for (int j = 0; j < COLUMNAS; j++) {
             for (int k = 0; k < BANDAS; k += 2) {
-#pragma HLS PIPELINE II=1
+    #pragma HLS PIPELINE II=1
                 WORD_MEM w = in_stream.read().data;
-                conv_t c;
                 for (int m = 0; m < NUM_ELEMS_UIT; m++) {
-                	c.in = w((m+1)*16-1, m*16);
-                    image[i][j][k+m] = c.out;
+                    image[i][j][k+m] = w((m+1)*16-1, m*16);
                 }
             }
         }
     }
 
-    std::cout << "STREAM IN OF IMAGE DONE!\r\n";
 
     // STREAM_IN refPixel
     for (int i = 0; i < 2; i++) {
-        WORD_MEM w = in_stream.read().data();
+        AXI_VAL e = in_stream.read();
+        WORD_MEM w = e.data;
         conv_t c;
-        c.in = w(31,0);
+        c.in = w;
         refPixel[i] = c.out;
     }
 
-    std::cout << "STREAM REFPIXEL DONE!\r\n";
+    
 
 
     hyperspectral_hw (image, refPixel, maxBrightnessIdx, minDistance, closestPixel);
@@ -131,9 +127,8 @@ void hyperspectral_hw_wrapped (hls::stream<AXI_VAL>& in_stream, hls::stream<AXI_
     // STREAM_OUT maxBrightnessIdx
 
     for (int i = 0; i < 2; i+=NUM_ELEMS_IN) {
-# pragma HLS PIPELINE II=1
+        #pragma HLS PIPELINE II=1
         AXI_VAL e;
-        WORD_MEM w;
         convert2_int(e.data, &maxBrightnessIdx[i]);
         e.strb = -1;
         e.keep = 15;
@@ -142,9 +137,7 @@ void hyperspectral_hw_wrapped (hls::stream<AXI_VAL>& in_stream, hls::stream<AXI_
         e.id = 5;
         e.dest = 6;
         out_stream.write(e);
-        std::cout << "maxBrightnessIdx[" << i << "] = " << maxBrightnessIdx[i] << std::endl;
     }
-
 
     // STREAM_OUT minDistance
 
@@ -161,17 +154,18 @@ void hyperspectral_hw_wrapped (hls::stream<AXI_VAL>& in_stream, hls::stream<AXI_
     e.id = 7;
     e.dest = 8;
     out_stream.write(e);
-    std::cout << "minDistance = " << minDistance << std::endl;
+    
 
     // STREAM_OUT closestPixel
 
     for (int i = 0; i < 2; i+=NUM_ELEMS_IN) {
+        #pragma HLS PIPELINE II=1
         AXI_VAL e;
         convert2_int(e.data, &closestPixel[i]);
         e.strb = -1;
         e.keep = 15;
         e.user = U;
-        e.last = (i == 2 - NUM_ELEMS_IN);
+        e.last = (i == 1);
         e.id = 9;
         e.dest = 10;
         out_stream.write(e);

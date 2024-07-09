@@ -150,9 +150,9 @@ wire    ap_CS_fsm_state10;
 wire   [0:0] cmp1_i_i_fu_437_p2;
 reg   [0:0] cmp1_i_i_reg_875;
 wire    ap_CS_fsm_state11;
-wire   [0:0] icmp_ln65_fu_463_p2;
-reg   [0:0] icmp_ln65_reg_883;
-wire   [0:0] icmp_ln64_fu_442_p2;
+wire   [0:0] icmp_ln64_fu_463_p2;
+reg   [0:0] icmp_ln64_reg_883;
+wire   [0:0] icmp_ln63_fu_442_p2;
 wire   [0:0] cmp1_i_i_mid1_fu_501_p2;
 reg   [0:0] cmp1_i_i_mid1_reg_888;
 wire   [0:0] trunc_ln41_fu_506_p1;
@@ -184,28 +184,28 @@ reg   [18:0] image_address1;
 reg    image_ce1;
 reg    image_we1;
 wire   [15:0] image_q1;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_start;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_done;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_idle;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_ready;
-wire   [18:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_d0;
-wire   [18:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_address1;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_ce1;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_we1;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_d1;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_in_stream_TREADY;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_start;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_done;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_idle;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_ready;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_in_stream_TREADY;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_refPixel_1_034_out;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_refPixel_1_034_out_ap_vld;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_refPixel_0_033_out;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_refPixel_0_033_out_ap_vld;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_start;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_done;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_idle;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_ready;
+wire   [18:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_d0;
+wire   [18:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_address1;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_ce1;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_we1;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_d1;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_in_stream_TREADY;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_start;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_done;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_idle;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_ready;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_in_stream_TREADY;
+wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_1_034_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_1_034_out_ap_vld;
+wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_0_033_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_0_033_out_ap_vld;
 wire    grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_start;
 wire    grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_done;
 wire    grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_idle;
@@ -238,41 +238,41 @@ wire    grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_ready;
 wire    grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_brightness_stream_read;
 wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_current_brightness_out;
 wire    grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_current_brightness_out_ap_vld;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_start;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_done;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_idle;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_ready;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TREADY;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TDATA;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TVALID;
-wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TKEEP;
-wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TSTRB;
-wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TUSER;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TLAST;
-wire   [4:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TID;
-wire   [4:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TDEST;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_grp_fu_956_p_din0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_grp_fu_956_p_ce;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_start;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_done;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_idle;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_ready;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TREADY;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TDATA;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TVALID;
-wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TKEEP;
-wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TSTRB;
-wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TUSER;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TLAST;
-wire   [4:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TID;
-wire   [4:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TDEST;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_grp_fu_956_p_din0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_grp_fu_956_p_ce;
-reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_start_reg;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_start;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_done;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_idle;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_ready;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TREADY;
+wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TDATA;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID;
+wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TKEEP;
+wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TSTRB;
+wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TUSER;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TLAST;
+wire   [4:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TID;
+wire   [4:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TDEST;
+wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_grp_fu_956_p_din0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_grp_fu_956_p_ce;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_start;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_done;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_idle;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_ready;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TREADY;
+wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TDATA;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID;
+wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TKEEP;
+wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TSTRB;
+wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TUSER;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TLAST;
+wire   [4:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TID;
+wire   [4:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TDEST;
+wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_grp_fu_956_p_din0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_grp_fu_956_p_ce;
+reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_start_reg;
 reg   [36:0] ap_NS_fsm;
 wire    ap_NS_fsm_state2;
 wire    ap_CS_fsm_state3;
-reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_start_reg;
+reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_start_reg;
 wire    ap_CS_fsm_state5;
 wire    ap_CS_fsm_state6;
 reg    grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_start_reg;
@@ -296,9 +296,9 @@ wire   [31:0] brightness_stream_dout;
 wire    brightness_stream_empty_n;
 reg    brightness_stream_read;
 wire    ap_CS_fsm_state24;
-reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_start_reg;
+reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_start_reg;
 wire    ap_CS_fsm_state32;
-reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_start_reg;
+reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_start_reg;
 wire    ap_CS_fsm_state36;
 reg   [31:0] maxBrightness_1_fu_144;
 wire   [31:0] maxBrightness_fu_706_p3;
@@ -310,21 +310,21 @@ wire   [31:0] select_ln34_fu_662_p3;
 reg   [31:0] j_02_i629_fu_156;
 wire   [31:0] select_ln34_1_fu_670_p3;
 reg   [31:0] i_04_i631_fu_160;
-wire   [31:0] select_ln75_1_fu_698_p3;
+wire   [31:0] select_ln74_1_fu_698_p3;
 reg   [31:0] j_02_i633_fu_164;
-wire   [31:0] select_ln75_fu_690_p3;
+wire   [31:0] select_ln74_fu_690_p3;
 reg   [10:0] j_1_fu_168;
-wire   [10:0] add_ln65_fu_527_p2;
+wire   [10:0] add_ln64_fu_527_p2;
 reg   [1:0] i_2_fu_172;
 wire   [1:0] select_ln41_1_fu_477_p3;
 reg   [11:0] indvar_flatten20_fu_176;
-wire   [11:0] add_ln64_1_fu_448_p2;
+wire   [11:0] add_ln63_1_fu_448_p2;
 wire    ap_CS_fsm_state19;
 wire   [8:0] empty_29_fu_405_p1;
 wire   [18:0] tmp_8_fu_409_p3;
 wire   [18:0] trunc_ln17_fu_417_p1;
 wire   [31:0] zext_ln41_fu_433_p1;
-wire   [1:0] add_ln64_fu_457_p2;
+wire   [1:0] add_ln63_fu_457_p2;
 wire   [11:0] tmp_s_fu_485_p3;
 wire   [31:0] zext_ln41_1_fu_497_p1;
 wire   [10:0] select_ln41_fu_469_p3;
@@ -349,7 +349,7 @@ wire   [0:0] or_ln34_fu_648_p2;
 wire   [0:0] and_ln34_fu_653_p2;
 wire   [31:0] zext_ln41_4_fu_560_p1;
 wire   [31:0] zext_ln34_fu_659_p1;
-wire   [0:0] icmp_ln75_fu_684_p2;
+wire   [0:0] icmp_ln74_fu_684_p2;
 wire  signed [18:0] grp_fu_749_p0;
 wire   [7:0] grp_fu_749_p1;
 wire   [11:0] grp_fu_755_p0;
@@ -466,14 +466,14 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 37'd1;
-#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_start_reg = 1'b0;
-#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_start_reg = 1'b0;
+#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_start_reg = 1'b0;
+#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_start_reg = 1'b0;
 #0 grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_start_reg = 1'b0;
 #0 grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_start_reg = 1'b0;
 #0 grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_start_reg = 1'b0;
 #0 grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_start_reg = 1'b0;
-#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_start_reg = 1'b0;
-#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_start_reg = 1'b0;
+#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_start_reg = 1'b0;
+#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_start_reg = 1'b0;
 end
 
 hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W #(
@@ -486,33 +486,33 @@ image_U(
     .address0(image_address0),
     .ce0(image_ce0),
     .we0(image_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_d0),
     .q0(image_q0),
     .address1(image_address1),
     .ce1(image_ce1),
     .we1(image_we1),
-    .d1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_d1),
+    .d1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_d1),
     .q1(image_q1)
 );
 
-hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239(
+hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_start),
-    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_done),
-    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_idle),
-    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_ready),
+    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_start),
+    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_done),
+    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_idle),
+    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_ready),
     .in_stream_TVALID(in_stream_TVALID_int_regslice),
-    .image_r_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_address0),
-    .image_r_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_ce0),
-    .image_r_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_we0),
-    .image_r_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_d0),
-    .image_r_address1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_address1),
-    .image_r_ce1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_ce1),
-    .image_r_we1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_we1),
-    .image_r_d1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_d1),
+    .image_r_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_address0),
+    .image_r_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_ce0),
+    .image_r_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_we0),
+    .image_r_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_d0),
+    .image_r_address1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_address1),
+    .image_r_ce1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_ce1),
+    .image_r_we1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_we1),
+    .image_r_d1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_d1),
     .in_stream_TDATA(in_stream_TDATA_int_regslice),
-    .in_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_in_stream_TREADY),
+    .in_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_in_stream_TREADY),
     .in_stream_TKEEP(in_stream_TKEEP_int_regslice),
     .in_stream_TSTRB(in_stream_TSTRB_int_regslice),
     .in_stream_TUSER(in_stream_TUSER_int_regslice),
@@ -521,26 +521,26 @@ hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITI
     .in_stream_TDEST(in_stream_TDEST_int_regslice)
 );
 
-hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258(
+hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_start),
-    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_done),
-    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_idle),
-    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_ready),
+    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_start),
+    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_done),
+    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_idle),
+    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_ready),
     .in_stream_TVALID(in_stream_TVALID_int_regslice),
     .in_stream_TDATA(in_stream_TDATA_int_regslice),
-    .in_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_in_stream_TREADY),
+    .in_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_in_stream_TREADY),
     .in_stream_TKEEP(in_stream_TKEEP_int_regslice),
     .in_stream_TSTRB(in_stream_TSTRB_int_regslice),
     .in_stream_TUSER(in_stream_TUSER_int_regslice),
     .in_stream_TLAST(in_stream_TLAST_int_regslice),
     .in_stream_TID(in_stream_TID_int_regslice),
     .in_stream_TDEST(in_stream_TDEST_int_regslice),
-    .refPixel_1_034_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_refPixel_1_034_out),
-    .refPixel_1_034_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_refPixel_1_034_out_ap_vld),
-    .refPixel_0_033_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_refPixel_0_033_out),
-    .refPixel_0_033_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_refPixel_0_033_out_ap_vld)
+    .refPixel_1_034_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_1_034_out),
+    .refPixel_1_034_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_1_034_out_ap_vld),
+    .refPixel_0_033_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_0_033_out),
+    .refPixel_0_033_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_0_033_out_ap_vld)
 );
 
 hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L3 grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278(
@@ -607,50 +607,50 @@ hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L6 grp_hyperspectral_
     .current_brightness_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_current_brightness_out_ap_vld)
 );
 
-hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305(
+hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_start),
-    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_done),
-    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_idle),
-    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_ready),
-    .out_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TREADY),
+    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_start),
+    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_done),
+    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_idle),
+    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_ready),
+    .out_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TREADY),
     .j_02_i633(j_02_i633_load_reg_936),
     .i_04_i631(i_04_i631_load_reg_931),
-    .out_stream_TDATA(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TDATA),
-    .out_stream_TVALID(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TVALID),
-    .out_stream_TKEEP(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TKEEP),
-    .out_stream_TSTRB(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TSTRB),
-    .out_stream_TUSER(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TUSER),
-    .out_stream_TLAST(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TLAST),
-    .out_stream_TID(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TID),
-    .out_stream_TDEST(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TDEST),
-    .grp_fu_956_p_din0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_grp_fu_956_p_din0),
+    .out_stream_TDATA(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TDATA),
+    .out_stream_TVALID(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID),
+    .out_stream_TKEEP(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TKEEP),
+    .out_stream_TSTRB(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TSTRB),
+    .out_stream_TUSER(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TUSER),
+    .out_stream_TLAST(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TLAST),
+    .out_stream_TID(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TID),
+    .out_stream_TDEST(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TDEST),
+    .grp_fu_956_p_din0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_grp_fu_956_p_din0),
     .grp_fu_956_p_dout0(grp_fu_956_p1),
-    .grp_fu_956_p_ce(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_grp_fu_956_p_ce)
+    .grp_fu_956_p_ce(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_grp_fu_956_p_ce)
 );
 
-hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325(
+hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_start),
-    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_done),
-    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_idle),
-    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_ready),
-    .out_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TREADY),
+    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_start),
+    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_done),
+    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_idle),
+    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_ready),
+    .out_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TREADY),
     .j_02_i629(j_02_i629_load_reg_951),
     .i_04_i627(i_04_i627_load_reg_946),
-    .out_stream_TDATA(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TDATA),
-    .out_stream_TVALID(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TVALID),
-    .out_stream_TKEEP(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TKEEP),
-    .out_stream_TSTRB(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TSTRB),
-    .out_stream_TUSER(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TUSER),
-    .out_stream_TLAST(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TLAST),
-    .out_stream_TID(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TID),
-    .out_stream_TDEST(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TDEST),
-    .grp_fu_956_p_din0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_grp_fu_956_p_din0),
+    .out_stream_TDATA(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TDATA),
+    .out_stream_TVALID(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID),
+    .out_stream_TKEEP(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TKEEP),
+    .out_stream_TSTRB(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TSTRB),
+    .out_stream_TUSER(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TUSER),
+    .out_stream_TLAST(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TLAST),
+    .out_stream_TID(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TID),
+    .out_stream_TDEST(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TDEST),
+    .grp_fu_956_p_din0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_grp_fu_956_p_din0),
     .grp_fu_956_p_dout0(grp_fu_956_p1),
-    .grp_fu_956_p_ce(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_grp_fu_956_p_ce)
+    .grp_fu_956_p_ce(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_grp_fu_956_p_ce)
 );
 
 hyperspectral_hw_wrapped_CONTROL_BUS_s_axi #(
@@ -1040,48 +1040,48 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_start_reg <= 1'b0;
+        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_start_reg <= 1'b0;
     end else begin
         if (((1'b1 == ap_CS_fsm_state1) & (1'b1 == ap_NS_fsm_state2))) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_start_reg <= 1'b1;
-        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_ready == 1'b1)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_start_reg <= 1'b0;
+            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_start_reg <= 1'b1;
+        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_ready == 1'b1)) begin
+            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_start_reg <= 1'b0;
+        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state5)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_start_reg <= 1'b1;
-        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_ready == 1'b1)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_start_reg <= 1'b0;
+            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_start_reg <= 1'b1;
+        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_ready == 1'b1)) begin
+            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_start_reg <= 1'b0;
+        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state31)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_start_reg <= 1'b1;
-        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_ready == 1'b1)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_start_reg <= 1'b0;
+            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_start_reg <= 1'b1;
+        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_ready == 1'b1)) begin
+            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_start_reg <= 1'b0;
+        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state35)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_start_reg <= 1'b1;
-        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_ready == 1'b1)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_start_reg <= 1'b0;
+            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_start_reg <= 1'b1;
+        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_ready == 1'b1)) begin
+            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -1089,7 +1089,7 @@ end
 always @ (posedge ap_clk) begin
     if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         i_2_fu_172 <= 2'd0;
-    end else if (((1'b1 == ap_CS_fsm_state11) & (icmp_ln64_fu_442_p2 == 1'd0))) begin
+    end else if (((1'b1 == ap_CS_fsm_state11) & (icmp_ln63_fu_442_p2 == 1'd0))) begin
         i_2_fu_172 <= select_ln41_1_fu_477_p3;
     end
 end
@@ -1097,16 +1097,16 @@ end
 always @ (posedge ap_clk) begin
     if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         indvar_flatten20_fu_176 <= 12'd0;
-    end else if (((1'b1 == ap_CS_fsm_state11) & (icmp_ln64_fu_442_p2 == 1'd0))) begin
-        indvar_flatten20_fu_176 <= add_ln64_1_fu_448_p2;
+    end else if (((1'b1 == ap_CS_fsm_state11) & (icmp_ln63_fu_442_p2 == 1'd0))) begin
+        indvar_flatten20_fu_176 <= add_ln63_1_fu_448_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         j_1_fu_168 <= 11'd0;
-    end else if (((1'b1 == ap_CS_fsm_state11) & (icmp_ln64_fu_442_p2 == 1'd0))) begin
-        j_1_fu_168 <= add_ln65_fu_527_p2;
+    end else if (((1'b1 == ap_CS_fsm_state11) & (icmp_ln63_fu_442_p2 == 1'd0))) begin
+        j_1_fu_168 <= add_ln64_fu_527_p2;
     end
 end
 
@@ -1127,10 +1127,10 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state11) & (icmp_ln64_fu_442_p2 == 1'd0))) begin
+    if (((1'b1 == ap_CS_fsm_state11) & (icmp_ln63_fu_442_p2 == 1'd0))) begin
         cmp1_i_i_mid1_reg_888 <= cmp1_i_i_mid1_fu_501_p2;
         icmp_ln34_reg_898 <= icmp_ln34_fu_518_p2;
-        icmp_ln65_reg_883 <= icmp_ln65_fu_463_p2;
+        icmp_ln64_reg_883 <= icmp_ln64_fu_463_p2;
         trunc_ln34_2_reg_903 <= trunc_ln34_2_fu_523_p1;
         trunc_ln41_reg_893 <= trunc_ln41_fu_506_p1;
     end
@@ -1145,9 +1145,9 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state30)) begin
         i_04_i627_fu_152 <= select_ln34_fu_662_p3;
-        i_04_i631_fu_160 <= select_ln75_1_fu_698_p3;
+        i_04_i631_fu_160 <= select_ln74_1_fu_698_p3;
         j_02_i629_fu_156 <= select_ln34_1_fu_670_p3;
-        j_02_i633_fu_164 <= select_ln75_fu_690_p3;
+        j_02_i633_fu_164 <= select_ln74_fu_690_p3;
     end
 end
 
@@ -1268,7 +1268,7 @@ assign ap_ST_fsm_state30_blk = 1'b0;
 assign ap_ST_fsm_state31_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_done == 1'b0)) begin
+    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_done == 1'b0)) begin
         ap_ST_fsm_state32_blk = 1'b1;
     end else begin
         ap_ST_fsm_state32_blk = 1'b0;
@@ -1294,7 +1294,7 @@ end
 assign ap_ST_fsm_state35_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_done == 1'b0)) begin
+    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_done == 1'b0)) begin
         ap_ST_fsm_state36_blk = 1'b1;
     end else begin
         ap_ST_fsm_state36_blk = 1'b0;
@@ -1310,7 +1310,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_done == 1'b0)) begin
+    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_done == 1'b0)) begin
         ap_ST_fsm_state3_blk = 1'b1;
     end else begin
         ap_ST_fsm_state3_blk = 1'b0;
@@ -1322,7 +1322,7 @@ assign ap_ST_fsm_state4_blk = 1'b0;
 assign ap_ST_fsm_state5_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_done == 1'b0)) begin
+    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_done == 1'b0)) begin
         ap_ST_fsm_state6_blk = 1'b1;
     end else begin
         ap_ST_fsm_state6_blk = 1'b0;
@@ -1385,9 +1385,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state36)) begin
-        grp_fu_956_ce = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_grp_fu_956_p_ce;
+        grp_fu_956_ce = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_grp_fu_956_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        grp_fu_956_ce = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_grp_fu_956_p_ce;
+        grp_fu_956_ce = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_grp_fu_956_p_ce;
     end else begin
         grp_fu_956_ce = 1'b1;
     end
@@ -1395,9 +1395,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state36)) begin
-        grp_fu_956_p0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_grp_fu_956_p_din0;
+        grp_fu_956_p0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_grp_fu_956_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        grp_fu_956_p0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_grp_fu_956_p_din0;
+        grp_fu_956_p0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_grp_fu_956_p_din0;
     end else begin
         grp_fu_956_p0 = 'bx;
     end
@@ -1409,7 +1409,7 @@ always @ (*) begin
     end else if ((1'b1 == ap_CS_fsm_state15)) begin
         image_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_image_r_address0;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        image_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_address0;
+        image_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_address0;
     end else begin
         image_address0 = 'bx;
     end
@@ -1419,7 +1419,7 @@ always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state15)) begin
         image_address1 = grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_image_r_address1;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        image_address1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_address1;
+        image_address1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_address1;
     end else begin
         image_address1 = 'bx;
     end
@@ -1431,7 +1431,7 @@ always @ (*) begin
     end else if ((1'b1 == ap_CS_fsm_state15)) begin
         image_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_image_r_ce0;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        image_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_ce0;
+        image_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_ce0;
     end else begin
         image_ce0 = 1'b0;
     end
@@ -1441,7 +1441,7 @@ always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state15)) begin
         image_ce1 = grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_image_r_ce1;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        image_ce1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_ce1;
+        image_ce1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_ce1;
     end else begin
         image_ce1 = 1'b0;
     end
@@ -1449,7 +1449,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        image_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_we0;
+        image_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_we0;
     end else begin
         image_we0 = 1'b0;
     end
@@ -1457,7 +1457,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        image_we1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_image_r_we1;
+        image_we1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_we1;
     end else begin
         image_we1 = 1'b0;
     end
@@ -1465,9 +1465,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        in_stream_TREADY_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_in_stream_TREADY;
+        in_stream_TREADY_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_in_stream_TREADY;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        in_stream_TREADY_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_in_stream_TREADY;
+        in_stream_TREADY_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_in_stream_TREADY;
     end else begin
         in_stream_TREADY_int_regslice = 1'b0;
     end
@@ -1484,10 +1484,10 @@ end
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state33) & (out_stream_TREADY_int_regslice == 1'b1))) begin
         out_stream_TDATA_int_regslice = w_V_fu_744_p1;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
-        out_stream_TDATA_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TDATA;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
-        out_stream_TDATA_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TDATA;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
+        out_stream_TDATA_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TDATA;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
+        out_stream_TDATA_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TDATA;
     end else begin
         out_stream_TDATA_int_regslice = 'bx;
     end
@@ -1496,10 +1496,10 @@ end
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state33) & (out_stream_TREADY_int_regslice == 1'b1))) begin
         out_stream_TDEST_int_regslice = 5'd8;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
-        out_stream_TDEST_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TDEST;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
-        out_stream_TDEST_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TDEST;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
+        out_stream_TDEST_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TDEST;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
+        out_stream_TDEST_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TDEST;
     end else begin
         out_stream_TDEST_int_regslice = 'bx;
     end
@@ -1508,10 +1508,10 @@ end
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state33) & (out_stream_TREADY_int_regslice == 1'b1))) begin
         out_stream_TID_int_regslice = 5'd7;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
-        out_stream_TID_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TID;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
-        out_stream_TID_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TID;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
+        out_stream_TID_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TID;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
+        out_stream_TID_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TID;
     end else begin
         out_stream_TID_int_regslice = 'bx;
     end
@@ -1520,10 +1520,10 @@ end
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state33) & (out_stream_TREADY_int_regslice == 1'b1))) begin
         out_stream_TKEEP_int_regslice = 4'd15;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
-        out_stream_TKEEP_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TKEEP;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
-        out_stream_TKEEP_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TKEEP;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
+        out_stream_TKEEP_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TKEEP;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
+        out_stream_TKEEP_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TKEEP;
     end else begin
         out_stream_TKEEP_int_regslice = 'bx;
     end
@@ -1532,10 +1532,10 @@ end
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state33) & (out_stream_TREADY_int_regslice == 1'b1))) begin
         out_stream_TLAST_int_regslice = 1'd0;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
-        out_stream_TLAST_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TLAST;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
-        out_stream_TLAST_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TLAST;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
+        out_stream_TLAST_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TLAST;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
+        out_stream_TLAST_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TLAST;
     end else begin
         out_stream_TLAST_int_regslice = 'bx;
     end
@@ -1544,10 +1544,10 @@ end
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state33) & (out_stream_TREADY_int_regslice == 1'b1))) begin
         out_stream_TSTRB_int_regslice = 4'd15;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
-        out_stream_TSTRB_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TSTRB;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
-        out_stream_TSTRB_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TSTRB;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
+        out_stream_TSTRB_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TSTRB;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
+        out_stream_TSTRB_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TSTRB;
     end else begin
         out_stream_TSTRB_int_regslice = 'bx;
     end
@@ -1556,10 +1556,10 @@ end
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state33) & (out_stream_TREADY_int_regslice == 1'b1))) begin
         out_stream_TUSER_int_regslice = 4'd4;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
-        out_stream_TUSER_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TUSER;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
-        out_stream_TUSER_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TUSER;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
+        out_stream_TUSER_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TUSER;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
+        out_stream_TUSER_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TUSER;
     end else begin
         out_stream_TUSER_int_regslice = 'bx;
     end
@@ -1569,9 +1569,9 @@ always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state33) & (out_stream_TREADY_int_regslice == 1'b1))) begin
         out_stream_TVALID_int_regslice = 1'b1;
     end else if ((1'b1 == ap_CS_fsm_state36)) begin
-        out_stream_TVALID_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TVALID;
+        out_stream_TVALID_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID;
     end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        out_stream_TVALID_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TVALID;
+        out_stream_TVALID_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID;
     end else begin
         out_stream_TVALID_int_regslice = 1'b0;
     end
@@ -1606,7 +1606,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state3;
         end
         ap_ST_fsm_state3 : begin
-            if (((1'b1 == ap_CS_fsm_state3) & (grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_done == 1'b1))) begin
+            if (((1'b1 == ap_CS_fsm_state3) & (grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state4;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
@@ -1619,7 +1619,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state6;
         end
         ap_ST_fsm_state6 : begin
-            if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+            if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
                 ap_NS_fsm = ap_ST_fsm_state7;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state6;
@@ -1638,7 +1638,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state11;
         end
         ap_ST_fsm_state11 : begin
-            if (((1'b1 == ap_CS_fsm_state11) & (icmp_ln64_fu_442_p2 == 1'd1))) begin
+            if (((1'b1 == ap_CS_fsm_state11) & (icmp_ln63_fu_442_p2 == 1'd1))) begin
                 ap_NS_fsm = ap_ST_fsm_state31;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state12;
@@ -1721,7 +1721,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state32;
         end
         ap_ST_fsm_state32 : begin
-            if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
+            if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
                 ap_NS_fsm = ap_ST_fsm_state33;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state32;
@@ -1745,7 +1745,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state36;
         end
         ap_ST_fsm_state36 : begin
-            if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
+            if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
                 ap_NS_fsm = ap_ST_fsm_state37;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state36;
@@ -1764,11 +1764,11 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln64_1_fu_448_p2 = (indvar_flatten20_fu_176 + 12'd1);
+assign add_ln63_1_fu_448_p2 = (indvar_flatten20_fu_176 + 12'd1);
 
-assign add_ln64_fu_457_p2 = (i_2_fu_172 + 2'd1);
+assign add_ln63_fu_457_p2 = (i_2_fu_172 + 2'd1);
 
-assign add_ln65_fu_527_p2 = (select_ln41_fu_469_p3 + 11'd1);
+assign add_ln64_fu_527_p2 = (select_ln41_fu_469_p3 + 11'd1);
 
 assign and_ln34_1_fu_636_p2 = (or_ln34_2_fu_630_p2 & or_ln34_1_fu_612_p2);
 
@@ -1848,11 +1848,11 @@ assign bitcast_ln34_fu_566_p1 = minDistance_3_reg_917;
 
 assign c_fu_678_p3 = ((and_ln34_fu_653_p2[0:0] == 1'b1) ? minDistance_3_reg_917 : minDistance_load_1_reg_924);
 
-assign cmp1_i_i_fu_437_p2 = ((zext_ln41_fu_433_p1 != grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_refPixel_0_033_out) ? 1'b1 : 1'b0);
+assign cmp1_i_i_fu_437_p2 = ((zext_ln41_fu_433_p1 != grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_0_033_out) ? 1'b1 : 1'b0);
 
-assign cmp1_i_i_mid1_fu_501_p2 = ((zext_ln41_1_fu_497_p1 != grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_refPixel_0_033_out) ? 1'b1 : 1'b0);
+assign cmp1_i_i_mid1_fu_501_p2 = ((zext_ln41_1_fu_497_p1 != grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_0_033_out) ? 1'b1 : 1'b0);
 
-assign empty_29_fu_405_p1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_refPixel_0_033_out[8:0];
+assign empty_29_fu_405_p1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_0_033_out[8:0];
 
 assign grp_fu_749_p0 = (tmp_8_fu_409_p3 + trunc_ln17_fu_417_p1);
 
@@ -1876,17 +1876,17 @@ assign grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_start = grp_hyperspect
 
 assign grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_start_reg;
 
-assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_1_fu_239_ap_start_reg;
+assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_start_reg;
 
-assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_ap_start_reg;
+assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_start_reg;
 
-assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_ap_start_reg;
+assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_start_reg;
 
-assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_132_6_fu_305_out_stream_TREADY = (out_stream_TREADY_int_regslice & ap_CS_fsm_state32);
+assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TREADY = (out_stream_TREADY_int_regslice & ap_CS_fsm_state32);
 
-assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_ap_start_reg;
+assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_start_reg;
 
-assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_167_7_fu_325_out_stream_TREADY = (out_stream_TREADY_int_regslice & ap_CS_fsm_state36);
+assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TREADY = (out_stream_TREADY_int_regslice & ap_CS_fsm_state36);
 
 assign icmp_ln34_1_fu_600_p2 = ((tmp_5_fu_569_p4 != 8'd255) ? 1'b1 : 1'b0);
 
@@ -1896,17 +1896,17 @@ assign icmp_ln34_3_fu_618_p2 = ((tmp_6_fu_586_p4 != 8'd255) ? 1'b1 : 1'b0);
 
 assign icmp_ln34_4_fu_624_p2 = ((trunc_ln34_1_fu_596_p1 == 23'd0) ? 1'b1 : 1'b0);
 
-assign icmp_ln34_fu_518_p2 = ((zext_ln41_3_fu_514_p1 != grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_refPixel_1_034_out) ? 1'b1 : 1'b0);
+assign icmp_ln34_fu_518_p2 = ((zext_ln41_3_fu_514_p1 != grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_1_034_out) ? 1'b1 : 1'b0);
 
-assign icmp_ln64_fu_442_p2 = ((indvar_flatten20_fu_176 == 12'd2048) ? 1'b1 : 1'b0);
+assign icmp_ln63_fu_442_p2 = ((indvar_flatten20_fu_176 == 12'd2048) ? 1'b1 : 1'b0);
 
-assign icmp_ln65_fu_463_p2 = ((j_1_fu_168 == 11'd1024) ? 1'b1 : 1'b0);
+assign icmp_ln64_fu_463_p2 = ((j_1_fu_168 == 11'd1024) ? 1'b1 : 1'b0);
 
-assign icmp_ln75_fu_684_p2 = ((grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_current_brightness_out > maxBrightness_1_fu_144) ? 1'b1 : 1'b0);
+assign icmp_ln74_fu_684_p2 = ((grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_current_brightness_out > maxBrightness_1_fu_144) ? 1'b1 : 1'b0);
 
 assign in_stream_TREADY = regslice_both_in_stream_V_data_V_U_ack_in;
 
-assign maxBrightness_fu_706_p3 = ((icmp_ln75_fu_684_p2[0:0] == 1'b1) ? grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_current_brightness_out : maxBrightness_1_fu_144);
+assign maxBrightness_fu_706_p3 = ((icmp_ln74_fu_684_p2[0:0] == 1'b1) ? grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_current_brightness_out : maxBrightness_1_fu_144);
 
 assign or_ln34_1_fu_612_p2 = (icmp_ln34_2_fu_606_p2 | icmp_ln34_1_fu_600_p2);
 
@@ -1920,15 +1920,15 @@ assign select_ln34_1_fu_670_p3 = ((and_ln34_fu_653_p2[0:0] == 1'b1) ? zext_ln34_
 
 assign select_ln34_fu_662_p3 = ((and_ln34_fu_653_p2[0:0] == 1'b1) ? zext_ln41_4_fu_560_p1 : i_04_i627_fu_152);
 
-assign select_ln41_1_fu_477_p3 = ((icmp_ln65_fu_463_p2[0:0] == 1'b1) ? add_ln64_fu_457_p2 : i_2_fu_172);
+assign select_ln41_1_fu_477_p3 = ((icmp_ln64_fu_463_p2[0:0] == 1'b1) ? add_ln63_fu_457_p2 : i_2_fu_172);
 
-assign select_ln41_2_fu_555_p3 = ((icmp_ln65_reg_883[0:0] == 1'b1) ? cmp1_i_i_mid1_reg_888 : cmp1_i_i_reg_875);
+assign select_ln41_2_fu_555_p3 = ((icmp_ln64_reg_883[0:0] == 1'b1) ? cmp1_i_i_mid1_reg_888 : cmp1_i_i_reg_875);
 
-assign select_ln41_fu_469_p3 = ((icmp_ln65_fu_463_p2[0:0] == 1'b1) ? 11'd0 : j_1_fu_168);
+assign select_ln41_fu_469_p3 = ((icmp_ln64_fu_463_p2[0:0] == 1'b1) ? 11'd0 : j_1_fu_168);
 
-assign select_ln75_1_fu_698_p3 = ((icmp_ln75_fu_684_p2[0:0] == 1'b1) ? zext_ln41_4_fu_560_p1 : i_04_i631_fu_160);
+assign select_ln74_1_fu_698_p3 = ((icmp_ln74_fu_684_p2[0:0] == 1'b1) ? zext_ln41_4_fu_560_p1 : i_04_i631_fu_160);
 
-assign select_ln75_fu_690_p3 = ((icmp_ln75_fu_684_p2[0:0] == 1'b1) ? zext_ln34_fu_659_p1 : j_02_i633_fu_164);
+assign select_ln74_fu_690_p3 = ((icmp_ln74_fu_684_p2[0:0] == 1'b1) ? zext_ln34_fu_659_p1 : j_02_i633_fu_164);
 
 assign tmp_5_fu_569_p4 = {{bitcast_ln34_fu_566_p1[30:23]}};
 
@@ -1938,7 +1938,7 @@ assign tmp_8_fu_409_p3 = {{empty_29_fu_405_p1}, {10'd0}};
 
 assign tmp_s_fu_485_p3 = {{select_ln41_1_fu_477_p3}, {10'd0}};
 
-assign trunc_ln17_fu_417_p1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_117_5_fu_258_refPixel_1_034_out[18:0];
+assign trunc_ln17_fu_417_p1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_1_034_out[18:0];
 
 assign trunc_ln34_1_fu_596_p1 = bitcast_ln34_1_fu_583_p1[22:0];
 
@@ -1952,7 +1952,7 @@ assign w_V_fu_744_p1 = minDistance_fu_148;
 
 assign zext_ln34_fu_659_p1 = trunc_ln34_2_reg_903;
 
-assign zext_ln41_1_fu_497_p1 = add_ln64_fu_457_p2;
+assign zext_ln41_1_fu_497_p1 = add_ln63_fu_457_p2;
 
 assign zext_ln41_3_fu_514_p1 = select_ln41_fu_469_p3;
 

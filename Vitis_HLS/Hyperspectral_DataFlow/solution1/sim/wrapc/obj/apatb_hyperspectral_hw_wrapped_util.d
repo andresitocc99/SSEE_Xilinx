@@ -65,6 +65,7 @@ obj/apatb_hyperspectral_hw_wrapped_util.o: \
  /usr/include/x86_64-linux-gnu/bits/time64.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/localefwd.h \
  /tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++locale.h \
  /tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/clocale \
@@ -327,6 +328,8 @@ obj/apatb_hyperspectral_hw_wrapped_util.o: \
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
 /tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/localefwd.h:
 

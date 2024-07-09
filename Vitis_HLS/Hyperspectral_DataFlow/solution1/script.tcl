@@ -12,8 +12,9 @@ add_files -tb ../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin -cflags "-Wn
 open_solution "solution1" -flow_target vivado
 set_part {xczu3eg-sbva484-1-e}
 create_clock -period 10 -name default
+config_export -format ip_catalog -rtl verilog
 source "./Hyperspectral_DataFlow/solution1/directives.tcl"
 csim_design
 csynth_design
 cosim_design
-export_design -format ip_catalog
+export_design -rtl verilog -format ip_catalog
