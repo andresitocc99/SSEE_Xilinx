@@ -8,17 +8,10 @@
 #define FILAS 2
 #define COLUMNAS 1024
 #define BANDAS 180
-#define PIXELES (FILAS * COLUMNAS)
-#define MAX_DIST 0xFFFFFFFF
 
 typedef float T;
 typedef int IN;
 typedef uint16_t UIT;
-
-typedef ap_uint<16> band_t;
-typedef ap_uint<32> dist_t;
-
-
 #define U 4
 #define TI 5
 #define TD 5
@@ -37,7 +30,7 @@ typedef union {
 	T out;
 } conv_t;
 
-void hyperspectral_hw(band_t image[FILAS][COLUMNAS][BANDAS], band_t ref_pixel[BANDAS], band_t closest_pixel_hw[BANDAS]);
+void hyperspectral_hw(UIT image[FILAS][COLUMNAS][BANDAS], IN refPixel[2], IN maxBrightnessIdx[2], T& minDistance, IN closestPixelIdx[2]);
 void hyperspectral_hw_wrapped (hls::stream<AXI_VAL>& in_stream, hls::stream<AXI_VAL>& out_stream);
 
 #endif

@@ -7,46 +7,44 @@
 #include "hyperspectral.h"
 
 void loadHyperspectralImage(uint16_t image[FILAS][COLUMNAS][BANDAS], const char* filename);
-void convert2array_IN (WORD_MEM a, int out[NUM_ELEMS_IN]);
-void convert2word_uint16_t (WORD_MEM &w, uint16_t in[NUM_ELEMS_WORD]);
-void convert2word_int (WORD_MEM &w, int in[NUM_ELEMS_WORD]);
+void calculate_distance(band_t ref_band1, band_t ref_band2, band_t band1, band_t band2, dist_t &distance)
 
-void hyperspectral_sw(UIT image[FILAS][COLUMNAS][BANDAS], IN refPixel[2], IN maxBrightnessIdx[2], T& minDistance, IN closestPixelIdx[2]) {
-    
-    uint32_t maxBrightness = 0;
-    minDistance = std::numeric_limits<T>::max();
+
+void calculate_distance(band_t ref_band1, band_t ref_band2, band_t band1, band_t band2, dist_t &distance) {
+    #pragma HLS INLINE
+    dist_t diff1 = ref_band1 - band1;
+    dist_t diff2 = ref_band2 - band2;
+
+    distance += diff1 * diff1 + diff2 * diff2;  // Suma de las diferencias al cuadrado
+}
+
+void hyperspectral_sw(band_t image[FILAS][COLUMNAS][BANDAS], band_t ref_pixel[BANDAS], band_t closest_pixel_sw[BANDAS]) {
+
+    dist_t min_distance = MAX_DIST;
+    int min_pixel_index_i = 0;
+    int min_pixel_index_j = 0;
 
     for (int i = 0; i < FILAS; i++) {
-        for (int j = 0; j < COLUMNAS; j++) {
-            uint32_t currentBrightness = 0;
-            T sum = 0.0f;
+    	for (int j = 0; j < COLUMNAS; j++) {
+    		dist_t distance = 0;
 
-            // Separar cálculos
-            for (int k = 0; k < BANDAS; k++) {
-                currentBrightness += image[i][j][k];
-            }
+    		for (int k = 0; k < BANDAS; k += 2) {
+				calculate_distance(ref_pixel[k], ref_pixel[k + 1], image[i][j][k], image[i][j][k + 1], distance);
+			}
 
-            for (int k = 0; k < BANDAS; k++) {
-                T diff = (T)(image[i][j][k]) - (T)(image[refPixel[0]][refPixel[1]][k]);
-                sum += diff * diff;
-            }
-
-            T distance = sqrt(sum);
-
-            // Check conditions outside the innermost loop
-            if (distance < minDistance && (i != refPixel[0] || j != refPixel[1])) {
-                minDistance = distance;
-                closestPixelIdx[0] = i;
-                closestPixelIdx[1] = j;
-            }
-
-            if (currentBrightness > maxBrightness) {
-                maxBrightness = currentBrightness;
-                maxBrightnessIdx[0] = i;
-                maxBrightnessIdx[1] = j;
-            }
-        }
+    		if (distance < min_distance) {
+    			min_distance = distance;
+    			min_distance_index_i = i;
+    			min_distance_index_j = j;
+    		}
+    	}
     }
+
+    for (int k = 0; k < BANDAS; k++) {
+		closest_pixel_sw[k] = image[min_pixel_index_i][min_pixel_index_j][k];
+	}
+
+
 }
 void loadHyperspectralImage(uint16_t image[FILAS][COLUMNAS][BANDAS], const char* filename) {
     FILE *file = fopen(filename, "rb");
@@ -93,40 +91,23 @@ int main_standalone (void) {
     loadHyperspectralImage(image, "cuboH.bin");
 
     // Initiation of Pixel Reference
-    IN refPixel [2];
-    refPixel[0] = 0;
-    refPixel[1] = 40;
+    band_t ref_pixel[BANDAS];
+	for (int i=0; i < BANDAS; i++) {
+		ref_pixel[i]= 100;
+	}
 
-    // Initiation of maxBrightness
-    int maxBrightness_hw [2];
-    int maxBrightness_sw [2];
-
-    // Initiation of minDistance
-    T minDistance_hw;
-    T minDistance_sw;
-
-    // Initiation of closestPixelIdx
-    int closestPixelIdx_hw [2];
-    int closestPixelIdx_sw [2];
+	band_t closest_pixel_hw[BANDAS];
+	band_t closest_pixel_sw[BANDAS];
 
 
     printf("NORMAL MODE\r\n");
-    hyperspectral_hw (image, refPixel, maxBrightness_hw, minDistance_hw, closestPixelIdx_hw);
+    hyperspectral_hw (image, refPixel, closest_pixel_hw);
 
-    hyperspectral_sw (image, refPixel, maxBrightness_sw, minDistance_sw, closestPixelIdx_sw);
+    hyperspectral_sw (image, refPixel, closest_pixel_sw);
 
     err = 0;
     if (minDistance_hw != minDistance_sw) {
         printf("Error: minDistance_hw = %f, minDistance_sw = %f\r\n", minDistance_hw, minDistance_sw);
-        err++;
-    }
-    if (maxBrightness_hw[0] != maxBrightness_hw[0] || maxBrightness_hw[1] != maxBrightness_sw[1]) {
-        printf("Error: maxBrightness_hw = (%d, %d), maxBrightness_sw = (%d, %d)\r\n", maxBrightness_hw[0], maxBrightness_hw[1], maxBrightness_sw[0], maxBrightness_sw[1]);
-        err++;
-    }
-
-    if (closestPixelIdx_hw[0] != closestPixelIdx_sw[0] || closestPixelIdx_hw[1] != closestPixelIdx_sw[1]) {
-        printf("Error: closestPixelIdx_hw = (%d, %d), closestPixelIdx_sw = (%d, %d)\r\n", closestPixelIdx_hw[0], closestPixelIdx_hw[1], closestPixelIdx_sw[0], closestPixelIdx_sw[1]);
         err++;
     }
 
@@ -150,22 +131,15 @@ int main_axi (void) {
     uint16_t image[FILAS][COLUMNAS][BANDAS];
     loadHyperspectralImage(image, "cuboH.bin");
 
-    // Initiation of Pixel Reference
-    int refPixel [2];
-    refPixel[0] = 0;
-    refPixel[1] = 40;
+    // Initialice ref_pixel[BANDAS];
 
-    // Initiation of maxBrightness
-    int maxBrightness_hw [2];
-    int maxBrightness_sw [2];
+    band_t ref_pixel[BANDAS];
+    for (int i=0; i < BANDAS; i++) {
+    	ref_pixel[i]= 100;
+    }
 
-    // Initiation of minDistance
-    T minDistance_hw;
-    T minDistance_sw;
-
-    // Initiation of closestPixelIdx
-    int closestPixelIdx_hw [2];
-    int closestPixelIdx_sw [2];
+    band_t closest_pixel_hw[BANDAS];
+    band_t closest_pixel_sw[BANDAS];
 
 
     printf("DEBUGGING AXI4 STREAMING DATA TYPES!\r\n");
@@ -176,75 +150,79 @@ int main_axi (void) {
     
 	AXI_VAL e;
 
+	// Stream in ref_pixel[BANDAS]
+
+	for (int i = 0; i < BANDAS; i += 2) {
+		#pragma HLS_PIPELINE II=1
+		WORD_MEM w;
+		conv_t c;
+		c.out = ref_pixel[i];
+		w(15,0) = c.in;
+
+		c.out = ref_pixel[i+1];
+		w(31,16) = c.in;
+
+		e.data = w;
+		e.strb = -1;
+		e.keep = 15;
+		e.user = 0;
+		e.last = 0;
+		e.id = 1;
+		e.dest = 2;
+		inp_stream.write(e);
+	}
+
 	// Stream in the image
 	for (int i = 0; i < FILAS; i++) {
 		for (int j = 0; j < COLUMNAS; j++) {
-			for (int k = 0; k < BANDAS; k += NUM_ELEMS_UIT) {
+			for (int k = 0; k < BANDAS; k += 2) {
 
-                uint16_t temp[NUM_ELEMS_UIT];
-                temp[0] = image[i][j][k];
-                temp[1] = image[i][j][k + 1];
-                convert2word_uint16_t (e.data, temp);
+				AXI_VAL e;
+				WORD_MEM w;
+				conv_t c;
+
+				c.out = image[i][j][k];
+				w(15,0) = c.in;
+
+				c.out = image[i][j][k + 1];
+				w(31,16) = c.in;
+
+				e.data = w;
 				e.strb = -1;
 				e.keep = 15;
 				e.user = 0;
-				e.last = 0;
-				e.id = 1;
-				e.dest = 2;
+				e.last = (i = FILAS-1 && j= COLUMNAS-1 && k >= BANDAS-2);
+				e.id = 3;
+				e.dest = 4;
 				inp_stream.write(e);
 			}
 		}
 	}
 
-    for (int i = 0; i < 2; i+= NUM_ELEMS_IN) {
-        convert2word_int (e.data, &refPixel[i]);
-        e.strb = -1;
-        e.keep = 15;
-        e.user = 0;
-        e.last = (i == 1);
-        e.id = 2;
-        e.dest = 3;
-        inp_stream.write(e);
-    }
-
     hyperspectral_hw_wrapped (inp_stream, out_stream);
     
-    for (int i = 0; i < 2; i++) {
-        e = out_stream.read();
-        WORD_MEM w_maxBrightness = e.data;
-        conv_t c;
-        c.in = w_maxBrightness;
-        maxBrightness_hw[i] = c.out;
+    for (int i = 0; i < BANDAS; i+=2) {
+    	e = out_stream.read();
+    	WORD_MEM w = e.data();
+    	conv_t c;
+
+    	c.in = w(15,0);
+    	closest_pixel_hw[i] = c.out;
+
+    	c.in = w (31,16);
+    	closest_pixel_hw[i+1] = c.out;
+
     }
 
-    e = out_stream.read();
-    WORD_MEM w_minDistance = e.data;
-    memcpy(&minDistance_hw, &w_minDistance, sizeof(T));
-
-    for (int i = 0; i < 2; i++) {
-        e = out_stream.read();
-        WORD_MEM w_closestPixel = e.data;
-        conv_t c;
-        c.in = w_closestPixel;
-        closestPixelIdx_hw[i] = c.out;
-    }
-
-    hyperspectral_sw (image, refPixel, maxBrightness_sw, minDistance_sw, closestPixelIdx_sw);
+    hyperspectral_sw (image, ref_pixel, closest_pixel_sw);
 
 
     err = 0;
-    if (minDistance_hw != minDistance_sw) {
-        printf("MAIN AXI Error: minDistance_hw = %f, minDistance_sw = %f\r\n", minDistance_hw, minDistance_sw);
-        err++;
-    }
-    if (maxBrightness_hw[0] != maxBrightness_hw[0] || maxBrightness_hw[1] != maxBrightness_sw[1]) {
-        printf("MAIN AXI Error: maxBrightness_hw = (%d, %d), maxBrightness_sw = (%d, %d)\r\n", maxBrightness_hw[0], maxBrightness_hw[1], maxBrightness_sw[0], maxBrightness_sw[1]);
-        err++;
-    }
-
-    if (closestPixelIdx_hw[0] != closestPixelIdx_sw[0] || closestPixelIdx_hw[1] != closestPixelIdx_sw[1]) {
-        printf("MAIN AXI Error: closestPixel_hw = (%d, %d), closestPixel_sw = (%d, %d)\r\n", closestPixelIdx_hw[0], closestPixelIdx_hw[1], closestPixelIdx_sw[0], closestPixelIdx_sw[1]);
-        err++;
+    for (int i = 0; i < BANDAS; i++) {
+        if (closest_pixel_hw[i] != closest_pixel_sw[i]) {
+            err++;
+            printf("Error en banda %d: closest_pixel_sw = %u, closest_pixel_hw = %u\r\n", i, closest_pixel_sw[i].to_uint(), closest_pixel_hw[i].to_uint());
+        }
     }
 
     if (err == 0) {

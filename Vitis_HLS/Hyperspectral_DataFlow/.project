@@ -37,11 +37,6 @@
 			<location>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/.apc/.tb</location>
 		</link>
 		<link>
-			<name>.reference/ap_axi_sdata.h</name>
-			<type>1</type>
-			<location>/tools/Xilinx/Vitis_HLS/2022.1/include/ap_axi_sdata.h</location>
-		</link>
-		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
 			<location>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/.tcls</location>
