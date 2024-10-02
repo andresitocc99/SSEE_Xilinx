@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="hyperspectral.h" path="/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral.h"/>
-    <originFiles name="hyperspectral_accel.cpp" path="/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp"/>
+    <originFiles name="hyperspectral.h" path="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral.h"/>
+    <originFiles name="hyperspectral_accel.cpp" path="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp"/>
   </source>
   <testbench>
-    <originFiles name="cuboH.bin" path="/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin"/>
-    <originFiles name="hyperspectral_test.cpp" path="/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp"/>
+    <originFiles name="cuboH.bin" path="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin"/>
+    <originFiles name="hyperspectral_test.cpp" path="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

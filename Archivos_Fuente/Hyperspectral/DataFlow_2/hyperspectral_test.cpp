@@ -82,44 +82,6 @@ void loadHyperspectralImage(uint16_t image[FILAS][COLUMNAS][BANDAS], const char*
     printf("Archivo cargado correctamente\n");
 }
 
-int main_standalone (void) {
-    int ret_val = 0;
-    int err;
-
-    // Initiation o
-    uint16_t image[FILAS][COLUMNAS][BANDAS];
-    loadHyperspectralImage(image, "cuboH.bin");
-
-    // Initiation of Pixel Reference
-    band_t ref_pixel[BANDAS];
-	for (int i=0; i < BANDAS; i++) {
-		ref_pixel[i]= 100;
-	}
-
-	band_t closest_pixel_hw[BANDAS];
-	band_t closest_pixel_sw[BANDAS];
-
-
-    printf("NORMAL MODE\r\n");
-    hyperspectral_hw (image, refPixel, closest_pixel_hw);
-
-    hyperspectral_sw (image, refPixel, closest_pixel_sw);
-
-    err = 0;
-    if (minDistance_hw != minDistance_sw) {
-        printf("Error: minDistance_hw = %f, minDistance_sw = %f\r\n", minDistance_hw, minDistance_sw);
-        err++;
-    }
-
-    if (err == 0) {
-        printf("Test OK!\r\n");
-    } else {
-        printf("Test failed!\r\n");
-    }
-    return err;
-
-}
-
 int main_axi (void) {
 
     int i, j, err;
@@ -155,12 +117,8 @@ int main_axi (void) {
 	for (int i = 0; i < BANDAS; i += 2) {
 		#pragma HLS_PIPELINE II=1
 		WORD_MEM w;
-		conv_t c;
-		c.out = ref_pixel[i];
-		w(15,0) = c.in;
-
-		c.out = ref_pixel[i+1];
-		w(31,16) = c.in;
+		w(15,0) = ref_pixel[i];
+		w(31,16) = ref_pixel[i+1];
 
 		e.data = w;
 		e.strb = -1;
@@ -179,13 +137,8 @@ int main_axi (void) {
 
 				AXI_VAL e;
 				WORD_MEM w;
-				conv_t c;
-
-				c.out = image[i][j][k];
-				w(15,0) = c.in;
-
-				c.out = image[i][j][k + 1];
-				w(31,16) = c.in;
+				w(15,0) = image[i][j][k];
+				w(31,16) = image[i][j][k + 1];
 
 				e.data = w;
 				e.strb = -1;
@@ -204,13 +157,8 @@ int main_axi (void) {
     for (int i = 0; i < BANDAS; i+=2) {
     	e = out_stream.read();
     	WORD_MEM w = e.data();
-    	conv_t c;
-
-    	c.in = w(15,0);
-    	closest_pixel_hw[i] = c.out;
-
-    	c.in = w (31,16);
-    	closest_pixel_hw[i+1] = c.out;
+    	closest_pixel_hw[i] = w(15,0);
+    	closest_pixel_hw[i+1] = w (31,16);
 
     }
 
@@ -236,38 +184,4 @@ int main_axi (void) {
 
 int main(void) {
 	return main_axi();
-}
-
-void convert2array_IN (WORD_MEM w, int out[NUM_ELEMS_IN]) {
-	convert2array_IN_label1:for (int k = 0; k < NUM_ELEMS_IN; k++) {
-		out[k] = w((k + 1) * 32 - 1, k * 32);
-		std::cout << "Leyendo del stream: out[" << k << "] = " << out[k] << std::endl;
-	}
-}
-
-void convert2word_uint16_t(WORD_MEM &w, uint16_t in[NUM_ELEMS_UIT]) {
-    conv_t c;
-    WORD_MEM _w;
-
-    _w(15,0) = in[0];
-    _w(31,16) = in[1];
-    w = _w;
-
-    /*convert2uint_label:for (int k = 0; k < NUM_ELEMS_UIT; k++) {
-        c.out = in[k];
-        _w((k + 1) * 16 - 1, k * 16) = c.in;
-        std::cout << "Escribiendo en el stream: in[" << k << "] = " << in[k] << std::endl;
-    }*/
-}
-
-void convert2word_int (WORD_MEM &w, int in[NUM_ELEMS_IN]) {
-    conv_t c;
-    WORD_MEM _w;
-
-    convert2word_intlabel0:for (int k=0; k<NUM_ELEMS_IN;k++) {
-        c.out = in[k];
-        _w((k+1)*32-1,k*32)= c.in;
-        
-    }
-    w = _w;
 }

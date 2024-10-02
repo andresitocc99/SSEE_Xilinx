@@ -1,9 +1,78 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp in debug mode
-   Generating csim.exe
-Archivo cargado correctamente
-DEBUGGING AXI4 STREAMING DATA TYPES!
-Test OK!
-INFO: [SIM 1] CSim done with 0 errors.
+../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:13:1: error: expected initializer before ‘void’
+ void calculate_distance(band_t ref_band1, band_t ref_band2, band_t band1, band_t band2, dist_t &distance) {
+ ^~~~
+../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp: In function ‘void hyperspectral_sw(band_t (*)[1024][180], band_t*, band_t*)’:
+../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:32:5: error: ‘calculate_distance’ was not declared in this scope
+     calculate_distance(ref_pixel[k], ref_pixel[k + 1], image[i][j][k], image[i][j][k + 1], distance);
+     ^~~~~~~~~~~~~~~~~~
+../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:32:5: note: suggested alternative: ‘min_distance’
+     calculate_distance(ref_pixel[k], ref_pixel[k + 1], image[i][j][k], image[i][j][k + 1], distance);
+     ^~~~~~~~~~~~~~~~~~
+     min_distance
+../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:37:8: error: ‘min_distance_index_i’ was not declared in this scope
+        min_distance_index_i = i;
+        ^~~~~~~~~~~~~~~~~~~~
+../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:37:8: note: suggested alternative: ‘min_pixel_index_i’
+        min_distance_index_i = i;
+        ^~~~~~~~~~~~~~~~~~~~
+        min_pixel_index_i
+../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:38:8: error: ‘min_distance_index_j’ was not declared in this scope
+        min_distance_index_j = j;
+        ^~~~~~~~~~~~~~~~~~~~
+../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:38:8: note: suggested alternative: ‘min_pixel_index_j’
+        min_distance_index_j = j;
+        ^~~~~~~~~~~~~~~~~~~~
+        min_pixel_index_j
+../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp: In function ‘int main_axi()’:
+../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:147:59: error: lvalue required as left operand of assignment
+     e.last = (i = FILAS-1 && j= COLUMNAS-1 && k >= BANDAS-2);
+                                                           ^
+../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:159:26: error: no match for call to ‘(ap_uint<32>) ()’
+      WORD_MEM w = e.data();
+                          ^
+In file included from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_int.h:57,
+                 from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_fixed_base.h:62,
+                 from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_fixed.h:56,
+                 from /tools/Xilinx/Vitis_HLS/2022.1/include/hls_hotbm_apfixed.h:42,
+                 from /tools/Xilinx/Vitis_HLS/2022.1/include/hls_math.h:1065,
+                 from ../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:4:
+/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1130:37: note: candidate: ‘ap_range_ref<_AP_W, _AP_S> ap_int_base<_AP_W, _AP_S>::operator()(int, int) [with int _AP_W = 32; bool _AP_S = false]’
+   INLINE ap_range_ref<_AP_W, _AP_S> operator()(int Hi, int Lo) {
+                                     ^~~~~~~~
+/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1130:37: note:   candidate expects 2 arguments, 0 provided
+/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1134:37: note: candidate: ‘ap_range_ref<_AP_W, _AP_S> ap_int_base<_AP_W, _AP_S>::operator()(int, int) const [with int _AP_W = 32; bool _AP_S = false]’
+   INLINE ap_range_ref<_AP_W, _AP_S> operator()(int Hi, int Lo) const {
+                                     ^~~~~~~~
+/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1134:37: note:   candidate expects 2 arguments, 0 provided
+/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1139:37: note: candidate: ‘template<int _AP_W2, bool _AP_S2, int _AP_W3, bool _AP_S3> ap_range_ref<_AP_W, _AP_S> ap_int_base<_AP_W, _AP_S>::operator()(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W2 = _AP_W2; bool _AP_S2 = _AP_S2; int _AP_W3 = _AP_W3; bool _AP_S3 = _AP_S3; int _AP_W = 32; bool _AP_S = false]’
+   INLINE ap_range_ref<_AP_W, _AP_S> operator()(
+                                     ^~~~~~~~
+/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1139:37: note:   template argument deduction/substitution failed:
+../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:159:26: note:   candidate expects 2 arguments, 0 provided
+      WORD_MEM w = e.data();
+                          ^
+In file included from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_int.h:57,
+                 from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_fixed_base.h:62,
+                 from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_fixed.h:56,
+                 from /tools/Xilinx/Vitis_HLS/2022.1/include/hls_hotbm_apfixed.h:42,
+                 from /tools/Xilinx/Vitis_HLS/2022.1/include/hls_math.h:1065,
+                 from ../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:4:
+/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1148:37: note: candidate: ‘template<int _AP_W2, bool _AP_S2, int _AP_W3, bool _AP_S3> ap_range_ref<_AP_W, _AP_S> ap_int_base<_AP_W, _AP_S>::operator()(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) const [with int _AP_W2 = _AP_W2; bool _AP_S2 = _AP_S2; int _AP_W3 = _AP_W3; bool _AP_S3 = _AP_S3; int _AP_W = 32; bool _AP_S = false]’
+   INLINE ap_range_ref<_AP_W, _AP_S> operator()(
+                                     ^~~~~~~~
+/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1148:37: note:   template argument deduction/substitution failed:
+../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:159:26: note:   candidate expects 2 arguments, 0 provided
+      WORD_MEM w = e.data();
+                          ^
+../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:165:23: error: cannot convert ‘uint16_t (*)[1024][180]’ {aka ‘short unsigned int (*)[1024][180]’} to ‘band_t (*)[1024][180]’ {aka ‘ap_uint<16> (*)[1024][180]’}
+     hyperspectral_sw (image, ref_pixel, closest_pixel_sw);
+                       ^~~~~
+../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:21:30: note:   initializing argument 1 of ‘void hyperspectral_sw(band_t (*)[1024][180], band_t*, band_t*)’
+ void hyperspectral_sw(band_t image[FILAS][COLUMNAS][BANDAS], band_t ref_pixel[BANDAS], band_t closest_pixel_sw[BANDAS]) {
+                       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [csim.mk:74: obj/hyperspectral_test.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
 INFO: [SIM 3] *************** CSIM finish ***************

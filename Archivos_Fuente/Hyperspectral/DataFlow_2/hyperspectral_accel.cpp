@@ -56,28 +56,37 @@ void hyperspectral_hw_wrapped (hls::stream<AXI_VAL>& in_stream, hls::stream<AXI_
 
     for (int i=0; i< PIXELS; i++) {
 		#pragma HLS PIPELINE II=1
-    	distance = 0;
-
     	for (int j = 0; j < BANDAS; j += 2) {
+            if (j==0) distance = 0;
     		WORD_MEM w = in_stream.read().data();
-    		conv_t c;
 
-    		c.in = w(15,0);
-    		current_pixel[j] = c.out;
-
-    		c.in = w(31,16);
-    		current_pixel[j+1] = c.out;
+            current_pixel[j] = w(15,0);
+    		current_pixel[j+1] = w(31,16);
 
     		calculate_distance (ref_pixel[j], ref_pixel[j+1], current_pixel[j], current_pixel[j+1], distance);
 
-    	}
+            if (j=BANDS-2) {
 
-    	if (distance < min_distance) {
-    		min_distance = distance;
-    		min_pixel_index = i;
+                distance = hls::sqrt(distance);
+
+                if (distance < min_distance) {
+                    min_distance = distance;
+                    min_pixel_index = i;
+                }
+
+                for (int k = 0; k < BANDAS; k++) {
+                    closest_pixel[k] = current_pixel[k];
+                }
+
+                //std::copy(current_pixel, current_pixel + BANDAS, closest_pixel);
+
+
+            
+            
+            } 
+
     	}
     }
-
 
     // STREAM_OUT closestPixel
 
@@ -85,13 +94,9 @@ void hyperspectral_hw_wrapped (hls::stream<AXI_VAL>& in_stream, hls::stream<AXI_
         #pragma HLS PIPELINE II=1
         AXI_VAL e;
         WORD_MEM w;
-        conv_t c;
-
-        c.out = closest_pixel[j];
-        w(15,0) = c.in;
-
-        c.out = closest_pixel[j+1];
-        w(31,16) = c.in;
+    
+        w(15,0) = closest_pixel[j];
+        w(31,16) = closest_pixel[j+1];
 
         e.data = w;
         e.strb = -1;
@@ -100,8 +105,8 @@ void hyperspectral_hw_wrapped (hls::stream<AXI_VAL>& in_stream, hls::stream<AXI_
         e.last = (j >= BANDS-2);
         e.id = 9;
         e.dest = 10;
-
         out_stream.write(e);
 
     }
+
 }
