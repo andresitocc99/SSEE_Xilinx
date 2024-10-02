@@ -7,35 +7,33 @@
 #include "hyperspectral.h"
 
 void loadHyperspectralImage(uint16_t image[FILAS][COLUMNAS][BANDAS], const char* filename);
-void calculate_distance(band_t ref_band1, band_t ref_band2, band_t band1, band_t band2, dist_t &distance)
-
-
-void calculate_distance(band_t ref_band1, band_t ref_band2, band_t band1, band_t band2, dist_t &distance) {
-    #pragma HLS INLINE
-    dist_t diff1 = ref_band1 - band1;
-    dist_t diff2 = ref_band2 - band2;
-
-    distance += diff1 * diff1 + diff2 * diff2;  // Suma de las diferencias al cuadrado
-}
 
 void hyperspectral_sw(band_t image[FILAS][COLUMNAS][BANDAS], band_t ref_pixel[BANDAS], band_t closest_pixel_sw[BANDAS]) {
 
     dist_t min_distance = MAX_DIST;
     int min_pixel_index_i = 0;
     int min_pixel_index_j = 0;
+    dist_t distance;
 
     for (int i = 0; i < FILAS; i++) {
     	for (int j = 0; j < COLUMNAS; j++) {
-    		dist_t distance = 0;
+
 
     		for (int k = 0; k < BANDAS; k += 2) {
-				calculate_distance(ref_pixel[k], ref_pixel[k + 1], image[i][j][k], image[i][j][k + 1], distance);
-			}
+    			if (k == 0) distance = 0;
 
-    		if (distance < min_distance) {
-    			min_distance = distance;
-    			min_distance_index_i = i;
-    			min_distance_index_j = j;
+
+				calculate_distance(ref_pixel[k], ref_pixel[k + 1], image[i][j][k], image[i][j][k + 1], distance);
+
+				if (k== BANDAS-2) {
+					distance = hls::sqrt(distance);
+					//std::cout << "SW distance: " << distance << std::endl;
+					if (distance < min_distance) {
+						min_distance = distance;
+						min_pixel_index_i = i;
+						min_pixel_index_j = j;
+					}
+				}
     		}
     	}
     }
@@ -43,10 +41,12 @@ void hyperspectral_sw(band_t image[FILAS][COLUMNAS][BANDAS], band_t ref_pixel[BA
     for (int k = 0; k < BANDAS; k++) {
 		closest_pixel_sw[k] = image[min_pixel_index_i][min_pixel_index_j][k];
 	}
-
+    std::cout << "SW distance: " << distance << std::endl;
 
 }
-void loadHyperspectralImage(uint16_t image[FILAS][COLUMNAS][BANDAS], const char* filename) {
+
+
+void loadHyperspectralImage(band_t image[FILAS][COLUMNAS][BANDAS], const char* filename) {
     FILE *file = fopen(filename, "rb");
     if (file == NULL) {
         printf("Error opening file %s\r\n", filename);
@@ -90,7 +90,7 @@ int main_axi (void) {
     ap_uint<TI> id;
     ap_uint<TD> dest;
 
-    uint16_t image[FILAS][COLUMNAS][BANDAS];
+    band_t image[FILAS][COLUMNAS][BANDAS];
     loadHyperspectralImage(image, "cuboH.bin");
 
     // Initialice ref_pixel[BANDAS];
@@ -140,11 +140,13 @@ int main_axi (void) {
 				w(15,0) = image[i][j][k];
 				w(31,16) = image[i][j][k + 1];
 
+				//std::cout << "ENVIADO: image[i][j][k] = " << image[i][j][k] << "image[i][j][k+1] = " << image[i][j][k+1] << std::endl;
+
 				e.data = w;
 				e.strb = -1;
 				e.keep = 15;
 				e.user = 0;
-				e.last = (i = FILAS-1 && j= COLUMNAS-1 && k >= BANDAS-2);
+				e.last = (i == FILAS-1 && j == COLUMNAS-1 && k >= BANDAS-2);
 				e.id = 3;
 				e.dest = 4;
 				inp_stream.write(e);
@@ -155,14 +157,20 @@ int main_axi (void) {
     hyperspectral_hw_wrapped (inp_stream, out_stream);
     
     for (int i = 0; i < BANDAS; i+=2) {
-    	e = out_stream.read();
-    	WORD_MEM w = e.data();
+
+    	WORD_MEM w = out_stream.read().data;
     	closest_pixel_hw[i] = w(15,0);
     	closest_pixel_hw[i+1] = w (31,16);
+
+    	std::cout << "HW RECEIVED || " << closest_pixel_hw[i] << " " << closest_pixel_hw[i+1] << std::endl;
 
     }
 
     hyperspectral_sw (image, ref_pixel, closest_pixel_sw);
+
+    for (int i = 0; i < BANDAS; i+=2) {
+    	std::cout << "SW CALCULATED || " << closest_pixel_sw[i] << " " << closest_pixel_sw[i+1] << std::endl;
+    }
 
 
     err = 0;

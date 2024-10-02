@@ -1,22 +1,22 @@
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'andresitocc99' on host 'andresitocc99-portatil' (Linux_x86_64 version 6.8.0-45-generic) on Wed Oct 02 15:17:01 CEST 2024
-INFO: [HLS 200-10] On os Ubuntu 22.04.4 LTS
-INFO: [HLS 200-10] In directory '/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS'
-Sourcing Tcl script '/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/csim.tcl'
-INFO: [HLS 200-1510] Running: source /home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/csim.tcl
+INFO: [HLS 200-10] For user 'andresitocc99' on host 'andresitocc99' (Linux_x86_64 version 6.8.0-45-generic) on Wed Oct 02 17:26:59 CEST 2024
+INFO: [HLS 200-10] On os Ubuntu 24.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS'
+Sourcing Tcl script '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: source /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/csim.tcl
 INFO: [HLS 200-1510] Running: open_project Hyperspectral_DataFlow 
-INFO: [HLS 200-10] Opening project '/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow'.
+INFO: [HLS 200-10] Opening project '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow'.
 INFO: [HLS 200-1510] Running: set_top hyperspectral_hw_wrapped 
-INFO: [HLS 200-1510] Running: add_files ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral.h 
-INFO: [HLS 200-10] Adding design file '../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral.h' to the project
 INFO: [HLS 200-1510] Running: add_files ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp 
 INFO: [HLS 200-10] Adding design file '../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp' to the project
-INFO: [HLS 200-1510] Running: add_files -tb ../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
-INFO: [HLS 200-10] Adding test bench file '../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin' to the project
+INFO: [HLS 200-1510] Running: add_files ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral.h 
+INFO: [HLS 200-10] Adding design file '../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral.h' to the project
 INFO: [HLS 200-1510] Running: add_files -tb ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
 INFO: [HLS 200-10] Adding test bench file '../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file '../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin' to the project
 INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
-INFO: [HLS 200-10] Opening solution '/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1'.
+INFO: [HLS 200-10] Opening solution '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
 INFO: [HLS 200-1505] Using flow_target 'vivado'
@@ -32,91 +32,476 @@ INFO: [HLS 200-1510] Running: csim_design -quiet
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
    Compiling ../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp in debug mode
-../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:13:1: error: expected initializer before ‘void’
- void calculate_distance(band_t ref_band1, band_t ref_band2, band_t band1, band_t band2, dist_t &distance) {
- ^~~~
-../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp: In function ‘void hyperspectral_sw(band_t (*)[1024][180], band_t*, band_t*)’:
-../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:32:5: error: ‘calculate_distance’ was not declared in this scope
-     calculate_distance(ref_pixel[k], ref_pixel[k + 1], image[i][j][k], image[i][j][k + 1], distance);
-     ^~~~~~~~~~~~~~~~~~
-../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:32:5: note: suggested alternative: ‘min_distance’
-     calculate_distance(ref_pixel[k], ref_pixel[k + 1], image[i][j][k], image[i][j][k + 1], distance);
-     ^~~~~~~~~~~~~~~~~~
-     min_distance
-../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:37:8: error: ‘min_distance_index_i’ was not declared in this scope
-        min_distance_index_i = i;
-        ^~~~~~~~~~~~~~~~~~~~
-../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:37:8: note: suggested alternative: ‘min_pixel_index_i’
-        min_distance_index_i = i;
-        ^~~~~~~~~~~~~~~~~~~~
-        min_pixel_index_i
-../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:38:8: error: ‘min_distance_index_j’ was not declared in this scope
-        min_distance_index_j = j;
-        ^~~~~~~~~~~~~~~~~~~~
-../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:38:8: note: suggested alternative: ‘min_pixel_index_j’
-        min_distance_index_j = j;
-        ^~~~~~~~~~~~~~~~~~~~
-        min_pixel_index_j
-../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp: In function ‘int main_axi()’:
-../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:147:59: error: lvalue required as left operand of assignment
-     e.last = (i = FILAS-1 && j= COLUMNAS-1 && k >= BANDAS-2);
-                                                           ^
-../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:159:26: error: no match for call to ‘(ap_uint<32>) ()’
-      WORD_MEM w = e.data();
-                          ^
-In file included from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_int.h:57,
-                 from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_fixed_base.h:62,
-                 from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_fixed.h:56,
-                 from /tools/Xilinx/Vitis_HLS/2022.1/include/hls_hotbm_apfixed.h:42,
-                 from /tools/Xilinx/Vitis_HLS/2022.1/include/hls_math.h:1065,
-                 from ../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:4:
-/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1130:37: note: candidate: ‘ap_range_ref<_AP_W, _AP_S> ap_int_base<_AP_W, _AP_S>::operator()(int, int) [with int _AP_W = 32; bool _AP_S = false]’
-   INLINE ap_range_ref<_AP_W, _AP_S> operator()(int Hi, int Lo) {
-                                     ^~~~~~~~
-/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1130:37: note:   candidate expects 2 arguments, 0 provided
-/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1134:37: note: candidate: ‘ap_range_ref<_AP_W, _AP_S> ap_int_base<_AP_W, _AP_S>::operator()(int, int) const [with int _AP_W = 32; bool _AP_S = false]’
-   INLINE ap_range_ref<_AP_W, _AP_S> operator()(int Hi, int Lo) const {
-                                     ^~~~~~~~
-/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1134:37: note:   candidate expects 2 arguments, 0 provided
-/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1139:37: note: candidate: ‘template<int _AP_W2, bool _AP_S2, int _AP_W3, bool _AP_S3> ap_range_ref<_AP_W, _AP_S> ap_int_base<_AP_W, _AP_S>::operator()(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W2 = _AP_W2; bool _AP_S2 = _AP_S2; int _AP_W3 = _AP_W3; bool _AP_S3 = _AP_S3; int _AP_W = 32; bool _AP_S = false]’
-   INLINE ap_range_ref<_AP_W, _AP_S> operator()(
-                                     ^~~~~~~~
-/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1139:37: note:   template argument deduction/substitution failed:
-../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:159:26: note:   candidate expects 2 arguments, 0 provided
-      WORD_MEM w = e.data();
-                          ^
-In file included from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_int.h:57,
-                 from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_fixed_base.h:62,
-                 from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_fixed.h:56,
-                 from /tools/Xilinx/Vitis_HLS/2022.1/include/hls_hotbm_apfixed.h:42,
-                 from /tools/Xilinx/Vitis_HLS/2022.1/include/hls_math.h:1065,
-                 from ../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:4:
-/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1148:37: note: candidate: ‘template<int _AP_W2, bool _AP_S2, int _AP_W3, bool _AP_S3> ap_range_ref<_AP_W, _AP_S> ap_int_base<_AP_W, _AP_S>::operator()(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) const [with int _AP_W2 = _AP_W2; bool _AP_S2 = _AP_S2; int _AP_W3 = _AP_W3; bool _AP_S3 = _AP_S3; int _AP_W = 32; bool _AP_S = false]’
-   INLINE ap_range_ref<_AP_W, _AP_S> operator()(
-                                     ^~~~~~~~
-/tools/Xilinx/Vitis_HLS/2022.1/include/ap_int_base.h:1148:37: note:   template argument deduction/substitution failed:
-../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:159:26: note:   candidate expects 2 arguments, 0 provided
-      WORD_MEM w = e.data();
-                          ^
-../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:165:23: error: cannot convert ‘uint16_t (*)[1024][180]’ {aka ‘short unsigned int (*)[1024][180]’} to ‘band_t (*)[1024][180]’ {aka ‘ap_uint<16> (*)[1024][180]’}
-     hyperspectral_sw (image, ref_pixel, closest_pixel_sw);
-                       ^~~~~
-../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp:21:30: note:   initializing argument 1 of ‘void hyperspectral_sw(band_t (*)[1024][180], band_t*, band_t*)’
- void hyperspectral_sw(band_t image[FILAS][COLUMNAS][BANDAS], band_t ref_pixel[BANDAS], band_t closest_pixel_sw[BANDAS]) {
-                       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-make: *** [csim.mk:74: obj/hyperspectral_test.o] Error 1
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+   Compiling ../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp in debug mode
+   Generating csim.exe
+Archivo cargado correctamente
+DEBUGGING AXI4 STREAMING DATA TYPES!
+HW distance: 5830
+HW SEND || 301 304
+HW SEND || 314 324
+HW SEND || 337 354
+HW SEND || 369 385
+HW SEND || 397 408
+HW SEND || 413 412
+HW SEND || 414 420
+HW SEND || 428 435
+HW SEND || 441 448
+HW SEND || 454 467
+HW SEND || 486 501
+HW SEND || 506 507
+HW SEND || 509 518
+HW SEND || 527 532
+HW SEND || 532 527
+HW SEND || 527 521
+HW SEND || 521 528
+HW SEND || 534 532
+HW SEND || 528 543
+HW SEND || 571 589
+HW SEND || 597 604
+HW SEND || 617 627
+HW SEND || 630 634
+HW SEND || 641 645
+HW SEND || 646 643
+HW SEND || 641 634
+HW SEND || 625 625
+HW SEND || 627 633
+HW SEND || 624 617
+HW SEND || 616 635
+HW SEND || 653 654
+HW SEND || 639 634
+HW SEND || 649 667
+HW SEND || 675 673
+HW SEND || 673 679
+HW SEND || 692 698
+HW SEND || 697 690
+HW SEND || 688 693
+HW SEND || 692 685
+HW SEND || 674 680
+HW SEND || 681 683
+HW SEND || 663 646
+HW SEND || 634 633
+HW SEND || 639 633
+HW SEND || 633 626
+HW SEND || 628 630
+HW SEND || 646 661
+HW SEND || 671 658
+HW SEND || 638 607
+HW SEND || 589 581
+HW SEND || 591 605
+HW SEND || 610 605
+HW SEND || 599 602
+HW SEND || 609 612
+HW SEND || 600 578
+HW SEND || 556 541
+HW SEND || 538 535
+HW SEND || 539 545
+HW SEND || 551 552
+HW SEND || 550 554
+HW SEND || 554 553
+HW SEND || 543 530
+HW SEND || 498 453
+HW SEND || 420 426
+HW SEND || 460 490
+HW SEND || 504 503
+HW SEND || 498 486
+HW SEND || 477 467
+HW SEND || 460 454
+HW SEND || 450 448
+HW SEND || 443 443
+HW SEND || 438 430
+HW SEND || 416 406
+HW SEND || 399 398
+HW SEND || 397 397
+HW SEND || 396 397
+HW SEND || 398 400
+HW SEND || 399 398
+HW SEND || 391 383
+HW SEND || 378 376
+HW SEND || 376 374
+HW SEND || 372 370
+HW SEND || 368 366
+HW SEND || 365 364
+HW SEND || 361 356
+HW SEND || 350 344
+HW SEND || 340 336
+HW SEND || 329 321
+HW SEND || 316 318
+HW SEND || 317 318
+HW RECEIVED || 301 304
+HW RECEIVED || 314 324
+HW RECEIVED || 337 354
+HW RECEIVED || 369 385
+HW RECEIVED || 397 408
+HW RECEIVED || 413 412
+HW RECEIVED || 414 420
+HW RECEIVED || 428 435
+HW RECEIVED || 441 448
+HW RECEIVED || 454 467
+HW RECEIVED || 486 501
+HW RECEIVED || 506 507
+HW RECEIVED || 509 518
+HW RECEIVED || 527 532
+HW RECEIVED || 532 527
+HW RECEIVED || 527 521
+HW RECEIVED || 521 528
+HW RECEIVED || 534 532
+HW RECEIVED || 528 543
+HW RECEIVED || 571 589
+HW RECEIVED || 597 604
+HW RECEIVED || 617 627
+HW RECEIVED || 630 634
+HW RECEIVED || 641 645
+HW RECEIVED || 646 643
+HW RECEIVED || 641 634
+HW RECEIVED || 625 625
+HW RECEIVED || 627 633
+HW RECEIVED || 624 617
+HW RECEIVED || 616 635
+HW RECEIVED || 653 654
+HW RECEIVED || 639 634
+HW RECEIVED || 649 667
+HW RECEIVED || 675 673
+HW RECEIVED || 673 679
+HW RECEIVED || 692 698
+HW RECEIVED || 697 690
+HW RECEIVED || 688 693
+HW RECEIVED || 692 685
+HW RECEIVED || 674 680
+HW RECEIVED || 681 683
+HW RECEIVED || 663 646
+HW RECEIVED || 634 633
+HW RECEIVED || 639 633
+HW RECEIVED || 633 626
+HW RECEIVED || 628 630
+HW RECEIVED || 646 661
+HW RECEIVED || 671 658
+HW RECEIVED || 638 607
+HW RECEIVED || 589 581
+HW RECEIVED || 591 605
+HW RECEIVED || 610 605
+HW RECEIVED || 599 602
+HW RECEIVED || 609 612
+HW RECEIVED || 600 578
+HW RECEIVED || 556 541
+HW RECEIVED || 538 535
+HW RECEIVED || 539 545
+HW RECEIVED || 551 552
+HW RECEIVED || 550 554
+HW RECEIVED || 554 553
+HW RECEIVED || 543 530
+HW RECEIVED || 498 453
+HW RECEIVED || 420 426
+HW RECEIVED || 460 490
+HW RECEIVED || 504 503
+HW RECEIVED || 498 486
+HW RECEIVED || 477 467
+HW RECEIVED || 460 454
+HW RECEIVED || 450 448
+HW RECEIVED || 443 443
+HW RECEIVED || 438 430
+HW RECEIVED || 416 406
+HW RECEIVED || 399 398
+HW RECEIVED || 397 397
+HW RECEIVED || 396 397
+HW RECEIVED || 398 400
+HW RECEIVED || 399 398
+HW RECEIVED || 391 383
+HW RECEIVED || 378 376
+HW RECEIVED || 376 374
+HW RECEIVED || 372 370
+HW RECEIVED || 368 366
+HW RECEIVED || 365 364
+HW RECEIVED || 361 356
+HW RECEIVED || 350 344
+HW RECEIVED || 340 336
+HW RECEIVED || 329 321
+HW RECEIVED || 316 318
+HW RECEIVED || 317 318
+SW distance: 5830
+SW CALCULATED || 238 237
+SW CALCULATED || 238 237
+SW CALCULATED || 237 237
+SW CALCULATED || 239 241
+SW CALCULATED || 244 246
+SW CALCULATED || 245 241
+SW CALCULATED || 241 242
+SW CALCULATED || 247 246
+SW CALCULATED || 244 241
+SW CALCULATED || 240 242
+SW CALCULATED || 244 246
+SW CALCULATED || 246 246
+SW CALCULATED || 249 252
+SW CALCULATED || 255 254
+SW CALCULATED || 251 248
+SW CALCULATED || 248 249
+SW CALCULATED || 250 249
+SW CALCULATED || 250 248
+SW CALCULATED || 247 247
+SW CALCULATED || 249 252
+SW CALCULATED || 252 252
+SW CALCULATED || 253 258
+SW CALCULATED || 262 263
+SW CALCULATED || 261 259
+SW CALCULATED || 259 260
+SW CALCULATED || 262 261
+SW CALCULATED || 259 256
+SW CALCULATED || 256 256
+SW CALCULATED || 259 260
+SW CALCULATED || 261 260
+SW CALCULATED || 257 254
+SW CALCULATED || 254 254
+SW CALCULATED || 256 255
+SW CALCULATED || 262 261
+SW CALCULATED || 262 260
+SW CALCULATED || 258 258
+SW CALCULATED || 257 257
+SW CALCULATED || 259 261
+SW CALCULATED || 267 265
+SW CALCULATED || 264 264
+SW CALCULATED || 265 263
+SW CALCULATED || 258 257
+SW CALCULATED || 260 263
+SW CALCULATED || 264 260
+SW CALCULATED || 261 260
+SW CALCULATED || 263 262
+SW CALCULATED || 262 258
+SW CALCULATED || 258 255
+SW CALCULATED || 259 259
+SW CALCULATED || 262 259
+SW CALCULATED || 260 260
+SW CALCULATED || 261 260
+SW CALCULATED || 259 262
+SW CALCULATED || 263 259
+SW CALCULATED || 258 256
+SW CALCULATED || 260 258
+SW CALCULATED || 258 259
+SW CALCULATED || 259 263
+SW CALCULATED || 264 265
+SW CALCULATED || 264 263
+SW CALCULATED || 264 266
+SW CALCULATED || 263 263
+SW CALCULATED || 260 258
+SW CALCULATED || 253 255
+SW CALCULATED || 259 262
+SW CALCULATED || 259 258
+SW CALCULATED || 258 263
+SW CALCULATED || 265 264
+SW CALCULATED || 257 254
+SW CALCULATED || 252 255
+SW CALCULATED || 256 256
+SW CALCULATED || 261 258
+SW CALCULATED || 259 251
+SW CALCULATED || 251 247
+SW CALCULATED || 249 248
+SW CALCULATED || 250 248
+SW CALCULATED || 248 251
+SW CALCULATED || 252 253
+SW CALCULATED || 250 247
+SW CALCULATED || 247 250
+SW CALCULATED || 250 250
+SW CALCULATED || 249 249
+SW CALCULATED || 245 244
+SW CALCULATED || 243 244
+SW CALCULATED || 243 244
+SW CALCULATED || 245 248
+SW CALCULATED || 247 248
+SW CALCULATED || 245 243
+SW CALCULATED || 242 241
+SW CALCULATED || 239 237
+Error en banda 0: closest_pixel_sw = 238, closest_pixel_hw = 301
+Error en banda 1: closest_pixel_sw = 237, closest_pixel_hw = 304
+Error en banda 2: closest_pixel_sw = 238, closest_pixel_hw = 314
+Error en banda 3: closest_pixel_sw = 237, closest_pixel_hw = 324
+Error en banda 4: closest_pixel_sw = 237, closest_pixel_hw = 337
+Error en banda 5: closest_pixel_sw = 237, closest_pixel_hw = 354
+Error en banda 6: closest_pixel_sw = 239, closest_pixel_hw = 369
+Error en banda 7: closest_pixel_sw = 241, closest_pixel_hw = 385
+Error en banda 8: closest_pixel_sw = 244, closest_pixel_hw = 397
+Error en banda 9: closest_pixel_sw = 246, closest_pixel_hw = 408
+Error en banda 10: closest_pixel_sw = 245, closest_pixel_hw = 413
+Error en banda 11: closest_pixel_sw = 241, closest_pixel_hw = 412
+Error en banda 12: closest_pixel_sw = 241, closest_pixel_hw = 414
+Error en banda 13: closest_pixel_sw = 242, closest_pixel_hw = 420
+Error en banda 14: closest_pixel_sw = 247, closest_pixel_hw = 428
+Error en banda 15: closest_pixel_sw = 246, closest_pixel_hw = 435
+Error en banda 16: closest_pixel_sw = 244, closest_pixel_hw = 441
+Error en banda 17: closest_pixel_sw = 241, closest_pixel_hw = 448
+Error en banda 18: closest_pixel_sw = 240, closest_pixel_hw = 454
+Error en banda 19: closest_pixel_sw = 242, closest_pixel_hw = 467
+Error en banda 20: closest_pixel_sw = 244, closest_pixel_hw = 486
+Error en banda 21: closest_pixel_sw = 246, closest_pixel_hw = 501
+Error en banda 22: closest_pixel_sw = 246, closest_pixel_hw = 506
+Error en banda 23: closest_pixel_sw = 246, closest_pixel_hw = 507
+Error en banda 24: closest_pixel_sw = 249, closest_pixel_hw = 509
+Error en banda 25: closest_pixel_sw = 252, closest_pixel_hw = 518
+Error en banda 26: closest_pixel_sw = 255, closest_pixel_hw = 527
+Error en banda 27: closest_pixel_sw = 254, closest_pixel_hw = 532
+Error en banda 28: closest_pixel_sw = 251, closest_pixel_hw = 532
+Error en banda 29: closest_pixel_sw = 248, closest_pixel_hw = 527
+Error en banda 30: closest_pixel_sw = 248, closest_pixel_hw = 527
+Error en banda 31: closest_pixel_sw = 249, closest_pixel_hw = 521
+Error en banda 32: closest_pixel_sw = 250, closest_pixel_hw = 521
+Error en banda 33: closest_pixel_sw = 249, closest_pixel_hw = 528
+Error en banda 34: closest_pixel_sw = 250, closest_pixel_hw = 534
+Error en banda 35: closest_pixel_sw = 248, closest_pixel_hw = 532
+Error en banda 36: closest_pixel_sw = 247, closest_pixel_hw = 528
+Error en banda 37: closest_pixel_sw = 247, closest_pixel_hw = 543
+Error en banda 38: closest_pixel_sw = 249, closest_pixel_hw = 571
+Error en banda 39: closest_pixel_sw = 252, closest_pixel_hw = 589
+Error en banda 40: closest_pixel_sw = 252, closest_pixel_hw = 597
+Error en banda 41: closest_pixel_sw = 252, closest_pixel_hw = 604
+Error en banda 42: closest_pixel_sw = 253, closest_pixel_hw = 617
+Error en banda 43: closest_pixel_sw = 258, closest_pixel_hw = 627
+Error en banda 44: closest_pixel_sw = 262, closest_pixel_hw = 630
+Error en banda 45: closest_pixel_sw = 263, closest_pixel_hw = 634
+Error en banda 46: closest_pixel_sw = 261, closest_pixel_hw = 641
+Error en banda 47: closest_pixel_sw = 259, closest_pixel_hw = 645
+Error en banda 48: closest_pixel_sw = 259, closest_pixel_hw = 646
+Error en banda 49: closest_pixel_sw = 260, closest_pixel_hw = 643
+Error en banda 50: closest_pixel_sw = 262, closest_pixel_hw = 641
+Error en banda 51: closest_pixel_sw = 261, closest_pixel_hw = 634
+Error en banda 52: closest_pixel_sw = 259, closest_pixel_hw = 625
+Error en banda 53: closest_pixel_sw = 256, closest_pixel_hw = 625
+Error en banda 54: closest_pixel_sw = 256, closest_pixel_hw = 627
+Error en banda 55: closest_pixel_sw = 256, closest_pixel_hw = 633
+Error en banda 56: closest_pixel_sw = 259, closest_pixel_hw = 624
+Error en banda 57: closest_pixel_sw = 260, closest_pixel_hw = 617
+Error en banda 58: closest_pixel_sw = 261, closest_pixel_hw = 616
+Error en banda 59: closest_pixel_sw = 260, closest_pixel_hw = 635
+Error en banda 60: closest_pixel_sw = 257, closest_pixel_hw = 653
+Error en banda 61: closest_pixel_sw = 254, closest_pixel_hw = 654
+Error en banda 62: closest_pixel_sw = 254, closest_pixel_hw = 639
+Error en banda 63: closest_pixel_sw = 254, closest_pixel_hw = 634
+Error en banda 64: closest_pixel_sw = 256, closest_pixel_hw = 649
+Error en banda 65: closest_pixel_sw = 255, closest_pixel_hw = 667
+Error en banda 66: closest_pixel_sw = 262, closest_pixel_hw = 675
+Error en banda 67: closest_pixel_sw = 261, closest_pixel_hw = 673
+Error en banda 68: closest_pixel_sw = 262, closest_pixel_hw = 673
+Error en banda 69: closest_pixel_sw = 260, closest_pixel_hw = 679
+Error en banda 70: closest_pixel_sw = 258, closest_pixel_hw = 692
+Error en banda 71: closest_pixel_sw = 258, closest_pixel_hw = 698
+Error en banda 72: closest_pixel_sw = 257, closest_pixel_hw = 697
+Error en banda 73: closest_pixel_sw = 257, closest_pixel_hw = 690
+Error en banda 74: closest_pixel_sw = 259, closest_pixel_hw = 688
+Error en banda 75: closest_pixel_sw = 261, closest_pixel_hw = 693
+Error en banda 76: closest_pixel_sw = 267, closest_pixel_hw = 692
+Error en banda 77: closest_pixel_sw = 265, closest_pixel_hw = 685
+Error en banda 78: closest_pixel_sw = 264, closest_pixel_hw = 674
+Error en banda 79: closest_pixel_sw = 264, closest_pixel_hw = 680
+Error en banda 80: closest_pixel_sw = 265, closest_pixel_hw = 681
+Error en banda 81: closest_pixel_sw = 263, closest_pixel_hw = 683
+Error en banda 82: closest_pixel_sw = 258, closest_pixel_hw = 663
+Error en banda 83: closest_pixel_sw = 257, closest_pixel_hw = 646
+Error en banda 84: closest_pixel_sw = 260, closest_pixel_hw = 634
+Error en banda 85: closest_pixel_sw = 263, closest_pixel_hw = 633
+Error en banda 86: closest_pixel_sw = 264, closest_pixel_hw = 639
+Error en banda 87: closest_pixel_sw = 260, closest_pixel_hw = 633
+Error en banda 88: closest_pixel_sw = 261, closest_pixel_hw = 633
+Error en banda 89: closest_pixel_sw = 260, closest_pixel_hw = 626
+Error en banda 90: closest_pixel_sw = 263, closest_pixel_hw = 628
+Error en banda 91: closest_pixel_sw = 262, closest_pixel_hw = 630
+Error en banda 92: closest_pixel_sw = 262, closest_pixel_hw = 646
+Error en banda 93: closest_pixel_sw = 258, closest_pixel_hw = 661
+Error en banda 94: closest_pixel_sw = 258, closest_pixel_hw = 671
+Error en banda 95: closest_pixel_sw = 255, closest_pixel_hw = 658
+Error en banda 96: closest_pixel_sw = 259, closest_pixel_hw = 638
+Error en banda 97: closest_pixel_sw = 259, closest_pixel_hw = 607
+Error en banda 98: closest_pixel_sw = 262, closest_pixel_hw = 589
+Error en banda 99: closest_pixel_sw = 259, closest_pixel_hw = 581
+Error en banda 100: closest_pixel_sw = 260, closest_pixel_hw = 591
+Error en banda 101: closest_pixel_sw = 260, closest_pixel_hw = 605
+Error en banda 102: closest_pixel_sw = 261, closest_pixel_hw = 610
+Error en banda 103: closest_pixel_sw = 260, closest_pixel_hw = 605
+Error en banda 104: closest_pixel_sw = 259, closest_pixel_hw = 599
+Error en banda 105: closest_pixel_sw = 262, closest_pixel_hw = 602
+Error en banda 106: closest_pixel_sw = 263, closest_pixel_hw = 609
+Error en banda 107: closest_pixel_sw = 259, closest_pixel_hw = 612
+Error en banda 108: closest_pixel_sw = 258, closest_pixel_hw = 600
+Error en banda 109: closest_pixel_sw = 256, closest_pixel_hw = 578
+Error en banda 110: closest_pixel_sw = 260, closest_pixel_hw = 556
+Error en banda 111: closest_pixel_sw = 258, closest_pixel_hw = 541
+Error en banda 112: closest_pixel_sw = 258, closest_pixel_hw = 538
+Error en banda 113: closest_pixel_sw = 259, closest_pixel_hw = 535
+Error en banda 114: closest_pixel_sw = 259, closest_pixel_hw = 539
+Error en banda 115: closest_pixel_sw = 263, closest_pixel_hw = 545
+Error en banda 116: closest_pixel_sw = 264, closest_pixel_hw = 551
+Error en banda 117: closest_pixel_sw = 265, closest_pixel_hw = 552
+Error en banda 118: closest_pixel_sw = 264, closest_pixel_hw = 550
+Error en banda 119: closest_pixel_sw = 263, closest_pixel_hw = 554
+Error en banda 120: closest_pixel_sw = 264, closest_pixel_hw = 554
+Error en banda 121: closest_pixel_sw = 266, closest_pixel_hw = 553
+Error en banda 122: closest_pixel_sw = 263, closest_pixel_hw = 543
+Error en banda 123: closest_pixel_sw = 263, closest_pixel_hw = 530
+Error en banda 124: closest_pixel_sw = 260, closest_pixel_hw = 498
+Error en banda 125: closest_pixel_sw = 258, closest_pixel_hw = 453
+Error en banda 126: closest_pixel_sw = 253, closest_pixel_hw = 420
+Error en banda 127: closest_pixel_sw = 255, closest_pixel_hw = 426
+Error en banda 128: closest_pixel_sw = 259, closest_pixel_hw = 460
+Error en banda 129: closest_pixel_sw = 262, closest_pixel_hw = 490
+Error en banda 130: closest_pixel_sw = 259, closest_pixel_hw = 504
+Error en banda 131: closest_pixel_sw = 258, closest_pixel_hw = 503
+Error en banda 132: closest_pixel_sw = 258, closest_pixel_hw = 498
+Error en banda 133: closest_pixel_sw = 263, closest_pixel_hw = 486
+Error en banda 134: closest_pixel_sw = 265, closest_pixel_hw = 477
+Error en banda 135: closest_pixel_sw = 264, closest_pixel_hw = 467
+Error en banda 136: closest_pixel_sw = 257, closest_pixel_hw = 460
+Error en banda 137: closest_pixel_sw = 254, closest_pixel_hw = 454
+Error en banda 138: closest_pixel_sw = 252, closest_pixel_hw = 450
+Error en banda 139: closest_pixel_sw = 255, closest_pixel_hw = 448
+Error en banda 140: closest_pixel_sw = 256, closest_pixel_hw = 443
+Error en banda 141: closest_pixel_sw = 256, closest_pixel_hw = 443
+Error en banda 142: closest_pixel_sw = 261, closest_pixel_hw = 438
+Error en banda 143: closest_pixel_sw = 258, closest_pixel_hw = 430
+Error en banda 144: closest_pixel_sw = 259, closest_pixel_hw = 416
+Error en banda 145: closest_pixel_sw = 251, closest_pixel_hw = 406
+Error en banda 146: closest_pixel_sw = 251, closest_pixel_hw = 399
+Error en banda 147: closest_pixel_sw = 247, closest_pixel_hw = 398
+Error en banda 148: closest_pixel_sw = 249, closest_pixel_hw = 397
+Error en banda 149: closest_pixel_sw = 248, closest_pixel_hw = 397
+Error en banda 150: closest_pixel_sw = 250, closest_pixel_hw = 396
+Error en banda 151: closest_pixel_sw = 248, closest_pixel_hw = 397
+Error en banda 152: closest_pixel_sw = 248, closest_pixel_hw = 398
+Error en banda 153: closest_pixel_sw = 251, closest_pixel_hw = 400
+Error en banda 154: closest_pixel_sw = 252, closest_pixel_hw = 399
+Error en banda 155: closest_pixel_sw = 253, closest_pixel_hw = 398
+Error en banda 156: closest_pixel_sw = 250, closest_pixel_hw = 391
+Error en banda 157: closest_pixel_sw = 247, closest_pixel_hw = 383
+Error en banda 158: closest_pixel_sw = 247, closest_pixel_hw = 378
+Error en banda 159: closest_pixel_sw = 250, closest_pixel_hw = 376
+Error en banda 160: closest_pixel_sw = 250, closest_pixel_hw = 376
+Error en banda 161: closest_pixel_sw = 250, closest_pixel_hw = 374
+Error en banda 162: closest_pixel_sw = 249, closest_pixel_hw = 372
+Error en banda 163: closest_pixel_sw = 249, closest_pixel_hw = 370
+Error en banda 164: closest_pixel_sw = 245, closest_pixel_hw = 368
+Error en banda 165: closest_pixel_sw = 244, closest_pixel_hw = 366
+Error en banda 166: closest_pixel_sw = 243, closest_pixel_hw = 365
+Error en banda 167: closest_pixel_sw = 244, closest_pixel_hw = 364
+Error en banda 168: closest_pixel_sw = 243, closest_pixel_hw = 361
+Error en banda 169: closest_pixel_sw = 244, closest_pixel_hw = 356
+Error en banda 170: closest_pixel_sw = 245, closest_pixel_hw = 350
+Error en banda 171: closest_pixel_sw = 248, closest_pixel_hw = 344
+Error en banda 172: closest_pixel_sw = 247, closest_pixel_hw = 340
+Error en banda 173: closest_pixel_sw = 248, closest_pixel_hw = 336
+Error en banda 174: closest_pixel_sw = 245, closest_pixel_hw = 329
+Error en banda 175: closest_pixel_sw = 243, closest_pixel_hw = 321
+Error en banda 176: closest_pixel_sw = 242, closest_pixel_hw = 316
+Error en banda 177: closest_pixel_sw = 241, closest_pixel_hw = 318
+Error en banda 178: closest_pixel_sw = 239, closest_pixel_hw = 317
+Error en banda 179: closest_pixel_sw = 237, closest_pixel_hw = 318
+Test failed!
+@E Simulation failed: Function 'main' returns nonzero value '180'.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-111] Finished Command csim_design CPU user time: 6.02 seconds. CPU system time: 0.53 seconds. Elapsed time: 6.3 seconds; current allocated memory: -1033.656 MB.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 15.52 seconds. CPU system time: 1.38 seconds. Elapsed time: 15.44 seconds; current allocated memory: -1033.656 MB.
 4
     while executing
-"source /home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/csim.tcl"
+"source /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/csim.tcl"
     invoked from within
-"hls::main /home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/csim.tcl"
+"hls::main /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/csim.tcl"
     ("uplevel" body line 1)
     invoked from within
 "uplevel 1 hls::main {*}$newargs"
     (procedure "hls_proc" line 16)
     invoked from within
 "hls_proc [info nameofexecutable] $argv"
-INFO: [HLS 200-112] Total CPU user time: 8.92 seconds. Total CPU system time: 1.12 seconds. Total elapsed time: 8.91 seconds; peak allocated memory: 132.672 MB.
+INFO: [HLS 200-112] Total CPU user time: 16.51 seconds. Total CPU system time: 2.01 seconds. Total elapsed time: 16.47 seconds; peak allocated memory: 132.555 MB.
