@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_axi_timer_0_0_synth_1'
+HD_PWD='/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_axi_timer_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

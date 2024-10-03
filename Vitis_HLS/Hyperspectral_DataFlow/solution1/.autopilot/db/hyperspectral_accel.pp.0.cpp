@@ -186,7 +186,7 @@ namespace __gnu_cxx
 # 1 "/tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 1 3
 # 39 "/tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 3
 # 1 "/usr/include/features.h" 1 3 4
-# 394 "/usr/include/features.h" 3 4
+# 392 "/usr/include/features.h" 3 4
 # 1 "/usr/include/features-time64.h" 1 3 4
 # 20 "/usr/include/features-time64.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
@@ -196,24 +196,24 @@ namespace __gnu_cxx
 # 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
 # 20 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 2 3 4
 # 22 "/usr/include/features-time64.h" 2 3 4
-# 395 "/usr/include/features.h" 2 3 4
-# 480 "/usr/include/features.h" 3 4
+# 393 "/usr/include/features.h" 2 3 4
+# 464 "/usr/include/features.h" 3 4
 # 1 "/usr/include/stdc-predef.h" 1 3 4
-# 481 "/usr/include/features.h" 2 3 4
-# 502 "/usr/include/features.h" 3 4
+# 465 "/usr/include/features.h" 2 3 4
+# 486 "/usr/include/features.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
-# 576 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+# 559 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 577 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 560 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
-# 578 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
-# 503 "/usr/include/features.h" 2 3 4
-# 526 "/usr/include/features.h" 3 4
+# 561 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 487 "/usr/include/features.h" 2 3 4
+# 510 "/usr/include/features.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 1 3 4
 # 10 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h" 1 3 4
 # 11 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
-# 527 "/usr/include/features.h" 2 3 4
+# 511 "/usr/include/features.h" 2 3 4
 # 40 "/tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 2 3
 # 509 "/tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 2 3
 
@@ -3622,7 +3622,7 @@ enum
 
       4
   };
-# 1055 "/usr/include/math.h" 3 4
+# 1054 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/iscanonical.h" 1 3 4
 # 23 "/usr/include/x86_64-linux-gnu/bits/iscanonical.h" 3 4
 extern int __iscanonicall (long double __x)
@@ -3636,8 +3636,8 @@ inline int iscanonical (long double __val) { return __iscanonicall (__val); }
 
 
 }
-# 1056 "/usr/include/math.h" 2 3 4
-# 1067 "/usr/include/math.h" 3 4
+# 1055 "/usr/include/math.h" 2 3 4
+# 1066 "/usr/include/math.h" 3 4
 extern "C++" {
 inline int issignaling (float __val) { return __issignalingf (__val); }
 inline int issignaling (double __val) { return __issignaling (__val); }
@@ -3656,9 +3656,9 @@ issignaling (long double __val)
 
 
 }
-# 1098 "/usr/include/math.h" 3 4
+# 1097 "/usr/include/math.h" 3 4
 extern "C++" {
-# 1129 "/usr/include/math.h" 3 4
+# 1128 "/usr/include/math.h" 3 4
 template <class __T> inline bool
 iszero (__T __val)
 {
@@ -3666,7 +3666,7 @@ iszero (__T __val)
 }
 
 }
-# 1364 "/usr/include/math.h" 3 4
+# 1363 "/usr/include/math.h" 3 4
 extern "C++" {
 template<typename> struct __iseqsig_type;
 
@@ -3697,7 +3697,7 @@ template<> struct __iseqsig_type<long double>
 
   }
 };
-# 1455 "/usr/include/math.h" 3 4
+# 1406 "/usr/include/math.h" 3 4
 template<typename _T1, typename _T2>
 inline int
 iseqsig (_T1 __x, _T2 __y) throw ()
@@ -3863,42 +3863,6 @@ extern unsigned long long int strtoull (const char *__restrict __nptr,
 
 
 
-
-
-extern long int strtol (const char *__restrict __nptr, char **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_strtol")
-
-
-     __attribute__ ((__nonnull__ (1)));
-extern unsigned long int strtoul (const char *__restrict __nptr, char **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_strtoul")
-
-
-
-     __attribute__ ((__nonnull__ (1)));
-
-__extension__
-extern long long int strtoq (const char *__restrict __nptr, char **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_strtoll")
-
-
-     __attribute__ ((__nonnull__ (1)));
-__extension__
-extern unsigned long long int strtouq (const char *__restrict __nptr, char **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_strtoull")
-
-
-
-     __attribute__ ((__nonnull__ (1)));
-
-__extension__
-extern long long int strtoll (const char *__restrict __nptr, char **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_strtoll")
-
-
-     __attribute__ ((__nonnull__ (1)));
-__extension__
-extern unsigned long long int strtoull (const char *__restrict __nptr, char **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_strtoull")
-
-
-
-     __attribute__ ((__nonnull__ (1)));
-# 278 "/usr/include/stdlib.h" 3 4
 extern int strfromd (char *__dest, size_t __size, const char *__format,
        double __f)
      noexcept (true) __attribute__ ((__nonnull__ (3)));
@@ -3910,7 +3874,7 @@ extern int strfromf (char *__dest, size_t __size, const char *__format,
 extern int strfroml (char *__dest, size_t __size, const char *__format,
        long double __f)
      noexcept (true) __attribute__ ((__nonnull__ (3)));
-# 298 "/usr/include/stdlib.h" 3 4
+# 233 "/usr/include/stdlib.h" 3 4
 extern int strfromf32 (char *__dest, size_t __size, const char * __format,
          _Float32 __f)
      noexcept (true) __attribute__ ((__nonnull__ (3)));
@@ -3920,7 +3884,7 @@ extern int strfromf32 (char *__dest, size_t __size, const char * __format,
 extern int strfromf64 (char *__dest, size_t __size, const char * __format,
          _Float64 __f)
      noexcept (true) __attribute__ ((__nonnull__ (3)));
-# 316 "/usr/include/stdlib.h" 3 4
+# 251 "/usr/include/stdlib.h" 3 4
 extern int strfromf32x (char *__dest, size_t __size, const char * __format,
    _Float32x __f)
      noexcept (true) __attribute__ ((__nonnull__ (3)));
@@ -3930,7 +3894,7 @@ extern int strfromf32x (char *__dest, size_t __size, const char * __format,
 extern int strfromf64x (char *__dest, size_t __size, const char * __format,
    _Float64x __f)
      noexcept (true) __attribute__ ((__nonnull__ (3)));
-# 338 "/usr/include/stdlib.h" 3 4
+# 273 "/usr/include/stdlib.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 1 3 4
 # 22 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 1 3 4
@@ -3953,7 +3917,7 @@ typedef struct __locale_struct *__locale_t;
 # 23 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 2 3 4
 
 typedef __locale_t locale_t;
-# 339 "/usr/include/stdlib.h" 2 3 4
+# 274 "/usr/include/stdlib.h" 2 3 4
 
 extern long int strtol_l (const char *__restrict __nptr,
      char **__restrict __endptr, int __base,
@@ -3976,36 +3940,6 @@ extern unsigned long long int strtoull_l (const char *__restrict __nptr,
        int __base, locale_t __loc)
      noexcept (true) __attribute__ ((__nonnull__ (1, 4)));
 
-
-
-
-
-extern long int strtol_l (const char *__restrict __nptr, char **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_strtol_l")
-
-
-
-     __attribute__ ((__nonnull__ (1, 4)));
-extern unsigned long int strtoul_l (const char *__restrict __nptr, char **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_strtoul_l")
-
-
-
-
-     __attribute__ ((__nonnull__ (1, 4)));
-__extension__
-extern long long int strtoll_l (const char *__restrict __nptr, char **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_strtoll_l")
-
-
-
-
-     __attribute__ ((__nonnull__ (1, 4)));
-__extension__
-extern unsigned long long int strtoull_l (const char *__restrict __nptr, char **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_strtoull_l")
-
-
-
-
-     __attribute__ ((__nonnull__ (1, 4)));
-# 415 "/usr/include/stdlib.h" 3 4
 extern double strtod_l (const char *__restrict __nptr,
    char **__restrict __endptr, locale_t __loc)
      noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
@@ -4018,7 +3952,7 @@ extern long double strtold_l (const char *__restrict __nptr,
          char **__restrict __endptr,
          locale_t __loc)
      noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
-# 436 "/usr/include/stdlib.h" 3 4
+# 317 "/usr/include/stdlib.h" 3 4
 extern _Float32 strtof32_l (const char *__restrict __nptr,
        char **__restrict __endptr,
        locale_t __loc)
@@ -4030,7 +3964,7 @@ extern _Float64 strtof64_l (const char *__restrict __nptr,
        char **__restrict __endptr,
        locale_t __loc)
      noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
-# 457 "/usr/include/stdlib.h" 3 4
+# 338 "/usr/include/stdlib.h" 3 4
 extern _Float32x strtof32x_l (const char *__restrict __nptr,
          char **__restrict __endptr,
          locale_t __loc)
@@ -4042,7 +3976,7 @@ extern _Float64x strtof64x_l (const char *__restrict __nptr,
          char **__restrict __endptr,
          locale_t __loc)
      noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
-# 505 "/usr/include/stdlib.h" 3 4
+# 386 "/usr/include/stdlib.h" 3 4
 extern char *l64a (long int __n) noexcept (true) ;
 
 
@@ -4639,7 +4573,7 @@ typedef union
 
 
 }
-# 515 "/usr/include/stdlib.h" 2 3 4
+# 396 "/usr/include/stdlib.h" 2 3 4
 
 
 
@@ -4782,19 +4716,6 @@ extern int lcong48_r (unsigned short int __param[7],
      noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
 
 
-extern __uint32_t arc4random (void)
-     noexcept (true) ;
-
-
-extern void arc4random_buf (void *__buf, size_t __size)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-
-
-
-extern __uint32_t arc4random_uniform (__uint32_t __upper_bound)
-     noexcept (true) ;
-
-
 
 
 extern void *malloc (size_t __size) noexcept (true) __attribute__ ((__malloc__))
@@ -4850,7 +4771,7 @@ extern void *alloca (size_t __size) noexcept (true);
 
 
 }
-# 707 "/usr/include/stdlib.h" 2 3 4
+# 575 "/usr/include/stdlib.h" 2 3 4
 
 
 
@@ -4885,7 +4806,7 @@ extern int atexit (void (*__func) (void)) noexcept (true) __attribute__ ((__nonn
 
 extern "C++" int at_quick_exit (void (*__func) (void))
      noexcept (true) __asm ("at_quick_exit") __attribute__ ((__nonnull__ (1)));
-# 749 "/usr/include/stdlib.h" 3 4
+# 617 "/usr/include/stdlib.h" 3 4
 extern int on_exit (void (*__func) (int __status, void *__arg), void *__arg)
      noexcept (true) __attribute__ ((__nonnull__ (1)));
 
@@ -4941,30 +4862,30 @@ extern int unsetenv (const char *__name) noexcept (true) __attribute__ ((__nonnu
 
 
 extern int clearenv (void) noexcept (true);
-# 814 "/usr/include/stdlib.h" 3 4
+# 682 "/usr/include/stdlib.h" 3 4
 extern char *mktemp (char *__template) noexcept (true) __attribute__ ((__nonnull__ (1)));
-# 827 "/usr/include/stdlib.h" 3 4
+# 695 "/usr/include/stdlib.h" 3 4
 extern int mkstemp (char *__template) __attribute__ ((__nonnull__ (1))) ;
-# 837 "/usr/include/stdlib.h" 3 4
+# 705 "/usr/include/stdlib.h" 3 4
 extern int mkstemp64 (char *__template) __attribute__ ((__nonnull__ (1))) ;
-# 849 "/usr/include/stdlib.h" 3 4
+# 717 "/usr/include/stdlib.h" 3 4
 extern int mkstemps (char *__template, int __suffixlen) __attribute__ ((__nonnull__ (1))) ;
-# 859 "/usr/include/stdlib.h" 3 4
+# 727 "/usr/include/stdlib.h" 3 4
 extern int mkstemps64 (char *__template, int __suffixlen)
      __attribute__ ((__nonnull__ (1))) ;
-# 870 "/usr/include/stdlib.h" 3 4
+# 738 "/usr/include/stdlib.h" 3 4
 extern char *mkdtemp (char *__template) noexcept (true) __attribute__ ((__nonnull__ (1))) ;
-# 881 "/usr/include/stdlib.h" 3 4
+# 749 "/usr/include/stdlib.h" 3 4
 extern int mkostemp (char *__template, int __flags) __attribute__ ((__nonnull__ (1))) ;
-# 891 "/usr/include/stdlib.h" 3 4
+# 759 "/usr/include/stdlib.h" 3 4
 extern int mkostemp64 (char *__template, int __flags) __attribute__ ((__nonnull__ (1))) ;
-# 901 "/usr/include/stdlib.h" 3 4
+# 769 "/usr/include/stdlib.h" 3 4
 extern int mkostemps (char *__template, int __suffixlen, int __flags)
      __attribute__ ((__nonnull__ (1))) ;
-# 913 "/usr/include/stdlib.h" 3 4
+# 781 "/usr/include/stdlib.h" 3 4
 extern int mkostemps64 (char *__template, int __suffixlen, int __flags)
      __attribute__ ((__nonnull__ (1))) ;
-# 923 "/usr/include/stdlib.h" 3 4
+# 791 "/usr/include/stdlib.h" 3 4
 extern int system (const char *__command) ;
 
 
@@ -4974,7 +4895,7 @@ extern int system (const char *__command) ;
 extern char *canonicalize_file_name (const char *__name)
      noexcept (true) __attribute__ ((__nonnull__ (1))) __attribute__ ((__malloc__))
                               ;
-# 940 "/usr/include/stdlib.h" 3 4
+# 808 "/usr/include/stdlib.h" 3 4
 extern char *realpath (const char *__restrict __name,
          char *__restrict __resolved) noexcept (true) ;
 
@@ -5036,7 +4957,7 @@ extern ldiv_t ldiv (long int __numer, long int __denom)
 __extension__ extern lldiv_t lldiv (long long int __numer,
         long long int __denom)
      noexcept (true) __attribute__ ((__const__)) ;
-# 1012 "/usr/include/stdlib.h" 3 4
+# 880 "/usr/include/stdlib.h" 3 4
 extern char *ecvt (double __value, int __ndigit, int *__restrict __decpt,
      int *__restrict __sign) noexcept (true) __attribute__ ((__nonnull__ (3, 4))) ;
 
@@ -5114,7 +5035,7 @@ extern size_t wcstombs (char *__restrict __s,
 
 
 extern int rpmatch (const char *__response) noexcept (true) __attribute__ ((__nonnull__ (1))) ;
-# 1099 "/usr/include/stdlib.h" 3 4
+# 967 "/usr/include/stdlib.h" 3 4
 extern int getsubopt (char **__restrict __optionp,
         char *const *__restrict __tokens,
         char **__restrict __valuep)
@@ -5163,10 +5084,10 @@ extern int getpt (void);
 
 extern int getloadavg (double __loadavg[], int __nelem)
      noexcept (true) __attribute__ ((__nonnull__ (1)));
-# 1155 "/usr/include/stdlib.h" 3 4
+# 1023 "/usr/include/stdlib.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdlib-float.h" 1 3 4
-# 1156 "/usr/include/stdlib.h" 2 3 4
-# 1167 "/usr/include/stdlib.h" 3 4
+# 1024 "/usr/include/stdlib.h" 2 3 4
+# 1035 "/usr/include/stdlib.h" 3 4
 }
 # 39 "/tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/std_abs.h" 2 3
 
@@ -6793,8 +6714,8 @@ typedef __uint64_t uint64_t;
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-least.h" 1 3 4
-# 25 "/usr/include/x86_64-linux-gnu/bits/stdint-least.h" 3 4
+
+
 typedef __int_least8_t int_least8_t;
 typedef __int_least16_t int_least16_t;
 typedef __int_least32_t int_least32_t;
@@ -6805,7 +6726,6 @@ typedef __uint_least8_t uint_least8_t;
 typedef __uint_least16_t uint_least16_t;
 typedef __uint_least32_t uint_least32_t;
 typedef __uint_least64_t uint_least64_t;
-# 42 "/usr/include/stdint.h" 2 3 4
 
 
 
@@ -6816,18 +6736,18 @@ typedef signed char int_fast8_t;
 typedef long int int_fast16_t;
 typedef long int int_fast32_t;
 typedef long int int_fast64_t;
-# 60 "/usr/include/stdint.h" 3 4
+# 71 "/usr/include/stdint.h" 3 4
 typedef unsigned char uint_fast8_t;
 
 typedef unsigned long int uint_fast16_t;
 typedef unsigned long int uint_fast32_t;
 typedef unsigned long int uint_fast64_t;
-# 76 "/usr/include/stdint.h" 3 4
+# 87 "/usr/include/stdint.h" 3 4
 typedef long int intptr_t;
 
 
 typedef unsigned long int uintptr_t;
-# 90 "/usr/include/stdint.h" 3 4
+# 101 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
 # 64 "/tools/Xilinx/Vitis_HLS/2022.1/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 2 3
@@ -29432,9 +29352,9 @@ namespace hls {
 };
 # 2 "../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" 2
 # 1 "/usr/include/stdio.h" 1 3 4
-# 28 "/usr/include/stdio.h" 3 4
+# 27 "/usr/include/stdio.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
-# 29 "/usr/include/stdio.h" 2 3 4
+# 28 "/usr/include/stdio.h" 2 3 4
 
 extern "C" {
 
@@ -29442,7 +29362,7 @@ extern "C" {
 
 
 # 1 "/tools/Xilinx/Vitis_HLS/2022.1/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3 4
-# 35 "/usr/include/stdio.h" 2 3 4
+# 34 "/usr/include/stdio.h" 2 3 4
 
 
 # 1 "/tools/Xilinx/Vitis_HLS/2022.1/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 1 3 4
@@ -29450,7 +29370,7 @@ extern "C" {
 typedef __builtin_va_list va_list;
 # 48 "/tools/Xilinx/Vitis_HLS/2022.1/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
-# 38 "/usr/include/stdio.h" 2 3 4
+# 37 "/usr/include/stdio.h" 2 3 4
 
 
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h" 1 3 4
@@ -29479,7 +29399,7 @@ typedef struct _G_fpos_t
   __off_t __pos;
   __mbstate_t __state;
 } __fpos_t;
-# 41 "/usr/include/stdio.h" 2 3 4
+# 40 "/usr/include/stdio.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h" 1 3 4
 # 10 "/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h" 3 4
 typedef struct _G_fpos64_t
@@ -29487,14 +29407,14 @@ typedef struct _G_fpos64_t
   __off64_t __pos;
   __mbstate_t __state;
 } __fpos64_t;
-# 42 "/usr/include/stdio.h" 2 3 4
+# 41 "/usr/include/stdio.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/__FILE.h" 1 3 4
 
 
 
 struct _IO_FILE;
 typedef struct _IO_FILE __FILE;
-# 43 "/usr/include/stdio.h" 2 3 4
+# 42 "/usr/include/stdio.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/FILE.h" 1 3 4
 
 
@@ -29503,7 +29423,7 @@ struct _IO_FILE;
 
 
 typedef struct _IO_FILE FILE;
-# 44 "/usr/include/stdio.h" 2 3 4
+# 43 "/usr/include/stdio.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h" 1 3 4
 # 35 "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h" 3 4
 struct _IO_FILE;
@@ -29571,7 +29491,7 @@ struct _IO_FILE
 
   char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];
 };
-# 45 "/usr/include/stdio.h" 2 3 4
+# 44 "/usr/include/stdio.h" 2 3 4
 
 
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h" 1 3 4
@@ -29611,24 +29531,24 @@ typedef struct _IO_cookie_io_functions_t
   cookie_seek_function_t *seek;
   cookie_close_function_t *close;
 } cookie_io_functions_t;
-# 48 "/usr/include/stdio.h" 2 3 4
+# 47 "/usr/include/stdio.h" 2 3 4
 
 
 
 
 
 typedef __gnuc_va_list va_list;
-# 85 "/usr/include/stdio.h" 3 4
+# 84 "/usr/include/stdio.h" 3 4
 typedef __fpos_t fpos_t;
 
 
 
 
 typedef __fpos64_t fpos64_t;
-# 129 "/usr/include/stdio.h" 3 4
+# 133 "/usr/include/stdio.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4
-# 130 "/usr/include/stdio.h" 2 3 4
-# 149 "/usr/include/stdio.h" 3 4
+# 134 "/usr/include/stdio.h" 2 3 4
+# 143 "/usr/include/stdio.h" 3 4
 extern FILE *stdin;
 extern FILE *stdout;
 extern FILE *stderr;
@@ -29646,7 +29566,7 @@ extern int rename (const char *__old, const char *__new) noexcept (true);
 
 extern int renameat (int __oldfd, const char *__old, int __newfd,
        const char *__new) noexcept (true);
-# 176 "/usr/include/stdio.h" 3 4
+# 170 "/usr/include/stdio.h" 3 4
 extern int renameat2 (int __oldfd, const char *__old, int __newfd,
         const char *__new, unsigned int __flags) noexcept (true);
 
@@ -29655,11 +29575,11 @@ extern int renameat2 (int __oldfd, const char *__old, int __newfd,
 
 
 
-extern int fclose (FILE *__stream) __attribute__ ((__nonnull__ (1)));
-# 194 "/usr/include/stdio.h" 3 4
+extern int fclose (FILE *__stream);
+# 188 "/usr/include/stdio.h" 3 4
 extern FILE *tmpfile (void)
   __attribute__ ((__malloc__)) ;
-# 206 "/usr/include/stdio.h" 3 4
+# 200 "/usr/include/stdio.h" 3 4
 extern FILE *tmpfile64 (void)
    __attribute__ ((__malloc__)) ;
 
@@ -29671,7 +29591,7 @@ extern char *tmpnam (char[20]) noexcept (true) ;
 
 
 extern char *tmpnam_r (char __s[20]) noexcept (true) ;
-# 228 "/usr/include/stdio.h" 3 4
+# 222 "/usr/include/stdio.h" 3 4
 extern char *tempnam (const char *__dir, const char *__pfx)
    noexcept (true) __attribute__ ((__malloc__)) ;
 
@@ -29681,11 +29601,11 @@ extern char *tempnam (const char *__dir, const char *__pfx)
 
 
 extern int fflush (FILE *__stream);
-# 245 "/usr/include/stdio.h" 3 4
+# 239 "/usr/include/stdio.h" 3 4
 extern int fflush_unlocked (FILE *__stream);
-# 255 "/usr/include/stdio.h" 3 4
+# 249 "/usr/include/stdio.h" 3 4
 extern int fcloseall (void);
-# 264 "/usr/include/stdio.h" 3 4
+# 258 "/usr/include/stdio.h" 3 4
 extern FILE *fopen (const char *__restrict __filename,
       const char *__restrict __modes)
   __attribute__ ((__malloc__)) ;
@@ -29695,14 +29615,14 @@ extern FILE *fopen (const char *__restrict __filename,
 
 extern FILE *freopen (const char *__restrict __filename,
         const char *__restrict __modes,
-        FILE *__restrict __stream) __attribute__ ((__nonnull__ (3)));
-# 289 "/usr/include/stdio.h" 3 4
+        FILE *__restrict __stream) ;
+# 283 "/usr/include/stdio.h" 3 4
 extern FILE *fopen64 (const char *__restrict __filename,
         const char *__restrict __modes)
   __attribute__ ((__malloc__)) ;
 extern FILE *freopen64 (const char *__restrict __filename,
    const char *__restrict __modes,
-   FILE *__restrict __stream) __attribute__ ((__nonnull__ (3)));
+   FILE *__restrict __stream) ;
 
 
 
@@ -29730,23 +29650,22 @@ extern FILE *fmemopen (void *__s, size_t __len, const char *__modes)
 
 extern FILE *open_memstream (char **__bufloc, size_t *__sizeloc) noexcept (true)
   __attribute__ ((__malloc__)) ;
-# 334 "/usr/include/stdio.h" 3 4
-extern void setbuf (FILE *__restrict __stream, char *__restrict __buf) noexcept (true)
-  __attribute__ ((__nonnull__ (1)));
+# 328 "/usr/include/stdio.h" 3 4
+extern void setbuf (FILE *__restrict __stream, char *__restrict __buf) noexcept (true);
 
 
 
 extern int setvbuf (FILE *__restrict __stream, char *__restrict __buf,
-      int __modes, size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1)));
+      int __modes, size_t __n) noexcept (true);
 
 
 
 
 extern void setbuffer (FILE *__restrict __stream, char *__restrict __buf,
-         size_t __size) noexcept (true) __attribute__ ((__nonnull__ (1)));
+         size_t __size) noexcept (true);
 
 
-extern void setlinebuf (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
+extern void setlinebuf (FILE *__stream) noexcept (true);
 
 
 
@@ -29755,7 +29674,7 @@ extern void setlinebuf (FILE *__stream) noexcept (true) __attribute__ ((__nonnul
 
 
 extern int fprintf (FILE *__restrict __stream,
-      const char *__restrict __format, ...) __attribute__ ((__nonnull__ (1)));
+      const char *__restrict __format, ...);
 
 
 
@@ -29770,7 +29689,7 @@ extern int sprintf (char *__restrict __s,
 
 
 extern int vfprintf (FILE *__restrict __s, const char *__restrict __format,
-       __gnuc_va_list __arg) __attribute__ ((__nonnull__ (1)));
+       __gnuc_va_list __arg);
 
 
 
@@ -29820,7 +29739,7 @@ extern int dprintf (int __fd, const char *__restrict __fmt, ...)
 
 
 extern int fscanf (FILE *__restrict __stream,
-     const char *__restrict __format, ...) __attribute__ ((__nonnull__ (1)));
+     const char *__restrict __format, ...) ;
 
 
 
@@ -29829,17 +29748,17 @@ extern int scanf (const char *__restrict __format, ...) ;
 
 extern int sscanf (const char *__restrict __s,
      const char *__restrict __format, ...) noexcept (true);
-# 442 "/usr/include/stdio.h" 3 4
-extern int fscanf (FILE *__restrict __stream, const char *__restrict __format, ...) __asm__ ("" "__isoc23_fscanf") __attribute__ ((__nonnull__ (1)));
+# 434 "/usr/include/stdio.h" 3 4
+extern int fscanf (FILE *__restrict __stream, const char *__restrict __format, ...) __asm__ ("" "__isoc99_fscanf") ;
 
 
-extern int scanf (const char *__restrict __format, ...) __asm__ ("" "__isoc23_scanf") ;
+extern int scanf (const char *__restrict __format, ...) __asm__ ("" "__isoc99_scanf") ;
 
-extern int sscanf (const char *__restrict __s, const char *__restrict __format, ...) noexcept (true) __asm__ ("" "__isoc23_sscanf");
-# 490 "/usr/include/stdio.h" 3 4
+extern int sscanf (const char *__restrict __s, const char *__restrict __format, ...) noexcept (true) __asm__ ("" "__isoc99_sscanf");
+# 459 "/usr/include/stdio.h" 3 4
 extern int vfscanf (FILE *__restrict __s, const char *__restrict __format,
       __gnuc_va_list __arg)
-     __attribute__ ((__format__ (__scanf__, 2, 0))) __attribute__ ((__nonnull__ (1)));
+     __attribute__ ((__format__ (__scanf__, 2, 0))) ;
 
 
 
@@ -29857,23 +29776,22 @@ extern int vsscanf (const char *__restrict __s,
 
 
 
-
-extern int vfscanf (FILE *__restrict __s, const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc23_vfscanf")
-
+extern int vfscanf (FILE *__restrict __s, const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vfscanf")
 
 
-     __attribute__ ((__format__ (__scanf__, 2, 0))) __attribute__ ((__nonnull__ (1)));
-extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc23_vscanf")
+
+     __attribute__ ((__format__ (__scanf__, 2, 0))) ;
+extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vscanf")
 
      __attribute__ ((__format__ (__scanf__, 1, 0))) ;
-extern int vsscanf (const char *__restrict __s, const char *__restrict __format, __gnuc_va_list __arg) noexcept (true) __asm__ ("" "__isoc23_vsscanf")
+extern int vsscanf (const char *__restrict __s, const char *__restrict __format, __gnuc_va_list __arg) noexcept (true) __asm__ ("" "__isoc99_vsscanf")
 
 
 
      __attribute__ ((__format__ (__scanf__, 2, 0)));
-# 575 "/usr/include/stdio.h" 3 4
-extern int fgetc (FILE *__stream) __attribute__ ((__nonnull__ (1)));
-extern int getc (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+# 513 "/usr/include/stdio.h" 3 4
+extern int fgetc (FILE *__stream);
+extern int getc (FILE *__stream);
 
 
 
@@ -29886,21 +29804,21 @@ extern int getchar (void);
 
 
 
-extern int getc_unlocked (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+extern int getc_unlocked (FILE *__stream);
 extern int getchar_unlocked (void);
-# 600 "/usr/include/stdio.h" 3 4
-extern int fgetc_unlocked (FILE *__stream) __attribute__ ((__nonnull__ (1)));
-# 611 "/usr/include/stdio.h" 3 4
-extern int fputc (int __c, FILE *__stream) __attribute__ ((__nonnull__ (2)));
-extern int putc (int __c, FILE *__stream) __attribute__ ((__nonnull__ (2)));
+# 538 "/usr/include/stdio.h" 3 4
+extern int fgetc_unlocked (FILE *__stream);
+# 549 "/usr/include/stdio.h" 3 4
+extern int fputc (int __c, FILE *__stream);
+extern int putc (int __c, FILE *__stream);
 
 
 
 
 
 extern int putchar (int __c);
-# 627 "/usr/include/stdio.h" 3 4
-extern int fputc_unlocked (int __c, FILE *__stream) __attribute__ ((__nonnull__ (2)));
+# 565 "/usr/include/stdio.h" 3 4
+extern int fputc_unlocked (int __c, FILE *__stream);
 
 
 
@@ -29908,7 +29826,7 @@ extern int fputc_unlocked (int __c, FILE *__stream) __attribute__ ((__nonnull__ 
 
 
 
-extern int putc_unlocked (int __c, FILE *__stream) __attribute__ ((__nonnull__ (2)));
+extern int putc_unlocked (int __c, FILE *__stream);
 extern int putchar_unlocked (int __c);
 
 
@@ -29916,10 +29834,10 @@ extern int putchar_unlocked (int __c);
 
 
 
-extern int getw (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+extern int getw (FILE *__stream);
 
 
-extern int putw (int __w, FILE *__stream) __attribute__ ((__nonnull__ (2)));
+extern int putw (int __w, FILE *__stream);
 
 
 
@@ -29928,18 +29846,18 @@ extern int putw (int __w, FILE *__stream) __attribute__ ((__nonnull__ (2)));
 
 
 extern char *fgets (char *__restrict __s, int __n, FILE *__restrict __stream)
-                                                          __attribute__ ((__nonnull__ (3)));
-# 677 "/usr/include/stdio.h" 3 4
+                                                         ;
+# 615 "/usr/include/stdio.h" 3 4
 extern char *fgets_unlocked (char *__restrict __s, int __n,
         FILE *__restrict __stream)
-                                                   __attribute__ ((__nonnull__ (3)));
-# 694 "/usr/include/stdio.h" 3 4
+                                                  ;
+# 632 "/usr/include/stdio.h" 3 4
 extern __ssize_t __getdelim (char **__restrict __lineptr,
                              size_t *__restrict __n, int __delimiter,
-                             FILE *__restrict __stream) __attribute__ ((__nonnull__ (4)));
+                             FILE *__restrict __stream) ;
 extern __ssize_t getdelim (char **__restrict __lineptr,
                            size_t *__restrict __n, int __delimiter,
-                           FILE *__restrict __stream) __attribute__ ((__nonnull__ (4)));
+                           FILE *__restrict __stream) ;
 
 
 
@@ -29949,7 +29867,7 @@ extern __ssize_t getdelim (char **__restrict __lineptr,
 
 extern __ssize_t getline (char **__restrict __lineptr,
                           size_t *__restrict __n,
-                          FILE *__restrict __stream) __attribute__ ((__nonnull__ (3)));
+                          FILE *__restrict __stream) ;
 
 
 
@@ -29957,8 +29875,7 @@ extern __ssize_t getline (char **__restrict __lineptr,
 
 
 
-extern int fputs (const char *__restrict __s, FILE *__restrict __stream)
-  __attribute__ ((__nonnull__ (2)));
+extern int fputs (const char *__restrict __s, FILE *__restrict __stream);
 
 
 
@@ -29971,7 +29888,7 @@ extern int puts (const char *__s);
 
 
 
-extern int ungetc (int __c, FILE *__stream) __attribute__ ((__nonnull__ (2)));
+extern int ungetc (int __c, FILE *__stream);
 
 
 
@@ -29979,24 +29896,21 @@ extern int ungetc (int __c, FILE *__stream) __attribute__ ((__nonnull__ (2)));
 
 
 extern size_t fread (void *__restrict __ptr, size_t __size,
-       size_t __n, FILE *__restrict __stream)
-  __attribute__ ((__nonnull__ (4)));
+       size_t __n, FILE *__restrict __stream) ;
 
 
 
 
 extern size_t fwrite (const void *__restrict __ptr, size_t __size,
-        size_t __n, FILE *__restrict __s) __attribute__ ((__nonnull__ (4)));
-# 755 "/usr/include/stdio.h" 3 4
+        size_t __n, FILE *__restrict __s);
+# 691 "/usr/include/stdio.h" 3 4
 extern int fputs_unlocked (const char *__restrict __s,
-      FILE *__restrict __stream) __attribute__ ((__nonnull__ (2)));
-# 766 "/usr/include/stdio.h" 3 4
+      FILE *__restrict __stream);
+# 702 "/usr/include/stdio.h" 3 4
 extern size_t fread_unlocked (void *__restrict __ptr, size_t __size,
-         size_t __n, FILE *__restrict __stream)
-  __attribute__ ((__nonnull__ (4)));
+         size_t __n, FILE *__restrict __stream) ;
 extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
-          size_t __n, FILE *__restrict __stream)
-  __attribute__ ((__nonnull__ (4)));
+          size_t __n, FILE *__restrict __stream);
 
 
 
@@ -30004,55 +29918,50 @@ extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
 
 
 
-extern int fseek (FILE *__stream, long int __off, int __whence)
-  __attribute__ ((__nonnull__ (1)));
+extern int fseek (FILE *__stream, long int __off, int __whence);
 
 
 
 
-extern long int ftell (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+extern long int ftell (FILE *__stream) ;
 
 
 
 
-extern void rewind (FILE *__stream) __attribute__ ((__nonnull__ (1)));
-# 803 "/usr/include/stdio.h" 3 4
-extern int fseeko (FILE *__stream, __off_t __off, int __whence)
-  __attribute__ ((__nonnull__ (1)));
+extern void rewind (FILE *__stream);
+# 736 "/usr/include/stdio.h" 3 4
+extern int fseeko (FILE *__stream, __off_t __off, int __whence);
 
 
 
 
-extern __off_t ftello (FILE *__stream) __attribute__ ((__nonnull__ (1)));
-# 829 "/usr/include/stdio.h" 3 4
-extern int fgetpos (FILE *__restrict __stream, fpos_t *__restrict __pos)
-  __attribute__ ((__nonnull__ (1)));
+extern __off_t ftello (FILE *__stream) ;
+# 760 "/usr/include/stdio.h" 3 4
+extern int fgetpos (FILE *__restrict __stream, fpos_t *__restrict __pos);
 
 
 
 
-extern int fsetpos (FILE *__stream, const fpos_t *__pos) __attribute__ ((__nonnull__ (1)));
-# 851 "/usr/include/stdio.h" 3 4
-extern int fseeko64 (FILE *__stream, __off64_t __off, int __whence)
-  __attribute__ ((__nonnull__ (1)));
-extern __off64_t ftello64 (FILE *__stream) __attribute__ ((__nonnull__ (1)));
-extern int fgetpos64 (FILE *__restrict __stream, fpos64_t *__restrict __pos)
-  __attribute__ ((__nonnull__ (1)));
-extern int fsetpos64 (FILE *__stream, const fpos64_t *__pos) __attribute__ ((__nonnull__ (1)));
+extern int fsetpos (FILE *__stream, const fpos_t *__pos);
+# 779 "/usr/include/stdio.h" 3 4
+extern int fseeko64 (FILE *__stream, __off64_t __off, int __whence);
+extern __off64_t ftello64 (FILE *__stream) ;
+extern int fgetpos64 (FILE *__restrict __stream, fpos64_t *__restrict __pos);
+extern int fsetpos64 (FILE *__stream, const fpos64_t *__pos);
 
 
 
-extern void clearerr (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
+extern void clearerr (FILE *__stream) noexcept (true);
 
-extern int feof (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
+extern int feof (FILE *__stream) noexcept (true) ;
 
-extern int ferror (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
+extern int ferror (FILE *__stream) noexcept (true) ;
 
 
 
-extern void clearerr_unlocked (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
-extern int feof_unlocked (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
-extern int ferror_unlocked (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
+extern void clearerr_unlocked (FILE *__stream) noexcept (true);
+extern int feof_unlocked (FILE *__stream) noexcept (true) ;
+extern int ferror_unlocked (FILE *__stream) noexcept (true) ;
 
 
 
@@ -30060,19 +29969,19 @@ extern int ferror_unlocked (FILE *__stream) noexcept (true) __attribute__ ((__no
 
 
 
-extern void perror (const char *__s) __attribute__ ((__cold__));
+extern void perror (const char *__s);
 
 
 
 
-extern int fileno (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
+extern int fileno (FILE *__stream) noexcept (true) ;
 
 
 
 
-extern int fileno_unlocked (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
-# 897 "/usr/include/stdio.h" 3 4
-extern int pclose (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+extern int fileno_unlocked (FILE *__stream) noexcept (true) ;
+# 823 "/usr/include/stdio.h" 3 4
+extern int pclose (FILE *__stream);
 
 
 
@@ -30116,18 +30025,18 @@ extern int obstack_vprintf (struct obstack *__restrict __obstack,
 
 
 
-extern void flockfile (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
+extern void flockfile (FILE *__stream) noexcept (true);
 
 
 
-extern int ftrylockfile (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
+extern int ftrylockfile (FILE *__stream) noexcept (true) ;
 
 
-extern void funlockfile (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
-# 959 "/usr/include/stdio.h" 3 4
+extern void funlockfile (FILE *__stream) noexcept (true);
+# 885 "/usr/include/stdio.h" 3 4
 extern int __uflow (FILE *);
 extern int __overflow (FILE *, int);
-# 983 "/usr/include/stdio.h" 3 4
+# 902 "/usr/include/stdio.h" 3 4
 }
 # 3 "../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/stdlib.h" 1 3
@@ -30413,11 +30322,15 @@ namespace __cxx11 {
 
 # 1 "/tools/Xilinx/Vitis_HLS/2022.1/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3 4
 # 36 "/usr/include/wchar.h" 2 3 4
-# 52 "/usr/include/wchar.h" 3 4
+
+
+
+
+
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/wint_t.h" 1 3 4
 # 20 "/usr/include/x86_64-linux-gnu/bits/types/wint_t.h" 3 4
 typedef unsigned int wint_t;
-# 53 "/usr/include/wchar.h" 2 3 4
+# 42 "/usr/include/wchar.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h" 1 3 4
 
 
@@ -30425,8 +30338,8 @@ typedef unsigned int wint_t;
 
 
 typedef __mbstate_t mbstate_t;
-# 54 "/usr/include/wchar.h" 2 3 4
-# 90 "/usr/include/wchar.h" 3 4
+# 43 "/usr/include/wchar.h" 2 3 4
+# 79 "/usr/include/wchar.h" 3 4
 extern "C" {
 
 
@@ -30443,19 +30356,6 @@ extern wchar_t *wcscpy (wchar_t *__restrict __dest,
 extern wchar_t *wcsncpy (wchar_t *__restrict __dest,
     const wchar_t *__restrict __src, size_t __n)
      noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-extern size_t wcslcpy (wchar_t *__restrict __dest,
-         const wchar_t *__restrict __src, size_t __n)
-  noexcept (true) __attribute__ ((__nonnull__ (1, 2))) ;
-
-
-
-extern size_t wcslcat (wchar_t *__restrict __dest,
-         const wchar_t *__restrict __src, size_t __n)
-  noexcept (true) __attribute__ ((__nonnull__ (1, 2))) ;
-
 
 
 extern wchar_t *wcscat (wchar_t *__restrict __dest,
@@ -30517,10 +30417,10 @@ extern size_t wcsxfrm_l (wchar_t *__s1, const wchar_t *__s2,
 
 extern wchar_t *wcsdup (const wchar_t *__s) noexcept (true)
   __attribute__ ((__malloc__)) ;
-# 189 "/usr/include/wchar.h" 3 4
+# 165 "/usr/include/wchar.h" 3 4
 extern wchar_t *wcschr (const wchar_t *__wcs, wchar_t __wc)
      noexcept (true) __attribute__ ((__pure__));
-# 199 "/usr/include/wchar.h" 3 4
+# 175 "/usr/include/wchar.h" 3 4
 extern wchar_t *wcsrchr (const wchar_t *__wcs, wchar_t __wc)
      noexcept (true) __attribute__ ((__pure__));
 
@@ -30540,10 +30440,10 @@ extern size_t wcscspn (const wchar_t *__wcs, const wchar_t *__reject)
 
 extern size_t wcsspn (const wchar_t *__wcs, const wchar_t *__accept)
      noexcept (true) __attribute__ ((__pure__));
-# 226 "/usr/include/wchar.h" 3 4
+# 202 "/usr/include/wchar.h" 3 4
 extern wchar_t *wcspbrk (const wchar_t *__wcs, const wchar_t *__accept)
      noexcept (true) __attribute__ ((__pure__));
-# 237 "/usr/include/wchar.h" 3 4
+# 213 "/usr/include/wchar.h" 3 4
 extern wchar_t *wcsstr (const wchar_t *__haystack, const wchar_t *__needle)
      noexcept (true) __attribute__ ((__pure__));
 
@@ -30555,7 +30455,7 @@ extern wchar_t *wcstok (wchar_t *__restrict __s,
 
 
 extern size_t wcslen (const wchar_t *__s) noexcept (true) __attribute__ ((__pure__));
-# 258 "/usr/include/wchar.h" 3 4
+# 234 "/usr/include/wchar.h" 3 4
 extern wchar_t *wcswcs (const wchar_t *__haystack, const wchar_t *__needle)
      noexcept (true) __attribute__ ((__pure__));
 
@@ -30565,7 +30465,7 @@ extern wchar_t *wcswcs (const wchar_t *__haystack, const wchar_t *__needle)
 
 extern size_t wcsnlen (const wchar_t *__s, size_t __maxlen)
      noexcept (true) __attribute__ ((__pure__));
-# 278 "/usr/include/wchar.h" 3 4
+# 254 "/usr/include/wchar.h" 3 4
 extern wchar_t *wmemchr (const wchar_t *__s, wchar_t __c, size_t __n)
      noexcept (true) __attribute__ ((__pure__));
 
@@ -30622,7 +30522,7 @@ extern size_t __mbrlen (const char *__restrict __s, size_t __n,
    mbstate_t *__restrict __ps) noexcept (true);
 extern size_t mbrlen (const char *__restrict __s, size_t __n,
         mbstate_t *__restrict __ps) noexcept (true);
-# 362 "/usr/include/wchar.h" 3 4
+# 338 "/usr/include/wchar.h" 3 4
 extern size_t mbsrtowcs (wchar_t *__restrict __dst,
     const char **__restrict __src, size_t __len,
     mbstate_t *__restrict __ps) noexcept (true);
@@ -30672,7 +30572,7 @@ extern float wcstof (const wchar_t *__restrict __nptr,
        wchar_t **__restrict __endptr) noexcept (true);
 extern long double wcstold (const wchar_t *__restrict __nptr,
        wchar_t **__restrict __endptr) noexcept (true);
-# 422 "/usr/include/wchar.h" 3 4
+# 397 "/usr/include/wchar.h" 3 4
 extern _Float32 wcstof32 (const wchar_t *__restrict __nptr,
      wchar_t **__restrict __endptr) noexcept (true);
 
@@ -30680,7 +30580,7 @@ extern _Float32 wcstof32 (const wchar_t *__restrict __nptr,
 
 extern _Float64 wcstof64 (const wchar_t *__restrict __nptr,
      wchar_t **__restrict __endptr) noexcept (true);
-# 437 "/usr/include/wchar.h" 3 4
+# 412 "/usr/include/wchar.h" 3 4
 extern _Float32x wcstof32x (const wchar_t *__restrict __nptr,
        wchar_t **__restrict __endptr) noexcept (true);
 
@@ -30688,7 +30588,7 @@ extern _Float32x wcstof32x (const wchar_t *__restrict __nptr,
 
 extern _Float64x wcstof64x (const wchar_t *__restrict __nptr,
        wchar_t **__restrict __endptr) noexcept (true);
-# 455 "/usr/include/wchar.h" 3 4
+# 429 "/usr/include/wchar.h" 3 4
 extern long int wcstol (const wchar_t *__restrict __nptr,
    wchar_t **__restrict __endptr, int __base) noexcept (true);
 
@@ -30734,31 +30634,6 @@ extern unsigned long long int wcstouq (const wchar_t *__restrict __nptr,
 
 
 
-extern long int wcstol (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_wcstol");
-
-
-extern unsigned long int wcstoul (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_wcstoul");
-
-
-
-__extension__
-extern long long int wcstoll (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_wcstoll");
-
-
-
-__extension__
-extern unsigned long long int wcstoull (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_wcstoull");
-
-
-
-
-__extension__
-extern long long int wcstoq (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_wcstoll");
-
-
-__extension__
-extern unsigned long long int wcstouq (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_wcstoull");
-# 561 "/usr/include/wchar.h" 3 4
 extern long int wcstol_l (const wchar_t *__restrict __nptr,
      wchar_t **__restrict __endptr, int __base,
      locale_t __loc) noexcept (true);
@@ -30778,28 +30653,6 @@ extern unsigned long long int wcstoull_l (const wchar_t *__restrict __nptr,
        int __base, locale_t __loc)
      noexcept (true);
 
-
-
-
-
-extern long int wcstol_l (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_wcstol_l");
-
-
-
-extern unsigned long int wcstoul_l (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_wcstoul_l");
-
-
-
-
-__extension__
-extern long long int wcstoll_l (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_wcstoll_l");
-
-
-
-
-__extension__
-extern unsigned long long int wcstoull_l (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_wcstoull_l");
-# 630 "/usr/include/wchar.h" 3 4
 extern double wcstod_l (const wchar_t *__restrict __nptr,
    wchar_t **__restrict __endptr, locale_t __loc)
      noexcept (true);
@@ -30811,7 +30664,7 @@ extern float wcstof_l (const wchar_t *__restrict __nptr,
 extern long double wcstold_l (const wchar_t *__restrict __nptr,
          wchar_t **__restrict __endptr,
          locale_t __loc) noexcept (true);
-# 649 "/usr/include/wchar.h" 3 4
+# 512 "/usr/include/wchar.h" 3 4
 extern _Float32 wcstof32_l (const wchar_t *__restrict __nptr,
        wchar_t **__restrict __endptr,
        locale_t __loc) noexcept (true);
@@ -30821,7 +30674,7 @@ extern _Float32 wcstof32_l (const wchar_t *__restrict __nptr,
 extern _Float64 wcstof64_l (const wchar_t *__restrict __nptr,
        wchar_t **__restrict __endptr,
        locale_t __loc) noexcept (true);
-# 667 "/usr/include/wchar.h" 3 4
+# 530 "/usr/include/wchar.h" 3 4
 extern _Float32x wcstof32x_l (const wchar_t *__restrict __nptr,
          wchar_t **__restrict __endptr,
          locale_t __loc) noexcept (true);
@@ -30831,7 +30684,7 @@ extern _Float32x wcstof32x_l (const wchar_t *__restrict __nptr,
 extern _Float64x wcstof64x_l (const wchar_t *__restrict __nptr,
          wchar_t **__restrict __endptr,
          locale_t __loc) noexcept (true);
-# 689 "/usr/include/wchar.h" 3 4
+# 552 "/usr/include/wchar.h" 3 4
 extern wchar_t *wcpcpy (wchar_t *__restrict __dest,
    const wchar_t *__restrict __src) noexcept (true);
 
@@ -30840,7 +30693,7 @@ extern wchar_t *wcpcpy (wchar_t *__restrict __dest,
 extern wchar_t *wcpncpy (wchar_t *__restrict __dest,
     const wchar_t *__restrict __src, size_t __n)
      noexcept (true);
-# 718 "/usr/include/wchar.h" 3 4
+# 581 "/usr/include/wchar.h" 3 4
 extern __FILE *open_wmemstream (wchar_t **__bufloc, size_t *__sizeloc) noexcept (true)
   __attribute__ ((__malloc__)) ;
 
@@ -30909,19 +30762,19 @@ extern int wscanf (const wchar_t *__restrict __format, ...)
 extern int swscanf (const wchar_t *__restrict __s,
       const wchar_t *__restrict __format, ...)
      noexcept (true) ;
-# 795 "/usr/include/wchar.h" 3 4
-extern int fwscanf (__FILE *__restrict __stream, const wchar_t *__restrict __format, ...) __asm__ ("" "__isoc23_fwscanf")
+# 657 "/usr/include/wchar.h" 3 4
+extern int fwscanf (__FILE *__restrict __stream, const wchar_t *__restrict __format, ...) __asm__ ("" "__isoc99_fwscanf")
 
 
                                                           ;
-extern int wscanf (const wchar_t *__restrict __format, ...) __asm__ ("" "__isoc23_wscanf")
+extern int wscanf (const wchar_t *__restrict __format, ...) __asm__ ("" "__isoc99_wscanf")
 
                                                           ;
-extern int swscanf (const wchar_t *__restrict __s, const wchar_t *__restrict __format, ...) noexcept (true) __asm__ ("" "__isoc23_swscanf")
+extern int swscanf (const wchar_t *__restrict __s, const wchar_t *__restrict __format, ...) noexcept (true) __asm__ ("" "__isoc99_swscanf")
 
 
                                                           ;
-# 851 "/usr/include/wchar.h" 3 4
+# 688 "/usr/include/wchar.h" 3 4
 extern int vfwscanf (__FILE *__restrict __s,
        const wchar_t *__restrict __format,
        __gnuc_va_list __arg)
@@ -30938,19 +30791,25 @@ extern int vswscanf (const wchar_t *__restrict __s,
        const wchar_t *__restrict __format,
        __gnuc_va_list __arg)
      noexcept (true) ;
-# 875 "/usr/include/wchar.h" 3 4
-extern int vfwscanf (__FILE *__restrict __s, const wchar_t *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc23_vfwscanf")
+
+
+
+
+
+
+
+extern int vfwscanf (__FILE *__restrict __s, const wchar_t *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vfwscanf")
 
 
                                                           ;
-extern int vwscanf (const wchar_t *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc23_vwscanf")
+extern int vwscanf (const wchar_t *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vwscanf")
 
                                                           ;
-extern int vswscanf (const wchar_t *__restrict __s, const wchar_t *__restrict __format, __gnuc_va_list __arg) noexcept (true) __asm__ ("" "__isoc23_vswscanf")
+extern int vswscanf (const wchar_t *__restrict __s, const wchar_t *__restrict __format, __gnuc_va_list __arg) noexcept (true) __asm__ ("" "__isoc99_vswscanf")
 
 
                                                           ;
-# 935 "/usr/include/wchar.h" 3 4
+# 744 "/usr/include/wchar.h" 3 4
 extern wint_t fgetwc (__FILE *__stream);
 extern wint_t getwc (__FILE *__stream);
 
@@ -30996,7 +30855,7 @@ extern int fputws (const wchar_t *__restrict __ws,
 
 
 extern wint_t ungetwc (wint_t __wc, __FILE *__stream);
-# 990 "/usr/include/wchar.h" 3 4
+# 799 "/usr/include/wchar.h" 3 4
 extern wint_t getwc_unlocked (__FILE *__stream);
 extern wint_t getwchar_unlocked (void);
 
@@ -31015,10 +30874,10 @@ extern wint_t fgetwc_unlocked (__FILE *__stream);
 
 
 extern wint_t fputwc_unlocked (wchar_t __wc, __FILE *__stream);
-# 1016 "/usr/include/wchar.h" 3 4
+# 825 "/usr/include/wchar.h" 3 4
 extern wint_t putwc_unlocked (wchar_t __wc, __FILE *__stream);
 extern wint_t putwchar_unlocked (wchar_t __wc);
-# 1026 "/usr/include/wchar.h" 3 4
+# 835 "/usr/include/wchar.h" 3 4
 extern wchar_t *fgetws_unlocked (wchar_t *__restrict __ws, int __n,
      __FILE *__restrict __stream);
 
@@ -31047,7 +30906,7 @@ extern size_t wcsftime_l (wchar_t *__restrict __s, size_t __maxsize,
      const wchar_t *__restrict __format,
      const struct tm *__restrict __tp,
      locale_t __loc) noexcept (true);
-# 1073 "/usr/include/wchar.h" 3 4
+# 875 "/usr/include/wchar.h" 3 4
 }
 # 45 "/tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cwchar" 2 3
 # 62 "/tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cwchar" 3
@@ -39156,14 +39015,14 @@ namespace __cxx11 {
 # 30 "/usr/include/sched.h" 2 3 4
 # 43 "/usr/include/sched.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/sched.h" 1 3 4
-# 80 "/usr/include/x86_64-linux-gnu/bits/sched.h" 3 4
+# 76 "/usr/include/x86_64-linux-gnu/bits/sched.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h" 1 3 4
 # 23 "/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h" 3 4
 struct sched_param
 {
   int sched_priority;
 };
-# 81 "/usr/include/x86_64-linux-gnu/bits/sched.h" 2 3 4
+# 77 "/usr/include/x86_64-linux-gnu/bits/sched.h" 2 3 4
 
 extern "C" {
 
@@ -39302,7 +39161,7 @@ struct timex
 extern "C" {
 
 
-extern int clock_adjtime (__clockid_t __clock_id, struct timex *__utx) noexcept (true) __attribute__ ((__nonnull__ (2)));
+extern int clock_adjtime (__clockid_t __clock_id, struct timex *__utx) noexcept (true);
 # 90 "/usr/include/x86_64-linux-gnu/bits/time.h" 3 4
 }
 # 34 "/usr/include/time.h" 2 3 4
@@ -39382,8 +39241,7 @@ extern time_t mktime (struct tm *__tp) noexcept (true);
 # 100 "/usr/include/time.h" 3 4
 extern size_t strftime (char *__restrict __s, size_t __maxsize,
    const char *__restrict __format,
-   const struct tm *__restrict __tp)
-   noexcept (true) __attribute__ ((__nonnull__ (1, 3, 4)));
+   const struct tm *__restrict __tp) noexcept (true);
 
 
 
@@ -39418,7 +39276,7 @@ extern struct tm *gmtime (const time_t *__timer) noexcept (true);
 
 
 extern struct tm *localtime (const time_t *__timer) noexcept (true);
-# 155 "/usr/include/time.h" 3 4
+# 154 "/usr/include/time.h" 3 4
 extern struct tm *gmtime_r (const time_t *__restrict __timer,
        struct tm *__restrict __tp) noexcept (true);
 
@@ -39426,13 +39284,13 @@ extern struct tm *gmtime_r (const time_t *__restrict __timer,
 
 extern struct tm *localtime_r (const time_t *__restrict __timer,
           struct tm *__restrict __tp) noexcept (true);
-# 180 "/usr/include/time.h" 3 4
+# 179 "/usr/include/time.h" 3 4
 extern char *asctime (const struct tm *__tp) noexcept (true);
 
 
 
 extern char *ctime (const time_t *__timer) noexcept (true);
-# 198 "/usr/include/time.h" 3 4
+# 197 "/usr/include/time.h" 3 4
 extern char *asctime_r (const struct tm *__restrict __tp,
    char *__restrict __buf) noexcept (true);
 
@@ -39440,7 +39298,7 @@ extern char *asctime_r (const struct tm *__restrict __tp,
 
 extern char *ctime_r (const time_t *__restrict __timer,
         char *__restrict __buf) noexcept (true);
-# 218 "/usr/include/time.h" 3 4
+# 217 "/usr/include/time.h" 3 4
 extern char *__tzname[2];
 extern int __daylight;
 extern long int __timezone;
@@ -39458,19 +39316,13 @@ extern void tzset (void) noexcept (true);
 
 extern int daylight;
 extern long int timezone;
-# 247 "/usr/include/time.h" 3 4
+# 249 "/usr/include/time.h" 3 4
 extern time_t timegm (struct tm *__tp) noexcept (true);
-# 264 "/usr/include/time.h" 3 4
+
 extern time_t timelocal (struct tm *__tp) noexcept (true);
-
-
-
-
-
-
-
+# 262 "/usr/include/time.h" 3 4
 extern int dysize (int __year) noexcept (true) __attribute__ ((__const__));
-# 282 "/usr/include/time.h" 3 4
+# 272 "/usr/include/time.h" 3 4
 extern int nanosleep (const struct timespec *__requested_time,
         struct timespec *__remaining);
 
@@ -39478,17 +39330,16 @@ extern int nanosleep (const struct timespec *__requested_time,
 extern int clock_getres (clockid_t __clock_id, struct timespec *__res) noexcept (true);
 
 
-extern int clock_gettime (clockid_t __clock_id, struct timespec *__tp)
-     noexcept (true) __attribute__ ((__nonnull__ (2)));
+extern int clock_gettime (clockid_t __clock_id, struct timespec *__tp) noexcept (true);
 
 
 extern int clock_settime (clockid_t __clock_id, const struct timespec *__tp)
-     noexcept (true) __attribute__ ((__nonnull__ (2)));
-# 324 "/usr/include/time.h" 3 4
+     noexcept (true);
+# 311 "/usr/include/time.h" 3 4
 extern int clock_nanosleep (clockid_t __clock_id, int __flags,
        const struct timespec *__req,
        struct timespec *__rem);
-# 339 "/usr/include/time.h" 3 4
+# 326 "/usr/include/time.h" 3 4
 extern int clock_getcpuclockid (pid_t __pid, clockid_t *__clock_id) noexcept (true);
 
 
@@ -39510,7 +39361,7 @@ extern int timer_settime (timer_t __timerid, int __flags,
 
 extern int timer_gettime (timer_t __timerid, struct itimerspec *__value)
      noexcept (true);
-# 377 "/usr/include/time.h" 3 4
+# 364 "/usr/include/time.h" 3 4
 extern int timer_getoverrun (timer_t __timerid) noexcept (true);
 
 
@@ -39520,14 +39371,14 @@ extern int timer_getoverrun (timer_t __timerid) noexcept (true);
 
 extern int timespec_get (struct timespec *__ts, int __base)
      noexcept (true) __attribute__ ((__nonnull__ (1)));
-# 400 "/usr/include/time.h" 3 4
+# 387 "/usr/include/time.h" 3 4
 extern int timespec_getres (struct timespec *__ts, int __base)
      noexcept (true);
-# 426 "/usr/include/time.h" 3 4
+# 413 "/usr/include/time.h" 3 4
 extern int getdate_err;
-# 435 "/usr/include/time.h" 3 4
+# 422 "/usr/include/time.h" 3 4
 extern struct tm *getdate (const char *__string);
-# 449 "/usr/include/time.h" 3 4
+# 436 "/usr/include/time.h" 3 4
 extern int getdate_r (const char *__restrict __string,
         struct tm *__restrict __resbufp);
 
@@ -56054,15 +55905,15 @@ private:
 
 
 
+
+
 typedef float T;
 typedef int IN;
 typedef uint16_t UIT;
 
-
-
-
-
-
+typedef ap_uint<16> band_t;
+typedef ap_uint<32> dist_t;
+# 28 "../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral.h"
 typedef ap_axiu<32, 4, 5, 5> AXI_VAL;
 
 
@@ -56075,91 +55926,25 @@ typedef union {
  T out;
 } conv_t;
 
-void hyperspectral_hw(UIT image[2][1024][180], IN refPixel[2], IN maxBrightnessIdx[2], T& minDistance, IN closestPixelIdx[2]);
 __attribute__((sdx_kernel("hyperspectral_hw_wrapped", 0))) void hyperspectral_hw_wrapped (hls::stream<AXI_VAL>& in_stream, hls::stream<AXI_VAL>& out_stream);
+void calculate_distance(band_t ref_band1, band_t ref_band2, band_t band1, band_t band2, dist_t &distance);
 # 9 "../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp" 2
 
-void convert2_int (WORD_MEM &w, int in[((32 / 8) / sizeof(T))]);
-
-void calculate_distance_stream(UIT image[2][1024][180], IN refPixel[2], T& minDistance, int i, int j) {
-
-    hls::stream<T> sum_stream;
-
-    L3:for (int k = 0; k < 180; k ++) {
-        T diff = (T)(image[i][j][k]) - (T)(image[refPixel[0]][refPixel[1]][k]);
-        sum_stream.write(diff * diff);
-    }
-
-    T sum = 0.0f;
-
-    L4:for (int k = 0; k < 180; k++) {
-#pragma HLS PIPELINE II=1
- sum += sum_stream.read();
-    }
-
-    T distance = hls::sqrt(sum);
-    minDistance = distance;
-
-}
-
-void update_closest_pixel(T distance, T& minDistance, IN closestPixelIdx[2], IN refPixel[2], int i, int j) {
-    if (distance < minDistance && (i != refPixel[0] || j != refPixel[1])) {
-        minDistance = distance;
-        closestPixelIdx[0] = i;
-        closestPixelIdx[1] = j;
-    }
-}
-
-void calculate_brightness_stream (UIT image[2][1024][180], uint32_t& maxBrightness, int i, int j) {
-
-    uint32_t current_brightness = 0;
-    hls::stream<uint32_t> brightness_stream;
-
-    L5: for (int k = 0; k < 180; k++) {
-        brightness_stream.write(image[i][j][k]);
-    }
-
-    L6: for (int k = 0; k < 180; k++) {
-        current_brightness += brightness_stream.read();
-    }
-
-    maxBrightness = current_brightness;
-
-}
-
-void hyperspectral_hw(UIT image[2][1024][180], IN refPixel[2], IN maxBrightnessIdx[2], T& minDistance, IN closestPixelIdx[2]) {
-
-    minDistance = std::numeric_limits<T>::max();
-    uint32_t maxBrightness = 0;
-
-    L1:for (int i = 0; i < 2; i++) {
-        L2:for (int j = 0; j < 1024; j++) {
-            T distance;
-
-            calculate_distance_stream (image, refPixel, distance, i, j);
-
-            update_closest_pixel (distance, minDistance, closestPixelIdx, refPixel, i, j);
-
-            uint32_t brightness;
-            calculate_brightness_stream (image, brightness, i, j);
-
-            if (brightness > maxBrightness) {
-                maxBrightness = brightness;
-                maxBrightnessIdx[0] = i;
-                maxBrightnessIdx[1] = j;
-            }
-        }
-   }
+void calculate_distance(band_t ref_band1, band_t ref_band2, band_t band1, band_t band2, dist_t &distance) {
+#pragma HLS INLINE
+ dist_t diff1 = ref_band1 - band1;
+    dist_t diff2 = ref_band2 - band2;
+    distance += diff1 * diff1 + diff2 * diff2;
 }
 
 __attribute__((sdx_kernel("hyperspectral_hw_wrapped", 0))) void hyperspectral_hw_wrapped (hls::stream<AXI_VAL>& in_stream, hls::stream<AXI_VAL>& out_stream) {
-#line 16 "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/csynth.tcl"
+#line 17 "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/csynth.tcl"
 #pragma HLSDIRECTIVE TOP name=hyperspectral_hw_wrapped
-# 83 "../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp"
+# 17 "../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp"
 
-#line 6 "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/directives.tcl"
+#line 6 "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/directives.tcl"
 #pragma HLSDIRECTIVE TOP name=hyperspectral_hw_wrapped
-# 83 "../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp"
+# 17 "../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp"
 
 
 #pragma HLS INTERFACE s_axilite port=return bundle=CONTROL_BUS
@@ -56170,94 +55955,116 @@ __attribute__((sdx_kernel("hyperspectral_hw_wrapped", 0))) void hyperspectral_hw
     ap_uint<5> id;
     ap_uint<5> dest;
 
-    UIT image[2][1024][180];
-    IN refPixel[2];
-    IN maxBrightnessIdx [2];
-    T minDistance;
-    IN closestPixel [2];
+    dist_t min_distance = 0xFFFFFFFF;
+
+    int n_fila = 0;
+
+    int fila, columna;
+    int min_pixel_index_i = 0;
+    int min_pixel_index_j = 0;
+    int current_pixel_index = 0;
+
+    band_t current_pixel[180];
+    band_t ref_pixel [180];
+    band_t closest_pixel[180];
+    dist_t distance;
+
+    AXI_VAL in_val;
+    AXI_VAL out_val;
 
 
-    VITIS_LOOP_100_1: for (int i = 0; i < 2; i++) {
-        VITIS_LOOP_101_2: for (int j = 0; j < 1024; j++) {
-            VITIS_LOOP_102_3: for (int k = 0; k < 180; k += 2) {
+
+    VITIS_LOOP_46_1: for (int i = 0; i < 180; i += 2) {
 #pragma HLS PIPELINE II=1
  WORD_MEM w = in_stream.read().data;
-                VITIS_LOOP_105_4: for (int m = 0; m < ((32 / 8) / sizeof(uint16_t)); m++) {
-                    image[i][j][k+m] = w((m+1)*16-1, m*16);
+     ref_pixel[i] = w(15,0);
+     ref_pixel[i+1] = w(31,16);
+    }
+
+
+
+
+    VITIS_LOOP_56_2: for (int idx=0; idx< (2 * 1024); idx++) {
+#pragma HLS PIPELINE II=1
+ VITIS_LOOP_58_3: for (int j = 0; j < 180; j += 2) {
+            if (j==0) {
+                distance = 0;
+                fila = idx / 1024;
+                columna = idx % 1024;
+            }
+      WORD_MEM w = in_stream.read().data;
+            current_pixel[j] = w(15,0);
+      current_pixel[j+1] = w(31,16);
+      calculate_distance (ref_pixel[j], ref_pixel[j+1], current_pixel[j], current_pixel[j+1], distance);
+
+            if (j == 180 -2) {
+                distance = hls::sqrt(distance);
+                if (distance < min_distance) {
+                    min_distance = distance;
+                    min_pixel_index_i = fila;
+                    min_pixel_index_j = columna;
+
+
+
+                    std::copy(current_pixel, current_pixel + 180, closest_pixel);
                 }
             }
-        }
+     }
     }
 
 
-
-    VITIS_LOOP_114_5: for (int i = 0; i < 2; i++) {
-        AXI_VAL e = in_stream.read();
-        WORD_MEM w = e.data;
-        conv_t c;
-        c.in = w;
-        refPixel[i] = c.out;
-    }
-
-
-
-
-    hyperspectral_hw (image, refPixel, maxBrightnessIdx, minDistance, closestPixel);
-
-
-
-    VITIS_LOOP_129_6: for (int i = 0; i < 2; i+=((32 / 8 ) / sizeof(int))) {
+    VITIS_LOOP_85_4: for (int i = 0; i < 180; i+=2) {
 #pragma HLS PIPELINE II=1
  AXI_VAL e;
-        convert2_int(e.data, &maxBrightnessIdx[i]);
+        WORD_MEM w;
+        w(15,0) = closest_pixel[i];
+        w(31,16) = closest_pixel[i+1];
+        e.data = w;
         e.strb = -1;
         e.keep = 15;
-        e.user = 4;
-        e.last = 0;
+        e.user = 0;
+        e.last = (i >= 180 -2);
         e.id = 5;
         e.dest = 6;
         out_stream.write(e);
     }
 
 
-
     AXI_VAL e;
-    WORD_MEM w = 0;
-    conv_t c;
-    c.out = minDistance;
-    w(31, 0) = c.in;
+    WORD_MEM w;
+
+    w = min_pixel_index_i;
     e.data = w;
     e.strb = -1;
-    e.keep = 15;
-    e.user = 4;
+    e.keep = 0;
+    e.user = 0;
     e.last = 0;
     e.id = 7;
     e.dest = 8;
     out_stream.write(e);
 
+    w = min_pixel_index_j;
+    e.data = w;
+    e.strb = -1;
+    e.keep = 0;
+    e.user = 0;
+    e.last = 0;
+    e.id = 9;
+    e.dest = 10;
+    out_stream.write(e);
 
 
 
-    VITIS_LOOP_161_7: for (int i = 0; i < 2; i+=((32 / 8 ) / sizeof(int))) {
-#pragma HLS PIPELINE II=1
- AXI_VAL e;
-        convert2_int(e.data, &closestPixel[i]);
-        e.strb = -1;
-        e.keep = 15;
-        e.user = 4;
-        e.last = (i == 1);
-        e.id = 9;
-        e.dest = 10;
-        out_stream.write(e);
-    }
-}
-
-void convert2_int (WORD_MEM &w, int in[((32 / 8 ) / sizeof(int))]) {
     conv_t c;
-    WORD_MEM _w;
-    convert2word_intlabel0:for (int k=0; k<((32 / 8 ) / sizeof(int));k++) {
-        c.out = in[k];
-        _w((k+1)*32-1,k*32)= c.in;
-    }
-    w = _w;
+    c.out = min_distance;
+    w = c.in;
+    e.data = w;
+    e.strb = -1;
+    e.keep = 0;
+    e.user = 0;
+    e.last = 0;
+    e.id = 11;
+    e.dest = 12;
+    out_stream.write(e);
+
 }

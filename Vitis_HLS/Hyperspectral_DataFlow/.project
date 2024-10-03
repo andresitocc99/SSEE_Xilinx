@@ -29,52 +29,52 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/.apc/.src</location>
+			<location>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/.apc/.tb</location>
+			<location>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/.tcls</location>
+			<location>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/hyperspectral.h</name>
 			<type>1</type>
-			<location>/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral.h</location>
+			<location>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral.h</location>
 		</link>
 		<link>
 			<name>source/hyperspectral_accel.cpp</name>
 			<type>1</type>
-			<location>/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</location>
+			<location>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp</location>
 		</link>
 		<link>
 			<name>testbench/cuboH.bin</name>
 			<type>1</type>
-			<location>/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin</location>
+			<location>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin</location>
 		</link>
 		<link>
 			<name>testbench/hyperspectral_test.cpp</name>
 			<type>1</type>
-			<location>/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp</location>
+			<location>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/solution1.directive</location>
+			<location>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/directives.tcl</location>
+			<location>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/script.tcl</location>
+			<location>/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

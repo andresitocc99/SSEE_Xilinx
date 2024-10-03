@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'hyperspectral_hw_wrapped'" level="0">
-<item name = "Date">Wed Jul 10 00:10:06 2024
+<item name = "Date">Thu Oct  3 02:29:21 2024
 </item>
 <item name = "Version">2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)</item>
 <item name = "Project">Hyperspectral_DataFlow</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.200 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.166 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2484261, 2484261, 24.843 ms, 24.843 ms, 2484262, 2484262, no</column>
+<column name="">184617, 184617, 1.846 ms, 1.846 ms, 184618, 184618, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,6 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- L1_L2">2299904, 2299904, 1123, -, -, 2048, no</column>
 </table>
 </item>
 </section>

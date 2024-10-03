@@ -133,7 +133,6 @@ obj/apatb_hyperspectral_hw_wrapped.o: apatb_hyperspectral_hw_wrapped.cpp \
  /tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdint \
  /tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stdint.h \
  /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/allocator.h \
  /tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++allocator.h \
  /tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/new_allocator.h \
@@ -697,8 +696,6 @@ obj/apatb_hyperspectral_hw_wrapped.o: apatb_hyperspectral_hw_wrapped.cpp \
 /usr/include/stdint.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
 /tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/allocator.h:
 

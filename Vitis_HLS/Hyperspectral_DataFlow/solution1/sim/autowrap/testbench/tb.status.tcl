@@ -1,1 +1,1 @@
-set ::AESL_AUTOSIM::gTopFileName /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/./sim/autowrap/testbench/hyperspectral_accel.cpp_pre.cpp.tb.cpp
+set ::AESL_AUTOSIM::gTopFileName /home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/./sim/autowrap/testbench/hyperspectral_accel.cpp_pre.cpp.tb.cpp

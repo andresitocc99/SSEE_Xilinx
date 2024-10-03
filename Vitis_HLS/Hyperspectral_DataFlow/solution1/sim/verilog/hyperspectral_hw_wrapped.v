@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="hyperspectral_hw_wrapped_hyperspectral_hw_wrapped,hls_ip_2022_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu3eg-sbva484-1-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.200000,HLS_SYN_LAT=2484261,HLS_SYN_TPT=none,HLS_SYN_MEM=340,HLS_SYN_DSP=0,HLS_SYN_FF=2003,HLS_SYN_LUT=3842,HLS_VERSION=2022_1}" *)
+(* CORE_GENERATION_INFO="hyperspectral_hw_wrapped_hyperspectral_hw_wrapped,hls_ip_2022_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu3eg-sbva484-1-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.166250,HLS_SYN_LAT=184617,HLS_SYN_TPT=none,HLS_SYN_MEM=1,HLS_SYN_DSP=0,HLS_SYN_FF=15961,HLS_SYN_LUT=15231,HLS_VERSION=2022_1}" *)
 
 module hyperspectral_hw_wrapped (
         ap_clk,
@@ -50,43 +50,108 @@ module hyperspectral_hw_wrapped (
         interrupt
 );
 
-parameter    ap_ST_fsm_state1 = 37'd1;
-parameter    ap_ST_fsm_state2 = 37'd2;
-parameter    ap_ST_fsm_state3 = 37'd4;
-parameter    ap_ST_fsm_state4 = 37'd8;
-parameter    ap_ST_fsm_state5 = 37'd16;
-parameter    ap_ST_fsm_state6 = 37'd32;
-parameter    ap_ST_fsm_state7 = 37'd64;
-parameter    ap_ST_fsm_state8 = 37'd128;
-parameter    ap_ST_fsm_state9 = 37'd256;
-parameter    ap_ST_fsm_state10 = 37'd512;
-parameter    ap_ST_fsm_state11 = 37'd1024;
-parameter    ap_ST_fsm_state12 = 37'd2048;
-parameter    ap_ST_fsm_state13 = 37'd4096;
-parameter    ap_ST_fsm_state14 = 37'd8192;
-parameter    ap_ST_fsm_state15 = 37'd16384;
-parameter    ap_ST_fsm_state16 = 37'd32768;
-parameter    ap_ST_fsm_state17 = 37'd65536;
-parameter    ap_ST_fsm_state18 = 37'd131072;
-parameter    ap_ST_fsm_state19 = 37'd262144;
-parameter    ap_ST_fsm_state20 = 37'd524288;
-parameter    ap_ST_fsm_state21 = 37'd1048576;
-parameter    ap_ST_fsm_state22 = 37'd2097152;
-parameter    ap_ST_fsm_state23 = 37'd4194304;
-parameter    ap_ST_fsm_state24 = 37'd8388608;
-parameter    ap_ST_fsm_state25 = 37'd16777216;
-parameter    ap_ST_fsm_state26 = 37'd33554432;
-parameter    ap_ST_fsm_state27 = 37'd67108864;
-parameter    ap_ST_fsm_state28 = 37'd134217728;
-parameter    ap_ST_fsm_state29 = 37'd268435456;
-parameter    ap_ST_fsm_state30 = 37'd536870912;
-parameter    ap_ST_fsm_state31 = 37'd1073741824;
-parameter    ap_ST_fsm_state32 = 37'd2147483648;
-parameter    ap_ST_fsm_state33 = 37'd4294967296;
-parameter    ap_ST_fsm_state34 = 37'd8589934592;
-parameter    ap_ST_fsm_state35 = 37'd17179869184;
-parameter    ap_ST_fsm_state36 = 37'd34359738368;
-parameter    ap_ST_fsm_state37 = 37'd68719476736;
+parameter    ap_ST_fsm_state1 = 102'd1;
+parameter    ap_ST_fsm_state2 = 102'd2;
+parameter    ap_ST_fsm_state3 = 102'd4;
+parameter    ap_ST_fsm_state4 = 102'd8;
+parameter    ap_ST_fsm_state5 = 102'd16;
+parameter    ap_ST_fsm_state6 = 102'd32;
+parameter    ap_ST_fsm_state7 = 102'd64;
+parameter    ap_ST_fsm_state8 = 102'd128;
+parameter    ap_ST_fsm_state9 = 102'd256;
+parameter    ap_ST_fsm_state10 = 102'd512;
+parameter    ap_ST_fsm_state11 = 102'd1024;
+parameter    ap_ST_fsm_state12 = 102'd2048;
+parameter    ap_ST_fsm_state13 = 102'd4096;
+parameter    ap_ST_fsm_state14 = 102'd8192;
+parameter    ap_ST_fsm_state15 = 102'd16384;
+parameter    ap_ST_fsm_state16 = 102'd32768;
+parameter    ap_ST_fsm_state17 = 102'd65536;
+parameter    ap_ST_fsm_state18 = 102'd131072;
+parameter    ap_ST_fsm_state19 = 102'd262144;
+parameter    ap_ST_fsm_state20 = 102'd524288;
+parameter    ap_ST_fsm_state21 = 102'd1048576;
+parameter    ap_ST_fsm_state22 = 102'd2097152;
+parameter    ap_ST_fsm_state23 = 102'd4194304;
+parameter    ap_ST_fsm_state24 = 102'd8388608;
+parameter    ap_ST_fsm_state25 = 102'd16777216;
+parameter    ap_ST_fsm_state26 = 102'd33554432;
+parameter    ap_ST_fsm_state27 = 102'd67108864;
+parameter    ap_ST_fsm_state28 = 102'd134217728;
+parameter    ap_ST_fsm_state29 = 102'd268435456;
+parameter    ap_ST_fsm_state30 = 102'd536870912;
+parameter    ap_ST_fsm_state31 = 102'd1073741824;
+parameter    ap_ST_fsm_state32 = 102'd2147483648;
+parameter    ap_ST_fsm_state33 = 102'd4294967296;
+parameter    ap_ST_fsm_state34 = 102'd8589934592;
+parameter    ap_ST_fsm_state35 = 102'd17179869184;
+parameter    ap_ST_fsm_state36 = 102'd34359738368;
+parameter    ap_ST_fsm_state37 = 102'd68719476736;
+parameter    ap_ST_fsm_state38 = 102'd137438953472;
+parameter    ap_ST_fsm_state39 = 102'd274877906944;
+parameter    ap_ST_fsm_state40 = 102'd549755813888;
+parameter    ap_ST_fsm_state41 = 102'd1099511627776;
+parameter    ap_ST_fsm_state42 = 102'd2199023255552;
+parameter    ap_ST_fsm_state43 = 102'd4398046511104;
+parameter    ap_ST_fsm_state44 = 102'd8796093022208;
+parameter    ap_ST_fsm_state45 = 102'd17592186044416;
+parameter    ap_ST_fsm_state46 = 102'd35184372088832;
+parameter    ap_ST_fsm_state47 = 102'd70368744177664;
+parameter    ap_ST_fsm_state48 = 102'd140737488355328;
+parameter    ap_ST_fsm_state49 = 102'd281474976710656;
+parameter    ap_ST_fsm_state50 = 102'd562949953421312;
+parameter    ap_ST_fsm_state51 = 102'd1125899906842624;
+parameter    ap_ST_fsm_state52 = 102'd2251799813685248;
+parameter    ap_ST_fsm_state53 = 102'd4503599627370496;
+parameter    ap_ST_fsm_state54 = 102'd9007199254740992;
+parameter    ap_ST_fsm_state55 = 102'd18014398509481984;
+parameter    ap_ST_fsm_state56 = 102'd36028797018963968;
+parameter    ap_ST_fsm_state57 = 102'd72057594037927936;
+parameter    ap_ST_fsm_state58 = 102'd144115188075855872;
+parameter    ap_ST_fsm_state59 = 102'd288230376151711744;
+parameter    ap_ST_fsm_state60 = 102'd576460752303423488;
+parameter    ap_ST_fsm_state61 = 102'd1152921504606846976;
+parameter    ap_ST_fsm_state62 = 102'd2305843009213693952;
+parameter    ap_ST_fsm_state63 = 102'd4611686018427387904;
+parameter    ap_ST_fsm_state64 = 102'd9223372036854775808;
+parameter    ap_ST_fsm_state65 = 102'd18446744073709551616;
+parameter    ap_ST_fsm_state66 = 102'd36893488147419103232;
+parameter    ap_ST_fsm_state67 = 102'd73786976294838206464;
+parameter    ap_ST_fsm_state68 = 102'd147573952589676412928;
+parameter    ap_ST_fsm_state69 = 102'd295147905179352825856;
+parameter    ap_ST_fsm_state70 = 102'd590295810358705651712;
+parameter    ap_ST_fsm_state71 = 102'd1180591620717411303424;
+parameter    ap_ST_fsm_state72 = 102'd2361183241434822606848;
+parameter    ap_ST_fsm_state73 = 102'd4722366482869645213696;
+parameter    ap_ST_fsm_state74 = 102'd9444732965739290427392;
+parameter    ap_ST_fsm_state75 = 102'd18889465931478580854784;
+parameter    ap_ST_fsm_state76 = 102'd37778931862957161709568;
+parameter    ap_ST_fsm_state77 = 102'd75557863725914323419136;
+parameter    ap_ST_fsm_state78 = 102'd151115727451828646838272;
+parameter    ap_ST_fsm_state79 = 102'd302231454903657293676544;
+parameter    ap_ST_fsm_state80 = 102'd604462909807314587353088;
+parameter    ap_ST_fsm_state81 = 102'd1208925819614629174706176;
+parameter    ap_ST_fsm_state82 = 102'd2417851639229258349412352;
+parameter    ap_ST_fsm_state83 = 102'd4835703278458516698824704;
+parameter    ap_ST_fsm_state84 = 102'd9671406556917033397649408;
+parameter    ap_ST_fsm_state85 = 102'd19342813113834066795298816;
+parameter    ap_ST_fsm_state86 = 102'd38685626227668133590597632;
+parameter    ap_ST_fsm_state87 = 102'd77371252455336267181195264;
+parameter    ap_ST_fsm_state88 = 102'd154742504910672534362390528;
+parameter    ap_ST_fsm_state89 = 102'd309485009821345068724781056;
+parameter    ap_ST_fsm_state90 = 102'd618970019642690137449562112;
+parameter    ap_ST_fsm_state91 = 102'd1237940039285380274899124224;
+parameter    ap_ST_fsm_state92 = 102'd2475880078570760549798248448;
+parameter    ap_ST_fsm_state93 = 102'd4951760157141521099596496896;
+parameter    ap_ST_fsm_state94 = 102'd9903520314283042199192993792;
+parameter    ap_ST_fsm_state95 = 102'd19807040628566084398385987584;
+parameter    ap_ST_fsm_state96 = 102'd39614081257132168796771975168;
+parameter    ap_ST_fsm_state97 = 102'd79228162514264337593543950336;
+parameter    ap_ST_fsm_state98 = 102'd158456325028528675187087900672;
+parameter    ap_ST_fsm_state99 = 102'd316912650057057350374175801344;
+parameter    ap_ST_fsm_state100 = 102'd633825300114114700748351602688;
+parameter    ap_ST_fsm_state101 = 102'd1267650600228229401496703205376;
+parameter    ap_ST_fsm_state102 = 102'd2535301200456458802993406410752;
 parameter    C_S_AXI_CONTROL_BUS_DATA_WIDTH = 32;
 parameter    C_S_AXI_CONTROL_BUS_ADDR_WIDTH = 4;
 parameter    C_S_AXI_DATA_WIDTH = 32;
@@ -137,240 +202,710 @@ output   interrupt;
 wire    ap_start;
 reg    ap_done;
 reg    ap_idle;
-(* fsm_encoding = "none" *) reg   [36:0] ap_CS_fsm;
+(* fsm_encoding = "none" *) reg   [101:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    ap_ready;
 reg    out_stream_TDATA_blk_n;
-wire    ap_CS_fsm_state33;
-wire    ap_CS_fsm_state34;
-wire    ap_CS_fsm_state7;
-wire  signed [18:0] grp_fu_749_p2;
-reg   [18:0] mul_ln17_reg_870;
-wire    ap_CS_fsm_state10;
-wire   [0:0] cmp1_i_i_fu_437_p2;
-reg   [0:0] cmp1_i_i_reg_875;
-wire    ap_CS_fsm_state11;
-wire   [0:0] icmp_ln64_fu_463_p2;
-reg   [0:0] icmp_ln64_reg_883;
-wire   [0:0] icmp_ln63_fu_442_p2;
-wire   [0:0] cmp1_i_i_mid1_fu_501_p2;
-reg   [0:0] cmp1_i_i_mid1_reg_888;
-wire   [0:0] trunc_ln41_fu_506_p1;
-reg   [0:0] trunc_ln41_reg_893;
-wire   [0:0] icmp_ln34_fu_518_p2;
-reg   [0:0] icmp_ln34_reg_898;
-wire   [9:0] trunc_ln34_2_fu_523_p1;
-reg   [9:0] trunc_ln34_2_reg_903;
-wire  signed [18:0] grp_fu_755_p3;
-reg   [18:0] mul_ln41_reg_908;
-wire    ap_CS_fsm_state14;
-wire   [31:0] grp_fu_349_p2;
-reg   [31:0] minDistance_3_reg_917;
-wire    ap_CS_fsm_state28;
-reg   [31:0] minDistance_load_1_reg_924;
-wire    ap_CS_fsm_state29;
-reg   [31:0] i_04_i631_load_reg_931;
-wire    ap_CS_fsm_state31;
-reg   [31:0] j_02_i633_load_reg_936;
-wire   [31:0] w_V_fu_744_p1;
-reg   [31:0] i_04_i627_load_reg_946;
-wire    ap_CS_fsm_state35;
-reg   [31:0] j_02_i629_load_reg_951;
-reg   [18:0] image_address0;
-reg    image_ce0;
-reg    image_we0;
-wire   [15:0] image_q0;
-reg   [18:0] image_address1;
-reg    image_ce1;
-reg    image_we1;
-wire   [15:0] image_q1;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_start;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_done;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_idle;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_ready;
-wire   [18:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_d0;
-wire   [18:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_address1;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_ce1;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_we1;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_d1;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_in_stream_TREADY;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_start;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_done;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_idle;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_ready;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_in_stream_TREADY;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_1_034_out;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_1_034_out_ap_vld;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_0_033_out;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_0_033_out_ap_vld;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_start;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_done;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_idle;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_ready;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_sum_stream_din;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_sum_stream_write;
-wire   [18:0] grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_image_r_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_image_r_ce0;
-wire   [18:0] grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_image_r_address1;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_image_r_ce1;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_start;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_done;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_idle;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_ready;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_sum_stream_read;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_sum_out;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_sum_out_ap_vld;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_start;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_done;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_idle;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_ready;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_brightness_stream_din;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_brightness_stream_write;
-wire   [18:0] grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_image_r_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_image_r_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_start;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_done;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_idle;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_ready;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_brightness_stream_read;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_current_brightness_out;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_current_brightness_out_ap_vld;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_start;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_done;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_idle;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_ready;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TREADY;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TDATA;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID;
-wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TKEEP;
-wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TSTRB;
-wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TUSER;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TLAST;
-wire   [4:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TID;
-wire   [4:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TDEST;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_grp_fu_956_p_din0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_grp_fu_956_p_ce;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_start;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_done;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_idle;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_ready;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TREADY;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TDATA;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID;
-wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TKEEP;
-wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TSTRB;
-wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TUSER;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TLAST;
-wire   [4:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TID;
-wire   [4:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TDEST;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_grp_fu_956_p_din0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_grp_fu_956_p_ce;
-reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_start_reg;
-reg   [36:0] ap_NS_fsm;
-wire    ap_NS_fsm_state2;
-wire    ap_CS_fsm_state3;
-reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_start_reg;
+wire    ap_CS_fsm_state99;
+wire    ap_CS_fsm_state100;
+wire    ap_CS_fsm_state101;
+wire    ap_CS_fsm_state102;
+wire    ap_CS_fsm_state4;
+wire   [15:0] ref_pixel_V_q1;
+reg   [15:0] ref_pixel_V_load_reg_5108;
 wire    ap_CS_fsm_state5;
+wire   [15:0] ref_pixel_V_q0;
+reg   [15:0] ref_pixel_V_load_1_reg_5113;
+reg   [15:0] ref_pixel_V_load_2_reg_5128;
 wire    ap_CS_fsm_state6;
-reg    grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_start_reg;
+reg   [15:0] ref_pixel_V_load_3_reg_5133;
+reg   [15:0] ref_pixel_V_load_4_reg_5148;
+wire    ap_CS_fsm_state7;
+reg   [15:0] ref_pixel_V_load_5_reg_5153;
+reg   [15:0] ref_pixel_V_load_6_reg_5168;
+wire    ap_CS_fsm_state8;
+reg   [15:0] ref_pixel_V_load_7_reg_5173;
+reg   [15:0] ref_pixel_V_load_8_reg_5188;
+wire    ap_CS_fsm_state9;
+reg   [15:0] ref_pixel_V_load_9_reg_5193;
+reg   [15:0] ref_pixel_V_load_10_reg_5208;
+wire    ap_CS_fsm_state10;
+reg   [15:0] ref_pixel_V_load_11_reg_5213;
+reg   [15:0] ref_pixel_V_load_12_reg_5228;
+wire    ap_CS_fsm_state11;
+reg   [15:0] ref_pixel_V_load_13_reg_5233;
+reg   [15:0] ref_pixel_V_load_14_reg_5248;
+wire    ap_CS_fsm_state12;
+reg   [15:0] ref_pixel_V_load_15_reg_5253;
+reg   [15:0] ref_pixel_V_load_16_reg_5268;
+wire    ap_CS_fsm_state13;
+reg   [15:0] ref_pixel_V_load_17_reg_5273;
+reg   [15:0] ref_pixel_V_load_18_reg_5288;
+wire    ap_CS_fsm_state14;
+reg   [15:0] ref_pixel_V_load_19_reg_5293;
+reg   [15:0] ref_pixel_V_load_20_reg_5308;
 wire    ap_CS_fsm_state15;
-wire    sum_stream_full_n;
-reg    sum_stream_write;
-reg    grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_start_reg;
+reg   [15:0] ref_pixel_V_load_21_reg_5313;
+reg   [15:0] ref_pixel_V_load_22_reg_5328;
+wire    ap_CS_fsm_state16;
+reg   [15:0] ref_pixel_V_load_23_reg_5333;
+reg   [15:0] ref_pixel_V_load_24_reg_5348;
 wire    ap_CS_fsm_state17;
-wire   [31:0] sum_stream_dout;
-wire    sum_stream_empty_n;
-reg    sum_stream_read;
+reg   [15:0] ref_pixel_V_load_25_reg_5353;
+reg   [15:0] ref_pixel_V_load_26_reg_5368;
 wire    ap_CS_fsm_state18;
-reg    grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_start_reg;
-wire    ap_CS_fsm_state20;
-wire    ap_CS_fsm_state21;
-wire    brightness_stream_full_n;
-reg    brightness_stream_write;
-reg    grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_start_reg;
-wire    ap_CS_fsm_state23;
-wire   [31:0] brightness_stream_dout;
-wire    brightness_stream_empty_n;
-reg    brightness_stream_read;
-wire    ap_CS_fsm_state24;
-reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_start_reg;
-wire    ap_CS_fsm_state32;
-reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_start_reg;
-wire    ap_CS_fsm_state36;
-reg   [31:0] maxBrightness_1_fu_144;
-wire   [31:0] maxBrightness_fu_706_p3;
-wire    ap_CS_fsm_state30;
-reg   [31:0] minDistance_fu_148;
-wire   [31:0] c_fu_678_p3;
-reg   [31:0] i_04_i627_fu_152;
-wire   [31:0] select_ln34_fu_662_p3;
-reg   [31:0] j_02_i629_fu_156;
-wire   [31:0] select_ln34_1_fu_670_p3;
-reg   [31:0] i_04_i631_fu_160;
-wire   [31:0] select_ln74_1_fu_698_p3;
-reg   [31:0] j_02_i633_fu_164;
-wire   [31:0] select_ln74_fu_690_p3;
-reg   [10:0] j_1_fu_168;
-wire   [10:0] add_ln64_fu_527_p2;
-reg   [1:0] i_2_fu_172;
-wire   [1:0] select_ln41_1_fu_477_p3;
-reg   [11:0] indvar_flatten20_fu_176;
-wire   [11:0] add_ln63_1_fu_448_p2;
+reg   [15:0] ref_pixel_V_load_27_reg_5373;
+reg   [15:0] ref_pixel_V_load_28_reg_5388;
 wire    ap_CS_fsm_state19;
-wire   [8:0] empty_29_fu_405_p1;
-wire   [18:0] tmp_8_fu_409_p3;
-wire   [18:0] trunc_ln17_fu_417_p1;
-wire   [31:0] zext_ln41_fu_433_p1;
-wire   [1:0] add_ln63_fu_457_p2;
-wire   [11:0] tmp_s_fu_485_p3;
-wire   [31:0] zext_ln41_1_fu_497_p1;
-wire   [10:0] select_ln41_fu_469_p3;
-wire   [31:0] zext_ln41_3_fu_514_p1;
-wire   [31:0] bitcast_ln34_fu_566_p1;
-wire   [31:0] bitcast_ln34_1_fu_583_p1;
-wire   [7:0] tmp_5_fu_569_p4;
-wire   [22:0] trunc_ln34_fu_579_p1;
-wire   [0:0] icmp_ln34_2_fu_606_p2;
-wire   [0:0] icmp_ln34_1_fu_600_p2;
-wire   [7:0] tmp_6_fu_586_p4;
-wire   [22:0] trunc_ln34_1_fu_596_p1;
-wire   [0:0] icmp_ln34_4_fu_624_p2;
-wire   [0:0] icmp_ln34_3_fu_618_p2;
-wire   [0:0] or_ln34_1_fu_612_p2;
-wire   [0:0] or_ln34_2_fu_630_p2;
-wire   [0:0] and_ln34_1_fu_636_p2;
-wire   [0:0] grp_fu_345_p2;
-wire   [0:0] select_ln41_2_fu_555_p3;
-wire   [0:0] and_ln34_2_fu_642_p2;
-wire   [0:0] or_ln34_fu_648_p2;
-wire   [0:0] and_ln34_fu_653_p2;
-wire   [31:0] zext_ln41_4_fu_560_p1;
-wire   [31:0] zext_ln34_fu_659_p1;
-wire   [0:0] icmp_ln74_fu_684_p2;
-wire  signed [18:0] grp_fu_749_p0;
-wire   [7:0] grp_fu_749_p1;
-wire   [11:0] grp_fu_755_p0;
-wire   [10:0] grp_fu_755_p1;
-wire   [7:0] grp_fu_755_p2;
-reg    grp_fu_349_ce;
+reg   [15:0] ref_pixel_V_load_29_reg_5393;
+reg   [15:0] ref_pixel_V_load_30_reg_5408;
+wire    ap_CS_fsm_state20;
+reg   [15:0] ref_pixel_V_load_31_reg_5413;
+reg   [15:0] ref_pixel_V_load_32_reg_5428;
+wire    ap_CS_fsm_state21;
+reg   [15:0] ref_pixel_V_load_33_reg_5433;
+reg   [15:0] ref_pixel_V_load_34_reg_5448;
 wire    ap_CS_fsm_state22;
+reg   [15:0] ref_pixel_V_load_35_reg_5453;
+reg   [15:0] ref_pixel_V_load_36_reg_5468;
+wire    ap_CS_fsm_state23;
+reg   [15:0] ref_pixel_V_load_37_reg_5473;
+reg   [15:0] ref_pixel_V_load_38_reg_5488;
+wire    ap_CS_fsm_state24;
+reg   [15:0] ref_pixel_V_load_39_reg_5493;
+reg   [15:0] ref_pixel_V_load_40_reg_5508;
 wire    ap_CS_fsm_state25;
+reg   [15:0] ref_pixel_V_load_41_reg_5513;
+reg   [15:0] ref_pixel_V_load_42_reg_5528;
 wire    ap_CS_fsm_state26;
+reg   [15:0] ref_pixel_V_load_43_reg_5533;
+reg   [15:0] ref_pixel_V_load_44_reg_5548;
 wire    ap_CS_fsm_state27;
-wire   [31:0] grp_fu_956_p1;
-reg   [31:0] grp_fu_956_p0;
-reg    grp_fu_956_ce;
+reg   [15:0] ref_pixel_V_load_45_reg_5553;
+reg   [15:0] ref_pixel_V_load_46_reg_5568;
+wire    ap_CS_fsm_state28;
+reg   [15:0] ref_pixel_V_load_47_reg_5573;
+reg   [15:0] ref_pixel_V_load_48_reg_5588;
+wire    ap_CS_fsm_state29;
+reg   [15:0] ref_pixel_V_load_49_reg_5593;
+reg   [15:0] ref_pixel_V_load_50_reg_5608;
+wire    ap_CS_fsm_state30;
+reg   [15:0] ref_pixel_V_load_51_reg_5613;
+reg   [15:0] ref_pixel_V_load_52_reg_5628;
+wire    ap_CS_fsm_state31;
+reg   [15:0] ref_pixel_V_load_53_reg_5633;
+reg   [15:0] ref_pixel_V_load_54_reg_5648;
+wire    ap_CS_fsm_state32;
+reg   [15:0] ref_pixel_V_load_55_reg_5653;
+reg   [15:0] ref_pixel_V_load_56_reg_5668;
+wire    ap_CS_fsm_state33;
+reg   [15:0] ref_pixel_V_load_57_reg_5673;
+reg   [15:0] ref_pixel_V_load_58_reg_5688;
+wire    ap_CS_fsm_state34;
+reg   [15:0] ref_pixel_V_load_59_reg_5693;
+reg   [15:0] ref_pixel_V_load_60_reg_5708;
+wire    ap_CS_fsm_state35;
+reg   [15:0] ref_pixel_V_load_61_reg_5713;
+reg   [15:0] ref_pixel_V_load_62_reg_5728;
+wire    ap_CS_fsm_state36;
+reg   [15:0] ref_pixel_V_load_63_reg_5733;
+reg   [15:0] ref_pixel_V_load_64_reg_5748;
 wire    ap_CS_fsm_state37;
+reg   [15:0] ref_pixel_V_load_65_reg_5753;
+reg   [15:0] ref_pixel_V_load_66_reg_5768;
+wire    ap_CS_fsm_state38;
+reg   [15:0] ref_pixel_V_load_67_reg_5773;
+reg   [15:0] ref_pixel_V_load_68_reg_5788;
+wire    ap_CS_fsm_state39;
+reg   [15:0] ref_pixel_V_load_69_reg_5793;
+reg   [15:0] ref_pixel_V_load_70_reg_5808;
+wire    ap_CS_fsm_state40;
+reg   [15:0] ref_pixel_V_load_71_reg_5813;
+reg   [15:0] ref_pixel_V_load_72_reg_5828;
+wire    ap_CS_fsm_state41;
+reg   [15:0] ref_pixel_V_load_73_reg_5833;
+reg   [15:0] ref_pixel_V_load_74_reg_5848;
+wire    ap_CS_fsm_state42;
+reg   [15:0] ref_pixel_V_load_75_reg_5853;
+reg   [15:0] ref_pixel_V_load_76_reg_5868;
+wire    ap_CS_fsm_state43;
+reg   [15:0] ref_pixel_V_load_77_reg_5873;
+reg   [15:0] ref_pixel_V_load_78_reg_5888;
+wire    ap_CS_fsm_state44;
+reg   [15:0] ref_pixel_V_load_79_reg_5893;
+reg   [15:0] ref_pixel_V_load_80_reg_5908;
+wire    ap_CS_fsm_state45;
+reg   [15:0] ref_pixel_V_load_81_reg_5913;
+reg   [15:0] ref_pixel_V_load_82_reg_5928;
+wire    ap_CS_fsm_state46;
+reg   [15:0] ref_pixel_V_load_83_reg_5933;
+reg   [15:0] ref_pixel_V_load_84_reg_5948;
+wire    ap_CS_fsm_state47;
+reg   [15:0] ref_pixel_V_load_85_reg_5953;
+reg   [15:0] ref_pixel_V_load_86_reg_5968;
+wire    ap_CS_fsm_state48;
+reg   [15:0] ref_pixel_V_load_87_reg_5973;
+reg   [15:0] ref_pixel_V_load_88_reg_5988;
+wire    ap_CS_fsm_state49;
+reg   [15:0] ref_pixel_V_load_89_reg_5993;
+reg   [15:0] ref_pixel_V_load_90_reg_6008;
+wire    ap_CS_fsm_state50;
+reg   [15:0] ref_pixel_V_load_91_reg_6013;
+reg   [15:0] ref_pixel_V_load_92_reg_6028;
+wire    ap_CS_fsm_state51;
+reg   [15:0] ref_pixel_V_load_93_reg_6033;
+reg   [15:0] ref_pixel_V_load_94_reg_6048;
+wire    ap_CS_fsm_state52;
+reg   [15:0] ref_pixel_V_load_95_reg_6053;
+reg   [15:0] ref_pixel_V_load_96_reg_6068;
+wire    ap_CS_fsm_state53;
+reg   [15:0] ref_pixel_V_load_97_reg_6073;
+reg   [15:0] ref_pixel_V_load_98_reg_6088;
+wire    ap_CS_fsm_state54;
+reg   [15:0] ref_pixel_V_load_99_reg_6093;
+reg   [15:0] ref_pixel_V_load_100_reg_6108;
+wire    ap_CS_fsm_state55;
+reg   [15:0] ref_pixel_V_load_101_reg_6113;
+reg   [15:0] ref_pixel_V_load_102_reg_6128;
+wire    ap_CS_fsm_state56;
+reg   [15:0] ref_pixel_V_load_103_reg_6133;
+reg   [15:0] ref_pixel_V_load_104_reg_6148;
+wire    ap_CS_fsm_state57;
+reg   [15:0] ref_pixel_V_load_105_reg_6153;
+reg   [15:0] ref_pixel_V_load_106_reg_6168;
+wire    ap_CS_fsm_state58;
+reg   [15:0] ref_pixel_V_load_107_reg_6173;
+reg   [15:0] ref_pixel_V_load_108_reg_6188;
+wire    ap_CS_fsm_state59;
+reg   [15:0] ref_pixel_V_load_109_reg_6193;
+reg   [15:0] ref_pixel_V_load_110_reg_6208;
+wire    ap_CS_fsm_state60;
+reg   [15:0] ref_pixel_V_load_111_reg_6213;
+reg   [15:0] ref_pixel_V_load_112_reg_6228;
+wire    ap_CS_fsm_state61;
+reg   [15:0] ref_pixel_V_load_113_reg_6233;
+reg   [15:0] ref_pixel_V_load_114_reg_6248;
+wire    ap_CS_fsm_state62;
+reg   [15:0] ref_pixel_V_load_115_reg_6253;
+reg   [15:0] ref_pixel_V_load_116_reg_6268;
+wire    ap_CS_fsm_state63;
+reg   [15:0] ref_pixel_V_load_117_reg_6273;
+reg   [15:0] ref_pixel_V_load_118_reg_6288;
+wire    ap_CS_fsm_state64;
+reg   [15:0] ref_pixel_V_load_119_reg_6293;
+reg   [15:0] ref_pixel_V_load_120_reg_6308;
+wire    ap_CS_fsm_state65;
+reg   [15:0] ref_pixel_V_load_121_reg_6313;
+reg   [15:0] ref_pixel_V_load_122_reg_6328;
+wire    ap_CS_fsm_state66;
+reg   [15:0] ref_pixel_V_load_123_reg_6333;
+reg   [15:0] ref_pixel_V_load_124_reg_6348;
+wire    ap_CS_fsm_state67;
+reg   [15:0] ref_pixel_V_load_125_reg_6353;
+reg   [15:0] ref_pixel_V_load_126_reg_6368;
+wire    ap_CS_fsm_state68;
+reg   [15:0] ref_pixel_V_load_127_reg_6373;
+reg   [15:0] ref_pixel_V_load_128_reg_6388;
+wire    ap_CS_fsm_state69;
+reg   [15:0] ref_pixel_V_load_129_reg_6393;
+reg   [15:0] ref_pixel_V_load_130_reg_6408;
+wire    ap_CS_fsm_state70;
+reg   [15:0] ref_pixel_V_load_131_reg_6413;
+reg   [15:0] ref_pixel_V_load_132_reg_6428;
+wire    ap_CS_fsm_state71;
+reg   [15:0] ref_pixel_V_load_133_reg_6433;
+reg   [15:0] ref_pixel_V_load_134_reg_6448;
+wire    ap_CS_fsm_state72;
+reg   [15:0] ref_pixel_V_load_135_reg_6453;
+reg   [15:0] ref_pixel_V_load_136_reg_6468;
+wire    ap_CS_fsm_state73;
+reg   [15:0] ref_pixel_V_load_137_reg_6473;
+reg   [15:0] ref_pixel_V_load_138_reg_6488;
+wire    ap_CS_fsm_state74;
+reg   [15:0] ref_pixel_V_load_139_reg_6493;
+reg   [15:0] ref_pixel_V_load_140_reg_6508;
+wire    ap_CS_fsm_state75;
+reg   [15:0] ref_pixel_V_load_141_reg_6513;
+reg   [15:0] ref_pixel_V_load_142_reg_6528;
+wire    ap_CS_fsm_state76;
+reg   [15:0] ref_pixel_V_load_143_reg_6533;
+reg   [15:0] ref_pixel_V_load_144_reg_6548;
+wire    ap_CS_fsm_state77;
+reg   [15:0] ref_pixel_V_load_145_reg_6553;
+reg   [15:0] ref_pixel_V_load_146_reg_6568;
+wire    ap_CS_fsm_state78;
+reg   [15:0] ref_pixel_V_load_147_reg_6573;
+reg   [15:0] ref_pixel_V_load_148_reg_6588;
+wire    ap_CS_fsm_state79;
+reg   [15:0] ref_pixel_V_load_149_reg_6593;
+reg   [15:0] ref_pixel_V_load_150_reg_6608;
+wire    ap_CS_fsm_state80;
+reg   [15:0] ref_pixel_V_load_151_reg_6613;
+reg   [15:0] ref_pixel_V_load_152_reg_6628;
+wire    ap_CS_fsm_state81;
+reg   [15:0] ref_pixel_V_load_153_reg_6633;
+reg   [15:0] ref_pixel_V_load_154_reg_6648;
+wire    ap_CS_fsm_state82;
+reg   [15:0] ref_pixel_V_load_155_reg_6653;
+reg   [15:0] ref_pixel_V_load_156_reg_6668;
+wire    ap_CS_fsm_state83;
+reg   [15:0] ref_pixel_V_load_157_reg_6673;
+reg   [15:0] ref_pixel_V_load_158_reg_6688;
+wire    ap_CS_fsm_state84;
+reg   [15:0] ref_pixel_V_load_159_reg_6693;
+reg   [15:0] ref_pixel_V_load_160_reg_6708;
+wire    ap_CS_fsm_state85;
+reg   [15:0] ref_pixel_V_load_161_reg_6713;
+reg   [15:0] ref_pixel_V_load_162_reg_6728;
+wire    ap_CS_fsm_state86;
+reg   [15:0] ref_pixel_V_load_163_reg_6733;
+reg   [15:0] ref_pixel_V_load_164_reg_6748;
+wire    ap_CS_fsm_state87;
+reg   [15:0] ref_pixel_V_load_165_reg_6753;
+reg   [15:0] ref_pixel_V_load_166_reg_6768;
+wire    ap_CS_fsm_state88;
+reg   [15:0] ref_pixel_V_load_167_reg_6773;
+reg   [15:0] ref_pixel_V_load_168_reg_6788;
+wire    ap_CS_fsm_state89;
+reg   [15:0] ref_pixel_V_load_169_reg_6793;
+reg   [15:0] ref_pixel_V_load_170_reg_6808;
+wire    ap_CS_fsm_state90;
+reg   [15:0] ref_pixel_V_load_171_reg_6813;
+reg   [15:0] ref_pixel_V_load_172_reg_6828;
+wire    ap_CS_fsm_state91;
+reg   [15:0] ref_pixel_V_load_173_reg_6833;
+reg   [15:0] ref_pixel_V_load_174_reg_6848;
+wire    ap_CS_fsm_state92;
+reg   [15:0] ref_pixel_V_load_175_reg_6853;
+reg   [15:0] ref_pixel_V_load_176_reg_6868;
+wire    ap_CS_fsm_state93;
+reg   [15:0] ref_pixel_V_load_177_reg_6873;
+reg   [15:0] ref_pixel_V_load_178_reg_6888;
+wire    ap_CS_fsm_state94;
+reg   [15:0] ref_pixel_V_load_179_reg_6893;
+wire   [31:0] e_data_V_fu_3995_p1;
+reg   [7:0] ref_pixel_V_address0;
+reg    ref_pixel_V_ce0;
+reg    ref_pixel_V_we0;
+reg   [7:0] ref_pixel_V_address1;
+reg    ref_pixel_V_ce1;
+reg    ref_pixel_V_we1;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ap_start;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ap_done;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ap_idle;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ap_ready;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_in_stream_TREADY;
+wire   [7:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_d0;
+wire   [7:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_address1;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_ce1;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_we1;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_d1;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_ap_start;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_ap_done;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_ap_idle;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_ap_ready;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_in_stream_TREADY;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_538_0183_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_538_0183_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_448_0182_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_448_0182_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_537_0181_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_537_0181_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_447_0180_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_447_0180_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_536_0179_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_536_0179_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_446_0178_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_446_0178_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_535_0177_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_535_0177_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_445_0176_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_445_0176_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_534_0175_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_534_0175_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_444_0174_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_444_0174_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_533_0173_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_533_0173_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_443_0172_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_443_0172_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_532_0171_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_532_0171_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_442_0170_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_442_0170_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_531_0169_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_531_0169_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_441_0168_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_441_0168_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_530_0167_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_530_0167_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_440_0166_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_440_0166_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_529_0165_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_529_0165_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_439_0164_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_439_0164_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_528_0163_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_528_0163_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_438_0162_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_438_0162_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_527_0161_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_527_0161_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_437_0160_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_437_0160_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_526_0159_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_526_0159_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_436_0158_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_436_0158_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_525_0157_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_525_0157_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_435_0156_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_435_0156_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_524_0155_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_524_0155_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_434_0154_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_434_0154_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_523_0153_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_523_0153_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_433_0152_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_433_0152_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_522_0151_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_522_0151_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_432_0150_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_432_0150_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_521_0149_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_521_0149_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_431_0148_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_431_0148_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_520_0147_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_520_0147_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_430_0146_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_430_0146_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_519_0145_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_519_0145_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_429_0144_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_429_0144_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_518_0143_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_518_0143_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_428_0142_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_428_0142_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_517_0141_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_517_0141_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_427_0140_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_427_0140_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_516_0139_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_516_0139_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_426_0138_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_426_0138_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_515_0137_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_515_0137_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_425_0136_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_425_0136_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_514_0135_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_514_0135_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_424_0134_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_424_0134_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_513_0133_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_513_0133_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_423_0132_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_423_0132_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_512_0131_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_512_0131_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_422_0130_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_422_0130_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_511_0129_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_511_0129_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_421_0128_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_421_0128_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_510_0127_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_510_0127_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_420_0126_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_420_0126_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_509_0125_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_509_0125_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_419_0124_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_419_0124_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_508_0123_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_508_0123_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_418_0122_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_418_0122_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_507_0121_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_507_0121_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_417_0120_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_417_0120_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_506_0119_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_506_0119_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_416_0118_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_416_0118_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_505_0117_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_505_0117_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_415_0116_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_415_0116_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_504_0115_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_504_0115_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_414_0114_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_414_0114_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_503_0113_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_503_0113_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_413_0112_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_413_0112_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_502_0111_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_502_0111_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_412_0110_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_412_0110_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_501_0109_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_501_0109_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_411_0108_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_411_0108_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_500_0107_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_500_0107_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_410_0106_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_410_0106_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_499_0105_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_499_0105_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_409_0104_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_409_0104_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_498_0103_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_498_0103_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_408_0102_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_408_0102_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_497_0101_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_497_0101_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_407_0100_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_407_0100_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_496_099_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_496_099_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_406_098_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_406_098_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_495_097_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_495_097_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_405_096_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_405_096_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_494_095_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_494_095_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_404_094_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_404_094_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_493_093_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_493_093_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_403_092_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_403_092_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_492_091_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_492_091_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_402_090_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_402_090_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_491_089_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_491_089_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_401_088_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_401_088_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_490_087_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_490_087_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_400_086_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_400_086_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_489_085_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_489_085_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_399_084_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_399_084_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_488_083_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_488_083_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_398_082_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_398_082_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_487_081_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_487_081_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_397_080_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_397_080_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_486_079_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_486_079_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_396_078_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_396_078_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_485_077_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_485_077_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_395_076_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_395_076_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_484_075_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_484_075_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_394_074_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_394_074_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_483_073_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_483_073_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_393_072_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_393_072_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_482_071_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_482_071_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_392_070_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_392_070_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_481_069_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_481_069_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_391_068_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_391_068_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_480_067_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_480_067_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_390_066_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_390_066_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_479_065_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_479_065_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_389_064_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_389_064_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_478_063_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_478_063_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_388_062_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_388_062_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_477_061_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_477_061_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_387_060_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_387_060_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_476_059_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_476_059_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_386_058_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_386_058_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_475_057_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_475_057_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_385_056_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_385_056_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_474_055_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_474_055_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_384_054_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_384_054_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_473_053_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_473_053_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_383_052_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_383_052_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_472_051_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_472_051_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_382_050_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_382_050_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_471_049_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_471_049_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_381_048_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_381_048_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_470_047_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_470_047_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_380_046_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_380_046_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_469_045_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_469_045_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_379_044_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_379_044_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_468_043_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_468_043_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_378_042_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_378_042_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_467_041_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_467_041_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_377_040_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_377_040_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_466_039_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_466_039_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_376_038_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_376_038_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_465_037_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_465_037_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_375_036_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_375_036_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_464_035_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_464_035_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_374_034_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_374_034_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_463_033_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_463_033_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_373_032_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_373_032_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_462_031_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_462_031_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_372_030_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_372_030_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_461_029_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_461_029_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_371_028_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_371_028_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_460_027_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_460_027_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_370_026_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_370_026_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_459_025_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_459_025_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_369_024_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_369_024_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_458_023_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_458_023_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_368_022_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_368_022_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_457_021_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_457_021_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_367_020_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_367_020_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_456_019_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_456_019_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_366_018_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_366_018_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_455_017_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_455_017_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_365_016_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_365_016_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_454_015_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_454_015_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_364_014_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_364_014_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_453_013_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_453_013_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_363_012_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_363_012_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_452_011_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_452_011_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_362_010_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_362_010_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_451_09_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_451_09_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_361_08_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_361_08_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_450_07_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_450_07_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_360_06_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_360_06_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_449_05_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_449_05_out_ap_vld;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_359_04_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_359_04_out_ap_vld;
+wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_min_pixel_index_i_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_min_pixel_index_i_out_ap_vld;
+wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_min_pixel_index_j_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_min_pixel_index_j_out_ap_vld;
+wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_min_distance_V_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_min_distance_V_out_ap_vld;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_ap_start;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_ap_done;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_ap_idle;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_ap_ready;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TREADY;
+wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TDATA;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TVALID;
+wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TKEEP;
+wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TSTRB;
+wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TUSER;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TLAST;
+wire   [4:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TID;
+wire   [4:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TDEST;
+reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ap_start_reg;
+wire    ap_CS_fsm_state2;
+wire    ap_CS_fsm_state3;
+reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_ap_start_reg;
+wire    ap_CS_fsm_state95;
+reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_ap_start_reg;
+wire    ap_CS_fsm_state97;
+wire    ap_CS_fsm_state98;
+wire   [31:0] grp_fu_3260_p1;
+reg    grp_fu_3260_ce;
 wire    regslice_both_out_stream_V_data_V_U_apdone_blk;
+reg    ap_block_state102;
+reg   [101:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ST_fsm_state2_blk;
 reg    ap_ST_fsm_state3_blk;
 wire    ap_ST_fsm_state4_blk;
 wire    ap_ST_fsm_state5_blk;
-reg    ap_ST_fsm_state6_blk;
+wire    ap_ST_fsm_state6_blk;
 wire    ap_ST_fsm_state7_blk;
 wire    ap_ST_fsm_state8_blk;
 wire    ap_ST_fsm_state9_blk;
@@ -379,16 +914,16 @@ wire    ap_ST_fsm_state11_blk;
 wire    ap_ST_fsm_state12_blk;
 wire    ap_ST_fsm_state13_blk;
 wire    ap_ST_fsm_state14_blk;
-reg    ap_ST_fsm_state15_blk;
+wire    ap_ST_fsm_state15_blk;
 wire    ap_ST_fsm_state16_blk;
 wire    ap_ST_fsm_state17_blk;
-reg    ap_ST_fsm_state18_blk;
+wire    ap_ST_fsm_state18_blk;
 wire    ap_ST_fsm_state19_blk;
 wire    ap_ST_fsm_state20_blk;
-reg    ap_ST_fsm_state21_blk;
+wire    ap_ST_fsm_state21_blk;
 wire    ap_ST_fsm_state22_blk;
 wire    ap_ST_fsm_state23_blk;
-reg    ap_ST_fsm_state24_blk;
+wire    ap_ST_fsm_state24_blk;
 wire    ap_ST_fsm_state25_blk;
 wire    ap_ST_fsm_state26_blk;
 wire    ap_ST_fsm_state27_blk;
@@ -396,12 +931,77 @@ wire    ap_ST_fsm_state28_blk;
 wire    ap_ST_fsm_state29_blk;
 wire    ap_ST_fsm_state30_blk;
 wire    ap_ST_fsm_state31_blk;
-reg    ap_ST_fsm_state32_blk;
-reg    ap_ST_fsm_state33_blk;
-reg    ap_ST_fsm_state34_blk;
+wire    ap_ST_fsm_state32_blk;
+wire    ap_ST_fsm_state33_blk;
+wire    ap_ST_fsm_state34_blk;
 wire    ap_ST_fsm_state35_blk;
-reg    ap_ST_fsm_state36_blk;
-reg    ap_ST_fsm_state37_blk;
+wire    ap_ST_fsm_state36_blk;
+wire    ap_ST_fsm_state37_blk;
+wire    ap_ST_fsm_state38_blk;
+wire    ap_ST_fsm_state39_blk;
+wire    ap_ST_fsm_state40_blk;
+wire    ap_ST_fsm_state41_blk;
+wire    ap_ST_fsm_state42_blk;
+wire    ap_ST_fsm_state43_blk;
+wire    ap_ST_fsm_state44_blk;
+wire    ap_ST_fsm_state45_blk;
+wire    ap_ST_fsm_state46_blk;
+wire    ap_ST_fsm_state47_blk;
+wire    ap_ST_fsm_state48_blk;
+wire    ap_ST_fsm_state49_blk;
+wire    ap_ST_fsm_state50_blk;
+wire    ap_ST_fsm_state51_blk;
+wire    ap_ST_fsm_state52_blk;
+wire    ap_ST_fsm_state53_blk;
+wire    ap_ST_fsm_state54_blk;
+wire    ap_ST_fsm_state55_blk;
+wire    ap_ST_fsm_state56_blk;
+wire    ap_ST_fsm_state57_blk;
+wire    ap_ST_fsm_state58_blk;
+wire    ap_ST_fsm_state59_blk;
+wire    ap_ST_fsm_state60_blk;
+wire    ap_ST_fsm_state61_blk;
+wire    ap_ST_fsm_state62_blk;
+wire    ap_ST_fsm_state63_blk;
+wire    ap_ST_fsm_state64_blk;
+wire    ap_ST_fsm_state65_blk;
+wire    ap_ST_fsm_state66_blk;
+wire    ap_ST_fsm_state67_blk;
+wire    ap_ST_fsm_state68_blk;
+wire    ap_ST_fsm_state69_blk;
+wire    ap_ST_fsm_state70_blk;
+wire    ap_ST_fsm_state71_blk;
+wire    ap_ST_fsm_state72_blk;
+wire    ap_ST_fsm_state73_blk;
+wire    ap_ST_fsm_state74_blk;
+wire    ap_ST_fsm_state75_blk;
+wire    ap_ST_fsm_state76_blk;
+wire    ap_ST_fsm_state77_blk;
+wire    ap_ST_fsm_state78_blk;
+wire    ap_ST_fsm_state79_blk;
+wire    ap_ST_fsm_state80_blk;
+wire    ap_ST_fsm_state81_blk;
+wire    ap_ST_fsm_state82_blk;
+wire    ap_ST_fsm_state83_blk;
+wire    ap_ST_fsm_state84_blk;
+wire    ap_ST_fsm_state85_blk;
+wire    ap_ST_fsm_state86_blk;
+wire    ap_ST_fsm_state87_blk;
+wire    ap_ST_fsm_state88_blk;
+wire    ap_ST_fsm_state89_blk;
+wire    ap_ST_fsm_state90_blk;
+wire    ap_ST_fsm_state91_blk;
+wire    ap_ST_fsm_state92_blk;
+wire    ap_ST_fsm_state93_blk;
+wire    ap_ST_fsm_state94_blk;
+reg    ap_ST_fsm_state95_blk;
+wire    ap_ST_fsm_state96_blk;
+wire    ap_ST_fsm_state97_blk;
+reg    ap_ST_fsm_state98_blk;
+reg    ap_ST_fsm_state99_blk;
+reg    ap_ST_fsm_state100_blk;
+reg    ap_ST_fsm_state101_blk;
+reg    ap_ST_fsm_state102_blk;
 wire    regslice_both_in_stream_V_data_V_U_apdone_blk;
 wire   [31:0] in_stream_TDATA_int_regslice;
 wire    in_stream_TVALID_int_regslice;
@@ -459,198 +1059,821 @@ wire    regslice_both_out_stream_V_dest_V_U_apdone_blk;
 reg   [4:0] out_stream_TDEST_int_regslice;
 wire    regslice_both_out_stream_V_dest_V_U_ack_in_dummy;
 wire    regslice_both_out_stream_V_dest_V_U_vld_out;
-wire   [12:0] grp_fu_755_p00;
-wire   [12:0] grp_fu_755_p10;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
-#0 ap_CS_fsm = 37'd1;
-#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_start_reg = 1'b0;
-#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_start_reg = 1'b0;
-#0 grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_start_reg = 1'b0;
-#0 grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_start_reg = 1'b0;
-#0 grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_start_reg = 1'b0;
-#0 grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_start_reg = 1'b0;
-#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_start_reg = 1'b0;
-#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_start_reg = 1'b0;
+#0 ap_CS_fsm = 102'd1;
+#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ap_start_reg = 1'b0;
+#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_ap_start_reg = 1'b0;
+#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_ap_start_reg = 1'b0;
 end
 
-hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W #(
+hyperspectral_hw_wrapped_ref_pixel_V_RAM_AUTO_1R1W #(
     .DataWidth( 16 ),
-    .AddressRange( 368640 ),
-    .AddressWidth( 19 ))
-image_U(
+    .AddressRange( 180 ),
+    .AddressWidth( 8 ))
+ref_pixel_V_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
-    .address0(image_address0),
-    .ce0(image_ce0),
-    .we0(image_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_d0),
-    .q0(image_q0),
-    .address1(image_address1),
-    .ce1(image_ce1),
-    .we1(image_we1),
-    .d1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_d1),
-    .q1(image_q1)
+    .address0(ref_pixel_V_address0),
+    .ce0(ref_pixel_V_ce0),
+    .we0(ref_pixel_V_we0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_d0),
+    .q0(ref_pixel_V_q0),
+    .address1(ref_pixel_V_address1),
+    .ce1(ref_pixel_V_ce1),
+    .we1(ref_pixel_V_we1),
+    .d1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_d1),
+    .q1(ref_pixel_V_q1)
 );
 
-hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239(
+hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_start),
-    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_done),
-    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_idle),
-    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_ready),
-    .in_stream_TVALID(in_stream_TVALID_int_regslice),
-    .image_r_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_address0),
-    .image_r_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_ce0),
-    .image_r_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_we0),
-    .image_r_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_d0),
-    .image_r_address1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_address1),
-    .image_r_ce1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_ce1),
-    .image_r_we1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_we1),
-    .image_r_d1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_d1),
-    .in_stream_TDATA(in_stream_TDATA_int_regslice),
-    .in_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_in_stream_TREADY),
-    .in_stream_TKEEP(in_stream_TKEEP_int_regslice),
-    .in_stream_TSTRB(in_stream_TSTRB_int_regslice),
-    .in_stream_TUSER(in_stream_TUSER_int_regslice),
-    .in_stream_TLAST(in_stream_TLAST_int_regslice),
-    .in_stream_TID(in_stream_TID_int_regslice),
-    .in_stream_TDEST(in_stream_TDEST_int_regslice)
-);
-
-hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_start),
-    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_done),
-    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_idle),
-    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_ready),
+    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ap_start),
+    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ap_done),
+    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ap_idle),
+    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ap_ready),
     .in_stream_TVALID(in_stream_TVALID_int_regslice),
     .in_stream_TDATA(in_stream_TDATA_int_regslice),
-    .in_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_in_stream_TREADY),
+    .in_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_in_stream_TREADY),
     .in_stream_TKEEP(in_stream_TKEEP_int_regslice),
     .in_stream_TSTRB(in_stream_TSTRB_int_regslice),
     .in_stream_TUSER(in_stream_TUSER_int_regslice),
     .in_stream_TLAST(in_stream_TLAST_int_regslice),
     .in_stream_TID(in_stream_TID_int_regslice),
     .in_stream_TDEST(in_stream_TDEST_int_regslice),
-    .refPixel_1_034_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_1_034_out),
-    .refPixel_1_034_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_1_034_out_ap_vld),
-    .refPixel_0_033_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_0_033_out),
-    .refPixel_0_033_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_0_033_out_ap_vld)
+    .ref_pixel_V_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_address0),
+    .ref_pixel_V_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_ce0),
+    .ref_pixel_V_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_we0),
+    .ref_pixel_V_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_d0),
+    .ref_pixel_V_address1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_address1),
+    .ref_pixel_V_ce1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_ce1),
+    .ref_pixel_V_we1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_we1),
+    .ref_pixel_V_d1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_d1)
 );
 
-hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L3 grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278(
+hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_start),
-    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_done),
-    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_idle),
-    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_ready),
-    .sum_stream_din(grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_sum_stream_din),
-    .sum_stream_full_n(sum_stream_full_n),
-    .sum_stream_write(grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_sum_stream_write),
-    .mul_ln17_1(mul_ln41_reg_908),
-    .image_r_address0(grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_image_r_address0),
-    .image_r_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_image_r_ce0),
-    .image_r_q0(image_q0),
-    .image_r_address1(grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_image_r_address1),
-    .image_r_ce1(grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_image_r_ce1),
-    .image_r_q1(image_q1),
-    .mul_ln17(mul_ln17_reg_870)
+    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_ap_start),
+    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_ap_done),
+    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_ap_idle),
+    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_ap_ready),
+    .in_stream_TVALID(in_stream_TVALID_int_regslice),
+    .in_stream_TDATA(in_stream_TDATA_int_regslice),
+    .in_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_in_stream_TREADY),
+    .in_stream_TKEEP(in_stream_TKEEP_int_regslice),
+    .in_stream_TSTRB(in_stream_TSTRB_int_regslice),
+    .in_stream_TUSER(in_stream_TUSER_int_regslice),
+    .in_stream_TLAST(in_stream_TLAST_int_regslice),
+    .in_stream_TID(in_stream_TID_int_regslice),
+    .in_stream_TDEST(in_stream_TDEST_int_regslice),
+    .lhs(ref_pixel_V_load_reg_5108),
+    .lhs_1(ref_pixel_V_load_1_reg_5113),
+    .lhs_2(ref_pixel_V_load_2_reg_5128),
+    .lhs_3(ref_pixel_V_load_3_reg_5133),
+    .lhs_4(ref_pixel_V_load_4_reg_5148),
+    .lhs_5(ref_pixel_V_load_5_reg_5153),
+    .lhs_6(ref_pixel_V_load_6_reg_5168),
+    .lhs_7(ref_pixel_V_load_7_reg_5173),
+    .lhs_8(ref_pixel_V_load_8_reg_5188),
+    .lhs_9(ref_pixel_V_load_9_reg_5193),
+    .lhs_10(ref_pixel_V_load_10_reg_5208),
+    .lhs_11(ref_pixel_V_load_11_reg_5213),
+    .lhs_12(ref_pixel_V_load_12_reg_5228),
+    .lhs_13(ref_pixel_V_load_13_reg_5233),
+    .lhs_14(ref_pixel_V_load_14_reg_5248),
+    .lhs_15(ref_pixel_V_load_15_reg_5253),
+    .lhs_16(ref_pixel_V_load_16_reg_5268),
+    .lhs_17(ref_pixel_V_load_17_reg_5273),
+    .lhs_18(ref_pixel_V_load_18_reg_5288),
+    .lhs_19(ref_pixel_V_load_19_reg_5293),
+    .lhs_20(ref_pixel_V_load_20_reg_5308),
+    .lhs_21(ref_pixel_V_load_21_reg_5313),
+    .lhs_22(ref_pixel_V_load_22_reg_5328),
+    .lhs_23(ref_pixel_V_load_23_reg_5333),
+    .lhs_24(ref_pixel_V_load_24_reg_5348),
+    .lhs_25(ref_pixel_V_load_25_reg_5353),
+    .lhs_26(ref_pixel_V_load_26_reg_5368),
+    .lhs_27(ref_pixel_V_load_27_reg_5373),
+    .lhs_28(ref_pixel_V_load_28_reg_5388),
+    .lhs_29(ref_pixel_V_load_29_reg_5393),
+    .lhs_30(ref_pixel_V_load_30_reg_5408),
+    .lhs_31(ref_pixel_V_load_31_reg_5413),
+    .lhs_32(ref_pixel_V_load_32_reg_5428),
+    .lhs_33(ref_pixel_V_load_33_reg_5433),
+    .lhs_34(ref_pixel_V_load_34_reg_5448),
+    .lhs_35(ref_pixel_V_load_35_reg_5453),
+    .lhs_36(ref_pixel_V_load_36_reg_5468),
+    .lhs_37(ref_pixel_V_load_37_reg_5473),
+    .lhs_38(ref_pixel_V_load_38_reg_5488),
+    .lhs_39(ref_pixel_V_load_39_reg_5493),
+    .lhs_40(ref_pixel_V_load_40_reg_5508),
+    .lhs_41(ref_pixel_V_load_41_reg_5513),
+    .lhs_42(ref_pixel_V_load_42_reg_5528),
+    .lhs_43(ref_pixel_V_load_43_reg_5533),
+    .lhs_44(ref_pixel_V_load_44_reg_5548),
+    .lhs_45(ref_pixel_V_load_45_reg_5553),
+    .lhs_46(ref_pixel_V_load_46_reg_5568),
+    .lhs_47(ref_pixel_V_load_47_reg_5573),
+    .lhs_48(ref_pixel_V_load_48_reg_5588),
+    .lhs_49(ref_pixel_V_load_49_reg_5593),
+    .lhs_50(ref_pixel_V_load_50_reg_5608),
+    .lhs_51(ref_pixel_V_load_51_reg_5613),
+    .lhs_52(ref_pixel_V_load_52_reg_5628),
+    .lhs_53(ref_pixel_V_load_53_reg_5633),
+    .lhs_54(ref_pixel_V_load_54_reg_5648),
+    .lhs_55(ref_pixel_V_load_55_reg_5653),
+    .lhs_56(ref_pixel_V_load_56_reg_5668),
+    .lhs_57(ref_pixel_V_load_57_reg_5673),
+    .lhs_58(ref_pixel_V_load_58_reg_5688),
+    .lhs_59(ref_pixel_V_load_59_reg_5693),
+    .lhs_60(ref_pixel_V_load_60_reg_5708),
+    .lhs_61(ref_pixel_V_load_61_reg_5713),
+    .lhs_62(ref_pixel_V_load_62_reg_5728),
+    .lhs_63(ref_pixel_V_load_63_reg_5733),
+    .lhs_64(ref_pixel_V_load_64_reg_5748),
+    .lhs_65(ref_pixel_V_load_65_reg_5753),
+    .lhs_66(ref_pixel_V_load_66_reg_5768),
+    .lhs_67(ref_pixel_V_load_67_reg_5773),
+    .lhs_68(ref_pixel_V_load_68_reg_5788),
+    .lhs_69(ref_pixel_V_load_69_reg_5793),
+    .lhs_70(ref_pixel_V_load_70_reg_5808),
+    .lhs_71(ref_pixel_V_load_71_reg_5813),
+    .lhs_72(ref_pixel_V_load_72_reg_5828),
+    .lhs_73(ref_pixel_V_load_73_reg_5833),
+    .lhs_74(ref_pixel_V_load_74_reg_5848),
+    .lhs_75(ref_pixel_V_load_75_reg_5853),
+    .lhs_76(ref_pixel_V_load_76_reg_5868),
+    .lhs_77(ref_pixel_V_load_77_reg_5873),
+    .lhs_78(ref_pixel_V_load_78_reg_5888),
+    .lhs_79(ref_pixel_V_load_79_reg_5893),
+    .lhs_80(ref_pixel_V_load_80_reg_5908),
+    .lhs_81(ref_pixel_V_load_81_reg_5913),
+    .lhs_82(ref_pixel_V_load_82_reg_5928),
+    .lhs_83(ref_pixel_V_load_83_reg_5933),
+    .lhs_84(ref_pixel_V_load_84_reg_5948),
+    .lhs_85(ref_pixel_V_load_85_reg_5953),
+    .lhs_86(ref_pixel_V_load_86_reg_5968),
+    .lhs_87(ref_pixel_V_load_87_reg_5973),
+    .lhs_88(ref_pixel_V_load_88_reg_5988),
+    .lhs_89(ref_pixel_V_load_89_reg_5993),
+    .lhs_90(ref_pixel_V_load_90_reg_6008),
+    .lhs_91(ref_pixel_V_load_91_reg_6013),
+    .lhs_92(ref_pixel_V_load_92_reg_6028),
+    .lhs_93(ref_pixel_V_load_93_reg_6033),
+    .lhs_94(ref_pixel_V_load_94_reg_6048),
+    .lhs_95(ref_pixel_V_load_95_reg_6053),
+    .lhs_96(ref_pixel_V_load_96_reg_6068),
+    .lhs_97(ref_pixel_V_load_97_reg_6073),
+    .lhs_98(ref_pixel_V_load_98_reg_6088),
+    .lhs_99(ref_pixel_V_load_99_reg_6093),
+    .lhs_100(ref_pixel_V_load_100_reg_6108),
+    .lhs_101(ref_pixel_V_load_101_reg_6113),
+    .lhs_102(ref_pixel_V_load_102_reg_6128),
+    .lhs_103(ref_pixel_V_load_103_reg_6133),
+    .lhs_104(ref_pixel_V_load_104_reg_6148),
+    .lhs_105(ref_pixel_V_load_105_reg_6153),
+    .lhs_106(ref_pixel_V_load_106_reg_6168),
+    .lhs_107(ref_pixel_V_load_107_reg_6173),
+    .lhs_108(ref_pixel_V_load_108_reg_6188),
+    .lhs_109(ref_pixel_V_load_109_reg_6193),
+    .lhs_110(ref_pixel_V_load_110_reg_6208),
+    .lhs_111(ref_pixel_V_load_111_reg_6213),
+    .lhs_112(ref_pixel_V_load_112_reg_6228),
+    .lhs_113(ref_pixel_V_load_113_reg_6233),
+    .lhs_114(ref_pixel_V_load_114_reg_6248),
+    .lhs_115(ref_pixel_V_load_115_reg_6253),
+    .lhs_116(ref_pixel_V_load_116_reg_6268),
+    .lhs_117(ref_pixel_V_load_117_reg_6273),
+    .lhs_118(ref_pixel_V_load_118_reg_6288),
+    .lhs_119(ref_pixel_V_load_119_reg_6293),
+    .lhs_120(ref_pixel_V_load_120_reg_6308),
+    .lhs_121(ref_pixel_V_load_121_reg_6313),
+    .lhs_122(ref_pixel_V_load_122_reg_6328),
+    .lhs_123(ref_pixel_V_load_123_reg_6333),
+    .lhs_124(ref_pixel_V_load_124_reg_6348),
+    .lhs_125(ref_pixel_V_load_125_reg_6353),
+    .lhs_126(ref_pixel_V_load_126_reg_6368),
+    .lhs_127(ref_pixel_V_load_127_reg_6373),
+    .lhs_128(ref_pixel_V_load_128_reg_6388),
+    .lhs_129(ref_pixel_V_load_129_reg_6393),
+    .lhs_130(ref_pixel_V_load_130_reg_6408),
+    .lhs_131(ref_pixel_V_load_131_reg_6413),
+    .lhs_132(ref_pixel_V_load_132_reg_6428),
+    .lhs_133(ref_pixel_V_load_133_reg_6433),
+    .lhs_134(ref_pixel_V_load_134_reg_6448),
+    .lhs_135(ref_pixel_V_load_135_reg_6453),
+    .lhs_136(ref_pixel_V_load_136_reg_6468),
+    .lhs_137(ref_pixel_V_load_137_reg_6473),
+    .lhs_138(ref_pixel_V_load_138_reg_6488),
+    .lhs_139(ref_pixel_V_load_139_reg_6493),
+    .lhs_140(ref_pixel_V_load_140_reg_6508),
+    .lhs_141(ref_pixel_V_load_141_reg_6513),
+    .lhs_142(ref_pixel_V_load_142_reg_6528),
+    .lhs_143(ref_pixel_V_load_143_reg_6533),
+    .lhs_144(ref_pixel_V_load_144_reg_6548),
+    .lhs_145(ref_pixel_V_load_145_reg_6553),
+    .lhs_146(ref_pixel_V_load_146_reg_6568),
+    .lhs_147(ref_pixel_V_load_147_reg_6573),
+    .lhs_148(ref_pixel_V_load_148_reg_6588),
+    .lhs_149(ref_pixel_V_load_149_reg_6593),
+    .lhs_150(ref_pixel_V_load_150_reg_6608),
+    .lhs_151(ref_pixel_V_load_151_reg_6613),
+    .lhs_152(ref_pixel_V_load_152_reg_6628),
+    .lhs_153(ref_pixel_V_load_153_reg_6633),
+    .lhs_154(ref_pixel_V_load_154_reg_6648),
+    .lhs_155(ref_pixel_V_load_155_reg_6653),
+    .lhs_156(ref_pixel_V_load_156_reg_6668),
+    .lhs_157(ref_pixel_V_load_157_reg_6673),
+    .lhs_158(ref_pixel_V_load_158_reg_6688),
+    .lhs_159(ref_pixel_V_load_159_reg_6693),
+    .lhs_160(ref_pixel_V_load_160_reg_6708),
+    .lhs_161(ref_pixel_V_load_161_reg_6713),
+    .lhs_162(ref_pixel_V_load_162_reg_6728),
+    .lhs_163(ref_pixel_V_load_163_reg_6733),
+    .lhs_164(ref_pixel_V_load_164_reg_6748),
+    .lhs_165(ref_pixel_V_load_165_reg_6753),
+    .lhs_166(ref_pixel_V_load_166_reg_6768),
+    .lhs_167(ref_pixel_V_load_167_reg_6773),
+    .lhs_168(ref_pixel_V_load_168_reg_6788),
+    .lhs_169(ref_pixel_V_load_169_reg_6793),
+    .lhs_170(ref_pixel_V_load_170_reg_6808),
+    .lhs_171(ref_pixel_V_load_171_reg_6813),
+    .lhs_172(ref_pixel_V_load_172_reg_6828),
+    .lhs_173(ref_pixel_V_load_173_reg_6833),
+    .lhs_174(ref_pixel_V_load_174_reg_6848),
+    .lhs_175(ref_pixel_V_load_175_reg_6853),
+    .lhs_176(ref_pixel_V_load_176_reg_6868),
+    .lhs_177(ref_pixel_V_load_177_reg_6873),
+    .lhs_178(ref_pixel_V_load_178_reg_6888),
+    .lhs_179(ref_pixel_V_load_179_reg_6893),
+    .closest_pixel_V_538_0183_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_538_0183_out),
+    .closest_pixel_V_538_0183_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_538_0183_out_ap_vld),
+    .closest_pixel_V_448_0182_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_448_0182_out),
+    .closest_pixel_V_448_0182_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_448_0182_out_ap_vld),
+    .closest_pixel_V_537_0181_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_537_0181_out),
+    .closest_pixel_V_537_0181_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_537_0181_out_ap_vld),
+    .closest_pixel_V_447_0180_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_447_0180_out),
+    .closest_pixel_V_447_0180_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_447_0180_out_ap_vld),
+    .closest_pixel_V_536_0179_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_536_0179_out),
+    .closest_pixel_V_536_0179_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_536_0179_out_ap_vld),
+    .closest_pixel_V_446_0178_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_446_0178_out),
+    .closest_pixel_V_446_0178_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_446_0178_out_ap_vld),
+    .closest_pixel_V_535_0177_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_535_0177_out),
+    .closest_pixel_V_535_0177_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_535_0177_out_ap_vld),
+    .closest_pixel_V_445_0176_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_445_0176_out),
+    .closest_pixel_V_445_0176_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_445_0176_out_ap_vld),
+    .closest_pixel_V_534_0175_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_534_0175_out),
+    .closest_pixel_V_534_0175_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_534_0175_out_ap_vld),
+    .closest_pixel_V_444_0174_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_444_0174_out),
+    .closest_pixel_V_444_0174_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_444_0174_out_ap_vld),
+    .closest_pixel_V_533_0173_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_533_0173_out),
+    .closest_pixel_V_533_0173_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_533_0173_out_ap_vld),
+    .closest_pixel_V_443_0172_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_443_0172_out),
+    .closest_pixel_V_443_0172_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_443_0172_out_ap_vld),
+    .closest_pixel_V_532_0171_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_532_0171_out),
+    .closest_pixel_V_532_0171_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_532_0171_out_ap_vld),
+    .closest_pixel_V_442_0170_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_442_0170_out),
+    .closest_pixel_V_442_0170_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_442_0170_out_ap_vld),
+    .closest_pixel_V_531_0169_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_531_0169_out),
+    .closest_pixel_V_531_0169_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_531_0169_out_ap_vld),
+    .closest_pixel_V_441_0168_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_441_0168_out),
+    .closest_pixel_V_441_0168_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_441_0168_out_ap_vld),
+    .closest_pixel_V_530_0167_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_530_0167_out),
+    .closest_pixel_V_530_0167_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_530_0167_out_ap_vld),
+    .closest_pixel_V_440_0166_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_440_0166_out),
+    .closest_pixel_V_440_0166_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_440_0166_out_ap_vld),
+    .closest_pixel_V_529_0165_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_529_0165_out),
+    .closest_pixel_V_529_0165_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_529_0165_out_ap_vld),
+    .closest_pixel_V_439_0164_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_439_0164_out),
+    .closest_pixel_V_439_0164_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_439_0164_out_ap_vld),
+    .closest_pixel_V_528_0163_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_528_0163_out),
+    .closest_pixel_V_528_0163_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_528_0163_out_ap_vld),
+    .closest_pixel_V_438_0162_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_438_0162_out),
+    .closest_pixel_V_438_0162_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_438_0162_out_ap_vld),
+    .closest_pixel_V_527_0161_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_527_0161_out),
+    .closest_pixel_V_527_0161_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_527_0161_out_ap_vld),
+    .closest_pixel_V_437_0160_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_437_0160_out),
+    .closest_pixel_V_437_0160_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_437_0160_out_ap_vld),
+    .closest_pixel_V_526_0159_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_526_0159_out),
+    .closest_pixel_V_526_0159_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_526_0159_out_ap_vld),
+    .closest_pixel_V_436_0158_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_436_0158_out),
+    .closest_pixel_V_436_0158_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_436_0158_out_ap_vld),
+    .closest_pixel_V_525_0157_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_525_0157_out),
+    .closest_pixel_V_525_0157_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_525_0157_out_ap_vld),
+    .closest_pixel_V_435_0156_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_435_0156_out),
+    .closest_pixel_V_435_0156_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_435_0156_out_ap_vld),
+    .closest_pixel_V_524_0155_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_524_0155_out),
+    .closest_pixel_V_524_0155_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_524_0155_out_ap_vld),
+    .closest_pixel_V_434_0154_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_434_0154_out),
+    .closest_pixel_V_434_0154_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_434_0154_out_ap_vld),
+    .closest_pixel_V_523_0153_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_523_0153_out),
+    .closest_pixel_V_523_0153_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_523_0153_out_ap_vld),
+    .closest_pixel_V_433_0152_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_433_0152_out),
+    .closest_pixel_V_433_0152_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_433_0152_out_ap_vld),
+    .closest_pixel_V_522_0151_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_522_0151_out),
+    .closest_pixel_V_522_0151_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_522_0151_out_ap_vld),
+    .closest_pixel_V_432_0150_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_432_0150_out),
+    .closest_pixel_V_432_0150_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_432_0150_out_ap_vld),
+    .closest_pixel_V_521_0149_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_521_0149_out),
+    .closest_pixel_V_521_0149_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_521_0149_out_ap_vld),
+    .closest_pixel_V_431_0148_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_431_0148_out),
+    .closest_pixel_V_431_0148_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_431_0148_out_ap_vld),
+    .closest_pixel_V_520_0147_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_520_0147_out),
+    .closest_pixel_V_520_0147_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_520_0147_out_ap_vld),
+    .closest_pixel_V_430_0146_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_430_0146_out),
+    .closest_pixel_V_430_0146_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_430_0146_out_ap_vld),
+    .closest_pixel_V_519_0145_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_519_0145_out),
+    .closest_pixel_V_519_0145_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_519_0145_out_ap_vld),
+    .closest_pixel_V_429_0144_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_429_0144_out),
+    .closest_pixel_V_429_0144_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_429_0144_out_ap_vld),
+    .closest_pixel_V_518_0143_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_518_0143_out),
+    .closest_pixel_V_518_0143_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_518_0143_out_ap_vld),
+    .closest_pixel_V_428_0142_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_428_0142_out),
+    .closest_pixel_V_428_0142_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_428_0142_out_ap_vld),
+    .closest_pixel_V_517_0141_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_517_0141_out),
+    .closest_pixel_V_517_0141_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_517_0141_out_ap_vld),
+    .closest_pixel_V_427_0140_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_427_0140_out),
+    .closest_pixel_V_427_0140_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_427_0140_out_ap_vld),
+    .closest_pixel_V_516_0139_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_516_0139_out),
+    .closest_pixel_V_516_0139_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_516_0139_out_ap_vld),
+    .closest_pixel_V_426_0138_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_426_0138_out),
+    .closest_pixel_V_426_0138_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_426_0138_out_ap_vld),
+    .closest_pixel_V_515_0137_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_515_0137_out),
+    .closest_pixel_V_515_0137_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_515_0137_out_ap_vld),
+    .closest_pixel_V_425_0136_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_425_0136_out),
+    .closest_pixel_V_425_0136_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_425_0136_out_ap_vld),
+    .closest_pixel_V_514_0135_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_514_0135_out),
+    .closest_pixel_V_514_0135_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_514_0135_out_ap_vld),
+    .closest_pixel_V_424_0134_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_424_0134_out),
+    .closest_pixel_V_424_0134_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_424_0134_out_ap_vld),
+    .closest_pixel_V_513_0133_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_513_0133_out),
+    .closest_pixel_V_513_0133_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_513_0133_out_ap_vld),
+    .closest_pixel_V_423_0132_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_423_0132_out),
+    .closest_pixel_V_423_0132_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_423_0132_out_ap_vld),
+    .closest_pixel_V_512_0131_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_512_0131_out),
+    .closest_pixel_V_512_0131_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_512_0131_out_ap_vld),
+    .closest_pixel_V_422_0130_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_422_0130_out),
+    .closest_pixel_V_422_0130_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_422_0130_out_ap_vld),
+    .closest_pixel_V_511_0129_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_511_0129_out),
+    .closest_pixel_V_511_0129_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_511_0129_out_ap_vld),
+    .closest_pixel_V_421_0128_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_421_0128_out),
+    .closest_pixel_V_421_0128_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_421_0128_out_ap_vld),
+    .closest_pixel_V_510_0127_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_510_0127_out),
+    .closest_pixel_V_510_0127_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_510_0127_out_ap_vld),
+    .closest_pixel_V_420_0126_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_420_0126_out),
+    .closest_pixel_V_420_0126_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_420_0126_out_ap_vld),
+    .closest_pixel_V_509_0125_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_509_0125_out),
+    .closest_pixel_V_509_0125_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_509_0125_out_ap_vld),
+    .closest_pixel_V_419_0124_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_419_0124_out),
+    .closest_pixel_V_419_0124_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_419_0124_out_ap_vld),
+    .closest_pixel_V_508_0123_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_508_0123_out),
+    .closest_pixel_V_508_0123_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_508_0123_out_ap_vld),
+    .closest_pixel_V_418_0122_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_418_0122_out),
+    .closest_pixel_V_418_0122_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_418_0122_out_ap_vld),
+    .closest_pixel_V_507_0121_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_507_0121_out),
+    .closest_pixel_V_507_0121_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_507_0121_out_ap_vld),
+    .closest_pixel_V_417_0120_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_417_0120_out),
+    .closest_pixel_V_417_0120_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_417_0120_out_ap_vld),
+    .closest_pixel_V_506_0119_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_506_0119_out),
+    .closest_pixel_V_506_0119_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_506_0119_out_ap_vld),
+    .closest_pixel_V_416_0118_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_416_0118_out),
+    .closest_pixel_V_416_0118_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_416_0118_out_ap_vld),
+    .closest_pixel_V_505_0117_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_505_0117_out),
+    .closest_pixel_V_505_0117_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_505_0117_out_ap_vld),
+    .closest_pixel_V_415_0116_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_415_0116_out),
+    .closest_pixel_V_415_0116_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_415_0116_out_ap_vld),
+    .closest_pixel_V_504_0115_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_504_0115_out),
+    .closest_pixel_V_504_0115_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_504_0115_out_ap_vld),
+    .closest_pixel_V_414_0114_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_414_0114_out),
+    .closest_pixel_V_414_0114_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_414_0114_out_ap_vld),
+    .closest_pixel_V_503_0113_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_503_0113_out),
+    .closest_pixel_V_503_0113_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_503_0113_out_ap_vld),
+    .closest_pixel_V_413_0112_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_413_0112_out),
+    .closest_pixel_V_413_0112_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_413_0112_out_ap_vld),
+    .closest_pixel_V_502_0111_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_502_0111_out),
+    .closest_pixel_V_502_0111_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_502_0111_out_ap_vld),
+    .closest_pixel_V_412_0110_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_412_0110_out),
+    .closest_pixel_V_412_0110_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_412_0110_out_ap_vld),
+    .closest_pixel_V_501_0109_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_501_0109_out),
+    .closest_pixel_V_501_0109_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_501_0109_out_ap_vld),
+    .closest_pixel_V_411_0108_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_411_0108_out),
+    .closest_pixel_V_411_0108_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_411_0108_out_ap_vld),
+    .closest_pixel_V_500_0107_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_500_0107_out),
+    .closest_pixel_V_500_0107_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_500_0107_out_ap_vld),
+    .closest_pixel_V_410_0106_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_410_0106_out),
+    .closest_pixel_V_410_0106_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_410_0106_out_ap_vld),
+    .closest_pixel_V_499_0105_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_499_0105_out),
+    .closest_pixel_V_499_0105_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_499_0105_out_ap_vld),
+    .closest_pixel_V_409_0104_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_409_0104_out),
+    .closest_pixel_V_409_0104_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_409_0104_out_ap_vld),
+    .closest_pixel_V_498_0103_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_498_0103_out),
+    .closest_pixel_V_498_0103_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_498_0103_out_ap_vld),
+    .closest_pixel_V_408_0102_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_408_0102_out),
+    .closest_pixel_V_408_0102_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_408_0102_out_ap_vld),
+    .closest_pixel_V_497_0101_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_497_0101_out),
+    .closest_pixel_V_497_0101_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_497_0101_out_ap_vld),
+    .closest_pixel_V_407_0100_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_407_0100_out),
+    .closest_pixel_V_407_0100_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_407_0100_out_ap_vld),
+    .closest_pixel_V_496_099_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_496_099_out),
+    .closest_pixel_V_496_099_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_496_099_out_ap_vld),
+    .closest_pixel_V_406_098_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_406_098_out),
+    .closest_pixel_V_406_098_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_406_098_out_ap_vld),
+    .closest_pixel_V_495_097_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_495_097_out),
+    .closest_pixel_V_495_097_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_495_097_out_ap_vld),
+    .closest_pixel_V_405_096_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_405_096_out),
+    .closest_pixel_V_405_096_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_405_096_out_ap_vld),
+    .closest_pixel_V_494_095_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_494_095_out),
+    .closest_pixel_V_494_095_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_494_095_out_ap_vld),
+    .closest_pixel_V_404_094_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_404_094_out),
+    .closest_pixel_V_404_094_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_404_094_out_ap_vld),
+    .closest_pixel_V_493_093_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_493_093_out),
+    .closest_pixel_V_493_093_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_493_093_out_ap_vld),
+    .closest_pixel_V_403_092_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_403_092_out),
+    .closest_pixel_V_403_092_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_403_092_out_ap_vld),
+    .closest_pixel_V_492_091_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_492_091_out),
+    .closest_pixel_V_492_091_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_492_091_out_ap_vld),
+    .closest_pixel_V_402_090_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_402_090_out),
+    .closest_pixel_V_402_090_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_402_090_out_ap_vld),
+    .closest_pixel_V_491_089_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_491_089_out),
+    .closest_pixel_V_491_089_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_491_089_out_ap_vld),
+    .closest_pixel_V_401_088_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_401_088_out),
+    .closest_pixel_V_401_088_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_401_088_out_ap_vld),
+    .closest_pixel_V_490_087_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_490_087_out),
+    .closest_pixel_V_490_087_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_490_087_out_ap_vld),
+    .closest_pixel_V_400_086_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_400_086_out),
+    .closest_pixel_V_400_086_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_400_086_out_ap_vld),
+    .closest_pixel_V_489_085_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_489_085_out),
+    .closest_pixel_V_489_085_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_489_085_out_ap_vld),
+    .closest_pixel_V_399_084_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_399_084_out),
+    .closest_pixel_V_399_084_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_399_084_out_ap_vld),
+    .closest_pixel_V_488_083_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_488_083_out),
+    .closest_pixel_V_488_083_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_488_083_out_ap_vld),
+    .closest_pixel_V_398_082_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_398_082_out),
+    .closest_pixel_V_398_082_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_398_082_out_ap_vld),
+    .closest_pixel_V_487_081_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_487_081_out),
+    .closest_pixel_V_487_081_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_487_081_out_ap_vld),
+    .closest_pixel_V_397_080_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_397_080_out),
+    .closest_pixel_V_397_080_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_397_080_out_ap_vld),
+    .closest_pixel_V_486_079_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_486_079_out),
+    .closest_pixel_V_486_079_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_486_079_out_ap_vld),
+    .closest_pixel_V_396_078_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_396_078_out),
+    .closest_pixel_V_396_078_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_396_078_out_ap_vld),
+    .closest_pixel_V_485_077_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_485_077_out),
+    .closest_pixel_V_485_077_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_485_077_out_ap_vld),
+    .closest_pixel_V_395_076_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_395_076_out),
+    .closest_pixel_V_395_076_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_395_076_out_ap_vld),
+    .closest_pixel_V_484_075_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_484_075_out),
+    .closest_pixel_V_484_075_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_484_075_out_ap_vld),
+    .closest_pixel_V_394_074_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_394_074_out),
+    .closest_pixel_V_394_074_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_394_074_out_ap_vld),
+    .closest_pixel_V_483_073_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_483_073_out),
+    .closest_pixel_V_483_073_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_483_073_out_ap_vld),
+    .closest_pixel_V_393_072_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_393_072_out),
+    .closest_pixel_V_393_072_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_393_072_out_ap_vld),
+    .closest_pixel_V_482_071_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_482_071_out),
+    .closest_pixel_V_482_071_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_482_071_out_ap_vld),
+    .closest_pixel_V_392_070_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_392_070_out),
+    .closest_pixel_V_392_070_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_392_070_out_ap_vld),
+    .closest_pixel_V_481_069_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_481_069_out),
+    .closest_pixel_V_481_069_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_481_069_out_ap_vld),
+    .closest_pixel_V_391_068_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_391_068_out),
+    .closest_pixel_V_391_068_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_391_068_out_ap_vld),
+    .closest_pixel_V_480_067_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_480_067_out),
+    .closest_pixel_V_480_067_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_480_067_out_ap_vld),
+    .closest_pixel_V_390_066_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_390_066_out),
+    .closest_pixel_V_390_066_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_390_066_out_ap_vld),
+    .closest_pixel_V_479_065_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_479_065_out),
+    .closest_pixel_V_479_065_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_479_065_out_ap_vld),
+    .closest_pixel_V_389_064_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_389_064_out),
+    .closest_pixel_V_389_064_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_389_064_out_ap_vld),
+    .closest_pixel_V_478_063_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_478_063_out),
+    .closest_pixel_V_478_063_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_478_063_out_ap_vld),
+    .closest_pixel_V_388_062_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_388_062_out),
+    .closest_pixel_V_388_062_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_388_062_out_ap_vld),
+    .closest_pixel_V_477_061_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_477_061_out),
+    .closest_pixel_V_477_061_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_477_061_out_ap_vld),
+    .closest_pixel_V_387_060_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_387_060_out),
+    .closest_pixel_V_387_060_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_387_060_out_ap_vld),
+    .closest_pixel_V_476_059_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_476_059_out),
+    .closest_pixel_V_476_059_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_476_059_out_ap_vld),
+    .closest_pixel_V_386_058_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_386_058_out),
+    .closest_pixel_V_386_058_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_386_058_out_ap_vld),
+    .closest_pixel_V_475_057_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_475_057_out),
+    .closest_pixel_V_475_057_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_475_057_out_ap_vld),
+    .closest_pixel_V_385_056_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_385_056_out),
+    .closest_pixel_V_385_056_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_385_056_out_ap_vld),
+    .closest_pixel_V_474_055_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_474_055_out),
+    .closest_pixel_V_474_055_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_474_055_out_ap_vld),
+    .closest_pixel_V_384_054_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_384_054_out),
+    .closest_pixel_V_384_054_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_384_054_out_ap_vld),
+    .closest_pixel_V_473_053_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_473_053_out),
+    .closest_pixel_V_473_053_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_473_053_out_ap_vld),
+    .closest_pixel_V_383_052_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_383_052_out),
+    .closest_pixel_V_383_052_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_383_052_out_ap_vld),
+    .closest_pixel_V_472_051_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_472_051_out),
+    .closest_pixel_V_472_051_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_472_051_out_ap_vld),
+    .closest_pixel_V_382_050_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_382_050_out),
+    .closest_pixel_V_382_050_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_382_050_out_ap_vld),
+    .closest_pixel_V_471_049_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_471_049_out),
+    .closest_pixel_V_471_049_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_471_049_out_ap_vld),
+    .closest_pixel_V_381_048_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_381_048_out),
+    .closest_pixel_V_381_048_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_381_048_out_ap_vld),
+    .closest_pixel_V_470_047_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_470_047_out),
+    .closest_pixel_V_470_047_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_470_047_out_ap_vld),
+    .closest_pixel_V_380_046_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_380_046_out),
+    .closest_pixel_V_380_046_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_380_046_out_ap_vld),
+    .closest_pixel_V_469_045_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_469_045_out),
+    .closest_pixel_V_469_045_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_469_045_out_ap_vld),
+    .closest_pixel_V_379_044_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_379_044_out),
+    .closest_pixel_V_379_044_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_379_044_out_ap_vld),
+    .closest_pixel_V_468_043_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_468_043_out),
+    .closest_pixel_V_468_043_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_468_043_out_ap_vld),
+    .closest_pixel_V_378_042_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_378_042_out),
+    .closest_pixel_V_378_042_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_378_042_out_ap_vld),
+    .closest_pixel_V_467_041_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_467_041_out),
+    .closest_pixel_V_467_041_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_467_041_out_ap_vld),
+    .closest_pixel_V_377_040_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_377_040_out),
+    .closest_pixel_V_377_040_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_377_040_out_ap_vld),
+    .closest_pixel_V_466_039_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_466_039_out),
+    .closest_pixel_V_466_039_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_466_039_out_ap_vld),
+    .closest_pixel_V_376_038_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_376_038_out),
+    .closest_pixel_V_376_038_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_376_038_out_ap_vld),
+    .closest_pixel_V_465_037_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_465_037_out),
+    .closest_pixel_V_465_037_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_465_037_out_ap_vld),
+    .closest_pixel_V_375_036_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_375_036_out),
+    .closest_pixel_V_375_036_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_375_036_out_ap_vld),
+    .closest_pixel_V_464_035_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_464_035_out),
+    .closest_pixel_V_464_035_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_464_035_out_ap_vld),
+    .closest_pixel_V_374_034_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_374_034_out),
+    .closest_pixel_V_374_034_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_374_034_out_ap_vld),
+    .closest_pixel_V_463_033_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_463_033_out),
+    .closest_pixel_V_463_033_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_463_033_out_ap_vld),
+    .closest_pixel_V_373_032_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_373_032_out),
+    .closest_pixel_V_373_032_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_373_032_out_ap_vld),
+    .closest_pixel_V_462_031_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_462_031_out),
+    .closest_pixel_V_462_031_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_462_031_out_ap_vld),
+    .closest_pixel_V_372_030_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_372_030_out),
+    .closest_pixel_V_372_030_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_372_030_out_ap_vld),
+    .closest_pixel_V_461_029_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_461_029_out),
+    .closest_pixel_V_461_029_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_461_029_out_ap_vld),
+    .closest_pixel_V_371_028_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_371_028_out),
+    .closest_pixel_V_371_028_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_371_028_out_ap_vld),
+    .closest_pixel_V_460_027_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_460_027_out),
+    .closest_pixel_V_460_027_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_460_027_out_ap_vld),
+    .closest_pixel_V_370_026_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_370_026_out),
+    .closest_pixel_V_370_026_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_370_026_out_ap_vld),
+    .closest_pixel_V_459_025_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_459_025_out),
+    .closest_pixel_V_459_025_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_459_025_out_ap_vld),
+    .closest_pixel_V_369_024_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_369_024_out),
+    .closest_pixel_V_369_024_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_369_024_out_ap_vld),
+    .closest_pixel_V_458_023_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_458_023_out),
+    .closest_pixel_V_458_023_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_458_023_out_ap_vld),
+    .closest_pixel_V_368_022_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_368_022_out),
+    .closest_pixel_V_368_022_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_368_022_out_ap_vld),
+    .closest_pixel_V_457_021_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_457_021_out),
+    .closest_pixel_V_457_021_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_457_021_out_ap_vld),
+    .closest_pixel_V_367_020_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_367_020_out),
+    .closest_pixel_V_367_020_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_367_020_out_ap_vld),
+    .closest_pixel_V_456_019_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_456_019_out),
+    .closest_pixel_V_456_019_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_456_019_out_ap_vld),
+    .closest_pixel_V_366_018_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_366_018_out),
+    .closest_pixel_V_366_018_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_366_018_out_ap_vld),
+    .closest_pixel_V_455_017_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_455_017_out),
+    .closest_pixel_V_455_017_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_455_017_out_ap_vld),
+    .closest_pixel_V_365_016_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_365_016_out),
+    .closest_pixel_V_365_016_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_365_016_out_ap_vld),
+    .closest_pixel_V_454_015_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_454_015_out),
+    .closest_pixel_V_454_015_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_454_015_out_ap_vld),
+    .closest_pixel_V_364_014_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_364_014_out),
+    .closest_pixel_V_364_014_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_364_014_out_ap_vld),
+    .closest_pixel_V_453_013_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_453_013_out),
+    .closest_pixel_V_453_013_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_453_013_out_ap_vld),
+    .closest_pixel_V_363_012_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_363_012_out),
+    .closest_pixel_V_363_012_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_363_012_out_ap_vld),
+    .closest_pixel_V_452_011_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_452_011_out),
+    .closest_pixel_V_452_011_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_452_011_out_ap_vld),
+    .closest_pixel_V_362_010_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_362_010_out),
+    .closest_pixel_V_362_010_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_362_010_out_ap_vld),
+    .closest_pixel_V_451_09_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_451_09_out),
+    .closest_pixel_V_451_09_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_451_09_out_ap_vld),
+    .closest_pixel_V_361_08_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_361_08_out),
+    .closest_pixel_V_361_08_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_361_08_out_ap_vld),
+    .closest_pixel_V_450_07_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_450_07_out),
+    .closest_pixel_V_450_07_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_450_07_out_ap_vld),
+    .closest_pixel_V_360_06_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_360_06_out),
+    .closest_pixel_V_360_06_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_360_06_out_ap_vld),
+    .closest_pixel_V_449_05_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_449_05_out),
+    .closest_pixel_V_449_05_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_449_05_out_ap_vld),
+    .closest_pixel_V_359_04_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_359_04_out),
+    .closest_pixel_V_359_04_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_359_04_out_ap_vld),
+    .min_pixel_index_i_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_min_pixel_index_i_out),
+    .min_pixel_index_i_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_min_pixel_index_i_out_ap_vld),
+    .min_pixel_index_j_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_min_pixel_index_j_out),
+    .min_pixel_index_j_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_min_pixel_index_j_out_ap_vld),
+    .min_distance_V_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_min_distance_V_out),
+    .min_distance_V_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_min_distance_V_out_ap_vld)
 );
 
-hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L4 grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286(
+hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_start),
-    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_done),
-    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_idle),
-    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_ready),
-    .sum_stream_dout(sum_stream_dout),
-    .sum_stream_empty_n(sum_stream_empty_n),
-    .sum_stream_read(grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_sum_stream_read),
-    .sum_out(grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_sum_out),
-    .sum_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_sum_out_ap_vld)
-);
-
-hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L5 grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_start),
-    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_done),
-    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_idle),
-    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_ready),
-    .brightness_stream_din(grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_brightness_stream_din),
-    .brightness_stream_full_n(brightness_stream_full_n),
-    .brightness_stream_write(grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_brightness_stream_write),
-    .mul_ln17_1(mul_ln41_reg_908),
-    .image_r_address0(grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_image_r_address0),
-    .image_r_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_image_r_ce0),
-    .image_r_q0(image_q0)
-);
-
-hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L6 grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_start),
-    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_done),
-    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_idle),
-    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_ready),
-    .brightness_stream_dout(brightness_stream_dout),
-    .brightness_stream_empty_n(brightness_stream_empty_n),
-    .brightness_stream_read(grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_brightness_stream_read),
-    .current_brightness_out(grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_current_brightness_out),
-    .current_brightness_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_current_brightness_out_ap_vld)
-);
-
-hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_start),
-    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_done),
-    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_idle),
-    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_ready),
-    .out_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TREADY),
-    .j_02_i633(j_02_i633_load_reg_936),
-    .i_04_i631(i_04_i631_load_reg_931),
-    .out_stream_TDATA(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TDATA),
-    .out_stream_TVALID(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID),
-    .out_stream_TKEEP(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TKEEP),
-    .out_stream_TSTRB(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TSTRB),
-    .out_stream_TUSER(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TUSER),
-    .out_stream_TLAST(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TLAST),
-    .out_stream_TID(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TID),
-    .out_stream_TDEST(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TDEST),
-    .grp_fu_956_p_din0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_grp_fu_956_p_din0),
-    .grp_fu_956_p_dout0(grp_fu_956_p1),
-    .grp_fu_956_p_ce(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_grp_fu_956_p_ce)
-);
-
-hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_start),
-    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_done),
-    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_idle),
-    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_ready),
-    .out_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TREADY),
-    .j_02_i629(j_02_i629_load_reg_951),
-    .i_04_i627(i_04_i627_load_reg_946),
-    .out_stream_TDATA(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TDATA),
-    .out_stream_TVALID(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID),
-    .out_stream_TKEEP(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TKEEP),
-    .out_stream_TSTRB(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TSTRB),
-    .out_stream_TUSER(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TUSER),
-    .out_stream_TLAST(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TLAST),
-    .out_stream_TID(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TID),
-    .out_stream_TDEST(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TDEST),
-    .grp_fu_956_p_din0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_grp_fu_956_p_din0),
-    .grp_fu_956_p_dout0(grp_fu_956_p1),
-    .grp_fu_956_p_ce(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_grp_fu_956_p_ce)
+    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_ap_start),
+    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_ap_done),
+    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_ap_idle),
+    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_ap_ready),
+    .out_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TREADY),
+    .closest_pixel_V_359_04_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_359_04_out),
+    .closest_pixel_V_360_06_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_360_06_out),
+    .closest_pixel_V_361_08_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_361_08_out),
+    .closest_pixel_V_362_010_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_362_010_out),
+    .closest_pixel_V_363_012_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_363_012_out),
+    .closest_pixel_V_364_014_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_364_014_out),
+    .closest_pixel_V_365_016_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_365_016_out),
+    .closest_pixel_V_366_018_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_366_018_out),
+    .closest_pixel_V_367_020_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_367_020_out),
+    .closest_pixel_V_368_022_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_368_022_out),
+    .closest_pixel_V_369_024_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_369_024_out),
+    .closest_pixel_V_370_026_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_370_026_out),
+    .closest_pixel_V_371_028_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_371_028_out),
+    .closest_pixel_V_372_030_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_372_030_out),
+    .closest_pixel_V_373_032_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_373_032_out),
+    .closest_pixel_V_374_034_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_374_034_out),
+    .closest_pixel_V_375_036_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_375_036_out),
+    .closest_pixel_V_376_038_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_376_038_out),
+    .closest_pixel_V_377_040_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_377_040_out),
+    .closest_pixel_V_378_042_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_378_042_out),
+    .closest_pixel_V_379_044_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_379_044_out),
+    .closest_pixel_V_380_046_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_380_046_out),
+    .closest_pixel_V_381_048_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_381_048_out),
+    .closest_pixel_V_382_050_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_382_050_out),
+    .closest_pixel_V_383_052_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_383_052_out),
+    .closest_pixel_V_384_054_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_384_054_out),
+    .closest_pixel_V_385_056_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_385_056_out),
+    .closest_pixel_V_386_058_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_386_058_out),
+    .closest_pixel_V_387_060_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_387_060_out),
+    .closest_pixel_V_388_062_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_388_062_out),
+    .closest_pixel_V_389_064_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_389_064_out),
+    .closest_pixel_V_390_066_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_390_066_out),
+    .closest_pixel_V_391_068_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_391_068_out),
+    .closest_pixel_V_392_070_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_392_070_out),
+    .closest_pixel_V_393_072_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_393_072_out),
+    .closest_pixel_V_394_074_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_394_074_out),
+    .closest_pixel_V_395_076_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_395_076_out),
+    .closest_pixel_V_396_078_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_396_078_out),
+    .closest_pixel_V_397_080_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_397_080_out),
+    .closest_pixel_V_398_082_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_398_082_out),
+    .closest_pixel_V_399_084_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_399_084_out),
+    .closest_pixel_V_400_086_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_400_086_out),
+    .closest_pixel_V_401_088_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_401_088_out),
+    .closest_pixel_V_402_090_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_402_090_out),
+    .closest_pixel_V_403_092_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_403_092_out),
+    .closest_pixel_V_404_094_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_404_094_out),
+    .closest_pixel_V_405_096_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_405_096_out),
+    .closest_pixel_V_406_098_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_406_098_out),
+    .closest_pixel_V_407_0100_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_407_0100_out),
+    .closest_pixel_V_408_0102_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_408_0102_out),
+    .closest_pixel_V_409_0104_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_409_0104_out),
+    .closest_pixel_V_410_0106_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_410_0106_out),
+    .closest_pixel_V_411_0108_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_411_0108_out),
+    .closest_pixel_V_412_0110_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_412_0110_out),
+    .closest_pixel_V_413_0112_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_413_0112_out),
+    .closest_pixel_V_414_0114_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_414_0114_out),
+    .closest_pixel_V_415_0116_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_415_0116_out),
+    .closest_pixel_V_416_0118_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_416_0118_out),
+    .closest_pixel_V_417_0120_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_417_0120_out),
+    .closest_pixel_V_418_0122_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_418_0122_out),
+    .closest_pixel_V_419_0124_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_419_0124_out),
+    .closest_pixel_V_420_0126_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_420_0126_out),
+    .closest_pixel_V_421_0128_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_421_0128_out),
+    .closest_pixel_V_422_0130_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_422_0130_out),
+    .closest_pixel_V_423_0132_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_423_0132_out),
+    .closest_pixel_V_424_0134_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_424_0134_out),
+    .closest_pixel_V_425_0136_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_425_0136_out),
+    .closest_pixel_V_426_0138_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_426_0138_out),
+    .closest_pixel_V_427_0140_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_427_0140_out),
+    .closest_pixel_V_428_0142_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_428_0142_out),
+    .closest_pixel_V_429_0144_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_429_0144_out),
+    .closest_pixel_V_430_0146_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_430_0146_out),
+    .closest_pixel_V_431_0148_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_431_0148_out),
+    .closest_pixel_V_432_0150_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_432_0150_out),
+    .closest_pixel_V_433_0152_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_433_0152_out),
+    .closest_pixel_V_434_0154_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_434_0154_out),
+    .closest_pixel_V_435_0156_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_435_0156_out),
+    .closest_pixel_V_436_0158_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_436_0158_out),
+    .closest_pixel_V_437_0160_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_437_0160_out),
+    .closest_pixel_V_438_0162_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_438_0162_out),
+    .closest_pixel_V_439_0164_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_439_0164_out),
+    .closest_pixel_V_440_0166_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_440_0166_out),
+    .closest_pixel_V_441_0168_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_441_0168_out),
+    .closest_pixel_V_442_0170_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_442_0170_out),
+    .closest_pixel_V_443_0172_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_443_0172_out),
+    .closest_pixel_V_444_0174_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_444_0174_out),
+    .closest_pixel_V_445_0176_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_445_0176_out),
+    .closest_pixel_V_446_0178_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_446_0178_out),
+    .closest_pixel_V_447_0180_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_447_0180_out),
+    .closest_pixel_V_448_0182_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_448_0182_out),
+    .closest_pixel_V_449_05_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_449_05_out),
+    .closest_pixel_V_450_07_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_450_07_out),
+    .closest_pixel_V_451_09_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_451_09_out),
+    .closest_pixel_V_452_011_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_452_011_out),
+    .closest_pixel_V_453_013_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_453_013_out),
+    .closest_pixel_V_454_015_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_454_015_out),
+    .closest_pixel_V_455_017_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_455_017_out),
+    .closest_pixel_V_456_019_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_456_019_out),
+    .closest_pixel_V_457_021_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_457_021_out),
+    .closest_pixel_V_458_023_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_458_023_out),
+    .closest_pixel_V_459_025_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_459_025_out),
+    .closest_pixel_V_460_027_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_460_027_out),
+    .closest_pixel_V_461_029_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_461_029_out),
+    .closest_pixel_V_462_031_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_462_031_out),
+    .closest_pixel_V_463_033_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_463_033_out),
+    .closest_pixel_V_464_035_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_464_035_out),
+    .closest_pixel_V_465_037_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_465_037_out),
+    .closest_pixel_V_466_039_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_466_039_out),
+    .closest_pixel_V_467_041_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_467_041_out),
+    .closest_pixel_V_468_043_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_468_043_out),
+    .closest_pixel_V_469_045_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_469_045_out),
+    .closest_pixel_V_470_047_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_470_047_out),
+    .closest_pixel_V_471_049_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_471_049_out),
+    .closest_pixel_V_472_051_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_472_051_out),
+    .closest_pixel_V_473_053_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_473_053_out),
+    .closest_pixel_V_474_055_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_474_055_out),
+    .closest_pixel_V_475_057_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_475_057_out),
+    .closest_pixel_V_476_059_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_476_059_out),
+    .closest_pixel_V_477_061_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_477_061_out),
+    .closest_pixel_V_478_063_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_478_063_out),
+    .closest_pixel_V_479_065_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_479_065_out),
+    .closest_pixel_V_480_067_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_480_067_out),
+    .closest_pixel_V_481_069_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_481_069_out),
+    .closest_pixel_V_482_071_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_482_071_out),
+    .closest_pixel_V_483_073_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_483_073_out),
+    .closest_pixel_V_484_075_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_484_075_out),
+    .closest_pixel_V_485_077_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_485_077_out),
+    .closest_pixel_V_486_079_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_486_079_out),
+    .closest_pixel_V_487_081_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_487_081_out),
+    .closest_pixel_V_488_083_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_488_083_out),
+    .closest_pixel_V_489_085_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_489_085_out),
+    .closest_pixel_V_490_087_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_490_087_out),
+    .closest_pixel_V_491_089_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_491_089_out),
+    .closest_pixel_V_492_091_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_492_091_out),
+    .closest_pixel_V_493_093_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_493_093_out),
+    .closest_pixel_V_494_095_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_494_095_out),
+    .closest_pixel_V_495_097_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_495_097_out),
+    .closest_pixel_V_496_099_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_496_099_out),
+    .closest_pixel_V_497_0101_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_497_0101_out),
+    .closest_pixel_V_498_0103_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_498_0103_out),
+    .closest_pixel_V_499_0105_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_499_0105_out),
+    .closest_pixel_V_500_0107_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_500_0107_out),
+    .closest_pixel_V_501_0109_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_501_0109_out),
+    .closest_pixel_V_502_0111_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_502_0111_out),
+    .closest_pixel_V_503_0113_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_503_0113_out),
+    .closest_pixel_V_504_0115_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_504_0115_out),
+    .closest_pixel_V_505_0117_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_505_0117_out),
+    .closest_pixel_V_506_0119_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_506_0119_out),
+    .closest_pixel_V_507_0121_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_507_0121_out),
+    .closest_pixel_V_508_0123_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_508_0123_out),
+    .closest_pixel_V_509_0125_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_509_0125_out),
+    .closest_pixel_V_510_0127_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_510_0127_out),
+    .closest_pixel_V_511_0129_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_511_0129_out),
+    .closest_pixel_V_512_0131_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_512_0131_out),
+    .closest_pixel_V_513_0133_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_513_0133_out),
+    .closest_pixel_V_514_0135_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_514_0135_out),
+    .closest_pixel_V_515_0137_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_515_0137_out),
+    .closest_pixel_V_516_0139_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_516_0139_out),
+    .closest_pixel_V_517_0141_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_517_0141_out),
+    .closest_pixel_V_518_0143_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_518_0143_out),
+    .closest_pixel_V_519_0145_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_519_0145_out),
+    .closest_pixel_V_520_0147_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_520_0147_out),
+    .closest_pixel_V_521_0149_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_521_0149_out),
+    .closest_pixel_V_522_0151_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_522_0151_out),
+    .closest_pixel_V_523_0153_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_523_0153_out),
+    .closest_pixel_V_524_0155_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_524_0155_out),
+    .closest_pixel_V_525_0157_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_525_0157_out),
+    .closest_pixel_V_526_0159_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_526_0159_out),
+    .closest_pixel_V_527_0161_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_527_0161_out),
+    .closest_pixel_V_528_0163_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_528_0163_out),
+    .closest_pixel_V_529_0165_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_529_0165_out),
+    .closest_pixel_V_530_0167_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_530_0167_out),
+    .closest_pixel_V_531_0169_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_531_0169_out),
+    .closest_pixel_V_532_0171_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_532_0171_out),
+    .closest_pixel_V_533_0173_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_533_0173_out),
+    .closest_pixel_V_534_0175_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_534_0175_out),
+    .closest_pixel_V_535_0177_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_535_0177_out),
+    .closest_pixel_V_536_0179_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_536_0179_out),
+    .closest_pixel_V_537_0181_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_537_0181_out),
+    .closest_pixel_V_538_0183_reload(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_closest_pixel_V_538_0183_out),
+    .out_stream_TDATA(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TDATA),
+    .out_stream_TVALID(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TVALID),
+    .out_stream_TKEEP(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TKEEP),
+    .out_stream_TSTRB(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TSTRB),
+    .out_stream_TUSER(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TUSER),
+    .out_stream_TLAST(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TLAST),
+    .out_stream_TID(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TID),
+    .out_stream_TDEST(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TDEST)
 );
 
 hyperspectral_hw_wrapped_CONTROL_BUS_s_axi #(
@@ -684,106 +1907,17 @@ CONTROL_BUS_s_axi_U(
     .ap_idle(ap_idle)
 );
 
-hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 2 ),
-    .din0_WIDTH( 32 ),
-    .din1_WIDTH( 32 ),
-    .dout_WIDTH( 1 ))
-fcmp_32ns_32ns_1_2_no_dsp_1_U60(
-    .clk(ap_clk),
-    .reset(ap_rst_n_inv),
-    .din0(minDistance_3_reg_917),
-    .din1(minDistance_fu_148),
-    .ce(1'b1),
-    .opcode(5'd4),
-    .dout(grp_fu_345_p2)
-);
-
-hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 10 ),
-    .din0_WIDTH( 32 ),
-    .din1_WIDTH( 32 ),
-    .dout_WIDTH( 32 ))
-fsqrt_32ns_32ns_32_10_no_dsp_1_U61(
-    .clk(ap_clk),
-    .reset(ap_rst_n_inv),
-    .din0(32'd0),
-    .din1(grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_sum_out),
-    .ce(grp_fu_349_ce),
-    .dout(grp_fu_349_p2)
-);
-
-hyperspectral_hw_wrapped_mul_mul_19s_8ns_19_4_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 19 ),
-    .din1_WIDTH( 8 ),
-    .dout_WIDTH( 19 ))
-mul_mul_19s_8ns_19_4_1_U62(
-    .clk(ap_clk),
-    .reset(ap_rst_n_inv),
-    .din0(grp_fu_749_p0),
-    .din1(grp_fu_749_p1),
-    .ce(1'b1),
-    .dout(grp_fu_749_p2)
-);
-
-hyperspectral_hw_wrapped_am_addmul_12ns_11ns_8ns_19_4_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 12 ),
-    .din1_WIDTH( 11 ),
-    .din2_WIDTH( 8 ),
-    .dout_WIDTH( 19 ))
-am_addmul_12ns_11ns_8ns_19_4_1_U63(
-    .clk(ap_clk),
-    .reset(ap_rst_n_inv),
-    .din0(grp_fu_755_p0),
-    .din1(grp_fu_755_p1),
-    .din2(grp_fu_755_p2),
-    .ce(1'b1),
-    .dout(grp_fu_755_p3)
-);
-
-hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1 #(
+hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1 #(
     .ID( 1 ),
     .NUM_STAGE( 4 ),
     .din0_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-sitofp_32ns_32_4_no_dsp_1_U64(
+uitofp_32ns_32_4_no_dsp_1_U753(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
-    .din0(grp_fu_956_p0),
-    .ce(grp_fu_956_ce),
-    .dout(grp_fu_956_p1)
-);
-
-hyperspectral_hw_wrapped_fifo_w32_d2_S brightness_stream_fifo_U(
-    .clk(ap_clk),
-    .reset(ap_rst_n_inv),
-    .if_read_ce(1'b1),
-    .if_write_ce(1'b1),
-    .if_din(grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_brightness_stream_din),
-    .if_full_n(brightness_stream_full_n),
-    .if_write(brightness_stream_write),
-    .if_dout(brightness_stream_dout),
-    .if_empty_n(brightness_stream_empty_n),
-    .if_read(brightness_stream_read)
-);
-
-hyperspectral_hw_wrapped_fifo_w32_d2_S sum_stream_fifo_U(
-    .clk(ap_clk),
-    .reset(ap_rst_n_inv),
-    .if_read_ce(1'b1),
-    .if_write_ce(1'b1),
-    .if_din(grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_sum_stream_din),
-    .if_full_n(sum_stream_full_n),
-    .if_write(sum_stream_write),
-    .if_dout(sum_stream_dout),
-    .if_empty_n(sum_stream_empty_n),
-    .if_read(sum_stream_read)
+    .din0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_min_distance_V_out),
+    .ce(grp_fu_3260_ce),
+    .dout(grp_fu_3260_p1)
 );
 
 hyperspectral_hw_wrapped_regslice_both #(
@@ -992,200 +2126,691 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_start_reg <= 1'b0;
+        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state14)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_start_reg <= 1'b1;
-        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_ready == 1'b1)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state2)) begin
+            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ap_start_reg <= 1'b1;
+        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ap_ready == 1'b1)) begin
+            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_start_reg <= 1'b0;
+        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state17)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_start_reg <= 1'b1;
-        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_ready == 1'b1)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state94)) begin
+            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_ap_start_reg <= 1'b1;
+        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_ap_ready == 1'b1)) begin
+            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_start_reg <= 1'b0;
+        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state20)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_start_reg <= 1'b1;
-        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_ready == 1'b1)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state97)) begin
+            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_ap_start_reg <= 1'b1;
+        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_ap_ready == 1'b1)) begin
+            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (ap_rst_n_inv == 1'b1) begin
-        grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_start_reg <= 1'b0;
-    end else begin
-        if ((1'b1 == ap_CS_fsm_state23)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_start_reg <= 1'b1;
-        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_ready == 1'b1)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_start_reg <= 1'b0;
-        end
+    if ((1'b1 == ap_CS_fsm_state55)) begin
+        ref_pixel_V_load_100_reg_6108 <= ref_pixel_V_q1;
+        ref_pixel_V_load_101_reg_6113 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (ap_rst_n_inv == 1'b1) begin
-        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_start_reg <= 1'b0;
-    end else begin
-        if (((1'b1 == ap_CS_fsm_state1) & (1'b1 == ap_NS_fsm_state2))) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_start_reg <= 1'b1;
-        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_ready == 1'b1)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_start_reg <= 1'b0;
-        end
+    if ((1'b1 == ap_CS_fsm_state56)) begin
+        ref_pixel_V_load_102_reg_6128 <= ref_pixel_V_q1;
+        ref_pixel_V_load_103_reg_6133 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (ap_rst_n_inv == 1'b1) begin
-        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_start_reg <= 1'b0;
-    end else begin
-        if ((1'b1 == ap_CS_fsm_state5)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_start_reg <= 1'b1;
-        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_ready == 1'b1)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_start_reg <= 1'b0;
-        end
+    if ((1'b1 == ap_CS_fsm_state57)) begin
+        ref_pixel_V_load_104_reg_6148 <= ref_pixel_V_q1;
+        ref_pixel_V_load_105_reg_6153 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (ap_rst_n_inv == 1'b1) begin
-        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_start_reg <= 1'b0;
-    end else begin
-        if ((1'b1 == ap_CS_fsm_state31)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_start_reg <= 1'b1;
-        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_ready == 1'b1)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_start_reg <= 1'b0;
-        end
+    if ((1'b1 == ap_CS_fsm_state58)) begin
+        ref_pixel_V_load_106_reg_6168 <= ref_pixel_V_q1;
+        ref_pixel_V_load_107_reg_6173 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (ap_rst_n_inv == 1'b1) begin
-        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_start_reg <= 1'b0;
-    end else begin
-        if ((1'b1 == ap_CS_fsm_state35)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_start_reg <= 1'b1;
-        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_ready == 1'b1)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        i_2_fu_172 <= 2'd0;
-    end else if (((1'b1 == ap_CS_fsm_state11) & (icmp_ln63_fu_442_p2 == 1'd0))) begin
-        i_2_fu_172 <= select_ln41_1_fu_477_p3;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        indvar_flatten20_fu_176 <= 12'd0;
-    end else if (((1'b1 == ap_CS_fsm_state11) & (icmp_ln63_fu_442_p2 == 1'd0))) begin
-        indvar_flatten20_fu_176 <= add_ln63_1_fu_448_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        j_1_fu_168 <= 11'd0;
-    end else if (((1'b1 == ap_CS_fsm_state11) & (icmp_ln63_fu_442_p2 == 1'd0))) begin
-        j_1_fu_168 <= add_ln64_fu_527_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        maxBrightness_1_fu_144 <= 32'd0;
-    end else if ((1'b1 == ap_CS_fsm_state30)) begin
-        maxBrightness_1_fu_144 <= maxBrightness_fu_706_p3;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        minDistance_fu_148 <= 32'd2139095039;
-    end else if ((1'b1 == ap_CS_fsm_state30)) begin
-        minDistance_fu_148 <= c_fu_678_p3;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state11) & (icmp_ln63_fu_442_p2 == 1'd0))) begin
-        cmp1_i_i_mid1_reg_888 <= cmp1_i_i_mid1_fu_501_p2;
-        icmp_ln34_reg_898 <= icmp_ln34_fu_518_p2;
-        icmp_ln64_reg_883 <= icmp_ln64_fu_463_p2;
-        trunc_ln34_2_reg_903 <= trunc_ln34_2_fu_523_p1;
-        trunc_ln41_reg_893 <= trunc_ln41_fu_506_p1;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state11)) begin
-        cmp1_i_i_reg_875 <= cmp1_i_i_fu_437_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state30)) begin
-        i_04_i627_fu_152 <= select_ln34_fu_662_p3;
-        i_04_i631_fu_160 <= select_ln74_1_fu_698_p3;
-        j_02_i629_fu_156 <= select_ln34_1_fu_670_p3;
-        j_02_i633_fu_164 <= select_ln74_fu_690_p3;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state35)) begin
-        i_04_i627_load_reg_946 <= i_04_i627_fu_152;
-        j_02_i629_load_reg_951 <= j_02_i629_fu_156;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state31)) begin
-        i_04_i631_load_reg_931 <= i_04_i631_fu_160;
-        j_02_i633_load_reg_936 <= j_02_i633_fu_164;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state28)) begin
-        minDistance_3_reg_917 <= grp_fu_349_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state29)) begin
-        minDistance_load_1_reg_924 <= minDistance_fu_148;
+    if ((1'b1 == ap_CS_fsm_state59)) begin
+        ref_pixel_V_load_108_reg_6188 <= ref_pixel_V_q1;
+        ref_pixel_V_load_109_reg_6193 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state10)) begin
-        mul_ln17_reg_870 <= grp_fu_749_p2;
+        ref_pixel_V_load_10_reg_5208 <= ref_pixel_V_q1;
+        ref_pixel_V_load_11_reg_5213 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state60)) begin
+        ref_pixel_V_load_110_reg_6208 <= ref_pixel_V_q1;
+        ref_pixel_V_load_111_reg_6213 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state61)) begin
+        ref_pixel_V_load_112_reg_6228 <= ref_pixel_V_q1;
+        ref_pixel_V_load_113_reg_6233 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state62)) begin
+        ref_pixel_V_load_114_reg_6248 <= ref_pixel_V_q1;
+        ref_pixel_V_load_115_reg_6253 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state63)) begin
+        ref_pixel_V_load_116_reg_6268 <= ref_pixel_V_q1;
+        ref_pixel_V_load_117_reg_6273 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state64)) begin
+        ref_pixel_V_load_118_reg_6288 <= ref_pixel_V_q1;
+        ref_pixel_V_load_119_reg_6293 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state65)) begin
+        ref_pixel_V_load_120_reg_6308 <= ref_pixel_V_q1;
+        ref_pixel_V_load_121_reg_6313 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state66)) begin
+        ref_pixel_V_load_122_reg_6328 <= ref_pixel_V_q1;
+        ref_pixel_V_load_123_reg_6333 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state67)) begin
+        ref_pixel_V_load_124_reg_6348 <= ref_pixel_V_q1;
+        ref_pixel_V_load_125_reg_6353 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state68)) begin
+        ref_pixel_V_load_126_reg_6368 <= ref_pixel_V_q1;
+        ref_pixel_V_load_127_reg_6373 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state69)) begin
+        ref_pixel_V_load_128_reg_6388 <= ref_pixel_V_q1;
+        ref_pixel_V_load_129_reg_6393 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state11)) begin
+        ref_pixel_V_load_12_reg_5228 <= ref_pixel_V_q1;
+        ref_pixel_V_load_13_reg_5233 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state70)) begin
+        ref_pixel_V_load_130_reg_6408 <= ref_pixel_V_q1;
+        ref_pixel_V_load_131_reg_6413 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state71)) begin
+        ref_pixel_V_load_132_reg_6428 <= ref_pixel_V_q1;
+        ref_pixel_V_load_133_reg_6433 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state72)) begin
+        ref_pixel_V_load_134_reg_6448 <= ref_pixel_V_q1;
+        ref_pixel_V_load_135_reg_6453 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state73)) begin
+        ref_pixel_V_load_136_reg_6468 <= ref_pixel_V_q1;
+        ref_pixel_V_load_137_reg_6473 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state74)) begin
+        ref_pixel_V_load_138_reg_6488 <= ref_pixel_V_q1;
+        ref_pixel_V_load_139_reg_6493 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state75)) begin
+        ref_pixel_V_load_140_reg_6508 <= ref_pixel_V_q1;
+        ref_pixel_V_load_141_reg_6513 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state76)) begin
+        ref_pixel_V_load_142_reg_6528 <= ref_pixel_V_q1;
+        ref_pixel_V_load_143_reg_6533 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        ref_pixel_V_load_144_reg_6548 <= ref_pixel_V_q1;
+        ref_pixel_V_load_145_reg_6553 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state78)) begin
+        ref_pixel_V_load_146_reg_6568 <= ref_pixel_V_q1;
+        ref_pixel_V_load_147_reg_6573 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        ref_pixel_V_load_148_reg_6588 <= ref_pixel_V_q1;
+        ref_pixel_V_load_149_reg_6593 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state12)) begin
+        ref_pixel_V_load_14_reg_5248 <= ref_pixel_V_q1;
+        ref_pixel_V_load_15_reg_5253 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state80)) begin
+        ref_pixel_V_load_150_reg_6608 <= ref_pixel_V_q1;
+        ref_pixel_V_load_151_reg_6613 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state81)) begin
+        ref_pixel_V_load_152_reg_6628 <= ref_pixel_V_q1;
+        ref_pixel_V_load_153_reg_6633 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state82)) begin
+        ref_pixel_V_load_154_reg_6648 <= ref_pixel_V_q1;
+        ref_pixel_V_load_155_reg_6653 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state83)) begin
+        ref_pixel_V_load_156_reg_6668 <= ref_pixel_V_q1;
+        ref_pixel_V_load_157_reg_6673 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state84)) begin
+        ref_pixel_V_load_158_reg_6688 <= ref_pixel_V_q1;
+        ref_pixel_V_load_159_reg_6693 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state85)) begin
+        ref_pixel_V_load_160_reg_6708 <= ref_pixel_V_q1;
+        ref_pixel_V_load_161_reg_6713 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state86)) begin
+        ref_pixel_V_load_162_reg_6728 <= ref_pixel_V_q1;
+        ref_pixel_V_load_163_reg_6733 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state87)) begin
+        ref_pixel_V_load_164_reg_6748 <= ref_pixel_V_q1;
+        ref_pixel_V_load_165_reg_6753 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state88)) begin
+        ref_pixel_V_load_166_reg_6768 <= ref_pixel_V_q1;
+        ref_pixel_V_load_167_reg_6773 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state89)) begin
+        ref_pixel_V_load_168_reg_6788 <= ref_pixel_V_q1;
+        ref_pixel_V_load_169_reg_6793 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state13)) begin
+        ref_pixel_V_load_16_reg_5268 <= ref_pixel_V_q1;
+        ref_pixel_V_load_17_reg_5273 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state90)) begin
+        ref_pixel_V_load_170_reg_6808 <= ref_pixel_V_q1;
+        ref_pixel_V_load_171_reg_6813 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state91)) begin
+        ref_pixel_V_load_172_reg_6828 <= ref_pixel_V_q1;
+        ref_pixel_V_load_173_reg_6833 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state92)) begin
+        ref_pixel_V_load_174_reg_6848 <= ref_pixel_V_q1;
+        ref_pixel_V_load_175_reg_6853 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state93)) begin
+        ref_pixel_V_load_176_reg_6868 <= ref_pixel_V_q1;
+        ref_pixel_V_load_177_reg_6873 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state94)) begin
+        ref_pixel_V_load_178_reg_6888 <= ref_pixel_V_q1;
+        ref_pixel_V_load_179_reg_6893 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state14)) begin
-        mul_ln41_reg_908 <= grp_fu_755_p3;
+        ref_pixel_V_load_18_reg_5288 <= ref_pixel_V_q1;
+        ref_pixel_V_load_19_reg_5293 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state5)) begin
+        ref_pixel_V_load_1_reg_5113 <= ref_pixel_V_q0;
+        ref_pixel_V_load_reg_5108 <= ref_pixel_V_q1;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state15)) begin
+        ref_pixel_V_load_20_reg_5308 <= ref_pixel_V_q1;
+        ref_pixel_V_load_21_reg_5313 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state16)) begin
+        ref_pixel_V_load_22_reg_5328 <= ref_pixel_V_q1;
+        ref_pixel_V_load_23_reg_5333 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state17)) begin
+        ref_pixel_V_load_24_reg_5348 <= ref_pixel_V_q1;
+        ref_pixel_V_load_25_reg_5353 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state18)) begin
+        ref_pixel_V_load_26_reg_5368 <= ref_pixel_V_q1;
+        ref_pixel_V_load_27_reg_5373 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state19)) begin
+        ref_pixel_V_load_28_reg_5388 <= ref_pixel_V_q1;
+        ref_pixel_V_load_29_reg_5393 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state6)) begin
+        ref_pixel_V_load_2_reg_5128 <= ref_pixel_V_q1;
+        ref_pixel_V_load_3_reg_5133 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state20)) begin
+        ref_pixel_V_load_30_reg_5408 <= ref_pixel_V_q1;
+        ref_pixel_V_load_31_reg_5413 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state21)) begin
+        ref_pixel_V_load_32_reg_5428 <= ref_pixel_V_q1;
+        ref_pixel_V_load_33_reg_5433 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state22)) begin
+        ref_pixel_V_load_34_reg_5448 <= ref_pixel_V_q1;
+        ref_pixel_V_load_35_reg_5453 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state23)) begin
+        ref_pixel_V_load_36_reg_5468 <= ref_pixel_V_q1;
+        ref_pixel_V_load_37_reg_5473 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state24)) begin
+        ref_pixel_V_load_38_reg_5488 <= ref_pixel_V_q1;
+        ref_pixel_V_load_39_reg_5493 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state25)) begin
+        ref_pixel_V_load_40_reg_5508 <= ref_pixel_V_q1;
+        ref_pixel_V_load_41_reg_5513 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
+        ref_pixel_V_load_42_reg_5528 <= ref_pixel_V_q1;
+        ref_pixel_V_load_43_reg_5533 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state27)) begin
+        ref_pixel_V_load_44_reg_5548 <= ref_pixel_V_q1;
+        ref_pixel_V_load_45_reg_5553 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state28)) begin
+        ref_pixel_V_load_46_reg_5568 <= ref_pixel_V_q1;
+        ref_pixel_V_load_47_reg_5573 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state29)) begin
+        ref_pixel_V_load_48_reg_5588 <= ref_pixel_V_q1;
+        ref_pixel_V_load_49_reg_5593 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state7)) begin
+        ref_pixel_V_load_4_reg_5148 <= ref_pixel_V_q1;
+        ref_pixel_V_load_5_reg_5153 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state30)) begin
+        ref_pixel_V_load_50_reg_5608 <= ref_pixel_V_q1;
+        ref_pixel_V_load_51_reg_5613 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        ref_pixel_V_load_52_reg_5628 <= ref_pixel_V_q1;
+        ref_pixel_V_load_53_reg_5633 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        ref_pixel_V_load_54_reg_5648 <= ref_pixel_V_q1;
+        ref_pixel_V_load_55_reg_5653 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state33)) begin
+        ref_pixel_V_load_56_reg_5668 <= ref_pixel_V_q1;
+        ref_pixel_V_load_57_reg_5673 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state34)) begin
+        ref_pixel_V_load_58_reg_5688 <= ref_pixel_V_q1;
+        ref_pixel_V_load_59_reg_5693 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state35)) begin
+        ref_pixel_V_load_60_reg_5708 <= ref_pixel_V_q1;
+        ref_pixel_V_load_61_reg_5713 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state36)) begin
+        ref_pixel_V_load_62_reg_5728 <= ref_pixel_V_q1;
+        ref_pixel_V_load_63_reg_5733 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state37)) begin
+        ref_pixel_V_load_64_reg_5748 <= ref_pixel_V_q1;
+        ref_pixel_V_load_65_reg_5753 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state38)) begin
+        ref_pixel_V_load_66_reg_5768 <= ref_pixel_V_q1;
+        ref_pixel_V_load_67_reg_5773 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state39)) begin
+        ref_pixel_V_load_68_reg_5788 <= ref_pixel_V_q1;
+        ref_pixel_V_load_69_reg_5793 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state8)) begin
+        ref_pixel_V_load_6_reg_5168 <= ref_pixel_V_q1;
+        ref_pixel_V_load_7_reg_5173 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state40)) begin
+        ref_pixel_V_load_70_reg_5808 <= ref_pixel_V_q1;
+        ref_pixel_V_load_71_reg_5813 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state41)) begin
+        ref_pixel_V_load_72_reg_5828 <= ref_pixel_V_q1;
+        ref_pixel_V_load_73_reg_5833 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state42)) begin
+        ref_pixel_V_load_74_reg_5848 <= ref_pixel_V_q1;
+        ref_pixel_V_load_75_reg_5853 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state43)) begin
+        ref_pixel_V_load_76_reg_5868 <= ref_pixel_V_q1;
+        ref_pixel_V_load_77_reg_5873 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        ref_pixel_V_load_78_reg_5888 <= ref_pixel_V_q1;
+        ref_pixel_V_load_79_reg_5893 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state45)) begin
+        ref_pixel_V_load_80_reg_5908 <= ref_pixel_V_q1;
+        ref_pixel_V_load_81_reg_5913 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state46)) begin
+        ref_pixel_V_load_82_reg_5928 <= ref_pixel_V_q1;
+        ref_pixel_V_load_83_reg_5933 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state47)) begin
+        ref_pixel_V_load_84_reg_5948 <= ref_pixel_V_q1;
+        ref_pixel_V_load_85_reg_5953 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state48)) begin
+        ref_pixel_V_load_86_reg_5968 <= ref_pixel_V_q1;
+        ref_pixel_V_load_87_reg_5973 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state49)) begin
+        ref_pixel_V_load_88_reg_5988 <= ref_pixel_V_q1;
+        ref_pixel_V_load_89_reg_5993 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state9)) begin
+        ref_pixel_V_load_8_reg_5188 <= ref_pixel_V_q1;
+        ref_pixel_V_load_9_reg_5193 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state50)) begin
+        ref_pixel_V_load_90_reg_6008 <= ref_pixel_V_q1;
+        ref_pixel_V_load_91_reg_6013 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state51)) begin
+        ref_pixel_V_load_92_reg_6028 <= ref_pixel_V_q1;
+        ref_pixel_V_load_93_reg_6033 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state52)) begin
+        ref_pixel_V_load_94_reg_6048 <= ref_pixel_V_q1;
+        ref_pixel_V_load_95_reg_6053 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state53)) begin
+        ref_pixel_V_load_96_reg_6068 <= ref_pixel_V_q1;
+        ref_pixel_V_load_97_reg_6073 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state54)) begin
+        ref_pixel_V_load_98_reg_6088 <= ref_pixel_V_q1;
+        ref_pixel_V_load_99_reg_6093 <= ref_pixel_V_q0;
+    end
+end
+
+always @ (*) begin
+    if ((out_stream_TREADY_int_regslice == 1'b0)) begin
+        ap_ST_fsm_state100_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state100_blk = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((out_stream_TREADY_int_regslice == 1'b0)) begin
+        ap_ST_fsm_state101_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state101_blk = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((out_stream_TREADY_int_regslice == 1'b0) | (regslice_both_out_stream_V_data_V_U_apdone_blk == 1'b1))) begin
+        ap_ST_fsm_state102_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state102_blk = 1'b0;
     end
 end
 
@@ -1199,25 +2824,13 @@ assign ap_ST_fsm_state13_blk = 1'b0;
 
 assign ap_ST_fsm_state14_blk = 1'b0;
 
-always @ (*) begin
-    if ((grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_done == 1'b0)) begin
-        ap_ST_fsm_state15_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state15_blk = 1'b0;
-    end
-end
+assign ap_ST_fsm_state15_blk = 1'b0;
 
 assign ap_ST_fsm_state16_blk = 1'b0;
 
 assign ap_ST_fsm_state17_blk = 1'b0;
 
-always @ (*) begin
-    if ((grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_done == 1'b0)) begin
-        ap_ST_fsm_state18_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state18_blk = 1'b0;
-    end
-end
+assign ap_ST_fsm_state18_blk = 1'b0;
 
 assign ap_ST_fsm_state19_blk = 1'b0;
 
@@ -1231,25 +2844,13 @@ end
 
 assign ap_ST_fsm_state20_blk = 1'b0;
 
-always @ (*) begin
-    if ((grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_done == 1'b0)) begin
-        ap_ST_fsm_state21_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state21_blk = 1'b0;
-    end
-end
+assign ap_ST_fsm_state21_blk = 1'b0;
 
 assign ap_ST_fsm_state22_blk = 1'b0;
 
 assign ap_ST_fsm_state23_blk = 1'b0;
 
-always @ (*) begin
-    if ((grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_done == 1'b0)) begin
-        ap_ST_fsm_state24_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state24_blk = 1'b0;
-    end
-end
+assign ap_ST_fsm_state24_blk = 1'b0;
 
 assign ap_ST_fsm_state25_blk = 1'b0;
 
@@ -1267,76 +2868,182 @@ assign ap_ST_fsm_state30_blk = 1'b0;
 
 assign ap_ST_fsm_state31_blk = 1'b0;
 
-always @ (*) begin
-    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_done == 1'b0)) begin
-        ap_ST_fsm_state32_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state32_blk = 1'b0;
-    end
-end
+assign ap_ST_fsm_state32_blk = 1'b0;
 
-always @ (*) begin
-    if ((out_stream_TREADY_int_regslice == 1'b0)) begin
-        ap_ST_fsm_state33_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state33_blk = 1'b0;
-    end
-end
+assign ap_ST_fsm_state33_blk = 1'b0;
 
-always @ (*) begin
-    if ((out_stream_TREADY_int_regslice == 1'b0)) begin
-        ap_ST_fsm_state34_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state34_blk = 1'b0;
-    end
-end
+assign ap_ST_fsm_state34_blk = 1'b0;
 
 assign ap_ST_fsm_state35_blk = 1'b0;
 
-always @ (*) begin
-    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_done == 1'b0)) begin
-        ap_ST_fsm_state36_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state36_blk = 1'b0;
-    end
-end
+assign ap_ST_fsm_state36_blk = 1'b0;
+
+assign ap_ST_fsm_state37_blk = 1'b0;
+
+assign ap_ST_fsm_state38_blk = 1'b0;
+
+assign ap_ST_fsm_state39_blk = 1'b0;
 
 always @ (*) begin
-    if ((regslice_both_out_stream_V_data_V_U_apdone_blk == 1'b1)) begin
-        ap_ST_fsm_state37_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state37_blk = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_done == 1'b0)) begin
+    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ap_done == 1'b0)) begin
         ap_ST_fsm_state3_blk = 1'b1;
     end else begin
         ap_ST_fsm_state3_blk = 1'b0;
     end
 end
 
+assign ap_ST_fsm_state40_blk = 1'b0;
+
+assign ap_ST_fsm_state41_blk = 1'b0;
+
+assign ap_ST_fsm_state42_blk = 1'b0;
+
+assign ap_ST_fsm_state43_blk = 1'b0;
+
+assign ap_ST_fsm_state44_blk = 1'b0;
+
+assign ap_ST_fsm_state45_blk = 1'b0;
+
+assign ap_ST_fsm_state46_blk = 1'b0;
+
+assign ap_ST_fsm_state47_blk = 1'b0;
+
+assign ap_ST_fsm_state48_blk = 1'b0;
+
+assign ap_ST_fsm_state49_blk = 1'b0;
+
 assign ap_ST_fsm_state4_blk = 1'b0;
+
+assign ap_ST_fsm_state50_blk = 1'b0;
+
+assign ap_ST_fsm_state51_blk = 1'b0;
+
+assign ap_ST_fsm_state52_blk = 1'b0;
+
+assign ap_ST_fsm_state53_blk = 1'b0;
+
+assign ap_ST_fsm_state54_blk = 1'b0;
+
+assign ap_ST_fsm_state55_blk = 1'b0;
+
+assign ap_ST_fsm_state56_blk = 1'b0;
+
+assign ap_ST_fsm_state57_blk = 1'b0;
+
+assign ap_ST_fsm_state58_blk = 1'b0;
+
+assign ap_ST_fsm_state59_blk = 1'b0;
 
 assign ap_ST_fsm_state5_blk = 1'b0;
 
-always @ (*) begin
-    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_done == 1'b0)) begin
-        ap_ST_fsm_state6_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state6_blk = 1'b0;
-    end
-end
+assign ap_ST_fsm_state60_blk = 1'b0;
+
+assign ap_ST_fsm_state61_blk = 1'b0;
+
+assign ap_ST_fsm_state62_blk = 1'b0;
+
+assign ap_ST_fsm_state63_blk = 1'b0;
+
+assign ap_ST_fsm_state64_blk = 1'b0;
+
+assign ap_ST_fsm_state65_blk = 1'b0;
+
+assign ap_ST_fsm_state66_blk = 1'b0;
+
+assign ap_ST_fsm_state67_blk = 1'b0;
+
+assign ap_ST_fsm_state68_blk = 1'b0;
+
+assign ap_ST_fsm_state69_blk = 1'b0;
+
+assign ap_ST_fsm_state6_blk = 1'b0;
+
+assign ap_ST_fsm_state70_blk = 1'b0;
+
+assign ap_ST_fsm_state71_blk = 1'b0;
+
+assign ap_ST_fsm_state72_blk = 1'b0;
+
+assign ap_ST_fsm_state73_blk = 1'b0;
+
+assign ap_ST_fsm_state74_blk = 1'b0;
+
+assign ap_ST_fsm_state75_blk = 1'b0;
+
+assign ap_ST_fsm_state76_blk = 1'b0;
+
+assign ap_ST_fsm_state77_blk = 1'b0;
+
+assign ap_ST_fsm_state78_blk = 1'b0;
+
+assign ap_ST_fsm_state79_blk = 1'b0;
 
 assign ap_ST_fsm_state7_blk = 1'b0;
 
+assign ap_ST_fsm_state80_blk = 1'b0;
+
+assign ap_ST_fsm_state81_blk = 1'b0;
+
+assign ap_ST_fsm_state82_blk = 1'b0;
+
+assign ap_ST_fsm_state83_blk = 1'b0;
+
+assign ap_ST_fsm_state84_blk = 1'b0;
+
+assign ap_ST_fsm_state85_blk = 1'b0;
+
+assign ap_ST_fsm_state86_blk = 1'b0;
+
+assign ap_ST_fsm_state87_blk = 1'b0;
+
+assign ap_ST_fsm_state88_blk = 1'b0;
+
+assign ap_ST_fsm_state89_blk = 1'b0;
+
 assign ap_ST_fsm_state8_blk = 1'b0;
+
+assign ap_ST_fsm_state90_blk = 1'b0;
+
+assign ap_ST_fsm_state91_blk = 1'b0;
+
+assign ap_ST_fsm_state92_blk = 1'b0;
+
+assign ap_ST_fsm_state93_blk = 1'b0;
+
+assign ap_ST_fsm_state94_blk = 1'b0;
+
+always @ (*) begin
+    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_ap_done == 1'b0)) begin
+        ap_ST_fsm_state95_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state95_blk = 1'b0;
+    end
+end
+
+assign ap_ST_fsm_state96_blk = 1'b0;
+
+assign ap_ST_fsm_state97_blk = 1'b0;
+
+always @ (*) begin
+    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_ap_done == 1'b0)) begin
+        ap_ST_fsm_state98_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state98_blk = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((out_stream_TREADY_int_regslice == 1'b0)) begin
+        ap_ST_fsm_state99_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state99_blk = 1'b0;
+    end
+end
 
 assign ap_ST_fsm_state9_blk = 1'b0;
 
 always @ (*) begin
-    if (((regslice_both_out_stream_V_data_V_U_apdone_blk == 1'b0) & (1'b1 == ap_CS_fsm_state37))) begin
+    if ((~((out_stream_TREADY_int_regslice == 1'b0) | (regslice_both_out_stream_V_data_V_U_apdone_blk == 1'b1)) & (1'b1 == ap_CS_fsm_state102))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -1344,7 +3051,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b0))) begin
         ap_idle = 1'b1;
     end else begin
         ap_idle = 1'b0;
@@ -1352,7 +3059,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((regslice_both_out_stream_V_data_V_U_apdone_blk == 1'b0) & (1'b1 == ap_CS_fsm_state37))) begin
+    if ((~((out_stream_TREADY_int_regslice == 1'b0) | (regslice_both_out_stream_V_data_V_U_apdone_blk == 1'b1)) & (1'b1 == ap_CS_fsm_state102))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -1360,121 +3067,25 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state24)) begin
-        brightness_stream_read = grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_brightness_stream_read;
+    if ((((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99)) | ((1'b1 == ap_CS_fsm_state98) & (grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_ap_done == 1'b1)))) begin
+        grp_fu_3260_ce = 1'b1;
     end else begin
-        brightness_stream_read = 1'b0;
+        grp_fu_3260_ce = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state21)) begin
-        brightness_stream_write = grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_brightness_stream_write;
-    end else begin
-        brightness_stream_write = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state19) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state20) | (1'b1 == ap_CS_fsm_state28) | ((grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state24)) | ((grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state21)))) begin
-        grp_fu_349_ce = 1'b1;
-    end else begin
-        grp_fu_349_ce = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state36)) begin
-        grp_fu_956_ce = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_grp_fu_956_p_ce;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        grp_fu_956_ce = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_grp_fu_956_p_ce;
-    end else begin
-        grp_fu_956_ce = 1'b1;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state36)) begin
-        grp_fu_956_p0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_grp_fu_956_p_din0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        grp_fu_956_p0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_grp_fu_956_p_din0;
-    end else begin
-        grp_fu_956_p0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state21)) begin
-        image_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_image_r_address0;
-    end else if ((1'b1 == ap_CS_fsm_state15)) begin
-        image_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_image_r_address0;
+    if ((1'b1 == ap_CS_fsm_state95)) begin
+        in_stream_TREADY_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_in_stream_TREADY;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        image_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_address0;
-    end else begin
-        image_address0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
-        image_address1 = grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_image_r_address1;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        image_address1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_address1;
-    end else begin
-        image_address1 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state21)) begin
-        image_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_image_r_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state15)) begin
-        image_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_image_r_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        image_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_ce0;
-    end else begin
-        image_ce0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
-        image_ce1 = grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_image_r_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        image_ce1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_ce1;
-    end else begin
-        image_ce1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        image_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_we0;
-    end else begin
-        image_we0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        image_we1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_image_r_we1;
-    end else begin
-        image_we1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        in_stream_TREADY_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_in_stream_TREADY;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        in_stream_TREADY_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_in_stream_TREADY;
+        in_stream_TREADY_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_in_stream_TREADY;
     end else begin
         in_stream_TREADY_int_regslice = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state34) | (1'b1 == ap_CS_fsm_state33))) begin
+    if (((1'b1 == ap_CS_fsm_state102) | (1'b1 == ap_CS_fsm_state101) | (1'b1 == ap_CS_fsm_state100) | (1'b1 == ap_CS_fsm_state99))) begin
         out_stream_TDATA_blk_n = out_stream_TREADY_int_regslice;
     end else begin
         out_stream_TDATA_blk_n = 1'b1;
@@ -1482,121 +3093,513 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state33) & (out_stream_TREADY_int_regslice == 1'b1))) begin
-        out_stream_TDATA_int_regslice = w_V_fu_744_p1;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
-        out_stream_TDATA_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TDATA;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
-        out_stream_TDATA_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TDATA;
+    if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101))) begin
+        out_stream_TDATA_int_regslice = e_data_V_fu_3995_p1;
+    end else if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100))) begin
+        out_stream_TDATA_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_min_pixel_index_j_out;
+    end else if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99))) begin
+        out_stream_TDATA_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_min_pixel_index_i_out;
+    end else if (((1'b1 == ap_CS_fsm_state98) & (grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TVALID == 1'b1))) begin
+        out_stream_TDATA_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TDATA;
     end else begin
         out_stream_TDATA_int_regslice = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state33) & (out_stream_TREADY_int_regslice == 1'b1))) begin
+    if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101))) begin
+        out_stream_TDEST_int_regslice = 5'd12;
+    end else if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100))) begin
+        out_stream_TDEST_int_regslice = 5'd10;
+    end else if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99))) begin
         out_stream_TDEST_int_regslice = 5'd8;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
-        out_stream_TDEST_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TDEST;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
-        out_stream_TDEST_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TDEST;
+    end else if (((1'b1 == ap_CS_fsm_state98) & (grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TVALID == 1'b1))) begin
+        out_stream_TDEST_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TDEST;
     end else begin
         out_stream_TDEST_int_regslice = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state33) & (out_stream_TREADY_int_regslice == 1'b1))) begin
+    if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101))) begin
+        out_stream_TID_int_regslice = 5'd11;
+    end else if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100))) begin
+        out_stream_TID_int_regslice = 5'd9;
+    end else if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99))) begin
         out_stream_TID_int_regslice = 5'd7;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
-        out_stream_TID_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TID;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
-        out_stream_TID_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TID;
+    end else if (((1'b1 == ap_CS_fsm_state98) & (grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TVALID == 1'b1))) begin
+        out_stream_TID_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TID;
     end else begin
         out_stream_TID_int_regslice = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state33) & (out_stream_TREADY_int_regslice == 1'b1))) begin
-        out_stream_TKEEP_int_regslice = 4'd15;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
-        out_stream_TKEEP_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TKEEP;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
-        out_stream_TKEEP_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TKEEP;
+    if ((((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99)))) begin
+        out_stream_TKEEP_int_regslice = 4'd0;
+    end else if (((1'b1 == ap_CS_fsm_state98) & (grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TVALID == 1'b1))) begin
+        out_stream_TKEEP_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TKEEP;
     end else begin
         out_stream_TKEEP_int_regslice = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state33) & (out_stream_TREADY_int_regslice == 1'b1))) begin
+    if ((((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99)))) begin
         out_stream_TLAST_int_regslice = 1'd0;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
-        out_stream_TLAST_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TLAST;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
-        out_stream_TLAST_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TLAST;
+    end else if (((1'b1 == ap_CS_fsm_state98) & (grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TVALID == 1'b1))) begin
+        out_stream_TLAST_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TLAST;
     end else begin
         out_stream_TLAST_int_regslice = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state33) & (out_stream_TREADY_int_regslice == 1'b1))) begin
+    if ((((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99)))) begin
         out_stream_TSTRB_int_regslice = 4'd15;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
-        out_stream_TSTRB_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TSTRB;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
-        out_stream_TSTRB_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TSTRB;
+    end else if (((1'b1 == ap_CS_fsm_state98) & (grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TVALID == 1'b1))) begin
+        out_stream_TSTRB_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TSTRB;
     end else begin
         out_stream_TSTRB_int_regslice = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state33) & (out_stream_TREADY_int_regslice == 1'b1))) begin
-        out_stream_TUSER_int_regslice = 4'd4;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
-        out_stream_TUSER_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TUSER;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
-        out_stream_TUSER_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TUSER;
+    if ((((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99)))) begin
+        out_stream_TUSER_int_regslice = 4'd0;
+    end else if (((1'b1 == ap_CS_fsm_state98) & (grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TVALID == 1'b1))) begin
+        out_stream_TUSER_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TUSER;
     end else begin
         out_stream_TUSER_int_regslice = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state33) & (out_stream_TREADY_int_regslice == 1'b1))) begin
+    if ((((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99)))) begin
         out_stream_TVALID_int_regslice = 1'b1;
-    end else if ((1'b1 == ap_CS_fsm_state36)) begin
-        out_stream_TVALID_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TVALID;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        out_stream_TVALID_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TVALID;
+    end else if ((1'b1 == ap_CS_fsm_state98)) begin
+        out_stream_TVALID_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TVALID;
     end else begin
         out_stream_TVALID_int_regslice = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state18)) begin
-        sum_stream_read = grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_sum_stream_read;
+    if ((1'b1 == ap_CS_fsm_state93)) begin
+        ref_pixel_V_address0 = 64'd179;
+    end else if ((1'b1 == ap_CS_fsm_state92)) begin
+        ref_pixel_V_address0 = 64'd177;
+    end else if ((1'b1 == ap_CS_fsm_state91)) begin
+        ref_pixel_V_address0 = 64'd175;
+    end else if ((1'b1 == ap_CS_fsm_state90)) begin
+        ref_pixel_V_address0 = 64'd173;
+    end else if ((1'b1 == ap_CS_fsm_state89)) begin
+        ref_pixel_V_address0 = 64'd171;
+    end else if ((1'b1 == ap_CS_fsm_state88)) begin
+        ref_pixel_V_address0 = 64'd169;
+    end else if ((1'b1 == ap_CS_fsm_state87)) begin
+        ref_pixel_V_address0 = 64'd167;
+    end else if ((1'b1 == ap_CS_fsm_state86)) begin
+        ref_pixel_V_address0 = 64'd165;
+    end else if ((1'b1 == ap_CS_fsm_state85)) begin
+        ref_pixel_V_address0 = 64'd163;
+    end else if ((1'b1 == ap_CS_fsm_state84)) begin
+        ref_pixel_V_address0 = 64'd161;
+    end else if ((1'b1 == ap_CS_fsm_state83)) begin
+        ref_pixel_V_address0 = 64'd159;
+    end else if ((1'b1 == ap_CS_fsm_state82)) begin
+        ref_pixel_V_address0 = 64'd157;
+    end else if ((1'b1 == ap_CS_fsm_state81)) begin
+        ref_pixel_V_address0 = 64'd155;
+    end else if ((1'b1 == ap_CS_fsm_state80)) begin
+        ref_pixel_V_address0 = 64'd153;
+    end else if ((1'b1 == ap_CS_fsm_state79)) begin
+        ref_pixel_V_address0 = 64'd151;
+    end else if ((1'b1 == ap_CS_fsm_state78)) begin
+        ref_pixel_V_address0 = 64'd149;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        ref_pixel_V_address0 = 64'd147;
+    end else if ((1'b1 == ap_CS_fsm_state76)) begin
+        ref_pixel_V_address0 = 64'd145;
+    end else if ((1'b1 == ap_CS_fsm_state75)) begin
+        ref_pixel_V_address0 = 64'd143;
+    end else if ((1'b1 == ap_CS_fsm_state74)) begin
+        ref_pixel_V_address0 = 64'd141;
+    end else if ((1'b1 == ap_CS_fsm_state73)) begin
+        ref_pixel_V_address0 = 64'd139;
+    end else if ((1'b1 == ap_CS_fsm_state72)) begin
+        ref_pixel_V_address0 = 64'd137;
+    end else if ((1'b1 == ap_CS_fsm_state71)) begin
+        ref_pixel_V_address0 = 64'd135;
+    end else if ((1'b1 == ap_CS_fsm_state70)) begin
+        ref_pixel_V_address0 = 64'd133;
+    end else if ((1'b1 == ap_CS_fsm_state69)) begin
+        ref_pixel_V_address0 = 64'd131;
+    end else if ((1'b1 == ap_CS_fsm_state68)) begin
+        ref_pixel_V_address0 = 64'd129;
+    end else if ((1'b1 == ap_CS_fsm_state67)) begin
+        ref_pixel_V_address0 = 64'd127;
+    end else if ((1'b1 == ap_CS_fsm_state66)) begin
+        ref_pixel_V_address0 = 64'd125;
+    end else if ((1'b1 == ap_CS_fsm_state65)) begin
+        ref_pixel_V_address0 = 64'd123;
+    end else if ((1'b1 == ap_CS_fsm_state64)) begin
+        ref_pixel_V_address0 = 64'd121;
+    end else if ((1'b1 == ap_CS_fsm_state63)) begin
+        ref_pixel_V_address0 = 64'd119;
+    end else if ((1'b1 == ap_CS_fsm_state62)) begin
+        ref_pixel_V_address0 = 64'd117;
+    end else if ((1'b1 == ap_CS_fsm_state61)) begin
+        ref_pixel_V_address0 = 64'd115;
+    end else if ((1'b1 == ap_CS_fsm_state60)) begin
+        ref_pixel_V_address0 = 64'd113;
+    end else if ((1'b1 == ap_CS_fsm_state59)) begin
+        ref_pixel_V_address0 = 64'd111;
+    end else if ((1'b1 == ap_CS_fsm_state58)) begin
+        ref_pixel_V_address0 = 64'd109;
+    end else if ((1'b1 == ap_CS_fsm_state57)) begin
+        ref_pixel_V_address0 = 64'd107;
+    end else if ((1'b1 == ap_CS_fsm_state56)) begin
+        ref_pixel_V_address0 = 64'd105;
+    end else if ((1'b1 == ap_CS_fsm_state55)) begin
+        ref_pixel_V_address0 = 64'd103;
+    end else if ((1'b1 == ap_CS_fsm_state54)) begin
+        ref_pixel_V_address0 = 64'd101;
+    end else if ((1'b1 == ap_CS_fsm_state53)) begin
+        ref_pixel_V_address0 = 64'd99;
+    end else if ((1'b1 == ap_CS_fsm_state52)) begin
+        ref_pixel_V_address0 = 64'd97;
+    end else if ((1'b1 == ap_CS_fsm_state51)) begin
+        ref_pixel_V_address0 = 64'd95;
+    end else if ((1'b1 == ap_CS_fsm_state50)) begin
+        ref_pixel_V_address0 = 64'd93;
+    end else if ((1'b1 == ap_CS_fsm_state49)) begin
+        ref_pixel_V_address0 = 64'd91;
+    end else if ((1'b1 == ap_CS_fsm_state48)) begin
+        ref_pixel_V_address0 = 64'd89;
+    end else if ((1'b1 == ap_CS_fsm_state47)) begin
+        ref_pixel_V_address0 = 64'd87;
+    end else if ((1'b1 == ap_CS_fsm_state46)) begin
+        ref_pixel_V_address0 = 64'd85;
+    end else if ((1'b1 == ap_CS_fsm_state45)) begin
+        ref_pixel_V_address0 = 64'd83;
+    end else if ((1'b1 == ap_CS_fsm_state44)) begin
+        ref_pixel_V_address0 = 64'd81;
+    end else if ((1'b1 == ap_CS_fsm_state43)) begin
+        ref_pixel_V_address0 = 64'd79;
+    end else if ((1'b1 == ap_CS_fsm_state42)) begin
+        ref_pixel_V_address0 = 64'd77;
+    end else if ((1'b1 == ap_CS_fsm_state41)) begin
+        ref_pixel_V_address0 = 64'd75;
+    end else if ((1'b1 == ap_CS_fsm_state40)) begin
+        ref_pixel_V_address0 = 64'd73;
+    end else if ((1'b1 == ap_CS_fsm_state39)) begin
+        ref_pixel_V_address0 = 64'd71;
+    end else if ((1'b1 == ap_CS_fsm_state38)) begin
+        ref_pixel_V_address0 = 64'd69;
+    end else if ((1'b1 == ap_CS_fsm_state37)) begin
+        ref_pixel_V_address0 = 64'd67;
+    end else if ((1'b1 == ap_CS_fsm_state36)) begin
+        ref_pixel_V_address0 = 64'd65;
+    end else if ((1'b1 == ap_CS_fsm_state35)) begin
+        ref_pixel_V_address0 = 64'd63;
+    end else if ((1'b1 == ap_CS_fsm_state34)) begin
+        ref_pixel_V_address0 = 64'd61;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        ref_pixel_V_address0 = 64'd59;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        ref_pixel_V_address0 = 64'd57;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        ref_pixel_V_address0 = 64'd55;
+    end else if ((1'b1 == ap_CS_fsm_state30)) begin
+        ref_pixel_V_address0 = 64'd53;
+    end else if ((1'b1 == ap_CS_fsm_state29)) begin
+        ref_pixel_V_address0 = 64'd51;
+    end else if ((1'b1 == ap_CS_fsm_state28)) begin
+        ref_pixel_V_address0 = 64'd49;
+    end else if ((1'b1 == ap_CS_fsm_state27)) begin
+        ref_pixel_V_address0 = 64'd47;
+    end else if ((1'b1 == ap_CS_fsm_state26)) begin
+        ref_pixel_V_address0 = 64'd45;
+    end else if ((1'b1 == ap_CS_fsm_state25)) begin
+        ref_pixel_V_address0 = 64'd43;
+    end else if ((1'b1 == ap_CS_fsm_state24)) begin
+        ref_pixel_V_address0 = 64'd41;
+    end else if ((1'b1 == ap_CS_fsm_state23)) begin
+        ref_pixel_V_address0 = 64'd39;
+    end else if ((1'b1 == ap_CS_fsm_state22)) begin
+        ref_pixel_V_address0 = 64'd37;
+    end else if ((1'b1 == ap_CS_fsm_state21)) begin
+        ref_pixel_V_address0 = 64'd35;
+    end else if ((1'b1 == ap_CS_fsm_state20)) begin
+        ref_pixel_V_address0 = 64'd33;
+    end else if ((1'b1 == ap_CS_fsm_state19)) begin
+        ref_pixel_V_address0 = 64'd31;
+    end else if ((1'b1 == ap_CS_fsm_state18)) begin
+        ref_pixel_V_address0 = 64'd29;
+    end else if ((1'b1 == ap_CS_fsm_state17)) begin
+        ref_pixel_V_address0 = 64'd27;
+    end else if ((1'b1 == ap_CS_fsm_state16)) begin
+        ref_pixel_V_address0 = 64'd25;
+    end else if ((1'b1 == ap_CS_fsm_state15)) begin
+        ref_pixel_V_address0 = 64'd23;
+    end else if ((1'b1 == ap_CS_fsm_state14)) begin
+        ref_pixel_V_address0 = 64'd21;
+    end else if ((1'b1 == ap_CS_fsm_state13)) begin
+        ref_pixel_V_address0 = 64'd19;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        ref_pixel_V_address0 = 64'd17;
+    end else if ((1'b1 == ap_CS_fsm_state11)) begin
+        ref_pixel_V_address0 = 64'd15;
+    end else if ((1'b1 == ap_CS_fsm_state10)) begin
+        ref_pixel_V_address0 = 64'd13;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        ref_pixel_V_address0 = 64'd11;
+    end else if ((1'b1 == ap_CS_fsm_state8)) begin
+        ref_pixel_V_address0 = 64'd9;
+    end else if ((1'b1 == ap_CS_fsm_state7)) begin
+        ref_pixel_V_address0 = 64'd7;
+    end else if ((1'b1 == ap_CS_fsm_state6)) begin
+        ref_pixel_V_address0 = 64'd5;
+    end else if ((1'b1 == ap_CS_fsm_state5)) begin
+        ref_pixel_V_address0 = 64'd3;
+    end else if ((1'b1 == ap_CS_fsm_state4)) begin
+        ref_pixel_V_address0 = 64'd1;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        ref_pixel_V_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_address0;
     end else begin
-        sum_stream_read = 1'b0;
+        ref_pixel_V_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
-        sum_stream_write = grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_sum_stream_write;
+    if ((1'b1 == ap_CS_fsm_state93)) begin
+        ref_pixel_V_address1 = 64'd178;
+    end else if ((1'b1 == ap_CS_fsm_state92)) begin
+        ref_pixel_V_address1 = 64'd176;
+    end else if ((1'b1 == ap_CS_fsm_state91)) begin
+        ref_pixel_V_address1 = 64'd174;
+    end else if ((1'b1 == ap_CS_fsm_state90)) begin
+        ref_pixel_V_address1 = 64'd172;
+    end else if ((1'b1 == ap_CS_fsm_state89)) begin
+        ref_pixel_V_address1 = 64'd170;
+    end else if ((1'b1 == ap_CS_fsm_state88)) begin
+        ref_pixel_V_address1 = 64'd168;
+    end else if ((1'b1 == ap_CS_fsm_state87)) begin
+        ref_pixel_V_address1 = 64'd166;
+    end else if ((1'b1 == ap_CS_fsm_state86)) begin
+        ref_pixel_V_address1 = 64'd164;
+    end else if ((1'b1 == ap_CS_fsm_state85)) begin
+        ref_pixel_V_address1 = 64'd162;
+    end else if ((1'b1 == ap_CS_fsm_state84)) begin
+        ref_pixel_V_address1 = 64'd160;
+    end else if ((1'b1 == ap_CS_fsm_state83)) begin
+        ref_pixel_V_address1 = 64'd158;
+    end else if ((1'b1 == ap_CS_fsm_state82)) begin
+        ref_pixel_V_address1 = 64'd156;
+    end else if ((1'b1 == ap_CS_fsm_state81)) begin
+        ref_pixel_V_address1 = 64'd154;
+    end else if ((1'b1 == ap_CS_fsm_state80)) begin
+        ref_pixel_V_address1 = 64'd152;
+    end else if ((1'b1 == ap_CS_fsm_state79)) begin
+        ref_pixel_V_address1 = 64'd150;
+    end else if ((1'b1 == ap_CS_fsm_state78)) begin
+        ref_pixel_V_address1 = 64'd148;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        ref_pixel_V_address1 = 64'd146;
+    end else if ((1'b1 == ap_CS_fsm_state76)) begin
+        ref_pixel_V_address1 = 64'd144;
+    end else if ((1'b1 == ap_CS_fsm_state75)) begin
+        ref_pixel_V_address1 = 64'd142;
+    end else if ((1'b1 == ap_CS_fsm_state74)) begin
+        ref_pixel_V_address1 = 64'd140;
+    end else if ((1'b1 == ap_CS_fsm_state73)) begin
+        ref_pixel_V_address1 = 64'd138;
+    end else if ((1'b1 == ap_CS_fsm_state72)) begin
+        ref_pixel_V_address1 = 64'd136;
+    end else if ((1'b1 == ap_CS_fsm_state71)) begin
+        ref_pixel_V_address1 = 64'd134;
+    end else if ((1'b1 == ap_CS_fsm_state70)) begin
+        ref_pixel_V_address1 = 64'd132;
+    end else if ((1'b1 == ap_CS_fsm_state69)) begin
+        ref_pixel_V_address1 = 64'd130;
+    end else if ((1'b1 == ap_CS_fsm_state68)) begin
+        ref_pixel_V_address1 = 64'd128;
+    end else if ((1'b1 == ap_CS_fsm_state67)) begin
+        ref_pixel_V_address1 = 64'd126;
+    end else if ((1'b1 == ap_CS_fsm_state66)) begin
+        ref_pixel_V_address1 = 64'd124;
+    end else if ((1'b1 == ap_CS_fsm_state65)) begin
+        ref_pixel_V_address1 = 64'd122;
+    end else if ((1'b1 == ap_CS_fsm_state64)) begin
+        ref_pixel_V_address1 = 64'd120;
+    end else if ((1'b1 == ap_CS_fsm_state63)) begin
+        ref_pixel_V_address1 = 64'd118;
+    end else if ((1'b1 == ap_CS_fsm_state62)) begin
+        ref_pixel_V_address1 = 64'd116;
+    end else if ((1'b1 == ap_CS_fsm_state61)) begin
+        ref_pixel_V_address1 = 64'd114;
+    end else if ((1'b1 == ap_CS_fsm_state60)) begin
+        ref_pixel_V_address1 = 64'd112;
+    end else if ((1'b1 == ap_CS_fsm_state59)) begin
+        ref_pixel_V_address1 = 64'd110;
+    end else if ((1'b1 == ap_CS_fsm_state58)) begin
+        ref_pixel_V_address1 = 64'd108;
+    end else if ((1'b1 == ap_CS_fsm_state57)) begin
+        ref_pixel_V_address1 = 64'd106;
+    end else if ((1'b1 == ap_CS_fsm_state56)) begin
+        ref_pixel_V_address1 = 64'd104;
+    end else if ((1'b1 == ap_CS_fsm_state55)) begin
+        ref_pixel_V_address1 = 64'd102;
+    end else if ((1'b1 == ap_CS_fsm_state54)) begin
+        ref_pixel_V_address1 = 64'd100;
+    end else if ((1'b1 == ap_CS_fsm_state53)) begin
+        ref_pixel_V_address1 = 64'd98;
+    end else if ((1'b1 == ap_CS_fsm_state52)) begin
+        ref_pixel_V_address1 = 64'd96;
+    end else if ((1'b1 == ap_CS_fsm_state51)) begin
+        ref_pixel_V_address1 = 64'd94;
+    end else if ((1'b1 == ap_CS_fsm_state50)) begin
+        ref_pixel_V_address1 = 64'd92;
+    end else if ((1'b1 == ap_CS_fsm_state49)) begin
+        ref_pixel_V_address1 = 64'd90;
+    end else if ((1'b1 == ap_CS_fsm_state48)) begin
+        ref_pixel_V_address1 = 64'd88;
+    end else if ((1'b1 == ap_CS_fsm_state47)) begin
+        ref_pixel_V_address1 = 64'd86;
+    end else if ((1'b1 == ap_CS_fsm_state46)) begin
+        ref_pixel_V_address1 = 64'd84;
+    end else if ((1'b1 == ap_CS_fsm_state45)) begin
+        ref_pixel_V_address1 = 64'd82;
+    end else if ((1'b1 == ap_CS_fsm_state44)) begin
+        ref_pixel_V_address1 = 64'd80;
+    end else if ((1'b1 == ap_CS_fsm_state43)) begin
+        ref_pixel_V_address1 = 64'd78;
+    end else if ((1'b1 == ap_CS_fsm_state42)) begin
+        ref_pixel_V_address1 = 64'd76;
+    end else if ((1'b1 == ap_CS_fsm_state41)) begin
+        ref_pixel_V_address1 = 64'd74;
+    end else if ((1'b1 == ap_CS_fsm_state40)) begin
+        ref_pixel_V_address1 = 64'd72;
+    end else if ((1'b1 == ap_CS_fsm_state39)) begin
+        ref_pixel_V_address1 = 64'd70;
+    end else if ((1'b1 == ap_CS_fsm_state38)) begin
+        ref_pixel_V_address1 = 64'd68;
+    end else if ((1'b1 == ap_CS_fsm_state37)) begin
+        ref_pixel_V_address1 = 64'd66;
+    end else if ((1'b1 == ap_CS_fsm_state36)) begin
+        ref_pixel_V_address1 = 64'd64;
+    end else if ((1'b1 == ap_CS_fsm_state35)) begin
+        ref_pixel_V_address1 = 64'd62;
+    end else if ((1'b1 == ap_CS_fsm_state34)) begin
+        ref_pixel_V_address1 = 64'd60;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        ref_pixel_V_address1 = 64'd58;
+    end else if ((1'b1 == ap_CS_fsm_state32)) begin
+        ref_pixel_V_address1 = 64'd56;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        ref_pixel_V_address1 = 64'd54;
+    end else if ((1'b1 == ap_CS_fsm_state30)) begin
+        ref_pixel_V_address1 = 64'd52;
+    end else if ((1'b1 == ap_CS_fsm_state29)) begin
+        ref_pixel_V_address1 = 64'd50;
+    end else if ((1'b1 == ap_CS_fsm_state28)) begin
+        ref_pixel_V_address1 = 64'd48;
+    end else if ((1'b1 == ap_CS_fsm_state27)) begin
+        ref_pixel_V_address1 = 64'd46;
+    end else if ((1'b1 == ap_CS_fsm_state26)) begin
+        ref_pixel_V_address1 = 64'd44;
+    end else if ((1'b1 == ap_CS_fsm_state25)) begin
+        ref_pixel_V_address1 = 64'd42;
+    end else if ((1'b1 == ap_CS_fsm_state24)) begin
+        ref_pixel_V_address1 = 64'd40;
+    end else if ((1'b1 == ap_CS_fsm_state23)) begin
+        ref_pixel_V_address1 = 64'd38;
+    end else if ((1'b1 == ap_CS_fsm_state22)) begin
+        ref_pixel_V_address1 = 64'd36;
+    end else if ((1'b1 == ap_CS_fsm_state21)) begin
+        ref_pixel_V_address1 = 64'd34;
+    end else if ((1'b1 == ap_CS_fsm_state20)) begin
+        ref_pixel_V_address1 = 64'd32;
+    end else if ((1'b1 == ap_CS_fsm_state19)) begin
+        ref_pixel_V_address1 = 64'd30;
+    end else if ((1'b1 == ap_CS_fsm_state18)) begin
+        ref_pixel_V_address1 = 64'd28;
+    end else if ((1'b1 == ap_CS_fsm_state17)) begin
+        ref_pixel_V_address1 = 64'd26;
+    end else if ((1'b1 == ap_CS_fsm_state16)) begin
+        ref_pixel_V_address1 = 64'd24;
+    end else if ((1'b1 == ap_CS_fsm_state15)) begin
+        ref_pixel_V_address1 = 64'd22;
+    end else if ((1'b1 == ap_CS_fsm_state14)) begin
+        ref_pixel_V_address1 = 64'd20;
+    end else if ((1'b1 == ap_CS_fsm_state13)) begin
+        ref_pixel_V_address1 = 64'd18;
+    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+        ref_pixel_V_address1 = 64'd16;
+    end else if ((1'b1 == ap_CS_fsm_state11)) begin
+        ref_pixel_V_address1 = 64'd14;
+    end else if ((1'b1 == ap_CS_fsm_state10)) begin
+        ref_pixel_V_address1 = 64'd12;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        ref_pixel_V_address1 = 64'd10;
+    end else if ((1'b1 == ap_CS_fsm_state8)) begin
+        ref_pixel_V_address1 = 64'd8;
+    end else if ((1'b1 == ap_CS_fsm_state7)) begin
+        ref_pixel_V_address1 = 64'd6;
+    end else if ((1'b1 == ap_CS_fsm_state6)) begin
+        ref_pixel_V_address1 = 64'd4;
+    end else if ((1'b1 == ap_CS_fsm_state5)) begin
+        ref_pixel_V_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state4)) begin
+        ref_pixel_V_address1 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        ref_pixel_V_address1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_address1;
     end else begin
-        sum_stream_write = 1'b0;
+        ref_pixel_V_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state79) | (1'b1 == ap_CS_fsm_state78) | (1'b1 == ap_CS_fsm_state77) | (1'b1 == ap_CS_fsm_state76) | (1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74) | (1'b1 == ap_CS_fsm_state73) | (1'b1 == ap_CS_fsm_state72) | (1'b1 == ap_CS_fsm_state71) | (1'b1 == ap_CS_fsm_state70) | (1'b1 == ap_CS_fsm_state69) | (1'b1 == ap_CS_fsm_state68) | (1'b1 == ap_CS_fsm_state67) | (1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state60) | (1'b1 == ap_CS_fsm_state59) | (1'b1 == ap_CS_fsm_state58) | (1'b1 == ap_CS_fsm_state57) | (1'b1 == ap_CS_fsm_state56) | (1'b1 == ap_CS_fsm_state55) | (1'b1 == ap_CS_fsm_state54) | (1'b1 == ap_CS_fsm_state53) | (1'b1 == ap_CS_fsm_state52) | (1'b1 == ap_CS_fsm_state51) | (1'b1 == ap_CS_fsm_state50) | (1'b1 == ap_CS_fsm_state49) | (1'b1 == ap_CS_fsm_state48) | (1'b1 == ap_CS_fsm_state47) | (1'b1 == ap_CS_fsm_state46) | (1'b1 == ap_CS_fsm_state45) | (1'b1 == ap_CS_fsm_state44) | (1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state41) | (1'b1 == ap_CS_fsm_state40) | (1'b1 == ap_CS_fsm_state39) | (1'b1 == ap_CS_fsm_state38) | (1'b1 == ap_CS_fsm_state37) | (1'b1 == ap_CS_fsm_state36) | (1'b1 == ap_CS_fsm_state35) | (1'b1 == ap_CS_fsm_state34) | (1'b1 == ap_CS_fsm_state33) | (1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31) | (1'b1 == ap_CS_fsm_state30) | (1'b1 == ap_CS_fsm_state29) | (1'b1 == ap_CS_fsm_state28) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21) | (1'b1 == ap_CS_fsm_state20) | (1'b1 == ap_CS_fsm_state19) | (1'b1 == ap_CS_fsm_state18) | (1'b1 == ap_CS_fsm_state17) | (1'b1 == ap_CS_fsm_state16) | (1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9) | (1'b1 == ap_CS_fsm_state8) | (1'b1 == ap_CS_fsm_state7) | (1'b1 == ap_CS_fsm_state6) | (1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state93) | (1'b1 == ap_CS_fsm_state92) | (1'b1 == ap_CS_fsm_state91) | (1'b1 == ap_CS_fsm_state90) | (1'b1 == ap_CS_fsm_state89) | (1'b1 == ap_CS_fsm_state88) | (1'b1 == ap_CS_fsm_state87) | (1'b1 == ap_CS_fsm_state86) | (1'b1 == ap_CS_fsm_state85) | (1'b1 == ap_CS_fsm_state84) | (1'b1 == ap_CS_fsm_state83) | (1'b1 == ap_CS_fsm_state82) | (1'b1 == ap_CS_fsm_state81) | (1'b1 == ap_CS_fsm_state80))) begin
+        ref_pixel_V_ce0 = 1'b1;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        ref_pixel_V_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_ce0;
+    end else begin
+        ref_pixel_V_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state79) | (1'b1 == ap_CS_fsm_state78) | (1'b1 == ap_CS_fsm_state77) | (1'b1 == ap_CS_fsm_state76) | (1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74) | (1'b1 == ap_CS_fsm_state73) | (1'b1 == ap_CS_fsm_state72) | (1'b1 == ap_CS_fsm_state71) | (1'b1 == ap_CS_fsm_state70) | (1'b1 == ap_CS_fsm_state69) | (1'b1 == ap_CS_fsm_state68) | (1'b1 == ap_CS_fsm_state67) | (1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state60) | (1'b1 == ap_CS_fsm_state59) | (1'b1 == ap_CS_fsm_state58) | (1'b1 == ap_CS_fsm_state57) | (1'b1 == ap_CS_fsm_state56) | (1'b1 == ap_CS_fsm_state55) | (1'b1 == ap_CS_fsm_state54) | (1'b1 == ap_CS_fsm_state53) | (1'b1 == ap_CS_fsm_state52) | (1'b1 == ap_CS_fsm_state51) | (1'b1 == ap_CS_fsm_state50) | (1'b1 == ap_CS_fsm_state49) | (1'b1 == ap_CS_fsm_state48) | (1'b1 == ap_CS_fsm_state47) | (1'b1 == ap_CS_fsm_state46) | (1'b1 == ap_CS_fsm_state45) | (1'b1 == ap_CS_fsm_state44) | (1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state41) | (1'b1 == ap_CS_fsm_state40) | (1'b1 == ap_CS_fsm_state39) | (1'b1 == ap_CS_fsm_state38) | (1'b1 == ap_CS_fsm_state37) | (1'b1 == ap_CS_fsm_state36) | (1'b1 == ap_CS_fsm_state35) | (1'b1 == ap_CS_fsm_state34) | (1'b1 == ap_CS_fsm_state33) | (1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31) | (1'b1 == ap_CS_fsm_state30) | (1'b1 == ap_CS_fsm_state29) | (1'b1 == ap_CS_fsm_state28) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21) | (1'b1 == ap_CS_fsm_state20) | (1'b1 == ap_CS_fsm_state19) | (1'b1 == ap_CS_fsm_state18) | (1'b1 == ap_CS_fsm_state17) | (1'b1 == ap_CS_fsm_state16) | (1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9) | (1'b1 == ap_CS_fsm_state8) | (1'b1 == ap_CS_fsm_state7) | (1'b1 == ap_CS_fsm_state6) | (1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state93) | (1'b1 == ap_CS_fsm_state92) | (1'b1 == ap_CS_fsm_state91) | (1'b1 == ap_CS_fsm_state90) | (1'b1 == ap_CS_fsm_state89) | (1'b1 == ap_CS_fsm_state88) | (1'b1 == ap_CS_fsm_state87) | (1'b1 == ap_CS_fsm_state86) | (1'b1 == ap_CS_fsm_state85) | (1'b1 == ap_CS_fsm_state84) | (1'b1 == ap_CS_fsm_state83) | (1'b1 == ap_CS_fsm_state82) | (1'b1 == ap_CS_fsm_state81) | (1'b1 == ap_CS_fsm_state80))) begin
+        ref_pixel_V_ce1 = 1'b1;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        ref_pixel_V_ce1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_ce1;
+    end else begin
+        ref_pixel_V_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state3)) begin
+        ref_pixel_V_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_we0;
+    end else begin
+        ref_pixel_V_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state3)) begin
+        ref_pixel_V_we1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ref_pixel_V_we1;
+    end else begin
+        ref_pixel_V_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
     case (ap_CS_fsm)
         ap_ST_fsm_state1 : begin
-            if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
+            if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state2;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state1;
@@ -1606,7 +3609,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state3;
         end
         ap_ST_fsm_state3 : begin
-            if (((1'b1 == ap_CS_fsm_state3) & (grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_done == 1'b1))) begin
+            if (((1'b1 == ap_CS_fsm_state3) & (grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state4;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
@@ -1619,11 +3622,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state6;
         end
         ap_ST_fsm_state6 : begin
-            if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
-                ap_NS_fsm = ap_ST_fsm_state7;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state6;
-            end
+            ap_NS_fsm = ap_ST_fsm_state7;
         end
         ap_ST_fsm_state7 : begin
             ap_NS_fsm = ap_ST_fsm_state8;
@@ -1638,11 +3637,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state11;
         end
         ap_ST_fsm_state11 : begin
-            if (((1'b1 == ap_CS_fsm_state11) & (icmp_ln63_fu_442_p2 == 1'd1))) begin
-                ap_NS_fsm = ap_ST_fsm_state31;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state12;
-            end
+            ap_NS_fsm = ap_ST_fsm_state12;
         end
         ap_ST_fsm_state12 : begin
             ap_NS_fsm = ap_ST_fsm_state13;
@@ -1654,11 +3649,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state15;
         end
         ap_ST_fsm_state15 : begin
-            if (((grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state15))) begin
-                ap_NS_fsm = ap_ST_fsm_state16;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state15;
-            end
+            ap_NS_fsm = ap_ST_fsm_state16;
         end
         ap_ST_fsm_state16 : begin
             ap_NS_fsm = ap_ST_fsm_state17;
@@ -1667,11 +3658,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state18;
         end
         ap_ST_fsm_state18 : begin
-            if (((grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state18))) begin
-                ap_NS_fsm = ap_ST_fsm_state19;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state18;
-            end
+            ap_NS_fsm = ap_ST_fsm_state19;
         end
         ap_ST_fsm_state19 : begin
             ap_NS_fsm = ap_ST_fsm_state20;
@@ -1680,11 +3667,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state21;
         end
         ap_ST_fsm_state21 : begin
-            if (((grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state21))) begin
-                ap_NS_fsm = ap_ST_fsm_state22;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state21;
-            end
+            ap_NS_fsm = ap_ST_fsm_state22;
         end
         ap_ST_fsm_state22 : begin
             ap_NS_fsm = ap_ST_fsm_state23;
@@ -1693,11 +3676,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state24;
         end
         ap_ST_fsm_state24 : begin
-            if (((grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state24))) begin
-                ap_NS_fsm = ap_ST_fsm_state25;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state24;
-            end
+            ap_NS_fsm = ap_ST_fsm_state25;
         end
         ap_ST_fsm_state25 : begin
             ap_NS_fsm = ap_ST_fsm_state26;
@@ -1715,47 +3694,246 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state30;
         end
         ap_ST_fsm_state30 : begin
-            ap_NS_fsm = ap_ST_fsm_state11;
+            ap_NS_fsm = ap_ST_fsm_state31;
         end
         ap_ST_fsm_state31 : begin
             ap_NS_fsm = ap_ST_fsm_state32;
         end
         ap_ST_fsm_state32 : begin
-            if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state32))) begin
-                ap_NS_fsm = ap_ST_fsm_state33;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state32;
-            end
+            ap_NS_fsm = ap_ST_fsm_state33;
         end
         ap_ST_fsm_state33 : begin
-            if (((1'b1 == ap_CS_fsm_state33) & (out_stream_TREADY_int_regslice == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state34;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state33;
-            end
+            ap_NS_fsm = ap_ST_fsm_state34;
         end
         ap_ST_fsm_state34 : begin
-            if (((1'b1 == ap_CS_fsm_state34) & (out_stream_TREADY_int_regslice == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state35;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state34;
-            end
+            ap_NS_fsm = ap_ST_fsm_state35;
         end
         ap_ST_fsm_state35 : begin
             ap_NS_fsm = ap_ST_fsm_state36;
         end
         ap_ST_fsm_state36 : begin
-            if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
-                ap_NS_fsm = ap_ST_fsm_state37;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state36;
-            end
+            ap_NS_fsm = ap_ST_fsm_state37;
         end
         ap_ST_fsm_state37 : begin
-            if (((regslice_both_out_stream_V_data_V_U_apdone_blk == 1'b0) & (1'b1 == ap_CS_fsm_state37))) begin
+            ap_NS_fsm = ap_ST_fsm_state38;
+        end
+        ap_ST_fsm_state38 : begin
+            ap_NS_fsm = ap_ST_fsm_state39;
+        end
+        ap_ST_fsm_state39 : begin
+            ap_NS_fsm = ap_ST_fsm_state40;
+        end
+        ap_ST_fsm_state40 : begin
+            ap_NS_fsm = ap_ST_fsm_state41;
+        end
+        ap_ST_fsm_state41 : begin
+            ap_NS_fsm = ap_ST_fsm_state42;
+        end
+        ap_ST_fsm_state42 : begin
+            ap_NS_fsm = ap_ST_fsm_state43;
+        end
+        ap_ST_fsm_state43 : begin
+            ap_NS_fsm = ap_ST_fsm_state44;
+        end
+        ap_ST_fsm_state44 : begin
+            ap_NS_fsm = ap_ST_fsm_state45;
+        end
+        ap_ST_fsm_state45 : begin
+            ap_NS_fsm = ap_ST_fsm_state46;
+        end
+        ap_ST_fsm_state46 : begin
+            ap_NS_fsm = ap_ST_fsm_state47;
+        end
+        ap_ST_fsm_state47 : begin
+            ap_NS_fsm = ap_ST_fsm_state48;
+        end
+        ap_ST_fsm_state48 : begin
+            ap_NS_fsm = ap_ST_fsm_state49;
+        end
+        ap_ST_fsm_state49 : begin
+            ap_NS_fsm = ap_ST_fsm_state50;
+        end
+        ap_ST_fsm_state50 : begin
+            ap_NS_fsm = ap_ST_fsm_state51;
+        end
+        ap_ST_fsm_state51 : begin
+            ap_NS_fsm = ap_ST_fsm_state52;
+        end
+        ap_ST_fsm_state52 : begin
+            ap_NS_fsm = ap_ST_fsm_state53;
+        end
+        ap_ST_fsm_state53 : begin
+            ap_NS_fsm = ap_ST_fsm_state54;
+        end
+        ap_ST_fsm_state54 : begin
+            ap_NS_fsm = ap_ST_fsm_state55;
+        end
+        ap_ST_fsm_state55 : begin
+            ap_NS_fsm = ap_ST_fsm_state56;
+        end
+        ap_ST_fsm_state56 : begin
+            ap_NS_fsm = ap_ST_fsm_state57;
+        end
+        ap_ST_fsm_state57 : begin
+            ap_NS_fsm = ap_ST_fsm_state58;
+        end
+        ap_ST_fsm_state58 : begin
+            ap_NS_fsm = ap_ST_fsm_state59;
+        end
+        ap_ST_fsm_state59 : begin
+            ap_NS_fsm = ap_ST_fsm_state60;
+        end
+        ap_ST_fsm_state60 : begin
+            ap_NS_fsm = ap_ST_fsm_state61;
+        end
+        ap_ST_fsm_state61 : begin
+            ap_NS_fsm = ap_ST_fsm_state62;
+        end
+        ap_ST_fsm_state62 : begin
+            ap_NS_fsm = ap_ST_fsm_state63;
+        end
+        ap_ST_fsm_state63 : begin
+            ap_NS_fsm = ap_ST_fsm_state64;
+        end
+        ap_ST_fsm_state64 : begin
+            ap_NS_fsm = ap_ST_fsm_state65;
+        end
+        ap_ST_fsm_state65 : begin
+            ap_NS_fsm = ap_ST_fsm_state66;
+        end
+        ap_ST_fsm_state66 : begin
+            ap_NS_fsm = ap_ST_fsm_state67;
+        end
+        ap_ST_fsm_state67 : begin
+            ap_NS_fsm = ap_ST_fsm_state68;
+        end
+        ap_ST_fsm_state68 : begin
+            ap_NS_fsm = ap_ST_fsm_state69;
+        end
+        ap_ST_fsm_state69 : begin
+            ap_NS_fsm = ap_ST_fsm_state70;
+        end
+        ap_ST_fsm_state70 : begin
+            ap_NS_fsm = ap_ST_fsm_state71;
+        end
+        ap_ST_fsm_state71 : begin
+            ap_NS_fsm = ap_ST_fsm_state72;
+        end
+        ap_ST_fsm_state72 : begin
+            ap_NS_fsm = ap_ST_fsm_state73;
+        end
+        ap_ST_fsm_state73 : begin
+            ap_NS_fsm = ap_ST_fsm_state74;
+        end
+        ap_ST_fsm_state74 : begin
+            ap_NS_fsm = ap_ST_fsm_state75;
+        end
+        ap_ST_fsm_state75 : begin
+            ap_NS_fsm = ap_ST_fsm_state76;
+        end
+        ap_ST_fsm_state76 : begin
+            ap_NS_fsm = ap_ST_fsm_state77;
+        end
+        ap_ST_fsm_state77 : begin
+            ap_NS_fsm = ap_ST_fsm_state78;
+        end
+        ap_ST_fsm_state78 : begin
+            ap_NS_fsm = ap_ST_fsm_state79;
+        end
+        ap_ST_fsm_state79 : begin
+            ap_NS_fsm = ap_ST_fsm_state80;
+        end
+        ap_ST_fsm_state80 : begin
+            ap_NS_fsm = ap_ST_fsm_state81;
+        end
+        ap_ST_fsm_state81 : begin
+            ap_NS_fsm = ap_ST_fsm_state82;
+        end
+        ap_ST_fsm_state82 : begin
+            ap_NS_fsm = ap_ST_fsm_state83;
+        end
+        ap_ST_fsm_state83 : begin
+            ap_NS_fsm = ap_ST_fsm_state84;
+        end
+        ap_ST_fsm_state84 : begin
+            ap_NS_fsm = ap_ST_fsm_state85;
+        end
+        ap_ST_fsm_state85 : begin
+            ap_NS_fsm = ap_ST_fsm_state86;
+        end
+        ap_ST_fsm_state86 : begin
+            ap_NS_fsm = ap_ST_fsm_state87;
+        end
+        ap_ST_fsm_state87 : begin
+            ap_NS_fsm = ap_ST_fsm_state88;
+        end
+        ap_ST_fsm_state88 : begin
+            ap_NS_fsm = ap_ST_fsm_state89;
+        end
+        ap_ST_fsm_state89 : begin
+            ap_NS_fsm = ap_ST_fsm_state90;
+        end
+        ap_ST_fsm_state90 : begin
+            ap_NS_fsm = ap_ST_fsm_state91;
+        end
+        ap_ST_fsm_state91 : begin
+            ap_NS_fsm = ap_ST_fsm_state92;
+        end
+        ap_ST_fsm_state92 : begin
+            ap_NS_fsm = ap_ST_fsm_state93;
+        end
+        ap_ST_fsm_state93 : begin
+            ap_NS_fsm = ap_ST_fsm_state94;
+        end
+        ap_ST_fsm_state94 : begin
+            ap_NS_fsm = ap_ST_fsm_state95;
+        end
+        ap_ST_fsm_state95 : begin
+            if (((1'b1 == ap_CS_fsm_state95) & (grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state96;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state95;
+            end
+        end
+        ap_ST_fsm_state96 : begin
+            ap_NS_fsm = ap_ST_fsm_state97;
+        end
+        ap_ST_fsm_state97 : begin
+            ap_NS_fsm = ap_ST_fsm_state98;
+        end
+        ap_ST_fsm_state98 : begin
+            if (((1'b1 == ap_CS_fsm_state98) & (grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state99;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state98;
+            end
+        end
+        ap_ST_fsm_state99 : begin
+            if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99))) begin
+                ap_NS_fsm = ap_ST_fsm_state100;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state99;
+            end
+        end
+        ap_ST_fsm_state100 : begin
+            if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100))) begin
+                ap_NS_fsm = ap_ST_fsm_state101;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state100;
+            end
+        end
+        ap_ST_fsm_state101 : begin
+            if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101))) begin
+                ap_NS_fsm = ap_ST_fsm_state102;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state101;
+            end
+        end
+        ap_ST_fsm_state102 : begin
+            if ((~((out_stream_TREADY_int_regslice == 1'b0) | (regslice_both_out_stream_V_data_V_U_apdone_blk == 1'b1)) & (1'b1 == ap_CS_fsm_state102))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state37;
+                ap_NS_fsm = ap_ST_fsm_state102;
             end
         end
         default : begin
@@ -1764,33 +3942,35 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln63_1_fu_448_p2 = (indvar_flatten20_fu_176 + 12'd1);
-
-assign add_ln63_fu_457_p2 = (i_2_fu_172 + 2'd1);
-
-assign add_ln64_fu_527_p2 = (select_ln41_fu_469_p3 + 11'd1);
-
-assign and_ln34_1_fu_636_p2 = (or_ln34_2_fu_630_p2 & or_ln34_1_fu_612_p2);
-
-assign and_ln34_2_fu_642_p2 = (grp_fu_345_p2 & and_ln34_1_fu_636_p2);
-
-assign and_ln34_fu_653_p2 = (or_ln34_fu_648_p2 & and_ln34_2_fu_642_p2);
-
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
 assign ap_CS_fsm_state10 = ap_CS_fsm[32'd9];
 
+assign ap_CS_fsm_state100 = ap_CS_fsm[32'd99];
+
+assign ap_CS_fsm_state101 = ap_CS_fsm[32'd100];
+
+assign ap_CS_fsm_state102 = ap_CS_fsm[32'd101];
+
 assign ap_CS_fsm_state11 = ap_CS_fsm[32'd10];
+
+assign ap_CS_fsm_state12 = ap_CS_fsm[32'd11];
+
+assign ap_CS_fsm_state13 = ap_CS_fsm[32'd12];
 
 assign ap_CS_fsm_state14 = ap_CS_fsm[32'd13];
 
 assign ap_CS_fsm_state15 = ap_CS_fsm[32'd14];
+
+assign ap_CS_fsm_state16 = ap_CS_fsm[32'd15];
 
 assign ap_CS_fsm_state17 = ap_CS_fsm[32'd16];
 
 assign ap_CS_fsm_state18 = ap_CS_fsm[32'd17];
 
 assign ap_CS_fsm_state19 = ap_CS_fsm[32'd18];
+
+assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
 
 assign ap_CS_fsm_state20 = ap_CS_fsm[32'd19];
 
@@ -1830,134 +4010,160 @@ assign ap_CS_fsm_state36 = ap_CS_fsm[32'd35];
 
 assign ap_CS_fsm_state37 = ap_CS_fsm[32'd36];
 
+assign ap_CS_fsm_state38 = ap_CS_fsm[32'd37];
+
+assign ap_CS_fsm_state39 = ap_CS_fsm[32'd38];
+
+assign ap_CS_fsm_state4 = ap_CS_fsm[32'd3];
+
+assign ap_CS_fsm_state40 = ap_CS_fsm[32'd39];
+
+assign ap_CS_fsm_state41 = ap_CS_fsm[32'd40];
+
+assign ap_CS_fsm_state42 = ap_CS_fsm[32'd41];
+
+assign ap_CS_fsm_state43 = ap_CS_fsm[32'd42];
+
+assign ap_CS_fsm_state44 = ap_CS_fsm[32'd43];
+
+assign ap_CS_fsm_state45 = ap_CS_fsm[32'd44];
+
+assign ap_CS_fsm_state46 = ap_CS_fsm[32'd45];
+
+assign ap_CS_fsm_state47 = ap_CS_fsm[32'd46];
+
+assign ap_CS_fsm_state48 = ap_CS_fsm[32'd47];
+
+assign ap_CS_fsm_state49 = ap_CS_fsm[32'd48];
+
 assign ap_CS_fsm_state5 = ap_CS_fsm[32'd4];
+
+assign ap_CS_fsm_state50 = ap_CS_fsm[32'd49];
+
+assign ap_CS_fsm_state51 = ap_CS_fsm[32'd50];
+
+assign ap_CS_fsm_state52 = ap_CS_fsm[32'd51];
+
+assign ap_CS_fsm_state53 = ap_CS_fsm[32'd52];
+
+assign ap_CS_fsm_state54 = ap_CS_fsm[32'd53];
+
+assign ap_CS_fsm_state55 = ap_CS_fsm[32'd54];
+
+assign ap_CS_fsm_state56 = ap_CS_fsm[32'd55];
+
+assign ap_CS_fsm_state57 = ap_CS_fsm[32'd56];
+
+assign ap_CS_fsm_state58 = ap_CS_fsm[32'd57];
+
+assign ap_CS_fsm_state59 = ap_CS_fsm[32'd58];
 
 assign ap_CS_fsm_state6 = ap_CS_fsm[32'd5];
 
+assign ap_CS_fsm_state60 = ap_CS_fsm[32'd59];
+
+assign ap_CS_fsm_state61 = ap_CS_fsm[32'd60];
+
+assign ap_CS_fsm_state62 = ap_CS_fsm[32'd61];
+
+assign ap_CS_fsm_state63 = ap_CS_fsm[32'd62];
+
+assign ap_CS_fsm_state64 = ap_CS_fsm[32'd63];
+
+assign ap_CS_fsm_state65 = ap_CS_fsm[32'd64];
+
+assign ap_CS_fsm_state66 = ap_CS_fsm[32'd65];
+
+assign ap_CS_fsm_state67 = ap_CS_fsm[32'd66];
+
+assign ap_CS_fsm_state68 = ap_CS_fsm[32'd67];
+
+assign ap_CS_fsm_state69 = ap_CS_fsm[32'd68];
+
 assign ap_CS_fsm_state7 = ap_CS_fsm[32'd6];
 
-assign ap_NS_fsm_state2 = ap_NS_fsm[32'd1];
+assign ap_CS_fsm_state70 = ap_CS_fsm[32'd69];
+
+assign ap_CS_fsm_state71 = ap_CS_fsm[32'd70];
+
+assign ap_CS_fsm_state72 = ap_CS_fsm[32'd71];
+
+assign ap_CS_fsm_state73 = ap_CS_fsm[32'd72];
+
+assign ap_CS_fsm_state74 = ap_CS_fsm[32'd73];
+
+assign ap_CS_fsm_state75 = ap_CS_fsm[32'd74];
+
+assign ap_CS_fsm_state76 = ap_CS_fsm[32'd75];
+
+assign ap_CS_fsm_state77 = ap_CS_fsm[32'd76];
+
+assign ap_CS_fsm_state78 = ap_CS_fsm[32'd77];
+
+assign ap_CS_fsm_state79 = ap_CS_fsm[32'd78];
+
+assign ap_CS_fsm_state8 = ap_CS_fsm[32'd7];
+
+assign ap_CS_fsm_state80 = ap_CS_fsm[32'd79];
+
+assign ap_CS_fsm_state81 = ap_CS_fsm[32'd80];
+
+assign ap_CS_fsm_state82 = ap_CS_fsm[32'd81];
+
+assign ap_CS_fsm_state83 = ap_CS_fsm[32'd82];
+
+assign ap_CS_fsm_state84 = ap_CS_fsm[32'd83];
+
+assign ap_CS_fsm_state85 = ap_CS_fsm[32'd84];
+
+assign ap_CS_fsm_state86 = ap_CS_fsm[32'd85];
+
+assign ap_CS_fsm_state87 = ap_CS_fsm[32'd86];
+
+assign ap_CS_fsm_state88 = ap_CS_fsm[32'd87];
+
+assign ap_CS_fsm_state89 = ap_CS_fsm[32'd88];
+
+assign ap_CS_fsm_state9 = ap_CS_fsm[32'd8];
+
+assign ap_CS_fsm_state90 = ap_CS_fsm[32'd89];
+
+assign ap_CS_fsm_state91 = ap_CS_fsm[32'd90];
+
+assign ap_CS_fsm_state92 = ap_CS_fsm[32'd91];
+
+assign ap_CS_fsm_state93 = ap_CS_fsm[32'd92];
+
+assign ap_CS_fsm_state94 = ap_CS_fsm[32'd93];
+
+assign ap_CS_fsm_state95 = ap_CS_fsm[32'd94];
+
+assign ap_CS_fsm_state97 = ap_CS_fsm[32'd96];
+
+assign ap_CS_fsm_state98 = ap_CS_fsm[32'd97];
+
+assign ap_CS_fsm_state99 = ap_CS_fsm[32'd98];
+
+always @ (*) begin
+    ap_block_state102 = ((out_stream_TREADY_int_regslice == 1'b0) | (regslice_both_out_stream_V_data_V_U_apdone_blk == 1'b1));
+end
 
 always @ (*) begin
     ap_rst_n_inv = ~ap_rst_n;
 end
 
-assign bitcast_ln34_1_fu_583_p1 = minDistance_load_1_reg_924;
+assign e_data_V_fu_3995_p1 = grp_fu_3260_p1;
 
-assign bitcast_ln34_fu_566_p1 = minDistance_3_reg_917;
+assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660_ap_start_reg;
 
-assign c_fu_678_p3 = ((and_ln34_fu_653_p2[0:0] == 1'b1) ? minDistance_3_reg_917 : minDistance_load_1_reg_924);
+assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679_ap_start_reg;
 
-assign cmp1_i_i_fu_437_p2 = ((zext_ln41_fu_433_p1 != grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_0_033_out) ? 1'b1 : 1'b0);
+assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_ap_start_reg;
 
-assign cmp1_i_i_mid1_fu_501_p2 = ((zext_ln41_1_fu_497_p1 != grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_0_033_out) ? 1'b1 : 1'b0);
-
-assign empty_29_fu_405_p1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_0_033_out[8:0];
-
-assign grp_fu_749_p0 = (tmp_8_fu_409_p3 + trunc_ln17_fu_417_p1);
-
-assign grp_fu_749_p1 = 19'd180;
-
-assign grp_fu_755_p0 = grp_fu_755_p00;
-
-assign grp_fu_755_p00 = tmp_s_fu_485_p3;
-
-assign grp_fu_755_p1 = grp_fu_755_p10;
-
-assign grp_fu_755_p10 = select_ln41_fu_469_p3;
-
-assign grp_fu_755_p2 = 19'd180;
-
-assign grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_L3_fu_278_ap_start_reg;
-
-assign grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_L4_fu_286_ap_start_reg;
-
-assign grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_L5_fu_292_ap_start_reg;
-
-assign grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_ap_start_reg;
-
-assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_101_2_VITIS_LOOP_1_fu_239_ap_start_reg;
-
-assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_ap_start_reg;
-
-assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_ap_start_reg;
-
-assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_129_6_fu_305_out_stream_TREADY = (out_stream_TREADY_int_regslice & ap_CS_fsm_state32);
-
-assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_ap_start_reg;
-
-assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_161_7_fu_325_out_stream_TREADY = (out_stream_TREADY_int_regslice & ap_CS_fsm_state36);
-
-assign icmp_ln34_1_fu_600_p2 = ((tmp_5_fu_569_p4 != 8'd255) ? 1'b1 : 1'b0);
-
-assign icmp_ln34_2_fu_606_p2 = ((trunc_ln34_fu_579_p1 == 23'd0) ? 1'b1 : 1'b0);
-
-assign icmp_ln34_3_fu_618_p2 = ((tmp_6_fu_586_p4 != 8'd255) ? 1'b1 : 1'b0);
-
-assign icmp_ln34_4_fu_624_p2 = ((trunc_ln34_1_fu_596_p1 == 23'd0) ? 1'b1 : 1'b0);
-
-assign icmp_ln34_fu_518_p2 = ((zext_ln41_3_fu_514_p1 != grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_1_034_out) ? 1'b1 : 1'b0);
-
-assign icmp_ln63_fu_442_p2 = ((indvar_flatten20_fu_176 == 12'd2048) ? 1'b1 : 1'b0);
-
-assign icmp_ln64_fu_463_p2 = ((j_1_fu_168 == 11'd1024) ? 1'b1 : 1'b0);
-
-assign icmp_ln74_fu_684_p2 = ((grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_current_brightness_out > maxBrightness_1_fu_144) ? 1'b1 : 1'b0);
+assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062_out_stream_TREADY = (out_stream_TREADY_int_regslice & ap_CS_fsm_state98);
 
 assign in_stream_TREADY = regslice_both_in_stream_V_data_V_U_ack_in;
 
-assign maxBrightness_fu_706_p3 = ((icmp_ln74_fu_684_p2[0:0] == 1'b1) ? grp_hyperspectral_hw_wrapped_Pipeline_L6_fu_299_current_brightness_out : maxBrightness_1_fu_144);
-
-assign or_ln34_1_fu_612_p2 = (icmp_ln34_2_fu_606_p2 | icmp_ln34_1_fu_600_p2);
-
-assign or_ln34_2_fu_630_p2 = (icmp_ln34_4_fu_624_p2 | icmp_ln34_3_fu_618_p2);
-
-assign or_ln34_fu_648_p2 = (select_ln41_2_fu_555_p3 | icmp_ln34_reg_898);
-
 assign out_stream_TVALID = regslice_both_out_stream_V_data_V_U_vld_out;
-
-assign select_ln34_1_fu_670_p3 = ((and_ln34_fu_653_p2[0:0] == 1'b1) ? zext_ln34_fu_659_p1 : j_02_i629_fu_156);
-
-assign select_ln34_fu_662_p3 = ((and_ln34_fu_653_p2[0:0] == 1'b1) ? zext_ln41_4_fu_560_p1 : i_04_i627_fu_152);
-
-assign select_ln41_1_fu_477_p3 = ((icmp_ln64_fu_463_p2[0:0] == 1'b1) ? add_ln63_fu_457_p2 : i_2_fu_172);
-
-assign select_ln41_2_fu_555_p3 = ((icmp_ln64_reg_883[0:0] == 1'b1) ? cmp1_i_i_mid1_reg_888 : cmp1_i_i_reg_875);
-
-assign select_ln41_fu_469_p3 = ((icmp_ln64_fu_463_p2[0:0] == 1'b1) ? 11'd0 : j_1_fu_168);
-
-assign select_ln74_1_fu_698_p3 = ((icmp_ln74_fu_684_p2[0:0] == 1'b1) ? zext_ln41_4_fu_560_p1 : i_04_i631_fu_160);
-
-assign select_ln74_fu_690_p3 = ((icmp_ln74_fu_684_p2[0:0] == 1'b1) ? zext_ln34_fu_659_p1 : j_02_i633_fu_164);
-
-assign tmp_5_fu_569_p4 = {{bitcast_ln34_fu_566_p1[30:23]}};
-
-assign tmp_6_fu_586_p4 = {{bitcast_ln34_1_fu_583_p1[30:23]}};
-
-assign tmp_8_fu_409_p3 = {{empty_29_fu_405_p1}, {10'd0}};
-
-assign tmp_s_fu_485_p3 = {{select_ln41_1_fu_477_p3}, {10'd0}};
-
-assign trunc_ln17_fu_417_p1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_114_5_fu_258_refPixel_1_034_out[18:0];
-
-assign trunc_ln34_1_fu_596_p1 = bitcast_ln34_1_fu_583_p1[22:0];
-
-assign trunc_ln34_2_fu_523_p1 = select_ln41_fu_469_p3[9:0];
-
-assign trunc_ln34_fu_579_p1 = bitcast_ln34_fu_566_p1[22:0];
-
-assign trunc_ln41_fu_506_p1 = select_ln41_1_fu_477_p3[0:0];
-
-assign w_V_fu_744_p1 = minDistance_fu_148;
-
-assign zext_ln34_fu_659_p1 = trunc_ln34_2_reg_903;
-
-assign zext_ln41_1_fu_497_p1 = add_ln63_fu_457_p2;
-
-assign zext_ln41_3_fu_514_p1 = select_ln41_fu_469_p3;
-
-assign zext_ln41_4_fu_560_p1 = trunc_ln41_reg_893;
-
-assign zext_ln41_fu_433_p1 = i_2_fu_172;
 
 endmodule //hyperspectral_hw_wrapped

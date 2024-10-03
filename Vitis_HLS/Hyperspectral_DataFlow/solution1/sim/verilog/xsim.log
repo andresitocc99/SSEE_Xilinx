@@ -2,13 +2,13 @@
 # xsim v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Wed Jul 10 00:14:16 2024
-# Process ID: 29796
-# Current directory: /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog
+# Start of session at: Thu Oct  3 02:35:04 2024
+# Process ID: 5774
+# Current directory: /home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/hyperspectral_hw_wrapped/xsim_script.tcl}
-# Log file: /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/xsim.log
-# Journal file: /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/xsim.jou
-# Running On: andresitocc99, OS: Linux, CPU Frequency: 3034.631 MHz, CPU Physical cores: 16, Host memory: 33547 MB
+# Log file: /home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/xsim.log
+# Journal file: /home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/xsim.jou
+# Running On: andresitocc99-portatil, OS: Linux, CPU Frequency: 3996.587 MHz, CPU Physical cores: 6, Host memory: 16601 MB
 #-----------------------------------------------------------
 source xsim.dir/hyperspectral_hw_wrapped/xsim_script.tcl
 # xsim {hyperspectral_hw_wrapped} -autoloadwcfg -tclbatch {hyperspectral_hw_wrapped.tcl}
@@ -22,8 +22,10 @@ source hyperspectral_hw_wrapped.tcl
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
-// RTL Simulation : 0 / 1 [402.53%] @ "100000145000"
-// RTL Simulation : 0 / 1 [805.07%] @ "200000155000"
-// RTL Simulation : 0 / 1 [1207.60%] @ "300000165000"
-// RTL Simulation : 0 / 1 [1610.14%] @ "400000175000"
-// RTL Simulation : 0 / 1 [2012.67%] @ "500000185000"
+// RTL Simulation : 1 / 1 [100.00%] @ "1846385000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1846445 ns : File "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped.autotb.v" Line 446
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 2711.414 ; gain = 0.000 ; free physical = 6326 ; free virtual = 43081
+## quit
+INFO: xsimkernel Simulation Memory Usage: 204220 KB (Peak: 285132 KB), Simulation CPU Usage: 21470 ms
+INFO: [Common 17-206] Exiting xsim at Thu Oct  3 02:35:29 2024...

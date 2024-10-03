@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="60" Path="/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/impl/ip/tmp.xpr">
+<Project Version="7" Minor="60" Path="/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/impl/ip/tmp.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="7c1fe4e93286408c80ea3e1ed73706cc"/>
+    <Option Name="Id" Val="8ab5d5fb5fe4446b9e3c9914ef64aa37"/>
     <Option Name="Part" Val="xczu3eg-sbva484-1-e"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -87,48 +87,6 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/ip/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_4_no_dsp_1_ip/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_4_no_dsp_1_ip.xci">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/ip/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1_ip/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1_ip.xci">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/ip/hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1_ip/hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/ip/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip.xci">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/ip/hyperspectral_hw_wrapped_fsub_32ns_32ns_32_5_full_dsp_1_ip/hyperspectral_hw_wrapped_fsub_32ns_32ns_32_5_full_dsp_1_ip.xci">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/ip/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip/hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1_ip.xci">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/ip/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>

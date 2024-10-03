@@ -1,0 +1,315 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4'" level="0">
+<item name = "Date">Thu Oct  3 02:29:31 2024
+</item>
+<item name = "Version">2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)</item>
+<item name = "Project">Hyperspectral_DataFlow</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sbva484-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 1.501 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">92, 92, 0.920 us, 0.920 us, 92, 92, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_85_4">90, 90, 2, 1, 1, 90, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 41, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 0, 1894, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 45, -</column>
+<column name="Register">-, -, 44, -, -</column>
+<specialColumn name="Available">432, 360, 141120, 70560, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 2, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="mux_1798_16_1_1_U563">mux_1798_16_1_1, 0, 0, 0, 947, 0</column>
+<column name="mux_1798_16_1_1_U564">mux_1798_16_1_1, 0, 0, 0, 947, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln85_fu_2286_p2">+, 0, 0, 15, 8, 2</column>
+<column name="ap_block_pp0_stage0_01001">and, 0, 0, 2, 1, 1</column>
+<column name="e_last_V_fu_2280_p2">icmp, 0, 0, 11, 8, 8</column>
+<column name="icmp_ln85_fu_1546_p2">icmp, 0, 0, 11, 8, 8</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_i_1">9, 2, 8, 16</column>
+<column name="i_fu_424">9, 2, 8, 16</column>
+<column name="out_stream_TDATA_blk_n">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="e_last_V_reg_2324">1, 0, 1, 0</column>
+<column name="i_fu_424">8, 0, 8, 0</column>
+<column name="tmp_27_reg_2319">16, 0, 16, 0</column>
+<column name="tmp_s_reg_2314">16, 0, 16, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4, return value</column>
+<column name="out_stream_TREADY">in, 1, axis, out_stream_V_data_V, pointer</column>
+<column name="out_stream_TDATA">out, 32, axis, out_stream_V_data_V, pointer</column>
+<column name="closest_pixel_V_359_04_reload">in, 16, ap_none, closest_pixel_V_359_04_reload, scalar</column>
+<column name="closest_pixel_V_360_06_reload">in, 16, ap_none, closest_pixel_V_360_06_reload, scalar</column>
+<column name="closest_pixel_V_361_08_reload">in, 16, ap_none, closest_pixel_V_361_08_reload, scalar</column>
+<column name="closest_pixel_V_362_010_reload">in, 16, ap_none, closest_pixel_V_362_010_reload, scalar</column>
+<column name="closest_pixel_V_363_012_reload">in, 16, ap_none, closest_pixel_V_363_012_reload, scalar</column>
+<column name="closest_pixel_V_364_014_reload">in, 16, ap_none, closest_pixel_V_364_014_reload, scalar</column>
+<column name="closest_pixel_V_365_016_reload">in, 16, ap_none, closest_pixel_V_365_016_reload, scalar</column>
+<column name="closest_pixel_V_366_018_reload">in, 16, ap_none, closest_pixel_V_366_018_reload, scalar</column>
+<column name="closest_pixel_V_367_020_reload">in, 16, ap_none, closest_pixel_V_367_020_reload, scalar</column>
+<column name="closest_pixel_V_368_022_reload">in, 16, ap_none, closest_pixel_V_368_022_reload, scalar</column>
+<column name="closest_pixel_V_369_024_reload">in, 16, ap_none, closest_pixel_V_369_024_reload, scalar</column>
+<column name="closest_pixel_V_370_026_reload">in, 16, ap_none, closest_pixel_V_370_026_reload, scalar</column>
+<column name="closest_pixel_V_371_028_reload">in, 16, ap_none, closest_pixel_V_371_028_reload, scalar</column>
+<column name="closest_pixel_V_372_030_reload">in, 16, ap_none, closest_pixel_V_372_030_reload, scalar</column>
+<column name="closest_pixel_V_373_032_reload">in, 16, ap_none, closest_pixel_V_373_032_reload, scalar</column>
+<column name="closest_pixel_V_374_034_reload">in, 16, ap_none, closest_pixel_V_374_034_reload, scalar</column>
+<column name="closest_pixel_V_375_036_reload">in, 16, ap_none, closest_pixel_V_375_036_reload, scalar</column>
+<column name="closest_pixel_V_376_038_reload">in, 16, ap_none, closest_pixel_V_376_038_reload, scalar</column>
+<column name="closest_pixel_V_377_040_reload">in, 16, ap_none, closest_pixel_V_377_040_reload, scalar</column>
+<column name="closest_pixel_V_378_042_reload">in, 16, ap_none, closest_pixel_V_378_042_reload, scalar</column>
+<column name="closest_pixel_V_379_044_reload">in, 16, ap_none, closest_pixel_V_379_044_reload, scalar</column>
+<column name="closest_pixel_V_380_046_reload">in, 16, ap_none, closest_pixel_V_380_046_reload, scalar</column>
+<column name="closest_pixel_V_381_048_reload">in, 16, ap_none, closest_pixel_V_381_048_reload, scalar</column>
+<column name="closest_pixel_V_382_050_reload">in, 16, ap_none, closest_pixel_V_382_050_reload, scalar</column>
+<column name="closest_pixel_V_383_052_reload">in, 16, ap_none, closest_pixel_V_383_052_reload, scalar</column>
+<column name="closest_pixel_V_384_054_reload">in, 16, ap_none, closest_pixel_V_384_054_reload, scalar</column>
+<column name="closest_pixel_V_385_056_reload">in, 16, ap_none, closest_pixel_V_385_056_reload, scalar</column>
+<column name="closest_pixel_V_386_058_reload">in, 16, ap_none, closest_pixel_V_386_058_reload, scalar</column>
+<column name="closest_pixel_V_387_060_reload">in, 16, ap_none, closest_pixel_V_387_060_reload, scalar</column>
+<column name="closest_pixel_V_388_062_reload">in, 16, ap_none, closest_pixel_V_388_062_reload, scalar</column>
+<column name="closest_pixel_V_389_064_reload">in, 16, ap_none, closest_pixel_V_389_064_reload, scalar</column>
+<column name="closest_pixel_V_390_066_reload">in, 16, ap_none, closest_pixel_V_390_066_reload, scalar</column>
+<column name="closest_pixel_V_391_068_reload">in, 16, ap_none, closest_pixel_V_391_068_reload, scalar</column>
+<column name="closest_pixel_V_392_070_reload">in, 16, ap_none, closest_pixel_V_392_070_reload, scalar</column>
+<column name="closest_pixel_V_393_072_reload">in, 16, ap_none, closest_pixel_V_393_072_reload, scalar</column>
+<column name="closest_pixel_V_394_074_reload">in, 16, ap_none, closest_pixel_V_394_074_reload, scalar</column>
+<column name="closest_pixel_V_395_076_reload">in, 16, ap_none, closest_pixel_V_395_076_reload, scalar</column>
+<column name="closest_pixel_V_396_078_reload">in, 16, ap_none, closest_pixel_V_396_078_reload, scalar</column>
+<column name="closest_pixel_V_397_080_reload">in, 16, ap_none, closest_pixel_V_397_080_reload, scalar</column>
+<column name="closest_pixel_V_398_082_reload">in, 16, ap_none, closest_pixel_V_398_082_reload, scalar</column>
+<column name="closest_pixel_V_399_084_reload">in, 16, ap_none, closest_pixel_V_399_084_reload, scalar</column>
+<column name="closest_pixel_V_400_086_reload">in, 16, ap_none, closest_pixel_V_400_086_reload, scalar</column>
+<column name="closest_pixel_V_401_088_reload">in, 16, ap_none, closest_pixel_V_401_088_reload, scalar</column>
+<column name="closest_pixel_V_402_090_reload">in, 16, ap_none, closest_pixel_V_402_090_reload, scalar</column>
+<column name="closest_pixel_V_403_092_reload">in, 16, ap_none, closest_pixel_V_403_092_reload, scalar</column>
+<column name="closest_pixel_V_404_094_reload">in, 16, ap_none, closest_pixel_V_404_094_reload, scalar</column>
+<column name="closest_pixel_V_405_096_reload">in, 16, ap_none, closest_pixel_V_405_096_reload, scalar</column>
+<column name="closest_pixel_V_406_098_reload">in, 16, ap_none, closest_pixel_V_406_098_reload, scalar</column>
+<column name="closest_pixel_V_407_0100_reload">in, 16, ap_none, closest_pixel_V_407_0100_reload, scalar</column>
+<column name="closest_pixel_V_408_0102_reload">in, 16, ap_none, closest_pixel_V_408_0102_reload, scalar</column>
+<column name="closest_pixel_V_409_0104_reload">in, 16, ap_none, closest_pixel_V_409_0104_reload, scalar</column>
+<column name="closest_pixel_V_410_0106_reload">in, 16, ap_none, closest_pixel_V_410_0106_reload, scalar</column>
+<column name="closest_pixel_V_411_0108_reload">in, 16, ap_none, closest_pixel_V_411_0108_reload, scalar</column>
+<column name="closest_pixel_V_412_0110_reload">in, 16, ap_none, closest_pixel_V_412_0110_reload, scalar</column>
+<column name="closest_pixel_V_413_0112_reload">in, 16, ap_none, closest_pixel_V_413_0112_reload, scalar</column>
+<column name="closest_pixel_V_414_0114_reload">in, 16, ap_none, closest_pixel_V_414_0114_reload, scalar</column>
+<column name="closest_pixel_V_415_0116_reload">in, 16, ap_none, closest_pixel_V_415_0116_reload, scalar</column>
+<column name="closest_pixel_V_416_0118_reload">in, 16, ap_none, closest_pixel_V_416_0118_reload, scalar</column>
+<column name="closest_pixel_V_417_0120_reload">in, 16, ap_none, closest_pixel_V_417_0120_reload, scalar</column>
+<column name="closest_pixel_V_418_0122_reload">in, 16, ap_none, closest_pixel_V_418_0122_reload, scalar</column>
+<column name="closest_pixel_V_419_0124_reload">in, 16, ap_none, closest_pixel_V_419_0124_reload, scalar</column>
+<column name="closest_pixel_V_420_0126_reload">in, 16, ap_none, closest_pixel_V_420_0126_reload, scalar</column>
+<column name="closest_pixel_V_421_0128_reload">in, 16, ap_none, closest_pixel_V_421_0128_reload, scalar</column>
+<column name="closest_pixel_V_422_0130_reload">in, 16, ap_none, closest_pixel_V_422_0130_reload, scalar</column>
+<column name="closest_pixel_V_423_0132_reload">in, 16, ap_none, closest_pixel_V_423_0132_reload, scalar</column>
+<column name="closest_pixel_V_424_0134_reload">in, 16, ap_none, closest_pixel_V_424_0134_reload, scalar</column>
+<column name="closest_pixel_V_425_0136_reload">in, 16, ap_none, closest_pixel_V_425_0136_reload, scalar</column>
+<column name="closest_pixel_V_426_0138_reload">in, 16, ap_none, closest_pixel_V_426_0138_reload, scalar</column>
+<column name="closest_pixel_V_427_0140_reload">in, 16, ap_none, closest_pixel_V_427_0140_reload, scalar</column>
+<column name="closest_pixel_V_428_0142_reload">in, 16, ap_none, closest_pixel_V_428_0142_reload, scalar</column>
+<column name="closest_pixel_V_429_0144_reload">in, 16, ap_none, closest_pixel_V_429_0144_reload, scalar</column>
+<column name="closest_pixel_V_430_0146_reload">in, 16, ap_none, closest_pixel_V_430_0146_reload, scalar</column>
+<column name="closest_pixel_V_431_0148_reload">in, 16, ap_none, closest_pixel_V_431_0148_reload, scalar</column>
+<column name="closest_pixel_V_432_0150_reload">in, 16, ap_none, closest_pixel_V_432_0150_reload, scalar</column>
+<column name="closest_pixel_V_433_0152_reload">in, 16, ap_none, closest_pixel_V_433_0152_reload, scalar</column>
+<column name="closest_pixel_V_434_0154_reload">in, 16, ap_none, closest_pixel_V_434_0154_reload, scalar</column>
+<column name="closest_pixel_V_435_0156_reload">in, 16, ap_none, closest_pixel_V_435_0156_reload, scalar</column>
+<column name="closest_pixel_V_436_0158_reload">in, 16, ap_none, closest_pixel_V_436_0158_reload, scalar</column>
+<column name="closest_pixel_V_437_0160_reload">in, 16, ap_none, closest_pixel_V_437_0160_reload, scalar</column>
+<column name="closest_pixel_V_438_0162_reload">in, 16, ap_none, closest_pixel_V_438_0162_reload, scalar</column>
+<column name="closest_pixel_V_439_0164_reload">in, 16, ap_none, closest_pixel_V_439_0164_reload, scalar</column>
+<column name="closest_pixel_V_440_0166_reload">in, 16, ap_none, closest_pixel_V_440_0166_reload, scalar</column>
+<column name="closest_pixel_V_441_0168_reload">in, 16, ap_none, closest_pixel_V_441_0168_reload, scalar</column>
+<column name="closest_pixel_V_442_0170_reload">in, 16, ap_none, closest_pixel_V_442_0170_reload, scalar</column>
+<column name="closest_pixel_V_443_0172_reload">in, 16, ap_none, closest_pixel_V_443_0172_reload, scalar</column>
+<column name="closest_pixel_V_444_0174_reload">in, 16, ap_none, closest_pixel_V_444_0174_reload, scalar</column>
+<column name="closest_pixel_V_445_0176_reload">in, 16, ap_none, closest_pixel_V_445_0176_reload, scalar</column>
+<column name="closest_pixel_V_446_0178_reload">in, 16, ap_none, closest_pixel_V_446_0178_reload, scalar</column>
+<column name="closest_pixel_V_447_0180_reload">in, 16, ap_none, closest_pixel_V_447_0180_reload, scalar</column>
+<column name="closest_pixel_V_448_0182_reload">in, 16, ap_none, closest_pixel_V_448_0182_reload, scalar</column>
+<column name="closest_pixel_V_449_05_reload">in, 16, ap_none, closest_pixel_V_449_05_reload, scalar</column>
+<column name="closest_pixel_V_450_07_reload">in, 16, ap_none, closest_pixel_V_450_07_reload, scalar</column>
+<column name="closest_pixel_V_451_09_reload">in, 16, ap_none, closest_pixel_V_451_09_reload, scalar</column>
+<column name="closest_pixel_V_452_011_reload">in, 16, ap_none, closest_pixel_V_452_011_reload, scalar</column>
+<column name="closest_pixel_V_453_013_reload">in, 16, ap_none, closest_pixel_V_453_013_reload, scalar</column>
+<column name="closest_pixel_V_454_015_reload">in, 16, ap_none, closest_pixel_V_454_015_reload, scalar</column>
+<column name="closest_pixel_V_455_017_reload">in, 16, ap_none, closest_pixel_V_455_017_reload, scalar</column>
+<column name="closest_pixel_V_456_019_reload">in, 16, ap_none, closest_pixel_V_456_019_reload, scalar</column>
+<column name="closest_pixel_V_457_021_reload">in, 16, ap_none, closest_pixel_V_457_021_reload, scalar</column>
+<column name="closest_pixel_V_458_023_reload">in, 16, ap_none, closest_pixel_V_458_023_reload, scalar</column>
+<column name="closest_pixel_V_459_025_reload">in, 16, ap_none, closest_pixel_V_459_025_reload, scalar</column>
+<column name="closest_pixel_V_460_027_reload">in, 16, ap_none, closest_pixel_V_460_027_reload, scalar</column>
+<column name="closest_pixel_V_461_029_reload">in, 16, ap_none, closest_pixel_V_461_029_reload, scalar</column>
+<column name="closest_pixel_V_462_031_reload">in, 16, ap_none, closest_pixel_V_462_031_reload, scalar</column>
+<column name="closest_pixel_V_463_033_reload">in, 16, ap_none, closest_pixel_V_463_033_reload, scalar</column>
+<column name="closest_pixel_V_464_035_reload">in, 16, ap_none, closest_pixel_V_464_035_reload, scalar</column>
+<column name="closest_pixel_V_465_037_reload">in, 16, ap_none, closest_pixel_V_465_037_reload, scalar</column>
+<column name="closest_pixel_V_466_039_reload">in, 16, ap_none, closest_pixel_V_466_039_reload, scalar</column>
+<column name="closest_pixel_V_467_041_reload">in, 16, ap_none, closest_pixel_V_467_041_reload, scalar</column>
+<column name="closest_pixel_V_468_043_reload">in, 16, ap_none, closest_pixel_V_468_043_reload, scalar</column>
+<column name="closest_pixel_V_469_045_reload">in, 16, ap_none, closest_pixel_V_469_045_reload, scalar</column>
+<column name="closest_pixel_V_470_047_reload">in, 16, ap_none, closest_pixel_V_470_047_reload, scalar</column>
+<column name="closest_pixel_V_471_049_reload">in, 16, ap_none, closest_pixel_V_471_049_reload, scalar</column>
+<column name="closest_pixel_V_472_051_reload">in, 16, ap_none, closest_pixel_V_472_051_reload, scalar</column>
+<column name="closest_pixel_V_473_053_reload">in, 16, ap_none, closest_pixel_V_473_053_reload, scalar</column>
+<column name="closest_pixel_V_474_055_reload">in, 16, ap_none, closest_pixel_V_474_055_reload, scalar</column>
+<column name="closest_pixel_V_475_057_reload">in, 16, ap_none, closest_pixel_V_475_057_reload, scalar</column>
+<column name="closest_pixel_V_476_059_reload">in, 16, ap_none, closest_pixel_V_476_059_reload, scalar</column>
+<column name="closest_pixel_V_477_061_reload">in, 16, ap_none, closest_pixel_V_477_061_reload, scalar</column>
+<column name="closest_pixel_V_478_063_reload">in, 16, ap_none, closest_pixel_V_478_063_reload, scalar</column>
+<column name="closest_pixel_V_479_065_reload">in, 16, ap_none, closest_pixel_V_479_065_reload, scalar</column>
+<column name="closest_pixel_V_480_067_reload">in, 16, ap_none, closest_pixel_V_480_067_reload, scalar</column>
+<column name="closest_pixel_V_481_069_reload">in, 16, ap_none, closest_pixel_V_481_069_reload, scalar</column>
+<column name="closest_pixel_V_482_071_reload">in, 16, ap_none, closest_pixel_V_482_071_reload, scalar</column>
+<column name="closest_pixel_V_483_073_reload">in, 16, ap_none, closest_pixel_V_483_073_reload, scalar</column>
+<column name="closest_pixel_V_484_075_reload">in, 16, ap_none, closest_pixel_V_484_075_reload, scalar</column>
+<column name="closest_pixel_V_485_077_reload">in, 16, ap_none, closest_pixel_V_485_077_reload, scalar</column>
+<column name="closest_pixel_V_486_079_reload">in, 16, ap_none, closest_pixel_V_486_079_reload, scalar</column>
+<column name="closest_pixel_V_487_081_reload">in, 16, ap_none, closest_pixel_V_487_081_reload, scalar</column>
+<column name="closest_pixel_V_488_083_reload">in, 16, ap_none, closest_pixel_V_488_083_reload, scalar</column>
+<column name="closest_pixel_V_489_085_reload">in, 16, ap_none, closest_pixel_V_489_085_reload, scalar</column>
+<column name="closest_pixel_V_490_087_reload">in, 16, ap_none, closest_pixel_V_490_087_reload, scalar</column>
+<column name="closest_pixel_V_491_089_reload">in, 16, ap_none, closest_pixel_V_491_089_reload, scalar</column>
+<column name="closest_pixel_V_492_091_reload">in, 16, ap_none, closest_pixel_V_492_091_reload, scalar</column>
+<column name="closest_pixel_V_493_093_reload">in, 16, ap_none, closest_pixel_V_493_093_reload, scalar</column>
+<column name="closest_pixel_V_494_095_reload">in, 16, ap_none, closest_pixel_V_494_095_reload, scalar</column>
+<column name="closest_pixel_V_495_097_reload">in, 16, ap_none, closest_pixel_V_495_097_reload, scalar</column>
+<column name="closest_pixel_V_496_099_reload">in, 16, ap_none, closest_pixel_V_496_099_reload, scalar</column>
+<column name="closest_pixel_V_497_0101_reload">in, 16, ap_none, closest_pixel_V_497_0101_reload, scalar</column>
+<column name="closest_pixel_V_498_0103_reload">in, 16, ap_none, closest_pixel_V_498_0103_reload, scalar</column>
+<column name="closest_pixel_V_499_0105_reload">in, 16, ap_none, closest_pixel_V_499_0105_reload, scalar</column>
+<column name="closest_pixel_V_500_0107_reload">in, 16, ap_none, closest_pixel_V_500_0107_reload, scalar</column>
+<column name="closest_pixel_V_501_0109_reload">in, 16, ap_none, closest_pixel_V_501_0109_reload, scalar</column>
+<column name="closest_pixel_V_502_0111_reload">in, 16, ap_none, closest_pixel_V_502_0111_reload, scalar</column>
+<column name="closest_pixel_V_503_0113_reload">in, 16, ap_none, closest_pixel_V_503_0113_reload, scalar</column>
+<column name="closest_pixel_V_504_0115_reload">in, 16, ap_none, closest_pixel_V_504_0115_reload, scalar</column>
+<column name="closest_pixel_V_505_0117_reload">in, 16, ap_none, closest_pixel_V_505_0117_reload, scalar</column>
+<column name="closest_pixel_V_506_0119_reload">in, 16, ap_none, closest_pixel_V_506_0119_reload, scalar</column>
+<column name="closest_pixel_V_507_0121_reload">in, 16, ap_none, closest_pixel_V_507_0121_reload, scalar</column>
+<column name="closest_pixel_V_508_0123_reload">in, 16, ap_none, closest_pixel_V_508_0123_reload, scalar</column>
+<column name="closest_pixel_V_509_0125_reload">in, 16, ap_none, closest_pixel_V_509_0125_reload, scalar</column>
+<column name="closest_pixel_V_510_0127_reload">in, 16, ap_none, closest_pixel_V_510_0127_reload, scalar</column>
+<column name="closest_pixel_V_511_0129_reload">in, 16, ap_none, closest_pixel_V_511_0129_reload, scalar</column>
+<column name="closest_pixel_V_512_0131_reload">in, 16, ap_none, closest_pixel_V_512_0131_reload, scalar</column>
+<column name="closest_pixel_V_513_0133_reload">in, 16, ap_none, closest_pixel_V_513_0133_reload, scalar</column>
+<column name="closest_pixel_V_514_0135_reload">in, 16, ap_none, closest_pixel_V_514_0135_reload, scalar</column>
+<column name="closest_pixel_V_515_0137_reload">in, 16, ap_none, closest_pixel_V_515_0137_reload, scalar</column>
+<column name="closest_pixel_V_516_0139_reload">in, 16, ap_none, closest_pixel_V_516_0139_reload, scalar</column>
+<column name="closest_pixel_V_517_0141_reload">in, 16, ap_none, closest_pixel_V_517_0141_reload, scalar</column>
+<column name="closest_pixel_V_518_0143_reload">in, 16, ap_none, closest_pixel_V_518_0143_reload, scalar</column>
+<column name="closest_pixel_V_519_0145_reload">in, 16, ap_none, closest_pixel_V_519_0145_reload, scalar</column>
+<column name="closest_pixel_V_520_0147_reload">in, 16, ap_none, closest_pixel_V_520_0147_reload, scalar</column>
+<column name="closest_pixel_V_521_0149_reload">in, 16, ap_none, closest_pixel_V_521_0149_reload, scalar</column>
+<column name="closest_pixel_V_522_0151_reload">in, 16, ap_none, closest_pixel_V_522_0151_reload, scalar</column>
+<column name="closest_pixel_V_523_0153_reload">in, 16, ap_none, closest_pixel_V_523_0153_reload, scalar</column>
+<column name="closest_pixel_V_524_0155_reload">in, 16, ap_none, closest_pixel_V_524_0155_reload, scalar</column>
+<column name="closest_pixel_V_525_0157_reload">in, 16, ap_none, closest_pixel_V_525_0157_reload, scalar</column>
+<column name="closest_pixel_V_526_0159_reload">in, 16, ap_none, closest_pixel_V_526_0159_reload, scalar</column>
+<column name="closest_pixel_V_527_0161_reload">in, 16, ap_none, closest_pixel_V_527_0161_reload, scalar</column>
+<column name="closest_pixel_V_528_0163_reload">in, 16, ap_none, closest_pixel_V_528_0163_reload, scalar</column>
+<column name="closest_pixel_V_529_0165_reload">in, 16, ap_none, closest_pixel_V_529_0165_reload, scalar</column>
+<column name="closest_pixel_V_530_0167_reload">in, 16, ap_none, closest_pixel_V_530_0167_reload, scalar</column>
+<column name="closest_pixel_V_531_0169_reload">in, 16, ap_none, closest_pixel_V_531_0169_reload, scalar</column>
+<column name="closest_pixel_V_532_0171_reload">in, 16, ap_none, closest_pixel_V_532_0171_reload, scalar</column>
+<column name="closest_pixel_V_533_0173_reload">in, 16, ap_none, closest_pixel_V_533_0173_reload, scalar</column>
+<column name="closest_pixel_V_534_0175_reload">in, 16, ap_none, closest_pixel_V_534_0175_reload, scalar</column>
+<column name="closest_pixel_V_535_0177_reload">in, 16, ap_none, closest_pixel_V_535_0177_reload, scalar</column>
+<column name="closest_pixel_V_536_0179_reload">in, 16, ap_none, closest_pixel_V_536_0179_reload, scalar</column>
+<column name="closest_pixel_V_537_0181_reload">in, 16, ap_none, closest_pixel_V_537_0181_reload, scalar</column>
+<column name="closest_pixel_V_538_0183_reload">in, 16, ap_none, closest_pixel_V_538_0183_reload, scalar</column>
+<column name="out_stream_TVALID">out, 1, axis, out_stream_V_dest_V, pointer</column>
+<column name="out_stream_TDEST">out, 5, axis, out_stream_V_dest_V, pointer</column>
+<column name="out_stream_TKEEP">out, 4, axis, out_stream_V_keep_V, pointer</column>
+<column name="out_stream_TSTRB">out, 4, axis, out_stream_V_strb_V, pointer</column>
+<column name="out_stream_TUSER">out, 4, axis, out_stream_V_user_V, pointer</column>
+<column name="out_stream_TLAST">out, 1, axis, out_stream_V_last_V, pointer</column>
+<column name="out_stream_TID">out, 5, axis, out_stream_V_id_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

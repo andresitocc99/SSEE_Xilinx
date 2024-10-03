@@ -1,8 +1,8 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
--- Date        : Wed Jul 10 00:54:50 2024
--- Host        : andresitocc99 running 64-bit Ubuntu 24.04 LTS
+-- Date        : Thu Oct  3 03:27:40 2024
+-- Host        : andresitocc99-portatil running 64-bit Ubuntu 22.04.4 LTS
 -- Command     : write_vhdl -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_axi_dma_0_0_stub.vhdl
 -- Design      : design_1_axi_dma_0_0

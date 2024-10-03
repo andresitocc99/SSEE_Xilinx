@@ -1,87 +1,20 @@
 # This script segment is generated automatically by AutoPilot
 
-set name hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1
+set name hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fcmp} IMPL {auto} LATENCY 1 ALLOW_PRAGMA 1
-}
-
-
-set name hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fsqrt} IMPL {fabric} LATENCY 9 ALLOW_PRAGMA 1
-}
-
-
-set id 62
-set name hyperspectral_hw_wrapped_mul_mul_19s_8ns_19_4_1
-set corename simcore_mul
-set op mul
-set stage_num 4
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
-set in0_width 19
-set in0_signed 1
-set in1_width 8
-set in1_signed 0
-set ce_width 1
-set ce_signed 0
-set out_width 19
-set arg_lists {i0 {19 1 +} i1 {8 0 +} p {19 1 +} acc {0} }
-set TrueReset 0
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {all} IMPL {dsp48} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set op mul
-set corename DSP48
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_dsp48] == "::AESL_LIB_VIRTEX::xil_gen_dsp48"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_dsp48 { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    true_reset ${TrueReset} \
-    stage_num ${stage_num} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-    arg_lists {${arg_lists}} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your platform lib"
-}
-}
-
-
-set name hyperspectral_hw_wrapped_sitofp_32ns_32_4_no_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {sitofp} IMPL {auto} LATENCY 3 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {uitofp} IMPL {auto} LATENCY 3 ALLOW_PRAGMA 1
 }
 
 
 # Memory (RAM/ROM)  definition:
-set ID 69
+set ID 755
 set hasByteEnable 0
-set MemName hyperspectral_hw_wrapped_image_RAM_AUTO_1R1W
+set MemName hyperspectral_hw_wrapped_ref_pixel_V_RAM_AUTO_1R1W
 set CoreName ap_simcore_mem
 set PortList { 2 2 }
 set DataWd 16
-set AddrRange 368640
-set AddrWd 19
+set AddrRange 180
+set AddrWd 8
 set impl_style auto
 set TrueReset 0
 set IsROM 0
@@ -152,154 +85,6 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 }
 
 
-# FIFO definition: 
-set ID 70
-set FifoName hyperspectral_hw_wrapped_fifo_w32_d2_S
-set InstName brightness_stream_U
-set CoreName ap_simcore_fifo
-set NumOfStage 2
-set DualClock 0
-set Depth 2
-set DataWd 32
-set AddrWd 1
-set FullThresh 0
-set FanoutToFrp 0
-set FanoutToFrpRdOutII 0
-set EmptyThresh 0
-set RegisterMode registered
-set impl_style shiftReg
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_fifo] == "ap_gen_simcore_fifo"} {
-eval "ap_gen_simcore_fifo { \
-    id ${ID} \
-    name ${FifoName} \
-    instname ${InstName}    corename ${CoreName} \
-    op fifo \
-    stage_num ${NumOfStage} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    reset_level 1 \
-    sync_rst true \
-    dual_clk 0\
-    depth ${Depth} \
-    fanout_to_frp ${FanoutToFrp} \
-    with_num_data_valid ${FanoutToFrpRdOutII} \
-    empty_thresh ${EmptyThresh} \
-    full_thresh ${FullThresh} \
-}"
-} else {
-puts "@W \[IMPL-106\] Cannot find ap_gen_simcore_fifo, check your platform lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $FifoName BINDTYPE {storage} TYPE {fifo} IMPL {srl} ALLOW_PRAGMA 1 INSTNAME {$InstName}
-}
-
-
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_FIFO] == "::AESL_LIB_VIRTEX::xil_gen_FIFO"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_FIFO { \
-    id ${ID} \
-    name ${FifoName} \
-    instname ${InstName}
-    corename FIFO_SRL \
-    op fifo \
-    stage_num ${NumOfStage} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    reset_level 1 \
-    sync_rst true \
-    dual_clk 0 \
-    depth ${Depth} \
-    fanout_to_frp ${FanoutToFrp} \
-    with_num_data_valid ${FanoutToFrpRdOutII} \
-    empty_thresh ${EmptyThresh} \
-    full_thresh ${FullThresh} \
-    register_mode ${RegisterMode} \
-    style ${impl_style} \
-}"
-} else {
-puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your platform lib"
-}
-}
-
-
-# FIFO definition: 
-set ID 71
-set FifoName hyperspectral_hw_wrapped_fifo_w32_d2_S
-set InstName sum_stream_U
-set CoreName ap_simcore_fifo
-set NumOfStage 2
-set DualClock 0
-set Depth 2
-set DataWd 32
-set AddrWd 1
-set FullThresh 0
-set FanoutToFrp 0
-set FanoutToFrpRdOutII 0
-set EmptyThresh 0
-set RegisterMode registered
-set impl_style shiftReg
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_fifo] == "ap_gen_simcore_fifo"} {
-eval "ap_gen_simcore_fifo { \
-    id ${ID} \
-    name ${FifoName} \
-    instname ${InstName}    corename ${CoreName} \
-    op fifo \
-    stage_num ${NumOfStage} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    reset_level 1 \
-    sync_rst true \
-    dual_clk 0\
-    depth ${Depth} \
-    fanout_to_frp ${FanoutToFrp} \
-    with_num_data_valid ${FanoutToFrpRdOutII} \
-    empty_thresh ${EmptyThresh} \
-    full_thresh ${FullThresh} \
-}"
-} else {
-puts "@W \[IMPL-106\] Cannot find ap_gen_simcore_fifo, check your platform lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $FifoName BINDTYPE {storage} TYPE {fifo} IMPL {srl} ALLOW_PRAGMA 1 INSTNAME {$InstName}
-}
-
-
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_FIFO] == "::AESL_LIB_VIRTEX::xil_gen_FIFO"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_FIFO { \
-    id ${ID} \
-    name ${FifoName} \
-    instname ${InstName}
-    corename FIFO_SRL \
-    op fifo \
-    stage_num ${NumOfStage} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    reset_level 1 \
-    sync_rst true \
-    dual_clk 0 \
-    depth ${Depth} \
-    fanout_to_frp ${FanoutToFrp} \
-    with_num_data_valid ${FanoutToFrpRdOutII} \
-    empty_thresh ${EmptyThresh} \
-    full_thresh ${FullThresh} \
-    register_mode ${RegisterMode} \
-    style ${impl_style} \
-}"
-} else {
-puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your platform lib"
-}
-}
-
-
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -323,7 +108,7 @@ dict set axilite_register_dict CONTROL_BUS $port_CONTROL_BUS
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 72 \
+			id 756 \
 			corename hyperspectral_hw_wrapped_CONTROL_BUS_axilite \
 			name hyperspectral_hw_wrapped_CONTROL_BUS_s_axi \
 			ports {$port_CONTROL_BUS} \
@@ -347,7 +132,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 73 \
+    id 757 \
     name in_stream_V_data_V \
     reset_level 0 \
     sync_rst true \
@@ -366,7 +151,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 74 \
+    id 758 \
     name in_stream_V_keep_V \
     reset_level 0 \
     sync_rst true \
@@ -385,7 +170,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 75 \
+    id 759 \
     name in_stream_V_strb_V \
     reset_level 0 \
     sync_rst true \
@@ -404,7 +189,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 76 \
+    id 760 \
     name in_stream_V_user_V \
     reset_level 0 \
     sync_rst true \
@@ -423,7 +208,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 77 \
+    id 761 \
     name in_stream_V_last_V \
     reset_level 0 \
     sync_rst true \
@@ -442,7 +227,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 78 \
+    id 762 \
     name in_stream_V_id_V \
     reset_level 0 \
     sync_rst true \
@@ -461,7 +246,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 79 \
+    id 763 \
     name in_stream_V_dest_V \
     reset_level 0 \
     sync_rst true \
@@ -480,7 +265,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 80 \
+    id 764 \
     name out_stream_V_data_V \
     reset_level 0 \
     sync_rst true \
@@ -499,7 +284,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 81 \
+    id 765 \
     name out_stream_V_keep_V \
     reset_level 0 \
     sync_rst true \
@@ -518,7 +303,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 82 \
+    id 766 \
     name out_stream_V_strb_V \
     reset_level 0 \
     sync_rst true \
@@ -537,7 +322,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 83 \
+    id 767 \
     name out_stream_V_user_V \
     reset_level 0 \
     sync_rst true \
@@ -556,7 +341,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 84 \
+    id 768 \
     name out_stream_V_last_V \
     reset_level 0 \
     sync_rst true \
@@ -575,7 +360,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 85 \
+    id 769 \
     name out_stream_V_id_V \
     reset_level 0 \
     sync_rst true \
@@ -594,7 +379,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 86 \
+    id 770 \
     name out_stream_V_dest_V \
     reset_level 0 \
     sync_rst true \
@@ -660,7 +445,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 
 
 # RegSlice definition:
-set ID 87
+set ID 771
 set RegSliceName hyperspectral_hw_wrapped_regslice_both
 set RegSliceInstName hyperspectral_hw_wrapped_regslice_both_U
 set CoreName ap_simcore_hyperspectral_hw_wrapped_regslice_both
@@ -683,7 +468,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_regSlice, check you
 
 
 # RegSlice definition:
-set ID 88
+set ID 772
 set RegSliceName hyperspectral_hw_wrapped_regslice_both
 set RegSliceInstName hyperspectral_hw_wrapped_regslice_both_U
 set CoreName ap_simcore_hyperspectral_hw_wrapped_regslice_both
@@ -706,7 +491,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_regSlice, check you
 
 
 # RegSlice definition:
-set ID 89
+set ID 773
 set RegSliceName hyperspectral_hw_wrapped_regslice_both
 set RegSliceInstName hyperspectral_hw_wrapped_regslice_both_U
 set CoreName ap_simcore_hyperspectral_hw_wrapped_regslice_both
@@ -729,7 +514,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_regSlice, check you
 
 
 # RegSlice definition:
-set ID 90
+set ID 774
 set RegSliceName hyperspectral_hw_wrapped_regslice_both
 set RegSliceInstName hyperspectral_hw_wrapped_regslice_both_U
 set CoreName ap_simcore_hyperspectral_hw_wrapped_regslice_both
@@ -752,7 +537,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_regSlice, check you
 
 
 # RegSlice definition:
-set ID 91
+set ID 775
 set RegSliceName hyperspectral_hw_wrapped_regslice_both
 set RegSliceInstName hyperspectral_hw_wrapped_regslice_both_U
 set CoreName ap_simcore_hyperspectral_hw_wrapped_regslice_both
@@ -775,7 +560,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_regSlice, check you
 
 
 # RegSlice definition:
-set ID 92
+set ID 776
 set RegSliceName hyperspectral_hw_wrapped_regslice_both
 set RegSliceInstName hyperspectral_hw_wrapped_regslice_both_U
 set CoreName ap_simcore_hyperspectral_hw_wrapped_regslice_both
@@ -798,7 +583,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_regSlice, check you
 
 
 # RegSlice definition:
-set ID 93
+set ID 777
 set RegSliceName hyperspectral_hw_wrapped_regslice_both
 set RegSliceInstName hyperspectral_hw_wrapped_regslice_both_U
 set CoreName ap_simcore_hyperspectral_hw_wrapped_regslice_both
@@ -821,7 +606,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_regSlice, check you
 
 
 # RegSlice definition:
-set ID 94
+set ID 778
 set RegSliceName hyperspectral_hw_wrapped_regslice_both
 set RegSliceInstName hyperspectral_hw_wrapped_regslice_both_U
 set CoreName ap_simcore_hyperspectral_hw_wrapped_regslice_both
@@ -844,7 +629,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_regSlice, check you
 
 
 # RegSlice definition:
-set ID 95
+set ID 779
 set RegSliceName hyperspectral_hw_wrapped_regslice_both
 set RegSliceInstName hyperspectral_hw_wrapped_regslice_both_U
 set CoreName ap_simcore_hyperspectral_hw_wrapped_regslice_both
@@ -867,7 +652,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_regSlice, check you
 
 
 # RegSlice definition:
-set ID 96
+set ID 780
 set RegSliceName hyperspectral_hw_wrapped_regslice_both
 set RegSliceInstName hyperspectral_hw_wrapped_regslice_both_U
 set CoreName ap_simcore_hyperspectral_hw_wrapped_regslice_both
@@ -890,7 +675,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_regSlice, check you
 
 
 # RegSlice definition:
-set ID 97
+set ID 781
 set RegSliceName hyperspectral_hw_wrapped_regslice_both
 set RegSliceInstName hyperspectral_hw_wrapped_regslice_both_U
 set CoreName ap_simcore_hyperspectral_hw_wrapped_regslice_both
@@ -913,7 +698,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_regSlice, check you
 
 
 # RegSlice definition:
-set ID 98
+set ID 782
 set RegSliceName hyperspectral_hw_wrapped_regslice_both
 set RegSliceInstName hyperspectral_hw_wrapped_regslice_both_U
 set CoreName ap_simcore_hyperspectral_hw_wrapped_regslice_both
@@ -936,7 +721,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_regSlice, check you
 
 
 # RegSlice definition:
-set ID 99
+set ID 783
 set RegSliceName hyperspectral_hw_wrapped_regslice_both
 set RegSliceInstName hyperspectral_hw_wrapped_regslice_both_U
 set CoreName ap_simcore_hyperspectral_hw_wrapped_regslice_both
@@ -959,7 +744,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_regSlice, check you
 
 
 # RegSlice definition:
-set ID 100
+set ID 784
 set RegSliceName hyperspectral_hw_wrapped_regslice_both
 set RegSliceInstName hyperspectral_hw_wrapped_regslice_both_U
 set CoreName ap_simcore_hyperspectral_hw_wrapped_regslice_both

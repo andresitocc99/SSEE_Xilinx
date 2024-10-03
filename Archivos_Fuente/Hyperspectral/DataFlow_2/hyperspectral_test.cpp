@@ -8,26 +8,18 @@
 
 void loadHyperspectralImage(uint16_t image[FILAS][COLUMNAS][BANDAS], const char* filename);
 
-void hyperspectral_sw(band_t image[FILAS][COLUMNAS][BANDAS], band_t ref_pixel[BANDAS], band_t closest_pixel_sw[BANDAS]) {
+void hyperspectral_sw(band_t image[FILAS][COLUMNAS][BANDAS], band_t ref_pixel[BANDAS], band_t closest_pixel_sw[BANDAS], dist_t &min_distance, int &min_pixel_index_i, int &min_pixel_index_j) {
 
-    dist_t min_distance = MAX_DIST;
-    int min_pixel_index_i = 0;
-    int min_pixel_index_j = 0;
+    min_distance = MAX_DIST;
     dist_t distance;
 
     for (int i = 0; i < FILAS; i++) {
     	for (int j = 0; j < COLUMNAS; j++) {
-
-
     		for (int k = 0; k < BANDAS; k += 2) {
     			if (k == 0) distance = 0;
-
-
 				calculate_distance(ref_pixel[k], ref_pixel[k + 1], image[i][j][k], image[i][j][k + 1], distance);
-
 				if (k== BANDAS-2) {
 					distance = hls::sqrt(distance);
-					//std::cout << "SW distance: " << distance << std::endl;
 					if (distance < min_distance) {
 						min_distance = distance;
 						min_pixel_index_i = i;
@@ -41,7 +33,6 @@ void hyperspectral_sw(band_t image[FILAS][COLUMNAS][BANDAS], band_t ref_pixel[BA
     for (int k = 0; k < BANDAS; k++) {
 		closest_pixel_sw[k] = image[min_pixel_index_i][min_pixel_index_j][k];
 	}
-    std::cout << "SW distance: " << distance << std::endl;
 
 }
 
@@ -93,6 +84,7 @@ int main_axi (void) {
     band_t image[FILAS][COLUMNAS][BANDAS];
     loadHyperspectralImage(image, "cuboH.bin");
 
+
     // Initialice ref_pixel[BANDAS];
 
     band_t ref_pixel[BANDAS];
@@ -102,6 +94,14 @@ int main_axi (void) {
 
     band_t closest_pixel_hw[BANDAS];
     band_t closest_pixel_sw[BANDAS];
+
+    dist_t min_distance_hw;
+    dist_t min_distance_sw;
+
+    int min_pixel_index_i_hw;
+    int min_pixel_index_i_sw;
+    int min_pixel_index_j_hw;
+    int min_pixel_index_j_sw;
 
 
     printf("DEBUGGING AXI4 STREAMING DATA TYPES!\r\n");
@@ -119,7 +119,6 @@ int main_axi (void) {
 		WORD_MEM w;
 		w(15,0) = ref_pixel[i];
 		w(31,16) = ref_pixel[i+1];
-
 		e.data = w;
 		e.strb = -1;
 		e.keep = 15;
@@ -139,9 +138,6 @@ int main_axi (void) {
 				WORD_MEM w;
 				w(15,0) = image[i][j][k];
 				w(31,16) = image[i][j][k + 1];
-
-				//std::cout << "ENVIADO: image[i][j][k] = " << image[i][j][k] << "image[i][j][k+1] = " << image[i][j][k+1] << std::endl;
-
 				e.data = w;
 				e.strb = -1;
 				e.keep = 15;
@@ -156,22 +152,31 @@ int main_axi (void) {
 
     hyperspectral_hw_wrapped (inp_stream, out_stream);
     
+    // Stream out closest_pixel[BANDAS]
+
     for (int i = 0; i < BANDAS; i+=2) {
 
     	WORD_MEM w = out_stream.read().data;
     	closest_pixel_hw[i] = w(15,0);
     	closest_pixel_hw[i+1] = w (31,16);
-
-    	std::cout << "HW RECEIVED || " << closest_pixel_hw[i] << " " << closest_pixel_hw[i+1] << std::endl;
-
     }
 
-    hyperspectral_sw (image, ref_pixel, closest_pixel_sw);
+    // Stream out min_pixel_index_i
 
-    for (int i = 0; i < BANDAS; i+=2) {
-    	std::cout << "SW CALCULATED || " << closest_pixel_sw[i] << " " << closest_pixel_sw[i+1] << std::endl;
-    }
+    WORD_MEM w_i = out_stream.read().data;
+    min_pixel_index_i_hw = w_i;
 
+    WORD_MEM w_j = out_stream.read().data;
+    min_pixel_index_j_hw = w_j;
+
+    // Stream out minDistance
+
+    WORD_MEM w_d = out_stream.read().data;
+    conv_t c;
+    c.in = w_d;
+    min_distance_hw = c.out;
+
+    hyperspectral_sw (image, ref_pixel, closest_pixel_sw, min_distance_sw, min_pixel_index_i_sw, min_pixel_index_j_sw);
 
     err = 0;
     for (int i = 0; i < BANDAS; i++) {
@@ -179,6 +184,16 @@ int main_axi (void) {
             err++;
             printf("Error en banda %d: closest_pixel_sw = %u, closest_pixel_hw = %u\r\n", i, closest_pixel_sw[i].to_uint(), closest_pixel_hw[i].to_uint());
         }
+    }
+
+    if (min_pixel_index_i_hw != min_pixel_index_i_sw || min_pixel_index_j_hw != min_pixel_index_j_sw) {
+        err++;
+        printf("Error en min_pixel_index_i: min_pixel_index_i_sw = %d, min_pixel_index_i_hw = %d\r\n", min_pixel_index_i_sw, min_pixel_index_i_hw);
+    }
+
+    if (min_distance_hw != min_distance_sw) {
+        err++;
+        printf("Error en min_distance: min_distance_sw = %u, min_distance_hw = %u\r\n", min_distance_sw.to_uint(), min_distance_hw.to_uint());
     }
 
     if (err == 0) {

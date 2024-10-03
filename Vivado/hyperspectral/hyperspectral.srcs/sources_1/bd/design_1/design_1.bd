@@ -32,8 +32,8 @@
     "components": {
       "zynq_ultra_ps_e_0": {
         "vlnv": "xilinx.com:ip:zynq_ultra_ps_e:3.4",
-        "xci_name": "design_1_zynq_ultra_ps_e_0_0",
-        "xci_path": "ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xci",
+        "xci_name": "design_1_zynq_ultra_ps_e_0_1",
+        "xci_path": "ip/design_1_zynq_ultra_ps_e_0_1/design_1_zynq_ultra_ps_e_0_1.xci",
         "inst_hier_path": "zynq_ultra_ps_e_0",
         "parameters": {
           "PSU_BANK_0_IO_STANDARD": {
@@ -739,7 +739,7 @@
             "value": "1"
           },
           "PSU__DDRC__ADDR_MIRROR": {
-            "value": "1"
+            "value": "0"
           },
           "PSU__DDRC__BRC_MAPPING": {
             "value": "ROW_BANK_COL"
@@ -823,7 +823,7 @@
             "value": "0"
           },
           "PSU__DDRC__LPDDR4_T_REF_RANGE": {
-            "value": "Normal (0-85)"
+            "value": "NA"
           },
           "PSU__DDRC__MEMORY_TYPE": {
             "value": "LPDDR 4"
