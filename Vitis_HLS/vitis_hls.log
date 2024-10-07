@@ -1,22 +1,22 @@
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'andresitocc99' on host 'andresitocc99-portatil' (Linux_x86_64 version 6.8.0-45-generic) on Thu Oct 03 02:36:22 CEST 2024
-INFO: [HLS 200-10] On os Ubuntu 22.04.4 LTS
-INFO: [HLS 200-10] In directory '/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS'
-Sourcing Tcl script '/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/export.tcl'
-INFO: [HLS 200-1510] Running: source /home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/export.tcl
+INFO: [HLS 200-10] For user 'andresitocc99' on host 'andresitocc99' (Linux_x86_64 version 6.8.0-45-generic) on Thu Oct 03 05:22:25 CEST 2024
+INFO: [HLS 200-10] On os Ubuntu 24.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS'
+Sourcing Tcl script '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/export.tcl
 INFO: [HLS 200-1510] Running: open_project Hyperspectral_DataFlow 
-INFO: [HLS 200-10] Opening project '/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow'.
+INFO: [HLS 200-10] Opening project '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow'.
 INFO: [HLS 200-1510] Running: set_top hyperspectral_hw_wrapped 
-INFO: [HLS 200-1510] Running: add_files ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp 
-INFO: [HLS 200-10] Adding design file '../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp' to the project
 INFO: [HLS 200-1510] Running: add_files ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral.h 
 INFO: [HLS 200-10] Adding design file '../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral.h' to the project
-INFO: [HLS 200-1510] Running: add_files -tb ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
-INFO: [HLS 200-10] Adding test bench file '../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp 
+INFO: [HLS 200-10] Adding design file '../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp' to the project
 INFO: [HLS 200-1510] Running: add_files -tb ../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
 INFO: [HLS 200-10] Adding test bench file '../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file '../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp' to the project
 INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
-INFO: [HLS 200-10] Opening solution '/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1'.
+INFO: [HLS 200-10] Opening solution '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
 INFO: [HLS 200-1505] Using flow_target 'vivado'
@@ -46,7 +46,7 @@ INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'hyperspectral_hw_
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Thu Oct  3 02:36:37 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  3 05:22:36 2024...
 INFO: [HLS 200-802] Generated output file Hyperspectral_DataFlow/solution1/impl/export.zip
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 16.01 seconds. CPU system time: 1.25 seconds. Elapsed time: 16.36 seconds; current allocated memory: -1023.062 MB.
-INFO: [HLS 200-112] Total CPU user time: 17.61 seconds. Total CPU system time: 1.65 seconds. Total elapsed time: 17.65 seconds; peak allocated memory: 143.281 MB.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 12.65 seconds. CPU system time: 1.81 seconds. Elapsed time: 20.47 seconds; current allocated memory: -1022.926 MB.
+INFO: [HLS 200-112] Total CPU user time: 13.63 seconds. Total CPU system time: 2.42 seconds. Total elapsed time: 21.49 seconds; peak allocated memory: 143.227 MB.

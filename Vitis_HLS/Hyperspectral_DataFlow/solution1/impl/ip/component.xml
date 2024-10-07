@@ -1940,8 +1940,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Hyperspectral_hw_wrapped</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2113761096</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-10-03T00:36:37Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2113761262</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-10-03T03:22:36Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>

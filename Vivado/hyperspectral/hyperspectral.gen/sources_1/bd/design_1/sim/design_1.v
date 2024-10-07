@@ -1,15 +1,15 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
-//Date        : Thu Oct  3 03:30:58 2024
-//Host        : andresitocc99-portatil running 64-bit Ubuntu 22.04.4 LTS
+//Date        : Thu Oct  3 05:35:33 2024
+//Host        : andresitocc99 running 64-bit Ubuntu 24.04.1 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=15,numReposBlks=10,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=5,da_zynq_ultra_ps_e_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=15,numReposBlks=10,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=9,da_zynq_ultra_ps_e_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    ();
 
@@ -243,7 +243,7 @@ module design_1
         .s_axis_s2mm_tlast(hyperspectral_hw_wra_0_out_stream_TLAST),
         .s_axis_s2mm_tready(hyperspectral_hw_wra_0_out_stream_TREADY),
         .s_axis_s2mm_tvalid(hyperspectral_hw_wra_0_out_stream_TVALID));
-  design_1_axi_smc_0 axi_smc
+  design_1_axi_smc_1 axi_smc
        (.M00_AXI_araddr(axi_smc_M00_AXI_ARADDR),
         .M00_AXI_arburst(axi_smc_M00_AXI_ARBURST),
         .M00_AXI_arcache(axi_smc_M00_AXI_ARCACHE),
@@ -374,7 +374,7 @@ module design_1
         .s_axi_CONTROL_BUS_WREADY(ps8_0_axi_periph_M02_AXI_WREADY),
         .s_axi_CONTROL_BUS_WSTRB(ps8_0_axi_periph_M02_AXI_WSTRB),
         .s_axi_CONTROL_BUS_WVALID(ps8_0_axi_periph_M02_AXI_WVALID));
-  design_1_ps8_0_axi_periph_0 ps8_0_axi_periph
+  design_1_ps8_0_axi_periph_1 ps8_0_axi_periph
        (.ACLK(zynq_ultra_ps_e_0_pl_clk0),
         .ARESETN(rst_ps8_0_100M_peripheral_aresetn),
         .M00_ACLK(zynq_ultra_ps_e_0_pl_clk0),
@@ -474,7 +474,7 @@ module design_1
         .S00_AXI_wready(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_WREADY),
         .S00_AXI_wstrb(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_WSTRB),
         .S00_AXI_wvalid(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_WVALID));
-  design_1_rst_ps8_0_100M_0 rst_ps8_0_100M
+  design_1_rst_ps8_0_100M_1 rst_ps8_0_100M
        (.aux_reset_in(1'b1),
         .dcm_locked(1'b1),
         .ext_reset_in(zynq_ultra_ps_e_0_pl_resetn0),
@@ -518,7 +518,7 @@ module design_1
         .clk(zynq_ultra_ps_e_0_pl_clk0),
         .probe0(hyperspectral_hw_wra_0_interrupt),
         .resetn(rst_ps8_0_100M_peripheral_aresetn));
-  design_1_zynq_ultra_ps_e_0_1 zynq_ultra_ps_e_0
+  design_1_zynq_ultra_ps_e_0_0 zynq_ultra_ps_e_0
        (.maxigp0_araddr(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARADDR),
         .maxigp0_arburst(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARBURST),
         .maxigp0_arcache(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARCACHE),
@@ -600,7 +600,7 @@ module design_1
         .saxihp0_fpd_aclk(zynq_ultra_ps_e_0_pl_clk0));
 endmodule
 
-module design_1_ps8_0_axi_periph_0
+module design_1_ps8_0_axi_periph_1
    (ACLK,
     ARESETN,
     M00_ACLK,

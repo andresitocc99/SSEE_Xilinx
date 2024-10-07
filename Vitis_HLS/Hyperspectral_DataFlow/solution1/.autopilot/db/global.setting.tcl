@@ -44,8 +44,8 @@ set SCTraceOption all
 set TargetInfo xczu3eg:-sbva484:-1-e
 set SourceFiles {sc {} c ../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile /home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/solution1.directive
-set TBFiles {verilog {../../../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin ../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp} bc {../../../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin ../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp} sc {../../../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin ../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp} vhdl {../../../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin ../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp} c {} cas {../../../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin ../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp}}
+set DirectiveFile /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/solution1.directive
+set TBFiles {verilog {../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp ../../../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin} bc {../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp ../../../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin} sc {../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp ../../../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin} vhdl {../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp ../../../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin} c {} cas {../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp ../../../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

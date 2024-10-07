@@ -4,67 +4,67 @@ Test OK!
 Vivado Simulator v2022.1
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
 Running: /tools/Xilinx/Vivado/2022.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_hyperspectral_hw_wrapped_top glbl -Oenable_linking_all_libraries -prj hyperspectral_hw_wrapped.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_14 --lib ieee_proposed=./ieee_proposed -s hyperspectral_hw_wrapped 
-Multi-threading is on. Using 10 slave threads.
+Multi-threading is on. Using 30 slave threads.
 WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
     LIBRARY_PATH
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/ip/xil_defaultlib/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/ip/xil_defaultlib/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/glbl.v" into library work
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_axi_slave_CONTROL_BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_axi_slave_CONTROL_BUS.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_slave_CONTROL_BUS
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_sqrt_fixed_33_33_s.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_sqrt_fixed_33_33_s
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_CONTROL_BUS_s_axi.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_CONTROL_BUS_s_axi
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_ref_pixel_V_RAM_AUTO_1R1W.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_ref_pixel_V_RAM_AUTO_1R1W
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_mux_1798_16_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_mux_1798_16_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1
-INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_axi_s_out_stream.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_axi_s_out_stream
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_flow_control_loop_pipe_sequential_init
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0
 INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped.autotb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module apatb_hyperspectral_hw_wrapped_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fifo
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_axi_s_in_stream.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_axi_s_in_stream
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2
 INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
-WARNING: [VRFC 10-3824] variable 'block_delay' must explicitly be declared as automatic or static [/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v:34]
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_axi_s_in_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_in_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_regslice_both.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_regslice_both
 INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_regslice_both_w1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_sqrt_fixed_33_33_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_sqrt_fixed_33_33_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+WARNING: [VRFC 10-3824] variable 'block_delay' must explicitly be declared as automatic or static [/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v:34]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_mux_1798_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_mux_1798_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_CONTROL_BUS_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_CONTROL_BUS_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped_ref_pixel_V_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_ref_pixel_V_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_axi_s_out_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_out_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_hyperspectral_hw_wrapped_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dataflow_monitor
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3645] port 'axis_block_info' remains unconnected for this instance [/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v:24]
-WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:47]
-WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:55]
+WARNING: [VRFC 10-3645] port 'axis_block_info' remains unconnected for this instance [/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v:24]
+WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:47]
+WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:55]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -174,8 +174,8 @@ Compiling module xil_defaultlib.fifo(DEPTH=93,WIDTH=1)
 Compiling module xil_defaultlib.fifo(DEPTH=93,WIDTH=5)
 Compiling module xil_defaultlib.AESL_axi_s_out_stream
 Compiling module xil_defaultlib.AESL_axi_slave_CONTROL_BUS
-WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:47]
-WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:55]
+WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:47]
+WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:55]
 Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
 Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
 Compiling module xil_defaultlib.nodf_module_intf
@@ -205,11 +205,11 @@ source hyperspectral_hw_wrapped.tcl
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
 // RTL Simulation : 1 / 1 [100.00%] @ "1846385000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 1846445 ns : File "/home/andresitocc99/Documentos/GitHub/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped.autotb.v" Line 446
-run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 2711.414 ; gain = 0.000 ; free physical = 6326 ; free virtual = 43081
+$finish called at time : 1846445 ns : File "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/sim/verilog/hyperspectral_hw_wrapped.autotb.v" Line 446
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 2708.805 ; gain = 0.000 ; free physical = 21002 ; free virtual = 26775
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 204220 KB (Peak: 285132 KB), Simulation CPU Usage: 21470 ms
-INFO: [Common 17-206] Exiting xsim at Thu Oct  3 02:35:29 2024...
+INFO: xsimkernel Simulation Memory Usage: 204140 KB (Peak: 285052 KB), Simulation CPU Usage: 19210 ms
+INFO: [Common 17-206] Exiting xsim at Thu Oct  3 05:22:15 2024...
 Archivo cargado correctamente
 DEBUGGING AXI4 STREAMING DATA TYPES!
 Test OK!

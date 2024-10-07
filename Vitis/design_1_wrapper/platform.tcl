@@ -37,3 +37,4 @@ bsp reload
 platform active {design_1_wrapper}
 bsp reload
 bsp reload
+platform active {design_1_wrapper}

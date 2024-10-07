@@ -1,7 +1,7 @@
-Running: xsim.dir/hyperspectral_hw_wrapped/xsimk -simmode gui -wdb hyperspectral_hw_wrapped.wdb -simrunnum 0 -socket 40719
+Running: xsim.dir/hyperspectral_hw_wrapped/xsimk -simmode gui -wdb hyperspectral_hw_wrapped.wdb -simrunnum 0 -socket 56153
 Design successfully loaded
-Design Loading Memory Usage: 32504 KB (Peak: 32504 KB)
+Design Loading Memory Usage: 32424 KB (Peak: 32424 KB)
 Design Loading CPU Usage: 20 ms
 Simulation completed
-Simulation Memory Usage: 204220 KB (Peak: 285132 KB)
-Simulation CPU Usage: 21470 ms
+Simulation Memory Usage: 204140 KB (Peak: 285052 KB)
+Simulation CPU Usage: 19210 ms

@@ -287,3 +287,12 @@ dow /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/Hyperspectral/Debug/Hypersp
 
 01:46:08 ERROR : Memory write error at 0x0. Cortex-A53 #0: EDITR not ready
 01:46:29 INFO  : Disconnected from the channel tcfchan#2.
+05:56:06 DEBUG : Logs will be stored at '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/IDE.log'.
+05:56:09 INFO  : Launching XSCT server: xsct -n  -interactive /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/temp_xsdb_launch_script.tcl
+05:56:13 INFO  : XSCT server has started successfully.
+05:56:16 INFO  : Platform repository initialization has completed.
+05:56:16 INFO  : Registering command handlers for Vitis TCF services
+05:56:18 INFO  : plnx-install-location is set to ''
+05:56:18 INFO  : Successfully done setting XSCT server connection channel  
+05:56:18 INFO  : Successfully done query RDI_DATADIR 
+05:56:18 INFO  : Successfully done setting workspace for the tool. 
