@@ -1,36 +1,36 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.477647",
-   "Default View_TopLeft":"0,-126",
+   "Default View_ScaleFactor":"0.56",
+   "Default View_TopLeft":"0,-198",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
-preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 3 -x 1010 -y 90 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 3 -x 1020 -y 90 -defaultsOSRD
 preplace inst axi_timer_0 -pg 1 -lvl 5 -x 1880 -y 470 -defaultsOSRD
 preplace inst axi_dma_0 -pg 1 -lvl 6 -x 2330 -y 460 -defaultsOSRD
 preplace inst hyperspectral_hw_wra_0 -pg 1 -lvl 5 -x 1880 -y 240 -defaultsOSRD
-preplace inst ps8_0_axi_periph -pg 1 -lvl 4 -x 1480 -y 170 -defaultsOSRD
+preplace inst ps8_0_axi_periph -pg 1 -lvl 4 -x 1500 -y 170 -defaultsOSRD
 preplace inst rst_ps8_0_100M -pg 1 -lvl 1 -x 210 -y 690 -defaultsOSRD
-preplace inst axi_smc -pg 1 -lvl 2 -x 550 -y 450 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 2 -x 560 -y 450 -defaultsOSRD
 preplace inst system_ila_0 -pg 1 -lvl 6 -x 2330 -y 150 -defaultsOSRD
-preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 6 20 540 390 540 700 190 1320 340 1660 340 2120
-preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 4 30 590 NJ 590 NJ 590 1310
-preplace netloc rst_ps8_0_100M_peripheral_aresetn 1 1 5 400 600 NJ 600 1330 330 1670 330 2130
-preplace netloc hyperspectral_hw_wra_0_interrupt 1 2 4 710 350 NJ 350 NJ 350 2090
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 6 20 460 390 200 710 200 1340 330 1660 340 2100
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 4 30 540 NJ 540 NJ 540 1320
+preplace netloc rst_ps8_0_100M_peripheral_aresetn 1 1 5 400 340 NJ 340 1350 340 1670 330 2110
+preplace netloc hyperspectral_hw_wra_0_interrupt 1 2 4 720 190 1330J 10 NJ 10 2070
 preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 3 1 N 70
-preplace netloc ps8_0_axi_periph_M00_AXI 1 4 2 NJ 150 2100
+preplace netloc ps8_0_axi_periph_M00_AXI 1 4 2 NJ 150 2080
 preplace netloc ps8_0_axi_periph_M01_AXI 1 4 1 1650 170n
 preplace netloc ps8_0_axi_periph_M02_AXI 1 4 2 1660 140 NJ
-preplace netloc axi_dma_0_M_AXI_MM2S 1 1 6 410 360 NJ 360 NJ 360 NJ 360 2140J 340 2520
-preplace netloc axi_smc_M00_AXI 1 2 1 690 60n
-preplace netloc axi_dma_0_M_AXI_S2MM 1 1 6 410 580 NJ 580 NJ 580 NJ 580 NJ 580 2520
-preplace netloc hyperspectral_hw_wra_0_out_stream 1 5 1 2110 120n
-preplace netloc axi_dma_0_M_AXIS_MM2S 1 4 3 1670 130 2090 40 2530
-levelinfo -pg 1 0 210 550 1010 1480 1880 2330 2550
+preplace netloc axi_dma_0_M_AXI_MM2S 1 1 6 410 580 NJ 580 NJ 580 NJ 580 NJ 580 2510
+preplace netloc axi_smc_M00_AXI 1 2 1 700 60n
+preplace netloc axi_dma_0_M_AXI_S2MM 1 1 6 420 590 NJ 590 NJ 590 NJ 590 NJ 590 2500
+preplace netloc hyperspectral_hw_wra_0_out_stream 1 5 1 2090 120n
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 4 3 1670 100 2110 40 2520
+levelinfo -pg 1 0 210 560 1020 1500 1880 2330 2550
 pagesize -pg 1 -db -bbox -sgen 0 0 2550 790
 "
 }
 {
-   "da_axi4_cnt":"9",
-   "da_zynq_ultra_ps_e_cnt":"1"
+   "da_axi4_cnt":"19",
+   "da_zynq_ultra_ps_e_cnt":"3"
 }

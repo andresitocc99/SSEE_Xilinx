@@ -19,21 +19,21 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg
 INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 17238
+INFO: [Synth 8-7075] Helper process launched with PID 13567
 WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
 WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:2831]
 WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:2899]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2778.938 ; gain = 156.828 ; free physical = 6610 ; free virtual = 12805
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2778.941 ; gain = 158.828 ; free physical = 8654 ; free virtual = 14057
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_1' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/synth/design_1_axi_smc_1.v:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:9]
-INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_19UC7HI' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:949]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_one_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_0/synth/bd_6f02_one_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_1' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/synth/design_1_axi_smc_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:9]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_19UC7HI' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:949]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_one_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_0/synth/bd_6f02_one_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_one_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_0/synth/bd_6f02_one_0.v:53]
-INFO: [Synth 8-638] synthesizing module 'bd_6f02_psr_aclk_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/synth/bd_6f02_psr_aclk_0.vhd:74]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_one_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_0/synth/bd_6f02_one_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'bd_6f02_psr_aclk_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_1/synth/bd_6f02_psr_aclk_0.vhd:74]
 	Parameter C_FAMILY bound to: zynquplus - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
@@ -43,7 +43,7 @@ INFO: [Synth 8-638] synthesizing module 'bd_6f02_psr_aclk_0' [/home/andresitocc9
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/synth/bd_6f02_psr_aclk_0.vhd:129]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_1/synth/bd_6f02_psr_aclk_0.vhd:129]
 INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
 	Parameter INIT bound to: 1'b1 
 INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
@@ -79,21 +79,21 @@ INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/andresitocc99/Documento
 INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
 INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
 INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
-INFO: [Synth 8-256] done synthesizing module 'bd_6f02_psr_aclk_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/synth/bd_6f02_psr_aclk_0.vhd:74]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_6f02_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:990]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_6f02_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:990]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_6f02_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:990]
-WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_6f02_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:990]
-WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_6f02_psr_aclk_0' has 10 connections declared, but only 6 given [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:990]
-INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_19UC7HI' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:949]
-INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_PYUQT9' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:999]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_m00e_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_26/synth/bd_6f02_m00e_0.sv:53]
+INFO: [Synth 8-256] done synthesizing module 'bd_6f02_psr_aclk_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_1/synth/bd_6f02_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_6f02_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:990]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_6f02_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:990]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_6f02_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:990]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_6f02_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:990]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_6f02_psr_aclk_0' has 10 connections declared, but only 6 given [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:990]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_19UC7HI' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:949]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_PYUQT9' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:999]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_m00e_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_26/synth/bd_6f02_m00e_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_m00e_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_26/synth/bd_6f02_m00e_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_PYUQT9' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:999]
-INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_3S6IOH' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:1370]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_m00arn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_21/synth/bd_6f02_m00arn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_m00e_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_26/synth/bd_6f02_m00e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_PYUQT9' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:999]
+INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_3S6IOH' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:1370]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_m00arn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_21/synth/bd_6f02_m00arn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
@@ -102,10 +102,10 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized0' [/t
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized0' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_m00arn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_21/synth/bd_6f02_m00arn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_m00awn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_23/synth/bd_6f02_m00awn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_m00awn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_23/synth/bd_6f02_m00awn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_m00bn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_25/synth/bd_6f02_m00bn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_m00arn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_21/synth/bd_6f02_m00arn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_m00awn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_23/synth/bd_6f02_m00awn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_m00awn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_23/synth/bd_6f02_m00awn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_m00bn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_25/synth/bd_6f02_m00bn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized1' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
@@ -114,14 +114,14 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized2' [/t
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized2' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized2' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized2' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_m00bn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_25/synth/bd_6f02_m00bn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_m00rn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_22/synth/bd_6f02_m00rn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_m00bn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_25/synth/bd_6f02_m00bn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_m00rn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_22/synth/bd_6f02_m00rn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized3' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized3' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized3' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized3' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_m00rn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_22/synth/bd_6f02_m00rn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_m00wn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_24/synth/bd_6f02_m00wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_m00rn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_22/synth/bd_6f02_m00rn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_m00wn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_24/synth/bd_6f02_m00wn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized4' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized4' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized4' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
@@ -130,24 +130,24 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized5' [/t
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized5' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized5' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized5' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_m00wn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_24/synth/bd_6f02_m00wn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_3S6IOH' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:1370]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_m00s2a_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_20/synth/bd_6f02_m00s2a_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_m00s2a_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_20/synth/bd_6f02_m00s2a_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s00a2s_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_10/synth/bd_6f02_s00a2s_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s00a2s_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_10/synth/bd_6f02_s00a2s_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_1PSXOAM' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:1675]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s00mmu_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_7/synth/bd_6f02_s00mmu_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s00mmu_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_7/synth/bd_6f02_s00mmu_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s00sic_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_9/synth/bd_6f02_s00sic_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s00sic_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_9/synth/bd_6f02_s00sic_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s00tr_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_8/synth/bd_6f02_s00tr_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s00tr_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_8/synth/bd_6f02_s00tr_0.sv:53]
-WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_6f02_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:1922]
-WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_6f02_s00tr_0' has 38 connections declared, but only 37 given [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:1922]
-INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_1PSXOAM' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:1675]
-INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_1KC0NQC' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:1962]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_sarn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_11/synth/bd_6f02_sarn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_m00wn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_24/synth/bd_6f02_m00wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_3S6IOH' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:1370]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_m00s2a_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_20/synth/bd_6f02_m00s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_m00s2a_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_20/synth/bd_6f02_m00s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s00a2s_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_10/synth/bd_6f02_s00a2s_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s00a2s_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_10/synth/bd_6f02_s00a2s_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_1PSXOAM' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:1675]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s00mmu_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_7/synth/bd_6f02_s00mmu_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s00mmu_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_7/synth/bd_6f02_s00mmu_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s00sic_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_9/synth/bd_6f02_s00sic_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s00sic_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_9/synth/bd_6f02_s00sic_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s00tr_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_8/synth/bd_6f02_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s00tr_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_8/synth/bd_6f02_s00tr_0.sv:53]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_6f02_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:1922]
+WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_6f02_s00tr_0' has 38 connections declared, but only 37 given [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:1922]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_1PSXOAM' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:1675]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_1KC0NQC' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:1962]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_sarn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_11/synth/bd_6f02_sarn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized6' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized6' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized6' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
@@ -156,69 +156,69 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized7' [/t
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized7' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized7' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized7' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_sarn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_11/synth/bd_6f02_sarn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_srn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_12/synth/bd_6f02_srn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_sarn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_11/synth/bd_6f02_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_srn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_12/synth/bd_6f02_srn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized8' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized8' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized8' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized8' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_srn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_12/synth/bd_6f02_srn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_1KC0NQC' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:1962]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s01a2s_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_16/synth/bd_6f02_s01a2s_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s01a2s_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_16/synth/bd_6f02_s01a2s_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 's01_entry_pipeline_imp_JD8B8Q' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:2093]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s01mmu_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_13/synth/bd_6f02_s01mmu_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s01mmu_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_13/synth/bd_6f02_s01mmu_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s01sic_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_15/synth/bd_6f02_s01sic_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s01sic_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_15/synth/bd_6f02_s01sic_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s01tr_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_14/synth/bd_6f02_s01tr_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s01tr_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_14/synth/bd_6f02_s01tr_0.sv:53]
-WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'bd_6f02_s01tr_0' is unconnected for instance 's01_transaction_regulator' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:2391]
-WARNING: [Synth 8-7023] instance 's01_transaction_regulator' of module 'bd_6f02_s01tr_0' has 46 connections declared, but only 45 given [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:2391]
-INFO: [Synth 8-6155] done synthesizing module 's01_entry_pipeline_imp_JD8B8Q' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:2093]
-INFO: [Synth 8-6157] synthesizing module 's01_nodes_imp_NVCCIA' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:2439]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_sawn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_17/synth/bd_6f02_sawn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_sawn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_17/synth/bd_6f02_sawn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_sbn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_19/synth/bd_6f02_sbn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_srn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_12/synth/bd_6f02_srn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_1KC0NQC' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:1962]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s01a2s_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_16/synth/bd_6f02_s01a2s_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s01a2s_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_16/synth/bd_6f02_s01a2s_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 's01_entry_pipeline_imp_JD8B8Q' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:2093]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s01mmu_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_13/synth/bd_6f02_s01mmu_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s01mmu_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_13/synth/bd_6f02_s01mmu_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s01sic_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_15/synth/bd_6f02_s01sic_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s01sic_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_15/synth/bd_6f02_s01sic_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_s01tr_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_14/synth/bd_6f02_s01tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_s01tr_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_14/synth/bd_6f02_s01tr_0.sv:53]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'bd_6f02_s01tr_0' is unconnected for instance 's01_transaction_regulator' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:2391]
+WARNING: [Synth 8-7023] instance 's01_transaction_regulator' of module 'bd_6f02_s01tr_0' has 46 connections declared, but only 45 given [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:2391]
+INFO: [Synth 8-6155] done synthesizing module 's01_entry_pipeline_imp_JD8B8Q' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:2093]
+INFO: [Synth 8-6157] synthesizing module 's01_nodes_imp_NVCCIA' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:2439]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_sawn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_17/synth/bd_6f02_sawn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_sawn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_17/synth/bd_6f02_sawn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_sbn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_19/synth/bd_6f02_sbn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized9' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized9' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized9' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized9' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_sbn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_19/synth/bd_6f02_sbn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_swn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_18/synth/bd_6f02_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_sbn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_19/synth/bd_6f02_sbn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_swn_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_18/synth/bd_6f02_swn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized10' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized10' [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized10' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized10' (0#1) [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_swn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_18/synth/bd_6f02_swn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 's01_nodes_imp_NVCCIA' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:2439]
-INFO: [Synth 8-6157] synthesizing module 'switchboards_imp_18NKQB4' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:2625]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_arsw_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_2/synth/bd_6f02_arsw_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_arsw_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_2/synth/bd_6f02_arsw_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_awsw_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_4/synth/bd_6f02_awsw_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_awsw_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_4/synth/bd_6f02_awsw_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_bsw_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_6/synth/bd_6f02_bsw_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_bsw_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_6/synth/bd_6f02_bsw_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_rsw_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_3/synth/bd_6f02_rsw_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_rsw_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_3/synth/bd_6f02_rsw_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_6f02_wsw_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_5/synth/bd_6f02_wsw_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_wsw_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_5/synth/bd_6f02_wsw_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_18NKQB4' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:2625]
-WARNING: [Synth 8-7071] port 'M00_SC_B_info' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:880]
-WARNING: [Synth 8-7071] port 'M00_SC_B_payld' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:880]
-WARNING: [Synth 8-7071] port 'M00_SC_B_req' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:880]
-WARNING: [Synth 8-7071] port 'M00_SC_B_send' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:880]
-WARNING: [Synth 8-7071] port 'M01_SC_R_info' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:880]
-WARNING: [Synth 8-7071] port 'M01_SC_R_payld' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:880]
-WARNING: [Synth 8-7071] port 'M01_SC_R_req' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:880]
-WARNING: [Synth 8-7071] port 'M01_SC_R_send' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:880]
-WARNING: [Synth 8-7071] port 'S00_SC_AW_recv' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:880]
-WARNING: [Synth 8-7071] port 'S00_SC_W_recv' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:880]
-WARNING: [Synth 8-7071] port 'S01_SC_AR_recv' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:880]
-WARNING: [Synth 8-7023] instance 'switchboards' of module 'switchboards_imp_18NKQB4' has 77 connections declared, but only 66 given [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:880]
-INFO: [Synth 8-6155] done synthesizing module 'bd_6f02' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_1' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/synth/design_1_axi_smc_1.v:53]
-WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_19UC7HI does not have driver. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/synth/bd_6f02.v:969]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_swn_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_18/synth/bd_6f02_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's01_nodes_imp_NVCCIA' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:2439]
+INFO: [Synth 8-6157] synthesizing module 'switchboards_imp_18NKQB4' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:2625]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_arsw_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_2/synth/bd_6f02_arsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_arsw_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_2/synth/bd_6f02_arsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_awsw_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_4/synth/bd_6f02_awsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_awsw_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_4/synth/bd_6f02_awsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_bsw_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_6/synth/bd_6f02_bsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_bsw_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_6/synth/bd_6f02_bsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_rsw_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_3/synth/bd_6f02_rsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_rsw_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_3/synth/bd_6f02_rsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f02_wsw_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_5/synth/bd_6f02_wsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02_wsw_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_5/synth/bd_6f02_wsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_18NKQB4' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:2625]
+WARNING: [Synth 8-7071] port 'M00_SC_B_info' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:880]
+WARNING: [Synth 8-7071] port 'M00_SC_B_payld' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:880]
+WARNING: [Synth 8-7071] port 'M00_SC_B_req' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:880]
+WARNING: [Synth 8-7071] port 'M00_SC_B_send' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:880]
+WARNING: [Synth 8-7071] port 'M01_SC_R_info' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:880]
+WARNING: [Synth 8-7071] port 'M01_SC_R_payld' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:880]
+WARNING: [Synth 8-7071] port 'M01_SC_R_req' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:880]
+WARNING: [Synth 8-7071] port 'M01_SC_R_send' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:880]
+WARNING: [Synth 8-7071] port 'S00_SC_AW_recv' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:880]
+WARNING: [Synth 8-7071] port 'S00_SC_W_recv' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:880]
+WARNING: [Synth 8-7071] port 'S01_SC_AR_recv' of module 'switchboards_imp_18NKQB4' is unconnected for instance 'switchboards' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:880]
+WARNING: [Synth 8-7023] instance 'switchboards' of module 'switchboards_imp_18NKQB4' has 77 connections declared, but only 66 given [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:880]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f02' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_1' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/synth/design_1_axi_smc_1.v:53]
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_19UC7HI does not have driver. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/synth/bd_6f02.v:969]
 WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
@@ -321,30 +321,30 @@ WARNING: [Synth 8-7129] Port s_sc_payld[88] in module sc_node_v1_0_14_ingress__p
 WARNING: [Synth 8-7129] Port s_sc_payld[87] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2966.781 ; gain = 344.672 ; free physical = 5822 ; free virtual = 12025
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2966.723 ; gain = 346.609 ; free physical = 9429 ; free virtual = 14838
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2984.594 ; gain = 362.484 ; free physical = 5801 ; free virtual = 12004
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2984.535 ; gain = 364.422 ; free physical = 9502 ; free virtual = 14912
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2984.594 ; gain = 362.484 ; free physical = 5801 ; free virtual = 12004
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2984.535 ; gain = 364.422 ; free physical = 9502 ; free virtual = 14912
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3017.945 ; gain = 0.000 ; free physical = 5185 ; free virtual = 11392
+Netlist sorting complete. Time (s): cpu = 00:00:00.99 ; elapsed = 00:00:01 . Memory (MB): peak = 3017.887 ; gain = 0.000 ; free physical = 9380 ; free virtual = 14799
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/ooc.xdc] for cell 'inst'
-Parsing XDC File [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/bd_6f02_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/bd_6f02_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
-Parsing XDC File [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/bd_6f02_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/bd_6f02_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_1/bd_6f02_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_1/bd_6f02_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_1/bd_6f02_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_1/bd_6f02_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
 Parsing XDC File [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_axi_smc_1_synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_axi_smc_1_synth_1/dont_touch.xdc]
 WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
@@ -374,16 +374,16 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_axi
 INFO: [Project 1-1714] 49 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3447.516 ; gain = 0.000 ; free physical = 5243 ; free virtual = 11468
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3447.457 ; gain = 0.000 ; free physical = 9270 ; free virtual = 14711
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 13 instances were transformed.
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.84 ; elapsed = 00:00:00.37 . Memory (MB): peak = 3447.516 ; gain = 0.000 ; free physical = 5377 ; free virtual = 11602
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.8 ; elapsed = 00:00:00.37 . Memory (MB): peak = 3447.457 ; gain = 0.000 ; free physical = 9270 ; free virtual = 14712
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 3447.516 ; gain = 825.406 ; free physical = 5435 ; free virtual = 11656
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:26 . Memory (MB): peak = 3447.457 ; gain = 827.344 ; free physical = 8653 ; free virtual = 14143
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -391,7 +391,7 @@ Start Loading Part and Timing Information
 Loading part: xczu3eg-sbva484-1-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 3447.516 ; gain = 825.406 ; free physical = 5435 ; free virtual = 11656
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:26 . Memory (MB): peak = 3447.457 ; gain = 827.344 ; free physical = 8653 ; free virtual = 14143
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -447,7 +447,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/in
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 3447.516 ; gain = 825.406 ; free physical = 5428 ; free virtual = 11648
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:26 . Memory (MB): peak = 3447.457 ; gain = 827.344 ; free physical = 8635 ; free virtual = 14125
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
@@ -465,7 +465,7 @@ INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_AB_reg_slice.stat
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'sc_mmu_v1_0_10_decerr_slave'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 3447.516 ; gain = 825.406 ; free physical = 4988 ; free virtual = 11213
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 3447.457 ; gain = 827.344 ; free physical = 9882 ; free virtual = 15376
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -549,7 +549,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 3447.516 ; gain = 825.406 ; free physical = 14700 ; free virtual = 20975
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 3447.457 ; gain = 827.344 ; free physical = 10778 ; free virtual = 16335
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -583,13 +583,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 3481.695 ; gain = 859.586 ; free physical = 14166 ; free virtual = 20441
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:07 . Memory (MB): peak = 3482.637 ; gain = 862.523 ; free physical = 9789 ; free virtual = 15350
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:10 . Memory (MB): peak = 3552.891 ; gain = 930.781 ; free physical = 14095 ; free virtual = 20370
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:11 . Memory (MB): peak = 3552.832 ; gain = 932.719 ; free physical = 9646 ; free virtual = 15211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -625,7 +625,7 @@ INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_oneh
 INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[1]) is unused and will be removed from module sc_mmu_v1_0_10_top.
 INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[0]) is unused and will be removed from module sc_mmu_v1_0_10_top.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:06 ; elapsed = 00:01:14 . Memory (MB): peak = 3560.898 ; gain = 938.789 ; free physical = 14071 ; free virtual = 20346
+Finished Technology Mapping : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 3560.840 ; gain = 940.727 ; free physical = 9929 ; free virtual = 15499
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -643,37 +643,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:17 . Memory (MB): peak = 3560.898 ; gain = 938.789 ; free physical = 14079 ; free virtual = 20355
+Finished IO Insertion : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 3560.840 ; gain = 940.727 ; free physical = 10023 ; free virtual = 15592
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:17 . Memory (MB): peak = 3560.898 ; gain = 938.789 ; free physical = 14079 ; free virtual = 20355
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 3560.840 ; gain = 940.727 ; free physical = 10023 ; free virtual = 15592
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:09 ; elapsed = 00:01:17 . Memory (MB): peak = 3560.898 ; gain = 938.789 ; free physical = 14079 ; free virtual = 20355
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 3560.840 ; gain = 940.727 ; free physical = 10020 ; free virtual = 15589
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:09 ; elapsed = 00:01:17 . Memory (MB): peak = 3560.898 ; gain = 938.789 ; free physical = 14079 ; free virtual = 20355
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 3560.840 ; gain = 940.727 ; free physical = 10020 ; free virtual = 15589
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 3560.898 ; gain = 938.789 ; free physical = 14083 ; free virtual = 20359
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 3560.840 ; gain = 940.727 ; free physical = 10020 ; free virtual = 15589
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 3560.898 ; gain = 938.789 ; free physical = 14083 ; free virtual = 20358
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 3560.840 ; gain = 940.727 ; free physical = 10030 ; free virtual = 15600
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -721,18 +721,18 @@ Report Cell Usage:
 |15    |FDSE     |   137|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 3560.898 ; gain = 938.789 ; free physical = 14083 ; free virtual = 20358
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 3560.840 ; gain = 940.727 ; free physical = 10030 ; free virtual = 15600
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4097 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:01:03 . Memory (MB): peak = 3560.898 ; gain = 475.867 ; free physical = 14111 ; free virtual = 20387
-Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 3560.906 ; gain = 938.789 ; free physical = 14111 ; free virtual = 20387
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:01:05 . Memory (MB): peak = 3560.840 ; gain = 477.805 ; free physical = 10070 ; free virtual = 15639
+Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 3560.848 ; gain = 940.727 ; free physical = 10070 ; free virtual = 15639
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.18 . Memory (MB): peak = 3560.906 ; gain = 0.000 ; free physical = 14223 ; free virtual = 20499
+Netlist sorting complete. Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.2 . Memory (MB): peak = 3560.848 ; gain = 0.000 ; free physical = 10194 ; free virtual = 15763
 INFO: [Netlist 29-17] Analyzing 80 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3608.758 ; gain = 0.000 ; free physical = 14181 ; free virtual = 20456
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3608.699 ; gain = 0.000 ; free physical = 10154 ; free virtual = 15724
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 80 instances were transformed.
   FDR => FDRE: 4 instances
@@ -745,10 +745,10 @@ Synth Design complete, checksum: 35c64133
 INFO: [Common 17-83] Releasing license: Synthesis
 186 Infos, 148 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 3608.758 ; gain = 986.648 ; free physical = 14406 ; free virtual = 20682
+synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 3608.699 ; gain = 988.586 ; free physical = 10306 ; free virtual = 15875
 INFO: [Common 17-1381] The checkpoint '/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_axi_smc_1_synth_1/design_1_axi_smc_1.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_smc_1, cache-ID = cf3ddebc3ee040bd
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_smc_1, cache-ID = 3717661cf4027e52
 INFO: [Coretcl 2-1174] Renamed 330 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_axi_smc_1_synth_1/design_1_axi_smc_1.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_smc_1_utilization_synth.rpt -pb design_1_axi_smc_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Oct  3 05:38:59 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 10 03:59:58 2024...

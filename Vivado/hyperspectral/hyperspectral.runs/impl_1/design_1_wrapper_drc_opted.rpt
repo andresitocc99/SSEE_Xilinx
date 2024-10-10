@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
-| Date         : Thu Oct  3 05:42:44 2024
+| Date         : Thu Oct 10 04:03:19 2024
 | Host         : andresitocc99 running 64-bit Ubuntu 24.04.1 LTS
 | Command      : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
 | Design       : design_1_wrapper
@@ -36,7 +36,7 @@ Table of Contents
 -----------------
 DPIP-2#1 Warning
 Input pipelining  
-DSP design_1_i/hyperspectral_hw_wra_0/inst/grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679/mac_muladd_17s_17s_32ns_32_4_1_U36/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg input design_1_i/hyperspectral_hw_wra_0/inst/grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679/mac_muladd_17s_17s_32ns_32_4_1_U36/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP design_1_i/hyperspectral_hw_wra_0/inst/grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685/mac_muladd_17s_17s_32ns_32_4_1_U32/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg input design_1_i/hyperspectral_hw_wra_0/inst/grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685/mac_muladd_17s_17s_32ns_32_4_1_U32/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 REQP-1935#1 Warning

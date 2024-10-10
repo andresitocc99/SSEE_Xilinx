@@ -1,5 +1,6 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp in debug mode
    Generating csim.exe
 Archivo cargado correctamente
 DEBUGGING AXI4 STREAMING DATA TYPES!

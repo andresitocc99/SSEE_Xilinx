@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'hyperspectral_hw_wrapped'" level="0">
-<item name = "Date">Thu Oct  3 05:20:12 2024
+<item name = "Date">Thu Oct 10 03:40:14 2024
 </item>
 <item name = "Version">2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)</item>
 <item name = "Project">Hyperspectral_DataFlow</item>
@@ -24,16 +24,16 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">184617, 184617, 1.846 ms, 1.846 ms, 184618, 184618, no</column>
+<column name="">184618, 184618, 1.846 ms, 1.846 ms, 184619, 184619, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1_fu_2660">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_46_1, 92, 92, 0.920 us, 0.920 us, 92, 92, no</column>
-<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2_fu_2679">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_56_2, 184332, 184332, 1.843 ms, 1.843 ms, 184332, 184332, no</column>
-<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4_fu_3062">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_85_4, 92, 92, 0.920 us, 0.920 us, 92, 92, no</column>
+<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1, 92, 92, 0.920 us, 0.920 us, 92, 92, no</column>
+<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2, 184333, 184333, 1.843 ms, 1.843 ms, 184333, 184333, no</column>
+<column name="grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069">hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4, 92, 92, 0.920 us, 0.920 us, 92, 92, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

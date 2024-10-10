@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include "platform.h"
+#include "xtmrctr.h"
+#include "xaxidma.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "ff.h"
+#include <float.h>
+
+#include <stdint.h>
+
+#include "lib_hyperspectral_hw.h"
+
+#define NUM_TESTS 1
+
+#define FILAS 2
+#define COLUMNAS 1024
+#define BANDAS 180
+
+// TIMER Instance
+XTmrCtr timer_dev;
+
+// AXI DMA Instance
+XAxiDma AxiDma;
+
+u32 mount_filesystem() {
+    TCHAR *Path = "0:/";
+    FRESULT res;
+    res = f_mount(&fat_fs, Path, 1);
+
+    if (res != FR_OK) {
+        xil_printf("mount failed %d\n\r",res);
+        return XST_FAILURE;
+    }
+    return XST_SUCCESS;
+}
+
+u32 umount_filesystem() {
+    TCHAR *Path = "0:/";
+    FRESULT res;
+    res = f_mount(NULL, Path, 0);
+
+    if (res != FR_OK) {
+        xil_printf("umount failed %d\n\r",res);
+        return XST_FAILURE;
+    }
+    return XST_SUCCESS;
+}

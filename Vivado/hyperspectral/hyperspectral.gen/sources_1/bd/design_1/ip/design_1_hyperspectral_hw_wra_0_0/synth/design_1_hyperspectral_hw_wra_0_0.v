@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:hyperspectral_hw_wrapped:1.0
-// IP Revision: 2113761262
+// IP Revision: 2113771242
 
 (* X_CORE_INFO = "hyperspectral_hw_wrapped,Vivado 2022.1" *)
 (* CHECK_LICENSE_TYPE = "design_1_hyperspectral_hw_wra_0_0,hyperspectral_hw_wrapped,{}" *)
-(* CORE_GENERATION_INFO = "design_1_hyperspectral_hw_wra_0_0,hyperspectral_hw_wrapped,{x_ipProduct=Vivado 2022.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=hyperspectral_hw_wrapped,x_ipVersion=1.0,x_ipCoreRevision=2113761262,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CONTROL_BUS_ADDR_WIDTH=4,C_S_AXI_CONTROL_BUS_DATA_WIDTH=32}" *)
+(* CORE_GENERATION_INFO = "design_1_hyperspectral_hw_wra_0_0,hyperspectral_hw_wrapped,{x_ipProduct=Vivado 2022.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=hyperspectral_hw_wrapped,x_ipVersion=1.0,x_ipCoreRevision=2113771242,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CONTROL_BUS_ADDR_WIDTH=4,C_S_AXI_CONTROL_BUS_DATA_WIDTH=32}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_hyperspectral_hw_wra_0_0 (

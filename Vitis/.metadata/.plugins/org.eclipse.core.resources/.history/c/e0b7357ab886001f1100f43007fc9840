@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include "platform.h"
+#include "xtmrctr.h"
+#include "xaxidma.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "ff.h"
+#include <float.h>
+
+#include <stdint.h>
+
+#include "lib_hyperspectral_hw.h"
+
+#define NUM_TESTS 1
+
+#define FILAS 2
+#define COLUMNAS 1024
+#define BANDAS 180

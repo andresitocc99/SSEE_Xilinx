@@ -1,0 +1,8 @@
+#ifndef H_LIB_EXAMPLE_HW_H
+#define H_LIB_EXAMPLE_HW_H
+
+#define FILAS 2
+#define COLUMNAS 1024
+#define BANDAS 180
+
+#include <stdint.h>

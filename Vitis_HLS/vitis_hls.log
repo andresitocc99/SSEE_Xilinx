@@ -1,20 +1,20 @@
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'andresitocc99' on host 'andresitocc99' (Linux_x86_64 version 6.8.0-45-generic) on Thu Oct 03 05:22:25 CEST 2024
+INFO: [HLS 200-10] For user 'andresitocc99' on host 'andresitocc99' (Linux_x86_64 version 6.8.0-45-generic) on Thu Oct 10 05:52:54 CEST 2024
 INFO: [HLS 200-10] On os Ubuntu 24.04.1 LTS
 INFO: [HLS 200-10] In directory '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS'
-Sourcing Tcl script '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/export.tcl'
-INFO: [HLS 200-1510] Running: source /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/export.tcl
+Sourcing Tcl script '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: source /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1/csim.tcl
 INFO: [HLS 200-1510] Running: open_project Hyperspectral_DataFlow 
 INFO: [HLS 200-10] Opening project '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow'.
 INFO: [HLS 200-1510] Running: set_top hyperspectral_hw_wrapped 
-INFO: [HLS 200-1510] Running: add_files ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral.h 
-INFO: [HLS 200-10] Adding design file '../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral.h' to the project
 INFO: [HLS 200-1510] Running: add_files ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp 
 INFO: [HLS 200-10] Adding design file '../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_accel.cpp' to the project
-INFO: [HLS 200-1510] Running: add_files -tb ../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
-INFO: [HLS 200-10] Adding test bench file '../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin' to the project
+INFO: [HLS 200-1510] Running: add_files ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral.h 
+INFO: [HLS 200-10] Adding design file '../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral.h' to the project
 INFO: [HLS 200-1510] Running: add_files -tb ../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
 INFO: [HLS 200-10] Adding test bench file '../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file '../Archivos_Fuente/Hyperspectral/DataFlow_2/cuboH.bin' to the project
 INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
 INFO: [HLS 200-10] Opening solution '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
@@ -28,25 +28,15 @@ INFO: [HLS 200-1510] Running: create_clock -period 10 -name default
 INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
 INFO: [HLS 200-1510] Running: source ./Hyperspectral_DataFlow/solution1/directives.tcl
 INFO: [HLS 200-1510] Running: set_directive_top -name hyperspectral_hw_wrapped hyperspectral_hw_wrapped 
-INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
-INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
-
-****** Vivado v2022.1 (64-bit)
-  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
-  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-
-source run_ippack.tcl -notrace
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
-WARNING: [IP_Flow 19-4832] The IP name 'hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip'...
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Thu Oct  3 05:22:36 2024...
-INFO: [HLS 200-802] Generated output file Hyperspectral_DataFlow/solution1/impl/export.zip
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 12.65 seconds. CPU system time: 1.81 seconds. Elapsed time: 20.47 seconds; current allocated memory: -1022.926 MB.
-INFO: [HLS 200-112] Total CPU user time: 13.63 seconds. Total CPU system time: 2.42 seconds. Total elapsed time: 21.49 seconds; peak allocated memory: 143.227 MB.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp in debug mode
+   Generating csim.exe
+Archivo cargado correctamente
+DEBUGGING AXI4 STREAMING DATA TYPES!
+Test OK!
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 8.6 seconds. CPU system time: 0.77 seconds. Elapsed time: 8.99 seconds; current allocated memory: -1033.656 MB.
+INFO: [HLS 200-112] Total CPU user time: 9.79 seconds. Total CPU system time: 1.53 seconds. Total elapsed time: 10.36 seconds; peak allocated memory: 132.527 MB.

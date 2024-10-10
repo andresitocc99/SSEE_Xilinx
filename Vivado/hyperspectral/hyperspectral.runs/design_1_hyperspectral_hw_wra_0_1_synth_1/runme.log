@@ -1,0 +1,902 @@
+
+*** Running vivado
+    with args -log design_1_hyperspectral_hw_wra_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_hyperspectral_hw_wra_0_1.tcl
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_1_hyperspectral_hw_wra_0_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+Command: synth_design -top design_1_hyperspectral_hw_wra_0_1 -part xczu3eg-sbva484-1-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13438
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2759.938 ; gain = 133.828 ; free physical = 7925 ; free virtual = 13327
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_hyperspectral_hw_wra_0_1' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_1/synth/design_1_hyperspectral_hw_wra_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped.v:10]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_pixels_RAM_AUTO_1R1W' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_pixels_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_pixels_RAM_AUTO_1R1W' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_pixels_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_ref_pixel_V_RAM_AUTO_1R1W' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_ref_pixel_V_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_ref_pixel_V_RAM_AUTO_1R1W' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_ref_pixel_V_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_flow_control_loop_pipe_sequential_init' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_flow_control_loop_pipe_sequential_init' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2.v:10]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_sqrt_fixed_33_33_s' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_sqrt_fixed_33_33_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_sqrt_fixed_33_33_s' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_sqrt_fixed_33_33_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:47]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:47]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:47]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4.v:10]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_mux_1798_32_1_1' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mux_1798_32_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_mux_1798_32_1_1' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mux_1798_32_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4.v:10]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_CONTROL_BUS_s_axi' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_CONTROL_BUS_s_axi.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_CONTROL_BUS_s_axi.v:193]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_CONTROL_BUS_s_axi' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_CONTROL_BUS_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/ip/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/tools/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [/tools/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/ip/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_regslice_both' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_regslice_both' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_regslice_both__parameterized0' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_regslice_both__parameterized0' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_regslice_both__parameterized1' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_regslice_both__parameterized1' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'hyperspectral_hw_wrapped_regslice_both__parameterized2' [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped_regslice_both__parameterized2' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'hyperspectral_hw_wrapped' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_hyperspectral_hw_wra_0_1' (0#1) [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_1/synth/design_1_hyperspectral_hw_wra_0_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_CONTROL_BUS_s_axi.v:250]
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DIVIDE_BY_ZERO_IN in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[30] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[29] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[28] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[27] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[26] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[25] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[24] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[23] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[22] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[21] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[20] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[19] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[18] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[17] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[16] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[15] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[14] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[13] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[12] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[11] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[10] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[9] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[8] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[7] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[6] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[5] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[4] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[3] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[2] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[1] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[0] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[11] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port NORMALIZE[1] in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIXED_POINT in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIX_MANT_SIGN in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SIGN in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[7] in module renorm_and_round_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[6] in module renorm_and_round_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[5] in module renorm_and_round_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[4] in module renorm_and_round_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[3] in module renorm_and_round_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[2] in module renorm_and_round_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[1] in module renorm_and_round_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[0] in module renorm_and_round_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_INC_IN in module renorm_and_round_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2959.750 ; gain = 333.641 ; free physical = 9408 ; free virtual = 14831
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2977.562 ; gain = 351.453 ; free physical = 9409 ; free virtual = 14840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2977.562 ; gain = 351.453 ; free physical = 9409 ; free virtual = 14840
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.36 . Memory (MB): peak = 2983.500 ; gain = 0.000 ; free physical = 9493 ; free virtual = 14902
+INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_1/constraints/hyperspectral_hw_wrapped_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_1/constraints/hyperspectral_hw_wrapped_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_hyperspectral_hw_wra_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_hyperspectral_hw_wra_0_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3146.312 ; gain = 0.000 ; free physical = 9362 ; free virtual = 14782
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.79 ; elapsed = 00:00:00.26 . Memory (MB): peak = 3146.312 ; gain = 0.000 ; free physical = 9340 ; free virtual = 14759
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3146.312 ; gain = 520.203 ; free physical = 9170 ; free virtual = 14603
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3146.312 ; gain = 520.203 ; free physical = 9170 ; free virtual = 14603
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_hyperspectral_hw_wra_0_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3146.312 ; gain = 520.203 ; free physical = 9168 ; free virtual = 14601
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln71_reg_10810_reg' and it is trimmed from '32' to '1' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2.v:8978]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'hyperspectral_hw_wrapped_CONTROL_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'hyperspectral_hw_wrapped_CONTROL_BUS_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-6904] The RAM "hyperspectral_hw_wrapped_pixels_RAM_AUTO_1R1W:/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 16 for RAM "hyperspectral_hw_wrapped_ref_pixel_V_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-3971] The signal "hyperspectral_hw_wrapped_ref_pixel_V_RAM_AUTO_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'hyperspectral_hw_wrapped_CONTROL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'hyperspectral_hw_wrapped_CONTROL_BUS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3146.312 ; gain = 520.203 ; free physical = 9630 ; free virtual = 15080
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_32ns_32_4_no_dsp_1_U755/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized1) to 'inst/uitofp_32ns_32_4_no_dsp_1_U755/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_32ns_32_4_no_dsp_1_U755/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized1) to 'inst/uitofp_32ns_32_4_no_dsp_1_U755/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_32ns_32_4_no_dsp_1_U755/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized12) to 'inst/uitofp_32ns_32_4_no_dsp_1_U755/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_32ns_32_4_no_dsp_1_U755/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized12) to 'inst/uitofp_32ns_32_4_no_dsp_1_U755/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_32ns_32_4_no_dsp_1_U755/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'inst/uitofp_32ns_32_4_no_dsp_1_U755/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_32ns_32_4_no_dsp_1_U755/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'inst/uitofp_32ns_32_4_no_dsp_1_U755/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_32ns_32_4_no_dsp_1_U755/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'inst/uitofp_32ns_32_4_no_dsp_1_U755/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_32ns_32_4_no_dsp_1_U755/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'inst/uitofp_32ns_32_4_no_dsp_1_U755/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_32ns_32_4_no_dsp_1_U755/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'inst/uitofp_32ns_32_4_no_dsp_1_U755/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U13/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U187/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U187/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U189/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U188/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U188/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U14/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U12/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U189/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U12/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U13/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U14/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U19/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U16/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U16/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U21/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U18/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U18/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U19/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U77/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U77/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U71/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U71/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U76/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U76/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U100/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U100/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U89/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U89/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U84/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U84/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U95/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U95/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U97/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U97/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U90/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U90/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U83/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U83/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U78/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U78/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U66/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U66/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U63/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U63/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U61/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U61/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U47/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U44/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U44/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U56/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U56/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U54/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U50/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U50/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U49/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U46/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U46/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U41/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U38/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U38/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U139/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U139/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U42/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U40/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U40/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U29/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U26/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U26/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U27/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U24/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U24/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U55/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U52/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U52/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U103/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U105/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U102/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U102/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U112/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U119/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U116/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U116/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U122/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U120/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U120/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U146/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U179/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U179/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U174/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U174/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U153/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U150/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32s_32_4_1_U150/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U185/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U185/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U180/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U180/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_17s_17s_32ns_32_4_1_U151/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v:39]
+INFO: [Common 17-14] Message 'Synth 8-3936' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U135/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U11/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U43/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U48/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U45/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U37/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U39/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U17/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U25/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U22/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U15/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U51/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U101/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U115/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U118/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U149/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U147/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U152/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U177/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U183/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U171/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U175/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U59/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U57/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U62/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U79/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U87/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U93/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U91/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U81/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U70/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U67/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U73/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U96/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U186/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U123/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U133/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U138/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U127/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U129/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U141/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U160/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U157/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U163/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U169/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U104/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U107/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U20/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U33/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U181/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U113/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U85/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_17s_17s_32_4_1_U28/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v:21]
+INFO: [Synth 8-6904] The RAM "inst/pixels_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_1_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_2_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_3_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_4_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_5_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_6_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_7_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_8_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_9_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_10_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_11_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_12_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_13_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_14_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_15_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_16_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_17_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_18_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_19_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_20_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_21_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_22_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_23_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_24_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_25_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_26_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_27_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_28_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_29_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_30_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_31_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_32_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_33_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_34_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_35_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_36_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_37_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_38_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_39_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_40_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_41_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_42_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_43_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_44_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_45_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_46_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_47_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_48_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_49_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_50_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_51_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_52_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_53_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_54_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_55_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_56_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_57_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_58_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_59_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_60_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_61_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_62_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_63_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_64_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_65_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_66_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_67_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_68_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_69_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_70_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_71_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_72_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_73_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_74_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_75_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_76_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_77_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_78_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_79_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_80_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_81_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_82_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_83_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_84_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_85_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_86_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_87_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_88_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_89_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_90_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_91_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_92_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_93_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_94_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_95_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_96_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_97_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/pixels_98_U/ram_reg" of size (depth=2 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Common 17-14] Message 'Synth 8-6904' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 16 for RAM "inst/ref_pixel_V_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/ref_pixel_V_U/ram_reg" was recognized as a true dual port RAM template.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module hyperspectral_hw_wrapped_CONTROL_BUS_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module hyperspectral_hw_wrapped_CONTROL_BUS_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 3146.312 ; gain = 520.203 ; free physical = 11537 ; free virtual = 17093
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 3447.688 ; gain = 821.578 ; free physical = 10754 ; free virtual = 16311
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:09 . Memory (MB): peak = 3587.703 ; gain = 961.594 ; free physical = 9737 ; free virtual = 15299
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/ref_pixel_V_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ref_pixel_V_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:19 ; elapsed = 00:01:26 . Memory (MB): peak = 3648.609 ; gain = 1022.500 ; free physical = 10340 ; free virtual = 15929
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:01:33 . Memory (MB): peak = 3698.586 ; gain = 1072.477 ; free physical = 12070 ; free virtual = 17660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:01:33 . Memory (MB): peak = 3698.586 ; gain = 1072.477 ; free physical = 12070 ; free virtual = 17661
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:30 ; elapsed = 00:01:38 . Memory (MB): peak = 3698.586 ; gain = 1072.477 ; free physical = 14043 ; free virtual = 19631
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:01:38 . Memory (MB): peak = 3698.586 ; gain = 1072.477 ; free physical = 14042 ; free virtual = 19630
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:31 ; elapsed = 00:01:38 . Memory (MB): peak = 3698.586 ; gain = 1072.477 ; free physical = 14042 ; free virtual = 19630
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:31 ; elapsed = 00:01:38 . Memory (MB): peak = 3698.586 ; gain = 1072.477 ; free physical = 14042 ; free virtual = 19630
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------------------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                             | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|hyperspectral_hw_wrapped                                | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (PCIN+(A'*B')')'   | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A'*B')')'     | 30     | 18     | 32     | -      | 32     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A'*B')')'     | 30     | 18     | 32     | -      | 32     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A'*B')')'     | 30     | 18     | 32     | -      | 32     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A'*B')')'     | 30     | 18     | 32     | -      | 32     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C+(A''*B'')')'    | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 48     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 48     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 48     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A'*B')')'     | 30     | 18     | 48     | -      | 32     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 48     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 48     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 48     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 48     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 48     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 48     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (C'+(A''*B'')')'   | 30     | 18     | 48     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A'*B')'           | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped                                | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | ((A'*B')')'        | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | ((A'*B')')'        | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | ((A'*B')')'        | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | ((A'*B')')'        | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | ((A'*B')')'        | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | ((A'*B')')'        | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | ((A'*B')')'        | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | ((A'*B')')'        | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | ((A'*B')')'        | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | ((A'*B')')'        | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1_DSP48_0 | ((A'*B')')'        | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
++--------------------------------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |   714|
+|2     |DSP_ALU         |   180|
+|4     |DSP_A_B_DATA    |   180|
+|6     |DSP_C_DATA      |   180|
+|8     |DSP_MULTIPLIER  |   180|
+|9     |DSP_M_DATA      |   180|
+|11    |DSP_OUTPUT      |   180|
+|12    |DSP_PREADD      |   180|
+|13    |DSP_PREADD_DATA |   180|
+|14    |LUT1            |    51|
+|15    |LUT2            |   618|
+|16    |LUT3            |  1025|
+|17    |LUT4            |  3307|
+|18    |LUT5            |   704|
+|19    |LUT6            |  1724|
+|20    |MUXCY           |    46|
+|21    |MUXF7           |   358|
+|22    |MUXF8           |   158|
+|23    |RAM16X1S        |  2880|
+|24    |RAMB18E2        |     1|
+|25    |SRL16E          |     6|
+|26    |XORCY           |    24|
+|27    |FDRE            | 11690|
+|28    |FDSE            |    22|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:31 ; elapsed = 00:01:38 . Memory (MB): peak = 3698.586 ; gain = 1072.477 ; free physical = 14042 ; free virtual = 19630
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 289 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:23 ; elapsed = 00:01:31 . Memory (MB): peak = 3698.586 ; gain = 903.727 ; free physical = 14088 ; free virtual = 19677
+Synthesis Optimization Complete : Time (s): cpu = 00:01:31 ; elapsed = 00:01:38 . Memory (MB): peak = 3698.594 ; gain = 1072.477 ; free physical = 14088 ; free virtual = 19677
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.26 . Memory (MB): peak = 3698.594 ; gain = 0.000 ; free physical = 14180 ; free virtual = 19769
+INFO: [Netlist 29-17] Analyzing 4360 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3823.977 ; gain = 0.000 ; free physical = 14049 ; free virtual = 19638
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3067 instances were transformed.
+  (CARRY4) => CARRY8: 7 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 180 instances
+  RAM16X1S => RAM32X1S (RAMS32): 2880 instances
+
+Synth Design complete, checksum: 389eaa39
+INFO: [Common 17-83] Releasing license: Synthesis
+195 Infos, 291 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:44 ; elapsed = 00:01:49 . Memory (MB): peak = 3823.977 ; gain = 1197.867 ; free physical = 14361 ; free virtual = 19950
+INFO: [Common 17-1381] The checkpoint '/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_hyperspectral_hw_wra_0_1_synth_1/design_1_hyperspectral_hw_wra_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_hyperspectral_hw_wra_0_1, cache-ID = b0fc222748e5758c
+INFO: [Coretcl 2-1174] Renamed 484 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_hyperspectral_hw_wra_0_1_synth_1/design_1_hyperspectral_hw_wra_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_hyperspectral_hw_wra_0_1_utilization_synth.rpt -pb design_1_hyperspectral_hw_wra_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 10 04:00:25 2024...

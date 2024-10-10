@@ -6,7 +6,7 @@
 
 #include "hyperspectral.h"
 
-void loadHyperspectralImage(uint16_t image[FILAS][COLUMNAS][BANDAS], const char* filename);
+void loadHyperspectralImage(band_t image[FILAS][COLUMNAS][BANDAS], const char* filename);
 
 void hyperspectral_sw(band_t image[FILAS][COLUMNAS][BANDAS], band_t ref_pixel[BANDAS], band_t closest_pixel_sw[BANDAS], dist_t &min_distance, int &min_pixel_index_i, int &min_pixel_index_j) {
 

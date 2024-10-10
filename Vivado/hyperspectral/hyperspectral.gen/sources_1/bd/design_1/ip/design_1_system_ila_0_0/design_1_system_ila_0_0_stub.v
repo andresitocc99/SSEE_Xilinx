@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
-// Date        : Thu Oct  3 05:37:54 2024
+// Date        : Thu Oct  3 05:37:51 2024
 // Host        : andresitocc99 running 64-bit Ubuntu 24.04.1 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top design_1_system_ila_0_0 -prefix
+//               design_1_system_ila_0_0_ design_1_system_ila_0_0_stub.v
 // Design      : design_1_system_ila_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xczu3eg-sbva484-1-e
