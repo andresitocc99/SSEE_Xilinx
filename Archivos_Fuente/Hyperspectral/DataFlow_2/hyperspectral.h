@@ -38,6 +38,6 @@ typedef union {
 } conv_t;
 
 void hyperspectral_hw_wrapped (hls::stream<AXI_VAL>& in_stream, hls::stream<AXI_VAL>& out_stream);
-void calculate_distance(band_t ref_band1, band_t ref_band2, band_t band1, band_t band2, dist_t &distance);
+void calculate_distance(band_t ref_band1, band_t ref_band2, band_t band1, band_t band2, float &distance);
 
 #endif

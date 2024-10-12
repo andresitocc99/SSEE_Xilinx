@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="hyperspectral_hw_wrapped_hyperspectral_hw_wrapped,hls_ip_2022_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu3eg-sbva484-1-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.166250,HLS_SYN_LAT=184618,HLS_SYN_TPT=none,HLS_SYN_MEM=1,HLS_SYN_DSP=0,HLS_SYN_FF=14482,HLS_SYN_LUT=19273,HLS_VERSION=2022_1}" *)
+(* CORE_GENERATION_INFO="hyperspectral_hw_wrapped_hyperspectral_hw_wrapped,hls_ip_2022_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu3eg-sbva484-1-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.675000,HLS_SYN_LAT=184987,HLS_SYN_TPT=none,HLS_SYN_MEM=1,HLS_SYN_DSP=0,HLS_SYN_FF=33392,HLS_SYN_LUT=27809,HLS_VERSION=2022_1}" *)
 
 module hyperspectral_hw_wrapped (
         ap_clk,
@@ -212,281 +212,281 @@ wire    ap_CS_fsm_state101;
 wire    ap_CS_fsm_state102;
 wire    ap_CS_fsm_state4;
 wire   [15:0] ref_pixel_V_q1;
-reg   [15:0] ref_pixel_V_load_reg_3332;
+reg   [15:0] ref_pixel_V_load_reg_3315;
 wire    ap_CS_fsm_state5;
 wire   [15:0] ref_pixel_V_q0;
-reg   [15:0] ref_pixel_V_load_1_reg_3337;
-reg   [15:0] ref_pixel_V_load_2_reg_3352;
+reg   [15:0] ref_pixel_V_load_1_reg_3320;
+reg   [15:0] ref_pixel_V_load_2_reg_3335;
 wire    ap_CS_fsm_state6;
-reg   [15:0] ref_pixel_V_load_3_reg_3357;
-reg   [15:0] ref_pixel_V_load_4_reg_3372;
+reg   [15:0] ref_pixel_V_load_3_reg_3340;
+reg   [15:0] ref_pixel_V_load_4_reg_3355;
 wire    ap_CS_fsm_state7;
-reg   [15:0] ref_pixel_V_load_5_reg_3377;
-reg   [15:0] ref_pixel_V_load_6_reg_3392;
+reg   [15:0] ref_pixel_V_load_5_reg_3360;
+reg   [15:0] ref_pixel_V_load_6_reg_3375;
 wire    ap_CS_fsm_state8;
-reg   [15:0] ref_pixel_V_load_7_reg_3397;
-reg   [15:0] ref_pixel_V_load_8_reg_3412;
+reg   [15:0] ref_pixel_V_load_7_reg_3380;
+reg   [15:0] ref_pixel_V_load_8_reg_3395;
 wire    ap_CS_fsm_state9;
-reg   [15:0] ref_pixel_V_load_9_reg_3417;
-reg   [15:0] ref_pixel_V_load_10_reg_3432;
+reg   [15:0] ref_pixel_V_load_9_reg_3400;
+reg   [15:0] ref_pixel_V_load_10_reg_3415;
 wire    ap_CS_fsm_state10;
-reg   [15:0] ref_pixel_V_load_11_reg_3437;
-reg   [15:0] ref_pixel_V_load_12_reg_3452;
+reg   [15:0] ref_pixel_V_load_11_reg_3420;
+reg   [15:0] ref_pixel_V_load_12_reg_3435;
 wire    ap_CS_fsm_state11;
-reg   [15:0] ref_pixel_V_load_13_reg_3457;
-reg   [15:0] ref_pixel_V_load_14_reg_3472;
+reg   [15:0] ref_pixel_V_load_13_reg_3440;
+reg   [15:0] ref_pixel_V_load_14_reg_3455;
 wire    ap_CS_fsm_state12;
-reg   [15:0] ref_pixel_V_load_15_reg_3477;
-reg   [15:0] ref_pixel_V_load_16_reg_3492;
+reg   [15:0] ref_pixel_V_load_15_reg_3460;
+reg   [15:0] ref_pixel_V_load_16_reg_3475;
 wire    ap_CS_fsm_state13;
-reg   [15:0] ref_pixel_V_load_17_reg_3497;
-reg   [15:0] ref_pixel_V_load_18_reg_3512;
+reg   [15:0] ref_pixel_V_load_17_reg_3480;
+reg   [15:0] ref_pixel_V_load_18_reg_3495;
 wire    ap_CS_fsm_state14;
-reg   [15:0] ref_pixel_V_load_19_reg_3517;
-reg   [15:0] ref_pixel_V_load_20_reg_3532;
+reg   [15:0] ref_pixel_V_load_19_reg_3500;
+reg   [15:0] ref_pixel_V_load_20_reg_3515;
 wire    ap_CS_fsm_state15;
-reg   [15:0] ref_pixel_V_load_21_reg_3537;
-reg   [15:0] ref_pixel_V_load_22_reg_3552;
+reg   [15:0] ref_pixel_V_load_21_reg_3520;
+reg   [15:0] ref_pixel_V_load_22_reg_3535;
 wire    ap_CS_fsm_state16;
-reg   [15:0] ref_pixel_V_load_23_reg_3557;
-reg   [15:0] ref_pixel_V_load_24_reg_3572;
+reg   [15:0] ref_pixel_V_load_23_reg_3540;
+reg   [15:0] ref_pixel_V_load_24_reg_3555;
 wire    ap_CS_fsm_state17;
-reg   [15:0] ref_pixel_V_load_25_reg_3577;
-reg   [15:0] ref_pixel_V_load_26_reg_3592;
+reg   [15:0] ref_pixel_V_load_25_reg_3560;
+reg   [15:0] ref_pixel_V_load_26_reg_3575;
 wire    ap_CS_fsm_state18;
-reg   [15:0] ref_pixel_V_load_27_reg_3597;
-reg   [15:0] ref_pixel_V_load_28_reg_3612;
+reg   [15:0] ref_pixel_V_load_27_reg_3580;
+reg   [15:0] ref_pixel_V_load_28_reg_3595;
 wire    ap_CS_fsm_state19;
-reg   [15:0] ref_pixel_V_load_29_reg_3617;
-reg   [15:0] ref_pixel_V_load_30_reg_3632;
+reg   [15:0] ref_pixel_V_load_29_reg_3600;
+reg   [15:0] ref_pixel_V_load_30_reg_3615;
 wire    ap_CS_fsm_state20;
-reg   [15:0] ref_pixel_V_load_31_reg_3637;
-reg   [15:0] ref_pixel_V_load_32_reg_3652;
+reg   [15:0] ref_pixel_V_load_31_reg_3620;
+reg   [15:0] ref_pixel_V_load_32_reg_3635;
 wire    ap_CS_fsm_state21;
-reg   [15:0] ref_pixel_V_load_33_reg_3657;
-reg   [15:0] ref_pixel_V_load_34_reg_3672;
+reg   [15:0] ref_pixel_V_load_33_reg_3640;
+reg   [15:0] ref_pixel_V_load_34_reg_3655;
 wire    ap_CS_fsm_state22;
-reg   [15:0] ref_pixel_V_load_35_reg_3677;
-reg   [15:0] ref_pixel_V_load_36_reg_3692;
+reg   [15:0] ref_pixel_V_load_35_reg_3660;
+reg   [15:0] ref_pixel_V_load_36_reg_3675;
 wire    ap_CS_fsm_state23;
-reg   [15:0] ref_pixel_V_load_37_reg_3697;
-reg   [15:0] ref_pixel_V_load_38_reg_3712;
+reg   [15:0] ref_pixel_V_load_37_reg_3680;
+reg   [15:0] ref_pixel_V_load_38_reg_3695;
 wire    ap_CS_fsm_state24;
-reg   [15:0] ref_pixel_V_load_39_reg_3717;
-reg   [15:0] ref_pixel_V_load_40_reg_3732;
+reg   [15:0] ref_pixel_V_load_39_reg_3700;
+reg   [15:0] ref_pixel_V_load_40_reg_3715;
 wire    ap_CS_fsm_state25;
-reg   [15:0] ref_pixel_V_load_41_reg_3737;
-reg   [15:0] ref_pixel_V_load_42_reg_3752;
+reg   [15:0] ref_pixel_V_load_41_reg_3720;
+reg   [15:0] ref_pixel_V_load_42_reg_3735;
 wire    ap_CS_fsm_state26;
-reg   [15:0] ref_pixel_V_load_43_reg_3757;
-reg   [15:0] ref_pixel_V_load_44_reg_3772;
+reg   [15:0] ref_pixel_V_load_43_reg_3740;
+reg   [15:0] ref_pixel_V_load_44_reg_3755;
 wire    ap_CS_fsm_state27;
-reg   [15:0] ref_pixel_V_load_45_reg_3777;
-reg   [15:0] ref_pixel_V_load_46_reg_3792;
+reg   [15:0] ref_pixel_V_load_45_reg_3760;
+reg   [15:0] ref_pixel_V_load_46_reg_3775;
 wire    ap_CS_fsm_state28;
-reg   [15:0] ref_pixel_V_load_47_reg_3797;
-reg   [15:0] ref_pixel_V_load_48_reg_3812;
+reg   [15:0] ref_pixel_V_load_47_reg_3780;
+reg   [15:0] ref_pixel_V_load_48_reg_3795;
 wire    ap_CS_fsm_state29;
-reg   [15:0] ref_pixel_V_load_49_reg_3817;
-reg   [15:0] ref_pixel_V_load_50_reg_3832;
+reg   [15:0] ref_pixel_V_load_49_reg_3800;
+reg   [15:0] ref_pixel_V_load_50_reg_3815;
 wire    ap_CS_fsm_state30;
-reg   [15:0] ref_pixel_V_load_51_reg_3837;
-reg   [15:0] ref_pixel_V_load_52_reg_3852;
+reg   [15:0] ref_pixel_V_load_51_reg_3820;
+reg   [15:0] ref_pixel_V_load_52_reg_3835;
 wire    ap_CS_fsm_state31;
-reg   [15:0] ref_pixel_V_load_53_reg_3857;
-reg   [15:0] ref_pixel_V_load_54_reg_3872;
+reg   [15:0] ref_pixel_V_load_53_reg_3840;
+reg   [15:0] ref_pixel_V_load_54_reg_3855;
 wire    ap_CS_fsm_state32;
-reg   [15:0] ref_pixel_V_load_55_reg_3877;
-reg   [15:0] ref_pixel_V_load_56_reg_3892;
+reg   [15:0] ref_pixel_V_load_55_reg_3860;
+reg   [15:0] ref_pixel_V_load_56_reg_3875;
 wire    ap_CS_fsm_state33;
-reg   [15:0] ref_pixel_V_load_57_reg_3897;
-reg   [15:0] ref_pixel_V_load_58_reg_3912;
+reg   [15:0] ref_pixel_V_load_57_reg_3880;
+reg   [15:0] ref_pixel_V_load_58_reg_3895;
 wire    ap_CS_fsm_state34;
-reg   [15:0] ref_pixel_V_load_59_reg_3917;
-reg   [15:0] ref_pixel_V_load_60_reg_3932;
+reg   [15:0] ref_pixel_V_load_59_reg_3900;
+reg   [15:0] ref_pixel_V_load_60_reg_3915;
 wire    ap_CS_fsm_state35;
-reg   [15:0] ref_pixel_V_load_61_reg_3937;
-reg   [15:0] ref_pixel_V_load_62_reg_3952;
+reg   [15:0] ref_pixel_V_load_61_reg_3920;
+reg   [15:0] ref_pixel_V_load_62_reg_3935;
 wire    ap_CS_fsm_state36;
-reg   [15:0] ref_pixel_V_load_63_reg_3957;
-reg   [15:0] ref_pixel_V_load_64_reg_3972;
+reg   [15:0] ref_pixel_V_load_63_reg_3940;
+reg   [15:0] ref_pixel_V_load_64_reg_3955;
 wire    ap_CS_fsm_state37;
-reg   [15:0] ref_pixel_V_load_65_reg_3977;
-reg   [15:0] ref_pixel_V_load_66_reg_3992;
+reg   [15:0] ref_pixel_V_load_65_reg_3960;
+reg   [15:0] ref_pixel_V_load_66_reg_3975;
 wire    ap_CS_fsm_state38;
-reg   [15:0] ref_pixel_V_load_67_reg_3997;
-reg   [15:0] ref_pixel_V_load_68_reg_4012;
+reg   [15:0] ref_pixel_V_load_67_reg_3980;
+reg   [15:0] ref_pixel_V_load_68_reg_3995;
 wire    ap_CS_fsm_state39;
-reg   [15:0] ref_pixel_V_load_69_reg_4017;
-reg   [15:0] ref_pixel_V_load_70_reg_4032;
+reg   [15:0] ref_pixel_V_load_69_reg_4000;
+reg   [15:0] ref_pixel_V_load_70_reg_4015;
 wire    ap_CS_fsm_state40;
-reg   [15:0] ref_pixel_V_load_71_reg_4037;
-reg   [15:0] ref_pixel_V_load_72_reg_4052;
+reg   [15:0] ref_pixel_V_load_71_reg_4020;
+reg   [15:0] ref_pixel_V_load_72_reg_4035;
 wire    ap_CS_fsm_state41;
-reg   [15:0] ref_pixel_V_load_73_reg_4057;
-reg   [15:0] ref_pixel_V_load_74_reg_4072;
+reg   [15:0] ref_pixel_V_load_73_reg_4040;
+reg   [15:0] ref_pixel_V_load_74_reg_4055;
 wire    ap_CS_fsm_state42;
-reg   [15:0] ref_pixel_V_load_75_reg_4077;
-reg   [15:0] ref_pixel_V_load_76_reg_4092;
+reg   [15:0] ref_pixel_V_load_75_reg_4060;
+reg   [15:0] ref_pixel_V_load_76_reg_4075;
 wire    ap_CS_fsm_state43;
-reg   [15:0] ref_pixel_V_load_77_reg_4097;
-reg   [15:0] ref_pixel_V_load_78_reg_4112;
+reg   [15:0] ref_pixel_V_load_77_reg_4080;
+reg   [15:0] ref_pixel_V_load_78_reg_4095;
 wire    ap_CS_fsm_state44;
-reg   [15:0] ref_pixel_V_load_79_reg_4117;
-reg   [15:0] ref_pixel_V_load_80_reg_4132;
+reg   [15:0] ref_pixel_V_load_79_reg_4100;
+reg   [15:0] ref_pixel_V_load_80_reg_4115;
 wire    ap_CS_fsm_state45;
-reg   [15:0] ref_pixel_V_load_81_reg_4137;
-reg   [15:0] ref_pixel_V_load_82_reg_4152;
+reg   [15:0] ref_pixel_V_load_81_reg_4120;
+reg   [15:0] ref_pixel_V_load_82_reg_4135;
 wire    ap_CS_fsm_state46;
-reg   [15:0] ref_pixel_V_load_83_reg_4157;
-reg   [15:0] ref_pixel_V_load_84_reg_4172;
+reg   [15:0] ref_pixel_V_load_83_reg_4140;
+reg   [15:0] ref_pixel_V_load_84_reg_4155;
 wire    ap_CS_fsm_state47;
-reg   [15:0] ref_pixel_V_load_85_reg_4177;
-reg   [15:0] ref_pixel_V_load_86_reg_4192;
+reg   [15:0] ref_pixel_V_load_85_reg_4160;
+reg   [15:0] ref_pixel_V_load_86_reg_4175;
 wire    ap_CS_fsm_state48;
-reg   [15:0] ref_pixel_V_load_87_reg_4197;
-reg   [15:0] ref_pixel_V_load_88_reg_4212;
+reg   [15:0] ref_pixel_V_load_87_reg_4180;
+reg   [15:0] ref_pixel_V_load_88_reg_4195;
 wire    ap_CS_fsm_state49;
-reg   [15:0] ref_pixel_V_load_89_reg_4217;
-reg   [15:0] ref_pixel_V_load_90_reg_4232;
+reg   [15:0] ref_pixel_V_load_89_reg_4200;
+reg   [15:0] ref_pixel_V_load_90_reg_4215;
 wire    ap_CS_fsm_state50;
-reg   [15:0] ref_pixel_V_load_91_reg_4237;
-reg   [15:0] ref_pixel_V_load_92_reg_4252;
+reg   [15:0] ref_pixel_V_load_91_reg_4220;
+reg   [15:0] ref_pixel_V_load_92_reg_4235;
 wire    ap_CS_fsm_state51;
-reg   [15:0] ref_pixel_V_load_93_reg_4257;
-reg   [15:0] ref_pixel_V_load_94_reg_4272;
+reg   [15:0] ref_pixel_V_load_93_reg_4240;
+reg   [15:0] ref_pixel_V_load_94_reg_4255;
 wire    ap_CS_fsm_state52;
-reg   [15:0] ref_pixel_V_load_95_reg_4277;
-reg   [15:0] ref_pixel_V_load_96_reg_4292;
+reg   [15:0] ref_pixel_V_load_95_reg_4260;
+reg   [15:0] ref_pixel_V_load_96_reg_4275;
 wire    ap_CS_fsm_state53;
-reg   [15:0] ref_pixel_V_load_97_reg_4297;
-reg   [15:0] ref_pixel_V_load_98_reg_4312;
+reg   [15:0] ref_pixel_V_load_97_reg_4280;
+reg   [15:0] ref_pixel_V_load_98_reg_4295;
 wire    ap_CS_fsm_state54;
-reg   [15:0] ref_pixel_V_load_99_reg_4317;
-reg   [15:0] ref_pixel_V_load_100_reg_4332;
+reg   [15:0] ref_pixel_V_load_99_reg_4300;
+reg   [15:0] ref_pixel_V_load_100_reg_4315;
 wire    ap_CS_fsm_state55;
-reg   [15:0] ref_pixel_V_load_101_reg_4337;
-reg   [15:0] ref_pixel_V_load_102_reg_4352;
+reg   [15:0] ref_pixel_V_load_101_reg_4320;
+reg   [15:0] ref_pixel_V_load_102_reg_4335;
 wire    ap_CS_fsm_state56;
-reg   [15:0] ref_pixel_V_load_103_reg_4357;
-reg   [15:0] ref_pixel_V_load_104_reg_4372;
+reg   [15:0] ref_pixel_V_load_103_reg_4340;
+reg   [15:0] ref_pixel_V_load_104_reg_4355;
 wire    ap_CS_fsm_state57;
-reg   [15:0] ref_pixel_V_load_105_reg_4377;
-reg   [15:0] ref_pixel_V_load_106_reg_4392;
+reg   [15:0] ref_pixel_V_load_105_reg_4360;
+reg   [15:0] ref_pixel_V_load_106_reg_4375;
 wire    ap_CS_fsm_state58;
-reg   [15:0] ref_pixel_V_load_107_reg_4397;
-reg   [15:0] ref_pixel_V_load_108_reg_4412;
+reg   [15:0] ref_pixel_V_load_107_reg_4380;
+reg   [15:0] ref_pixel_V_load_108_reg_4395;
 wire    ap_CS_fsm_state59;
-reg   [15:0] ref_pixel_V_load_109_reg_4417;
-reg   [15:0] ref_pixel_V_load_110_reg_4432;
+reg   [15:0] ref_pixel_V_load_109_reg_4400;
+reg   [15:0] ref_pixel_V_load_110_reg_4415;
 wire    ap_CS_fsm_state60;
-reg   [15:0] ref_pixel_V_load_111_reg_4437;
-reg   [15:0] ref_pixel_V_load_112_reg_4452;
+reg   [15:0] ref_pixel_V_load_111_reg_4420;
+reg   [15:0] ref_pixel_V_load_112_reg_4435;
 wire    ap_CS_fsm_state61;
-reg   [15:0] ref_pixel_V_load_113_reg_4457;
-reg   [15:0] ref_pixel_V_load_114_reg_4472;
+reg   [15:0] ref_pixel_V_load_113_reg_4440;
+reg   [15:0] ref_pixel_V_load_114_reg_4455;
 wire    ap_CS_fsm_state62;
-reg   [15:0] ref_pixel_V_load_115_reg_4477;
-reg   [15:0] ref_pixel_V_load_116_reg_4492;
+reg   [15:0] ref_pixel_V_load_115_reg_4460;
+reg   [15:0] ref_pixel_V_load_116_reg_4475;
 wire    ap_CS_fsm_state63;
-reg   [15:0] ref_pixel_V_load_117_reg_4497;
-reg   [15:0] ref_pixel_V_load_118_reg_4512;
+reg   [15:0] ref_pixel_V_load_117_reg_4480;
+reg   [15:0] ref_pixel_V_load_118_reg_4495;
 wire    ap_CS_fsm_state64;
-reg   [15:0] ref_pixel_V_load_119_reg_4517;
-reg   [15:0] ref_pixel_V_load_120_reg_4532;
+reg   [15:0] ref_pixel_V_load_119_reg_4500;
+reg   [15:0] ref_pixel_V_load_120_reg_4515;
 wire    ap_CS_fsm_state65;
-reg   [15:0] ref_pixel_V_load_121_reg_4537;
-reg   [15:0] ref_pixel_V_load_122_reg_4552;
+reg   [15:0] ref_pixel_V_load_121_reg_4520;
+reg   [15:0] ref_pixel_V_load_122_reg_4535;
 wire    ap_CS_fsm_state66;
-reg   [15:0] ref_pixel_V_load_123_reg_4557;
-reg   [15:0] ref_pixel_V_load_124_reg_4572;
+reg   [15:0] ref_pixel_V_load_123_reg_4540;
+reg   [15:0] ref_pixel_V_load_124_reg_4555;
 wire    ap_CS_fsm_state67;
-reg   [15:0] ref_pixel_V_load_125_reg_4577;
-reg   [15:0] ref_pixel_V_load_126_reg_4592;
+reg   [15:0] ref_pixel_V_load_125_reg_4560;
+reg   [15:0] ref_pixel_V_load_126_reg_4575;
 wire    ap_CS_fsm_state68;
-reg   [15:0] ref_pixel_V_load_127_reg_4597;
-reg   [15:0] ref_pixel_V_load_128_reg_4612;
+reg   [15:0] ref_pixel_V_load_127_reg_4580;
+reg   [15:0] ref_pixel_V_load_128_reg_4595;
 wire    ap_CS_fsm_state69;
-reg   [15:0] ref_pixel_V_load_129_reg_4617;
-reg   [15:0] ref_pixel_V_load_130_reg_4632;
+reg   [15:0] ref_pixel_V_load_129_reg_4600;
+reg   [15:0] ref_pixel_V_load_130_reg_4615;
 wire    ap_CS_fsm_state70;
-reg   [15:0] ref_pixel_V_load_131_reg_4637;
-reg   [15:0] ref_pixel_V_load_132_reg_4652;
+reg   [15:0] ref_pixel_V_load_131_reg_4620;
+reg   [15:0] ref_pixel_V_load_132_reg_4635;
 wire    ap_CS_fsm_state71;
-reg   [15:0] ref_pixel_V_load_133_reg_4657;
-reg   [15:0] ref_pixel_V_load_134_reg_4672;
+reg   [15:0] ref_pixel_V_load_133_reg_4640;
+reg   [15:0] ref_pixel_V_load_134_reg_4655;
 wire    ap_CS_fsm_state72;
-reg   [15:0] ref_pixel_V_load_135_reg_4677;
-reg   [15:0] ref_pixel_V_load_136_reg_4692;
+reg   [15:0] ref_pixel_V_load_135_reg_4660;
+reg   [15:0] ref_pixel_V_load_136_reg_4675;
 wire    ap_CS_fsm_state73;
-reg   [15:0] ref_pixel_V_load_137_reg_4697;
-reg   [15:0] ref_pixel_V_load_138_reg_4712;
+reg   [15:0] ref_pixel_V_load_137_reg_4680;
+reg   [15:0] ref_pixel_V_load_138_reg_4695;
 wire    ap_CS_fsm_state74;
-reg   [15:0] ref_pixel_V_load_139_reg_4717;
-reg   [15:0] ref_pixel_V_load_140_reg_4732;
+reg   [15:0] ref_pixel_V_load_139_reg_4700;
+reg   [15:0] ref_pixel_V_load_140_reg_4715;
 wire    ap_CS_fsm_state75;
-reg   [15:0] ref_pixel_V_load_141_reg_4737;
-reg   [15:0] ref_pixel_V_load_142_reg_4752;
+reg   [15:0] ref_pixel_V_load_141_reg_4720;
+reg   [15:0] ref_pixel_V_load_142_reg_4735;
 wire    ap_CS_fsm_state76;
-reg   [15:0] ref_pixel_V_load_143_reg_4757;
-reg   [15:0] ref_pixel_V_load_144_reg_4772;
+reg   [15:0] ref_pixel_V_load_143_reg_4740;
+reg   [15:0] ref_pixel_V_load_144_reg_4755;
 wire    ap_CS_fsm_state77;
-reg   [15:0] ref_pixel_V_load_145_reg_4777;
-reg   [15:0] ref_pixel_V_load_146_reg_4792;
+reg   [15:0] ref_pixel_V_load_145_reg_4760;
+reg   [15:0] ref_pixel_V_load_146_reg_4775;
 wire    ap_CS_fsm_state78;
-reg   [15:0] ref_pixel_V_load_147_reg_4797;
-reg   [15:0] ref_pixel_V_load_148_reg_4812;
+reg   [15:0] ref_pixel_V_load_147_reg_4780;
+reg   [15:0] ref_pixel_V_load_148_reg_4795;
 wire    ap_CS_fsm_state79;
-reg   [15:0] ref_pixel_V_load_149_reg_4817;
-reg   [15:0] ref_pixel_V_load_150_reg_4832;
+reg   [15:0] ref_pixel_V_load_149_reg_4800;
+reg   [15:0] ref_pixel_V_load_150_reg_4815;
 wire    ap_CS_fsm_state80;
-reg   [15:0] ref_pixel_V_load_151_reg_4837;
-reg   [15:0] ref_pixel_V_load_152_reg_4852;
+reg   [15:0] ref_pixel_V_load_151_reg_4820;
+reg   [15:0] ref_pixel_V_load_152_reg_4835;
 wire    ap_CS_fsm_state81;
-reg   [15:0] ref_pixel_V_load_153_reg_4857;
-reg   [15:0] ref_pixel_V_load_154_reg_4872;
+reg   [15:0] ref_pixel_V_load_153_reg_4840;
+reg   [15:0] ref_pixel_V_load_154_reg_4855;
 wire    ap_CS_fsm_state82;
-reg   [15:0] ref_pixel_V_load_155_reg_4877;
-reg   [15:0] ref_pixel_V_load_156_reg_4892;
+reg   [15:0] ref_pixel_V_load_155_reg_4860;
+reg   [15:0] ref_pixel_V_load_156_reg_4875;
 wire    ap_CS_fsm_state83;
-reg   [15:0] ref_pixel_V_load_157_reg_4897;
-reg   [15:0] ref_pixel_V_load_158_reg_4912;
+reg   [15:0] ref_pixel_V_load_157_reg_4880;
+reg   [15:0] ref_pixel_V_load_158_reg_4895;
 wire    ap_CS_fsm_state84;
-reg   [15:0] ref_pixel_V_load_159_reg_4917;
-reg   [15:0] ref_pixel_V_load_160_reg_4932;
+reg   [15:0] ref_pixel_V_load_159_reg_4900;
+reg   [15:0] ref_pixel_V_load_160_reg_4915;
 wire    ap_CS_fsm_state85;
-reg   [15:0] ref_pixel_V_load_161_reg_4937;
-reg   [15:0] ref_pixel_V_load_162_reg_4952;
+reg   [15:0] ref_pixel_V_load_161_reg_4920;
+reg   [15:0] ref_pixel_V_load_162_reg_4935;
 wire    ap_CS_fsm_state86;
-reg   [15:0] ref_pixel_V_load_163_reg_4957;
-reg   [15:0] ref_pixel_V_load_164_reg_4972;
+reg   [15:0] ref_pixel_V_load_163_reg_4940;
+reg   [15:0] ref_pixel_V_load_164_reg_4955;
 wire    ap_CS_fsm_state87;
-reg   [15:0] ref_pixel_V_load_165_reg_4977;
-reg   [15:0] ref_pixel_V_load_166_reg_4992;
+reg   [15:0] ref_pixel_V_load_165_reg_4960;
+reg   [15:0] ref_pixel_V_load_166_reg_4975;
 wire    ap_CS_fsm_state88;
-reg   [15:0] ref_pixel_V_load_167_reg_4997;
-reg   [15:0] ref_pixel_V_load_168_reg_5012;
+reg   [15:0] ref_pixel_V_load_167_reg_4980;
+reg   [15:0] ref_pixel_V_load_168_reg_4995;
 wire    ap_CS_fsm_state89;
-reg   [15:0] ref_pixel_V_load_169_reg_5017;
-reg   [15:0] ref_pixel_V_load_170_reg_5032;
+reg   [15:0] ref_pixel_V_load_169_reg_5000;
+reg   [15:0] ref_pixel_V_load_170_reg_5015;
 wire    ap_CS_fsm_state90;
-reg   [15:0] ref_pixel_V_load_171_reg_5037;
-reg   [15:0] ref_pixel_V_load_172_reg_5052;
+reg   [15:0] ref_pixel_V_load_171_reg_5020;
+reg   [15:0] ref_pixel_V_load_172_reg_5035;
 wire    ap_CS_fsm_state91;
-reg   [15:0] ref_pixel_V_load_173_reg_5057;
-reg   [15:0] ref_pixel_V_load_174_reg_5072;
+reg   [15:0] ref_pixel_V_load_173_reg_5040;
+reg   [15:0] ref_pixel_V_load_174_reg_5055;
 wire    ap_CS_fsm_state92;
-reg   [15:0] ref_pixel_V_load_175_reg_5077;
-reg   [15:0] ref_pixel_V_load_176_reg_5092;
+reg   [15:0] ref_pixel_V_load_175_reg_5060;
+reg   [15:0] ref_pixel_V_load_176_reg_5075;
 wire    ap_CS_fsm_state93;
-reg   [15:0] ref_pixel_V_load_177_reg_5097;
-reg   [15:0] ref_pixel_V_load_178_reg_5112;
+reg   [15:0] ref_pixel_V_load_177_reg_5080;
+reg   [15:0] ref_pixel_V_load_178_reg_5095;
 wire    ap_CS_fsm_state94;
-reg   [15:0] ref_pixel_V_load_179_reg_5117;
-wire   [0:0] sub71_fu_3274_p2;
-reg   [0:0] sub71_reg_5122;
+reg   [15:0] ref_pixel_V_load_179_reg_5100;
+wire   [0:0] sub69_fu_3258_p2;
+reg   [0:0] sub69_reg_5105;
 wire    ap_CS_fsm_state97;
-wire   [31:0] e_data_V_fu_3293_p1;
+wire   [31:0] e_data_V_fu_3276_p1;
 reg   [0:0] pixels_address0;
 reg    pixels_ce0;
 reg    pixels_we0;
@@ -1213,1135 +1213,1133 @@ reg    ref_pixel_V_we0;
 reg   [7:0] ref_pixel_V_address1;
 reg    ref_pixel_V_ce1;
 reg    ref_pixel_V_we1;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ap_start;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ap_done;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ap_idle;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ap_ready;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_in_stream_TREADY;
-wire   [7:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_d0;
-wire   [7:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_address1;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_ce1;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_we1;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_d1;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_ap_start;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_ap_done;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_ap_idle;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_ap_ready;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_179_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_179_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_179_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_179_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_178_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_178_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_178_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_178_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_177_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_177_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_177_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_177_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_176_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_176_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_176_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_176_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_175_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_175_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_175_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_175_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_174_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_174_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_174_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_174_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_173_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_173_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_173_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_173_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_172_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_172_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_172_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_172_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_171_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_171_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_171_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_171_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_170_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_170_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_170_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_170_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_169_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_169_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_169_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_169_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_168_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_168_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_168_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_168_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_167_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_167_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_167_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_167_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_166_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_166_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_166_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_166_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_165_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_165_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_165_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_165_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_164_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_164_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_164_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_164_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_163_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_163_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_163_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_163_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_162_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_162_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_162_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_162_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_161_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_161_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_161_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_161_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_160_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_160_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_160_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_160_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_159_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_159_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_159_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_159_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_158_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_158_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_158_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_158_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_157_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_157_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_157_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_157_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_156_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_156_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_156_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_156_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_155_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_155_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_155_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_155_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_154_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_154_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_154_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_154_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_153_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_153_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_153_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_153_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_152_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_152_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_152_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_152_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_151_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_151_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_151_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_151_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_150_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_150_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_150_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_150_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_149_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_149_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_149_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_149_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_148_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_148_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_148_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_148_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_147_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_147_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_147_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_147_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_146_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_146_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_146_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_146_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_145_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_145_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_145_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_145_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_144_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_144_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_144_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_144_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_143_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_143_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_143_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_143_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_142_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_142_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_142_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_142_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_141_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_141_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_141_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_141_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_140_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_140_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_140_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_140_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_139_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_139_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_139_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_139_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_138_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_138_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_138_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_138_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_137_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_137_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_137_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_137_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_136_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_136_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_136_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_136_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_135_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_135_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_135_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_135_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_134_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_134_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_134_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_134_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_133_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_133_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_133_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_133_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_132_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_132_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_132_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_132_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_131_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_131_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_131_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_131_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_130_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_130_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_130_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_130_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_129_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_129_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_129_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_129_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_128_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_128_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_128_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_128_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_127_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_127_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_127_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_127_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_126_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_126_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_126_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_126_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_125_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_125_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_125_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_125_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_124_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_124_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_124_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_124_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_123_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_123_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_123_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_123_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_122_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_122_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_122_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_122_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_121_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_121_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_121_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_121_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_120_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_120_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_120_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_120_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_119_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_119_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_119_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_119_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_118_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_118_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_118_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_118_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_117_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_117_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_117_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_117_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_116_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_116_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_116_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_116_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_115_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_115_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_115_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_115_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_114_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_114_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_114_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_114_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_113_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_113_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_113_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_113_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_112_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_112_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_112_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_112_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_111_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_111_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_111_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_111_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_110_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_110_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_110_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_110_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_109_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_109_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_109_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_109_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_108_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_108_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_108_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_108_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_107_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_107_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_107_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_107_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_106_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_106_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_106_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_106_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_105_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_105_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_105_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_105_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_104_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_104_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_104_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_104_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_103_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_103_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_103_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_103_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_102_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_102_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_102_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_102_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_101_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_101_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_101_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_101_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_100_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_100_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_100_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_100_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_99_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_99_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_99_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_99_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_98_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_98_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_98_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_98_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_97_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_97_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_97_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_97_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_96_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_96_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_96_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_96_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_95_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_95_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_95_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_95_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_94_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_94_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_94_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_94_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_93_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_93_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_93_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_93_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_92_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_92_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_92_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_92_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_91_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_91_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_91_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_91_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_90_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_90_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_90_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_90_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_89_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_89_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_89_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_89_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_88_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_88_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_88_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_88_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_87_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_87_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_87_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_87_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_86_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_86_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_86_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_86_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_85_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_85_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_85_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_85_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_84_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_84_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_84_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_84_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_83_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_83_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_83_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_83_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_82_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_82_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_82_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_82_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_81_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_81_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_81_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_81_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_80_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_80_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_80_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_80_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_79_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_79_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_79_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_79_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_78_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_78_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_78_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_78_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_77_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_77_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_77_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_77_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_76_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_76_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_76_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_76_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_75_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_75_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_75_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_75_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_74_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_74_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_74_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_74_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_73_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_73_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_73_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_73_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_72_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_72_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_72_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_72_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_71_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_71_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_71_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_71_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_70_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_70_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_70_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_70_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_69_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_69_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_69_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_69_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_68_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_68_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_68_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_68_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_67_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_67_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_67_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_67_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_66_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_66_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_66_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_66_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_65_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_65_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_65_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_65_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_64_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_64_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_64_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_64_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_63_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_63_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_63_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_63_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_62_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_62_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_62_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_62_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_61_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_61_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_61_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_61_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_60_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_60_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_60_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_60_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_59_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_59_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_59_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_59_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_58_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_58_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_58_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_58_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_57_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_57_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_57_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_57_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_56_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_56_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_56_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_56_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_55_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_55_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_55_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_55_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_54_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_54_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_54_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_54_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_53_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_53_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_53_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_53_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_52_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_52_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_52_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_52_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_51_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_51_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_51_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_51_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_50_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_50_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_50_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_50_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_49_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_49_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_49_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_49_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_48_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_48_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_48_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_48_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_47_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_47_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_47_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_47_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_46_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_46_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_46_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_46_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_45_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_45_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_45_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_45_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_44_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_44_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_44_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_44_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_43_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_43_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_43_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_43_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_42_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_42_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_42_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_42_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_41_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_41_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_41_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_41_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_40_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_40_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_40_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_40_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_39_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_39_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_39_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_39_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_38_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_38_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_38_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_38_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_37_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_37_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_37_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_37_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_36_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_36_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_36_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_36_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_35_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_35_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_35_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_35_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_34_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_34_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_34_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_34_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_33_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_33_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_33_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_33_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_32_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_32_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_32_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_32_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_31_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_31_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_31_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_31_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_30_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_30_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_30_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_30_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_29_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_29_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_29_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_29_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_28_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_28_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_28_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_28_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_27_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_27_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_27_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_27_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_26_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_26_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_26_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_26_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_25_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_25_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_25_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_25_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_24_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_24_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_24_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_24_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_23_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_23_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_23_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_23_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_22_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_22_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_22_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_22_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_21_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_21_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_21_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_21_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_20_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_20_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_20_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_20_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_19_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_19_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_19_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_19_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_18_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_18_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_18_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_18_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_17_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_17_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_17_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_17_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_16_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_16_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_16_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_16_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_15_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_15_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_15_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_15_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_14_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_14_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_14_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_14_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_13_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_13_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_13_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_13_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_12_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_12_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_12_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_12_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_11_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_11_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_11_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_11_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_10_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_10_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_10_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_10_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_9_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_9_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_9_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_9_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_8_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_8_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_8_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_8_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_7_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_7_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_7_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_7_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_6_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_6_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_6_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_6_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_5_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_5_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_5_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_5_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_4_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_4_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_4_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_4_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_3_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_3_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_3_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_3_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_2_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_2_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_2_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_2_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_1_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_1_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_1_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_1_d0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_ce0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_we0;
-wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_d0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_in_stream_TREADY;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_min_pixel_index_i_out;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_min_pixel_index_i_out_ap_vld;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_min_pixel_index_j_out;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_min_pixel_index_j_out_ap_vld;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_active_idx_2_out;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_active_idx_2_out_ap_vld;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_min_distance_V_out;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_min_distance_V_out_ap_vld;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_ap_start;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_ap_done;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_ap_idle;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_ap_ready;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TREADY;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_179_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_179_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_177_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_177_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_175_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_175_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_173_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_173_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_171_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_171_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_169_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_169_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_167_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_167_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_165_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_165_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_163_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_163_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_161_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_161_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_159_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_159_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_157_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_157_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_155_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_155_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_153_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_153_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_151_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_151_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_149_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_149_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_147_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_147_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_145_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_145_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_143_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_143_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_141_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_141_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_139_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_139_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_137_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_137_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_135_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_135_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_133_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_133_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_131_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_131_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_129_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_129_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_127_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_127_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_125_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_125_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_123_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_123_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_121_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_121_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_119_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_119_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_117_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_117_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_115_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_115_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_113_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_113_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_111_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_111_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_109_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_109_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_107_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_107_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_105_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_105_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_103_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_103_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_101_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_101_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_99_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_99_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_97_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_97_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_95_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_95_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_93_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_93_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_91_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_91_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_89_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_89_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_87_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_87_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_85_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_85_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_83_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_83_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_81_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_81_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_79_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_79_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_77_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_77_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_75_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_75_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_73_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_73_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_71_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_71_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_69_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_69_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_67_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_67_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_65_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_65_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_63_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_63_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_61_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_61_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_59_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_59_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_57_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_57_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_55_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_55_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_53_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_53_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_51_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_51_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_49_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_49_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_47_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_47_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_45_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_45_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_43_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_43_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_41_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_41_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_39_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_39_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_37_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_37_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_35_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_35_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_33_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_33_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_31_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_31_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_29_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_29_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_27_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_27_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_25_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_25_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_23_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_23_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_21_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_21_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_19_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_19_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_17_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_17_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_15_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_15_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_13_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_13_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_11_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_11_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_9_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_9_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_7_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_7_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_5_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_5_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_3_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_3_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_1_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_1_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_178_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_178_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_176_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_176_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_174_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_174_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_172_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_172_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_170_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_170_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_168_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_168_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_166_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_166_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_164_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_164_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_162_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_162_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_160_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_160_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_158_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_158_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_156_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_156_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_154_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_154_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_152_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_152_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_150_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_150_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_148_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_148_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_146_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_146_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_144_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_144_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_142_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_142_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_140_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_140_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_138_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_138_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_136_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_136_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_134_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_134_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_132_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_132_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_130_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_130_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_128_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_128_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_126_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_126_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_124_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_124_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_122_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_122_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_120_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_120_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_118_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_118_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_116_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_116_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_114_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_114_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_112_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_112_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_110_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_110_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_108_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_108_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_106_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_106_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_104_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_104_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_102_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_102_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_100_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_100_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_98_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_98_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_96_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_96_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_94_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_94_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_92_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_92_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_90_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_90_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_88_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_88_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_86_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_86_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_84_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_84_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_82_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_82_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_80_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_80_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_78_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_78_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_76_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_76_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_74_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_74_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_72_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_72_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_70_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_70_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_68_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_68_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_66_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_66_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_64_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_64_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_62_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_62_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_60_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_60_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_58_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_58_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_56_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_56_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_54_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_54_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_52_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_52_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_50_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_50_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_48_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_48_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_46_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_46_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_44_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_44_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_42_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_42_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_40_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_40_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_38_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_38_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_36_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_36_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_34_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_34_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_32_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_32_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_30_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_30_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_28_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_28_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_26_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_26_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_24_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_24_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_22_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_22_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_20_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_20_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_18_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_18_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_16_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_16_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_14_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_14_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_12_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_12_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_10_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_10_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_8_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_8_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_6_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_6_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_4_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_4_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_2_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_2_ce0;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_address0;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_ce0;
-wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TDATA;
-wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TVALID;
-wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TKEEP;
-wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TSTRB;
-wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TUSER;
-wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TLAST;
-wire   [4:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TID;
-wire   [4:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TDEST;
-reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ap_start_reg;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ap_start;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ap_done;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ap_idle;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ap_ready;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_in_stream_TREADY;
+wire   [7:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_d0;
+wire   [7:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_address1;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_ce1;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_we1;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_d1;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_ap_start;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_ap_done;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_ap_idle;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_ap_ready;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_179_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_179_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_179_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_179_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_178_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_178_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_178_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_178_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_177_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_177_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_177_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_177_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_176_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_176_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_176_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_176_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_175_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_175_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_175_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_175_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_174_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_174_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_174_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_174_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_173_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_173_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_173_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_173_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_172_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_172_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_172_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_172_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_171_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_171_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_171_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_171_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_170_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_170_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_170_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_170_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_169_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_169_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_169_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_169_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_168_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_168_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_168_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_168_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_167_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_167_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_167_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_167_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_166_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_166_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_166_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_166_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_165_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_165_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_165_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_165_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_164_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_164_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_164_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_164_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_163_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_163_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_163_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_163_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_162_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_162_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_162_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_162_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_161_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_161_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_161_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_161_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_160_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_160_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_160_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_160_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_159_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_159_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_159_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_159_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_158_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_158_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_158_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_158_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_157_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_157_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_157_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_157_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_156_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_156_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_156_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_156_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_155_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_155_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_155_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_155_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_154_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_154_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_154_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_154_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_153_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_153_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_153_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_153_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_152_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_152_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_152_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_152_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_151_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_151_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_151_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_151_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_150_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_150_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_150_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_150_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_149_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_149_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_149_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_149_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_148_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_148_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_148_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_148_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_147_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_147_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_147_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_147_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_146_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_146_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_146_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_146_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_145_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_145_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_145_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_145_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_144_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_144_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_144_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_144_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_143_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_143_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_143_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_143_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_142_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_142_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_142_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_142_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_141_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_141_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_141_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_141_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_140_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_140_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_140_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_140_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_139_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_139_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_139_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_139_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_138_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_138_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_138_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_138_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_137_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_137_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_137_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_137_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_136_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_136_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_136_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_136_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_135_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_135_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_135_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_135_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_134_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_134_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_134_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_134_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_133_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_133_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_133_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_133_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_132_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_132_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_132_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_132_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_131_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_131_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_131_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_131_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_130_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_130_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_130_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_130_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_129_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_129_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_129_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_129_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_128_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_128_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_128_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_128_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_127_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_127_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_127_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_127_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_126_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_126_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_126_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_126_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_125_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_125_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_125_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_125_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_124_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_124_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_124_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_124_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_123_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_123_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_123_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_123_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_122_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_122_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_122_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_122_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_121_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_121_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_121_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_121_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_120_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_120_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_120_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_120_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_119_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_119_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_119_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_119_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_118_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_118_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_118_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_118_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_117_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_117_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_117_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_117_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_116_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_116_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_116_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_116_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_115_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_115_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_115_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_115_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_114_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_114_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_114_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_114_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_113_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_113_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_113_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_113_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_112_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_112_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_112_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_112_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_111_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_111_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_111_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_111_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_110_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_110_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_110_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_110_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_109_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_109_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_109_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_109_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_108_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_108_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_108_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_108_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_107_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_107_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_107_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_107_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_106_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_106_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_106_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_106_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_105_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_105_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_105_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_105_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_104_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_104_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_104_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_104_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_103_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_103_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_103_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_103_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_102_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_102_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_102_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_102_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_101_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_101_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_101_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_101_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_100_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_100_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_100_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_100_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_99_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_99_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_99_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_99_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_98_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_98_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_98_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_98_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_97_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_97_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_97_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_97_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_96_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_96_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_96_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_96_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_95_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_95_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_95_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_95_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_94_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_94_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_94_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_94_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_93_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_93_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_93_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_93_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_92_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_92_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_92_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_92_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_91_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_91_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_91_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_91_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_90_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_90_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_90_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_90_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_89_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_89_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_89_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_89_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_88_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_88_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_88_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_88_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_87_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_87_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_87_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_87_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_86_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_86_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_86_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_86_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_85_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_85_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_85_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_85_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_84_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_84_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_84_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_84_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_83_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_83_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_83_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_83_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_82_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_82_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_82_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_82_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_81_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_81_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_81_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_81_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_80_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_80_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_80_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_80_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_79_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_79_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_79_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_79_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_78_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_78_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_78_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_78_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_77_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_77_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_77_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_77_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_76_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_76_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_76_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_76_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_75_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_75_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_75_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_75_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_74_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_74_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_74_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_74_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_73_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_73_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_73_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_73_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_72_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_72_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_72_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_72_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_71_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_71_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_71_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_71_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_70_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_70_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_70_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_70_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_69_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_69_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_69_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_69_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_68_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_68_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_68_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_68_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_67_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_67_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_67_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_67_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_66_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_66_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_66_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_66_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_65_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_65_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_65_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_65_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_64_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_64_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_64_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_64_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_63_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_63_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_63_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_63_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_62_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_62_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_62_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_62_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_61_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_61_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_61_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_61_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_60_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_60_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_60_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_60_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_59_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_59_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_59_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_59_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_58_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_58_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_58_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_58_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_57_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_57_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_57_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_57_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_56_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_56_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_56_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_56_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_55_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_55_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_55_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_55_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_54_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_54_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_54_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_54_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_53_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_53_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_53_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_53_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_52_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_52_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_52_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_52_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_51_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_51_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_51_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_51_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_50_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_50_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_50_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_50_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_49_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_49_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_49_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_49_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_48_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_48_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_48_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_48_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_47_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_47_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_47_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_47_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_46_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_46_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_46_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_46_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_45_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_45_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_45_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_45_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_44_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_44_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_44_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_44_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_43_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_43_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_43_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_43_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_42_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_42_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_42_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_42_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_41_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_41_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_41_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_41_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_40_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_40_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_40_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_40_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_39_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_39_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_39_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_39_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_38_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_38_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_38_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_38_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_37_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_37_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_37_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_37_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_36_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_36_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_36_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_36_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_35_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_35_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_35_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_35_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_34_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_34_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_34_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_34_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_33_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_33_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_33_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_33_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_32_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_32_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_32_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_32_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_31_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_31_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_31_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_31_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_30_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_30_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_30_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_30_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_29_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_29_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_29_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_29_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_28_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_28_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_28_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_28_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_27_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_27_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_27_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_27_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_26_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_26_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_26_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_26_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_25_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_25_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_25_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_25_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_24_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_24_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_24_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_24_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_23_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_23_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_23_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_23_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_22_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_22_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_22_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_22_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_21_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_21_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_21_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_21_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_20_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_20_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_20_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_20_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_19_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_19_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_19_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_19_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_18_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_18_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_18_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_18_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_17_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_17_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_17_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_17_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_16_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_16_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_16_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_16_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_15_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_15_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_15_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_15_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_14_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_14_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_14_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_14_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_13_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_13_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_13_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_13_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_12_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_12_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_12_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_12_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_11_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_11_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_11_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_11_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_10_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_10_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_10_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_10_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_9_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_9_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_9_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_9_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_8_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_8_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_8_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_8_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_7_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_7_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_7_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_7_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_6_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_6_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_6_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_6_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_5_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_5_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_5_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_5_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_4_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_4_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_4_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_4_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_3_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_3_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_3_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_3_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_2_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_2_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_2_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_2_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_1_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_1_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_1_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_1_d0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_ce0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_we0;
+wire   [15:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_d0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_in_stream_TREADY;
+wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_min_distance_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_min_distance_out_ap_vld;
+wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_min_pixel_index_i_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_min_pixel_index_i_out_ap_vld;
+wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_min_pixel_index_j_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_min_pixel_index_j_out_ap_vld;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_active_idx_2_out;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_active_idx_2_out_ap_vld;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_ap_start;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_ap_done;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_ap_idle;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_ap_ready;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TREADY;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_179_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_179_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_177_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_177_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_175_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_175_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_173_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_173_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_171_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_171_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_169_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_169_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_167_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_167_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_165_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_165_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_163_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_163_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_161_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_161_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_159_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_159_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_157_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_157_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_155_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_155_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_153_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_153_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_151_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_151_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_149_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_149_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_147_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_147_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_145_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_145_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_143_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_143_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_141_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_141_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_139_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_139_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_137_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_137_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_135_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_135_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_133_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_133_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_131_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_131_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_129_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_129_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_127_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_127_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_125_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_125_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_123_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_123_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_121_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_121_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_119_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_119_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_117_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_117_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_115_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_115_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_113_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_113_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_111_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_111_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_109_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_109_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_107_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_107_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_105_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_105_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_103_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_103_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_101_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_101_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_99_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_99_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_97_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_97_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_95_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_95_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_93_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_93_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_91_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_91_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_89_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_89_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_87_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_87_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_85_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_85_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_83_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_83_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_81_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_81_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_79_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_79_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_77_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_77_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_75_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_75_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_73_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_73_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_71_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_71_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_69_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_69_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_67_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_67_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_65_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_65_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_63_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_63_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_61_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_61_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_59_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_59_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_57_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_57_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_55_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_55_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_53_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_53_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_51_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_51_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_49_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_49_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_47_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_47_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_45_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_45_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_43_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_43_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_41_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_41_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_39_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_39_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_37_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_37_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_35_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_35_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_33_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_33_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_31_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_31_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_29_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_29_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_27_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_27_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_25_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_25_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_23_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_23_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_21_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_21_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_19_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_19_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_17_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_17_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_15_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_15_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_13_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_13_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_11_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_11_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_9_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_9_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_7_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_7_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_5_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_5_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_3_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_3_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_1_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_1_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_178_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_178_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_176_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_176_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_174_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_174_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_172_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_172_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_170_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_170_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_168_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_168_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_166_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_166_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_164_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_164_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_162_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_162_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_160_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_160_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_158_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_158_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_156_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_156_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_154_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_154_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_152_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_152_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_150_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_150_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_148_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_148_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_146_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_146_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_144_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_144_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_142_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_142_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_140_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_140_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_138_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_138_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_136_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_136_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_134_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_134_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_132_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_132_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_130_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_130_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_128_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_128_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_126_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_126_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_124_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_124_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_122_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_122_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_120_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_120_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_118_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_118_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_116_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_116_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_114_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_114_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_112_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_112_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_110_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_110_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_108_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_108_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_106_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_106_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_104_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_104_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_102_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_102_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_100_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_100_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_98_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_98_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_96_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_96_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_94_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_94_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_92_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_92_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_90_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_90_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_88_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_88_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_86_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_86_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_84_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_84_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_82_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_82_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_80_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_80_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_78_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_78_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_76_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_76_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_74_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_74_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_72_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_72_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_70_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_70_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_68_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_68_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_66_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_66_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_64_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_64_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_62_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_62_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_60_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_60_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_58_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_58_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_56_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_56_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_54_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_54_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_52_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_52_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_50_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_50_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_48_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_48_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_46_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_46_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_44_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_44_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_42_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_42_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_40_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_40_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_38_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_38_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_36_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_36_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_34_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_34_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_32_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_32_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_30_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_30_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_28_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_28_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_26_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_26_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_24_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_24_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_22_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_22_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_20_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_20_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_18_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_18_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_16_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_16_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_14_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_14_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_12_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_12_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_10_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_10_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_8_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_8_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_6_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_6_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_4_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_4_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_2_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_2_ce0;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_address0;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_ce0;
+wire   [31:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TDATA;
+wire    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TVALID;
+wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TKEEP;
+wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TSTRB;
+wire   [3:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TUSER;
+wire   [0:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TLAST;
+wire   [4:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TID;
+wire   [4:0] grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TDEST;
+reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ap_start_reg;
 wire    ap_CS_fsm_state2;
 wire    ap_CS_fsm_state3;
-reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_ap_start_reg;
+reg    grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_ap_start_reg;
 wire    ap_CS_fsm_state95;
-reg   [0:0] active_idx_2_loc_fu_446;
-reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_ap_start_reg;
+reg   [0:0] active_idx_2_loc_fu_432;
+reg    grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_ap_start_reg;
 wire    ap_CS_fsm_state98;
-wire   [31:0] grp_fu_3268_p1;
-reg    grp_fu_3268_ce;
 wire    regslice_both_out_stream_V_data_V_U_apdone_blk;
 reg    ap_block_state102;
 reg   [101:0] ap_NS_fsm;
@@ -2509,9 +2507,9 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 102'd1;
-#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ap_start_reg = 1'b0;
-#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_ap_start_reg = 1'b0;
-#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_ap_start_reg = 1'b0;
+#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ap_start_reg = 1'b0;
+#0 grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_ap_start_reg = 1'b0;
+#0 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_ap_start_reg = 1'b0;
 end
 
 hyperspectral_hw_wrapped_pixels_RAM_AUTO_1R1W #(
@@ -2524,7 +2522,7 @@ pixels_U(
     .address0(pixels_address0),
     .ce0(pixels_ce0),
     .we0(pixels_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_d0),
     .q0(pixels_q0)
 );
 
@@ -2538,7 +2536,7 @@ pixels_1_U(
     .address0(pixels_1_address0),
     .ce0(pixels_1_ce0),
     .we0(pixels_1_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_1_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_1_d0),
     .q0(pixels_1_q0)
 );
 
@@ -2552,7 +2550,7 @@ pixels_2_U(
     .address0(pixels_2_address0),
     .ce0(pixels_2_ce0),
     .we0(pixels_2_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_2_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_2_d0),
     .q0(pixels_2_q0)
 );
 
@@ -2566,7 +2564,7 @@ pixels_3_U(
     .address0(pixels_3_address0),
     .ce0(pixels_3_ce0),
     .we0(pixels_3_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_3_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_3_d0),
     .q0(pixels_3_q0)
 );
 
@@ -2580,7 +2578,7 @@ pixels_4_U(
     .address0(pixels_4_address0),
     .ce0(pixels_4_ce0),
     .we0(pixels_4_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_4_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_4_d0),
     .q0(pixels_4_q0)
 );
 
@@ -2594,7 +2592,7 @@ pixels_5_U(
     .address0(pixels_5_address0),
     .ce0(pixels_5_ce0),
     .we0(pixels_5_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_5_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_5_d0),
     .q0(pixels_5_q0)
 );
 
@@ -2608,7 +2606,7 @@ pixels_6_U(
     .address0(pixels_6_address0),
     .ce0(pixels_6_ce0),
     .we0(pixels_6_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_6_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_6_d0),
     .q0(pixels_6_q0)
 );
 
@@ -2622,7 +2620,7 @@ pixels_7_U(
     .address0(pixels_7_address0),
     .ce0(pixels_7_ce0),
     .we0(pixels_7_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_7_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_7_d0),
     .q0(pixels_7_q0)
 );
 
@@ -2636,7 +2634,7 @@ pixels_8_U(
     .address0(pixels_8_address0),
     .ce0(pixels_8_ce0),
     .we0(pixels_8_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_8_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_8_d0),
     .q0(pixels_8_q0)
 );
 
@@ -2650,7 +2648,7 @@ pixels_9_U(
     .address0(pixels_9_address0),
     .ce0(pixels_9_ce0),
     .we0(pixels_9_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_9_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_9_d0),
     .q0(pixels_9_q0)
 );
 
@@ -2664,7 +2662,7 @@ pixels_10_U(
     .address0(pixels_10_address0),
     .ce0(pixels_10_ce0),
     .we0(pixels_10_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_10_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_10_d0),
     .q0(pixels_10_q0)
 );
 
@@ -2678,7 +2676,7 @@ pixels_11_U(
     .address0(pixels_11_address0),
     .ce0(pixels_11_ce0),
     .we0(pixels_11_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_11_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_11_d0),
     .q0(pixels_11_q0)
 );
 
@@ -2692,7 +2690,7 @@ pixels_12_U(
     .address0(pixels_12_address0),
     .ce0(pixels_12_ce0),
     .we0(pixels_12_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_12_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_12_d0),
     .q0(pixels_12_q0)
 );
 
@@ -2706,7 +2704,7 @@ pixels_13_U(
     .address0(pixels_13_address0),
     .ce0(pixels_13_ce0),
     .we0(pixels_13_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_13_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_13_d0),
     .q0(pixels_13_q0)
 );
 
@@ -2720,7 +2718,7 @@ pixels_14_U(
     .address0(pixels_14_address0),
     .ce0(pixels_14_ce0),
     .we0(pixels_14_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_14_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_14_d0),
     .q0(pixels_14_q0)
 );
 
@@ -2734,7 +2732,7 @@ pixels_15_U(
     .address0(pixels_15_address0),
     .ce0(pixels_15_ce0),
     .we0(pixels_15_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_15_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_15_d0),
     .q0(pixels_15_q0)
 );
 
@@ -2748,7 +2746,7 @@ pixels_16_U(
     .address0(pixels_16_address0),
     .ce0(pixels_16_ce0),
     .we0(pixels_16_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_16_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_16_d0),
     .q0(pixels_16_q0)
 );
 
@@ -2762,7 +2760,7 @@ pixels_17_U(
     .address0(pixels_17_address0),
     .ce0(pixels_17_ce0),
     .we0(pixels_17_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_17_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_17_d0),
     .q0(pixels_17_q0)
 );
 
@@ -2776,7 +2774,7 @@ pixels_18_U(
     .address0(pixels_18_address0),
     .ce0(pixels_18_ce0),
     .we0(pixels_18_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_18_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_18_d0),
     .q0(pixels_18_q0)
 );
 
@@ -2790,7 +2788,7 @@ pixels_19_U(
     .address0(pixels_19_address0),
     .ce0(pixels_19_ce0),
     .we0(pixels_19_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_19_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_19_d0),
     .q0(pixels_19_q0)
 );
 
@@ -2804,7 +2802,7 @@ pixels_20_U(
     .address0(pixels_20_address0),
     .ce0(pixels_20_ce0),
     .we0(pixels_20_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_20_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_20_d0),
     .q0(pixels_20_q0)
 );
 
@@ -2818,7 +2816,7 @@ pixels_21_U(
     .address0(pixels_21_address0),
     .ce0(pixels_21_ce0),
     .we0(pixels_21_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_21_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_21_d0),
     .q0(pixels_21_q0)
 );
 
@@ -2832,7 +2830,7 @@ pixels_22_U(
     .address0(pixels_22_address0),
     .ce0(pixels_22_ce0),
     .we0(pixels_22_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_22_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_22_d0),
     .q0(pixels_22_q0)
 );
 
@@ -2846,7 +2844,7 @@ pixels_23_U(
     .address0(pixels_23_address0),
     .ce0(pixels_23_ce0),
     .we0(pixels_23_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_23_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_23_d0),
     .q0(pixels_23_q0)
 );
 
@@ -2860,7 +2858,7 @@ pixels_24_U(
     .address0(pixels_24_address0),
     .ce0(pixels_24_ce0),
     .we0(pixels_24_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_24_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_24_d0),
     .q0(pixels_24_q0)
 );
 
@@ -2874,7 +2872,7 @@ pixels_25_U(
     .address0(pixels_25_address0),
     .ce0(pixels_25_ce0),
     .we0(pixels_25_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_25_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_25_d0),
     .q0(pixels_25_q0)
 );
 
@@ -2888,7 +2886,7 @@ pixels_26_U(
     .address0(pixels_26_address0),
     .ce0(pixels_26_ce0),
     .we0(pixels_26_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_26_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_26_d0),
     .q0(pixels_26_q0)
 );
 
@@ -2902,7 +2900,7 @@ pixels_27_U(
     .address0(pixels_27_address0),
     .ce0(pixels_27_ce0),
     .we0(pixels_27_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_27_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_27_d0),
     .q0(pixels_27_q0)
 );
 
@@ -2916,7 +2914,7 @@ pixels_28_U(
     .address0(pixels_28_address0),
     .ce0(pixels_28_ce0),
     .we0(pixels_28_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_28_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_28_d0),
     .q0(pixels_28_q0)
 );
 
@@ -2930,7 +2928,7 @@ pixels_29_U(
     .address0(pixels_29_address0),
     .ce0(pixels_29_ce0),
     .we0(pixels_29_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_29_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_29_d0),
     .q0(pixels_29_q0)
 );
 
@@ -2944,7 +2942,7 @@ pixels_30_U(
     .address0(pixels_30_address0),
     .ce0(pixels_30_ce0),
     .we0(pixels_30_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_30_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_30_d0),
     .q0(pixels_30_q0)
 );
 
@@ -2958,7 +2956,7 @@ pixels_31_U(
     .address0(pixels_31_address0),
     .ce0(pixels_31_ce0),
     .we0(pixels_31_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_31_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_31_d0),
     .q0(pixels_31_q0)
 );
 
@@ -2972,7 +2970,7 @@ pixels_32_U(
     .address0(pixels_32_address0),
     .ce0(pixels_32_ce0),
     .we0(pixels_32_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_32_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_32_d0),
     .q0(pixels_32_q0)
 );
 
@@ -2986,7 +2984,7 @@ pixels_33_U(
     .address0(pixels_33_address0),
     .ce0(pixels_33_ce0),
     .we0(pixels_33_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_33_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_33_d0),
     .q0(pixels_33_q0)
 );
 
@@ -3000,7 +2998,7 @@ pixels_34_U(
     .address0(pixels_34_address0),
     .ce0(pixels_34_ce0),
     .we0(pixels_34_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_34_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_34_d0),
     .q0(pixels_34_q0)
 );
 
@@ -3014,7 +3012,7 @@ pixels_35_U(
     .address0(pixels_35_address0),
     .ce0(pixels_35_ce0),
     .we0(pixels_35_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_35_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_35_d0),
     .q0(pixels_35_q0)
 );
 
@@ -3028,7 +3026,7 @@ pixels_36_U(
     .address0(pixels_36_address0),
     .ce0(pixels_36_ce0),
     .we0(pixels_36_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_36_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_36_d0),
     .q0(pixels_36_q0)
 );
 
@@ -3042,7 +3040,7 @@ pixels_37_U(
     .address0(pixels_37_address0),
     .ce0(pixels_37_ce0),
     .we0(pixels_37_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_37_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_37_d0),
     .q0(pixels_37_q0)
 );
 
@@ -3056,7 +3054,7 @@ pixels_38_U(
     .address0(pixels_38_address0),
     .ce0(pixels_38_ce0),
     .we0(pixels_38_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_38_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_38_d0),
     .q0(pixels_38_q0)
 );
 
@@ -3070,7 +3068,7 @@ pixels_39_U(
     .address0(pixels_39_address0),
     .ce0(pixels_39_ce0),
     .we0(pixels_39_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_39_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_39_d0),
     .q0(pixels_39_q0)
 );
 
@@ -3084,7 +3082,7 @@ pixels_40_U(
     .address0(pixels_40_address0),
     .ce0(pixels_40_ce0),
     .we0(pixels_40_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_40_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_40_d0),
     .q0(pixels_40_q0)
 );
 
@@ -3098,7 +3096,7 @@ pixels_41_U(
     .address0(pixels_41_address0),
     .ce0(pixels_41_ce0),
     .we0(pixels_41_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_41_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_41_d0),
     .q0(pixels_41_q0)
 );
 
@@ -3112,7 +3110,7 @@ pixels_42_U(
     .address0(pixels_42_address0),
     .ce0(pixels_42_ce0),
     .we0(pixels_42_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_42_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_42_d0),
     .q0(pixels_42_q0)
 );
 
@@ -3126,7 +3124,7 @@ pixels_43_U(
     .address0(pixels_43_address0),
     .ce0(pixels_43_ce0),
     .we0(pixels_43_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_43_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_43_d0),
     .q0(pixels_43_q0)
 );
 
@@ -3140,7 +3138,7 @@ pixels_44_U(
     .address0(pixels_44_address0),
     .ce0(pixels_44_ce0),
     .we0(pixels_44_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_44_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_44_d0),
     .q0(pixels_44_q0)
 );
 
@@ -3154,7 +3152,7 @@ pixels_45_U(
     .address0(pixels_45_address0),
     .ce0(pixels_45_ce0),
     .we0(pixels_45_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_45_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_45_d0),
     .q0(pixels_45_q0)
 );
 
@@ -3168,7 +3166,7 @@ pixels_46_U(
     .address0(pixels_46_address0),
     .ce0(pixels_46_ce0),
     .we0(pixels_46_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_46_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_46_d0),
     .q0(pixels_46_q0)
 );
 
@@ -3182,7 +3180,7 @@ pixels_47_U(
     .address0(pixels_47_address0),
     .ce0(pixels_47_ce0),
     .we0(pixels_47_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_47_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_47_d0),
     .q0(pixels_47_q0)
 );
 
@@ -3196,7 +3194,7 @@ pixels_48_U(
     .address0(pixels_48_address0),
     .ce0(pixels_48_ce0),
     .we0(pixels_48_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_48_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_48_d0),
     .q0(pixels_48_q0)
 );
 
@@ -3210,7 +3208,7 @@ pixels_49_U(
     .address0(pixels_49_address0),
     .ce0(pixels_49_ce0),
     .we0(pixels_49_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_49_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_49_d0),
     .q0(pixels_49_q0)
 );
 
@@ -3224,7 +3222,7 @@ pixels_50_U(
     .address0(pixels_50_address0),
     .ce0(pixels_50_ce0),
     .we0(pixels_50_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_50_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_50_d0),
     .q0(pixels_50_q0)
 );
 
@@ -3238,7 +3236,7 @@ pixels_51_U(
     .address0(pixels_51_address0),
     .ce0(pixels_51_ce0),
     .we0(pixels_51_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_51_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_51_d0),
     .q0(pixels_51_q0)
 );
 
@@ -3252,7 +3250,7 @@ pixels_52_U(
     .address0(pixels_52_address0),
     .ce0(pixels_52_ce0),
     .we0(pixels_52_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_52_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_52_d0),
     .q0(pixels_52_q0)
 );
 
@@ -3266,7 +3264,7 @@ pixels_53_U(
     .address0(pixels_53_address0),
     .ce0(pixels_53_ce0),
     .we0(pixels_53_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_53_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_53_d0),
     .q0(pixels_53_q0)
 );
 
@@ -3280,7 +3278,7 @@ pixels_54_U(
     .address0(pixels_54_address0),
     .ce0(pixels_54_ce0),
     .we0(pixels_54_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_54_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_54_d0),
     .q0(pixels_54_q0)
 );
 
@@ -3294,7 +3292,7 @@ pixels_55_U(
     .address0(pixels_55_address0),
     .ce0(pixels_55_ce0),
     .we0(pixels_55_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_55_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_55_d0),
     .q0(pixels_55_q0)
 );
 
@@ -3308,7 +3306,7 @@ pixels_56_U(
     .address0(pixels_56_address0),
     .ce0(pixels_56_ce0),
     .we0(pixels_56_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_56_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_56_d0),
     .q0(pixels_56_q0)
 );
 
@@ -3322,7 +3320,7 @@ pixels_57_U(
     .address0(pixels_57_address0),
     .ce0(pixels_57_ce0),
     .we0(pixels_57_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_57_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_57_d0),
     .q0(pixels_57_q0)
 );
 
@@ -3336,7 +3334,7 @@ pixels_58_U(
     .address0(pixels_58_address0),
     .ce0(pixels_58_ce0),
     .we0(pixels_58_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_58_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_58_d0),
     .q0(pixels_58_q0)
 );
 
@@ -3350,7 +3348,7 @@ pixels_59_U(
     .address0(pixels_59_address0),
     .ce0(pixels_59_ce0),
     .we0(pixels_59_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_59_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_59_d0),
     .q0(pixels_59_q0)
 );
 
@@ -3364,7 +3362,7 @@ pixels_60_U(
     .address0(pixels_60_address0),
     .ce0(pixels_60_ce0),
     .we0(pixels_60_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_60_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_60_d0),
     .q0(pixels_60_q0)
 );
 
@@ -3378,7 +3376,7 @@ pixels_61_U(
     .address0(pixels_61_address0),
     .ce0(pixels_61_ce0),
     .we0(pixels_61_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_61_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_61_d0),
     .q0(pixels_61_q0)
 );
 
@@ -3392,7 +3390,7 @@ pixels_62_U(
     .address0(pixels_62_address0),
     .ce0(pixels_62_ce0),
     .we0(pixels_62_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_62_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_62_d0),
     .q0(pixels_62_q0)
 );
 
@@ -3406,7 +3404,7 @@ pixels_63_U(
     .address0(pixels_63_address0),
     .ce0(pixels_63_ce0),
     .we0(pixels_63_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_63_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_63_d0),
     .q0(pixels_63_q0)
 );
 
@@ -3420,7 +3418,7 @@ pixels_64_U(
     .address0(pixels_64_address0),
     .ce0(pixels_64_ce0),
     .we0(pixels_64_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_64_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_64_d0),
     .q0(pixels_64_q0)
 );
 
@@ -3434,7 +3432,7 @@ pixels_65_U(
     .address0(pixels_65_address0),
     .ce0(pixels_65_ce0),
     .we0(pixels_65_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_65_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_65_d0),
     .q0(pixels_65_q0)
 );
 
@@ -3448,7 +3446,7 @@ pixels_66_U(
     .address0(pixels_66_address0),
     .ce0(pixels_66_ce0),
     .we0(pixels_66_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_66_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_66_d0),
     .q0(pixels_66_q0)
 );
 
@@ -3462,7 +3460,7 @@ pixels_67_U(
     .address0(pixels_67_address0),
     .ce0(pixels_67_ce0),
     .we0(pixels_67_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_67_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_67_d0),
     .q0(pixels_67_q0)
 );
 
@@ -3476,7 +3474,7 @@ pixels_68_U(
     .address0(pixels_68_address0),
     .ce0(pixels_68_ce0),
     .we0(pixels_68_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_68_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_68_d0),
     .q0(pixels_68_q0)
 );
 
@@ -3490,7 +3488,7 @@ pixels_69_U(
     .address0(pixels_69_address0),
     .ce0(pixels_69_ce0),
     .we0(pixels_69_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_69_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_69_d0),
     .q0(pixels_69_q0)
 );
 
@@ -3504,7 +3502,7 @@ pixels_70_U(
     .address0(pixels_70_address0),
     .ce0(pixels_70_ce0),
     .we0(pixels_70_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_70_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_70_d0),
     .q0(pixels_70_q0)
 );
 
@@ -3518,7 +3516,7 @@ pixels_71_U(
     .address0(pixels_71_address0),
     .ce0(pixels_71_ce0),
     .we0(pixels_71_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_71_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_71_d0),
     .q0(pixels_71_q0)
 );
 
@@ -3532,7 +3530,7 @@ pixels_72_U(
     .address0(pixels_72_address0),
     .ce0(pixels_72_ce0),
     .we0(pixels_72_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_72_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_72_d0),
     .q0(pixels_72_q0)
 );
 
@@ -3546,7 +3544,7 @@ pixels_73_U(
     .address0(pixels_73_address0),
     .ce0(pixels_73_ce0),
     .we0(pixels_73_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_73_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_73_d0),
     .q0(pixels_73_q0)
 );
 
@@ -3560,7 +3558,7 @@ pixels_74_U(
     .address0(pixels_74_address0),
     .ce0(pixels_74_ce0),
     .we0(pixels_74_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_74_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_74_d0),
     .q0(pixels_74_q0)
 );
 
@@ -3574,7 +3572,7 @@ pixels_75_U(
     .address0(pixels_75_address0),
     .ce0(pixels_75_ce0),
     .we0(pixels_75_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_75_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_75_d0),
     .q0(pixels_75_q0)
 );
 
@@ -3588,7 +3586,7 @@ pixels_76_U(
     .address0(pixels_76_address0),
     .ce0(pixels_76_ce0),
     .we0(pixels_76_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_76_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_76_d0),
     .q0(pixels_76_q0)
 );
 
@@ -3602,7 +3600,7 @@ pixels_77_U(
     .address0(pixels_77_address0),
     .ce0(pixels_77_ce0),
     .we0(pixels_77_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_77_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_77_d0),
     .q0(pixels_77_q0)
 );
 
@@ -3616,7 +3614,7 @@ pixels_78_U(
     .address0(pixels_78_address0),
     .ce0(pixels_78_ce0),
     .we0(pixels_78_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_78_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_78_d0),
     .q0(pixels_78_q0)
 );
 
@@ -3630,7 +3628,7 @@ pixels_79_U(
     .address0(pixels_79_address0),
     .ce0(pixels_79_ce0),
     .we0(pixels_79_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_79_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_79_d0),
     .q0(pixels_79_q0)
 );
 
@@ -3644,7 +3642,7 @@ pixels_80_U(
     .address0(pixels_80_address0),
     .ce0(pixels_80_ce0),
     .we0(pixels_80_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_80_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_80_d0),
     .q0(pixels_80_q0)
 );
 
@@ -3658,7 +3656,7 @@ pixels_81_U(
     .address0(pixels_81_address0),
     .ce0(pixels_81_ce0),
     .we0(pixels_81_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_81_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_81_d0),
     .q0(pixels_81_q0)
 );
 
@@ -3672,7 +3670,7 @@ pixels_82_U(
     .address0(pixels_82_address0),
     .ce0(pixels_82_ce0),
     .we0(pixels_82_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_82_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_82_d0),
     .q0(pixels_82_q0)
 );
 
@@ -3686,7 +3684,7 @@ pixels_83_U(
     .address0(pixels_83_address0),
     .ce0(pixels_83_ce0),
     .we0(pixels_83_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_83_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_83_d0),
     .q0(pixels_83_q0)
 );
 
@@ -3700,7 +3698,7 @@ pixels_84_U(
     .address0(pixels_84_address0),
     .ce0(pixels_84_ce0),
     .we0(pixels_84_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_84_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_84_d0),
     .q0(pixels_84_q0)
 );
 
@@ -3714,7 +3712,7 @@ pixels_85_U(
     .address0(pixels_85_address0),
     .ce0(pixels_85_ce0),
     .we0(pixels_85_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_85_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_85_d0),
     .q0(pixels_85_q0)
 );
 
@@ -3728,7 +3726,7 @@ pixels_86_U(
     .address0(pixels_86_address0),
     .ce0(pixels_86_ce0),
     .we0(pixels_86_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_86_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_86_d0),
     .q0(pixels_86_q0)
 );
 
@@ -3742,7 +3740,7 @@ pixels_87_U(
     .address0(pixels_87_address0),
     .ce0(pixels_87_ce0),
     .we0(pixels_87_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_87_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_87_d0),
     .q0(pixels_87_q0)
 );
 
@@ -3756,7 +3754,7 @@ pixels_88_U(
     .address0(pixels_88_address0),
     .ce0(pixels_88_ce0),
     .we0(pixels_88_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_88_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_88_d0),
     .q0(pixels_88_q0)
 );
 
@@ -3770,7 +3768,7 @@ pixels_89_U(
     .address0(pixels_89_address0),
     .ce0(pixels_89_ce0),
     .we0(pixels_89_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_89_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_89_d0),
     .q0(pixels_89_q0)
 );
 
@@ -3784,7 +3782,7 @@ pixels_90_U(
     .address0(pixels_90_address0),
     .ce0(pixels_90_ce0),
     .we0(pixels_90_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_90_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_90_d0),
     .q0(pixels_90_q0)
 );
 
@@ -3798,7 +3796,7 @@ pixels_91_U(
     .address0(pixels_91_address0),
     .ce0(pixels_91_ce0),
     .we0(pixels_91_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_91_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_91_d0),
     .q0(pixels_91_q0)
 );
 
@@ -3812,7 +3810,7 @@ pixels_92_U(
     .address0(pixels_92_address0),
     .ce0(pixels_92_ce0),
     .we0(pixels_92_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_92_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_92_d0),
     .q0(pixels_92_q0)
 );
 
@@ -3826,7 +3824,7 @@ pixels_93_U(
     .address0(pixels_93_address0),
     .ce0(pixels_93_ce0),
     .we0(pixels_93_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_93_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_93_d0),
     .q0(pixels_93_q0)
 );
 
@@ -3840,7 +3838,7 @@ pixels_94_U(
     .address0(pixels_94_address0),
     .ce0(pixels_94_ce0),
     .we0(pixels_94_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_94_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_94_d0),
     .q0(pixels_94_q0)
 );
 
@@ -3854,7 +3852,7 @@ pixels_95_U(
     .address0(pixels_95_address0),
     .ce0(pixels_95_ce0),
     .we0(pixels_95_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_95_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_95_d0),
     .q0(pixels_95_q0)
 );
 
@@ -3868,7 +3866,7 @@ pixels_96_U(
     .address0(pixels_96_address0),
     .ce0(pixels_96_ce0),
     .we0(pixels_96_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_96_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_96_d0),
     .q0(pixels_96_q0)
 );
 
@@ -3882,7 +3880,7 @@ pixels_97_U(
     .address0(pixels_97_address0),
     .ce0(pixels_97_ce0),
     .we0(pixels_97_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_97_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_97_d0),
     .q0(pixels_97_q0)
 );
 
@@ -3896,7 +3894,7 @@ pixels_98_U(
     .address0(pixels_98_address0),
     .ce0(pixels_98_ce0),
     .we0(pixels_98_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_98_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_98_d0),
     .q0(pixels_98_q0)
 );
 
@@ -3910,7 +3908,7 @@ pixels_99_U(
     .address0(pixels_99_address0),
     .ce0(pixels_99_ce0),
     .we0(pixels_99_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_99_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_99_d0),
     .q0(pixels_99_q0)
 );
 
@@ -3924,7 +3922,7 @@ pixels_100_U(
     .address0(pixels_100_address0),
     .ce0(pixels_100_ce0),
     .we0(pixels_100_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_100_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_100_d0),
     .q0(pixels_100_q0)
 );
 
@@ -3938,7 +3936,7 @@ pixels_101_U(
     .address0(pixels_101_address0),
     .ce0(pixels_101_ce0),
     .we0(pixels_101_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_101_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_101_d0),
     .q0(pixels_101_q0)
 );
 
@@ -3952,7 +3950,7 @@ pixels_102_U(
     .address0(pixels_102_address0),
     .ce0(pixels_102_ce0),
     .we0(pixels_102_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_102_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_102_d0),
     .q0(pixels_102_q0)
 );
 
@@ -3966,7 +3964,7 @@ pixels_103_U(
     .address0(pixels_103_address0),
     .ce0(pixels_103_ce0),
     .we0(pixels_103_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_103_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_103_d0),
     .q0(pixels_103_q0)
 );
 
@@ -3980,7 +3978,7 @@ pixels_104_U(
     .address0(pixels_104_address0),
     .ce0(pixels_104_ce0),
     .we0(pixels_104_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_104_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_104_d0),
     .q0(pixels_104_q0)
 );
 
@@ -3994,7 +3992,7 @@ pixels_105_U(
     .address0(pixels_105_address0),
     .ce0(pixels_105_ce0),
     .we0(pixels_105_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_105_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_105_d0),
     .q0(pixels_105_q0)
 );
 
@@ -4008,7 +4006,7 @@ pixels_106_U(
     .address0(pixels_106_address0),
     .ce0(pixels_106_ce0),
     .we0(pixels_106_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_106_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_106_d0),
     .q0(pixels_106_q0)
 );
 
@@ -4022,7 +4020,7 @@ pixels_107_U(
     .address0(pixels_107_address0),
     .ce0(pixels_107_ce0),
     .we0(pixels_107_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_107_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_107_d0),
     .q0(pixels_107_q0)
 );
 
@@ -4036,7 +4034,7 @@ pixels_108_U(
     .address0(pixels_108_address0),
     .ce0(pixels_108_ce0),
     .we0(pixels_108_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_108_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_108_d0),
     .q0(pixels_108_q0)
 );
 
@@ -4050,7 +4048,7 @@ pixels_109_U(
     .address0(pixels_109_address0),
     .ce0(pixels_109_ce0),
     .we0(pixels_109_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_109_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_109_d0),
     .q0(pixels_109_q0)
 );
 
@@ -4064,7 +4062,7 @@ pixels_110_U(
     .address0(pixels_110_address0),
     .ce0(pixels_110_ce0),
     .we0(pixels_110_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_110_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_110_d0),
     .q0(pixels_110_q0)
 );
 
@@ -4078,7 +4076,7 @@ pixels_111_U(
     .address0(pixels_111_address0),
     .ce0(pixels_111_ce0),
     .we0(pixels_111_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_111_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_111_d0),
     .q0(pixels_111_q0)
 );
 
@@ -4092,7 +4090,7 @@ pixels_112_U(
     .address0(pixels_112_address0),
     .ce0(pixels_112_ce0),
     .we0(pixels_112_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_112_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_112_d0),
     .q0(pixels_112_q0)
 );
 
@@ -4106,7 +4104,7 @@ pixels_113_U(
     .address0(pixels_113_address0),
     .ce0(pixels_113_ce0),
     .we0(pixels_113_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_113_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_113_d0),
     .q0(pixels_113_q0)
 );
 
@@ -4120,7 +4118,7 @@ pixels_114_U(
     .address0(pixels_114_address0),
     .ce0(pixels_114_ce0),
     .we0(pixels_114_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_114_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_114_d0),
     .q0(pixels_114_q0)
 );
 
@@ -4134,7 +4132,7 @@ pixels_115_U(
     .address0(pixels_115_address0),
     .ce0(pixels_115_ce0),
     .we0(pixels_115_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_115_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_115_d0),
     .q0(pixels_115_q0)
 );
 
@@ -4148,7 +4146,7 @@ pixels_116_U(
     .address0(pixels_116_address0),
     .ce0(pixels_116_ce0),
     .we0(pixels_116_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_116_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_116_d0),
     .q0(pixels_116_q0)
 );
 
@@ -4162,7 +4160,7 @@ pixels_117_U(
     .address0(pixels_117_address0),
     .ce0(pixels_117_ce0),
     .we0(pixels_117_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_117_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_117_d0),
     .q0(pixels_117_q0)
 );
 
@@ -4176,7 +4174,7 @@ pixels_118_U(
     .address0(pixels_118_address0),
     .ce0(pixels_118_ce0),
     .we0(pixels_118_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_118_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_118_d0),
     .q0(pixels_118_q0)
 );
 
@@ -4190,7 +4188,7 @@ pixels_119_U(
     .address0(pixels_119_address0),
     .ce0(pixels_119_ce0),
     .we0(pixels_119_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_119_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_119_d0),
     .q0(pixels_119_q0)
 );
 
@@ -4204,7 +4202,7 @@ pixels_120_U(
     .address0(pixels_120_address0),
     .ce0(pixels_120_ce0),
     .we0(pixels_120_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_120_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_120_d0),
     .q0(pixels_120_q0)
 );
 
@@ -4218,7 +4216,7 @@ pixels_121_U(
     .address0(pixels_121_address0),
     .ce0(pixels_121_ce0),
     .we0(pixels_121_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_121_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_121_d0),
     .q0(pixels_121_q0)
 );
 
@@ -4232,7 +4230,7 @@ pixels_122_U(
     .address0(pixels_122_address0),
     .ce0(pixels_122_ce0),
     .we0(pixels_122_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_122_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_122_d0),
     .q0(pixels_122_q0)
 );
 
@@ -4246,7 +4244,7 @@ pixels_123_U(
     .address0(pixels_123_address0),
     .ce0(pixels_123_ce0),
     .we0(pixels_123_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_123_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_123_d0),
     .q0(pixels_123_q0)
 );
 
@@ -4260,7 +4258,7 @@ pixels_124_U(
     .address0(pixels_124_address0),
     .ce0(pixels_124_ce0),
     .we0(pixels_124_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_124_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_124_d0),
     .q0(pixels_124_q0)
 );
 
@@ -4274,7 +4272,7 @@ pixels_125_U(
     .address0(pixels_125_address0),
     .ce0(pixels_125_ce0),
     .we0(pixels_125_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_125_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_125_d0),
     .q0(pixels_125_q0)
 );
 
@@ -4288,7 +4286,7 @@ pixels_126_U(
     .address0(pixels_126_address0),
     .ce0(pixels_126_ce0),
     .we0(pixels_126_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_126_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_126_d0),
     .q0(pixels_126_q0)
 );
 
@@ -4302,7 +4300,7 @@ pixels_127_U(
     .address0(pixels_127_address0),
     .ce0(pixels_127_ce0),
     .we0(pixels_127_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_127_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_127_d0),
     .q0(pixels_127_q0)
 );
 
@@ -4316,7 +4314,7 @@ pixels_128_U(
     .address0(pixels_128_address0),
     .ce0(pixels_128_ce0),
     .we0(pixels_128_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_128_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_128_d0),
     .q0(pixels_128_q0)
 );
 
@@ -4330,7 +4328,7 @@ pixels_129_U(
     .address0(pixels_129_address0),
     .ce0(pixels_129_ce0),
     .we0(pixels_129_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_129_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_129_d0),
     .q0(pixels_129_q0)
 );
 
@@ -4344,7 +4342,7 @@ pixels_130_U(
     .address0(pixels_130_address0),
     .ce0(pixels_130_ce0),
     .we0(pixels_130_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_130_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_130_d0),
     .q0(pixels_130_q0)
 );
 
@@ -4358,7 +4356,7 @@ pixels_131_U(
     .address0(pixels_131_address0),
     .ce0(pixels_131_ce0),
     .we0(pixels_131_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_131_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_131_d0),
     .q0(pixels_131_q0)
 );
 
@@ -4372,7 +4370,7 @@ pixels_132_U(
     .address0(pixels_132_address0),
     .ce0(pixels_132_ce0),
     .we0(pixels_132_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_132_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_132_d0),
     .q0(pixels_132_q0)
 );
 
@@ -4386,7 +4384,7 @@ pixels_133_U(
     .address0(pixels_133_address0),
     .ce0(pixels_133_ce0),
     .we0(pixels_133_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_133_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_133_d0),
     .q0(pixels_133_q0)
 );
 
@@ -4400,7 +4398,7 @@ pixels_134_U(
     .address0(pixels_134_address0),
     .ce0(pixels_134_ce0),
     .we0(pixels_134_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_134_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_134_d0),
     .q0(pixels_134_q0)
 );
 
@@ -4414,7 +4412,7 @@ pixels_135_U(
     .address0(pixels_135_address0),
     .ce0(pixels_135_ce0),
     .we0(pixels_135_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_135_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_135_d0),
     .q0(pixels_135_q0)
 );
 
@@ -4428,7 +4426,7 @@ pixels_136_U(
     .address0(pixels_136_address0),
     .ce0(pixels_136_ce0),
     .we0(pixels_136_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_136_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_136_d0),
     .q0(pixels_136_q0)
 );
 
@@ -4442,7 +4440,7 @@ pixels_137_U(
     .address0(pixels_137_address0),
     .ce0(pixels_137_ce0),
     .we0(pixels_137_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_137_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_137_d0),
     .q0(pixels_137_q0)
 );
 
@@ -4456,7 +4454,7 @@ pixels_138_U(
     .address0(pixels_138_address0),
     .ce0(pixels_138_ce0),
     .we0(pixels_138_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_138_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_138_d0),
     .q0(pixels_138_q0)
 );
 
@@ -4470,7 +4468,7 @@ pixels_139_U(
     .address0(pixels_139_address0),
     .ce0(pixels_139_ce0),
     .we0(pixels_139_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_139_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_139_d0),
     .q0(pixels_139_q0)
 );
 
@@ -4484,7 +4482,7 @@ pixels_140_U(
     .address0(pixels_140_address0),
     .ce0(pixels_140_ce0),
     .we0(pixels_140_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_140_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_140_d0),
     .q0(pixels_140_q0)
 );
 
@@ -4498,7 +4496,7 @@ pixels_141_U(
     .address0(pixels_141_address0),
     .ce0(pixels_141_ce0),
     .we0(pixels_141_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_141_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_141_d0),
     .q0(pixels_141_q0)
 );
 
@@ -4512,7 +4510,7 @@ pixels_142_U(
     .address0(pixels_142_address0),
     .ce0(pixels_142_ce0),
     .we0(pixels_142_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_142_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_142_d0),
     .q0(pixels_142_q0)
 );
 
@@ -4526,7 +4524,7 @@ pixels_143_U(
     .address0(pixels_143_address0),
     .ce0(pixels_143_ce0),
     .we0(pixels_143_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_143_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_143_d0),
     .q0(pixels_143_q0)
 );
 
@@ -4540,7 +4538,7 @@ pixels_144_U(
     .address0(pixels_144_address0),
     .ce0(pixels_144_ce0),
     .we0(pixels_144_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_144_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_144_d0),
     .q0(pixels_144_q0)
 );
 
@@ -4554,7 +4552,7 @@ pixels_145_U(
     .address0(pixels_145_address0),
     .ce0(pixels_145_ce0),
     .we0(pixels_145_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_145_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_145_d0),
     .q0(pixels_145_q0)
 );
 
@@ -4568,7 +4566,7 @@ pixels_146_U(
     .address0(pixels_146_address0),
     .ce0(pixels_146_ce0),
     .we0(pixels_146_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_146_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_146_d0),
     .q0(pixels_146_q0)
 );
 
@@ -4582,7 +4580,7 @@ pixels_147_U(
     .address0(pixels_147_address0),
     .ce0(pixels_147_ce0),
     .we0(pixels_147_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_147_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_147_d0),
     .q0(pixels_147_q0)
 );
 
@@ -4596,7 +4594,7 @@ pixels_148_U(
     .address0(pixels_148_address0),
     .ce0(pixels_148_ce0),
     .we0(pixels_148_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_148_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_148_d0),
     .q0(pixels_148_q0)
 );
 
@@ -4610,7 +4608,7 @@ pixels_149_U(
     .address0(pixels_149_address0),
     .ce0(pixels_149_ce0),
     .we0(pixels_149_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_149_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_149_d0),
     .q0(pixels_149_q0)
 );
 
@@ -4624,7 +4622,7 @@ pixels_150_U(
     .address0(pixels_150_address0),
     .ce0(pixels_150_ce0),
     .we0(pixels_150_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_150_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_150_d0),
     .q0(pixels_150_q0)
 );
 
@@ -4638,7 +4636,7 @@ pixels_151_U(
     .address0(pixels_151_address0),
     .ce0(pixels_151_ce0),
     .we0(pixels_151_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_151_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_151_d0),
     .q0(pixels_151_q0)
 );
 
@@ -4652,7 +4650,7 @@ pixels_152_U(
     .address0(pixels_152_address0),
     .ce0(pixels_152_ce0),
     .we0(pixels_152_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_152_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_152_d0),
     .q0(pixels_152_q0)
 );
 
@@ -4666,7 +4664,7 @@ pixels_153_U(
     .address0(pixels_153_address0),
     .ce0(pixels_153_ce0),
     .we0(pixels_153_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_153_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_153_d0),
     .q0(pixels_153_q0)
 );
 
@@ -4680,7 +4678,7 @@ pixels_154_U(
     .address0(pixels_154_address0),
     .ce0(pixels_154_ce0),
     .we0(pixels_154_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_154_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_154_d0),
     .q0(pixels_154_q0)
 );
 
@@ -4694,7 +4692,7 @@ pixels_155_U(
     .address0(pixels_155_address0),
     .ce0(pixels_155_ce0),
     .we0(pixels_155_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_155_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_155_d0),
     .q0(pixels_155_q0)
 );
 
@@ -4708,7 +4706,7 @@ pixels_156_U(
     .address0(pixels_156_address0),
     .ce0(pixels_156_ce0),
     .we0(pixels_156_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_156_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_156_d0),
     .q0(pixels_156_q0)
 );
 
@@ -4722,7 +4720,7 @@ pixels_157_U(
     .address0(pixels_157_address0),
     .ce0(pixels_157_ce0),
     .we0(pixels_157_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_157_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_157_d0),
     .q0(pixels_157_q0)
 );
 
@@ -4736,7 +4734,7 @@ pixels_158_U(
     .address0(pixels_158_address0),
     .ce0(pixels_158_ce0),
     .we0(pixels_158_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_158_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_158_d0),
     .q0(pixels_158_q0)
 );
 
@@ -4750,7 +4748,7 @@ pixels_159_U(
     .address0(pixels_159_address0),
     .ce0(pixels_159_ce0),
     .we0(pixels_159_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_159_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_159_d0),
     .q0(pixels_159_q0)
 );
 
@@ -4764,7 +4762,7 @@ pixels_160_U(
     .address0(pixels_160_address0),
     .ce0(pixels_160_ce0),
     .we0(pixels_160_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_160_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_160_d0),
     .q0(pixels_160_q0)
 );
 
@@ -4778,7 +4776,7 @@ pixels_161_U(
     .address0(pixels_161_address0),
     .ce0(pixels_161_ce0),
     .we0(pixels_161_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_161_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_161_d0),
     .q0(pixels_161_q0)
 );
 
@@ -4792,7 +4790,7 @@ pixels_162_U(
     .address0(pixels_162_address0),
     .ce0(pixels_162_ce0),
     .we0(pixels_162_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_162_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_162_d0),
     .q0(pixels_162_q0)
 );
 
@@ -4806,7 +4804,7 @@ pixels_163_U(
     .address0(pixels_163_address0),
     .ce0(pixels_163_ce0),
     .we0(pixels_163_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_163_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_163_d0),
     .q0(pixels_163_q0)
 );
 
@@ -4820,7 +4818,7 @@ pixels_164_U(
     .address0(pixels_164_address0),
     .ce0(pixels_164_ce0),
     .we0(pixels_164_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_164_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_164_d0),
     .q0(pixels_164_q0)
 );
 
@@ -4834,7 +4832,7 @@ pixels_165_U(
     .address0(pixels_165_address0),
     .ce0(pixels_165_ce0),
     .we0(pixels_165_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_165_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_165_d0),
     .q0(pixels_165_q0)
 );
 
@@ -4848,7 +4846,7 @@ pixels_166_U(
     .address0(pixels_166_address0),
     .ce0(pixels_166_ce0),
     .we0(pixels_166_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_166_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_166_d0),
     .q0(pixels_166_q0)
 );
 
@@ -4862,7 +4860,7 @@ pixels_167_U(
     .address0(pixels_167_address0),
     .ce0(pixels_167_ce0),
     .we0(pixels_167_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_167_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_167_d0),
     .q0(pixels_167_q0)
 );
 
@@ -4876,7 +4874,7 @@ pixels_168_U(
     .address0(pixels_168_address0),
     .ce0(pixels_168_ce0),
     .we0(pixels_168_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_168_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_168_d0),
     .q0(pixels_168_q0)
 );
 
@@ -4890,7 +4888,7 @@ pixels_169_U(
     .address0(pixels_169_address0),
     .ce0(pixels_169_ce0),
     .we0(pixels_169_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_169_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_169_d0),
     .q0(pixels_169_q0)
 );
 
@@ -4904,7 +4902,7 @@ pixels_170_U(
     .address0(pixels_170_address0),
     .ce0(pixels_170_ce0),
     .we0(pixels_170_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_170_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_170_d0),
     .q0(pixels_170_q0)
 );
 
@@ -4918,7 +4916,7 @@ pixels_171_U(
     .address0(pixels_171_address0),
     .ce0(pixels_171_ce0),
     .we0(pixels_171_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_171_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_171_d0),
     .q0(pixels_171_q0)
 );
 
@@ -4932,7 +4930,7 @@ pixels_172_U(
     .address0(pixels_172_address0),
     .ce0(pixels_172_ce0),
     .we0(pixels_172_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_172_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_172_d0),
     .q0(pixels_172_q0)
 );
 
@@ -4946,7 +4944,7 @@ pixels_173_U(
     .address0(pixels_173_address0),
     .ce0(pixels_173_ce0),
     .we0(pixels_173_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_173_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_173_d0),
     .q0(pixels_173_q0)
 );
 
@@ -4960,7 +4958,7 @@ pixels_174_U(
     .address0(pixels_174_address0),
     .ce0(pixels_174_ce0),
     .we0(pixels_174_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_174_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_174_d0),
     .q0(pixels_174_q0)
 );
 
@@ -4974,7 +4972,7 @@ pixels_175_U(
     .address0(pixels_175_address0),
     .ce0(pixels_175_ce0),
     .we0(pixels_175_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_175_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_175_d0),
     .q0(pixels_175_q0)
 );
 
@@ -4988,7 +4986,7 @@ pixels_176_U(
     .address0(pixels_176_address0),
     .ce0(pixels_176_ce0),
     .we0(pixels_176_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_176_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_176_d0),
     .q0(pixels_176_q0)
 );
 
@@ -5002,7 +5000,7 @@ pixels_177_U(
     .address0(pixels_177_address0),
     .ce0(pixels_177_ce0),
     .we0(pixels_177_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_177_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_177_d0),
     .q0(pixels_177_q0)
 );
 
@@ -5016,7 +5014,7 @@ pixels_178_U(
     .address0(pixels_178_address0),
     .ce0(pixels_178_ce0),
     .we0(pixels_178_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_178_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_178_d0),
     .q0(pixels_178_q0)
 );
 
@@ -5030,7 +5028,7 @@ pixels_179_U(
     .address0(pixels_179_address0),
     .ce0(pixels_179_ce0),
     .we0(pixels_179_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_179_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_179_d0),
     .q0(pixels_179_q0)
 );
 
@@ -5044,1524 +5042,1524 @@ ref_pixel_V_U(
     .address0(ref_pixel_V_address0),
     .ce0(ref_pixel_V_ce0),
     .we0(ref_pixel_V_we0),
-    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_d0),
+    .d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_d0),
     .q0(ref_pixel_V_q0),
     .address1(ref_pixel_V_address1),
     .ce1(ref_pixel_V_ce1),
     .we1(ref_pixel_V_we1),
-    .d1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_d1),
+    .d1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_d1),
     .q1(ref_pixel_V_q1)
 );
 
-hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666(
+hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ap_start),
-    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ap_done),
-    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ap_idle),
-    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ap_ready),
+    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ap_start),
+    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ap_done),
+    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ap_idle),
+    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ap_ready),
     .in_stream_TVALID(in_stream_TVALID_int_regslice),
     .in_stream_TDATA(in_stream_TDATA_int_regslice),
-    .in_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_in_stream_TREADY),
+    .in_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_in_stream_TREADY),
     .in_stream_TKEEP(in_stream_TKEEP_int_regslice),
     .in_stream_TSTRB(in_stream_TSTRB_int_regslice),
     .in_stream_TUSER(in_stream_TUSER_int_regslice),
     .in_stream_TLAST(in_stream_TLAST_int_regslice),
     .in_stream_TID(in_stream_TID_int_regslice),
     .in_stream_TDEST(in_stream_TDEST_int_regslice),
-    .ref_pixel_V_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_address0),
-    .ref_pixel_V_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_ce0),
-    .ref_pixel_V_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_we0),
-    .ref_pixel_V_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_d0),
-    .ref_pixel_V_address1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_address1),
-    .ref_pixel_V_ce1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_ce1),
-    .ref_pixel_V_we1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_we1),
-    .ref_pixel_V_d1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_d1)
+    .ref_pixel_V_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_address0),
+    .ref_pixel_V_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_ce0),
+    .ref_pixel_V_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_we0),
+    .ref_pixel_V_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_d0),
+    .ref_pixel_V_address1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_address1),
+    .ref_pixel_V_ce1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_ce1),
+    .ref_pixel_V_we1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_we1),
+    .ref_pixel_V_d1(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_d1)
 );
 
-hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685(
+hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L1 grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_ap_start),
-    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_ap_done),
-    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_ap_idle),
-    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_ap_ready),
+    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_ap_start),
+    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_ap_done),
+    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_ap_idle),
+    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_ap_ready),
     .in_stream_TVALID(in_stream_TVALID_int_regslice),
-    .pixels_179_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_179_address0),
-    .pixels_179_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_179_ce0),
-    .pixels_179_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_179_we0),
-    .pixels_179_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_179_d0),
-    .pixels_178_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_178_address0),
-    .pixels_178_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_178_ce0),
-    .pixels_178_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_178_we0),
-    .pixels_178_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_178_d0),
-    .pixels_177_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_177_address0),
-    .pixels_177_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_177_ce0),
-    .pixels_177_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_177_we0),
-    .pixels_177_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_177_d0),
-    .pixels_176_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_176_address0),
-    .pixels_176_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_176_ce0),
-    .pixels_176_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_176_we0),
-    .pixels_176_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_176_d0),
-    .pixels_175_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_175_address0),
-    .pixels_175_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_175_ce0),
-    .pixels_175_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_175_we0),
-    .pixels_175_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_175_d0),
-    .pixels_174_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_174_address0),
-    .pixels_174_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_174_ce0),
-    .pixels_174_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_174_we0),
-    .pixels_174_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_174_d0),
-    .pixels_173_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_173_address0),
-    .pixels_173_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_173_ce0),
-    .pixels_173_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_173_we0),
-    .pixels_173_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_173_d0),
-    .pixels_172_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_172_address0),
-    .pixels_172_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_172_ce0),
-    .pixels_172_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_172_we0),
-    .pixels_172_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_172_d0),
-    .pixels_171_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_171_address0),
-    .pixels_171_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_171_ce0),
-    .pixels_171_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_171_we0),
-    .pixels_171_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_171_d0),
-    .pixels_170_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_170_address0),
-    .pixels_170_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_170_ce0),
-    .pixels_170_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_170_we0),
-    .pixels_170_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_170_d0),
-    .pixels_169_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_169_address0),
-    .pixels_169_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_169_ce0),
-    .pixels_169_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_169_we0),
-    .pixels_169_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_169_d0),
-    .pixels_168_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_168_address0),
-    .pixels_168_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_168_ce0),
-    .pixels_168_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_168_we0),
-    .pixels_168_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_168_d0),
-    .pixels_167_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_167_address0),
-    .pixels_167_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_167_ce0),
-    .pixels_167_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_167_we0),
-    .pixels_167_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_167_d0),
-    .pixels_166_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_166_address0),
-    .pixels_166_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_166_ce0),
-    .pixels_166_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_166_we0),
-    .pixels_166_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_166_d0),
-    .pixels_165_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_165_address0),
-    .pixels_165_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_165_ce0),
-    .pixels_165_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_165_we0),
-    .pixels_165_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_165_d0),
-    .pixels_164_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_164_address0),
-    .pixels_164_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_164_ce0),
-    .pixels_164_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_164_we0),
-    .pixels_164_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_164_d0),
-    .pixels_163_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_163_address0),
-    .pixels_163_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_163_ce0),
-    .pixels_163_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_163_we0),
-    .pixels_163_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_163_d0),
-    .pixels_162_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_162_address0),
-    .pixels_162_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_162_ce0),
-    .pixels_162_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_162_we0),
-    .pixels_162_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_162_d0),
-    .pixels_161_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_161_address0),
-    .pixels_161_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_161_ce0),
-    .pixels_161_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_161_we0),
-    .pixels_161_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_161_d0),
-    .pixels_160_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_160_address0),
-    .pixels_160_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_160_ce0),
-    .pixels_160_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_160_we0),
-    .pixels_160_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_160_d0),
-    .pixels_159_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_159_address0),
-    .pixels_159_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_159_ce0),
-    .pixels_159_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_159_we0),
-    .pixels_159_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_159_d0),
-    .pixels_158_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_158_address0),
-    .pixels_158_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_158_ce0),
-    .pixels_158_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_158_we0),
-    .pixels_158_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_158_d0),
-    .pixels_157_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_157_address0),
-    .pixels_157_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_157_ce0),
-    .pixels_157_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_157_we0),
-    .pixels_157_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_157_d0),
-    .pixels_156_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_156_address0),
-    .pixels_156_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_156_ce0),
-    .pixels_156_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_156_we0),
-    .pixels_156_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_156_d0),
-    .pixels_155_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_155_address0),
-    .pixels_155_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_155_ce0),
-    .pixels_155_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_155_we0),
-    .pixels_155_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_155_d0),
-    .pixels_154_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_154_address0),
-    .pixels_154_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_154_ce0),
-    .pixels_154_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_154_we0),
-    .pixels_154_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_154_d0),
-    .pixels_153_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_153_address0),
-    .pixels_153_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_153_ce0),
-    .pixels_153_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_153_we0),
-    .pixels_153_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_153_d0),
-    .pixels_152_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_152_address0),
-    .pixels_152_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_152_ce0),
-    .pixels_152_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_152_we0),
-    .pixels_152_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_152_d0),
-    .pixels_151_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_151_address0),
-    .pixels_151_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_151_ce0),
-    .pixels_151_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_151_we0),
-    .pixels_151_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_151_d0),
-    .pixels_150_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_150_address0),
-    .pixels_150_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_150_ce0),
-    .pixels_150_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_150_we0),
-    .pixels_150_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_150_d0),
-    .pixels_149_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_149_address0),
-    .pixels_149_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_149_ce0),
-    .pixels_149_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_149_we0),
-    .pixels_149_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_149_d0),
-    .pixels_148_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_148_address0),
-    .pixels_148_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_148_ce0),
-    .pixels_148_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_148_we0),
-    .pixels_148_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_148_d0),
-    .pixels_147_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_147_address0),
-    .pixels_147_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_147_ce0),
-    .pixels_147_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_147_we0),
-    .pixels_147_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_147_d0),
-    .pixels_146_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_146_address0),
-    .pixels_146_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_146_ce0),
-    .pixels_146_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_146_we0),
-    .pixels_146_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_146_d0),
-    .pixels_145_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_145_address0),
-    .pixels_145_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_145_ce0),
-    .pixels_145_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_145_we0),
-    .pixels_145_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_145_d0),
-    .pixels_144_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_144_address0),
-    .pixels_144_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_144_ce0),
-    .pixels_144_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_144_we0),
-    .pixels_144_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_144_d0),
-    .pixels_143_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_143_address0),
-    .pixels_143_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_143_ce0),
-    .pixels_143_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_143_we0),
-    .pixels_143_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_143_d0),
-    .pixels_142_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_142_address0),
-    .pixels_142_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_142_ce0),
-    .pixels_142_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_142_we0),
-    .pixels_142_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_142_d0),
-    .pixels_141_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_141_address0),
-    .pixels_141_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_141_ce0),
-    .pixels_141_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_141_we0),
-    .pixels_141_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_141_d0),
-    .pixels_140_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_140_address0),
-    .pixels_140_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_140_ce0),
-    .pixels_140_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_140_we0),
-    .pixels_140_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_140_d0),
-    .pixels_139_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_139_address0),
-    .pixels_139_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_139_ce0),
-    .pixels_139_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_139_we0),
-    .pixels_139_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_139_d0),
-    .pixels_138_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_138_address0),
-    .pixels_138_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_138_ce0),
-    .pixels_138_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_138_we0),
-    .pixels_138_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_138_d0),
-    .pixels_137_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_137_address0),
-    .pixels_137_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_137_ce0),
-    .pixels_137_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_137_we0),
-    .pixels_137_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_137_d0),
-    .pixels_136_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_136_address0),
-    .pixels_136_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_136_ce0),
-    .pixels_136_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_136_we0),
-    .pixels_136_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_136_d0),
-    .pixels_135_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_135_address0),
-    .pixels_135_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_135_ce0),
-    .pixels_135_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_135_we0),
-    .pixels_135_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_135_d0),
-    .pixels_134_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_134_address0),
-    .pixels_134_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_134_ce0),
-    .pixels_134_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_134_we0),
-    .pixels_134_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_134_d0),
-    .pixels_133_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_133_address0),
-    .pixels_133_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_133_ce0),
-    .pixels_133_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_133_we0),
-    .pixels_133_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_133_d0),
-    .pixels_132_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_132_address0),
-    .pixels_132_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_132_ce0),
-    .pixels_132_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_132_we0),
-    .pixels_132_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_132_d0),
-    .pixels_131_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_131_address0),
-    .pixels_131_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_131_ce0),
-    .pixels_131_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_131_we0),
-    .pixels_131_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_131_d0),
-    .pixels_130_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_130_address0),
-    .pixels_130_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_130_ce0),
-    .pixels_130_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_130_we0),
-    .pixels_130_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_130_d0),
-    .pixels_129_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_129_address0),
-    .pixels_129_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_129_ce0),
-    .pixels_129_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_129_we0),
-    .pixels_129_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_129_d0),
-    .pixels_128_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_128_address0),
-    .pixels_128_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_128_ce0),
-    .pixels_128_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_128_we0),
-    .pixels_128_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_128_d0),
-    .pixels_127_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_127_address0),
-    .pixels_127_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_127_ce0),
-    .pixels_127_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_127_we0),
-    .pixels_127_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_127_d0),
-    .pixels_126_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_126_address0),
-    .pixels_126_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_126_ce0),
-    .pixels_126_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_126_we0),
-    .pixels_126_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_126_d0),
-    .pixels_125_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_125_address0),
-    .pixels_125_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_125_ce0),
-    .pixels_125_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_125_we0),
-    .pixels_125_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_125_d0),
-    .pixels_124_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_124_address0),
-    .pixels_124_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_124_ce0),
-    .pixels_124_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_124_we0),
-    .pixels_124_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_124_d0),
-    .pixels_123_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_123_address0),
-    .pixels_123_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_123_ce0),
-    .pixels_123_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_123_we0),
-    .pixels_123_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_123_d0),
-    .pixels_122_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_122_address0),
-    .pixels_122_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_122_ce0),
-    .pixels_122_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_122_we0),
-    .pixels_122_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_122_d0),
-    .pixels_121_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_121_address0),
-    .pixels_121_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_121_ce0),
-    .pixels_121_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_121_we0),
-    .pixels_121_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_121_d0),
-    .pixels_120_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_120_address0),
-    .pixels_120_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_120_ce0),
-    .pixels_120_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_120_we0),
-    .pixels_120_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_120_d0),
-    .pixels_119_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_119_address0),
-    .pixels_119_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_119_ce0),
-    .pixels_119_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_119_we0),
-    .pixels_119_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_119_d0),
-    .pixels_118_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_118_address0),
-    .pixels_118_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_118_ce0),
-    .pixels_118_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_118_we0),
-    .pixels_118_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_118_d0),
-    .pixels_117_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_117_address0),
-    .pixels_117_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_117_ce0),
-    .pixels_117_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_117_we0),
-    .pixels_117_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_117_d0),
-    .pixels_116_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_116_address0),
-    .pixels_116_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_116_ce0),
-    .pixels_116_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_116_we0),
-    .pixels_116_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_116_d0),
-    .pixels_115_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_115_address0),
-    .pixels_115_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_115_ce0),
-    .pixels_115_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_115_we0),
-    .pixels_115_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_115_d0),
-    .pixels_114_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_114_address0),
-    .pixels_114_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_114_ce0),
-    .pixels_114_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_114_we0),
-    .pixels_114_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_114_d0),
-    .pixels_113_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_113_address0),
-    .pixels_113_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_113_ce0),
-    .pixels_113_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_113_we0),
-    .pixels_113_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_113_d0),
-    .pixels_112_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_112_address0),
-    .pixels_112_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_112_ce0),
-    .pixels_112_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_112_we0),
-    .pixels_112_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_112_d0),
-    .pixels_111_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_111_address0),
-    .pixels_111_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_111_ce0),
-    .pixels_111_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_111_we0),
-    .pixels_111_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_111_d0),
-    .pixels_110_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_110_address0),
-    .pixels_110_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_110_ce0),
-    .pixels_110_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_110_we0),
-    .pixels_110_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_110_d0),
-    .pixels_109_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_109_address0),
-    .pixels_109_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_109_ce0),
-    .pixels_109_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_109_we0),
-    .pixels_109_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_109_d0),
-    .pixels_108_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_108_address0),
-    .pixels_108_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_108_ce0),
-    .pixels_108_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_108_we0),
-    .pixels_108_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_108_d0),
-    .pixels_107_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_107_address0),
-    .pixels_107_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_107_ce0),
-    .pixels_107_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_107_we0),
-    .pixels_107_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_107_d0),
-    .pixels_106_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_106_address0),
-    .pixels_106_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_106_ce0),
-    .pixels_106_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_106_we0),
-    .pixels_106_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_106_d0),
-    .pixels_105_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_105_address0),
-    .pixels_105_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_105_ce0),
-    .pixels_105_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_105_we0),
-    .pixels_105_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_105_d0),
-    .pixels_104_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_104_address0),
-    .pixels_104_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_104_ce0),
-    .pixels_104_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_104_we0),
-    .pixels_104_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_104_d0),
-    .pixels_103_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_103_address0),
-    .pixels_103_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_103_ce0),
-    .pixels_103_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_103_we0),
-    .pixels_103_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_103_d0),
-    .pixels_102_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_102_address0),
-    .pixels_102_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_102_ce0),
-    .pixels_102_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_102_we0),
-    .pixels_102_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_102_d0),
-    .pixels_101_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_101_address0),
-    .pixels_101_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_101_ce0),
-    .pixels_101_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_101_we0),
-    .pixels_101_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_101_d0),
-    .pixels_100_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_100_address0),
-    .pixels_100_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_100_ce0),
-    .pixels_100_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_100_we0),
-    .pixels_100_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_100_d0),
-    .pixels_99_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_99_address0),
-    .pixels_99_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_99_ce0),
-    .pixels_99_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_99_we0),
-    .pixels_99_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_99_d0),
-    .pixels_98_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_98_address0),
-    .pixels_98_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_98_ce0),
-    .pixels_98_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_98_we0),
-    .pixels_98_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_98_d0),
-    .pixels_97_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_97_address0),
-    .pixels_97_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_97_ce0),
-    .pixels_97_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_97_we0),
-    .pixels_97_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_97_d0),
-    .pixels_96_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_96_address0),
-    .pixels_96_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_96_ce0),
-    .pixels_96_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_96_we0),
-    .pixels_96_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_96_d0),
-    .pixels_95_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_95_address0),
-    .pixels_95_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_95_ce0),
-    .pixels_95_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_95_we0),
-    .pixels_95_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_95_d0),
-    .pixels_94_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_94_address0),
-    .pixels_94_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_94_ce0),
-    .pixels_94_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_94_we0),
-    .pixels_94_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_94_d0),
-    .pixels_93_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_93_address0),
-    .pixels_93_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_93_ce0),
-    .pixels_93_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_93_we0),
-    .pixels_93_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_93_d0),
-    .pixels_92_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_92_address0),
-    .pixels_92_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_92_ce0),
-    .pixels_92_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_92_we0),
-    .pixels_92_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_92_d0),
-    .pixels_91_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_91_address0),
-    .pixels_91_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_91_ce0),
-    .pixels_91_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_91_we0),
-    .pixels_91_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_91_d0),
-    .pixels_90_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_90_address0),
-    .pixels_90_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_90_ce0),
-    .pixels_90_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_90_we0),
-    .pixels_90_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_90_d0),
-    .pixels_89_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_89_address0),
-    .pixels_89_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_89_ce0),
-    .pixels_89_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_89_we0),
-    .pixels_89_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_89_d0),
-    .pixels_88_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_88_address0),
-    .pixels_88_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_88_ce0),
-    .pixels_88_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_88_we0),
-    .pixels_88_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_88_d0),
-    .pixels_87_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_87_address0),
-    .pixels_87_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_87_ce0),
-    .pixels_87_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_87_we0),
-    .pixels_87_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_87_d0),
-    .pixels_86_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_86_address0),
-    .pixels_86_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_86_ce0),
-    .pixels_86_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_86_we0),
-    .pixels_86_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_86_d0),
-    .pixels_85_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_85_address0),
-    .pixels_85_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_85_ce0),
-    .pixels_85_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_85_we0),
-    .pixels_85_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_85_d0),
-    .pixels_84_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_84_address0),
-    .pixels_84_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_84_ce0),
-    .pixels_84_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_84_we0),
-    .pixels_84_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_84_d0),
-    .pixels_83_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_83_address0),
-    .pixels_83_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_83_ce0),
-    .pixels_83_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_83_we0),
-    .pixels_83_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_83_d0),
-    .pixels_82_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_82_address0),
-    .pixels_82_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_82_ce0),
-    .pixels_82_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_82_we0),
-    .pixels_82_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_82_d0),
-    .pixels_81_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_81_address0),
-    .pixels_81_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_81_ce0),
-    .pixels_81_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_81_we0),
-    .pixels_81_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_81_d0),
-    .pixels_80_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_80_address0),
-    .pixels_80_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_80_ce0),
-    .pixels_80_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_80_we0),
-    .pixels_80_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_80_d0),
-    .pixels_79_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_79_address0),
-    .pixels_79_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_79_ce0),
-    .pixels_79_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_79_we0),
-    .pixels_79_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_79_d0),
-    .pixels_78_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_78_address0),
-    .pixels_78_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_78_ce0),
-    .pixels_78_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_78_we0),
-    .pixels_78_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_78_d0),
-    .pixels_77_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_77_address0),
-    .pixels_77_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_77_ce0),
-    .pixels_77_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_77_we0),
-    .pixels_77_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_77_d0),
-    .pixels_76_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_76_address0),
-    .pixels_76_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_76_ce0),
-    .pixels_76_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_76_we0),
-    .pixels_76_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_76_d0),
-    .pixels_75_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_75_address0),
-    .pixels_75_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_75_ce0),
-    .pixels_75_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_75_we0),
-    .pixels_75_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_75_d0),
-    .pixels_74_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_74_address0),
-    .pixels_74_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_74_ce0),
-    .pixels_74_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_74_we0),
-    .pixels_74_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_74_d0),
-    .pixels_73_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_73_address0),
-    .pixels_73_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_73_ce0),
-    .pixels_73_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_73_we0),
-    .pixels_73_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_73_d0),
-    .pixels_72_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_72_address0),
-    .pixels_72_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_72_ce0),
-    .pixels_72_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_72_we0),
-    .pixels_72_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_72_d0),
-    .pixels_71_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_71_address0),
-    .pixels_71_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_71_ce0),
-    .pixels_71_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_71_we0),
-    .pixels_71_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_71_d0),
-    .pixels_70_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_70_address0),
-    .pixels_70_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_70_ce0),
-    .pixels_70_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_70_we0),
-    .pixels_70_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_70_d0),
-    .pixels_69_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_69_address0),
-    .pixels_69_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_69_ce0),
-    .pixels_69_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_69_we0),
-    .pixels_69_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_69_d0),
-    .pixels_68_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_68_address0),
-    .pixels_68_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_68_ce0),
-    .pixels_68_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_68_we0),
-    .pixels_68_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_68_d0),
-    .pixels_67_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_67_address0),
-    .pixels_67_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_67_ce0),
-    .pixels_67_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_67_we0),
-    .pixels_67_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_67_d0),
-    .pixels_66_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_66_address0),
-    .pixels_66_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_66_ce0),
-    .pixels_66_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_66_we0),
-    .pixels_66_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_66_d0),
-    .pixels_65_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_65_address0),
-    .pixels_65_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_65_ce0),
-    .pixels_65_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_65_we0),
-    .pixels_65_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_65_d0),
-    .pixels_64_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_64_address0),
-    .pixels_64_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_64_ce0),
-    .pixels_64_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_64_we0),
-    .pixels_64_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_64_d0),
-    .pixels_63_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_63_address0),
-    .pixels_63_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_63_ce0),
-    .pixels_63_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_63_we0),
-    .pixels_63_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_63_d0),
-    .pixels_62_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_62_address0),
-    .pixels_62_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_62_ce0),
-    .pixels_62_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_62_we0),
-    .pixels_62_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_62_d0),
-    .pixels_61_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_61_address0),
-    .pixels_61_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_61_ce0),
-    .pixels_61_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_61_we0),
-    .pixels_61_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_61_d0),
-    .pixels_60_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_60_address0),
-    .pixels_60_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_60_ce0),
-    .pixels_60_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_60_we0),
-    .pixels_60_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_60_d0),
-    .pixels_59_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_59_address0),
-    .pixels_59_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_59_ce0),
-    .pixels_59_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_59_we0),
-    .pixels_59_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_59_d0),
-    .pixels_58_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_58_address0),
-    .pixels_58_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_58_ce0),
-    .pixels_58_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_58_we0),
-    .pixels_58_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_58_d0),
-    .pixels_57_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_57_address0),
-    .pixels_57_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_57_ce0),
-    .pixels_57_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_57_we0),
-    .pixels_57_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_57_d0),
-    .pixels_56_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_56_address0),
-    .pixels_56_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_56_ce0),
-    .pixels_56_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_56_we0),
-    .pixels_56_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_56_d0),
-    .pixels_55_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_55_address0),
-    .pixels_55_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_55_ce0),
-    .pixels_55_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_55_we0),
-    .pixels_55_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_55_d0),
-    .pixels_54_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_54_address0),
-    .pixels_54_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_54_ce0),
-    .pixels_54_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_54_we0),
-    .pixels_54_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_54_d0),
-    .pixels_53_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_53_address0),
-    .pixels_53_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_53_ce0),
-    .pixels_53_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_53_we0),
-    .pixels_53_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_53_d0),
-    .pixels_52_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_52_address0),
-    .pixels_52_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_52_ce0),
-    .pixels_52_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_52_we0),
-    .pixels_52_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_52_d0),
-    .pixels_51_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_51_address0),
-    .pixels_51_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_51_ce0),
-    .pixels_51_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_51_we0),
-    .pixels_51_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_51_d0),
-    .pixels_50_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_50_address0),
-    .pixels_50_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_50_ce0),
-    .pixels_50_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_50_we0),
-    .pixels_50_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_50_d0),
-    .pixels_49_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_49_address0),
-    .pixels_49_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_49_ce0),
-    .pixels_49_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_49_we0),
-    .pixels_49_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_49_d0),
-    .pixels_48_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_48_address0),
-    .pixels_48_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_48_ce0),
-    .pixels_48_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_48_we0),
-    .pixels_48_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_48_d0),
-    .pixels_47_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_47_address0),
-    .pixels_47_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_47_ce0),
-    .pixels_47_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_47_we0),
-    .pixels_47_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_47_d0),
-    .pixels_46_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_46_address0),
-    .pixels_46_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_46_ce0),
-    .pixels_46_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_46_we0),
-    .pixels_46_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_46_d0),
-    .pixels_45_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_45_address0),
-    .pixels_45_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_45_ce0),
-    .pixels_45_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_45_we0),
-    .pixels_45_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_45_d0),
-    .pixels_44_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_44_address0),
-    .pixels_44_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_44_ce0),
-    .pixels_44_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_44_we0),
-    .pixels_44_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_44_d0),
-    .pixels_43_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_43_address0),
-    .pixels_43_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_43_ce0),
-    .pixels_43_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_43_we0),
-    .pixels_43_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_43_d0),
-    .pixels_42_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_42_address0),
-    .pixels_42_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_42_ce0),
-    .pixels_42_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_42_we0),
-    .pixels_42_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_42_d0),
-    .pixels_41_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_41_address0),
-    .pixels_41_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_41_ce0),
-    .pixels_41_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_41_we0),
-    .pixels_41_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_41_d0),
-    .pixels_40_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_40_address0),
-    .pixels_40_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_40_ce0),
-    .pixels_40_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_40_we0),
-    .pixels_40_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_40_d0),
-    .pixels_39_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_39_address0),
-    .pixels_39_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_39_ce0),
-    .pixels_39_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_39_we0),
-    .pixels_39_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_39_d0),
-    .pixels_38_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_38_address0),
-    .pixels_38_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_38_ce0),
-    .pixels_38_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_38_we0),
-    .pixels_38_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_38_d0),
-    .pixels_37_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_37_address0),
-    .pixels_37_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_37_ce0),
-    .pixels_37_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_37_we0),
-    .pixels_37_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_37_d0),
-    .pixels_36_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_36_address0),
-    .pixels_36_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_36_ce0),
-    .pixels_36_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_36_we0),
-    .pixels_36_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_36_d0),
-    .pixels_35_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_35_address0),
-    .pixels_35_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_35_ce0),
-    .pixels_35_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_35_we0),
-    .pixels_35_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_35_d0),
-    .pixels_34_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_34_address0),
-    .pixels_34_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_34_ce0),
-    .pixels_34_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_34_we0),
-    .pixels_34_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_34_d0),
-    .pixels_33_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_33_address0),
-    .pixels_33_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_33_ce0),
-    .pixels_33_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_33_we0),
-    .pixels_33_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_33_d0),
-    .pixels_32_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_32_address0),
-    .pixels_32_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_32_ce0),
-    .pixels_32_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_32_we0),
-    .pixels_32_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_32_d0),
-    .pixels_31_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_31_address0),
-    .pixels_31_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_31_ce0),
-    .pixels_31_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_31_we0),
-    .pixels_31_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_31_d0),
-    .pixels_30_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_30_address0),
-    .pixels_30_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_30_ce0),
-    .pixels_30_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_30_we0),
-    .pixels_30_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_30_d0),
-    .pixels_29_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_29_address0),
-    .pixels_29_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_29_ce0),
-    .pixels_29_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_29_we0),
-    .pixels_29_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_29_d0),
-    .pixels_28_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_28_address0),
-    .pixels_28_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_28_ce0),
-    .pixels_28_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_28_we0),
-    .pixels_28_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_28_d0),
-    .pixels_27_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_27_address0),
-    .pixels_27_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_27_ce0),
-    .pixels_27_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_27_we0),
-    .pixels_27_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_27_d0),
-    .pixels_26_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_26_address0),
-    .pixels_26_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_26_ce0),
-    .pixels_26_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_26_we0),
-    .pixels_26_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_26_d0),
-    .pixels_25_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_25_address0),
-    .pixels_25_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_25_ce0),
-    .pixels_25_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_25_we0),
-    .pixels_25_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_25_d0),
-    .pixels_24_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_24_address0),
-    .pixels_24_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_24_ce0),
-    .pixels_24_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_24_we0),
-    .pixels_24_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_24_d0),
-    .pixels_23_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_23_address0),
-    .pixels_23_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_23_ce0),
-    .pixels_23_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_23_we0),
-    .pixels_23_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_23_d0),
-    .pixels_22_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_22_address0),
-    .pixels_22_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_22_ce0),
-    .pixels_22_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_22_we0),
-    .pixels_22_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_22_d0),
-    .pixels_21_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_21_address0),
-    .pixels_21_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_21_ce0),
-    .pixels_21_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_21_we0),
-    .pixels_21_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_21_d0),
-    .pixels_20_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_20_address0),
-    .pixels_20_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_20_ce0),
-    .pixels_20_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_20_we0),
-    .pixels_20_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_20_d0),
-    .pixels_19_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_19_address0),
-    .pixels_19_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_19_ce0),
-    .pixels_19_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_19_we0),
-    .pixels_19_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_19_d0),
-    .pixels_18_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_18_address0),
-    .pixels_18_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_18_ce0),
-    .pixels_18_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_18_we0),
-    .pixels_18_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_18_d0),
-    .pixels_17_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_17_address0),
-    .pixels_17_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_17_ce0),
-    .pixels_17_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_17_we0),
-    .pixels_17_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_17_d0),
-    .pixels_16_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_16_address0),
-    .pixels_16_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_16_ce0),
-    .pixels_16_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_16_we0),
-    .pixels_16_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_16_d0),
-    .pixels_15_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_15_address0),
-    .pixels_15_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_15_ce0),
-    .pixels_15_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_15_we0),
-    .pixels_15_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_15_d0),
-    .pixels_14_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_14_address0),
-    .pixels_14_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_14_ce0),
-    .pixels_14_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_14_we0),
-    .pixels_14_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_14_d0),
-    .pixels_13_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_13_address0),
-    .pixels_13_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_13_ce0),
-    .pixels_13_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_13_we0),
-    .pixels_13_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_13_d0),
-    .pixels_12_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_12_address0),
-    .pixels_12_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_12_ce0),
-    .pixels_12_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_12_we0),
-    .pixels_12_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_12_d0),
-    .pixels_11_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_11_address0),
-    .pixels_11_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_11_ce0),
-    .pixels_11_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_11_we0),
-    .pixels_11_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_11_d0),
-    .pixels_10_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_10_address0),
-    .pixels_10_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_10_ce0),
-    .pixels_10_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_10_we0),
-    .pixels_10_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_10_d0),
-    .pixels_9_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_9_address0),
-    .pixels_9_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_9_ce0),
-    .pixels_9_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_9_we0),
-    .pixels_9_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_9_d0),
-    .pixels_8_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_8_address0),
-    .pixels_8_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_8_ce0),
-    .pixels_8_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_8_we0),
-    .pixels_8_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_8_d0),
-    .pixels_7_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_7_address0),
-    .pixels_7_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_7_ce0),
-    .pixels_7_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_7_we0),
-    .pixels_7_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_7_d0),
-    .pixels_6_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_6_address0),
-    .pixels_6_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_6_ce0),
-    .pixels_6_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_6_we0),
-    .pixels_6_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_6_d0),
-    .pixels_5_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_5_address0),
-    .pixels_5_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_5_ce0),
-    .pixels_5_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_5_we0),
-    .pixels_5_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_5_d0),
-    .pixels_4_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_4_address0),
-    .pixels_4_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_4_ce0),
-    .pixels_4_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_4_we0),
-    .pixels_4_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_4_d0),
-    .pixels_3_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_3_address0),
-    .pixels_3_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_3_ce0),
-    .pixels_3_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_3_we0),
-    .pixels_3_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_3_d0),
-    .pixels_2_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_2_address0),
-    .pixels_2_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_2_ce0),
-    .pixels_2_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_2_we0),
-    .pixels_2_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_2_d0),
-    .pixels_1_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_1_address0),
-    .pixels_1_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_1_ce0),
-    .pixels_1_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_1_we0),
-    .pixels_1_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_1_d0),
-    .pixels_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_address0),
-    .pixels_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_ce0),
-    .pixels_we0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_we0),
-    .pixels_d0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_d0),
+    .pixels_179_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_179_address0),
+    .pixels_179_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_179_ce0),
+    .pixels_179_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_179_we0),
+    .pixels_179_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_179_d0),
+    .pixels_178_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_178_address0),
+    .pixels_178_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_178_ce0),
+    .pixels_178_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_178_we0),
+    .pixels_178_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_178_d0),
+    .pixels_177_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_177_address0),
+    .pixels_177_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_177_ce0),
+    .pixels_177_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_177_we0),
+    .pixels_177_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_177_d0),
+    .pixels_176_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_176_address0),
+    .pixels_176_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_176_ce0),
+    .pixels_176_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_176_we0),
+    .pixels_176_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_176_d0),
+    .pixels_175_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_175_address0),
+    .pixels_175_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_175_ce0),
+    .pixels_175_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_175_we0),
+    .pixels_175_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_175_d0),
+    .pixels_174_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_174_address0),
+    .pixels_174_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_174_ce0),
+    .pixels_174_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_174_we0),
+    .pixels_174_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_174_d0),
+    .pixels_173_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_173_address0),
+    .pixels_173_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_173_ce0),
+    .pixels_173_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_173_we0),
+    .pixels_173_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_173_d0),
+    .pixels_172_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_172_address0),
+    .pixels_172_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_172_ce0),
+    .pixels_172_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_172_we0),
+    .pixels_172_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_172_d0),
+    .pixels_171_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_171_address0),
+    .pixels_171_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_171_ce0),
+    .pixels_171_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_171_we0),
+    .pixels_171_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_171_d0),
+    .pixels_170_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_170_address0),
+    .pixels_170_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_170_ce0),
+    .pixels_170_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_170_we0),
+    .pixels_170_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_170_d0),
+    .pixels_169_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_169_address0),
+    .pixels_169_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_169_ce0),
+    .pixels_169_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_169_we0),
+    .pixels_169_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_169_d0),
+    .pixels_168_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_168_address0),
+    .pixels_168_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_168_ce0),
+    .pixels_168_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_168_we0),
+    .pixels_168_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_168_d0),
+    .pixels_167_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_167_address0),
+    .pixels_167_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_167_ce0),
+    .pixels_167_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_167_we0),
+    .pixels_167_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_167_d0),
+    .pixels_166_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_166_address0),
+    .pixels_166_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_166_ce0),
+    .pixels_166_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_166_we0),
+    .pixels_166_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_166_d0),
+    .pixels_165_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_165_address0),
+    .pixels_165_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_165_ce0),
+    .pixels_165_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_165_we0),
+    .pixels_165_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_165_d0),
+    .pixels_164_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_164_address0),
+    .pixels_164_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_164_ce0),
+    .pixels_164_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_164_we0),
+    .pixels_164_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_164_d0),
+    .pixels_163_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_163_address0),
+    .pixels_163_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_163_ce0),
+    .pixels_163_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_163_we0),
+    .pixels_163_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_163_d0),
+    .pixels_162_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_162_address0),
+    .pixels_162_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_162_ce0),
+    .pixels_162_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_162_we0),
+    .pixels_162_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_162_d0),
+    .pixels_161_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_161_address0),
+    .pixels_161_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_161_ce0),
+    .pixels_161_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_161_we0),
+    .pixels_161_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_161_d0),
+    .pixels_160_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_160_address0),
+    .pixels_160_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_160_ce0),
+    .pixels_160_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_160_we0),
+    .pixels_160_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_160_d0),
+    .pixels_159_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_159_address0),
+    .pixels_159_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_159_ce0),
+    .pixels_159_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_159_we0),
+    .pixels_159_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_159_d0),
+    .pixels_158_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_158_address0),
+    .pixels_158_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_158_ce0),
+    .pixels_158_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_158_we0),
+    .pixels_158_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_158_d0),
+    .pixels_157_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_157_address0),
+    .pixels_157_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_157_ce0),
+    .pixels_157_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_157_we0),
+    .pixels_157_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_157_d0),
+    .pixels_156_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_156_address0),
+    .pixels_156_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_156_ce0),
+    .pixels_156_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_156_we0),
+    .pixels_156_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_156_d0),
+    .pixels_155_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_155_address0),
+    .pixels_155_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_155_ce0),
+    .pixels_155_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_155_we0),
+    .pixels_155_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_155_d0),
+    .pixels_154_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_154_address0),
+    .pixels_154_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_154_ce0),
+    .pixels_154_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_154_we0),
+    .pixels_154_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_154_d0),
+    .pixels_153_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_153_address0),
+    .pixels_153_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_153_ce0),
+    .pixels_153_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_153_we0),
+    .pixels_153_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_153_d0),
+    .pixels_152_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_152_address0),
+    .pixels_152_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_152_ce0),
+    .pixels_152_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_152_we0),
+    .pixels_152_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_152_d0),
+    .pixels_151_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_151_address0),
+    .pixels_151_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_151_ce0),
+    .pixels_151_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_151_we0),
+    .pixels_151_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_151_d0),
+    .pixels_150_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_150_address0),
+    .pixels_150_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_150_ce0),
+    .pixels_150_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_150_we0),
+    .pixels_150_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_150_d0),
+    .pixels_149_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_149_address0),
+    .pixels_149_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_149_ce0),
+    .pixels_149_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_149_we0),
+    .pixels_149_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_149_d0),
+    .pixels_148_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_148_address0),
+    .pixels_148_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_148_ce0),
+    .pixels_148_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_148_we0),
+    .pixels_148_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_148_d0),
+    .pixels_147_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_147_address0),
+    .pixels_147_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_147_ce0),
+    .pixels_147_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_147_we0),
+    .pixels_147_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_147_d0),
+    .pixels_146_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_146_address0),
+    .pixels_146_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_146_ce0),
+    .pixels_146_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_146_we0),
+    .pixels_146_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_146_d0),
+    .pixels_145_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_145_address0),
+    .pixels_145_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_145_ce0),
+    .pixels_145_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_145_we0),
+    .pixels_145_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_145_d0),
+    .pixels_144_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_144_address0),
+    .pixels_144_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_144_ce0),
+    .pixels_144_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_144_we0),
+    .pixels_144_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_144_d0),
+    .pixels_143_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_143_address0),
+    .pixels_143_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_143_ce0),
+    .pixels_143_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_143_we0),
+    .pixels_143_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_143_d0),
+    .pixels_142_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_142_address0),
+    .pixels_142_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_142_ce0),
+    .pixels_142_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_142_we0),
+    .pixels_142_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_142_d0),
+    .pixels_141_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_141_address0),
+    .pixels_141_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_141_ce0),
+    .pixels_141_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_141_we0),
+    .pixels_141_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_141_d0),
+    .pixels_140_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_140_address0),
+    .pixels_140_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_140_ce0),
+    .pixels_140_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_140_we0),
+    .pixels_140_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_140_d0),
+    .pixels_139_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_139_address0),
+    .pixels_139_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_139_ce0),
+    .pixels_139_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_139_we0),
+    .pixels_139_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_139_d0),
+    .pixels_138_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_138_address0),
+    .pixels_138_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_138_ce0),
+    .pixels_138_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_138_we0),
+    .pixels_138_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_138_d0),
+    .pixels_137_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_137_address0),
+    .pixels_137_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_137_ce0),
+    .pixels_137_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_137_we0),
+    .pixels_137_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_137_d0),
+    .pixels_136_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_136_address0),
+    .pixels_136_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_136_ce0),
+    .pixels_136_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_136_we0),
+    .pixels_136_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_136_d0),
+    .pixels_135_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_135_address0),
+    .pixels_135_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_135_ce0),
+    .pixels_135_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_135_we0),
+    .pixels_135_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_135_d0),
+    .pixels_134_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_134_address0),
+    .pixels_134_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_134_ce0),
+    .pixels_134_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_134_we0),
+    .pixels_134_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_134_d0),
+    .pixels_133_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_133_address0),
+    .pixels_133_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_133_ce0),
+    .pixels_133_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_133_we0),
+    .pixels_133_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_133_d0),
+    .pixels_132_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_132_address0),
+    .pixels_132_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_132_ce0),
+    .pixels_132_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_132_we0),
+    .pixels_132_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_132_d0),
+    .pixels_131_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_131_address0),
+    .pixels_131_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_131_ce0),
+    .pixels_131_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_131_we0),
+    .pixels_131_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_131_d0),
+    .pixels_130_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_130_address0),
+    .pixels_130_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_130_ce0),
+    .pixels_130_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_130_we0),
+    .pixels_130_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_130_d0),
+    .pixels_129_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_129_address0),
+    .pixels_129_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_129_ce0),
+    .pixels_129_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_129_we0),
+    .pixels_129_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_129_d0),
+    .pixels_128_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_128_address0),
+    .pixels_128_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_128_ce0),
+    .pixels_128_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_128_we0),
+    .pixels_128_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_128_d0),
+    .pixels_127_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_127_address0),
+    .pixels_127_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_127_ce0),
+    .pixels_127_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_127_we0),
+    .pixels_127_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_127_d0),
+    .pixels_126_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_126_address0),
+    .pixels_126_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_126_ce0),
+    .pixels_126_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_126_we0),
+    .pixels_126_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_126_d0),
+    .pixels_125_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_125_address0),
+    .pixels_125_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_125_ce0),
+    .pixels_125_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_125_we0),
+    .pixels_125_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_125_d0),
+    .pixels_124_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_124_address0),
+    .pixels_124_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_124_ce0),
+    .pixels_124_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_124_we0),
+    .pixels_124_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_124_d0),
+    .pixels_123_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_123_address0),
+    .pixels_123_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_123_ce0),
+    .pixels_123_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_123_we0),
+    .pixels_123_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_123_d0),
+    .pixels_122_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_122_address0),
+    .pixels_122_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_122_ce0),
+    .pixels_122_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_122_we0),
+    .pixels_122_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_122_d0),
+    .pixels_121_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_121_address0),
+    .pixels_121_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_121_ce0),
+    .pixels_121_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_121_we0),
+    .pixels_121_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_121_d0),
+    .pixels_120_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_120_address0),
+    .pixels_120_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_120_ce0),
+    .pixels_120_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_120_we0),
+    .pixels_120_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_120_d0),
+    .pixels_119_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_119_address0),
+    .pixels_119_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_119_ce0),
+    .pixels_119_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_119_we0),
+    .pixels_119_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_119_d0),
+    .pixels_118_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_118_address0),
+    .pixels_118_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_118_ce0),
+    .pixels_118_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_118_we0),
+    .pixels_118_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_118_d0),
+    .pixels_117_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_117_address0),
+    .pixels_117_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_117_ce0),
+    .pixels_117_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_117_we0),
+    .pixels_117_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_117_d0),
+    .pixels_116_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_116_address0),
+    .pixels_116_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_116_ce0),
+    .pixels_116_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_116_we0),
+    .pixels_116_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_116_d0),
+    .pixels_115_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_115_address0),
+    .pixels_115_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_115_ce0),
+    .pixels_115_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_115_we0),
+    .pixels_115_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_115_d0),
+    .pixels_114_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_114_address0),
+    .pixels_114_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_114_ce0),
+    .pixels_114_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_114_we0),
+    .pixels_114_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_114_d0),
+    .pixels_113_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_113_address0),
+    .pixels_113_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_113_ce0),
+    .pixels_113_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_113_we0),
+    .pixels_113_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_113_d0),
+    .pixels_112_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_112_address0),
+    .pixels_112_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_112_ce0),
+    .pixels_112_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_112_we0),
+    .pixels_112_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_112_d0),
+    .pixels_111_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_111_address0),
+    .pixels_111_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_111_ce0),
+    .pixels_111_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_111_we0),
+    .pixels_111_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_111_d0),
+    .pixels_110_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_110_address0),
+    .pixels_110_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_110_ce0),
+    .pixels_110_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_110_we0),
+    .pixels_110_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_110_d0),
+    .pixels_109_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_109_address0),
+    .pixels_109_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_109_ce0),
+    .pixels_109_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_109_we0),
+    .pixels_109_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_109_d0),
+    .pixels_108_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_108_address0),
+    .pixels_108_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_108_ce0),
+    .pixels_108_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_108_we0),
+    .pixels_108_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_108_d0),
+    .pixels_107_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_107_address0),
+    .pixels_107_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_107_ce0),
+    .pixels_107_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_107_we0),
+    .pixels_107_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_107_d0),
+    .pixels_106_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_106_address0),
+    .pixels_106_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_106_ce0),
+    .pixels_106_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_106_we0),
+    .pixels_106_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_106_d0),
+    .pixels_105_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_105_address0),
+    .pixels_105_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_105_ce0),
+    .pixels_105_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_105_we0),
+    .pixels_105_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_105_d0),
+    .pixels_104_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_104_address0),
+    .pixels_104_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_104_ce0),
+    .pixels_104_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_104_we0),
+    .pixels_104_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_104_d0),
+    .pixels_103_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_103_address0),
+    .pixels_103_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_103_ce0),
+    .pixels_103_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_103_we0),
+    .pixels_103_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_103_d0),
+    .pixels_102_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_102_address0),
+    .pixels_102_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_102_ce0),
+    .pixels_102_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_102_we0),
+    .pixels_102_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_102_d0),
+    .pixels_101_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_101_address0),
+    .pixels_101_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_101_ce0),
+    .pixels_101_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_101_we0),
+    .pixels_101_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_101_d0),
+    .pixels_100_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_100_address0),
+    .pixels_100_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_100_ce0),
+    .pixels_100_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_100_we0),
+    .pixels_100_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_100_d0),
+    .pixels_99_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_99_address0),
+    .pixels_99_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_99_ce0),
+    .pixels_99_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_99_we0),
+    .pixels_99_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_99_d0),
+    .pixels_98_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_98_address0),
+    .pixels_98_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_98_ce0),
+    .pixels_98_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_98_we0),
+    .pixels_98_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_98_d0),
+    .pixels_97_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_97_address0),
+    .pixels_97_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_97_ce0),
+    .pixels_97_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_97_we0),
+    .pixels_97_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_97_d0),
+    .pixels_96_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_96_address0),
+    .pixels_96_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_96_ce0),
+    .pixels_96_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_96_we0),
+    .pixels_96_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_96_d0),
+    .pixels_95_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_95_address0),
+    .pixels_95_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_95_ce0),
+    .pixels_95_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_95_we0),
+    .pixels_95_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_95_d0),
+    .pixels_94_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_94_address0),
+    .pixels_94_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_94_ce0),
+    .pixels_94_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_94_we0),
+    .pixels_94_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_94_d0),
+    .pixels_93_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_93_address0),
+    .pixels_93_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_93_ce0),
+    .pixels_93_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_93_we0),
+    .pixels_93_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_93_d0),
+    .pixels_92_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_92_address0),
+    .pixels_92_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_92_ce0),
+    .pixels_92_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_92_we0),
+    .pixels_92_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_92_d0),
+    .pixels_91_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_91_address0),
+    .pixels_91_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_91_ce0),
+    .pixels_91_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_91_we0),
+    .pixels_91_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_91_d0),
+    .pixels_90_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_90_address0),
+    .pixels_90_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_90_ce0),
+    .pixels_90_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_90_we0),
+    .pixels_90_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_90_d0),
+    .pixels_89_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_89_address0),
+    .pixels_89_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_89_ce0),
+    .pixels_89_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_89_we0),
+    .pixels_89_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_89_d0),
+    .pixels_88_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_88_address0),
+    .pixels_88_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_88_ce0),
+    .pixels_88_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_88_we0),
+    .pixels_88_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_88_d0),
+    .pixels_87_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_87_address0),
+    .pixels_87_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_87_ce0),
+    .pixels_87_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_87_we0),
+    .pixels_87_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_87_d0),
+    .pixels_86_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_86_address0),
+    .pixels_86_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_86_ce0),
+    .pixels_86_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_86_we0),
+    .pixels_86_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_86_d0),
+    .pixels_85_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_85_address0),
+    .pixels_85_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_85_ce0),
+    .pixels_85_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_85_we0),
+    .pixels_85_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_85_d0),
+    .pixels_84_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_84_address0),
+    .pixels_84_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_84_ce0),
+    .pixels_84_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_84_we0),
+    .pixels_84_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_84_d0),
+    .pixels_83_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_83_address0),
+    .pixels_83_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_83_ce0),
+    .pixels_83_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_83_we0),
+    .pixels_83_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_83_d0),
+    .pixels_82_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_82_address0),
+    .pixels_82_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_82_ce0),
+    .pixels_82_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_82_we0),
+    .pixels_82_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_82_d0),
+    .pixels_81_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_81_address0),
+    .pixels_81_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_81_ce0),
+    .pixels_81_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_81_we0),
+    .pixels_81_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_81_d0),
+    .pixels_80_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_80_address0),
+    .pixels_80_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_80_ce0),
+    .pixels_80_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_80_we0),
+    .pixels_80_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_80_d0),
+    .pixels_79_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_79_address0),
+    .pixels_79_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_79_ce0),
+    .pixels_79_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_79_we0),
+    .pixels_79_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_79_d0),
+    .pixels_78_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_78_address0),
+    .pixels_78_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_78_ce0),
+    .pixels_78_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_78_we0),
+    .pixels_78_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_78_d0),
+    .pixels_77_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_77_address0),
+    .pixels_77_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_77_ce0),
+    .pixels_77_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_77_we0),
+    .pixels_77_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_77_d0),
+    .pixels_76_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_76_address0),
+    .pixels_76_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_76_ce0),
+    .pixels_76_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_76_we0),
+    .pixels_76_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_76_d0),
+    .pixels_75_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_75_address0),
+    .pixels_75_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_75_ce0),
+    .pixels_75_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_75_we0),
+    .pixels_75_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_75_d0),
+    .pixels_74_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_74_address0),
+    .pixels_74_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_74_ce0),
+    .pixels_74_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_74_we0),
+    .pixels_74_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_74_d0),
+    .pixels_73_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_73_address0),
+    .pixels_73_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_73_ce0),
+    .pixels_73_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_73_we0),
+    .pixels_73_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_73_d0),
+    .pixels_72_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_72_address0),
+    .pixels_72_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_72_ce0),
+    .pixels_72_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_72_we0),
+    .pixels_72_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_72_d0),
+    .pixels_71_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_71_address0),
+    .pixels_71_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_71_ce0),
+    .pixels_71_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_71_we0),
+    .pixels_71_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_71_d0),
+    .pixels_70_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_70_address0),
+    .pixels_70_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_70_ce0),
+    .pixels_70_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_70_we0),
+    .pixels_70_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_70_d0),
+    .pixels_69_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_69_address0),
+    .pixels_69_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_69_ce0),
+    .pixels_69_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_69_we0),
+    .pixels_69_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_69_d0),
+    .pixels_68_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_68_address0),
+    .pixels_68_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_68_ce0),
+    .pixels_68_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_68_we0),
+    .pixels_68_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_68_d0),
+    .pixels_67_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_67_address0),
+    .pixels_67_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_67_ce0),
+    .pixels_67_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_67_we0),
+    .pixels_67_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_67_d0),
+    .pixels_66_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_66_address0),
+    .pixels_66_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_66_ce0),
+    .pixels_66_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_66_we0),
+    .pixels_66_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_66_d0),
+    .pixels_65_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_65_address0),
+    .pixels_65_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_65_ce0),
+    .pixels_65_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_65_we0),
+    .pixels_65_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_65_d0),
+    .pixels_64_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_64_address0),
+    .pixels_64_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_64_ce0),
+    .pixels_64_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_64_we0),
+    .pixels_64_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_64_d0),
+    .pixels_63_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_63_address0),
+    .pixels_63_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_63_ce0),
+    .pixels_63_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_63_we0),
+    .pixels_63_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_63_d0),
+    .pixels_62_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_62_address0),
+    .pixels_62_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_62_ce0),
+    .pixels_62_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_62_we0),
+    .pixels_62_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_62_d0),
+    .pixels_61_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_61_address0),
+    .pixels_61_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_61_ce0),
+    .pixels_61_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_61_we0),
+    .pixels_61_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_61_d0),
+    .pixels_60_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_60_address0),
+    .pixels_60_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_60_ce0),
+    .pixels_60_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_60_we0),
+    .pixels_60_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_60_d0),
+    .pixels_59_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_59_address0),
+    .pixels_59_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_59_ce0),
+    .pixels_59_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_59_we0),
+    .pixels_59_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_59_d0),
+    .pixels_58_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_58_address0),
+    .pixels_58_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_58_ce0),
+    .pixels_58_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_58_we0),
+    .pixels_58_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_58_d0),
+    .pixels_57_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_57_address0),
+    .pixels_57_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_57_ce0),
+    .pixels_57_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_57_we0),
+    .pixels_57_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_57_d0),
+    .pixels_56_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_56_address0),
+    .pixels_56_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_56_ce0),
+    .pixels_56_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_56_we0),
+    .pixels_56_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_56_d0),
+    .pixels_55_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_55_address0),
+    .pixels_55_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_55_ce0),
+    .pixels_55_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_55_we0),
+    .pixels_55_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_55_d0),
+    .pixels_54_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_54_address0),
+    .pixels_54_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_54_ce0),
+    .pixels_54_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_54_we0),
+    .pixels_54_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_54_d0),
+    .pixels_53_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_53_address0),
+    .pixels_53_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_53_ce0),
+    .pixels_53_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_53_we0),
+    .pixels_53_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_53_d0),
+    .pixels_52_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_52_address0),
+    .pixels_52_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_52_ce0),
+    .pixels_52_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_52_we0),
+    .pixels_52_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_52_d0),
+    .pixels_51_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_51_address0),
+    .pixels_51_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_51_ce0),
+    .pixels_51_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_51_we0),
+    .pixels_51_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_51_d0),
+    .pixels_50_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_50_address0),
+    .pixels_50_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_50_ce0),
+    .pixels_50_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_50_we0),
+    .pixels_50_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_50_d0),
+    .pixels_49_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_49_address0),
+    .pixels_49_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_49_ce0),
+    .pixels_49_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_49_we0),
+    .pixels_49_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_49_d0),
+    .pixels_48_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_48_address0),
+    .pixels_48_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_48_ce0),
+    .pixels_48_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_48_we0),
+    .pixels_48_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_48_d0),
+    .pixels_47_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_47_address0),
+    .pixels_47_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_47_ce0),
+    .pixels_47_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_47_we0),
+    .pixels_47_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_47_d0),
+    .pixels_46_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_46_address0),
+    .pixels_46_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_46_ce0),
+    .pixels_46_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_46_we0),
+    .pixels_46_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_46_d0),
+    .pixels_45_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_45_address0),
+    .pixels_45_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_45_ce0),
+    .pixels_45_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_45_we0),
+    .pixels_45_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_45_d0),
+    .pixels_44_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_44_address0),
+    .pixels_44_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_44_ce0),
+    .pixels_44_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_44_we0),
+    .pixels_44_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_44_d0),
+    .pixels_43_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_43_address0),
+    .pixels_43_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_43_ce0),
+    .pixels_43_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_43_we0),
+    .pixels_43_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_43_d0),
+    .pixels_42_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_42_address0),
+    .pixels_42_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_42_ce0),
+    .pixels_42_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_42_we0),
+    .pixels_42_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_42_d0),
+    .pixels_41_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_41_address0),
+    .pixels_41_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_41_ce0),
+    .pixels_41_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_41_we0),
+    .pixels_41_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_41_d0),
+    .pixels_40_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_40_address0),
+    .pixels_40_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_40_ce0),
+    .pixels_40_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_40_we0),
+    .pixels_40_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_40_d0),
+    .pixels_39_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_39_address0),
+    .pixels_39_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_39_ce0),
+    .pixels_39_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_39_we0),
+    .pixels_39_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_39_d0),
+    .pixels_38_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_38_address0),
+    .pixels_38_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_38_ce0),
+    .pixels_38_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_38_we0),
+    .pixels_38_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_38_d0),
+    .pixels_37_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_37_address0),
+    .pixels_37_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_37_ce0),
+    .pixels_37_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_37_we0),
+    .pixels_37_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_37_d0),
+    .pixels_36_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_36_address0),
+    .pixels_36_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_36_ce0),
+    .pixels_36_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_36_we0),
+    .pixels_36_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_36_d0),
+    .pixels_35_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_35_address0),
+    .pixels_35_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_35_ce0),
+    .pixels_35_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_35_we0),
+    .pixels_35_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_35_d0),
+    .pixels_34_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_34_address0),
+    .pixels_34_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_34_ce0),
+    .pixels_34_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_34_we0),
+    .pixels_34_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_34_d0),
+    .pixels_33_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_33_address0),
+    .pixels_33_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_33_ce0),
+    .pixels_33_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_33_we0),
+    .pixels_33_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_33_d0),
+    .pixels_32_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_32_address0),
+    .pixels_32_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_32_ce0),
+    .pixels_32_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_32_we0),
+    .pixels_32_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_32_d0),
+    .pixels_31_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_31_address0),
+    .pixels_31_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_31_ce0),
+    .pixels_31_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_31_we0),
+    .pixels_31_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_31_d0),
+    .pixels_30_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_30_address0),
+    .pixels_30_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_30_ce0),
+    .pixels_30_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_30_we0),
+    .pixels_30_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_30_d0),
+    .pixels_29_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_29_address0),
+    .pixels_29_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_29_ce0),
+    .pixels_29_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_29_we0),
+    .pixels_29_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_29_d0),
+    .pixels_28_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_28_address0),
+    .pixels_28_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_28_ce0),
+    .pixels_28_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_28_we0),
+    .pixels_28_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_28_d0),
+    .pixels_27_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_27_address0),
+    .pixels_27_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_27_ce0),
+    .pixels_27_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_27_we0),
+    .pixels_27_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_27_d0),
+    .pixels_26_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_26_address0),
+    .pixels_26_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_26_ce0),
+    .pixels_26_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_26_we0),
+    .pixels_26_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_26_d0),
+    .pixels_25_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_25_address0),
+    .pixels_25_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_25_ce0),
+    .pixels_25_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_25_we0),
+    .pixels_25_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_25_d0),
+    .pixels_24_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_24_address0),
+    .pixels_24_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_24_ce0),
+    .pixels_24_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_24_we0),
+    .pixels_24_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_24_d0),
+    .pixels_23_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_23_address0),
+    .pixels_23_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_23_ce0),
+    .pixels_23_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_23_we0),
+    .pixels_23_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_23_d0),
+    .pixels_22_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_22_address0),
+    .pixels_22_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_22_ce0),
+    .pixels_22_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_22_we0),
+    .pixels_22_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_22_d0),
+    .pixels_21_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_21_address0),
+    .pixels_21_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_21_ce0),
+    .pixels_21_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_21_we0),
+    .pixels_21_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_21_d0),
+    .pixels_20_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_20_address0),
+    .pixels_20_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_20_ce0),
+    .pixels_20_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_20_we0),
+    .pixels_20_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_20_d0),
+    .pixels_19_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_19_address0),
+    .pixels_19_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_19_ce0),
+    .pixels_19_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_19_we0),
+    .pixels_19_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_19_d0),
+    .pixels_18_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_18_address0),
+    .pixels_18_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_18_ce0),
+    .pixels_18_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_18_we0),
+    .pixels_18_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_18_d0),
+    .pixels_17_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_17_address0),
+    .pixels_17_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_17_ce0),
+    .pixels_17_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_17_we0),
+    .pixels_17_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_17_d0),
+    .pixels_16_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_16_address0),
+    .pixels_16_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_16_ce0),
+    .pixels_16_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_16_we0),
+    .pixels_16_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_16_d0),
+    .pixels_15_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_15_address0),
+    .pixels_15_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_15_ce0),
+    .pixels_15_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_15_we0),
+    .pixels_15_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_15_d0),
+    .pixels_14_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_14_address0),
+    .pixels_14_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_14_ce0),
+    .pixels_14_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_14_we0),
+    .pixels_14_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_14_d0),
+    .pixels_13_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_13_address0),
+    .pixels_13_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_13_ce0),
+    .pixels_13_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_13_we0),
+    .pixels_13_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_13_d0),
+    .pixels_12_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_12_address0),
+    .pixels_12_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_12_ce0),
+    .pixels_12_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_12_we0),
+    .pixels_12_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_12_d0),
+    .pixels_11_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_11_address0),
+    .pixels_11_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_11_ce0),
+    .pixels_11_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_11_we0),
+    .pixels_11_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_11_d0),
+    .pixels_10_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_10_address0),
+    .pixels_10_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_10_ce0),
+    .pixels_10_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_10_we0),
+    .pixels_10_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_10_d0),
+    .pixels_9_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_9_address0),
+    .pixels_9_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_9_ce0),
+    .pixels_9_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_9_we0),
+    .pixels_9_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_9_d0),
+    .pixels_8_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_8_address0),
+    .pixels_8_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_8_ce0),
+    .pixels_8_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_8_we0),
+    .pixels_8_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_8_d0),
+    .pixels_7_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_7_address0),
+    .pixels_7_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_7_ce0),
+    .pixels_7_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_7_we0),
+    .pixels_7_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_7_d0),
+    .pixels_6_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_6_address0),
+    .pixels_6_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_6_ce0),
+    .pixels_6_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_6_we0),
+    .pixels_6_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_6_d0),
+    .pixels_5_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_5_address0),
+    .pixels_5_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_5_ce0),
+    .pixels_5_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_5_we0),
+    .pixels_5_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_5_d0),
+    .pixels_4_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_4_address0),
+    .pixels_4_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_4_ce0),
+    .pixels_4_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_4_we0),
+    .pixels_4_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_4_d0),
+    .pixels_3_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_3_address0),
+    .pixels_3_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_3_ce0),
+    .pixels_3_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_3_we0),
+    .pixels_3_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_3_d0),
+    .pixels_2_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_2_address0),
+    .pixels_2_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_2_ce0),
+    .pixels_2_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_2_we0),
+    .pixels_2_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_2_d0),
+    .pixels_1_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_1_address0),
+    .pixels_1_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_1_ce0),
+    .pixels_1_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_1_we0),
+    .pixels_1_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_1_d0),
+    .pixels_address0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_address0),
+    .pixels_ce0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_ce0),
+    .pixels_we0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_we0),
+    .pixels_d0(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_d0),
     .in_stream_TDATA(in_stream_TDATA_int_regslice),
-    .in_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_in_stream_TREADY),
+    .in_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_in_stream_TREADY),
     .in_stream_TKEEP(in_stream_TKEEP_int_regslice),
     .in_stream_TSTRB(in_stream_TSTRB_int_regslice),
     .in_stream_TUSER(in_stream_TUSER_int_regslice),
     .in_stream_TLAST(in_stream_TLAST_int_regslice),
     .in_stream_TID(in_stream_TID_int_regslice),
     .in_stream_TDEST(in_stream_TDEST_int_regslice),
-    .lhs(ref_pixel_V_load_reg_3332),
-    .lhs_1(ref_pixel_V_load_1_reg_3337),
-    .lhs_2(ref_pixel_V_load_2_reg_3352),
-    .lhs_3(ref_pixel_V_load_3_reg_3357),
-    .lhs_4(ref_pixel_V_load_4_reg_3372),
-    .lhs_5(ref_pixel_V_load_5_reg_3377),
-    .lhs_6(ref_pixel_V_load_6_reg_3392),
-    .lhs_7(ref_pixel_V_load_7_reg_3397),
-    .lhs_8(ref_pixel_V_load_8_reg_3412),
-    .lhs_9(ref_pixel_V_load_9_reg_3417),
-    .lhs_10(ref_pixel_V_load_10_reg_3432),
-    .lhs_11(ref_pixel_V_load_11_reg_3437),
-    .lhs_12(ref_pixel_V_load_12_reg_3452),
-    .lhs_13(ref_pixel_V_load_13_reg_3457),
-    .lhs_14(ref_pixel_V_load_14_reg_3472),
-    .lhs_15(ref_pixel_V_load_15_reg_3477),
-    .lhs_16(ref_pixel_V_load_16_reg_3492),
-    .lhs_17(ref_pixel_V_load_17_reg_3497),
-    .lhs_18(ref_pixel_V_load_18_reg_3512),
-    .lhs_19(ref_pixel_V_load_19_reg_3517),
-    .lhs_20(ref_pixel_V_load_20_reg_3532),
-    .lhs_21(ref_pixel_V_load_21_reg_3537),
-    .lhs_22(ref_pixel_V_load_22_reg_3552),
-    .lhs_23(ref_pixel_V_load_23_reg_3557),
-    .lhs_24(ref_pixel_V_load_24_reg_3572),
-    .lhs_25(ref_pixel_V_load_25_reg_3577),
-    .lhs_26(ref_pixel_V_load_26_reg_3592),
-    .lhs_27(ref_pixel_V_load_27_reg_3597),
-    .lhs_28(ref_pixel_V_load_28_reg_3612),
-    .lhs_29(ref_pixel_V_load_29_reg_3617),
-    .lhs_30(ref_pixel_V_load_30_reg_3632),
-    .lhs_31(ref_pixel_V_load_31_reg_3637),
-    .lhs_32(ref_pixel_V_load_32_reg_3652),
-    .lhs_33(ref_pixel_V_load_33_reg_3657),
-    .lhs_34(ref_pixel_V_load_34_reg_3672),
-    .lhs_35(ref_pixel_V_load_35_reg_3677),
-    .lhs_36(ref_pixel_V_load_36_reg_3692),
-    .lhs_37(ref_pixel_V_load_37_reg_3697),
-    .lhs_38(ref_pixel_V_load_38_reg_3712),
-    .lhs_39(ref_pixel_V_load_39_reg_3717),
-    .lhs_40(ref_pixel_V_load_40_reg_3732),
-    .lhs_41(ref_pixel_V_load_41_reg_3737),
-    .lhs_42(ref_pixel_V_load_42_reg_3752),
-    .lhs_43(ref_pixel_V_load_43_reg_3757),
-    .lhs_44(ref_pixel_V_load_44_reg_3772),
-    .lhs_45(ref_pixel_V_load_45_reg_3777),
-    .lhs_46(ref_pixel_V_load_46_reg_3792),
-    .lhs_47(ref_pixel_V_load_47_reg_3797),
-    .lhs_48(ref_pixel_V_load_48_reg_3812),
-    .lhs_49(ref_pixel_V_load_49_reg_3817),
-    .lhs_50(ref_pixel_V_load_50_reg_3832),
-    .lhs_51(ref_pixel_V_load_51_reg_3837),
-    .lhs_52(ref_pixel_V_load_52_reg_3852),
-    .lhs_53(ref_pixel_V_load_53_reg_3857),
-    .lhs_54(ref_pixel_V_load_54_reg_3872),
-    .lhs_55(ref_pixel_V_load_55_reg_3877),
-    .lhs_56(ref_pixel_V_load_56_reg_3892),
-    .lhs_57(ref_pixel_V_load_57_reg_3897),
-    .lhs_58(ref_pixel_V_load_58_reg_3912),
-    .lhs_59(ref_pixel_V_load_59_reg_3917),
-    .lhs_60(ref_pixel_V_load_60_reg_3932),
-    .lhs_61(ref_pixel_V_load_61_reg_3937),
-    .lhs_62(ref_pixel_V_load_62_reg_3952),
-    .lhs_63(ref_pixel_V_load_63_reg_3957),
-    .lhs_64(ref_pixel_V_load_64_reg_3972),
-    .lhs_65(ref_pixel_V_load_65_reg_3977),
-    .lhs_66(ref_pixel_V_load_66_reg_3992),
-    .lhs_67(ref_pixel_V_load_67_reg_3997),
-    .lhs_68(ref_pixel_V_load_68_reg_4012),
-    .lhs_69(ref_pixel_V_load_69_reg_4017),
-    .lhs_70(ref_pixel_V_load_70_reg_4032),
-    .lhs_71(ref_pixel_V_load_71_reg_4037),
-    .lhs_72(ref_pixel_V_load_72_reg_4052),
-    .lhs_73(ref_pixel_V_load_73_reg_4057),
-    .lhs_74(ref_pixel_V_load_74_reg_4072),
-    .lhs_75(ref_pixel_V_load_75_reg_4077),
-    .lhs_76(ref_pixel_V_load_76_reg_4092),
-    .lhs_77(ref_pixel_V_load_77_reg_4097),
-    .lhs_78(ref_pixel_V_load_78_reg_4112),
-    .lhs_79(ref_pixel_V_load_79_reg_4117),
-    .lhs_80(ref_pixel_V_load_80_reg_4132),
-    .lhs_81(ref_pixel_V_load_81_reg_4137),
-    .lhs_82(ref_pixel_V_load_82_reg_4152),
-    .lhs_83(ref_pixel_V_load_83_reg_4157),
-    .lhs_84(ref_pixel_V_load_84_reg_4172),
-    .lhs_85(ref_pixel_V_load_85_reg_4177),
-    .lhs_86(ref_pixel_V_load_86_reg_4192),
-    .lhs_87(ref_pixel_V_load_87_reg_4197),
-    .lhs_88(ref_pixel_V_load_88_reg_4212),
-    .lhs_89(ref_pixel_V_load_89_reg_4217),
-    .lhs_90(ref_pixel_V_load_90_reg_4232),
-    .lhs_91(ref_pixel_V_load_91_reg_4237),
-    .lhs_92(ref_pixel_V_load_92_reg_4252),
-    .lhs_93(ref_pixel_V_load_93_reg_4257),
-    .lhs_94(ref_pixel_V_load_94_reg_4272),
-    .lhs_95(ref_pixel_V_load_95_reg_4277),
-    .lhs_96(ref_pixel_V_load_96_reg_4292),
-    .lhs_97(ref_pixel_V_load_97_reg_4297),
-    .lhs_98(ref_pixel_V_load_98_reg_4312),
-    .lhs_99(ref_pixel_V_load_99_reg_4317),
-    .lhs_100(ref_pixel_V_load_100_reg_4332),
-    .lhs_101(ref_pixel_V_load_101_reg_4337),
-    .lhs_102(ref_pixel_V_load_102_reg_4352),
-    .lhs_103(ref_pixel_V_load_103_reg_4357),
-    .lhs_104(ref_pixel_V_load_104_reg_4372),
-    .lhs_105(ref_pixel_V_load_105_reg_4377),
-    .lhs_106(ref_pixel_V_load_106_reg_4392),
-    .lhs_107(ref_pixel_V_load_107_reg_4397),
-    .lhs_108(ref_pixel_V_load_108_reg_4412),
-    .lhs_109(ref_pixel_V_load_109_reg_4417),
-    .lhs_110(ref_pixel_V_load_110_reg_4432),
-    .lhs_111(ref_pixel_V_load_111_reg_4437),
-    .lhs_112(ref_pixel_V_load_112_reg_4452),
-    .lhs_113(ref_pixel_V_load_113_reg_4457),
-    .lhs_114(ref_pixel_V_load_114_reg_4472),
-    .lhs_115(ref_pixel_V_load_115_reg_4477),
-    .lhs_116(ref_pixel_V_load_116_reg_4492),
-    .lhs_117(ref_pixel_V_load_117_reg_4497),
-    .lhs_118(ref_pixel_V_load_118_reg_4512),
-    .lhs_119(ref_pixel_V_load_119_reg_4517),
-    .lhs_120(ref_pixel_V_load_120_reg_4532),
-    .lhs_121(ref_pixel_V_load_121_reg_4537),
-    .lhs_122(ref_pixel_V_load_122_reg_4552),
-    .lhs_123(ref_pixel_V_load_123_reg_4557),
-    .lhs_124(ref_pixel_V_load_124_reg_4572),
-    .lhs_125(ref_pixel_V_load_125_reg_4577),
-    .lhs_126(ref_pixel_V_load_126_reg_4592),
-    .lhs_127(ref_pixel_V_load_127_reg_4597),
-    .lhs_128(ref_pixel_V_load_128_reg_4612),
-    .lhs_129(ref_pixel_V_load_129_reg_4617),
-    .lhs_130(ref_pixel_V_load_130_reg_4632),
-    .lhs_131(ref_pixel_V_load_131_reg_4637),
-    .lhs_132(ref_pixel_V_load_132_reg_4652),
-    .lhs_133(ref_pixel_V_load_133_reg_4657),
-    .lhs_134(ref_pixel_V_load_134_reg_4672),
-    .lhs_135(ref_pixel_V_load_135_reg_4677),
-    .lhs_136(ref_pixel_V_load_136_reg_4692),
-    .lhs_137(ref_pixel_V_load_137_reg_4697),
-    .lhs_138(ref_pixel_V_load_138_reg_4712),
-    .lhs_139(ref_pixel_V_load_139_reg_4717),
-    .lhs_140(ref_pixel_V_load_140_reg_4732),
-    .lhs_141(ref_pixel_V_load_141_reg_4737),
-    .lhs_142(ref_pixel_V_load_142_reg_4752),
-    .lhs_143(ref_pixel_V_load_143_reg_4757),
-    .lhs_144(ref_pixel_V_load_144_reg_4772),
-    .lhs_145(ref_pixel_V_load_145_reg_4777),
-    .lhs_146(ref_pixel_V_load_146_reg_4792),
-    .lhs_147(ref_pixel_V_load_147_reg_4797),
-    .lhs_148(ref_pixel_V_load_148_reg_4812),
-    .lhs_149(ref_pixel_V_load_149_reg_4817),
-    .lhs_150(ref_pixel_V_load_150_reg_4832),
-    .lhs_151(ref_pixel_V_load_151_reg_4837),
-    .lhs_152(ref_pixel_V_load_152_reg_4852),
-    .lhs_153(ref_pixel_V_load_153_reg_4857),
-    .lhs_154(ref_pixel_V_load_154_reg_4872),
-    .lhs_155(ref_pixel_V_load_155_reg_4877),
-    .lhs_156(ref_pixel_V_load_156_reg_4892),
-    .lhs_157(ref_pixel_V_load_157_reg_4897),
-    .lhs_158(ref_pixel_V_load_158_reg_4912),
-    .lhs_159(ref_pixel_V_load_159_reg_4917),
-    .lhs_160(ref_pixel_V_load_160_reg_4932),
-    .lhs_161(ref_pixel_V_load_161_reg_4937),
-    .lhs_162(ref_pixel_V_load_162_reg_4952),
-    .lhs_163(ref_pixel_V_load_163_reg_4957),
-    .lhs_164(ref_pixel_V_load_164_reg_4972),
-    .lhs_165(ref_pixel_V_load_165_reg_4977),
-    .lhs_166(ref_pixel_V_load_166_reg_4992),
-    .lhs_167(ref_pixel_V_load_167_reg_4997),
-    .lhs_168(ref_pixel_V_load_168_reg_5012),
-    .lhs_169(ref_pixel_V_load_169_reg_5017),
-    .lhs_170(ref_pixel_V_load_170_reg_5032),
-    .lhs_171(ref_pixel_V_load_171_reg_5037),
-    .lhs_172(ref_pixel_V_load_172_reg_5052),
-    .lhs_173(ref_pixel_V_load_173_reg_5057),
-    .lhs_174(ref_pixel_V_load_174_reg_5072),
-    .lhs_175(ref_pixel_V_load_175_reg_5077),
-    .lhs_176(ref_pixel_V_load_176_reg_5092),
-    .lhs_177(ref_pixel_V_load_177_reg_5097),
-    .lhs_178(ref_pixel_V_load_178_reg_5112),
-    .lhs_179(ref_pixel_V_load_179_reg_5117),
-    .min_pixel_index_i_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_min_pixel_index_i_out),
-    .min_pixel_index_i_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_min_pixel_index_i_out_ap_vld),
-    .min_pixel_index_j_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_min_pixel_index_j_out),
-    .min_pixel_index_j_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_min_pixel_index_j_out_ap_vld),
-    .active_idx_2_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_active_idx_2_out),
-    .active_idx_2_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_active_idx_2_out_ap_vld),
-    .min_distance_V_out(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_min_distance_V_out),
-    .min_distance_V_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_min_distance_V_out_ap_vld)
+    .ref_band1_V_cast(ref_pixel_V_load_reg_3315),
+    .ref_band2_V_cast(ref_pixel_V_load_1_reg_3320),
+    .ref_band1_V_1_cast(ref_pixel_V_load_2_reg_3335),
+    .ref_band2_V_1_cast(ref_pixel_V_load_3_reg_3340),
+    .ref_band1_V_2_cast(ref_pixel_V_load_4_reg_3355),
+    .ref_band2_V_2_cast(ref_pixel_V_load_5_reg_3360),
+    .ref_band1_V_3_cast(ref_pixel_V_load_6_reg_3375),
+    .ref_band2_V_3_cast(ref_pixel_V_load_7_reg_3380),
+    .ref_band1_V_4_cast(ref_pixel_V_load_8_reg_3395),
+    .ref_band2_V_4_cast(ref_pixel_V_load_9_reg_3400),
+    .ref_band1_V_5_cast(ref_pixel_V_load_10_reg_3415),
+    .ref_band2_V_5_cast(ref_pixel_V_load_11_reg_3420),
+    .ref_band1_V_6_cast(ref_pixel_V_load_12_reg_3435),
+    .ref_band2_V_6_cast(ref_pixel_V_load_13_reg_3440),
+    .ref_band1_V_7_cast(ref_pixel_V_load_14_reg_3455),
+    .ref_band2_V_7_cast(ref_pixel_V_load_15_reg_3460),
+    .ref_band1_V_8_cast(ref_pixel_V_load_16_reg_3475),
+    .ref_band2_V_8_cast(ref_pixel_V_load_17_reg_3480),
+    .ref_band1_V_9_cast(ref_pixel_V_load_18_reg_3495),
+    .ref_band2_V_9_cast(ref_pixel_V_load_19_reg_3500),
+    .ref_band1_V_10_cast(ref_pixel_V_load_20_reg_3515),
+    .ref_band2_V_10_cast(ref_pixel_V_load_21_reg_3520),
+    .ref_band1_V_11_cast(ref_pixel_V_load_22_reg_3535),
+    .ref_band2_V_11_cast(ref_pixel_V_load_23_reg_3540),
+    .ref_band1_V_12_cast(ref_pixel_V_load_24_reg_3555),
+    .ref_band2_V_12_cast(ref_pixel_V_load_25_reg_3560),
+    .ref_band1_V_13_cast(ref_pixel_V_load_26_reg_3575),
+    .ref_band2_V_13_cast(ref_pixel_V_load_27_reg_3580),
+    .ref_band1_V_14_cast(ref_pixel_V_load_28_reg_3595),
+    .ref_band2_V_14_cast(ref_pixel_V_load_29_reg_3600),
+    .ref_band1_V_15_cast(ref_pixel_V_load_30_reg_3615),
+    .ref_band2_V_15_cast(ref_pixel_V_load_31_reg_3620),
+    .ref_band1_V_16_cast(ref_pixel_V_load_32_reg_3635),
+    .ref_band2_V_16_cast(ref_pixel_V_load_33_reg_3640),
+    .ref_band1_V_17_cast(ref_pixel_V_load_34_reg_3655),
+    .ref_band2_V_17_cast(ref_pixel_V_load_35_reg_3660),
+    .ref_band1_V_18_cast(ref_pixel_V_load_36_reg_3675),
+    .ref_band2_V_18_cast(ref_pixel_V_load_37_reg_3680),
+    .ref_band1_V_19_cast(ref_pixel_V_load_38_reg_3695),
+    .ref_band2_V_19_cast(ref_pixel_V_load_39_reg_3700),
+    .ref_band1_V_20_cast(ref_pixel_V_load_40_reg_3715),
+    .ref_band2_V_20_cast(ref_pixel_V_load_41_reg_3720),
+    .ref_band1_V_21_cast(ref_pixel_V_load_42_reg_3735),
+    .ref_band2_V_21_cast(ref_pixel_V_load_43_reg_3740),
+    .ref_band1_V_22_cast(ref_pixel_V_load_44_reg_3755),
+    .ref_band2_V_22_cast(ref_pixel_V_load_45_reg_3760),
+    .ref_band1_V_23_cast(ref_pixel_V_load_46_reg_3775),
+    .ref_band2_V_23_cast(ref_pixel_V_load_47_reg_3780),
+    .ref_band1_V_24_cast(ref_pixel_V_load_48_reg_3795),
+    .ref_band2_V_24_cast(ref_pixel_V_load_49_reg_3800),
+    .ref_band1_V_25_cast(ref_pixel_V_load_50_reg_3815),
+    .ref_band2_V_25_cast(ref_pixel_V_load_51_reg_3820),
+    .ref_band1_V_26_cast(ref_pixel_V_load_52_reg_3835),
+    .ref_band2_V_26_cast(ref_pixel_V_load_53_reg_3840),
+    .ref_band1_V_27_cast(ref_pixel_V_load_54_reg_3855),
+    .ref_band2_V_27_cast(ref_pixel_V_load_55_reg_3860),
+    .ref_band1_V_28_cast(ref_pixel_V_load_56_reg_3875),
+    .ref_band2_V_28_cast(ref_pixel_V_load_57_reg_3880),
+    .ref_band1_V_29_cast(ref_pixel_V_load_58_reg_3895),
+    .ref_band2_V_29_cast(ref_pixel_V_load_59_reg_3900),
+    .ref_band1_V_30_cast(ref_pixel_V_load_60_reg_3915),
+    .ref_band2_V_30_cast(ref_pixel_V_load_61_reg_3920),
+    .ref_band1_V_31_cast(ref_pixel_V_load_62_reg_3935),
+    .ref_band2_V_31_cast(ref_pixel_V_load_63_reg_3940),
+    .ref_band1_V_32_cast(ref_pixel_V_load_64_reg_3955),
+    .ref_band2_V_32_cast(ref_pixel_V_load_65_reg_3960),
+    .ref_band1_V_33_cast(ref_pixel_V_load_66_reg_3975),
+    .ref_band2_V_33_cast(ref_pixel_V_load_67_reg_3980),
+    .ref_band1_V_34_cast(ref_pixel_V_load_68_reg_3995),
+    .ref_band2_V_34_cast(ref_pixel_V_load_69_reg_4000),
+    .ref_band1_V_35_cast(ref_pixel_V_load_70_reg_4015),
+    .ref_band2_V_35_cast(ref_pixel_V_load_71_reg_4020),
+    .ref_band1_V_36_cast(ref_pixel_V_load_72_reg_4035),
+    .ref_band2_V_36_cast(ref_pixel_V_load_73_reg_4040),
+    .ref_band1_V_37_cast(ref_pixel_V_load_74_reg_4055),
+    .ref_band2_V_37_cast(ref_pixel_V_load_75_reg_4060),
+    .ref_band1_V_38_cast(ref_pixel_V_load_76_reg_4075),
+    .ref_band2_V_38_cast(ref_pixel_V_load_77_reg_4080),
+    .ref_band1_V_39_cast(ref_pixel_V_load_78_reg_4095),
+    .ref_band2_V_39_cast(ref_pixel_V_load_79_reg_4100),
+    .ref_band1_V_40_cast(ref_pixel_V_load_80_reg_4115),
+    .ref_band2_V_40_cast(ref_pixel_V_load_81_reg_4120),
+    .ref_band1_V_41_cast(ref_pixel_V_load_82_reg_4135),
+    .ref_band2_V_41_cast(ref_pixel_V_load_83_reg_4140),
+    .ref_band1_V_42_cast(ref_pixel_V_load_84_reg_4155),
+    .ref_band2_V_42_cast(ref_pixel_V_load_85_reg_4160),
+    .ref_band1_V_43_cast(ref_pixel_V_load_86_reg_4175),
+    .ref_band2_V_43_cast(ref_pixel_V_load_87_reg_4180),
+    .ref_band1_V_44_cast(ref_pixel_V_load_88_reg_4195),
+    .ref_band2_V_44_cast(ref_pixel_V_load_89_reg_4200),
+    .ref_band1_V_45_cast(ref_pixel_V_load_90_reg_4215),
+    .ref_band2_V_45_cast(ref_pixel_V_load_91_reg_4220),
+    .ref_band1_V_46_cast(ref_pixel_V_load_92_reg_4235),
+    .ref_band2_V_46_cast(ref_pixel_V_load_93_reg_4240),
+    .ref_band1_V_47_cast(ref_pixel_V_load_94_reg_4255),
+    .ref_band2_V_47_cast(ref_pixel_V_load_95_reg_4260),
+    .ref_band1_V_48_cast(ref_pixel_V_load_96_reg_4275),
+    .ref_band2_V_48_cast(ref_pixel_V_load_97_reg_4280),
+    .ref_band1_V_49_cast(ref_pixel_V_load_98_reg_4295),
+    .ref_band2_V_49_cast(ref_pixel_V_load_99_reg_4300),
+    .ref_band1_V_50_cast(ref_pixel_V_load_100_reg_4315),
+    .ref_band2_V_50_cast(ref_pixel_V_load_101_reg_4320),
+    .ref_band1_V_51_cast(ref_pixel_V_load_102_reg_4335),
+    .ref_band2_V_51_cast(ref_pixel_V_load_103_reg_4340),
+    .ref_band1_V_52_cast(ref_pixel_V_load_104_reg_4355),
+    .ref_band2_V_52_cast(ref_pixel_V_load_105_reg_4360),
+    .ref_band1_V_53_cast(ref_pixel_V_load_106_reg_4375),
+    .ref_band2_V_53_cast(ref_pixel_V_load_107_reg_4380),
+    .ref_band1_V_54_cast(ref_pixel_V_load_108_reg_4395),
+    .ref_band2_V_54_cast(ref_pixel_V_load_109_reg_4400),
+    .ref_band1_V_55_cast(ref_pixel_V_load_110_reg_4415),
+    .ref_band2_V_55_cast(ref_pixel_V_load_111_reg_4420),
+    .ref_band1_V_56_cast(ref_pixel_V_load_112_reg_4435),
+    .ref_band2_V_56_cast(ref_pixel_V_load_113_reg_4440),
+    .ref_band1_V_57_cast(ref_pixel_V_load_114_reg_4455),
+    .ref_band2_V_57_cast(ref_pixel_V_load_115_reg_4460),
+    .ref_band1_V_58_cast(ref_pixel_V_load_116_reg_4475),
+    .ref_band2_V_58_cast(ref_pixel_V_load_117_reg_4480),
+    .ref_band1_V_59_cast(ref_pixel_V_load_118_reg_4495),
+    .ref_band2_V_59_cast(ref_pixel_V_load_119_reg_4500),
+    .ref_band1_V_60_cast(ref_pixel_V_load_120_reg_4515),
+    .ref_band2_V_60_cast(ref_pixel_V_load_121_reg_4520),
+    .ref_band1_V_61_cast(ref_pixel_V_load_122_reg_4535),
+    .ref_band2_V_61_cast(ref_pixel_V_load_123_reg_4540),
+    .ref_band1_V_62_cast(ref_pixel_V_load_124_reg_4555),
+    .ref_band2_V_62_cast(ref_pixel_V_load_125_reg_4560),
+    .ref_band1_V_63_cast(ref_pixel_V_load_126_reg_4575),
+    .ref_band2_V_63_cast(ref_pixel_V_load_127_reg_4580),
+    .ref_band1_V_64_cast(ref_pixel_V_load_128_reg_4595),
+    .ref_band2_V_64_cast(ref_pixel_V_load_129_reg_4600),
+    .ref_band1_V_65_cast(ref_pixel_V_load_130_reg_4615),
+    .ref_band2_V_65_cast(ref_pixel_V_load_131_reg_4620),
+    .ref_band1_V_66_cast(ref_pixel_V_load_132_reg_4635),
+    .ref_band2_V_66_cast(ref_pixel_V_load_133_reg_4640),
+    .ref_band1_V_67_cast(ref_pixel_V_load_134_reg_4655),
+    .ref_band2_V_67_cast(ref_pixel_V_load_135_reg_4660),
+    .ref_band1_V_68_cast(ref_pixel_V_load_136_reg_4675),
+    .ref_band2_V_68_cast(ref_pixel_V_load_137_reg_4680),
+    .ref_band1_V_69_cast(ref_pixel_V_load_138_reg_4695),
+    .ref_band2_V_69_cast(ref_pixel_V_load_139_reg_4700),
+    .ref_band1_V_70_cast(ref_pixel_V_load_140_reg_4715),
+    .ref_band2_V_70_cast(ref_pixel_V_load_141_reg_4720),
+    .ref_band1_V_71_cast(ref_pixel_V_load_142_reg_4735),
+    .ref_band2_V_71_cast(ref_pixel_V_load_143_reg_4740),
+    .ref_band1_V_72_cast(ref_pixel_V_load_144_reg_4755),
+    .ref_band2_V_72_cast(ref_pixel_V_load_145_reg_4760),
+    .ref_band1_V_73_cast(ref_pixel_V_load_146_reg_4775),
+    .ref_band2_V_73_cast(ref_pixel_V_load_147_reg_4780),
+    .ref_band1_V_74_cast(ref_pixel_V_load_148_reg_4795),
+    .ref_band2_V_74_cast(ref_pixel_V_load_149_reg_4800),
+    .ref_band1_V_75_cast(ref_pixel_V_load_150_reg_4815),
+    .ref_band2_V_75_cast(ref_pixel_V_load_151_reg_4820),
+    .ref_band1_V_76_cast(ref_pixel_V_load_152_reg_4835),
+    .ref_band2_V_76_cast(ref_pixel_V_load_153_reg_4840),
+    .ref_band1_V_77_cast(ref_pixel_V_load_154_reg_4855),
+    .ref_band2_V_77_cast(ref_pixel_V_load_155_reg_4860),
+    .ref_band1_V_78_cast(ref_pixel_V_load_156_reg_4875),
+    .ref_band2_V_78_cast(ref_pixel_V_load_157_reg_4880),
+    .ref_band1_V_79_cast(ref_pixel_V_load_158_reg_4895),
+    .ref_band2_V_79_cast(ref_pixel_V_load_159_reg_4900),
+    .ref_band1_V_80_cast(ref_pixel_V_load_160_reg_4915),
+    .ref_band2_V_80_cast(ref_pixel_V_load_161_reg_4920),
+    .ref_band1_V_81_cast(ref_pixel_V_load_162_reg_4935),
+    .ref_band2_V_81_cast(ref_pixel_V_load_163_reg_4940),
+    .ref_band1_V_82_cast(ref_pixel_V_load_164_reg_4955),
+    .ref_band2_V_82_cast(ref_pixel_V_load_165_reg_4960),
+    .ref_band1_V_83_cast(ref_pixel_V_load_166_reg_4975),
+    .ref_band2_V_83_cast(ref_pixel_V_load_167_reg_4980),
+    .ref_band1_V_84_cast(ref_pixel_V_load_168_reg_4995),
+    .ref_band2_V_84_cast(ref_pixel_V_load_169_reg_5000),
+    .ref_band1_V_85_cast(ref_pixel_V_load_170_reg_5015),
+    .ref_band2_V_85_cast(ref_pixel_V_load_171_reg_5020),
+    .ref_band1_V_86_cast(ref_pixel_V_load_172_reg_5035),
+    .ref_band2_V_86_cast(ref_pixel_V_load_173_reg_5040),
+    .ref_band1_V_87_cast(ref_pixel_V_load_174_reg_5055),
+    .ref_band2_V_87_cast(ref_pixel_V_load_175_reg_5060),
+    .ref_band1_V_88_cast(ref_pixel_V_load_176_reg_5075),
+    .ref_band2_V_88_cast(ref_pixel_V_load_177_reg_5080),
+    .ref_band1_V_89_cast(ref_pixel_V_load_178_reg_5095),
+    .zext_ln63(ref_pixel_V_load_179_reg_5100),
+    .min_distance_out(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_min_distance_out),
+    .min_distance_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_min_distance_out_ap_vld),
+    .min_pixel_index_i_out(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_min_pixel_index_i_out),
+    .min_pixel_index_i_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_min_pixel_index_i_out_ap_vld),
+    .min_pixel_index_j_out(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_min_pixel_index_j_out),
+    .min_pixel_index_j_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_min_pixel_index_j_out_ap_vld),
+    .active_idx_2_out(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_active_idx_2_out),
+    .active_idx_2_out_ap_vld(grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_active_idx_2_out_ap_vld)
 );
 
-hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069(
+hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2 grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_ap_start),
-    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_ap_done),
-    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_ap_idle),
-    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_ap_ready),
-    .out_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TREADY),
-    .pixels_179_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_179_address0),
-    .pixels_179_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_179_ce0),
+    .ap_start(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_ap_start),
+    .ap_done(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_ap_done),
+    .ap_idle(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_ap_idle),
+    .ap_ready(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_ap_ready),
+    .out_stream_TREADY(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TREADY),
+    .pixels_179_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_179_address0),
+    .pixels_179_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_179_ce0),
     .pixels_179_q0(pixels_179_q0),
-    .idxprom72(sub71_reg_5122),
-    .pixels_177_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_177_address0),
-    .pixels_177_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_177_ce0),
+    .idxprom70(sub69_reg_5105),
+    .pixels_177_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_177_address0),
+    .pixels_177_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_177_ce0),
     .pixels_177_q0(pixels_177_q0),
-    .pixels_175_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_175_address0),
-    .pixels_175_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_175_ce0),
+    .pixels_175_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_175_address0),
+    .pixels_175_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_175_ce0),
     .pixels_175_q0(pixels_175_q0),
-    .pixels_173_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_173_address0),
-    .pixels_173_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_173_ce0),
+    .pixels_173_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_173_address0),
+    .pixels_173_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_173_ce0),
     .pixels_173_q0(pixels_173_q0),
-    .pixels_171_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_171_address0),
-    .pixels_171_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_171_ce0),
+    .pixels_171_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_171_address0),
+    .pixels_171_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_171_ce0),
     .pixels_171_q0(pixels_171_q0),
-    .pixels_169_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_169_address0),
-    .pixels_169_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_169_ce0),
+    .pixels_169_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_169_address0),
+    .pixels_169_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_169_ce0),
     .pixels_169_q0(pixels_169_q0),
-    .pixels_167_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_167_address0),
-    .pixels_167_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_167_ce0),
+    .pixels_167_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_167_address0),
+    .pixels_167_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_167_ce0),
     .pixels_167_q0(pixels_167_q0),
-    .pixels_165_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_165_address0),
-    .pixels_165_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_165_ce0),
+    .pixels_165_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_165_address0),
+    .pixels_165_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_165_ce0),
     .pixels_165_q0(pixels_165_q0),
-    .pixels_163_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_163_address0),
-    .pixels_163_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_163_ce0),
+    .pixels_163_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_163_address0),
+    .pixels_163_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_163_ce0),
     .pixels_163_q0(pixels_163_q0),
-    .pixels_161_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_161_address0),
-    .pixels_161_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_161_ce0),
+    .pixels_161_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_161_address0),
+    .pixels_161_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_161_ce0),
     .pixels_161_q0(pixels_161_q0),
-    .pixels_159_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_159_address0),
-    .pixels_159_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_159_ce0),
+    .pixels_159_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_159_address0),
+    .pixels_159_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_159_ce0),
     .pixels_159_q0(pixels_159_q0),
-    .pixels_157_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_157_address0),
-    .pixels_157_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_157_ce0),
+    .pixels_157_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_157_address0),
+    .pixels_157_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_157_ce0),
     .pixels_157_q0(pixels_157_q0),
-    .pixels_155_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_155_address0),
-    .pixels_155_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_155_ce0),
+    .pixels_155_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_155_address0),
+    .pixels_155_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_155_ce0),
     .pixels_155_q0(pixels_155_q0),
-    .pixels_153_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_153_address0),
-    .pixels_153_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_153_ce0),
+    .pixels_153_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_153_address0),
+    .pixels_153_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_153_ce0),
     .pixels_153_q0(pixels_153_q0),
-    .pixels_151_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_151_address0),
-    .pixels_151_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_151_ce0),
+    .pixels_151_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_151_address0),
+    .pixels_151_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_151_ce0),
     .pixels_151_q0(pixels_151_q0),
-    .pixels_149_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_149_address0),
-    .pixels_149_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_149_ce0),
+    .pixels_149_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_149_address0),
+    .pixels_149_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_149_ce0),
     .pixels_149_q0(pixels_149_q0),
-    .pixels_147_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_147_address0),
-    .pixels_147_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_147_ce0),
+    .pixels_147_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_147_address0),
+    .pixels_147_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_147_ce0),
     .pixels_147_q0(pixels_147_q0),
-    .pixels_145_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_145_address0),
-    .pixels_145_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_145_ce0),
+    .pixels_145_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_145_address0),
+    .pixels_145_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_145_ce0),
     .pixels_145_q0(pixels_145_q0),
-    .pixels_143_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_143_address0),
-    .pixels_143_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_143_ce0),
+    .pixels_143_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_143_address0),
+    .pixels_143_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_143_ce0),
     .pixels_143_q0(pixels_143_q0),
-    .pixels_141_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_141_address0),
-    .pixels_141_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_141_ce0),
+    .pixels_141_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_141_address0),
+    .pixels_141_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_141_ce0),
     .pixels_141_q0(pixels_141_q0),
-    .pixels_139_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_139_address0),
-    .pixels_139_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_139_ce0),
+    .pixels_139_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_139_address0),
+    .pixels_139_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_139_ce0),
     .pixels_139_q0(pixels_139_q0),
-    .pixels_137_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_137_address0),
-    .pixels_137_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_137_ce0),
+    .pixels_137_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_137_address0),
+    .pixels_137_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_137_ce0),
     .pixels_137_q0(pixels_137_q0),
-    .pixels_135_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_135_address0),
-    .pixels_135_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_135_ce0),
+    .pixels_135_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_135_address0),
+    .pixels_135_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_135_ce0),
     .pixels_135_q0(pixels_135_q0),
-    .pixels_133_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_133_address0),
-    .pixels_133_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_133_ce0),
+    .pixels_133_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_133_address0),
+    .pixels_133_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_133_ce0),
     .pixels_133_q0(pixels_133_q0),
-    .pixels_131_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_131_address0),
-    .pixels_131_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_131_ce0),
+    .pixels_131_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_131_address0),
+    .pixels_131_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_131_ce0),
     .pixels_131_q0(pixels_131_q0),
-    .pixels_129_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_129_address0),
-    .pixels_129_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_129_ce0),
+    .pixels_129_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_129_address0),
+    .pixels_129_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_129_ce0),
     .pixels_129_q0(pixels_129_q0),
-    .pixels_127_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_127_address0),
-    .pixels_127_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_127_ce0),
+    .pixels_127_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_127_address0),
+    .pixels_127_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_127_ce0),
     .pixels_127_q0(pixels_127_q0),
-    .pixels_125_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_125_address0),
-    .pixels_125_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_125_ce0),
+    .pixels_125_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_125_address0),
+    .pixels_125_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_125_ce0),
     .pixels_125_q0(pixels_125_q0),
-    .pixels_123_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_123_address0),
-    .pixels_123_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_123_ce0),
+    .pixels_123_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_123_address0),
+    .pixels_123_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_123_ce0),
     .pixels_123_q0(pixels_123_q0),
-    .pixels_121_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_121_address0),
-    .pixels_121_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_121_ce0),
+    .pixels_121_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_121_address0),
+    .pixels_121_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_121_ce0),
     .pixels_121_q0(pixels_121_q0),
-    .pixels_119_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_119_address0),
-    .pixels_119_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_119_ce0),
+    .pixels_119_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_119_address0),
+    .pixels_119_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_119_ce0),
     .pixels_119_q0(pixels_119_q0),
-    .pixels_117_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_117_address0),
-    .pixels_117_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_117_ce0),
+    .pixels_117_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_117_address0),
+    .pixels_117_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_117_ce0),
     .pixels_117_q0(pixels_117_q0),
-    .pixels_115_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_115_address0),
-    .pixels_115_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_115_ce0),
+    .pixels_115_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_115_address0),
+    .pixels_115_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_115_ce0),
     .pixels_115_q0(pixels_115_q0),
-    .pixels_113_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_113_address0),
-    .pixels_113_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_113_ce0),
+    .pixels_113_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_113_address0),
+    .pixels_113_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_113_ce0),
     .pixels_113_q0(pixels_113_q0),
-    .pixels_111_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_111_address0),
-    .pixels_111_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_111_ce0),
+    .pixels_111_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_111_address0),
+    .pixels_111_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_111_ce0),
     .pixels_111_q0(pixels_111_q0),
-    .pixels_109_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_109_address0),
-    .pixels_109_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_109_ce0),
+    .pixels_109_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_109_address0),
+    .pixels_109_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_109_ce0),
     .pixels_109_q0(pixels_109_q0),
-    .pixels_107_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_107_address0),
-    .pixels_107_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_107_ce0),
+    .pixels_107_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_107_address0),
+    .pixels_107_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_107_ce0),
     .pixels_107_q0(pixels_107_q0),
-    .pixels_105_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_105_address0),
-    .pixels_105_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_105_ce0),
+    .pixels_105_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_105_address0),
+    .pixels_105_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_105_ce0),
     .pixels_105_q0(pixels_105_q0),
-    .pixels_103_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_103_address0),
-    .pixels_103_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_103_ce0),
+    .pixels_103_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_103_address0),
+    .pixels_103_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_103_ce0),
     .pixels_103_q0(pixels_103_q0),
-    .pixels_101_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_101_address0),
-    .pixels_101_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_101_ce0),
+    .pixels_101_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_101_address0),
+    .pixels_101_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_101_ce0),
     .pixels_101_q0(pixels_101_q0),
-    .pixels_99_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_99_address0),
-    .pixels_99_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_99_ce0),
+    .pixels_99_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_99_address0),
+    .pixels_99_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_99_ce0),
     .pixels_99_q0(pixels_99_q0),
-    .pixels_97_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_97_address0),
-    .pixels_97_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_97_ce0),
+    .pixels_97_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_97_address0),
+    .pixels_97_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_97_ce0),
     .pixels_97_q0(pixels_97_q0),
-    .pixels_95_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_95_address0),
-    .pixels_95_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_95_ce0),
+    .pixels_95_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_95_address0),
+    .pixels_95_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_95_ce0),
     .pixels_95_q0(pixels_95_q0),
-    .pixels_93_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_93_address0),
-    .pixels_93_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_93_ce0),
+    .pixels_93_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_93_address0),
+    .pixels_93_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_93_ce0),
     .pixels_93_q0(pixels_93_q0),
-    .pixels_91_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_91_address0),
-    .pixels_91_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_91_ce0),
+    .pixels_91_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_91_address0),
+    .pixels_91_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_91_ce0),
     .pixels_91_q0(pixels_91_q0),
-    .pixels_89_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_89_address0),
-    .pixels_89_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_89_ce0),
+    .pixels_89_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_89_address0),
+    .pixels_89_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_89_ce0),
     .pixels_89_q0(pixels_89_q0),
-    .pixels_87_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_87_address0),
-    .pixels_87_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_87_ce0),
+    .pixels_87_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_87_address0),
+    .pixels_87_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_87_ce0),
     .pixels_87_q0(pixels_87_q0),
-    .pixels_85_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_85_address0),
-    .pixels_85_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_85_ce0),
+    .pixels_85_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_85_address0),
+    .pixels_85_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_85_ce0),
     .pixels_85_q0(pixels_85_q0),
-    .pixels_83_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_83_address0),
-    .pixels_83_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_83_ce0),
+    .pixels_83_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_83_address0),
+    .pixels_83_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_83_ce0),
     .pixels_83_q0(pixels_83_q0),
-    .pixels_81_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_81_address0),
-    .pixels_81_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_81_ce0),
+    .pixels_81_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_81_address0),
+    .pixels_81_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_81_ce0),
     .pixels_81_q0(pixels_81_q0),
-    .pixels_79_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_79_address0),
-    .pixels_79_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_79_ce0),
+    .pixels_79_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_79_address0),
+    .pixels_79_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_79_ce0),
     .pixels_79_q0(pixels_79_q0),
-    .pixels_77_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_77_address0),
-    .pixels_77_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_77_ce0),
+    .pixels_77_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_77_address0),
+    .pixels_77_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_77_ce0),
     .pixels_77_q0(pixels_77_q0),
-    .pixels_75_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_75_address0),
-    .pixels_75_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_75_ce0),
+    .pixels_75_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_75_address0),
+    .pixels_75_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_75_ce0),
     .pixels_75_q0(pixels_75_q0),
-    .pixels_73_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_73_address0),
-    .pixels_73_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_73_ce0),
+    .pixels_73_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_73_address0),
+    .pixels_73_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_73_ce0),
     .pixels_73_q0(pixels_73_q0),
-    .pixels_71_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_71_address0),
-    .pixels_71_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_71_ce0),
+    .pixels_71_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_71_address0),
+    .pixels_71_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_71_ce0),
     .pixels_71_q0(pixels_71_q0),
-    .pixels_69_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_69_address0),
-    .pixels_69_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_69_ce0),
+    .pixels_69_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_69_address0),
+    .pixels_69_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_69_ce0),
     .pixels_69_q0(pixels_69_q0),
-    .pixels_67_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_67_address0),
-    .pixels_67_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_67_ce0),
+    .pixels_67_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_67_address0),
+    .pixels_67_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_67_ce0),
     .pixels_67_q0(pixels_67_q0),
-    .pixels_65_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_65_address0),
-    .pixels_65_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_65_ce0),
+    .pixels_65_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_65_address0),
+    .pixels_65_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_65_ce0),
     .pixels_65_q0(pixels_65_q0),
-    .pixels_63_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_63_address0),
-    .pixels_63_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_63_ce0),
+    .pixels_63_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_63_address0),
+    .pixels_63_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_63_ce0),
     .pixels_63_q0(pixels_63_q0),
-    .pixels_61_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_61_address0),
-    .pixels_61_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_61_ce0),
+    .pixels_61_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_61_address0),
+    .pixels_61_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_61_ce0),
     .pixels_61_q0(pixels_61_q0),
-    .pixels_59_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_59_address0),
-    .pixels_59_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_59_ce0),
+    .pixels_59_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_59_address0),
+    .pixels_59_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_59_ce0),
     .pixels_59_q0(pixels_59_q0),
-    .pixels_57_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_57_address0),
-    .pixels_57_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_57_ce0),
+    .pixels_57_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_57_address0),
+    .pixels_57_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_57_ce0),
     .pixels_57_q0(pixels_57_q0),
-    .pixels_55_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_55_address0),
-    .pixels_55_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_55_ce0),
+    .pixels_55_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_55_address0),
+    .pixels_55_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_55_ce0),
     .pixels_55_q0(pixels_55_q0),
-    .pixels_53_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_53_address0),
-    .pixels_53_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_53_ce0),
+    .pixels_53_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_53_address0),
+    .pixels_53_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_53_ce0),
     .pixels_53_q0(pixels_53_q0),
-    .pixels_51_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_51_address0),
-    .pixels_51_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_51_ce0),
+    .pixels_51_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_51_address0),
+    .pixels_51_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_51_ce0),
     .pixels_51_q0(pixels_51_q0),
-    .pixels_49_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_49_address0),
-    .pixels_49_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_49_ce0),
+    .pixels_49_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_49_address0),
+    .pixels_49_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_49_ce0),
     .pixels_49_q0(pixels_49_q0),
-    .pixels_47_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_47_address0),
-    .pixels_47_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_47_ce0),
+    .pixels_47_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_47_address0),
+    .pixels_47_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_47_ce0),
     .pixels_47_q0(pixels_47_q0),
-    .pixels_45_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_45_address0),
-    .pixels_45_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_45_ce0),
+    .pixels_45_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_45_address0),
+    .pixels_45_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_45_ce0),
     .pixels_45_q0(pixels_45_q0),
-    .pixels_43_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_43_address0),
-    .pixels_43_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_43_ce0),
+    .pixels_43_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_43_address0),
+    .pixels_43_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_43_ce0),
     .pixels_43_q0(pixels_43_q0),
-    .pixels_41_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_41_address0),
-    .pixels_41_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_41_ce0),
+    .pixels_41_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_41_address0),
+    .pixels_41_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_41_ce0),
     .pixels_41_q0(pixels_41_q0),
-    .pixels_39_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_39_address0),
-    .pixels_39_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_39_ce0),
+    .pixels_39_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_39_address0),
+    .pixels_39_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_39_ce0),
     .pixels_39_q0(pixels_39_q0),
-    .pixels_37_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_37_address0),
-    .pixels_37_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_37_ce0),
+    .pixels_37_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_37_address0),
+    .pixels_37_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_37_ce0),
     .pixels_37_q0(pixels_37_q0),
-    .pixels_35_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_35_address0),
-    .pixels_35_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_35_ce0),
+    .pixels_35_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_35_address0),
+    .pixels_35_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_35_ce0),
     .pixels_35_q0(pixels_35_q0),
-    .pixels_33_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_33_address0),
-    .pixels_33_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_33_ce0),
+    .pixels_33_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_33_address0),
+    .pixels_33_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_33_ce0),
     .pixels_33_q0(pixels_33_q0),
-    .pixels_31_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_31_address0),
-    .pixels_31_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_31_ce0),
+    .pixels_31_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_31_address0),
+    .pixels_31_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_31_ce0),
     .pixels_31_q0(pixels_31_q0),
-    .pixels_29_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_29_address0),
-    .pixels_29_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_29_ce0),
+    .pixels_29_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_29_address0),
+    .pixels_29_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_29_ce0),
     .pixels_29_q0(pixels_29_q0),
-    .pixels_27_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_27_address0),
-    .pixels_27_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_27_ce0),
+    .pixels_27_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_27_address0),
+    .pixels_27_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_27_ce0),
     .pixels_27_q0(pixels_27_q0),
-    .pixels_25_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_25_address0),
-    .pixels_25_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_25_ce0),
+    .pixels_25_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_25_address0),
+    .pixels_25_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_25_ce0),
     .pixels_25_q0(pixels_25_q0),
-    .pixels_23_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_23_address0),
-    .pixels_23_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_23_ce0),
+    .pixels_23_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_23_address0),
+    .pixels_23_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_23_ce0),
     .pixels_23_q0(pixels_23_q0),
-    .pixels_21_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_21_address0),
-    .pixels_21_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_21_ce0),
+    .pixels_21_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_21_address0),
+    .pixels_21_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_21_ce0),
     .pixels_21_q0(pixels_21_q0),
-    .pixels_19_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_19_address0),
-    .pixels_19_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_19_ce0),
+    .pixels_19_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_19_address0),
+    .pixels_19_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_19_ce0),
     .pixels_19_q0(pixels_19_q0),
-    .pixels_17_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_17_address0),
-    .pixels_17_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_17_ce0),
+    .pixels_17_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_17_address0),
+    .pixels_17_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_17_ce0),
     .pixels_17_q0(pixels_17_q0),
-    .pixels_15_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_15_address0),
-    .pixels_15_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_15_ce0),
+    .pixels_15_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_15_address0),
+    .pixels_15_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_15_ce0),
     .pixels_15_q0(pixels_15_q0),
-    .pixels_13_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_13_address0),
-    .pixels_13_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_13_ce0),
+    .pixels_13_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_13_address0),
+    .pixels_13_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_13_ce0),
     .pixels_13_q0(pixels_13_q0),
-    .pixels_11_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_11_address0),
-    .pixels_11_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_11_ce0),
+    .pixels_11_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_11_address0),
+    .pixels_11_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_11_ce0),
     .pixels_11_q0(pixels_11_q0),
-    .pixels_9_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_9_address0),
-    .pixels_9_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_9_ce0),
+    .pixels_9_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_9_address0),
+    .pixels_9_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_9_ce0),
     .pixels_9_q0(pixels_9_q0),
-    .pixels_7_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_7_address0),
-    .pixels_7_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_7_ce0),
+    .pixels_7_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_7_address0),
+    .pixels_7_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_7_ce0),
     .pixels_7_q0(pixels_7_q0),
-    .pixels_5_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_5_address0),
-    .pixels_5_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_5_ce0),
+    .pixels_5_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_5_address0),
+    .pixels_5_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_5_ce0),
     .pixels_5_q0(pixels_5_q0),
-    .pixels_3_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_3_address0),
-    .pixels_3_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_3_ce0),
+    .pixels_3_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_3_address0),
+    .pixels_3_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_3_ce0),
     .pixels_3_q0(pixels_3_q0),
-    .pixels_1_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_1_address0),
-    .pixels_1_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_1_ce0),
+    .pixels_1_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_1_address0),
+    .pixels_1_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_1_ce0),
     .pixels_1_q0(pixels_1_q0),
-    .pixels_178_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_178_address0),
-    .pixels_178_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_178_ce0),
+    .pixels_178_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_178_address0),
+    .pixels_178_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_178_ce0),
     .pixels_178_q0(pixels_178_q0),
-    .pixels_176_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_176_address0),
-    .pixels_176_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_176_ce0),
+    .pixels_176_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_176_address0),
+    .pixels_176_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_176_ce0),
     .pixels_176_q0(pixels_176_q0),
-    .pixels_174_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_174_address0),
-    .pixels_174_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_174_ce0),
+    .pixels_174_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_174_address0),
+    .pixels_174_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_174_ce0),
     .pixels_174_q0(pixels_174_q0),
-    .pixels_172_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_172_address0),
-    .pixels_172_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_172_ce0),
+    .pixels_172_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_172_address0),
+    .pixels_172_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_172_ce0),
     .pixels_172_q0(pixels_172_q0),
-    .pixels_170_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_170_address0),
-    .pixels_170_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_170_ce0),
+    .pixels_170_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_170_address0),
+    .pixels_170_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_170_ce0),
     .pixels_170_q0(pixels_170_q0),
-    .pixels_168_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_168_address0),
-    .pixels_168_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_168_ce0),
+    .pixels_168_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_168_address0),
+    .pixels_168_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_168_ce0),
     .pixels_168_q0(pixels_168_q0),
-    .pixels_166_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_166_address0),
-    .pixels_166_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_166_ce0),
+    .pixels_166_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_166_address0),
+    .pixels_166_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_166_ce0),
     .pixels_166_q0(pixels_166_q0),
-    .pixels_164_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_164_address0),
-    .pixels_164_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_164_ce0),
+    .pixels_164_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_164_address0),
+    .pixels_164_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_164_ce0),
     .pixels_164_q0(pixels_164_q0),
-    .pixels_162_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_162_address0),
-    .pixels_162_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_162_ce0),
+    .pixels_162_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_162_address0),
+    .pixels_162_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_162_ce0),
     .pixels_162_q0(pixels_162_q0),
-    .pixels_160_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_160_address0),
-    .pixels_160_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_160_ce0),
+    .pixels_160_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_160_address0),
+    .pixels_160_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_160_ce0),
     .pixels_160_q0(pixels_160_q0),
-    .pixels_158_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_158_address0),
-    .pixels_158_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_158_ce0),
+    .pixels_158_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_158_address0),
+    .pixels_158_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_158_ce0),
     .pixels_158_q0(pixels_158_q0),
-    .pixels_156_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_156_address0),
-    .pixels_156_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_156_ce0),
+    .pixels_156_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_156_address0),
+    .pixels_156_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_156_ce0),
     .pixels_156_q0(pixels_156_q0),
-    .pixels_154_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_154_address0),
-    .pixels_154_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_154_ce0),
+    .pixels_154_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_154_address0),
+    .pixels_154_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_154_ce0),
     .pixels_154_q0(pixels_154_q0),
-    .pixels_152_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_152_address0),
-    .pixels_152_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_152_ce0),
+    .pixels_152_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_152_address0),
+    .pixels_152_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_152_ce0),
     .pixels_152_q0(pixels_152_q0),
-    .pixels_150_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_150_address0),
-    .pixels_150_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_150_ce0),
+    .pixels_150_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_150_address0),
+    .pixels_150_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_150_ce0),
     .pixels_150_q0(pixels_150_q0),
-    .pixels_148_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_148_address0),
-    .pixels_148_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_148_ce0),
+    .pixels_148_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_148_address0),
+    .pixels_148_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_148_ce0),
     .pixels_148_q0(pixels_148_q0),
-    .pixels_146_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_146_address0),
-    .pixels_146_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_146_ce0),
+    .pixels_146_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_146_address0),
+    .pixels_146_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_146_ce0),
     .pixels_146_q0(pixels_146_q0),
-    .pixels_144_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_144_address0),
-    .pixels_144_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_144_ce0),
+    .pixels_144_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_144_address0),
+    .pixels_144_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_144_ce0),
     .pixels_144_q0(pixels_144_q0),
-    .pixels_142_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_142_address0),
-    .pixels_142_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_142_ce0),
+    .pixels_142_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_142_address0),
+    .pixels_142_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_142_ce0),
     .pixels_142_q0(pixels_142_q0),
-    .pixels_140_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_140_address0),
-    .pixels_140_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_140_ce0),
+    .pixels_140_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_140_address0),
+    .pixels_140_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_140_ce0),
     .pixels_140_q0(pixels_140_q0),
-    .pixels_138_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_138_address0),
-    .pixels_138_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_138_ce0),
+    .pixels_138_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_138_address0),
+    .pixels_138_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_138_ce0),
     .pixels_138_q0(pixels_138_q0),
-    .pixels_136_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_136_address0),
-    .pixels_136_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_136_ce0),
+    .pixels_136_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_136_address0),
+    .pixels_136_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_136_ce0),
     .pixels_136_q0(pixels_136_q0),
-    .pixels_134_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_134_address0),
-    .pixels_134_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_134_ce0),
+    .pixels_134_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_134_address0),
+    .pixels_134_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_134_ce0),
     .pixels_134_q0(pixels_134_q0),
-    .pixels_132_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_132_address0),
-    .pixels_132_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_132_ce0),
+    .pixels_132_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_132_address0),
+    .pixels_132_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_132_ce0),
     .pixels_132_q0(pixels_132_q0),
-    .pixels_130_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_130_address0),
-    .pixels_130_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_130_ce0),
+    .pixels_130_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_130_address0),
+    .pixels_130_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_130_ce0),
     .pixels_130_q0(pixels_130_q0),
-    .pixels_128_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_128_address0),
-    .pixels_128_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_128_ce0),
+    .pixels_128_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_128_address0),
+    .pixels_128_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_128_ce0),
     .pixels_128_q0(pixels_128_q0),
-    .pixels_126_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_126_address0),
-    .pixels_126_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_126_ce0),
+    .pixels_126_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_126_address0),
+    .pixels_126_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_126_ce0),
     .pixels_126_q0(pixels_126_q0),
-    .pixels_124_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_124_address0),
-    .pixels_124_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_124_ce0),
+    .pixels_124_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_124_address0),
+    .pixels_124_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_124_ce0),
     .pixels_124_q0(pixels_124_q0),
-    .pixels_122_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_122_address0),
-    .pixels_122_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_122_ce0),
+    .pixels_122_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_122_address0),
+    .pixels_122_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_122_ce0),
     .pixels_122_q0(pixels_122_q0),
-    .pixels_120_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_120_address0),
-    .pixels_120_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_120_ce0),
+    .pixels_120_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_120_address0),
+    .pixels_120_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_120_ce0),
     .pixels_120_q0(pixels_120_q0),
-    .pixels_118_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_118_address0),
-    .pixels_118_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_118_ce0),
+    .pixels_118_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_118_address0),
+    .pixels_118_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_118_ce0),
     .pixels_118_q0(pixels_118_q0),
-    .pixels_116_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_116_address0),
-    .pixels_116_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_116_ce0),
+    .pixels_116_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_116_address0),
+    .pixels_116_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_116_ce0),
     .pixels_116_q0(pixels_116_q0),
-    .pixels_114_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_114_address0),
-    .pixels_114_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_114_ce0),
+    .pixels_114_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_114_address0),
+    .pixels_114_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_114_ce0),
     .pixels_114_q0(pixels_114_q0),
-    .pixels_112_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_112_address0),
-    .pixels_112_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_112_ce0),
+    .pixels_112_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_112_address0),
+    .pixels_112_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_112_ce0),
     .pixels_112_q0(pixels_112_q0),
-    .pixels_110_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_110_address0),
-    .pixels_110_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_110_ce0),
+    .pixels_110_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_110_address0),
+    .pixels_110_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_110_ce0),
     .pixels_110_q0(pixels_110_q0),
-    .pixels_108_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_108_address0),
-    .pixels_108_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_108_ce0),
+    .pixels_108_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_108_address0),
+    .pixels_108_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_108_ce0),
     .pixels_108_q0(pixels_108_q0),
-    .pixels_106_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_106_address0),
-    .pixels_106_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_106_ce0),
+    .pixels_106_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_106_address0),
+    .pixels_106_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_106_ce0),
     .pixels_106_q0(pixels_106_q0),
-    .pixels_104_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_104_address0),
-    .pixels_104_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_104_ce0),
+    .pixels_104_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_104_address0),
+    .pixels_104_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_104_ce0),
     .pixels_104_q0(pixels_104_q0),
-    .pixels_102_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_102_address0),
-    .pixels_102_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_102_ce0),
+    .pixels_102_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_102_address0),
+    .pixels_102_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_102_ce0),
     .pixels_102_q0(pixels_102_q0),
-    .pixels_100_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_100_address0),
-    .pixels_100_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_100_ce0),
+    .pixels_100_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_100_address0),
+    .pixels_100_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_100_ce0),
     .pixels_100_q0(pixels_100_q0),
-    .pixels_98_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_98_address0),
-    .pixels_98_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_98_ce0),
+    .pixels_98_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_98_address0),
+    .pixels_98_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_98_ce0),
     .pixels_98_q0(pixels_98_q0),
-    .pixels_96_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_96_address0),
-    .pixels_96_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_96_ce0),
+    .pixels_96_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_96_address0),
+    .pixels_96_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_96_ce0),
     .pixels_96_q0(pixels_96_q0),
-    .pixels_94_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_94_address0),
-    .pixels_94_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_94_ce0),
+    .pixels_94_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_94_address0),
+    .pixels_94_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_94_ce0),
     .pixels_94_q0(pixels_94_q0),
-    .pixels_92_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_92_address0),
-    .pixels_92_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_92_ce0),
+    .pixels_92_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_92_address0),
+    .pixels_92_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_92_ce0),
     .pixels_92_q0(pixels_92_q0),
-    .pixels_90_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_90_address0),
-    .pixels_90_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_90_ce0),
+    .pixels_90_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_90_address0),
+    .pixels_90_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_90_ce0),
     .pixels_90_q0(pixels_90_q0),
-    .pixels_88_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_88_address0),
-    .pixels_88_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_88_ce0),
+    .pixels_88_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_88_address0),
+    .pixels_88_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_88_ce0),
     .pixels_88_q0(pixels_88_q0),
-    .pixels_86_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_86_address0),
-    .pixels_86_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_86_ce0),
+    .pixels_86_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_86_address0),
+    .pixels_86_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_86_ce0),
     .pixels_86_q0(pixels_86_q0),
-    .pixels_84_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_84_address0),
-    .pixels_84_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_84_ce0),
+    .pixels_84_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_84_address0),
+    .pixels_84_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_84_ce0),
     .pixels_84_q0(pixels_84_q0),
-    .pixels_82_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_82_address0),
-    .pixels_82_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_82_ce0),
+    .pixels_82_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_82_address0),
+    .pixels_82_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_82_ce0),
     .pixels_82_q0(pixels_82_q0),
-    .pixels_80_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_80_address0),
-    .pixels_80_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_80_ce0),
+    .pixels_80_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_80_address0),
+    .pixels_80_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_80_ce0),
     .pixels_80_q0(pixels_80_q0),
-    .pixels_78_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_78_address0),
-    .pixels_78_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_78_ce0),
+    .pixels_78_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_78_address0),
+    .pixels_78_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_78_ce0),
     .pixels_78_q0(pixels_78_q0),
-    .pixels_76_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_76_address0),
-    .pixels_76_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_76_ce0),
+    .pixels_76_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_76_address0),
+    .pixels_76_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_76_ce0),
     .pixels_76_q0(pixels_76_q0),
-    .pixels_74_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_74_address0),
-    .pixels_74_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_74_ce0),
+    .pixels_74_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_74_address0),
+    .pixels_74_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_74_ce0),
     .pixels_74_q0(pixels_74_q0),
-    .pixels_72_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_72_address0),
-    .pixels_72_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_72_ce0),
+    .pixels_72_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_72_address0),
+    .pixels_72_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_72_ce0),
     .pixels_72_q0(pixels_72_q0),
-    .pixels_70_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_70_address0),
-    .pixels_70_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_70_ce0),
+    .pixels_70_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_70_address0),
+    .pixels_70_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_70_ce0),
     .pixels_70_q0(pixels_70_q0),
-    .pixels_68_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_68_address0),
-    .pixels_68_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_68_ce0),
+    .pixels_68_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_68_address0),
+    .pixels_68_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_68_ce0),
     .pixels_68_q0(pixels_68_q0),
-    .pixels_66_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_66_address0),
-    .pixels_66_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_66_ce0),
+    .pixels_66_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_66_address0),
+    .pixels_66_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_66_ce0),
     .pixels_66_q0(pixels_66_q0),
-    .pixels_64_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_64_address0),
-    .pixels_64_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_64_ce0),
+    .pixels_64_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_64_address0),
+    .pixels_64_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_64_ce0),
     .pixels_64_q0(pixels_64_q0),
-    .pixels_62_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_62_address0),
-    .pixels_62_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_62_ce0),
+    .pixels_62_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_62_address0),
+    .pixels_62_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_62_ce0),
     .pixels_62_q0(pixels_62_q0),
-    .pixels_60_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_60_address0),
-    .pixels_60_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_60_ce0),
+    .pixels_60_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_60_address0),
+    .pixels_60_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_60_ce0),
     .pixels_60_q0(pixels_60_q0),
-    .pixels_58_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_58_address0),
-    .pixels_58_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_58_ce0),
+    .pixels_58_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_58_address0),
+    .pixels_58_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_58_ce0),
     .pixels_58_q0(pixels_58_q0),
-    .pixels_56_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_56_address0),
-    .pixels_56_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_56_ce0),
+    .pixels_56_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_56_address0),
+    .pixels_56_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_56_ce0),
     .pixels_56_q0(pixels_56_q0),
-    .pixels_54_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_54_address0),
-    .pixels_54_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_54_ce0),
+    .pixels_54_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_54_address0),
+    .pixels_54_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_54_ce0),
     .pixels_54_q0(pixels_54_q0),
-    .pixels_52_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_52_address0),
-    .pixels_52_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_52_ce0),
+    .pixels_52_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_52_address0),
+    .pixels_52_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_52_ce0),
     .pixels_52_q0(pixels_52_q0),
-    .pixels_50_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_50_address0),
-    .pixels_50_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_50_ce0),
+    .pixels_50_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_50_address0),
+    .pixels_50_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_50_ce0),
     .pixels_50_q0(pixels_50_q0),
-    .pixels_48_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_48_address0),
-    .pixels_48_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_48_ce0),
+    .pixels_48_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_48_address0),
+    .pixels_48_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_48_ce0),
     .pixels_48_q0(pixels_48_q0),
-    .pixels_46_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_46_address0),
-    .pixels_46_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_46_ce0),
+    .pixels_46_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_46_address0),
+    .pixels_46_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_46_ce0),
     .pixels_46_q0(pixels_46_q0),
-    .pixels_44_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_44_address0),
-    .pixels_44_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_44_ce0),
+    .pixels_44_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_44_address0),
+    .pixels_44_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_44_ce0),
     .pixels_44_q0(pixels_44_q0),
-    .pixels_42_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_42_address0),
-    .pixels_42_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_42_ce0),
+    .pixels_42_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_42_address0),
+    .pixels_42_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_42_ce0),
     .pixels_42_q0(pixels_42_q0),
-    .pixels_40_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_40_address0),
-    .pixels_40_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_40_ce0),
+    .pixels_40_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_40_address0),
+    .pixels_40_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_40_ce0),
     .pixels_40_q0(pixels_40_q0),
-    .pixels_38_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_38_address0),
-    .pixels_38_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_38_ce0),
+    .pixels_38_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_38_address0),
+    .pixels_38_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_38_ce0),
     .pixels_38_q0(pixels_38_q0),
-    .pixels_36_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_36_address0),
-    .pixels_36_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_36_ce0),
+    .pixels_36_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_36_address0),
+    .pixels_36_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_36_ce0),
     .pixels_36_q0(pixels_36_q0),
-    .pixels_34_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_34_address0),
-    .pixels_34_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_34_ce0),
+    .pixels_34_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_34_address0),
+    .pixels_34_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_34_ce0),
     .pixels_34_q0(pixels_34_q0),
-    .pixels_32_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_32_address0),
-    .pixels_32_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_32_ce0),
+    .pixels_32_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_32_address0),
+    .pixels_32_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_32_ce0),
     .pixels_32_q0(pixels_32_q0),
-    .pixels_30_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_30_address0),
-    .pixels_30_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_30_ce0),
+    .pixels_30_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_30_address0),
+    .pixels_30_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_30_ce0),
     .pixels_30_q0(pixels_30_q0),
-    .pixels_28_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_28_address0),
-    .pixels_28_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_28_ce0),
+    .pixels_28_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_28_address0),
+    .pixels_28_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_28_ce0),
     .pixels_28_q0(pixels_28_q0),
-    .pixels_26_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_26_address0),
-    .pixels_26_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_26_ce0),
+    .pixels_26_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_26_address0),
+    .pixels_26_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_26_ce0),
     .pixels_26_q0(pixels_26_q0),
-    .pixels_24_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_24_address0),
-    .pixels_24_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_24_ce0),
+    .pixels_24_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_24_address0),
+    .pixels_24_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_24_ce0),
     .pixels_24_q0(pixels_24_q0),
-    .pixels_22_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_22_address0),
-    .pixels_22_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_22_ce0),
+    .pixels_22_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_22_address0),
+    .pixels_22_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_22_ce0),
     .pixels_22_q0(pixels_22_q0),
-    .pixels_20_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_20_address0),
-    .pixels_20_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_20_ce0),
+    .pixels_20_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_20_address0),
+    .pixels_20_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_20_ce0),
     .pixels_20_q0(pixels_20_q0),
-    .pixels_18_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_18_address0),
-    .pixels_18_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_18_ce0),
+    .pixels_18_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_18_address0),
+    .pixels_18_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_18_ce0),
     .pixels_18_q0(pixels_18_q0),
-    .pixels_16_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_16_address0),
-    .pixels_16_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_16_ce0),
+    .pixels_16_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_16_address0),
+    .pixels_16_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_16_ce0),
     .pixels_16_q0(pixels_16_q0),
-    .pixels_14_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_14_address0),
-    .pixels_14_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_14_ce0),
+    .pixels_14_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_14_address0),
+    .pixels_14_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_14_ce0),
     .pixels_14_q0(pixels_14_q0),
-    .pixels_12_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_12_address0),
-    .pixels_12_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_12_ce0),
+    .pixels_12_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_12_address0),
+    .pixels_12_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_12_ce0),
     .pixels_12_q0(pixels_12_q0),
-    .pixels_10_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_10_address0),
-    .pixels_10_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_10_ce0),
+    .pixels_10_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_10_address0),
+    .pixels_10_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_10_ce0),
     .pixels_10_q0(pixels_10_q0),
-    .pixels_8_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_8_address0),
-    .pixels_8_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_8_ce0),
+    .pixels_8_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_8_address0),
+    .pixels_8_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_8_ce0),
     .pixels_8_q0(pixels_8_q0),
-    .pixels_6_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_6_address0),
-    .pixels_6_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_6_ce0),
+    .pixels_6_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_6_address0),
+    .pixels_6_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_6_ce0),
     .pixels_6_q0(pixels_6_q0),
-    .pixels_4_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_4_address0),
-    .pixels_4_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_4_ce0),
+    .pixels_4_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_4_address0),
+    .pixels_4_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_4_ce0),
     .pixels_4_q0(pixels_4_q0),
-    .pixels_2_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_2_address0),
-    .pixels_2_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_2_ce0),
+    .pixels_2_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_2_address0),
+    .pixels_2_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_2_ce0),
     .pixels_2_q0(pixels_2_q0),
-    .pixels_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_address0),
-    .pixels_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_ce0),
+    .pixels_address0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_address0),
+    .pixels_ce0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_ce0),
     .pixels_q0(pixels_q0),
-    .out_stream_TDATA(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TDATA),
-    .out_stream_TVALID(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TVALID),
-    .out_stream_TKEEP(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TKEEP),
-    .out_stream_TSTRB(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TSTRB),
-    .out_stream_TUSER(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TUSER),
-    .out_stream_TLAST(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TLAST),
-    .out_stream_TID(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TID),
-    .out_stream_TDEST(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TDEST)
+    .out_stream_TDATA(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TDATA),
+    .out_stream_TVALID(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TVALID),
+    .out_stream_TKEEP(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TKEEP),
+    .out_stream_TSTRB(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TSTRB),
+    .out_stream_TUSER(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TUSER),
+    .out_stream_TLAST(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TLAST),
+    .out_stream_TID(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TID),
+    .out_stream_TDEST(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TDEST)
 );
 
 hyperspectral_hw_wrapped_CONTROL_BUS_s_axi #(
@@ -6593,19 +6591,6 @@ CONTROL_BUS_s_axi_U(
     .ap_ready(ap_ready),
     .ap_done(ap_done),
     .ap_idle(ap_idle)
-);
-
-hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 32 ),
-    .dout_WIDTH( 32 ))
-uitofp_32ns_32_4_no_dsp_1_U755(
-    .clk(ap_clk),
-    .reset(ap_rst_n_inv),
-    .din0(grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_min_distance_V_out),
-    .ce(grp_fu_3268_ce),
-    .dout(grp_fu_3268_p1)
 );
 
 hyperspectral_hw_wrapped_regslice_both #(
@@ -6814,679 +6799,679 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ap_start_reg <= 1'b0;
-    end else begin
-        if ((1'b1 == ap_CS_fsm_state2)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ap_start_reg <= 1'b1;
-        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ap_ready == 1'b1)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst_n_inv == 1'b1) begin
-        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_ap_start_reg <= 1'b0;
+        grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state94)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_ap_start_reg <= 1'b1;
-        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_ap_ready == 1'b1)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_ap_start_reg <= 1'b0;
+            grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_ap_start_reg <= 1'b1;
+        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_ap_ready == 1'b1)) begin
+            grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_ap_start_reg <= 1'b0;
+        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state97)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_ap_start_reg <= 1'b1;
-        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_ap_ready == 1'b1)) begin
-            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state2)) begin
+            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ap_start_reg <= 1'b1;
+        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ap_ready == 1'b1)) begin
+            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_active_idx_2_out_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state95))) begin
-        active_idx_2_loc_fu_446 <= grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_active_idx_2_out;
+    if (ap_rst_n_inv == 1'b1) begin
+        grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_ap_start_reg <= 1'b0;
+    end else begin
+        if ((1'b1 == ap_CS_fsm_state97)) begin
+            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_ap_start_reg <= 1'b1;
+        end else if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_ap_ready == 1'b1)) begin
+            grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_ap_start_reg <= 1'b0;
+        end
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_active_idx_2_out_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state95))) begin
+        active_idx_2_loc_fu_432 <= grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_active_idx_2_out;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state55)) begin
-        ref_pixel_V_load_100_reg_4332 <= ref_pixel_V_q1;
-        ref_pixel_V_load_101_reg_4337 <= ref_pixel_V_q0;
+        ref_pixel_V_load_100_reg_4315 <= ref_pixel_V_q1;
+        ref_pixel_V_load_101_reg_4320 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state56)) begin
-        ref_pixel_V_load_102_reg_4352 <= ref_pixel_V_q1;
-        ref_pixel_V_load_103_reg_4357 <= ref_pixel_V_q0;
+        ref_pixel_V_load_102_reg_4335 <= ref_pixel_V_q1;
+        ref_pixel_V_load_103_reg_4340 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state57)) begin
-        ref_pixel_V_load_104_reg_4372 <= ref_pixel_V_q1;
-        ref_pixel_V_load_105_reg_4377 <= ref_pixel_V_q0;
+        ref_pixel_V_load_104_reg_4355 <= ref_pixel_V_q1;
+        ref_pixel_V_load_105_reg_4360 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state58)) begin
-        ref_pixel_V_load_106_reg_4392 <= ref_pixel_V_q1;
-        ref_pixel_V_load_107_reg_4397 <= ref_pixel_V_q0;
+        ref_pixel_V_load_106_reg_4375 <= ref_pixel_V_q1;
+        ref_pixel_V_load_107_reg_4380 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state59)) begin
-        ref_pixel_V_load_108_reg_4412 <= ref_pixel_V_q1;
-        ref_pixel_V_load_109_reg_4417 <= ref_pixel_V_q0;
+        ref_pixel_V_load_108_reg_4395 <= ref_pixel_V_q1;
+        ref_pixel_V_load_109_reg_4400 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state10)) begin
-        ref_pixel_V_load_10_reg_3432 <= ref_pixel_V_q1;
-        ref_pixel_V_load_11_reg_3437 <= ref_pixel_V_q0;
+        ref_pixel_V_load_10_reg_3415 <= ref_pixel_V_q1;
+        ref_pixel_V_load_11_reg_3420 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state60)) begin
-        ref_pixel_V_load_110_reg_4432 <= ref_pixel_V_q1;
-        ref_pixel_V_load_111_reg_4437 <= ref_pixel_V_q0;
+        ref_pixel_V_load_110_reg_4415 <= ref_pixel_V_q1;
+        ref_pixel_V_load_111_reg_4420 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state61)) begin
-        ref_pixel_V_load_112_reg_4452 <= ref_pixel_V_q1;
-        ref_pixel_V_load_113_reg_4457 <= ref_pixel_V_q0;
+        ref_pixel_V_load_112_reg_4435 <= ref_pixel_V_q1;
+        ref_pixel_V_load_113_reg_4440 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state62)) begin
-        ref_pixel_V_load_114_reg_4472 <= ref_pixel_V_q1;
-        ref_pixel_V_load_115_reg_4477 <= ref_pixel_V_q0;
+        ref_pixel_V_load_114_reg_4455 <= ref_pixel_V_q1;
+        ref_pixel_V_load_115_reg_4460 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state63)) begin
-        ref_pixel_V_load_116_reg_4492 <= ref_pixel_V_q1;
-        ref_pixel_V_load_117_reg_4497 <= ref_pixel_V_q0;
+        ref_pixel_V_load_116_reg_4475 <= ref_pixel_V_q1;
+        ref_pixel_V_load_117_reg_4480 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state64)) begin
-        ref_pixel_V_load_118_reg_4512 <= ref_pixel_V_q1;
-        ref_pixel_V_load_119_reg_4517 <= ref_pixel_V_q0;
+        ref_pixel_V_load_118_reg_4495 <= ref_pixel_V_q1;
+        ref_pixel_V_load_119_reg_4500 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state65)) begin
-        ref_pixel_V_load_120_reg_4532 <= ref_pixel_V_q1;
-        ref_pixel_V_load_121_reg_4537 <= ref_pixel_V_q0;
+        ref_pixel_V_load_120_reg_4515 <= ref_pixel_V_q1;
+        ref_pixel_V_load_121_reg_4520 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state66)) begin
-        ref_pixel_V_load_122_reg_4552 <= ref_pixel_V_q1;
-        ref_pixel_V_load_123_reg_4557 <= ref_pixel_V_q0;
+        ref_pixel_V_load_122_reg_4535 <= ref_pixel_V_q1;
+        ref_pixel_V_load_123_reg_4540 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state67)) begin
-        ref_pixel_V_load_124_reg_4572 <= ref_pixel_V_q1;
-        ref_pixel_V_load_125_reg_4577 <= ref_pixel_V_q0;
+        ref_pixel_V_load_124_reg_4555 <= ref_pixel_V_q1;
+        ref_pixel_V_load_125_reg_4560 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state68)) begin
-        ref_pixel_V_load_126_reg_4592 <= ref_pixel_V_q1;
-        ref_pixel_V_load_127_reg_4597 <= ref_pixel_V_q0;
+        ref_pixel_V_load_126_reg_4575 <= ref_pixel_V_q1;
+        ref_pixel_V_load_127_reg_4580 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state69)) begin
-        ref_pixel_V_load_128_reg_4612 <= ref_pixel_V_q1;
-        ref_pixel_V_load_129_reg_4617 <= ref_pixel_V_q0;
+        ref_pixel_V_load_128_reg_4595 <= ref_pixel_V_q1;
+        ref_pixel_V_load_129_reg_4600 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state11)) begin
-        ref_pixel_V_load_12_reg_3452 <= ref_pixel_V_q1;
-        ref_pixel_V_load_13_reg_3457 <= ref_pixel_V_q0;
+        ref_pixel_V_load_12_reg_3435 <= ref_pixel_V_q1;
+        ref_pixel_V_load_13_reg_3440 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state70)) begin
-        ref_pixel_V_load_130_reg_4632 <= ref_pixel_V_q1;
-        ref_pixel_V_load_131_reg_4637 <= ref_pixel_V_q0;
+        ref_pixel_V_load_130_reg_4615 <= ref_pixel_V_q1;
+        ref_pixel_V_load_131_reg_4620 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state71)) begin
-        ref_pixel_V_load_132_reg_4652 <= ref_pixel_V_q1;
-        ref_pixel_V_load_133_reg_4657 <= ref_pixel_V_q0;
+        ref_pixel_V_load_132_reg_4635 <= ref_pixel_V_q1;
+        ref_pixel_V_load_133_reg_4640 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state72)) begin
-        ref_pixel_V_load_134_reg_4672 <= ref_pixel_V_q1;
-        ref_pixel_V_load_135_reg_4677 <= ref_pixel_V_q0;
+        ref_pixel_V_load_134_reg_4655 <= ref_pixel_V_q1;
+        ref_pixel_V_load_135_reg_4660 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state73)) begin
-        ref_pixel_V_load_136_reg_4692 <= ref_pixel_V_q1;
-        ref_pixel_V_load_137_reg_4697 <= ref_pixel_V_q0;
+        ref_pixel_V_load_136_reg_4675 <= ref_pixel_V_q1;
+        ref_pixel_V_load_137_reg_4680 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state74)) begin
-        ref_pixel_V_load_138_reg_4712 <= ref_pixel_V_q1;
-        ref_pixel_V_load_139_reg_4717 <= ref_pixel_V_q0;
+        ref_pixel_V_load_138_reg_4695 <= ref_pixel_V_q1;
+        ref_pixel_V_load_139_reg_4700 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state75)) begin
-        ref_pixel_V_load_140_reg_4732 <= ref_pixel_V_q1;
-        ref_pixel_V_load_141_reg_4737 <= ref_pixel_V_q0;
+        ref_pixel_V_load_140_reg_4715 <= ref_pixel_V_q1;
+        ref_pixel_V_load_141_reg_4720 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state76)) begin
-        ref_pixel_V_load_142_reg_4752 <= ref_pixel_V_q1;
-        ref_pixel_V_load_143_reg_4757 <= ref_pixel_V_q0;
+        ref_pixel_V_load_142_reg_4735 <= ref_pixel_V_q1;
+        ref_pixel_V_load_143_reg_4740 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state77)) begin
-        ref_pixel_V_load_144_reg_4772 <= ref_pixel_V_q1;
-        ref_pixel_V_load_145_reg_4777 <= ref_pixel_V_q0;
+        ref_pixel_V_load_144_reg_4755 <= ref_pixel_V_q1;
+        ref_pixel_V_load_145_reg_4760 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state78)) begin
-        ref_pixel_V_load_146_reg_4792 <= ref_pixel_V_q1;
-        ref_pixel_V_load_147_reg_4797 <= ref_pixel_V_q0;
+        ref_pixel_V_load_146_reg_4775 <= ref_pixel_V_q1;
+        ref_pixel_V_load_147_reg_4780 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state79)) begin
-        ref_pixel_V_load_148_reg_4812 <= ref_pixel_V_q1;
-        ref_pixel_V_load_149_reg_4817 <= ref_pixel_V_q0;
+        ref_pixel_V_load_148_reg_4795 <= ref_pixel_V_q1;
+        ref_pixel_V_load_149_reg_4800 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state12)) begin
-        ref_pixel_V_load_14_reg_3472 <= ref_pixel_V_q1;
-        ref_pixel_V_load_15_reg_3477 <= ref_pixel_V_q0;
+        ref_pixel_V_load_14_reg_3455 <= ref_pixel_V_q1;
+        ref_pixel_V_load_15_reg_3460 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state80)) begin
-        ref_pixel_V_load_150_reg_4832 <= ref_pixel_V_q1;
-        ref_pixel_V_load_151_reg_4837 <= ref_pixel_V_q0;
+        ref_pixel_V_load_150_reg_4815 <= ref_pixel_V_q1;
+        ref_pixel_V_load_151_reg_4820 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state81)) begin
-        ref_pixel_V_load_152_reg_4852 <= ref_pixel_V_q1;
-        ref_pixel_V_load_153_reg_4857 <= ref_pixel_V_q0;
+        ref_pixel_V_load_152_reg_4835 <= ref_pixel_V_q1;
+        ref_pixel_V_load_153_reg_4840 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state82)) begin
-        ref_pixel_V_load_154_reg_4872 <= ref_pixel_V_q1;
-        ref_pixel_V_load_155_reg_4877 <= ref_pixel_V_q0;
+        ref_pixel_V_load_154_reg_4855 <= ref_pixel_V_q1;
+        ref_pixel_V_load_155_reg_4860 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state83)) begin
-        ref_pixel_V_load_156_reg_4892 <= ref_pixel_V_q1;
-        ref_pixel_V_load_157_reg_4897 <= ref_pixel_V_q0;
+        ref_pixel_V_load_156_reg_4875 <= ref_pixel_V_q1;
+        ref_pixel_V_load_157_reg_4880 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state84)) begin
-        ref_pixel_V_load_158_reg_4912 <= ref_pixel_V_q1;
-        ref_pixel_V_load_159_reg_4917 <= ref_pixel_V_q0;
+        ref_pixel_V_load_158_reg_4895 <= ref_pixel_V_q1;
+        ref_pixel_V_load_159_reg_4900 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state85)) begin
-        ref_pixel_V_load_160_reg_4932 <= ref_pixel_V_q1;
-        ref_pixel_V_load_161_reg_4937 <= ref_pixel_V_q0;
+        ref_pixel_V_load_160_reg_4915 <= ref_pixel_V_q1;
+        ref_pixel_V_load_161_reg_4920 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state86)) begin
-        ref_pixel_V_load_162_reg_4952 <= ref_pixel_V_q1;
-        ref_pixel_V_load_163_reg_4957 <= ref_pixel_V_q0;
+        ref_pixel_V_load_162_reg_4935 <= ref_pixel_V_q1;
+        ref_pixel_V_load_163_reg_4940 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state87)) begin
-        ref_pixel_V_load_164_reg_4972 <= ref_pixel_V_q1;
-        ref_pixel_V_load_165_reg_4977 <= ref_pixel_V_q0;
+        ref_pixel_V_load_164_reg_4955 <= ref_pixel_V_q1;
+        ref_pixel_V_load_165_reg_4960 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state88)) begin
-        ref_pixel_V_load_166_reg_4992 <= ref_pixel_V_q1;
-        ref_pixel_V_load_167_reg_4997 <= ref_pixel_V_q0;
+        ref_pixel_V_load_166_reg_4975 <= ref_pixel_V_q1;
+        ref_pixel_V_load_167_reg_4980 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state89)) begin
-        ref_pixel_V_load_168_reg_5012 <= ref_pixel_V_q1;
-        ref_pixel_V_load_169_reg_5017 <= ref_pixel_V_q0;
+        ref_pixel_V_load_168_reg_4995 <= ref_pixel_V_q1;
+        ref_pixel_V_load_169_reg_5000 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state13)) begin
-        ref_pixel_V_load_16_reg_3492 <= ref_pixel_V_q1;
-        ref_pixel_V_load_17_reg_3497 <= ref_pixel_V_q0;
+        ref_pixel_V_load_16_reg_3475 <= ref_pixel_V_q1;
+        ref_pixel_V_load_17_reg_3480 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state90)) begin
-        ref_pixel_V_load_170_reg_5032 <= ref_pixel_V_q1;
-        ref_pixel_V_load_171_reg_5037 <= ref_pixel_V_q0;
+        ref_pixel_V_load_170_reg_5015 <= ref_pixel_V_q1;
+        ref_pixel_V_load_171_reg_5020 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state91)) begin
-        ref_pixel_V_load_172_reg_5052 <= ref_pixel_V_q1;
-        ref_pixel_V_load_173_reg_5057 <= ref_pixel_V_q0;
+        ref_pixel_V_load_172_reg_5035 <= ref_pixel_V_q1;
+        ref_pixel_V_load_173_reg_5040 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state92)) begin
-        ref_pixel_V_load_174_reg_5072 <= ref_pixel_V_q1;
-        ref_pixel_V_load_175_reg_5077 <= ref_pixel_V_q0;
+        ref_pixel_V_load_174_reg_5055 <= ref_pixel_V_q1;
+        ref_pixel_V_load_175_reg_5060 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state93)) begin
-        ref_pixel_V_load_176_reg_5092 <= ref_pixel_V_q1;
-        ref_pixel_V_load_177_reg_5097 <= ref_pixel_V_q0;
+        ref_pixel_V_load_176_reg_5075 <= ref_pixel_V_q1;
+        ref_pixel_V_load_177_reg_5080 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state94)) begin
-        ref_pixel_V_load_178_reg_5112 <= ref_pixel_V_q1;
-        ref_pixel_V_load_179_reg_5117 <= ref_pixel_V_q0;
+        ref_pixel_V_load_178_reg_5095 <= ref_pixel_V_q1;
+        ref_pixel_V_load_179_reg_5100 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state14)) begin
-        ref_pixel_V_load_18_reg_3512 <= ref_pixel_V_q1;
-        ref_pixel_V_load_19_reg_3517 <= ref_pixel_V_q0;
+        ref_pixel_V_load_18_reg_3495 <= ref_pixel_V_q1;
+        ref_pixel_V_load_19_reg_3500 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        ref_pixel_V_load_1_reg_3337 <= ref_pixel_V_q0;
-        ref_pixel_V_load_reg_3332 <= ref_pixel_V_q1;
+        ref_pixel_V_load_1_reg_3320 <= ref_pixel_V_q0;
+        ref_pixel_V_load_reg_3315 <= ref_pixel_V_q1;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state15)) begin
-        ref_pixel_V_load_20_reg_3532 <= ref_pixel_V_q1;
-        ref_pixel_V_load_21_reg_3537 <= ref_pixel_V_q0;
+        ref_pixel_V_load_20_reg_3515 <= ref_pixel_V_q1;
+        ref_pixel_V_load_21_reg_3520 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state16)) begin
-        ref_pixel_V_load_22_reg_3552 <= ref_pixel_V_q1;
-        ref_pixel_V_load_23_reg_3557 <= ref_pixel_V_q0;
+        ref_pixel_V_load_22_reg_3535 <= ref_pixel_V_q1;
+        ref_pixel_V_load_23_reg_3540 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state17)) begin
-        ref_pixel_V_load_24_reg_3572 <= ref_pixel_V_q1;
-        ref_pixel_V_load_25_reg_3577 <= ref_pixel_V_q0;
+        ref_pixel_V_load_24_reg_3555 <= ref_pixel_V_q1;
+        ref_pixel_V_load_25_reg_3560 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state18)) begin
-        ref_pixel_V_load_26_reg_3592 <= ref_pixel_V_q1;
-        ref_pixel_V_load_27_reg_3597 <= ref_pixel_V_q0;
+        ref_pixel_V_load_26_reg_3575 <= ref_pixel_V_q1;
+        ref_pixel_V_load_27_reg_3580 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state19)) begin
-        ref_pixel_V_load_28_reg_3612 <= ref_pixel_V_q1;
-        ref_pixel_V_load_29_reg_3617 <= ref_pixel_V_q0;
+        ref_pixel_V_load_28_reg_3595 <= ref_pixel_V_q1;
+        ref_pixel_V_load_29_reg_3600 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        ref_pixel_V_load_2_reg_3352 <= ref_pixel_V_q1;
-        ref_pixel_V_load_3_reg_3357 <= ref_pixel_V_q0;
+        ref_pixel_V_load_2_reg_3335 <= ref_pixel_V_q1;
+        ref_pixel_V_load_3_reg_3340 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state20)) begin
-        ref_pixel_V_load_30_reg_3632 <= ref_pixel_V_q1;
-        ref_pixel_V_load_31_reg_3637 <= ref_pixel_V_q0;
+        ref_pixel_V_load_30_reg_3615 <= ref_pixel_V_q1;
+        ref_pixel_V_load_31_reg_3620 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state21)) begin
-        ref_pixel_V_load_32_reg_3652 <= ref_pixel_V_q1;
-        ref_pixel_V_load_33_reg_3657 <= ref_pixel_V_q0;
+        ref_pixel_V_load_32_reg_3635 <= ref_pixel_V_q1;
+        ref_pixel_V_load_33_reg_3640 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state22)) begin
-        ref_pixel_V_load_34_reg_3672 <= ref_pixel_V_q1;
-        ref_pixel_V_load_35_reg_3677 <= ref_pixel_V_q0;
+        ref_pixel_V_load_34_reg_3655 <= ref_pixel_V_q1;
+        ref_pixel_V_load_35_reg_3660 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state23)) begin
-        ref_pixel_V_load_36_reg_3692 <= ref_pixel_V_q1;
-        ref_pixel_V_load_37_reg_3697 <= ref_pixel_V_q0;
+        ref_pixel_V_load_36_reg_3675 <= ref_pixel_V_q1;
+        ref_pixel_V_load_37_reg_3680 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state24)) begin
-        ref_pixel_V_load_38_reg_3712 <= ref_pixel_V_q1;
-        ref_pixel_V_load_39_reg_3717 <= ref_pixel_V_q0;
+        ref_pixel_V_load_38_reg_3695 <= ref_pixel_V_q1;
+        ref_pixel_V_load_39_reg_3700 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state25)) begin
-        ref_pixel_V_load_40_reg_3732 <= ref_pixel_V_q1;
-        ref_pixel_V_load_41_reg_3737 <= ref_pixel_V_q0;
+        ref_pixel_V_load_40_reg_3715 <= ref_pixel_V_q1;
+        ref_pixel_V_load_41_reg_3720 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state26)) begin
-        ref_pixel_V_load_42_reg_3752 <= ref_pixel_V_q1;
-        ref_pixel_V_load_43_reg_3757 <= ref_pixel_V_q0;
+        ref_pixel_V_load_42_reg_3735 <= ref_pixel_V_q1;
+        ref_pixel_V_load_43_reg_3740 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state27)) begin
-        ref_pixel_V_load_44_reg_3772 <= ref_pixel_V_q1;
-        ref_pixel_V_load_45_reg_3777 <= ref_pixel_V_q0;
+        ref_pixel_V_load_44_reg_3755 <= ref_pixel_V_q1;
+        ref_pixel_V_load_45_reg_3760 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state28)) begin
-        ref_pixel_V_load_46_reg_3792 <= ref_pixel_V_q1;
-        ref_pixel_V_load_47_reg_3797 <= ref_pixel_V_q0;
+        ref_pixel_V_load_46_reg_3775 <= ref_pixel_V_q1;
+        ref_pixel_V_load_47_reg_3780 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state29)) begin
-        ref_pixel_V_load_48_reg_3812 <= ref_pixel_V_q1;
-        ref_pixel_V_load_49_reg_3817 <= ref_pixel_V_q0;
+        ref_pixel_V_load_48_reg_3795 <= ref_pixel_V_q1;
+        ref_pixel_V_load_49_reg_3800 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state7)) begin
-        ref_pixel_V_load_4_reg_3372 <= ref_pixel_V_q1;
-        ref_pixel_V_load_5_reg_3377 <= ref_pixel_V_q0;
+        ref_pixel_V_load_4_reg_3355 <= ref_pixel_V_q1;
+        ref_pixel_V_load_5_reg_3360 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state30)) begin
-        ref_pixel_V_load_50_reg_3832 <= ref_pixel_V_q1;
-        ref_pixel_V_load_51_reg_3837 <= ref_pixel_V_q0;
+        ref_pixel_V_load_50_reg_3815 <= ref_pixel_V_q1;
+        ref_pixel_V_load_51_reg_3820 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state31)) begin
-        ref_pixel_V_load_52_reg_3852 <= ref_pixel_V_q1;
-        ref_pixel_V_load_53_reg_3857 <= ref_pixel_V_q0;
+        ref_pixel_V_load_52_reg_3835 <= ref_pixel_V_q1;
+        ref_pixel_V_load_53_reg_3840 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state32)) begin
-        ref_pixel_V_load_54_reg_3872 <= ref_pixel_V_q1;
-        ref_pixel_V_load_55_reg_3877 <= ref_pixel_V_q0;
+        ref_pixel_V_load_54_reg_3855 <= ref_pixel_V_q1;
+        ref_pixel_V_load_55_reg_3860 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state33)) begin
-        ref_pixel_V_load_56_reg_3892 <= ref_pixel_V_q1;
-        ref_pixel_V_load_57_reg_3897 <= ref_pixel_V_q0;
+        ref_pixel_V_load_56_reg_3875 <= ref_pixel_V_q1;
+        ref_pixel_V_load_57_reg_3880 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state34)) begin
-        ref_pixel_V_load_58_reg_3912 <= ref_pixel_V_q1;
-        ref_pixel_V_load_59_reg_3917 <= ref_pixel_V_q0;
+        ref_pixel_V_load_58_reg_3895 <= ref_pixel_V_q1;
+        ref_pixel_V_load_59_reg_3900 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state35)) begin
-        ref_pixel_V_load_60_reg_3932 <= ref_pixel_V_q1;
-        ref_pixel_V_load_61_reg_3937 <= ref_pixel_V_q0;
+        ref_pixel_V_load_60_reg_3915 <= ref_pixel_V_q1;
+        ref_pixel_V_load_61_reg_3920 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state36)) begin
-        ref_pixel_V_load_62_reg_3952 <= ref_pixel_V_q1;
-        ref_pixel_V_load_63_reg_3957 <= ref_pixel_V_q0;
+        ref_pixel_V_load_62_reg_3935 <= ref_pixel_V_q1;
+        ref_pixel_V_load_63_reg_3940 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state37)) begin
-        ref_pixel_V_load_64_reg_3972 <= ref_pixel_V_q1;
-        ref_pixel_V_load_65_reg_3977 <= ref_pixel_V_q0;
+        ref_pixel_V_load_64_reg_3955 <= ref_pixel_V_q1;
+        ref_pixel_V_load_65_reg_3960 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state38)) begin
-        ref_pixel_V_load_66_reg_3992 <= ref_pixel_V_q1;
-        ref_pixel_V_load_67_reg_3997 <= ref_pixel_V_q0;
+        ref_pixel_V_load_66_reg_3975 <= ref_pixel_V_q1;
+        ref_pixel_V_load_67_reg_3980 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state39)) begin
-        ref_pixel_V_load_68_reg_4012 <= ref_pixel_V_q1;
-        ref_pixel_V_load_69_reg_4017 <= ref_pixel_V_q0;
+        ref_pixel_V_load_68_reg_3995 <= ref_pixel_V_q1;
+        ref_pixel_V_load_69_reg_4000 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state8)) begin
-        ref_pixel_V_load_6_reg_3392 <= ref_pixel_V_q1;
-        ref_pixel_V_load_7_reg_3397 <= ref_pixel_V_q0;
+        ref_pixel_V_load_6_reg_3375 <= ref_pixel_V_q1;
+        ref_pixel_V_load_7_reg_3380 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state40)) begin
-        ref_pixel_V_load_70_reg_4032 <= ref_pixel_V_q1;
-        ref_pixel_V_load_71_reg_4037 <= ref_pixel_V_q0;
+        ref_pixel_V_load_70_reg_4015 <= ref_pixel_V_q1;
+        ref_pixel_V_load_71_reg_4020 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state41)) begin
-        ref_pixel_V_load_72_reg_4052 <= ref_pixel_V_q1;
-        ref_pixel_V_load_73_reg_4057 <= ref_pixel_V_q0;
+        ref_pixel_V_load_72_reg_4035 <= ref_pixel_V_q1;
+        ref_pixel_V_load_73_reg_4040 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state42)) begin
-        ref_pixel_V_load_74_reg_4072 <= ref_pixel_V_q1;
-        ref_pixel_V_load_75_reg_4077 <= ref_pixel_V_q0;
+        ref_pixel_V_load_74_reg_4055 <= ref_pixel_V_q1;
+        ref_pixel_V_load_75_reg_4060 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state43)) begin
-        ref_pixel_V_load_76_reg_4092 <= ref_pixel_V_q1;
-        ref_pixel_V_load_77_reg_4097 <= ref_pixel_V_q0;
+        ref_pixel_V_load_76_reg_4075 <= ref_pixel_V_q1;
+        ref_pixel_V_load_77_reg_4080 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state44)) begin
-        ref_pixel_V_load_78_reg_4112 <= ref_pixel_V_q1;
-        ref_pixel_V_load_79_reg_4117 <= ref_pixel_V_q0;
+        ref_pixel_V_load_78_reg_4095 <= ref_pixel_V_q1;
+        ref_pixel_V_load_79_reg_4100 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state45)) begin
-        ref_pixel_V_load_80_reg_4132 <= ref_pixel_V_q1;
-        ref_pixel_V_load_81_reg_4137 <= ref_pixel_V_q0;
+        ref_pixel_V_load_80_reg_4115 <= ref_pixel_V_q1;
+        ref_pixel_V_load_81_reg_4120 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state46)) begin
-        ref_pixel_V_load_82_reg_4152 <= ref_pixel_V_q1;
-        ref_pixel_V_load_83_reg_4157 <= ref_pixel_V_q0;
+        ref_pixel_V_load_82_reg_4135 <= ref_pixel_V_q1;
+        ref_pixel_V_load_83_reg_4140 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state47)) begin
-        ref_pixel_V_load_84_reg_4172 <= ref_pixel_V_q1;
-        ref_pixel_V_load_85_reg_4177 <= ref_pixel_V_q0;
+        ref_pixel_V_load_84_reg_4155 <= ref_pixel_V_q1;
+        ref_pixel_V_load_85_reg_4160 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state48)) begin
-        ref_pixel_V_load_86_reg_4192 <= ref_pixel_V_q1;
-        ref_pixel_V_load_87_reg_4197 <= ref_pixel_V_q0;
+        ref_pixel_V_load_86_reg_4175 <= ref_pixel_V_q1;
+        ref_pixel_V_load_87_reg_4180 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state49)) begin
-        ref_pixel_V_load_88_reg_4212 <= ref_pixel_V_q1;
-        ref_pixel_V_load_89_reg_4217 <= ref_pixel_V_q0;
+        ref_pixel_V_load_88_reg_4195 <= ref_pixel_V_q1;
+        ref_pixel_V_load_89_reg_4200 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state9)) begin
-        ref_pixel_V_load_8_reg_3412 <= ref_pixel_V_q1;
-        ref_pixel_V_load_9_reg_3417 <= ref_pixel_V_q0;
+        ref_pixel_V_load_8_reg_3395 <= ref_pixel_V_q1;
+        ref_pixel_V_load_9_reg_3400 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state50)) begin
-        ref_pixel_V_load_90_reg_4232 <= ref_pixel_V_q1;
-        ref_pixel_V_load_91_reg_4237 <= ref_pixel_V_q0;
+        ref_pixel_V_load_90_reg_4215 <= ref_pixel_V_q1;
+        ref_pixel_V_load_91_reg_4220 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state51)) begin
-        ref_pixel_V_load_92_reg_4252 <= ref_pixel_V_q1;
-        ref_pixel_V_load_93_reg_4257 <= ref_pixel_V_q0;
+        ref_pixel_V_load_92_reg_4235 <= ref_pixel_V_q1;
+        ref_pixel_V_load_93_reg_4240 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state52)) begin
-        ref_pixel_V_load_94_reg_4272 <= ref_pixel_V_q1;
-        ref_pixel_V_load_95_reg_4277 <= ref_pixel_V_q0;
+        ref_pixel_V_load_94_reg_4255 <= ref_pixel_V_q1;
+        ref_pixel_V_load_95_reg_4260 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state53)) begin
-        ref_pixel_V_load_96_reg_4292 <= ref_pixel_V_q1;
-        ref_pixel_V_load_97_reg_4297 <= ref_pixel_V_q0;
+        ref_pixel_V_load_96_reg_4275 <= ref_pixel_V_q1;
+        ref_pixel_V_load_97_reg_4280 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state54)) begin
-        ref_pixel_V_load_98_reg_4312 <= ref_pixel_V_q1;
-        ref_pixel_V_load_99_reg_4317 <= ref_pixel_V_q0;
+        ref_pixel_V_load_98_reg_4295 <= ref_pixel_V_q1;
+        ref_pixel_V_load_99_reg_4300 <= ref_pixel_V_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state97)) begin
-        sub71_reg_5122 <= sub71_fu_3274_p2;
+        sub69_reg_5105 <= sub69_fu_3258_p2;
     end
 end
 
@@ -7585,7 +7570,7 @@ assign ap_ST_fsm_state38_blk = 1'b0;
 assign ap_ST_fsm_state39_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ap_done == 1'b0)) begin
+    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ap_done == 1'b0)) begin
         ap_ST_fsm_state3_blk = 1'b1;
     end else begin
         ap_ST_fsm_state3_blk = 1'b0;
@@ -7713,7 +7698,7 @@ assign ap_ST_fsm_state93_blk = 1'b0;
 assign ap_ST_fsm_state94_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_ap_done == 1'b0)) begin
+    if ((grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_ap_done == 1'b0)) begin
         ap_ST_fsm_state95_blk = 1'b1;
     end else begin
         ap_ST_fsm_state95_blk = 1'b0;
@@ -7725,7 +7710,7 @@ assign ap_ST_fsm_state96_blk = 1'b0;
 assign ap_ST_fsm_state97_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_ap_done == 1'b0)) begin
+    if ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_ap_done == 1'b0)) begin
         ap_ST_fsm_state98_blk = 1'b1;
     end else begin
         ap_ST_fsm_state98_blk = 1'b0;
@@ -7767,18 +7752,10 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99)) | ((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state98)))) begin
-        grp_fu_3268_ce = 1'b1;
-    end else begin
-        grp_fu_3268_ce = 1'b0;
-    end
-end
-
-always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        in_stream_TREADY_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_in_stream_TREADY;
+        in_stream_TREADY_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_in_stream_TREADY;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        in_stream_TREADY_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_in_stream_TREADY;
+        in_stream_TREADY_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_in_stream_TREADY;
     end else begin
         in_stream_TREADY_int_regslice = 1'b0;
     end
@@ -7794,41 +7771,33 @@ end
 
 always @ (*) begin
     if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101))) begin
-        out_stream_TDATA_int_regslice = e_data_V_fu_3293_p1;
+        out_stream_TDATA_int_regslice = e_data_V_fu_3276_p1;
     end else if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100))) begin
-        out_stream_TDATA_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_min_pixel_index_j_out;
+        out_stream_TDATA_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_min_pixel_index_j_out;
     end else if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99))) begin
-        out_stream_TDATA_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_min_pixel_index_i_out;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state98))) begin
-        out_stream_TDATA_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TDATA;
+        out_stream_TDATA_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_min_pixel_index_i_out;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state98))) begin
+        out_stream_TDATA_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TDATA;
     end else begin
         out_stream_TDATA_int_regslice = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101))) begin
-        out_stream_TDEST_int_regslice = 5'd12;
-    end else if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100))) begin
-        out_stream_TDEST_int_regslice = 5'd10;
-    end else if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99))) begin
-        out_stream_TDEST_int_regslice = 5'd8;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state98))) begin
-        out_stream_TDEST_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TDEST;
+    if ((((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99)))) begin
+        out_stream_TDEST_int_regslice = 5'd5;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state98))) begin
+        out_stream_TDEST_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TDEST;
     end else begin
         out_stream_TDEST_int_regslice = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101))) begin
-        out_stream_TID_int_regslice = 5'd11;
-    end else if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100))) begin
-        out_stream_TID_int_regslice = 5'd9;
-    end else if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99))) begin
-        out_stream_TID_int_regslice = 5'd7;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state98))) begin
-        out_stream_TID_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TID;
+    if ((((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99)))) begin
+        out_stream_TID_int_regslice = 5'd5;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state98))) begin
+        out_stream_TID_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TID;
     end else begin
         out_stream_TID_int_regslice = 'bx;
     end
@@ -7836,19 +7805,21 @@ end
 
 always @ (*) begin
     if ((((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99)))) begin
-        out_stream_TKEEP_int_regslice = 4'd0;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state98))) begin
-        out_stream_TKEEP_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TKEEP;
+        out_stream_TKEEP_int_regslice = 4'd15;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state98))) begin
+        out_stream_TKEEP_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TKEEP;
     end else begin
         out_stream_TKEEP_int_regslice = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99)))) begin
+    if (((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101))) begin
+        out_stream_TLAST_int_regslice = 1'd1;
+    end else if ((((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99)))) begin
         out_stream_TLAST_int_regslice = 1'd0;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state98))) begin
-        out_stream_TLAST_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TLAST;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state98))) begin
+        out_stream_TLAST_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TLAST;
     end else begin
         out_stream_TLAST_int_regslice = 'bx;
     end
@@ -7857,8 +7828,8 @@ end
 always @ (*) begin
     if ((((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99)))) begin
         out_stream_TSTRB_int_regslice = 4'd15;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state98))) begin
-        out_stream_TSTRB_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TSTRB;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state98))) begin
+        out_stream_TSTRB_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TSTRB;
     end else begin
         out_stream_TSTRB_int_regslice = 'bx;
     end
@@ -7866,9 +7837,9 @@ end
 
 always @ (*) begin
     if ((((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99)))) begin
-        out_stream_TUSER_int_regslice = 4'd0;
-    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state98))) begin
-        out_stream_TUSER_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TUSER;
+        out_stream_TUSER_int_regslice = 4'd4;
+    end else if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TVALID == 1'b1) & (1'b1 == ap_CS_fsm_state98))) begin
+        out_stream_TUSER_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TUSER;
     end else begin
         out_stream_TUSER_int_regslice = 'bx;
     end
@@ -7878,7 +7849,7 @@ always @ (*) begin
     if ((((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state101)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state100)) | ((out_stream_TREADY_int_regslice == 1'b1) & (1'b1 == ap_CS_fsm_state99)))) begin
         out_stream_TVALID_int_regslice = 1'b1;
     end else if ((1'b1 == ap_CS_fsm_state98)) begin
-        out_stream_TVALID_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TVALID;
+        out_stream_TVALID_int_regslice = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TVALID;
     end else begin
         out_stream_TVALID_int_regslice = 1'b0;
     end
@@ -7886,9 +7857,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_100_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_100_address0;
+        pixels_100_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_100_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_100_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_100_address0;
+        pixels_100_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_100_address0;
     end else begin
         pixels_100_address0 = 'bx;
     end
@@ -7896,9 +7867,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_100_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_100_ce0;
+        pixels_100_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_100_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_100_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_100_ce0;
+        pixels_100_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_100_ce0;
     end else begin
         pixels_100_ce0 = 1'b0;
     end
@@ -7906,7 +7877,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_100_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_100_we0;
+        pixels_100_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_100_we0;
     end else begin
         pixels_100_we0 = 1'b0;
     end
@@ -7914,9 +7885,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_101_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_101_address0;
+        pixels_101_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_101_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_101_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_101_address0;
+        pixels_101_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_101_address0;
     end else begin
         pixels_101_address0 = 'bx;
     end
@@ -7924,9 +7895,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_101_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_101_ce0;
+        pixels_101_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_101_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_101_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_101_ce0;
+        pixels_101_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_101_ce0;
     end else begin
         pixels_101_ce0 = 1'b0;
     end
@@ -7934,7 +7905,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_101_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_101_we0;
+        pixels_101_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_101_we0;
     end else begin
         pixels_101_we0 = 1'b0;
     end
@@ -7942,9 +7913,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_102_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_102_address0;
+        pixels_102_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_102_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_102_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_102_address0;
+        pixels_102_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_102_address0;
     end else begin
         pixels_102_address0 = 'bx;
     end
@@ -7952,9 +7923,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_102_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_102_ce0;
+        pixels_102_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_102_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_102_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_102_ce0;
+        pixels_102_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_102_ce0;
     end else begin
         pixels_102_ce0 = 1'b0;
     end
@@ -7962,7 +7933,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_102_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_102_we0;
+        pixels_102_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_102_we0;
     end else begin
         pixels_102_we0 = 1'b0;
     end
@@ -7970,9 +7941,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_103_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_103_address0;
+        pixels_103_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_103_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_103_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_103_address0;
+        pixels_103_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_103_address0;
     end else begin
         pixels_103_address0 = 'bx;
     end
@@ -7980,9 +7951,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_103_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_103_ce0;
+        pixels_103_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_103_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_103_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_103_ce0;
+        pixels_103_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_103_ce0;
     end else begin
         pixels_103_ce0 = 1'b0;
     end
@@ -7990,7 +7961,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_103_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_103_we0;
+        pixels_103_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_103_we0;
     end else begin
         pixels_103_we0 = 1'b0;
     end
@@ -7998,9 +7969,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_104_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_104_address0;
+        pixels_104_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_104_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_104_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_104_address0;
+        pixels_104_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_104_address0;
     end else begin
         pixels_104_address0 = 'bx;
     end
@@ -8008,9 +7979,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_104_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_104_ce0;
+        pixels_104_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_104_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_104_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_104_ce0;
+        pixels_104_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_104_ce0;
     end else begin
         pixels_104_ce0 = 1'b0;
     end
@@ -8018,7 +7989,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_104_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_104_we0;
+        pixels_104_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_104_we0;
     end else begin
         pixels_104_we0 = 1'b0;
     end
@@ -8026,9 +7997,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_105_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_105_address0;
+        pixels_105_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_105_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_105_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_105_address0;
+        pixels_105_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_105_address0;
     end else begin
         pixels_105_address0 = 'bx;
     end
@@ -8036,9 +8007,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_105_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_105_ce0;
+        pixels_105_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_105_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_105_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_105_ce0;
+        pixels_105_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_105_ce0;
     end else begin
         pixels_105_ce0 = 1'b0;
     end
@@ -8046,7 +8017,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_105_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_105_we0;
+        pixels_105_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_105_we0;
     end else begin
         pixels_105_we0 = 1'b0;
     end
@@ -8054,9 +8025,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_106_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_106_address0;
+        pixels_106_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_106_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_106_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_106_address0;
+        pixels_106_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_106_address0;
     end else begin
         pixels_106_address0 = 'bx;
     end
@@ -8064,9 +8035,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_106_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_106_ce0;
+        pixels_106_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_106_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_106_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_106_ce0;
+        pixels_106_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_106_ce0;
     end else begin
         pixels_106_ce0 = 1'b0;
     end
@@ -8074,7 +8045,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_106_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_106_we0;
+        pixels_106_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_106_we0;
     end else begin
         pixels_106_we0 = 1'b0;
     end
@@ -8082,9 +8053,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_107_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_107_address0;
+        pixels_107_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_107_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_107_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_107_address0;
+        pixels_107_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_107_address0;
     end else begin
         pixels_107_address0 = 'bx;
     end
@@ -8092,9 +8063,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_107_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_107_ce0;
+        pixels_107_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_107_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_107_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_107_ce0;
+        pixels_107_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_107_ce0;
     end else begin
         pixels_107_ce0 = 1'b0;
     end
@@ -8102,7 +8073,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_107_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_107_we0;
+        pixels_107_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_107_we0;
     end else begin
         pixels_107_we0 = 1'b0;
     end
@@ -8110,9 +8081,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_108_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_108_address0;
+        pixels_108_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_108_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_108_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_108_address0;
+        pixels_108_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_108_address0;
     end else begin
         pixels_108_address0 = 'bx;
     end
@@ -8120,9 +8091,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_108_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_108_ce0;
+        pixels_108_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_108_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_108_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_108_ce0;
+        pixels_108_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_108_ce0;
     end else begin
         pixels_108_ce0 = 1'b0;
     end
@@ -8130,7 +8101,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_108_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_108_we0;
+        pixels_108_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_108_we0;
     end else begin
         pixels_108_we0 = 1'b0;
     end
@@ -8138,9 +8109,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_109_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_109_address0;
+        pixels_109_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_109_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_109_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_109_address0;
+        pixels_109_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_109_address0;
     end else begin
         pixels_109_address0 = 'bx;
     end
@@ -8148,9 +8119,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_109_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_109_ce0;
+        pixels_109_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_109_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_109_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_109_ce0;
+        pixels_109_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_109_ce0;
     end else begin
         pixels_109_ce0 = 1'b0;
     end
@@ -8158,7 +8129,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_109_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_109_we0;
+        pixels_109_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_109_we0;
     end else begin
         pixels_109_we0 = 1'b0;
     end
@@ -8166,9 +8137,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_10_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_10_address0;
+        pixels_10_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_10_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_10_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_10_address0;
+        pixels_10_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_10_address0;
     end else begin
         pixels_10_address0 = 'bx;
     end
@@ -8176,9 +8147,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_10_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_10_ce0;
+        pixels_10_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_10_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_10_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_10_ce0;
+        pixels_10_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_10_ce0;
     end else begin
         pixels_10_ce0 = 1'b0;
     end
@@ -8186,7 +8157,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_10_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_10_we0;
+        pixels_10_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_10_we0;
     end else begin
         pixels_10_we0 = 1'b0;
     end
@@ -8194,9 +8165,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_110_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_110_address0;
+        pixels_110_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_110_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_110_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_110_address0;
+        pixels_110_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_110_address0;
     end else begin
         pixels_110_address0 = 'bx;
     end
@@ -8204,9 +8175,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_110_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_110_ce0;
+        pixels_110_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_110_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_110_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_110_ce0;
+        pixels_110_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_110_ce0;
     end else begin
         pixels_110_ce0 = 1'b0;
     end
@@ -8214,7 +8185,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_110_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_110_we0;
+        pixels_110_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_110_we0;
     end else begin
         pixels_110_we0 = 1'b0;
     end
@@ -8222,9 +8193,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_111_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_111_address0;
+        pixels_111_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_111_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_111_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_111_address0;
+        pixels_111_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_111_address0;
     end else begin
         pixels_111_address0 = 'bx;
     end
@@ -8232,9 +8203,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_111_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_111_ce0;
+        pixels_111_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_111_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_111_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_111_ce0;
+        pixels_111_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_111_ce0;
     end else begin
         pixels_111_ce0 = 1'b0;
     end
@@ -8242,7 +8213,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_111_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_111_we0;
+        pixels_111_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_111_we0;
     end else begin
         pixels_111_we0 = 1'b0;
     end
@@ -8250,9 +8221,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_112_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_112_address0;
+        pixels_112_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_112_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_112_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_112_address0;
+        pixels_112_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_112_address0;
     end else begin
         pixels_112_address0 = 'bx;
     end
@@ -8260,9 +8231,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_112_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_112_ce0;
+        pixels_112_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_112_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_112_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_112_ce0;
+        pixels_112_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_112_ce0;
     end else begin
         pixels_112_ce0 = 1'b0;
     end
@@ -8270,7 +8241,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_112_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_112_we0;
+        pixels_112_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_112_we0;
     end else begin
         pixels_112_we0 = 1'b0;
     end
@@ -8278,9 +8249,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_113_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_113_address0;
+        pixels_113_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_113_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_113_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_113_address0;
+        pixels_113_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_113_address0;
     end else begin
         pixels_113_address0 = 'bx;
     end
@@ -8288,9 +8259,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_113_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_113_ce0;
+        pixels_113_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_113_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_113_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_113_ce0;
+        pixels_113_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_113_ce0;
     end else begin
         pixels_113_ce0 = 1'b0;
     end
@@ -8298,7 +8269,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_113_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_113_we0;
+        pixels_113_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_113_we0;
     end else begin
         pixels_113_we0 = 1'b0;
     end
@@ -8306,9 +8277,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_114_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_114_address0;
+        pixels_114_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_114_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_114_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_114_address0;
+        pixels_114_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_114_address0;
     end else begin
         pixels_114_address0 = 'bx;
     end
@@ -8316,9 +8287,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_114_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_114_ce0;
+        pixels_114_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_114_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_114_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_114_ce0;
+        pixels_114_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_114_ce0;
     end else begin
         pixels_114_ce0 = 1'b0;
     end
@@ -8326,7 +8297,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_114_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_114_we0;
+        pixels_114_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_114_we0;
     end else begin
         pixels_114_we0 = 1'b0;
     end
@@ -8334,9 +8305,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_115_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_115_address0;
+        pixels_115_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_115_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_115_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_115_address0;
+        pixels_115_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_115_address0;
     end else begin
         pixels_115_address0 = 'bx;
     end
@@ -8344,9 +8315,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_115_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_115_ce0;
+        pixels_115_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_115_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_115_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_115_ce0;
+        pixels_115_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_115_ce0;
     end else begin
         pixels_115_ce0 = 1'b0;
     end
@@ -8354,7 +8325,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_115_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_115_we0;
+        pixels_115_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_115_we0;
     end else begin
         pixels_115_we0 = 1'b0;
     end
@@ -8362,9 +8333,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_116_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_116_address0;
+        pixels_116_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_116_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_116_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_116_address0;
+        pixels_116_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_116_address0;
     end else begin
         pixels_116_address0 = 'bx;
     end
@@ -8372,9 +8343,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_116_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_116_ce0;
+        pixels_116_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_116_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_116_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_116_ce0;
+        pixels_116_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_116_ce0;
     end else begin
         pixels_116_ce0 = 1'b0;
     end
@@ -8382,7 +8353,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_116_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_116_we0;
+        pixels_116_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_116_we0;
     end else begin
         pixels_116_we0 = 1'b0;
     end
@@ -8390,9 +8361,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_117_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_117_address0;
+        pixels_117_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_117_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_117_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_117_address0;
+        pixels_117_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_117_address0;
     end else begin
         pixels_117_address0 = 'bx;
     end
@@ -8400,9 +8371,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_117_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_117_ce0;
+        pixels_117_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_117_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_117_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_117_ce0;
+        pixels_117_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_117_ce0;
     end else begin
         pixels_117_ce0 = 1'b0;
     end
@@ -8410,7 +8381,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_117_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_117_we0;
+        pixels_117_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_117_we0;
     end else begin
         pixels_117_we0 = 1'b0;
     end
@@ -8418,9 +8389,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_118_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_118_address0;
+        pixels_118_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_118_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_118_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_118_address0;
+        pixels_118_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_118_address0;
     end else begin
         pixels_118_address0 = 'bx;
     end
@@ -8428,9 +8399,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_118_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_118_ce0;
+        pixels_118_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_118_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_118_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_118_ce0;
+        pixels_118_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_118_ce0;
     end else begin
         pixels_118_ce0 = 1'b0;
     end
@@ -8438,7 +8409,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_118_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_118_we0;
+        pixels_118_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_118_we0;
     end else begin
         pixels_118_we0 = 1'b0;
     end
@@ -8446,9 +8417,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_119_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_119_address0;
+        pixels_119_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_119_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_119_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_119_address0;
+        pixels_119_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_119_address0;
     end else begin
         pixels_119_address0 = 'bx;
     end
@@ -8456,9 +8427,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_119_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_119_ce0;
+        pixels_119_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_119_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_119_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_119_ce0;
+        pixels_119_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_119_ce0;
     end else begin
         pixels_119_ce0 = 1'b0;
     end
@@ -8466,7 +8437,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_119_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_119_we0;
+        pixels_119_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_119_we0;
     end else begin
         pixels_119_we0 = 1'b0;
     end
@@ -8474,9 +8445,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_11_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_11_address0;
+        pixels_11_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_11_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_11_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_11_address0;
+        pixels_11_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_11_address0;
     end else begin
         pixels_11_address0 = 'bx;
     end
@@ -8484,9 +8455,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_11_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_11_ce0;
+        pixels_11_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_11_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_11_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_11_ce0;
+        pixels_11_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_11_ce0;
     end else begin
         pixels_11_ce0 = 1'b0;
     end
@@ -8494,7 +8465,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_11_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_11_we0;
+        pixels_11_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_11_we0;
     end else begin
         pixels_11_we0 = 1'b0;
     end
@@ -8502,9 +8473,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_120_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_120_address0;
+        pixels_120_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_120_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_120_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_120_address0;
+        pixels_120_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_120_address0;
     end else begin
         pixels_120_address0 = 'bx;
     end
@@ -8512,9 +8483,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_120_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_120_ce0;
+        pixels_120_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_120_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_120_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_120_ce0;
+        pixels_120_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_120_ce0;
     end else begin
         pixels_120_ce0 = 1'b0;
     end
@@ -8522,7 +8493,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_120_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_120_we0;
+        pixels_120_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_120_we0;
     end else begin
         pixels_120_we0 = 1'b0;
     end
@@ -8530,9 +8501,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_121_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_121_address0;
+        pixels_121_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_121_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_121_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_121_address0;
+        pixels_121_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_121_address0;
     end else begin
         pixels_121_address0 = 'bx;
     end
@@ -8540,9 +8511,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_121_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_121_ce0;
+        pixels_121_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_121_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_121_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_121_ce0;
+        pixels_121_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_121_ce0;
     end else begin
         pixels_121_ce0 = 1'b0;
     end
@@ -8550,7 +8521,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_121_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_121_we0;
+        pixels_121_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_121_we0;
     end else begin
         pixels_121_we0 = 1'b0;
     end
@@ -8558,9 +8529,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_122_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_122_address0;
+        pixels_122_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_122_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_122_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_122_address0;
+        pixels_122_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_122_address0;
     end else begin
         pixels_122_address0 = 'bx;
     end
@@ -8568,9 +8539,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_122_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_122_ce0;
+        pixels_122_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_122_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_122_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_122_ce0;
+        pixels_122_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_122_ce0;
     end else begin
         pixels_122_ce0 = 1'b0;
     end
@@ -8578,7 +8549,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_122_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_122_we0;
+        pixels_122_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_122_we0;
     end else begin
         pixels_122_we0 = 1'b0;
     end
@@ -8586,9 +8557,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_123_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_123_address0;
+        pixels_123_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_123_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_123_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_123_address0;
+        pixels_123_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_123_address0;
     end else begin
         pixels_123_address0 = 'bx;
     end
@@ -8596,9 +8567,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_123_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_123_ce0;
+        pixels_123_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_123_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_123_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_123_ce0;
+        pixels_123_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_123_ce0;
     end else begin
         pixels_123_ce0 = 1'b0;
     end
@@ -8606,7 +8577,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_123_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_123_we0;
+        pixels_123_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_123_we0;
     end else begin
         pixels_123_we0 = 1'b0;
     end
@@ -8614,9 +8585,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_124_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_124_address0;
+        pixels_124_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_124_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_124_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_124_address0;
+        pixels_124_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_124_address0;
     end else begin
         pixels_124_address0 = 'bx;
     end
@@ -8624,9 +8595,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_124_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_124_ce0;
+        pixels_124_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_124_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_124_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_124_ce0;
+        pixels_124_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_124_ce0;
     end else begin
         pixels_124_ce0 = 1'b0;
     end
@@ -8634,7 +8605,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_124_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_124_we0;
+        pixels_124_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_124_we0;
     end else begin
         pixels_124_we0 = 1'b0;
     end
@@ -8642,9 +8613,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_125_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_125_address0;
+        pixels_125_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_125_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_125_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_125_address0;
+        pixels_125_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_125_address0;
     end else begin
         pixels_125_address0 = 'bx;
     end
@@ -8652,9 +8623,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_125_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_125_ce0;
+        pixels_125_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_125_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_125_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_125_ce0;
+        pixels_125_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_125_ce0;
     end else begin
         pixels_125_ce0 = 1'b0;
     end
@@ -8662,7 +8633,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_125_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_125_we0;
+        pixels_125_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_125_we0;
     end else begin
         pixels_125_we0 = 1'b0;
     end
@@ -8670,9 +8641,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_126_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_126_address0;
+        pixels_126_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_126_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_126_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_126_address0;
+        pixels_126_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_126_address0;
     end else begin
         pixels_126_address0 = 'bx;
     end
@@ -8680,9 +8651,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_126_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_126_ce0;
+        pixels_126_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_126_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_126_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_126_ce0;
+        pixels_126_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_126_ce0;
     end else begin
         pixels_126_ce0 = 1'b0;
     end
@@ -8690,7 +8661,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_126_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_126_we0;
+        pixels_126_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_126_we0;
     end else begin
         pixels_126_we0 = 1'b0;
     end
@@ -8698,9 +8669,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_127_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_127_address0;
+        pixels_127_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_127_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_127_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_127_address0;
+        pixels_127_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_127_address0;
     end else begin
         pixels_127_address0 = 'bx;
     end
@@ -8708,9 +8679,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_127_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_127_ce0;
+        pixels_127_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_127_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_127_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_127_ce0;
+        pixels_127_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_127_ce0;
     end else begin
         pixels_127_ce0 = 1'b0;
     end
@@ -8718,7 +8689,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_127_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_127_we0;
+        pixels_127_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_127_we0;
     end else begin
         pixels_127_we0 = 1'b0;
     end
@@ -8726,9 +8697,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_128_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_128_address0;
+        pixels_128_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_128_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_128_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_128_address0;
+        pixels_128_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_128_address0;
     end else begin
         pixels_128_address0 = 'bx;
     end
@@ -8736,9 +8707,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_128_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_128_ce0;
+        pixels_128_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_128_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_128_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_128_ce0;
+        pixels_128_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_128_ce0;
     end else begin
         pixels_128_ce0 = 1'b0;
     end
@@ -8746,7 +8717,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_128_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_128_we0;
+        pixels_128_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_128_we0;
     end else begin
         pixels_128_we0 = 1'b0;
     end
@@ -8754,9 +8725,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_129_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_129_address0;
+        pixels_129_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_129_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_129_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_129_address0;
+        pixels_129_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_129_address0;
     end else begin
         pixels_129_address0 = 'bx;
     end
@@ -8764,9 +8735,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_129_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_129_ce0;
+        pixels_129_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_129_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_129_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_129_ce0;
+        pixels_129_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_129_ce0;
     end else begin
         pixels_129_ce0 = 1'b0;
     end
@@ -8774,7 +8745,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_129_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_129_we0;
+        pixels_129_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_129_we0;
     end else begin
         pixels_129_we0 = 1'b0;
     end
@@ -8782,9 +8753,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_12_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_12_address0;
+        pixels_12_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_12_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_12_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_12_address0;
+        pixels_12_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_12_address0;
     end else begin
         pixels_12_address0 = 'bx;
     end
@@ -8792,9 +8763,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_12_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_12_ce0;
+        pixels_12_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_12_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_12_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_12_ce0;
+        pixels_12_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_12_ce0;
     end else begin
         pixels_12_ce0 = 1'b0;
     end
@@ -8802,7 +8773,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_12_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_12_we0;
+        pixels_12_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_12_we0;
     end else begin
         pixels_12_we0 = 1'b0;
     end
@@ -8810,9 +8781,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_130_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_130_address0;
+        pixels_130_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_130_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_130_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_130_address0;
+        pixels_130_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_130_address0;
     end else begin
         pixels_130_address0 = 'bx;
     end
@@ -8820,9 +8791,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_130_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_130_ce0;
+        pixels_130_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_130_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_130_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_130_ce0;
+        pixels_130_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_130_ce0;
     end else begin
         pixels_130_ce0 = 1'b0;
     end
@@ -8830,7 +8801,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_130_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_130_we0;
+        pixels_130_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_130_we0;
     end else begin
         pixels_130_we0 = 1'b0;
     end
@@ -8838,9 +8809,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_131_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_131_address0;
+        pixels_131_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_131_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_131_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_131_address0;
+        pixels_131_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_131_address0;
     end else begin
         pixels_131_address0 = 'bx;
     end
@@ -8848,9 +8819,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_131_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_131_ce0;
+        pixels_131_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_131_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_131_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_131_ce0;
+        pixels_131_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_131_ce0;
     end else begin
         pixels_131_ce0 = 1'b0;
     end
@@ -8858,7 +8829,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_131_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_131_we0;
+        pixels_131_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_131_we0;
     end else begin
         pixels_131_we0 = 1'b0;
     end
@@ -8866,9 +8837,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_132_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_132_address0;
+        pixels_132_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_132_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_132_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_132_address0;
+        pixels_132_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_132_address0;
     end else begin
         pixels_132_address0 = 'bx;
     end
@@ -8876,9 +8847,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_132_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_132_ce0;
+        pixels_132_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_132_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_132_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_132_ce0;
+        pixels_132_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_132_ce0;
     end else begin
         pixels_132_ce0 = 1'b0;
     end
@@ -8886,7 +8857,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_132_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_132_we0;
+        pixels_132_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_132_we0;
     end else begin
         pixels_132_we0 = 1'b0;
     end
@@ -8894,9 +8865,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_133_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_133_address0;
+        pixels_133_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_133_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_133_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_133_address0;
+        pixels_133_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_133_address0;
     end else begin
         pixels_133_address0 = 'bx;
     end
@@ -8904,9 +8875,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_133_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_133_ce0;
+        pixels_133_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_133_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_133_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_133_ce0;
+        pixels_133_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_133_ce0;
     end else begin
         pixels_133_ce0 = 1'b0;
     end
@@ -8914,7 +8885,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_133_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_133_we0;
+        pixels_133_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_133_we0;
     end else begin
         pixels_133_we0 = 1'b0;
     end
@@ -8922,9 +8893,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_134_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_134_address0;
+        pixels_134_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_134_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_134_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_134_address0;
+        pixels_134_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_134_address0;
     end else begin
         pixels_134_address0 = 'bx;
     end
@@ -8932,9 +8903,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_134_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_134_ce0;
+        pixels_134_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_134_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_134_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_134_ce0;
+        pixels_134_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_134_ce0;
     end else begin
         pixels_134_ce0 = 1'b0;
     end
@@ -8942,7 +8913,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_134_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_134_we0;
+        pixels_134_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_134_we0;
     end else begin
         pixels_134_we0 = 1'b0;
     end
@@ -8950,9 +8921,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_135_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_135_address0;
+        pixels_135_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_135_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_135_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_135_address0;
+        pixels_135_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_135_address0;
     end else begin
         pixels_135_address0 = 'bx;
     end
@@ -8960,9 +8931,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_135_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_135_ce0;
+        pixels_135_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_135_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_135_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_135_ce0;
+        pixels_135_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_135_ce0;
     end else begin
         pixels_135_ce0 = 1'b0;
     end
@@ -8970,7 +8941,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_135_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_135_we0;
+        pixels_135_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_135_we0;
     end else begin
         pixels_135_we0 = 1'b0;
     end
@@ -8978,9 +8949,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_136_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_136_address0;
+        pixels_136_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_136_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_136_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_136_address0;
+        pixels_136_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_136_address0;
     end else begin
         pixels_136_address0 = 'bx;
     end
@@ -8988,9 +8959,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_136_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_136_ce0;
+        pixels_136_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_136_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_136_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_136_ce0;
+        pixels_136_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_136_ce0;
     end else begin
         pixels_136_ce0 = 1'b0;
     end
@@ -8998,7 +8969,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_136_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_136_we0;
+        pixels_136_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_136_we0;
     end else begin
         pixels_136_we0 = 1'b0;
     end
@@ -9006,9 +8977,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_137_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_137_address0;
+        pixels_137_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_137_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_137_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_137_address0;
+        pixels_137_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_137_address0;
     end else begin
         pixels_137_address0 = 'bx;
     end
@@ -9016,9 +8987,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_137_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_137_ce0;
+        pixels_137_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_137_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_137_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_137_ce0;
+        pixels_137_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_137_ce0;
     end else begin
         pixels_137_ce0 = 1'b0;
     end
@@ -9026,7 +8997,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_137_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_137_we0;
+        pixels_137_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_137_we0;
     end else begin
         pixels_137_we0 = 1'b0;
     end
@@ -9034,9 +9005,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_138_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_138_address0;
+        pixels_138_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_138_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_138_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_138_address0;
+        pixels_138_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_138_address0;
     end else begin
         pixels_138_address0 = 'bx;
     end
@@ -9044,9 +9015,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_138_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_138_ce0;
+        pixels_138_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_138_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_138_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_138_ce0;
+        pixels_138_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_138_ce0;
     end else begin
         pixels_138_ce0 = 1'b0;
     end
@@ -9054,7 +9025,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_138_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_138_we0;
+        pixels_138_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_138_we0;
     end else begin
         pixels_138_we0 = 1'b0;
     end
@@ -9062,9 +9033,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_139_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_139_address0;
+        pixels_139_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_139_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_139_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_139_address0;
+        pixels_139_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_139_address0;
     end else begin
         pixels_139_address0 = 'bx;
     end
@@ -9072,9 +9043,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_139_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_139_ce0;
+        pixels_139_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_139_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_139_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_139_ce0;
+        pixels_139_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_139_ce0;
     end else begin
         pixels_139_ce0 = 1'b0;
     end
@@ -9082,7 +9053,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_139_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_139_we0;
+        pixels_139_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_139_we0;
     end else begin
         pixels_139_we0 = 1'b0;
     end
@@ -9090,9 +9061,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_13_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_13_address0;
+        pixels_13_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_13_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_13_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_13_address0;
+        pixels_13_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_13_address0;
     end else begin
         pixels_13_address0 = 'bx;
     end
@@ -9100,9 +9071,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_13_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_13_ce0;
+        pixels_13_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_13_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_13_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_13_ce0;
+        pixels_13_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_13_ce0;
     end else begin
         pixels_13_ce0 = 1'b0;
     end
@@ -9110,7 +9081,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_13_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_13_we0;
+        pixels_13_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_13_we0;
     end else begin
         pixels_13_we0 = 1'b0;
     end
@@ -9118,9 +9089,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_140_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_140_address0;
+        pixels_140_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_140_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_140_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_140_address0;
+        pixels_140_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_140_address0;
     end else begin
         pixels_140_address0 = 'bx;
     end
@@ -9128,9 +9099,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_140_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_140_ce0;
+        pixels_140_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_140_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_140_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_140_ce0;
+        pixels_140_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_140_ce0;
     end else begin
         pixels_140_ce0 = 1'b0;
     end
@@ -9138,7 +9109,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_140_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_140_we0;
+        pixels_140_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_140_we0;
     end else begin
         pixels_140_we0 = 1'b0;
     end
@@ -9146,9 +9117,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_141_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_141_address0;
+        pixels_141_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_141_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_141_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_141_address0;
+        pixels_141_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_141_address0;
     end else begin
         pixels_141_address0 = 'bx;
     end
@@ -9156,9 +9127,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_141_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_141_ce0;
+        pixels_141_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_141_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_141_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_141_ce0;
+        pixels_141_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_141_ce0;
     end else begin
         pixels_141_ce0 = 1'b0;
     end
@@ -9166,7 +9137,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_141_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_141_we0;
+        pixels_141_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_141_we0;
     end else begin
         pixels_141_we0 = 1'b0;
     end
@@ -9174,9 +9145,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_142_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_142_address0;
+        pixels_142_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_142_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_142_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_142_address0;
+        pixels_142_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_142_address0;
     end else begin
         pixels_142_address0 = 'bx;
     end
@@ -9184,9 +9155,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_142_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_142_ce0;
+        pixels_142_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_142_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_142_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_142_ce0;
+        pixels_142_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_142_ce0;
     end else begin
         pixels_142_ce0 = 1'b0;
     end
@@ -9194,7 +9165,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_142_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_142_we0;
+        pixels_142_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_142_we0;
     end else begin
         pixels_142_we0 = 1'b0;
     end
@@ -9202,9 +9173,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_143_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_143_address0;
+        pixels_143_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_143_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_143_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_143_address0;
+        pixels_143_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_143_address0;
     end else begin
         pixels_143_address0 = 'bx;
     end
@@ -9212,9 +9183,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_143_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_143_ce0;
+        pixels_143_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_143_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_143_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_143_ce0;
+        pixels_143_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_143_ce0;
     end else begin
         pixels_143_ce0 = 1'b0;
     end
@@ -9222,7 +9193,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_143_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_143_we0;
+        pixels_143_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_143_we0;
     end else begin
         pixels_143_we0 = 1'b0;
     end
@@ -9230,9 +9201,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_144_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_144_address0;
+        pixels_144_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_144_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_144_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_144_address0;
+        pixels_144_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_144_address0;
     end else begin
         pixels_144_address0 = 'bx;
     end
@@ -9240,9 +9211,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_144_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_144_ce0;
+        pixels_144_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_144_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_144_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_144_ce0;
+        pixels_144_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_144_ce0;
     end else begin
         pixels_144_ce0 = 1'b0;
     end
@@ -9250,7 +9221,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_144_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_144_we0;
+        pixels_144_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_144_we0;
     end else begin
         pixels_144_we0 = 1'b0;
     end
@@ -9258,9 +9229,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_145_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_145_address0;
+        pixels_145_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_145_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_145_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_145_address0;
+        pixels_145_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_145_address0;
     end else begin
         pixels_145_address0 = 'bx;
     end
@@ -9268,9 +9239,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_145_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_145_ce0;
+        pixels_145_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_145_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_145_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_145_ce0;
+        pixels_145_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_145_ce0;
     end else begin
         pixels_145_ce0 = 1'b0;
     end
@@ -9278,7 +9249,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_145_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_145_we0;
+        pixels_145_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_145_we0;
     end else begin
         pixels_145_we0 = 1'b0;
     end
@@ -9286,9 +9257,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_146_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_146_address0;
+        pixels_146_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_146_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_146_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_146_address0;
+        pixels_146_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_146_address0;
     end else begin
         pixels_146_address0 = 'bx;
     end
@@ -9296,9 +9267,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_146_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_146_ce0;
+        pixels_146_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_146_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_146_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_146_ce0;
+        pixels_146_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_146_ce0;
     end else begin
         pixels_146_ce0 = 1'b0;
     end
@@ -9306,7 +9277,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_146_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_146_we0;
+        pixels_146_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_146_we0;
     end else begin
         pixels_146_we0 = 1'b0;
     end
@@ -9314,9 +9285,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_147_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_147_address0;
+        pixels_147_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_147_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_147_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_147_address0;
+        pixels_147_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_147_address0;
     end else begin
         pixels_147_address0 = 'bx;
     end
@@ -9324,9 +9295,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_147_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_147_ce0;
+        pixels_147_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_147_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_147_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_147_ce0;
+        pixels_147_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_147_ce0;
     end else begin
         pixels_147_ce0 = 1'b0;
     end
@@ -9334,7 +9305,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_147_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_147_we0;
+        pixels_147_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_147_we0;
     end else begin
         pixels_147_we0 = 1'b0;
     end
@@ -9342,9 +9313,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_148_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_148_address0;
+        pixels_148_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_148_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_148_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_148_address0;
+        pixels_148_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_148_address0;
     end else begin
         pixels_148_address0 = 'bx;
     end
@@ -9352,9 +9323,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_148_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_148_ce0;
+        pixels_148_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_148_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_148_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_148_ce0;
+        pixels_148_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_148_ce0;
     end else begin
         pixels_148_ce0 = 1'b0;
     end
@@ -9362,7 +9333,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_148_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_148_we0;
+        pixels_148_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_148_we0;
     end else begin
         pixels_148_we0 = 1'b0;
     end
@@ -9370,9 +9341,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_149_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_149_address0;
+        pixels_149_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_149_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_149_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_149_address0;
+        pixels_149_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_149_address0;
     end else begin
         pixels_149_address0 = 'bx;
     end
@@ -9380,9 +9351,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_149_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_149_ce0;
+        pixels_149_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_149_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_149_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_149_ce0;
+        pixels_149_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_149_ce0;
     end else begin
         pixels_149_ce0 = 1'b0;
     end
@@ -9390,7 +9361,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_149_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_149_we0;
+        pixels_149_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_149_we0;
     end else begin
         pixels_149_we0 = 1'b0;
     end
@@ -9398,9 +9369,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_14_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_14_address0;
+        pixels_14_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_14_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_14_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_14_address0;
+        pixels_14_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_14_address0;
     end else begin
         pixels_14_address0 = 'bx;
     end
@@ -9408,9 +9379,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_14_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_14_ce0;
+        pixels_14_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_14_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_14_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_14_ce0;
+        pixels_14_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_14_ce0;
     end else begin
         pixels_14_ce0 = 1'b0;
     end
@@ -9418,7 +9389,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_14_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_14_we0;
+        pixels_14_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_14_we0;
     end else begin
         pixels_14_we0 = 1'b0;
     end
@@ -9426,9 +9397,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_150_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_150_address0;
+        pixels_150_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_150_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_150_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_150_address0;
+        pixels_150_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_150_address0;
     end else begin
         pixels_150_address0 = 'bx;
     end
@@ -9436,9 +9407,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_150_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_150_ce0;
+        pixels_150_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_150_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_150_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_150_ce0;
+        pixels_150_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_150_ce0;
     end else begin
         pixels_150_ce0 = 1'b0;
     end
@@ -9446,7 +9417,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_150_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_150_we0;
+        pixels_150_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_150_we0;
     end else begin
         pixels_150_we0 = 1'b0;
     end
@@ -9454,9 +9425,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_151_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_151_address0;
+        pixels_151_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_151_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_151_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_151_address0;
+        pixels_151_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_151_address0;
     end else begin
         pixels_151_address0 = 'bx;
     end
@@ -9464,9 +9435,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_151_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_151_ce0;
+        pixels_151_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_151_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_151_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_151_ce0;
+        pixels_151_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_151_ce0;
     end else begin
         pixels_151_ce0 = 1'b0;
     end
@@ -9474,7 +9445,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_151_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_151_we0;
+        pixels_151_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_151_we0;
     end else begin
         pixels_151_we0 = 1'b0;
     end
@@ -9482,9 +9453,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_152_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_152_address0;
+        pixels_152_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_152_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_152_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_152_address0;
+        pixels_152_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_152_address0;
     end else begin
         pixels_152_address0 = 'bx;
     end
@@ -9492,9 +9463,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_152_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_152_ce0;
+        pixels_152_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_152_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_152_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_152_ce0;
+        pixels_152_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_152_ce0;
     end else begin
         pixels_152_ce0 = 1'b0;
     end
@@ -9502,7 +9473,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_152_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_152_we0;
+        pixels_152_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_152_we0;
     end else begin
         pixels_152_we0 = 1'b0;
     end
@@ -9510,9 +9481,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_153_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_153_address0;
+        pixels_153_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_153_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_153_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_153_address0;
+        pixels_153_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_153_address0;
     end else begin
         pixels_153_address0 = 'bx;
     end
@@ -9520,9 +9491,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_153_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_153_ce0;
+        pixels_153_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_153_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_153_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_153_ce0;
+        pixels_153_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_153_ce0;
     end else begin
         pixels_153_ce0 = 1'b0;
     end
@@ -9530,7 +9501,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_153_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_153_we0;
+        pixels_153_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_153_we0;
     end else begin
         pixels_153_we0 = 1'b0;
     end
@@ -9538,9 +9509,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_154_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_154_address0;
+        pixels_154_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_154_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_154_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_154_address0;
+        pixels_154_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_154_address0;
     end else begin
         pixels_154_address0 = 'bx;
     end
@@ -9548,9 +9519,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_154_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_154_ce0;
+        pixels_154_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_154_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_154_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_154_ce0;
+        pixels_154_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_154_ce0;
     end else begin
         pixels_154_ce0 = 1'b0;
     end
@@ -9558,7 +9529,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_154_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_154_we0;
+        pixels_154_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_154_we0;
     end else begin
         pixels_154_we0 = 1'b0;
     end
@@ -9566,9 +9537,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_155_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_155_address0;
+        pixels_155_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_155_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_155_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_155_address0;
+        pixels_155_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_155_address0;
     end else begin
         pixels_155_address0 = 'bx;
     end
@@ -9576,9 +9547,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_155_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_155_ce0;
+        pixels_155_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_155_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_155_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_155_ce0;
+        pixels_155_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_155_ce0;
     end else begin
         pixels_155_ce0 = 1'b0;
     end
@@ -9586,7 +9557,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_155_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_155_we0;
+        pixels_155_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_155_we0;
     end else begin
         pixels_155_we0 = 1'b0;
     end
@@ -9594,9 +9565,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_156_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_156_address0;
+        pixels_156_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_156_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_156_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_156_address0;
+        pixels_156_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_156_address0;
     end else begin
         pixels_156_address0 = 'bx;
     end
@@ -9604,9 +9575,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_156_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_156_ce0;
+        pixels_156_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_156_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_156_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_156_ce0;
+        pixels_156_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_156_ce0;
     end else begin
         pixels_156_ce0 = 1'b0;
     end
@@ -9614,7 +9585,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_156_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_156_we0;
+        pixels_156_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_156_we0;
     end else begin
         pixels_156_we0 = 1'b0;
     end
@@ -9622,9 +9593,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_157_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_157_address0;
+        pixels_157_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_157_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_157_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_157_address0;
+        pixels_157_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_157_address0;
     end else begin
         pixels_157_address0 = 'bx;
     end
@@ -9632,9 +9603,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_157_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_157_ce0;
+        pixels_157_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_157_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_157_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_157_ce0;
+        pixels_157_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_157_ce0;
     end else begin
         pixels_157_ce0 = 1'b0;
     end
@@ -9642,7 +9613,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_157_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_157_we0;
+        pixels_157_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_157_we0;
     end else begin
         pixels_157_we0 = 1'b0;
     end
@@ -9650,9 +9621,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_158_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_158_address0;
+        pixels_158_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_158_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_158_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_158_address0;
+        pixels_158_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_158_address0;
     end else begin
         pixels_158_address0 = 'bx;
     end
@@ -9660,9 +9631,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_158_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_158_ce0;
+        pixels_158_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_158_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_158_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_158_ce0;
+        pixels_158_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_158_ce0;
     end else begin
         pixels_158_ce0 = 1'b0;
     end
@@ -9670,7 +9641,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_158_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_158_we0;
+        pixels_158_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_158_we0;
     end else begin
         pixels_158_we0 = 1'b0;
     end
@@ -9678,9 +9649,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_159_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_159_address0;
+        pixels_159_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_159_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_159_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_159_address0;
+        pixels_159_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_159_address0;
     end else begin
         pixels_159_address0 = 'bx;
     end
@@ -9688,9 +9659,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_159_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_159_ce0;
+        pixels_159_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_159_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_159_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_159_ce0;
+        pixels_159_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_159_ce0;
     end else begin
         pixels_159_ce0 = 1'b0;
     end
@@ -9698,7 +9669,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_159_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_159_we0;
+        pixels_159_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_159_we0;
     end else begin
         pixels_159_we0 = 1'b0;
     end
@@ -9706,9 +9677,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_15_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_15_address0;
+        pixels_15_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_15_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_15_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_15_address0;
+        pixels_15_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_15_address0;
     end else begin
         pixels_15_address0 = 'bx;
     end
@@ -9716,9 +9687,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_15_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_15_ce0;
+        pixels_15_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_15_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_15_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_15_ce0;
+        pixels_15_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_15_ce0;
     end else begin
         pixels_15_ce0 = 1'b0;
     end
@@ -9726,7 +9697,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_15_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_15_we0;
+        pixels_15_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_15_we0;
     end else begin
         pixels_15_we0 = 1'b0;
     end
@@ -9734,9 +9705,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_160_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_160_address0;
+        pixels_160_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_160_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_160_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_160_address0;
+        pixels_160_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_160_address0;
     end else begin
         pixels_160_address0 = 'bx;
     end
@@ -9744,9 +9715,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_160_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_160_ce0;
+        pixels_160_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_160_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_160_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_160_ce0;
+        pixels_160_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_160_ce0;
     end else begin
         pixels_160_ce0 = 1'b0;
     end
@@ -9754,7 +9725,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_160_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_160_we0;
+        pixels_160_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_160_we0;
     end else begin
         pixels_160_we0 = 1'b0;
     end
@@ -9762,9 +9733,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_161_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_161_address0;
+        pixels_161_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_161_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_161_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_161_address0;
+        pixels_161_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_161_address0;
     end else begin
         pixels_161_address0 = 'bx;
     end
@@ -9772,9 +9743,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_161_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_161_ce0;
+        pixels_161_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_161_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_161_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_161_ce0;
+        pixels_161_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_161_ce0;
     end else begin
         pixels_161_ce0 = 1'b0;
     end
@@ -9782,7 +9753,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_161_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_161_we0;
+        pixels_161_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_161_we0;
     end else begin
         pixels_161_we0 = 1'b0;
     end
@@ -9790,9 +9761,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_162_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_162_address0;
+        pixels_162_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_162_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_162_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_162_address0;
+        pixels_162_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_162_address0;
     end else begin
         pixels_162_address0 = 'bx;
     end
@@ -9800,9 +9771,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_162_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_162_ce0;
+        pixels_162_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_162_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_162_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_162_ce0;
+        pixels_162_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_162_ce0;
     end else begin
         pixels_162_ce0 = 1'b0;
     end
@@ -9810,7 +9781,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_162_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_162_we0;
+        pixels_162_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_162_we0;
     end else begin
         pixels_162_we0 = 1'b0;
     end
@@ -9818,9 +9789,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_163_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_163_address0;
+        pixels_163_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_163_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_163_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_163_address0;
+        pixels_163_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_163_address0;
     end else begin
         pixels_163_address0 = 'bx;
     end
@@ -9828,9 +9799,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_163_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_163_ce0;
+        pixels_163_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_163_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_163_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_163_ce0;
+        pixels_163_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_163_ce0;
     end else begin
         pixels_163_ce0 = 1'b0;
     end
@@ -9838,7 +9809,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_163_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_163_we0;
+        pixels_163_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_163_we0;
     end else begin
         pixels_163_we0 = 1'b0;
     end
@@ -9846,9 +9817,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_164_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_164_address0;
+        pixels_164_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_164_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_164_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_164_address0;
+        pixels_164_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_164_address0;
     end else begin
         pixels_164_address0 = 'bx;
     end
@@ -9856,9 +9827,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_164_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_164_ce0;
+        pixels_164_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_164_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_164_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_164_ce0;
+        pixels_164_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_164_ce0;
     end else begin
         pixels_164_ce0 = 1'b0;
     end
@@ -9866,7 +9837,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_164_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_164_we0;
+        pixels_164_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_164_we0;
     end else begin
         pixels_164_we0 = 1'b0;
     end
@@ -9874,9 +9845,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_165_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_165_address0;
+        pixels_165_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_165_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_165_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_165_address0;
+        pixels_165_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_165_address0;
     end else begin
         pixels_165_address0 = 'bx;
     end
@@ -9884,9 +9855,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_165_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_165_ce0;
+        pixels_165_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_165_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_165_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_165_ce0;
+        pixels_165_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_165_ce0;
     end else begin
         pixels_165_ce0 = 1'b0;
     end
@@ -9894,7 +9865,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_165_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_165_we0;
+        pixels_165_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_165_we0;
     end else begin
         pixels_165_we0 = 1'b0;
     end
@@ -9902,9 +9873,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_166_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_166_address0;
+        pixels_166_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_166_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_166_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_166_address0;
+        pixels_166_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_166_address0;
     end else begin
         pixels_166_address0 = 'bx;
     end
@@ -9912,9 +9883,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_166_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_166_ce0;
+        pixels_166_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_166_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_166_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_166_ce0;
+        pixels_166_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_166_ce0;
     end else begin
         pixels_166_ce0 = 1'b0;
     end
@@ -9922,7 +9893,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_166_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_166_we0;
+        pixels_166_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_166_we0;
     end else begin
         pixels_166_we0 = 1'b0;
     end
@@ -9930,9 +9901,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_167_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_167_address0;
+        pixels_167_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_167_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_167_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_167_address0;
+        pixels_167_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_167_address0;
     end else begin
         pixels_167_address0 = 'bx;
     end
@@ -9940,9 +9911,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_167_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_167_ce0;
+        pixels_167_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_167_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_167_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_167_ce0;
+        pixels_167_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_167_ce0;
     end else begin
         pixels_167_ce0 = 1'b0;
     end
@@ -9950,7 +9921,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_167_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_167_we0;
+        pixels_167_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_167_we0;
     end else begin
         pixels_167_we0 = 1'b0;
     end
@@ -9958,9 +9929,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_168_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_168_address0;
+        pixels_168_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_168_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_168_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_168_address0;
+        pixels_168_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_168_address0;
     end else begin
         pixels_168_address0 = 'bx;
     end
@@ -9968,9 +9939,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_168_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_168_ce0;
+        pixels_168_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_168_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_168_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_168_ce0;
+        pixels_168_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_168_ce0;
     end else begin
         pixels_168_ce0 = 1'b0;
     end
@@ -9978,7 +9949,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_168_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_168_we0;
+        pixels_168_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_168_we0;
     end else begin
         pixels_168_we0 = 1'b0;
     end
@@ -9986,9 +9957,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_169_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_169_address0;
+        pixels_169_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_169_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_169_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_169_address0;
+        pixels_169_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_169_address0;
     end else begin
         pixels_169_address0 = 'bx;
     end
@@ -9996,9 +9967,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_169_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_169_ce0;
+        pixels_169_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_169_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_169_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_169_ce0;
+        pixels_169_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_169_ce0;
     end else begin
         pixels_169_ce0 = 1'b0;
     end
@@ -10006,7 +9977,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_169_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_169_we0;
+        pixels_169_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_169_we0;
     end else begin
         pixels_169_we0 = 1'b0;
     end
@@ -10014,9 +9985,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_16_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_16_address0;
+        pixels_16_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_16_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_16_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_16_address0;
+        pixels_16_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_16_address0;
     end else begin
         pixels_16_address0 = 'bx;
     end
@@ -10024,9 +9995,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_16_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_16_ce0;
+        pixels_16_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_16_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_16_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_16_ce0;
+        pixels_16_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_16_ce0;
     end else begin
         pixels_16_ce0 = 1'b0;
     end
@@ -10034,7 +10005,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_16_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_16_we0;
+        pixels_16_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_16_we0;
     end else begin
         pixels_16_we0 = 1'b0;
     end
@@ -10042,9 +10013,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_170_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_170_address0;
+        pixels_170_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_170_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_170_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_170_address0;
+        pixels_170_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_170_address0;
     end else begin
         pixels_170_address0 = 'bx;
     end
@@ -10052,9 +10023,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_170_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_170_ce0;
+        pixels_170_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_170_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_170_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_170_ce0;
+        pixels_170_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_170_ce0;
     end else begin
         pixels_170_ce0 = 1'b0;
     end
@@ -10062,7 +10033,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_170_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_170_we0;
+        pixels_170_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_170_we0;
     end else begin
         pixels_170_we0 = 1'b0;
     end
@@ -10070,9 +10041,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_171_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_171_address0;
+        pixels_171_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_171_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_171_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_171_address0;
+        pixels_171_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_171_address0;
     end else begin
         pixels_171_address0 = 'bx;
     end
@@ -10080,9 +10051,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_171_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_171_ce0;
+        pixels_171_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_171_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_171_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_171_ce0;
+        pixels_171_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_171_ce0;
     end else begin
         pixels_171_ce0 = 1'b0;
     end
@@ -10090,7 +10061,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_171_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_171_we0;
+        pixels_171_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_171_we0;
     end else begin
         pixels_171_we0 = 1'b0;
     end
@@ -10098,9 +10069,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_172_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_172_address0;
+        pixels_172_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_172_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_172_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_172_address0;
+        pixels_172_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_172_address0;
     end else begin
         pixels_172_address0 = 'bx;
     end
@@ -10108,9 +10079,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_172_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_172_ce0;
+        pixels_172_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_172_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_172_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_172_ce0;
+        pixels_172_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_172_ce0;
     end else begin
         pixels_172_ce0 = 1'b0;
     end
@@ -10118,7 +10089,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_172_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_172_we0;
+        pixels_172_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_172_we0;
     end else begin
         pixels_172_we0 = 1'b0;
     end
@@ -10126,9 +10097,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_173_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_173_address0;
+        pixels_173_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_173_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_173_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_173_address0;
+        pixels_173_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_173_address0;
     end else begin
         pixels_173_address0 = 'bx;
     end
@@ -10136,9 +10107,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_173_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_173_ce0;
+        pixels_173_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_173_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_173_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_173_ce0;
+        pixels_173_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_173_ce0;
     end else begin
         pixels_173_ce0 = 1'b0;
     end
@@ -10146,7 +10117,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_173_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_173_we0;
+        pixels_173_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_173_we0;
     end else begin
         pixels_173_we0 = 1'b0;
     end
@@ -10154,9 +10125,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_174_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_174_address0;
+        pixels_174_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_174_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_174_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_174_address0;
+        pixels_174_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_174_address0;
     end else begin
         pixels_174_address0 = 'bx;
     end
@@ -10164,9 +10135,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_174_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_174_ce0;
+        pixels_174_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_174_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_174_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_174_ce0;
+        pixels_174_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_174_ce0;
     end else begin
         pixels_174_ce0 = 1'b0;
     end
@@ -10174,7 +10145,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_174_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_174_we0;
+        pixels_174_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_174_we0;
     end else begin
         pixels_174_we0 = 1'b0;
     end
@@ -10182,9 +10153,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_175_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_175_address0;
+        pixels_175_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_175_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_175_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_175_address0;
+        pixels_175_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_175_address0;
     end else begin
         pixels_175_address0 = 'bx;
     end
@@ -10192,9 +10163,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_175_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_175_ce0;
+        pixels_175_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_175_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_175_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_175_ce0;
+        pixels_175_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_175_ce0;
     end else begin
         pixels_175_ce0 = 1'b0;
     end
@@ -10202,7 +10173,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_175_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_175_we0;
+        pixels_175_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_175_we0;
     end else begin
         pixels_175_we0 = 1'b0;
     end
@@ -10210,9 +10181,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_176_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_176_address0;
+        pixels_176_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_176_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_176_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_176_address0;
+        pixels_176_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_176_address0;
     end else begin
         pixels_176_address0 = 'bx;
     end
@@ -10220,9 +10191,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_176_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_176_ce0;
+        pixels_176_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_176_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_176_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_176_ce0;
+        pixels_176_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_176_ce0;
     end else begin
         pixels_176_ce0 = 1'b0;
     end
@@ -10230,7 +10201,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_176_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_176_we0;
+        pixels_176_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_176_we0;
     end else begin
         pixels_176_we0 = 1'b0;
     end
@@ -10238,9 +10209,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_177_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_177_address0;
+        pixels_177_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_177_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_177_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_177_address0;
+        pixels_177_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_177_address0;
     end else begin
         pixels_177_address0 = 'bx;
     end
@@ -10248,9 +10219,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_177_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_177_ce0;
+        pixels_177_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_177_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_177_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_177_ce0;
+        pixels_177_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_177_ce0;
     end else begin
         pixels_177_ce0 = 1'b0;
     end
@@ -10258,7 +10229,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_177_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_177_we0;
+        pixels_177_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_177_we0;
     end else begin
         pixels_177_we0 = 1'b0;
     end
@@ -10266,9 +10237,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_178_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_178_address0;
+        pixels_178_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_178_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_178_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_178_address0;
+        pixels_178_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_178_address0;
     end else begin
         pixels_178_address0 = 'bx;
     end
@@ -10276,9 +10247,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_178_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_178_ce0;
+        pixels_178_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_178_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_178_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_178_ce0;
+        pixels_178_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_178_ce0;
     end else begin
         pixels_178_ce0 = 1'b0;
     end
@@ -10286,7 +10257,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_178_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_178_we0;
+        pixels_178_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_178_we0;
     end else begin
         pixels_178_we0 = 1'b0;
     end
@@ -10294,9 +10265,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_179_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_179_address0;
+        pixels_179_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_179_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_179_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_179_address0;
+        pixels_179_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_179_address0;
     end else begin
         pixels_179_address0 = 'bx;
     end
@@ -10304,9 +10275,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_179_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_179_ce0;
+        pixels_179_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_179_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_179_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_179_ce0;
+        pixels_179_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_179_ce0;
     end else begin
         pixels_179_ce0 = 1'b0;
     end
@@ -10314,7 +10285,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_179_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_179_we0;
+        pixels_179_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_179_we0;
     end else begin
         pixels_179_we0 = 1'b0;
     end
@@ -10322,9 +10293,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_17_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_17_address0;
+        pixels_17_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_17_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_17_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_17_address0;
+        pixels_17_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_17_address0;
     end else begin
         pixels_17_address0 = 'bx;
     end
@@ -10332,9 +10303,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_17_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_17_ce0;
+        pixels_17_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_17_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_17_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_17_ce0;
+        pixels_17_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_17_ce0;
     end else begin
         pixels_17_ce0 = 1'b0;
     end
@@ -10342,7 +10313,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_17_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_17_we0;
+        pixels_17_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_17_we0;
     end else begin
         pixels_17_we0 = 1'b0;
     end
@@ -10350,9 +10321,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_18_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_18_address0;
+        pixels_18_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_18_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_18_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_18_address0;
+        pixels_18_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_18_address0;
     end else begin
         pixels_18_address0 = 'bx;
     end
@@ -10360,9 +10331,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_18_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_18_ce0;
+        pixels_18_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_18_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_18_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_18_ce0;
+        pixels_18_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_18_ce0;
     end else begin
         pixels_18_ce0 = 1'b0;
     end
@@ -10370,7 +10341,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_18_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_18_we0;
+        pixels_18_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_18_we0;
     end else begin
         pixels_18_we0 = 1'b0;
     end
@@ -10378,9 +10349,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_19_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_19_address0;
+        pixels_19_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_19_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_19_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_19_address0;
+        pixels_19_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_19_address0;
     end else begin
         pixels_19_address0 = 'bx;
     end
@@ -10388,9 +10359,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_19_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_19_ce0;
+        pixels_19_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_19_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_19_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_19_ce0;
+        pixels_19_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_19_ce0;
     end else begin
         pixels_19_ce0 = 1'b0;
     end
@@ -10398,7 +10369,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_19_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_19_we0;
+        pixels_19_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_19_we0;
     end else begin
         pixels_19_we0 = 1'b0;
     end
@@ -10406,9 +10377,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_1_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_1_address0;
+        pixels_1_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_1_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_1_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_1_address0;
+        pixels_1_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_1_address0;
     end else begin
         pixels_1_address0 = 'bx;
     end
@@ -10416,9 +10387,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_1_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_1_ce0;
+        pixels_1_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_1_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_1_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_1_ce0;
+        pixels_1_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_1_ce0;
     end else begin
         pixels_1_ce0 = 1'b0;
     end
@@ -10426,7 +10397,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_1_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_1_we0;
+        pixels_1_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_1_we0;
     end else begin
         pixels_1_we0 = 1'b0;
     end
@@ -10434,9 +10405,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_20_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_20_address0;
+        pixels_20_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_20_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_20_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_20_address0;
+        pixels_20_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_20_address0;
     end else begin
         pixels_20_address0 = 'bx;
     end
@@ -10444,9 +10415,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_20_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_20_ce0;
+        pixels_20_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_20_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_20_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_20_ce0;
+        pixels_20_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_20_ce0;
     end else begin
         pixels_20_ce0 = 1'b0;
     end
@@ -10454,7 +10425,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_20_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_20_we0;
+        pixels_20_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_20_we0;
     end else begin
         pixels_20_we0 = 1'b0;
     end
@@ -10462,9 +10433,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_21_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_21_address0;
+        pixels_21_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_21_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_21_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_21_address0;
+        pixels_21_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_21_address0;
     end else begin
         pixels_21_address0 = 'bx;
     end
@@ -10472,9 +10443,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_21_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_21_ce0;
+        pixels_21_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_21_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_21_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_21_ce0;
+        pixels_21_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_21_ce0;
     end else begin
         pixels_21_ce0 = 1'b0;
     end
@@ -10482,7 +10453,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_21_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_21_we0;
+        pixels_21_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_21_we0;
     end else begin
         pixels_21_we0 = 1'b0;
     end
@@ -10490,9 +10461,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_22_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_22_address0;
+        pixels_22_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_22_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_22_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_22_address0;
+        pixels_22_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_22_address0;
     end else begin
         pixels_22_address0 = 'bx;
     end
@@ -10500,9 +10471,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_22_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_22_ce0;
+        pixels_22_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_22_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_22_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_22_ce0;
+        pixels_22_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_22_ce0;
     end else begin
         pixels_22_ce0 = 1'b0;
     end
@@ -10510,7 +10481,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_22_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_22_we0;
+        pixels_22_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_22_we0;
     end else begin
         pixels_22_we0 = 1'b0;
     end
@@ -10518,9 +10489,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_23_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_23_address0;
+        pixels_23_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_23_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_23_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_23_address0;
+        pixels_23_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_23_address0;
     end else begin
         pixels_23_address0 = 'bx;
     end
@@ -10528,9 +10499,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_23_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_23_ce0;
+        pixels_23_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_23_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_23_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_23_ce0;
+        pixels_23_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_23_ce0;
     end else begin
         pixels_23_ce0 = 1'b0;
     end
@@ -10538,7 +10509,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_23_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_23_we0;
+        pixels_23_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_23_we0;
     end else begin
         pixels_23_we0 = 1'b0;
     end
@@ -10546,9 +10517,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_24_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_24_address0;
+        pixels_24_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_24_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_24_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_24_address0;
+        pixels_24_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_24_address0;
     end else begin
         pixels_24_address0 = 'bx;
     end
@@ -10556,9 +10527,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_24_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_24_ce0;
+        pixels_24_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_24_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_24_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_24_ce0;
+        pixels_24_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_24_ce0;
     end else begin
         pixels_24_ce0 = 1'b0;
     end
@@ -10566,7 +10537,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_24_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_24_we0;
+        pixels_24_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_24_we0;
     end else begin
         pixels_24_we0 = 1'b0;
     end
@@ -10574,9 +10545,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_25_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_25_address0;
+        pixels_25_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_25_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_25_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_25_address0;
+        pixels_25_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_25_address0;
     end else begin
         pixels_25_address0 = 'bx;
     end
@@ -10584,9 +10555,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_25_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_25_ce0;
+        pixels_25_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_25_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_25_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_25_ce0;
+        pixels_25_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_25_ce0;
     end else begin
         pixels_25_ce0 = 1'b0;
     end
@@ -10594,7 +10565,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_25_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_25_we0;
+        pixels_25_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_25_we0;
     end else begin
         pixels_25_we0 = 1'b0;
     end
@@ -10602,9 +10573,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_26_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_26_address0;
+        pixels_26_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_26_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_26_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_26_address0;
+        pixels_26_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_26_address0;
     end else begin
         pixels_26_address0 = 'bx;
     end
@@ -10612,9 +10583,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_26_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_26_ce0;
+        pixels_26_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_26_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_26_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_26_ce0;
+        pixels_26_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_26_ce0;
     end else begin
         pixels_26_ce0 = 1'b0;
     end
@@ -10622,7 +10593,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_26_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_26_we0;
+        pixels_26_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_26_we0;
     end else begin
         pixels_26_we0 = 1'b0;
     end
@@ -10630,9 +10601,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_27_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_27_address0;
+        pixels_27_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_27_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_27_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_27_address0;
+        pixels_27_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_27_address0;
     end else begin
         pixels_27_address0 = 'bx;
     end
@@ -10640,9 +10611,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_27_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_27_ce0;
+        pixels_27_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_27_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_27_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_27_ce0;
+        pixels_27_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_27_ce0;
     end else begin
         pixels_27_ce0 = 1'b0;
     end
@@ -10650,7 +10621,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_27_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_27_we0;
+        pixels_27_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_27_we0;
     end else begin
         pixels_27_we0 = 1'b0;
     end
@@ -10658,9 +10629,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_28_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_28_address0;
+        pixels_28_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_28_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_28_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_28_address0;
+        pixels_28_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_28_address0;
     end else begin
         pixels_28_address0 = 'bx;
     end
@@ -10668,9 +10639,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_28_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_28_ce0;
+        pixels_28_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_28_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_28_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_28_ce0;
+        pixels_28_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_28_ce0;
     end else begin
         pixels_28_ce0 = 1'b0;
     end
@@ -10678,7 +10649,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_28_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_28_we0;
+        pixels_28_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_28_we0;
     end else begin
         pixels_28_we0 = 1'b0;
     end
@@ -10686,9 +10657,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_29_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_29_address0;
+        pixels_29_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_29_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_29_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_29_address0;
+        pixels_29_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_29_address0;
     end else begin
         pixels_29_address0 = 'bx;
     end
@@ -10696,9 +10667,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_29_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_29_ce0;
+        pixels_29_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_29_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_29_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_29_ce0;
+        pixels_29_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_29_ce0;
     end else begin
         pixels_29_ce0 = 1'b0;
     end
@@ -10706,7 +10677,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_29_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_29_we0;
+        pixels_29_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_29_we0;
     end else begin
         pixels_29_we0 = 1'b0;
     end
@@ -10714,9 +10685,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_2_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_2_address0;
+        pixels_2_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_2_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_2_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_2_address0;
+        pixels_2_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_2_address0;
     end else begin
         pixels_2_address0 = 'bx;
     end
@@ -10724,9 +10695,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_2_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_2_ce0;
+        pixels_2_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_2_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_2_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_2_ce0;
+        pixels_2_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_2_ce0;
     end else begin
         pixels_2_ce0 = 1'b0;
     end
@@ -10734,7 +10705,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_2_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_2_we0;
+        pixels_2_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_2_we0;
     end else begin
         pixels_2_we0 = 1'b0;
     end
@@ -10742,9 +10713,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_30_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_30_address0;
+        pixels_30_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_30_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_30_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_30_address0;
+        pixels_30_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_30_address0;
     end else begin
         pixels_30_address0 = 'bx;
     end
@@ -10752,9 +10723,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_30_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_30_ce0;
+        pixels_30_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_30_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_30_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_30_ce0;
+        pixels_30_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_30_ce0;
     end else begin
         pixels_30_ce0 = 1'b0;
     end
@@ -10762,7 +10733,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_30_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_30_we0;
+        pixels_30_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_30_we0;
     end else begin
         pixels_30_we0 = 1'b0;
     end
@@ -10770,9 +10741,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_31_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_31_address0;
+        pixels_31_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_31_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_31_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_31_address0;
+        pixels_31_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_31_address0;
     end else begin
         pixels_31_address0 = 'bx;
     end
@@ -10780,9 +10751,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_31_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_31_ce0;
+        pixels_31_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_31_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_31_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_31_ce0;
+        pixels_31_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_31_ce0;
     end else begin
         pixels_31_ce0 = 1'b0;
     end
@@ -10790,7 +10761,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_31_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_31_we0;
+        pixels_31_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_31_we0;
     end else begin
         pixels_31_we0 = 1'b0;
     end
@@ -10798,9 +10769,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_32_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_32_address0;
+        pixels_32_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_32_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_32_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_32_address0;
+        pixels_32_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_32_address0;
     end else begin
         pixels_32_address0 = 'bx;
     end
@@ -10808,9 +10779,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_32_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_32_ce0;
+        pixels_32_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_32_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_32_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_32_ce0;
+        pixels_32_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_32_ce0;
     end else begin
         pixels_32_ce0 = 1'b0;
     end
@@ -10818,7 +10789,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_32_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_32_we0;
+        pixels_32_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_32_we0;
     end else begin
         pixels_32_we0 = 1'b0;
     end
@@ -10826,9 +10797,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_33_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_33_address0;
+        pixels_33_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_33_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_33_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_33_address0;
+        pixels_33_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_33_address0;
     end else begin
         pixels_33_address0 = 'bx;
     end
@@ -10836,9 +10807,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_33_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_33_ce0;
+        pixels_33_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_33_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_33_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_33_ce0;
+        pixels_33_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_33_ce0;
     end else begin
         pixels_33_ce0 = 1'b0;
     end
@@ -10846,7 +10817,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_33_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_33_we0;
+        pixels_33_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_33_we0;
     end else begin
         pixels_33_we0 = 1'b0;
     end
@@ -10854,9 +10825,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_34_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_34_address0;
+        pixels_34_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_34_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_34_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_34_address0;
+        pixels_34_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_34_address0;
     end else begin
         pixels_34_address0 = 'bx;
     end
@@ -10864,9 +10835,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_34_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_34_ce0;
+        pixels_34_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_34_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_34_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_34_ce0;
+        pixels_34_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_34_ce0;
     end else begin
         pixels_34_ce0 = 1'b0;
     end
@@ -10874,7 +10845,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_34_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_34_we0;
+        pixels_34_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_34_we0;
     end else begin
         pixels_34_we0 = 1'b0;
     end
@@ -10882,9 +10853,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_35_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_35_address0;
+        pixels_35_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_35_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_35_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_35_address0;
+        pixels_35_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_35_address0;
     end else begin
         pixels_35_address0 = 'bx;
     end
@@ -10892,9 +10863,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_35_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_35_ce0;
+        pixels_35_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_35_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_35_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_35_ce0;
+        pixels_35_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_35_ce0;
     end else begin
         pixels_35_ce0 = 1'b0;
     end
@@ -10902,7 +10873,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_35_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_35_we0;
+        pixels_35_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_35_we0;
     end else begin
         pixels_35_we0 = 1'b0;
     end
@@ -10910,9 +10881,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_36_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_36_address0;
+        pixels_36_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_36_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_36_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_36_address0;
+        pixels_36_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_36_address0;
     end else begin
         pixels_36_address0 = 'bx;
     end
@@ -10920,9 +10891,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_36_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_36_ce0;
+        pixels_36_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_36_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_36_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_36_ce0;
+        pixels_36_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_36_ce0;
     end else begin
         pixels_36_ce0 = 1'b0;
     end
@@ -10930,7 +10901,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_36_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_36_we0;
+        pixels_36_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_36_we0;
     end else begin
         pixels_36_we0 = 1'b0;
     end
@@ -10938,9 +10909,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_37_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_37_address0;
+        pixels_37_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_37_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_37_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_37_address0;
+        pixels_37_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_37_address0;
     end else begin
         pixels_37_address0 = 'bx;
     end
@@ -10948,9 +10919,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_37_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_37_ce0;
+        pixels_37_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_37_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_37_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_37_ce0;
+        pixels_37_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_37_ce0;
     end else begin
         pixels_37_ce0 = 1'b0;
     end
@@ -10958,7 +10929,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_37_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_37_we0;
+        pixels_37_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_37_we0;
     end else begin
         pixels_37_we0 = 1'b0;
     end
@@ -10966,9 +10937,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_38_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_38_address0;
+        pixels_38_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_38_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_38_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_38_address0;
+        pixels_38_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_38_address0;
     end else begin
         pixels_38_address0 = 'bx;
     end
@@ -10976,9 +10947,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_38_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_38_ce0;
+        pixels_38_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_38_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_38_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_38_ce0;
+        pixels_38_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_38_ce0;
     end else begin
         pixels_38_ce0 = 1'b0;
     end
@@ -10986,7 +10957,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_38_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_38_we0;
+        pixels_38_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_38_we0;
     end else begin
         pixels_38_we0 = 1'b0;
     end
@@ -10994,9 +10965,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_39_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_39_address0;
+        pixels_39_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_39_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_39_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_39_address0;
+        pixels_39_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_39_address0;
     end else begin
         pixels_39_address0 = 'bx;
     end
@@ -11004,9 +10975,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_39_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_39_ce0;
+        pixels_39_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_39_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_39_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_39_ce0;
+        pixels_39_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_39_ce0;
     end else begin
         pixels_39_ce0 = 1'b0;
     end
@@ -11014,7 +10985,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_39_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_39_we0;
+        pixels_39_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_39_we0;
     end else begin
         pixels_39_we0 = 1'b0;
     end
@@ -11022,9 +10993,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_3_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_3_address0;
+        pixels_3_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_3_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_3_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_3_address0;
+        pixels_3_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_3_address0;
     end else begin
         pixels_3_address0 = 'bx;
     end
@@ -11032,9 +11003,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_3_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_3_ce0;
+        pixels_3_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_3_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_3_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_3_ce0;
+        pixels_3_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_3_ce0;
     end else begin
         pixels_3_ce0 = 1'b0;
     end
@@ -11042,7 +11013,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_3_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_3_we0;
+        pixels_3_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_3_we0;
     end else begin
         pixels_3_we0 = 1'b0;
     end
@@ -11050,9 +11021,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_40_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_40_address0;
+        pixels_40_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_40_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_40_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_40_address0;
+        pixels_40_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_40_address0;
     end else begin
         pixels_40_address0 = 'bx;
     end
@@ -11060,9 +11031,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_40_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_40_ce0;
+        pixels_40_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_40_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_40_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_40_ce0;
+        pixels_40_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_40_ce0;
     end else begin
         pixels_40_ce0 = 1'b0;
     end
@@ -11070,7 +11041,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_40_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_40_we0;
+        pixels_40_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_40_we0;
     end else begin
         pixels_40_we0 = 1'b0;
     end
@@ -11078,9 +11049,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_41_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_41_address0;
+        pixels_41_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_41_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_41_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_41_address0;
+        pixels_41_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_41_address0;
     end else begin
         pixels_41_address0 = 'bx;
     end
@@ -11088,9 +11059,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_41_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_41_ce0;
+        pixels_41_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_41_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_41_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_41_ce0;
+        pixels_41_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_41_ce0;
     end else begin
         pixels_41_ce0 = 1'b0;
     end
@@ -11098,7 +11069,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_41_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_41_we0;
+        pixels_41_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_41_we0;
     end else begin
         pixels_41_we0 = 1'b0;
     end
@@ -11106,9 +11077,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_42_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_42_address0;
+        pixels_42_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_42_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_42_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_42_address0;
+        pixels_42_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_42_address0;
     end else begin
         pixels_42_address0 = 'bx;
     end
@@ -11116,9 +11087,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_42_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_42_ce0;
+        pixels_42_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_42_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_42_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_42_ce0;
+        pixels_42_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_42_ce0;
     end else begin
         pixels_42_ce0 = 1'b0;
     end
@@ -11126,7 +11097,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_42_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_42_we0;
+        pixels_42_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_42_we0;
     end else begin
         pixels_42_we0 = 1'b0;
     end
@@ -11134,9 +11105,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_43_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_43_address0;
+        pixels_43_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_43_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_43_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_43_address0;
+        pixels_43_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_43_address0;
     end else begin
         pixels_43_address0 = 'bx;
     end
@@ -11144,9 +11115,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_43_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_43_ce0;
+        pixels_43_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_43_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_43_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_43_ce0;
+        pixels_43_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_43_ce0;
     end else begin
         pixels_43_ce0 = 1'b0;
     end
@@ -11154,7 +11125,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_43_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_43_we0;
+        pixels_43_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_43_we0;
     end else begin
         pixels_43_we0 = 1'b0;
     end
@@ -11162,9 +11133,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_44_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_44_address0;
+        pixels_44_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_44_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_44_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_44_address0;
+        pixels_44_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_44_address0;
     end else begin
         pixels_44_address0 = 'bx;
     end
@@ -11172,9 +11143,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_44_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_44_ce0;
+        pixels_44_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_44_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_44_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_44_ce0;
+        pixels_44_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_44_ce0;
     end else begin
         pixels_44_ce0 = 1'b0;
     end
@@ -11182,7 +11153,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_44_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_44_we0;
+        pixels_44_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_44_we0;
     end else begin
         pixels_44_we0 = 1'b0;
     end
@@ -11190,9 +11161,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_45_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_45_address0;
+        pixels_45_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_45_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_45_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_45_address0;
+        pixels_45_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_45_address0;
     end else begin
         pixels_45_address0 = 'bx;
     end
@@ -11200,9 +11171,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_45_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_45_ce0;
+        pixels_45_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_45_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_45_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_45_ce0;
+        pixels_45_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_45_ce0;
     end else begin
         pixels_45_ce0 = 1'b0;
     end
@@ -11210,7 +11181,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_45_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_45_we0;
+        pixels_45_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_45_we0;
     end else begin
         pixels_45_we0 = 1'b0;
     end
@@ -11218,9 +11189,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_46_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_46_address0;
+        pixels_46_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_46_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_46_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_46_address0;
+        pixels_46_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_46_address0;
     end else begin
         pixels_46_address0 = 'bx;
     end
@@ -11228,9 +11199,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_46_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_46_ce0;
+        pixels_46_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_46_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_46_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_46_ce0;
+        pixels_46_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_46_ce0;
     end else begin
         pixels_46_ce0 = 1'b0;
     end
@@ -11238,7 +11209,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_46_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_46_we0;
+        pixels_46_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_46_we0;
     end else begin
         pixels_46_we0 = 1'b0;
     end
@@ -11246,9 +11217,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_47_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_47_address0;
+        pixels_47_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_47_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_47_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_47_address0;
+        pixels_47_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_47_address0;
     end else begin
         pixels_47_address0 = 'bx;
     end
@@ -11256,9 +11227,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_47_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_47_ce0;
+        pixels_47_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_47_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_47_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_47_ce0;
+        pixels_47_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_47_ce0;
     end else begin
         pixels_47_ce0 = 1'b0;
     end
@@ -11266,7 +11237,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_47_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_47_we0;
+        pixels_47_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_47_we0;
     end else begin
         pixels_47_we0 = 1'b0;
     end
@@ -11274,9 +11245,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_48_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_48_address0;
+        pixels_48_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_48_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_48_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_48_address0;
+        pixels_48_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_48_address0;
     end else begin
         pixels_48_address0 = 'bx;
     end
@@ -11284,9 +11255,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_48_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_48_ce0;
+        pixels_48_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_48_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_48_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_48_ce0;
+        pixels_48_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_48_ce0;
     end else begin
         pixels_48_ce0 = 1'b0;
     end
@@ -11294,7 +11265,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_48_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_48_we0;
+        pixels_48_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_48_we0;
     end else begin
         pixels_48_we0 = 1'b0;
     end
@@ -11302,9 +11273,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_49_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_49_address0;
+        pixels_49_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_49_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_49_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_49_address0;
+        pixels_49_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_49_address0;
     end else begin
         pixels_49_address0 = 'bx;
     end
@@ -11312,9 +11283,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_49_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_49_ce0;
+        pixels_49_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_49_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_49_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_49_ce0;
+        pixels_49_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_49_ce0;
     end else begin
         pixels_49_ce0 = 1'b0;
     end
@@ -11322,7 +11293,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_49_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_49_we0;
+        pixels_49_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_49_we0;
     end else begin
         pixels_49_we0 = 1'b0;
     end
@@ -11330,9 +11301,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_4_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_4_address0;
+        pixels_4_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_4_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_4_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_4_address0;
+        pixels_4_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_4_address0;
     end else begin
         pixels_4_address0 = 'bx;
     end
@@ -11340,9 +11311,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_4_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_4_ce0;
+        pixels_4_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_4_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_4_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_4_ce0;
+        pixels_4_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_4_ce0;
     end else begin
         pixels_4_ce0 = 1'b0;
     end
@@ -11350,7 +11321,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_4_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_4_we0;
+        pixels_4_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_4_we0;
     end else begin
         pixels_4_we0 = 1'b0;
     end
@@ -11358,9 +11329,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_50_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_50_address0;
+        pixels_50_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_50_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_50_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_50_address0;
+        pixels_50_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_50_address0;
     end else begin
         pixels_50_address0 = 'bx;
     end
@@ -11368,9 +11339,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_50_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_50_ce0;
+        pixels_50_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_50_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_50_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_50_ce0;
+        pixels_50_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_50_ce0;
     end else begin
         pixels_50_ce0 = 1'b0;
     end
@@ -11378,7 +11349,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_50_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_50_we0;
+        pixels_50_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_50_we0;
     end else begin
         pixels_50_we0 = 1'b0;
     end
@@ -11386,9 +11357,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_51_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_51_address0;
+        pixels_51_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_51_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_51_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_51_address0;
+        pixels_51_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_51_address0;
     end else begin
         pixels_51_address0 = 'bx;
     end
@@ -11396,9 +11367,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_51_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_51_ce0;
+        pixels_51_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_51_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_51_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_51_ce0;
+        pixels_51_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_51_ce0;
     end else begin
         pixels_51_ce0 = 1'b0;
     end
@@ -11406,7 +11377,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_51_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_51_we0;
+        pixels_51_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_51_we0;
     end else begin
         pixels_51_we0 = 1'b0;
     end
@@ -11414,9 +11385,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_52_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_52_address0;
+        pixels_52_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_52_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_52_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_52_address0;
+        pixels_52_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_52_address0;
     end else begin
         pixels_52_address0 = 'bx;
     end
@@ -11424,9 +11395,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_52_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_52_ce0;
+        pixels_52_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_52_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_52_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_52_ce0;
+        pixels_52_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_52_ce0;
     end else begin
         pixels_52_ce0 = 1'b0;
     end
@@ -11434,7 +11405,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_52_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_52_we0;
+        pixels_52_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_52_we0;
     end else begin
         pixels_52_we0 = 1'b0;
     end
@@ -11442,9 +11413,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_53_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_53_address0;
+        pixels_53_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_53_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_53_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_53_address0;
+        pixels_53_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_53_address0;
     end else begin
         pixels_53_address0 = 'bx;
     end
@@ -11452,9 +11423,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_53_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_53_ce0;
+        pixels_53_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_53_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_53_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_53_ce0;
+        pixels_53_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_53_ce0;
     end else begin
         pixels_53_ce0 = 1'b0;
     end
@@ -11462,7 +11433,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_53_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_53_we0;
+        pixels_53_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_53_we0;
     end else begin
         pixels_53_we0 = 1'b0;
     end
@@ -11470,9 +11441,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_54_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_54_address0;
+        pixels_54_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_54_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_54_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_54_address0;
+        pixels_54_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_54_address0;
     end else begin
         pixels_54_address0 = 'bx;
     end
@@ -11480,9 +11451,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_54_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_54_ce0;
+        pixels_54_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_54_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_54_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_54_ce0;
+        pixels_54_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_54_ce0;
     end else begin
         pixels_54_ce0 = 1'b0;
     end
@@ -11490,7 +11461,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_54_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_54_we0;
+        pixels_54_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_54_we0;
     end else begin
         pixels_54_we0 = 1'b0;
     end
@@ -11498,9 +11469,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_55_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_55_address0;
+        pixels_55_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_55_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_55_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_55_address0;
+        pixels_55_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_55_address0;
     end else begin
         pixels_55_address0 = 'bx;
     end
@@ -11508,9 +11479,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_55_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_55_ce0;
+        pixels_55_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_55_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_55_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_55_ce0;
+        pixels_55_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_55_ce0;
     end else begin
         pixels_55_ce0 = 1'b0;
     end
@@ -11518,7 +11489,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_55_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_55_we0;
+        pixels_55_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_55_we0;
     end else begin
         pixels_55_we0 = 1'b0;
     end
@@ -11526,9 +11497,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_56_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_56_address0;
+        pixels_56_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_56_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_56_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_56_address0;
+        pixels_56_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_56_address0;
     end else begin
         pixels_56_address0 = 'bx;
     end
@@ -11536,9 +11507,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_56_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_56_ce0;
+        pixels_56_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_56_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_56_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_56_ce0;
+        pixels_56_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_56_ce0;
     end else begin
         pixels_56_ce0 = 1'b0;
     end
@@ -11546,7 +11517,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_56_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_56_we0;
+        pixels_56_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_56_we0;
     end else begin
         pixels_56_we0 = 1'b0;
     end
@@ -11554,9 +11525,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_57_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_57_address0;
+        pixels_57_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_57_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_57_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_57_address0;
+        pixels_57_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_57_address0;
     end else begin
         pixels_57_address0 = 'bx;
     end
@@ -11564,9 +11535,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_57_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_57_ce0;
+        pixels_57_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_57_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_57_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_57_ce0;
+        pixels_57_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_57_ce0;
     end else begin
         pixels_57_ce0 = 1'b0;
     end
@@ -11574,7 +11545,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_57_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_57_we0;
+        pixels_57_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_57_we0;
     end else begin
         pixels_57_we0 = 1'b0;
     end
@@ -11582,9 +11553,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_58_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_58_address0;
+        pixels_58_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_58_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_58_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_58_address0;
+        pixels_58_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_58_address0;
     end else begin
         pixels_58_address0 = 'bx;
     end
@@ -11592,9 +11563,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_58_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_58_ce0;
+        pixels_58_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_58_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_58_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_58_ce0;
+        pixels_58_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_58_ce0;
     end else begin
         pixels_58_ce0 = 1'b0;
     end
@@ -11602,7 +11573,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_58_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_58_we0;
+        pixels_58_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_58_we0;
     end else begin
         pixels_58_we0 = 1'b0;
     end
@@ -11610,9 +11581,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_59_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_59_address0;
+        pixels_59_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_59_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_59_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_59_address0;
+        pixels_59_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_59_address0;
     end else begin
         pixels_59_address0 = 'bx;
     end
@@ -11620,9 +11591,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_59_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_59_ce0;
+        pixels_59_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_59_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_59_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_59_ce0;
+        pixels_59_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_59_ce0;
     end else begin
         pixels_59_ce0 = 1'b0;
     end
@@ -11630,7 +11601,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_59_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_59_we0;
+        pixels_59_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_59_we0;
     end else begin
         pixels_59_we0 = 1'b0;
     end
@@ -11638,9 +11609,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_5_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_5_address0;
+        pixels_5_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_5_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_5_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_5_address0;
+        pixels_5_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_5_address0;
     end else begin
         pixels_5_address0 = 'bx;
     end
@@ -11648,9 +11619,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_5_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_5_ce0;
+        pixels_5_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_5_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_5_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_5_ce0;
+        pixels_5_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_5_ce0;
     end else begin
         pixels_5_ce0 = 1'b0;
     end
@@ -11658,7 +11629,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_5_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_5_we0;
+        pixels_5_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_5_we0;
     end else begin
         pixels_5_we0 = 1'b0;
     end
@@ -11666,9 +11637,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_60_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_60_address0;
+        pixels_60_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_60_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_60_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_60_address0;
+        pixels_60_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_60_address0;
     end else begin
         pixels_60_address0 = 'bx;
     end
@@ -11676,9 +11647,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_60_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_60_ce0;
+        pixels_60_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_60_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_60_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_60_ce0;
+        pixels_60_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_60_ce0;
     end else begin
         pixels_60_ce0 = 1'b0;
     end
@@ -11686,7 +11657,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_60_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_60_we0;
+        pixels_60_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_60_we0;
     end else begin
         pixels_60_we0 = 1'b0;
     end
@@ -11694,9 +11665,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_61_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_61_address0;
+        pixels_61_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_61_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_61_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_61_address0;
+        pixels_61_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_61_address0;
     end else begin
         pixels_61_address0 = 'bx;
     end
@@ -11704,9 +11675,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_61_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_61_ce0;
+        pixels_61_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_61_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_61_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_61_ce0;
+        pixels_61_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_61_ce0;
     end else begin
         pixels_61_ce0 = 1'b0;
     end
@@ -11714,7 +11685,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_61_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_61_we0;
+        pixels_61_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_61_we0;
     end else begin
         pixels_61_we0 = 1'b0;
     end
@@ -11722,9 +11693,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_62_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_62_address0;
+        pixels_62_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_62_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_62_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_62_address0;
+        pixels_62_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_62_address0;
     end else begin
         pixels_62_address0 = 'bx;
     end
@@ -11732,9 +11703,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_62_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_62_ce0;
+        pixels_62_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_62_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_62_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_62_ce0;
+        pixels_62_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_62_ce0;
     end else begin
         pixels_62_ce0 = 1'b0;
     end
@@ -11742,7 +11713,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_62_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_62_we0;
+        pixels_62_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_62_we0;
     end else begin
         pixels_62_we0 = 1'b0;
     end
@@ -11750,9 +11721,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_63_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_63_address0;
+        pixels_63_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_63_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_63_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_63_address0;
+        pixels_63_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_63_address0;
     end else begin
         pixels_63_address0 = 'bx;
     end
@@ -11760,9 +11731,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_63_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_63_ce0;
+        pixels_63_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_63_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_63_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_63_ce0;
+        pixels_63_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_63_ce0;
     end else begin
         pixels_63_ce0 = 1'b0;
     end
@@ -11770,7 +11741,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_63_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_63_we0;
+        pixels_63_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_63_we0;
     end else begin
         pixels_63_we0 = 1'b0;
     end
@@ -11778,9 +11749,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_64_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_64_address0;
+        pixels_64_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_64_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_64_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_64_address0;
+        pixels_64_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_64_address0;
     end else begin
         pixels_64_address0 = 'bx;
     end
@@ -11788,9 +11759,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_64_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_64_ce0;
+        pixels_64_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_64_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_64_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_64_ce0;
+        pixels_64_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_64_ce0;
     end else begin
         pixels_64_ce0 = 1'b0;
     end
@@ -11798,7 +11769,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_64_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_64_we0;
+        pixels_64_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_64_we0;
     end else begin
         pixels_64_we0 = 1'b0;
     end
@@ -11806,9 +11777,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_65_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_65_address0;
+        pixels_65_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_65_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_65_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_65_address0;
+        pixels_65_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_65_address0;
     end else begin
         pixels_65_address0 = 'bx;
     end
@@ -11816,9 +11787,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_65_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_65_ce0;
+        pixels_65_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_65_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_65_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_65_ce0;
+        pixels_65_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_65_ce0;
     end else begin
         pixels_65_ce0 = 1'b0;
     end
@@ -11826,7 +11797,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_65_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_65_we0;
+        pixels_65_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_65_we0;
     end else begin
         pixels_65_we0 = 1'b0;
     end
@@ -11834,9 +11805,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_66_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_66_address0;
+        pixels_66_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_66_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_66_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_66_address0;
+        pixels_66_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_66_address0;
     end else begin
         pixels_66_address0 = 'bx;
     end
@@ -11844,9 +11815,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_66_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_66_ce0;
+        pixels_66_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_66_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_66_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_66_ce0;
+        pixels_66_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_66_ce0;
     end else begin
         pixels_66_ce0 = 1'b0;
     end
@@ -11854,7 +11825,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_66_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_66_we0;
+        pixels_66_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_66_we0;
     end else begin
         pixels_66_we0 = 1'b0;
     end
@@ -11862,9 +11833,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_67_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_67_address0;
+        pixels_67_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_67_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_67_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_67_address0;
+        pixels_67_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_67_address0;
     end else begin
         pixels_67_address0 = 'bx;
     end
@@ -11872,9 +11843,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_67_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_67_ce0;
+        pixels_67_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_67_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_67_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_67_ce0;
+        pixels_67_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_67_ce0;
     end else begin
         pixels_67_ce0 = 1'b0;
     end
@@ -11882,7 +11853,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_67_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_67_we0;
+        pixels_67_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_67_we0;
     end else begin
         pixels_67_we0 = 1'b0;
     end
@@ -11890,9 +11861,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_68_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_68_address0;
+        pixels_68_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_68_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_68_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_68_address0;
+        pixels_68_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_68_address0;
     end else begin
         pixels_68_address0 = 'bx;
     end
@@ -11900,9 +11871,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_68_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_68_ce0;
+        pixels_68_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_68_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_68_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_68_ce0;
+        pixels_68_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_68_ce0;
     end else begin
         pixels_68_ce0 = 1'b0;
     end
@@ -11910,7 +11881,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_68_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_68_we0;
+        pixels_68_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_68_we0;
     end else begin
         pixels_68_we0 = 1'b0;
     end
@@ -11918,9 +11889,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_69_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_69_address0;
+        pixels_69_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_69_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_69_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_69_address0;
+        pixels_69_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_69_address0;
     end else begin
         pixels_69_address0 = 'bx;
     end
@@ -11928,9 +11899,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_69_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_69_ce0;
+        pixels_69_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_69_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_69_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_69_ce0;
+        pixels_69_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_69_ce0;
     end else begin
         pixels_69_ce0 = 1'b0;
     end
@@ -11938,7 +11909,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_69_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_69_we0;
+        pixels_69_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_69_we0;
     end else begin
         pixels_69_we0 = 1'b0;
     end
@@ -11946,9 +11917,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_6_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_6_address0;
+        pixels_6_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_6_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_6_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_6_address0;
+        pixels_6_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_6_address0;
     end else begin
         pixels_6_address0 = 'bx;
     end
@@ -11956,9 +11927,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_6_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_6_ce0;
+        pixels_6_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_6_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_6_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_6_ce0;
+        pixels_6_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_6_ce0;
     end else begin
         pixels_6_ce0 = 1'b0;
     end
@@ -11966,7 +11937,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_6_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_6_we0;
+        pixels_6_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_6_we0;
     end else begin
         pixels_6_we0 = 1'b0;
     end
@@ -11974,9 +11945,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_70_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_70_address0;
+        pixels_70_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_70_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_70_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_70_address0;
+        pixels_70_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_70_address0;
     end else begin
         pixels_70_address0 = 'bx;
     end
@@ -11984,9 +11955,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_70_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_70_ce0;
+        pixels_70_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_70_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_70_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_70_ce0;
+        pixels_70_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_70_ce0;
     end else begin
         pixels_70_ce0 = 1'b0;
     end
@@ -11994,7 +11965,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_70_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_70_we0;
+        pixels_70_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_70_we0;
     end else begin
         pixels_70_we0 = 1'b0;
     end
@@ -12002,9 +11973,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_71_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_71_address0;
+        pixels_71_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_71_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_71_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_71_address0;
+        pixels_71_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_71_address0;
     end else begin
         pixels_71_address0 = 'bx;
     end
@@ -12012,9 +11983,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_71_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_71_ce0;
+        pixels_71_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_71_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_71_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_71_ce0;
+        pixels_71_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_71_ce0;
     end else begin
         pixels_71_ce0 = 1'b0;
     end
@@ -12022,7 +11993,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_71_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_71_we0;
+        pixels_71_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_71_we0;
     end else begin
         pixels_71_we0 = 1'b0;
     end
@@ -12030,9 +12001,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_72_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_72_address0;
+        pixels_72_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_72_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_72_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_72_address0;
+        pixels_72_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_72_address0;
     end else begin
         pixels_72_address0 = 'bx;
     end
@@ -12040,9 +12011,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_72_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_72_ce0;
+        pixels_72_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_72_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_72_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_72_ce0;
+        pixels_72_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_72_ce0;
     end else begin
         pixels_72_ce0 = 1'b0;
     end
@@ -12050,7 +12021,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_72_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_72_we0;
+        pixels_72_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_72_we0;
     end else begin
         pixels_72_we0 = 1'b0;
     end
@@ -12058,9 +12029,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_73_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_73_address0;
+        pixels_73_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_73_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_73_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_73_address0;
+        pixels_73_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_73_address0;
     end else begin
         pixels_73_address0 = 'bx;
     end
@@ -12068,9 +12039,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_73_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_73_ce0;
+        pixels_73_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_73_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_73_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_73_ce0;
+        pixels_73_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_73_ce0;
     end else begin
         pixels_73_ce0 = 1'b0;
     end
@@ -12078,7 +12049,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_73_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_73_we0;
+        pixels_73_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_73_we0;
     end else begin
         pixels_73_we0 = 1'b0;
     end
@@ -12086,9 +12057,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_74_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_74_address0;
+        pixels_74_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_74_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_74_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_74_address0;
+        pixels_74_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_74_address0;
     end else begin
         pixels_74_address0 = 'bx;
     end
@@ -12096,9 +12067,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_74_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_74_ce0;
+        pixels_74_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_74_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_74_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_74_ce0;
+        pixels_74_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_74_ce0;
     end else begin
         pixels_74_ce0 = 1'b0;
     end
@@ -12106,7 +12077,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_74_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_74_we0;
+        pixels_74_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_74_we0;
     end else begin
         pixels_74_we0 = 1'b0;
     end
@@ -12114,9 +12085,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_75_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_75_address0;
+        pixels_75_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_75_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_75_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_75_address0;
+        pixels_75_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_75_address0;
     end else begin
         pixels_75_address0 = 'bx;
     end
@@ -12124,9 +12095,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_75_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_75_ce0;
+        pixels_75_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_75_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_75_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_75_ce0;
+        pixels_75_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_75_ce0;
     end else begin
         pixels_75_ce0 = 1'b0;
     end
@@ -12134,7 +12105,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_75_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_75_we0;
+        pixels_75_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_75_we0;
     end else begin
         pixels_75_we0 = 1'b0;
     end
@@ -12142,9 +12113,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_76_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_76_address0;
+        pixels_76_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_76_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_76_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_76_address0;
+        pixels_76_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_76_address0;
     end else begin
         pixels_76_address0 = 'bx;
     end
@@ -12152,9 +12123,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_76_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_76_ce0;
+        pixels_76_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_76_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_76_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_76_ce0;
+        pixels_76_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_76_ce0;
     end else begin
         pixels_76_ce0 = 1'b0;
     end
@@ -12162,7 +12133,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_76_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_76_we0;
+        pixels_76_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_76_we0;
     end else begin
         pixels_76_we0 = 1'b0;
     end
@@ -12170,9 +12141,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_77_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_77_address0;
+        pixels_77_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_77_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_77_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_77_address0;
+        pixels_77_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_77_address0;
     end else begin
         pixels_77_address0 = 'bx;
     end
@@ -12180,9 +12151,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_77_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_77_ce0;
+        pixels_77_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_77_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_77_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_77_ce0;
+        pixels_77_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_77_ce0;
     end else begin
         pixels_77_ce0 = 1'b0;
     end
@@ -12190,7 +12161,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_77_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_77_we0;
+        pixels_77_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_77_we0;
     end else begin
         pixels_77_we0 = 1'b0;
     end
@@ -12198,9 +12169,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_78_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_78_address0;
+        pixels_78_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_78_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_78_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_78_address0;
+        pixels_78_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_78_address0;
     end else begin
         pixels_78_address0 = 'bx;
     end
@@ -12208,9 +12179,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_78_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_78_ce0;
+        pixels_78_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_78_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_78_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_78_ce0;
+        pixels_78_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_78_ce0;
     end else begin
         pixels_78_ce0 = 1'b0;
     end
@@ -12218,7 +12189,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_78_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_78_we0;
+        pixels_78_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_78_we0;
     end else begin
         pixels_78_we0 = 1'b0;
     end
@@ -12226,9 +12197,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_79_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_79_address0;
+        pixels_79_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_79_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_79_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_79_address0;
+        pixels_79_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_79_address0;
     end else begin
         pixels_79_address0 = 'bx;
     end
@@ -12236,9 +12207,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_79_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_79_ce0;
+        pixels_79_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_79_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_79_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_79_ce0;
+        pixels_79_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_79_ce0;
     end else begin
         pixels_79_ce0 = 1'b0;
     end
@@ -12246,7 +12217,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_79_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_79_we0;
+        pixels_79_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_79_we0;
     end else begin
         pixels_79_we0 = 1'b0;
     end
@@ -12254,9 +12225,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_7_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_7_address0;
+        pixels_7_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_7_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_7_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_7_address0;
+        pixels_7_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_7_address0;
     end else begin
         pixels_7_address0 = 'bx;
     end
@@ -12264,9 +12235,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_7_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_7_ce0;
+        pixels_7_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_7_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_7_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_7_ce0;
+        pixels_7_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_7_ce0;
     end else begin
         pixels_7_ce0 = 1'b0;
     end
@@ -12274,7 +12245,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_7_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_7_we0;
+        pixels_7_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_7_we0;
     end else begin
         pixels_7_we0 = 1'b0;
     end
@@ -12282,9 +12253,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_80_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_80_address0;
+        pixels_80_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_80_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_80_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_80_address0;
+        pixels_80_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_80_address0;
     end else begin
         pixels_80_address0 = 'bx;
     end
@@ -12292,9 +12263,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_80_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_80_ce0;
+        pixels_80_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_80_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_80_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_80_ce0;
+        pixels_80_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_80_ce0;
     end else begin
         pixels_80_ce0 = 1'b0;
     end
@@ -12302,7 +12273,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_80_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_80_we0;
+        pixels_80_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_80_we0;
     end else begin
         pixels_80_we0 = 1'b0;
     end
@@ -12310,9 +12281,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_81_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_81_address0;
+        pixels_81_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_81_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_81_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_81_address0;
+        pixels_81_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_81_address0;
     end else begin
         pixels_81_address0 = 'bx;
     end
@@ -12320,9 +12291,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_81_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_81_ce0;
+        pixels_81_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_81_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_81_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_81_ce0;
+        pixels_81_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_81_ce0;
     end else begin
         pixels_81_ce0 = 1'b0;
     end
@@ -12330,7 +12301,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_81_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_81_we0;
+        pixels_81_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_81_we0;
     end else begin
         pixels_81_we0 = 1'b0;
     end
@@ -12338,9 +12309,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_82_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_82_address0;
+        pixels_82_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_82_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_82_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_82_address0;
+        pixels_82_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_82_address0;
     end else begin
         pixels_82_address0 = 'bx;
     end
@@ -12348,9 +12319,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_82_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_82_ce0;
+        pixels_82_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_82_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_82_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_82_ce0;
+        pixels_82_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_82_ce0;
     end else begin
         pixels_82_ce0 = 1'b0;
     end
@@ -12358,7 +12329,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_82_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_82_we0;
+        pixels_82_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_82_we0;
     end else begin
         pixels_82_we0 = 1'b0;
     end
@@ -12366,9 +12337,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_83_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_83_address0;
+        pixels_83_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_83_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_83_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_83_address0;
+        pixels_83_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_83_address0;
     end else begin
         pixels_83_address0 = 'bx;
     end
@@ -12376,9 +12347,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_83_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_83_ce0;
+        pixels_83_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_83_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_83_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_83_ce0;
+        pixels_83_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_83_ce0;
     end else begin
         pixels_83_ce0 = 1'b0;
     end
@@ -12386,7 +12357,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_83_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_83_we0;
+        pixels_83_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_83_we0;
     end else begin
         pixels_83_we0 = 1'b0;
     end
@@ -12394,9 +12365,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_84_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_84_address0;
+        pixels_84_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_84_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_84_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_84_address0;
+        pixels_84_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_84_address0;
     end else begin
         pixels_84_address0 = 'bx;
     end
@@ -12404,9 +12375,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_84_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_84_ce0;
+        pixels_84_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_84_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_84_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_84_ce0;
+        pixels_84_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_84_ce0;
     end else begin
         pixels_84_ce0 = 1'b0;
     end
@@ -12414,7 +12385,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_84_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_84_we0;
+        pixels_84_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_84_we0;
     end else begin
         pixels_84_we0 = 1'b0;
     end
@@ -12422,9 +12393,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_85_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_85_address0;
+        pixels_85_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_85_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_85_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_85_address0;
+        pixels_85_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_85_address0;
     end else begin
         pixels_85_address0 = 'bx;
     end
@@ -12432,9 +12403,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_85_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_85_ce0;
+        pixels_85_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_85_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_85_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_85_ce0;
+        pixels_85_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_85_ce0;
     end else begin
         pixels_85_ce0 = 1'b0;
     end
@@ -12442,7 +12413,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_85_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_85_we0;
+        pixels_85_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_85_we0;
     end else begin
         pixels_85_we0 = 1'b0;
     end
@@ -12450,9 +12421,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_86_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_86_address0;
+        pixels_86_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_86_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_86_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_86_address0;
+        pixels_86_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_86_address0;
     end else begin
         pixels_86_address0 = 'bx;
     end
@@ -12460,9 +12431,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_86_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_86_ce0;
+        pixels_86_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_86_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_86_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_86_ce0;
+        pixels_86_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_86_ce0;
     end else begin
         pixels_86_ce0 = 1'b0;
     end
@@ -12470,7 +12441,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_86_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_86_we0;
+        pixels_86_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_86_we0;
     end else begin
         pixels_86_we0 = 1'b0;
     end
@@ -12478,9 +12449,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_87_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_87_address0;
+        pixels_87_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_87_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_87_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_87_address0;
+        pixels_87_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_87_address0;
     end else begin
         pixels_87_address0 = 'bx;
     end
@@ -12488,9 +12459,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_87_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_87_ce0;
+        pixels_87_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_87_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_87_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_87_ce0;
+        pixels_87_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_87_ce0;
     end else begin
         pixels_87_ce0 = 1'b0;
     end
@@ -12498,7 +12469,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_87_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_87_we0;
+        pixels_87_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_87_we0;
     end else begin
         pixels_87_we0 = 1'b0;
     end
@@ -12506,9 +12477,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_88_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_88_address0;
+        pixels_88_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_88_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_88_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_88_address0;
+        pixels_88_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_88_address0;
     end else begin
         pixels_88_address0 = 'bx;
     end
@@ -12516,9 +12487,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_88_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_88_ce0;
+        pixels_88_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_88_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_88_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_88_ce0;
+        pixels_88_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_88_ce0;
     end else begin
         pixels_88_ce0 = 1'b0;
     end
@@ -12526,7 +12497,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_88_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_88_we0;
+        pixels_88_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_88_we0;
     end else begin
         pixels_88_we0 = 1'b0;
     end
@@ -12534,9 +12505,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_89_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_89_address0;
+        pixels_89_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_89_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_89_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_89_address0;
+        pixels_89_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_89_address0;
     end else begin
         pixels_89_address0 = 'bx;
     end
@@ -12544,9 +12515,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_89_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_89_ce0;
+        pixels_89_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_89_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_89_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_89_ce0;
+        pixels_89_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_89_ce0;
     end else begin
         pixels_89_ce0 = 1'b0;
     end
@@ -12554,7 +12525,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_89_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_89_we0;
+        pixels_89_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_89_we0;
     end else begin
         pixels_89_we0 = 1'b0;
     end
@@ -12562,9 +12533,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_8_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_8_address0;
+        pixels_8_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_8_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_8_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_8_address0;
+        pixels_8_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_8_address0;
     end else begin
         pixels_8_address0 = 'bx;
     end
@@ -12572,9 +12543,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_8_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_8_ce0;
+        pixels_8_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_8_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_8_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_8_ce0;
+        pixels_8_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_8_ce0;
     end else begin
         pixels_8_ce0 = 1'b0;
     end
@@ -12582,7 +12553,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_8_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_8_we0;
+        pixels_8_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_8_we0;
     end else begin
         pixels_8_we0 = 1'b0;
     end
@@ -12590,9 +12561,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_90_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_90_address0;
+        pixels_90_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_90_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_90_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_90_address0;
+        pixels_90_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_90_address0;
     end else begin
         pixels_90_address0 = 'bx;
     end
@@ -12600,9 +12571,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_90_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_90_ce0;
+        pixels_90_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_90_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_90_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_90_ce0;
+        pixels_90_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_90_ce0;
     end else begin
         pixels_90_ce0 = 1'b0;
     end
@@ -12610,7 +12581,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_90_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_90_we0;
+        pixels_90_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_90_we0;
     end else begin
         pixels_90_we0 = 1'b0;
     end
@@ -12618,9 +12589,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_91_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_91_address0;
+        pixels_91_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_91_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_91_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_91_address0;
+        pixels_91_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_91_address0;
     end else begin
         pixels_91_address0 = 'bx;
     end
@@ -12628,9 +12599,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_91_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_91_ce0;
+        pixels_91_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_91_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_91_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_91_ce0;
+        pixels_91_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_91_ce0;
     end else begin
         pixels_91_ce0 = 1'b0;
     end
@@ -12638,7 +12609,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_91_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_91_we0;
+        pixels_91_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_91_we0;
     end else begin
         pixels_91_we0 = 1'b0;
     end
@@ -12646,9 +12617,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_92_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_92_address0;
+        pixels_92_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_92_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_92_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_92_address0;
+        pixels_92_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_92_address0;
     end else begin
         pixels_92_address0 = 'bx;
     end
@@ -12656,9 +12627,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_92_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_92_ce0;
+        pixels_92_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_92_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_92_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_92_ce0;
+        pixels_92_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_92_ce0;
     end else begin
         pixels_92_ce0 = 1'b0;
     end
@@ -12666,7 +12637,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_92_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_92_we0;
+        pixels_92_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_92_we0;
     end else begin
         pixels_92_we0 = 1'b0;
     end
@@ -12674,9 +12645,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_93_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_93_address0;
+        pixels_93_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_93_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_93_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_93_address0;
+        pixels_93_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_93_address0;
     end else begin
         pixels_93_address0 = 'bx;
     end
@@ -12684,9 +12655,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_93_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_93_ce0;
+        pixels_93_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_93_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_93_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_93_ce0;
+        pixels_93_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_93_ce0;
     end else begin
         pixels_93_ce0 = 1'b0;
     end
@@ -12694,7 +12665,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_93_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_93_we0;
+        pixels_93_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_93_we0;
     end else begin
         pixels_93_we0 = 1'b0;
     end
@@ -12702,9 +12673,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_94_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_94_address0;
+        pixels_94_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_94_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_94_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_94_address0;
+        pixels_94_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_94_address0;
     end else begin
         pixels_94_address0 = 'bx;
     end
@@ -12712,9 +12683,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_94_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_94_ce0;
+        pixels_94_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_94_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_94_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_94_ce0;
+        pixels_94_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_94_ce0;
     end else begin
         pixels_94_ce0 = 1'b0;
     end
@@ -12722,7 +12693,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_94_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_94_we0;
+        pixels_94_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_94_we0;
     end else begin
         pixels_94_we0 = 1'b0;
     end
@@ -12730,9 +12701,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_95_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_95_address0;
+        pixels_95_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_95_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_95_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_95_address0;
+        pixels_95_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_95_address0;
     end else begin
         pixels_95_address0 = 'bx;
     end
@@ -12740,9 +12711,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_95_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_95_ce0;
+        pixels_95_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_95_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_95_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_95_ce0;
+        pixels_95_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_95_ce0;
     end else begin
         pixels_95_ce0 = 1'b0;
     end
@@ -12750,7 +12721,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_95_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_95_we0;
+        pixels_95_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_95_we0;
     end else begin
         pixels_95_we0 = 1'b0;
     end
@@ -12758,9 +12729,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_96_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_96_address0;
+        pixels_96_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_96_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_96_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_96_address0;
+        pixels_96_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_96_address0;
     end else begin
         pixels_96_address0 = 'bx;
     end
@@ -12768,9 +12739,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_96_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_96_ce0;
+        pixels_96_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_96_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_96_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_96_ce0;
+        pixels_96_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_96_ce0;
     end else begin
         pixels_96_ce0 = 1'b0;
     end
@@ -12778,7 +12749,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_96_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_96_we0;
+        pixels_96_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_96_we0;
     end else begin
         pixels_96_we0 = 1'b0;
     end
@@ -12786,9 +12757,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_97_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_97_address0;
+        pixels_97_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_97_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_97_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_97_address0;
+        pixels_97_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_97_address0;
     end else begin
         pixels_97_address0 = 'bx;
     end
@@ -12796,9 +12767,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_97_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_97_ce0;
+        pixels_97_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_97_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_97_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_97_ce0;
+        pixels_97_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_97_ce0;
     end else begin
         pixels_97_ce0 = 1'b0;
     end
@@ -12806,7 +12777,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_97_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_97_we0;
+        pixels_97_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_97_we0;
     end else begin
         pixels_97_we0 = 1'b0;
     end
@@ -12814,9 +12785,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_98_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_98_address0;
+        pixels_98_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_98_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_98_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_98_address0;
+        pixels_98_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_98_address0;
     end else begin
         pixels_98_address0 = 'bx;
     end
@@ -12824,9 +12795,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_98_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_98_ce0;
+        pixels_98_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_98_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_98_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_98_ce0;
+        pixels_98_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_98_ce0;
     end else begin
         pixels_98_ce0 = 1'b0;
     end
@@ -12834,7 +12805,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_98_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_98_we0;
+        pixels_98_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_98_we0;
     end else begin
         pixels_98_we0 = 1'b0;
     end
@@ -12842,9 +12813,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_99_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_99_address0;
+        pixels_99_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_99_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_99_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_99_address0;
+        pixels_99_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_99_address0;
     end else begin
         pixels_99_address0 = 'bx;
     end
@@ -12852,9 +12823,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_99_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_99_ce0;
+        pixels_99_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_99_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_99_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_99_ce0;
+        pixels_99_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_99_ce0;
     end else begin
         pixels_99_ce0 = 1'b0;
     end
@@ -12862,7 +12833,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_99_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_99_we0;
+        pixels_99_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_99_we0;
     end else begin
         pixels_99_we0 = 1'b0;
     end
@@ -12870,9 +12841,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_9_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_9_address0;
+        pixels_9_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_9_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_9_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_9_address0;
+        pixels_9_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_9_address0;
     end else begin
         pixels_9_address0 = 'bx;
     end
@@ -12880,9 +12851,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_9_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_9_ce0;
+        pixels_9_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_9_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_9_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_9_ce0;
+        pixels_9_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_9_ce0;
     end else begin
         pixels_9_ce0 = 1'b0;
     end
@@ -12890,7 +12861,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_9_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_9_we0;
+        pixels_9_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_9_we0;
     end else begin
         pixels_9_we0 = 1'b0;
     end
@@ -12898,9 +12869,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_address0;
+        pixels_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_address0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_address0;
+        pixels_address0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_address0;
     end else begin
         pixels_address0 = 'bx;
     end
@@ -12908,9 +12879,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state98)) begin
-        pixels_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_pixels_ce0;
+        pixels_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_pixels_ce0;
     end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_ce0;
+        pixels_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_ce0;
     end else begin
         pixels_ce0 = 1'b0;
     end
@@ -12918,7 +12889,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state95)) begin
-        pixels_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_pixels_we0;
+        pixels_we0 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_pixels_we0;
     end else begin
         pixels_we0 = 1'b0;
     end
@@ -13106,7 +13077,7 @@ always @ (*) begin
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
         ref_pixel_V_address0 = 64'd1;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        ref_pixel_V_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_address0;
+        ref_pixel_V_address0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_address0;
     end else begin
         ref_pixel_V_address0 = 'bx;
     end
@@ -13294,7 +13265,7 @@ always @ (*) begin
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
         ref_pixel_V_address1 = 64'd0;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        ref_pixel_V_address1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_address1;
+        ref_pixel_V_address1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_address1;
     end else begin
         ref_pixel_V_address1 = 'bx;
     end
@@ -13304,7 +13275,7 @@ always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state79) | (1'b1 == ap_CS_fsm_state78) | (1'b1 == ap_CS_fsm_state77) | (1'b1 == ap_CS_fsm_state76) | (1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74) | (1'b1 == ap_CS_fsm_state73) | (1'b1 == ap_CS_fsm_state72) | (1'b1 == ap_CS_fsm_state71) | (1'b1 == ap_CS_fsm_state70) | (1'b1 == ap_CS_fsm_state69) | (1'b1 == ap_CS_fsm_state68) | (1'b1 == ap_CS_fsm_state67) | (1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state60) | (1'b1 == ap_CS_fsm_state59) | (1'b1 == ap_CS_fsm_state58) | (1'b1 == ap_CS_fsm_state57) | (1'b1 == ap_CS_fsm_state56) | (1'b1 == ap_CS_fsm_state55) | (1'b1 == ap_CS_fsm_state54) | (1'b1 == ap_CS_fsm_state53) | (1'b1 == ap_CS_fsm_state52) | (1'b1 == ap_CS_fsm_state51) | (1'b1 == ap_CS_fsm_state50) | (1'b1 == ap_CS_fsm_state49) | (1'b1 == ap_CS_fsm_state48) | (1'b1 == ap_CS_fsm_state47) | (1'b1 == ap_CS_fsm_state46) | (1'b1 == ap_CS_fsm_state45) | (1'b1 == ap_CS_fsm_state44) | (1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state41) | (1'b1 == ap_CS_fsm_state40) | (1'b1 == ap_CS_fsm_state39) | (1'b1 == ap_CS_fsm_state38) | (1'b1 == ap_CS_fsm_state37) | (1'b1 == ap_CS_fsm_state36) | (1'b1 == ap_CS_fsm_state35) | (1'b1 == ap_CS_fsm_state34) | (1'b1 == ap_CS_fsm_state33) | (1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31) | (1'b1 == ap_CS_fsm_state30) | (1'b1 == ap_CS_fsm_state29) | (1'b1 == ap_CS_fsm_state28) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21) | (1'b1 == ap_CS_fsm_state20) | (1'b1 == ap_CS_fsm_state19) | (1'b1 == ap_CS_fsm_state18) | (1'b1 == ap_CS_fsm_state17) | (1'b1 == ap_CS_fsm_state16) | (1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9) | (1'b1 == ap_CS_fsm_state8) | (1'b1 == ap_CS_fsm_state7) | (1'b1 == ap_CS_fsm_state6) | (1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state93) | (1'b1 == ap_CS_fsm_state92) | (1'b1 == ap_CS_fsm_state91) | (1'b1 == ap_CS_fsm_state90) | (1'b1 == ap_CS_fsm_state89) | (1'b1 == ap_CS_fsm_state88) | (1'b1 == ap_CS_fsm_state87) | (1'b1 == ap_CS_fsm_state86) | (1'b1 == ap_CS_fsm_state85) | (1'b1 == ap_CS_fsm_state84) | (1'b1 == ap_CS_fsm_state83) | (1'b1 == ap_CS_fsm_state82) | (1'b1 == ap_CS_fsm_state81) | (1'b1 == ap_CS_fsm_state80))) begin
         ref_pixel_V_ce0 = 1'b1;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        ref_pixel_V_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_ce0;
+        ref_pixel_V_ce0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_ce0;
     end else begin
         ref_pixel_V_ce0 = 1'b0;
     end
@@ -13314,7 +13285,7 @@ always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state79) | (1'b1 == ap_CS_fsm_state78) | (1'b1 == ap_CS_fsm_state77) | (1'b1 == ap_CS_fsm_state76) | (1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74) | (1'b1 == ap_CS_fsm_state73) | (1'b1 == ap_CS_fsm_state72) | (1'b1 == ap_CS_fsm_state71) | (1'b1 == ap_CS_fsm_state70) | (1'b1 == ap_CS_fsm_state69) | (1'b1 == ap_CS_fsm_state68) | (1'b1 == ap_CS_fsm_state67) | (1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state60) | (1'b1 == ap_CS_fsm_state59) | (1'b1 == ap_CS_fsm_state58) | (1'b1 == ap_CS_fsm_state57) | (1'b1 == ap_CS_fsm_state56) | (1'b1 == ap_CS_fsm_state55) | (1'b1 == ap_CS_fsm_state54) | (1'b1 == ap_CS_fsm_state53) | (1'b1 == ap_CS_fsm_state52) | (1'b1 == ap_CS_fsm_state51) | (1'b1 == ap_CS_fsm_state50) | (1'b1 == ap_CS_fsm_state49) | (1'b1 == ap_CS_fsm_state48) | (1'b1 == ap_CS_fsm_state47) | (1'b1 == ap_CS_fsm_state46) | (1'b1 == ap_CS_fsm_state45) | (1'b1 == ap_CS_fsm_state44) | (1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state41) | (1'b1 == ap_CS_fsm_state40) | (1'b1 == ap_CS_fsm_state39) | (1'b1 == ap_CS_fsm_state38) | (1'b1 == ap_CS_fsm_state37) | (1'b1 == ap_CS_fsm_state36) | (1'b1 == ap_CS_fsm_state35) | (1'b1 == ap_CS_fsm_state34) | (1'b1 == ap_CS_fsm_state33) | (1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31) | (1'b1 == ap_CS_fsm_state30) | (1'b1 == ap_CS_fsm_state29) | (1'b1 == ap_CS_fsm_state28) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21) | (1'b1 == ap_CS_fsm_state20) | (1'b1 == ap_CS_fsm_state19) | (1'b1 == ap_CS_fsm_state18) | (1'b1 == ap_CS_fsm_state17) | (1'b1 == ap_CS_fsm_state16) | (1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9) | (1'b1 == ap_CS_fsm_state8) | (1'b1 == ap_CS_fsm_state7) | (1'b1 == ap_CS_fsm_state6) | (1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state93) | (1'b1 == ap_CS_fsm_state92) | (1'b1 == ap_CS_fsm_state91) | (1'b1 == ap_CS_fsm_state90) | (1'b1 == ap_CS_fsm_state89) | (1'b1 == ap_CS_fsm_state88) | (1'b1 == ap_CS_fsm_state87) | (1'b1 == ap_CS_fsm_state86) | (1'b1 == ap_CS_fsm_state85) | (1'b1 == ap_CS_fsm_state84) | (1'b1 == ap_CS_fsm_state83) | (1'b1 == ap_CS_fsm_state82) | (1'b1 == ap_CS_fsm_state81) | (1'b1 == ap_CS_fsm_state80))) begin
         ref_pixel_V_ce1 = 1'b1;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        ref_pixel_V_ce1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_ce1;
+        ref_pixel_V_ce1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_ce1;
     end else begin
         ref_pixel_V_ce1 = 1'b0;
     end
@@ -13322,7 +13293,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        ref_pixel_V_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_we0;
+        ref_pixel_V_we0 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_we0;
     end else begin
         ref_pixel_V_we0 = 1'b0;
     end
@@ -13330,7 +13301,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        ref_pixel_V_we1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ref_pixel_V_we1;
+        ref_pixel_V_we1 = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ref_pixel_V_we1;
     end else begin
         ref_pixel_V_we1 = 1'b0;
     end
@@ -13349,7 +13320,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state3;
         end
         ap_ST_fsm_state3 : begin
-            if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
+            if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
                 ap_NS_fsm = ap_ST_fsm_state4;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
@@ -13629,7 +13600,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state95;
         end
         ap_ST_fsm_state95 : begin
-            if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state95))) begin
+            if (((grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state95))) begin
                 ap_NS_fsm = ap_ST_fsm_state96;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state95;
@@ -13642,7 +13613,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state98;
         end
         ap_ST_fsm_state98 : begin
-            if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state98))) begin
+            if (((grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state98))) begin
                 ap_NS_fsm = ap_ST_fsm_state99;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state98;
@@ -13892,21 +13863,21 @@ always @ (*) begin
     ap_rst_n_inv = ~ap_rst_n;
 end
 
-assign e_data_V_fu_3293_p1 = grp_fu_3268_p1;
+assign e_data_V_fu_3276_p1 = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_min_distance_out;
 
-assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666_ap_start_reg;
+assign grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672_ap_start_reg;
 
-assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685_ap_start_reg;
+assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653_ap_start_reg;
 
-assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_ap_start_reg;
+assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_ap_start = grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_ap_start_reg;
 
-assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069_out_stream_TREADY = (out_stream_TREADY_int_regslice & ap_CS_fsm_state98);
+assign grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056_out_stream_TREADY = (out_stream_TREADY_int_regslice & ap_CS_fsm_state98);
 
 assign in_stream_TREADY = regslice_both_in_stream_V_data_V_U_ack_in;
 
 assign out_stream_TVALID = regslice_both_out_stream_V_data_V_U_vld_out;
 
-assign sub71_fu_3274_p2 = (1'd1 ^ active_idx_2_loc_fu_446);
+assign sub69_fu_3258_p2 = (1'd1 ^ active_idx_2_loc_fu_432);
 
 
 reg find_kernel_block = 0;

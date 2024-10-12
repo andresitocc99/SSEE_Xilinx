@@ -6,7 +6,7 @@ BEGIN OS
  PARAMETER OS_NAME = standalone
  PARAMETER OS_VER = 7.7
  PARAMETER PROC_INSTANCE = psu_cortexa53_0
- PARAMETER stdin = psu_uart_0
+ PARAMETER stdin = psu_uart_1
  PARAMETER stdout = psu_uart_1
 END
 

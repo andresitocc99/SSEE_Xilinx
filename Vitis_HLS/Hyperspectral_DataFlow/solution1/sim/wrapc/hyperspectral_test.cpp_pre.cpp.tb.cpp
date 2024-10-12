@@ -91673,21 +91673,24 @@ typedef union {
 } conv_t;
 
 void hyperspectral_hw_wrapped (hls::stream<AXI_VAL>& in_stream, hls::stream<AXI_VAL>& out_stream);
-void calculate_distance(band_t ref_band1, band_t ref_band2, band_t band1, band_t band2, dist_t &distance);
+void calculate_distance(band_t ref_band1, band_t ref_band2, band_t band1, band_t band2, float &distance);
 # 8 "/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp" 2
 
-void loadHyperspectralImage(uint16_t image[2][1024][180], const char* filename);
+void loadHyperspectralImage(band_t image[2][1024][180], const char* filename);
 
-void hyperspectral_sw(band_t image[2][1024][180], band_t ref_pixel[180], band_t closest_pixel_sw[180], dist_t &min_distance, int &min_pixel_index_i, int &min_pixel_index_j) {
+void hyperspectral_sw(band_t image[2][1024][180], band_t ref_pixel[180], band_t closest_pixel_sw[180], float &min_distance, int &min_pixel_index_i, int &min_pixel_index_j) {
 
     min_distance = 0xFFFFFFFF;
-    dist_t distance;
+    float distance;
 
     for (int i = 0; i < 2; i++) {
      for (int j = 0; j < 1024; j++) {
       for (int k = 0; k < 180; k += 2) {
-       if (k == 0) distance = 0;
-    calculate_distance(ref_pixel[k], ref_pixel[k + 1], image[i][j][k], image[i][j][k + 1], distance);
+       if (k == 0){
+        distance = 0;
+       }
+
+       calculate_distance(ref_pixel[k], ref_pixel[k + 1], image[i][j][k], image[i][j][k + 1], distance);
     if (k== 180 -2) {
      distance = hls::sqrt(distance);
      if (distance < min_distance) {
@@ -91710,9 +91713,9 @@ void hyperspectral_sw(band_t image[2][1024][180], band_t ref_pixel[180], band_t 
 void loadHyperspectralImage(band_t image[2][1024][180], const char* filename) {
     FILE *file = fopen(filename, "rb");
     if (file == 
-# 42 "/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp" 3 4
+# 45 "/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp" 3 4
                __null
-# 42 "/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp"
+# 45 "/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp"
                    ) {
         printf("Error opening file %s\r\n", filename);
         exit(1);
@@ -91732,9 +91735,9 @@ void loadHyperspectralImage(band_t image[2][1024][180], const char* filename) {
                 if (elements_read != 2) {
                     if (feof(file)) {
                         fprintf(
-# 60 "/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp" 3 4
+# 63 "/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp" 3 4
                                stderr
-# 60 "/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp"
+# 63 "/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp"
                                      , "Error: End of file reached prematurely.\n");
                     } else if (ferror(file)) {
                         perror("Error reading from file");
@@ -91757,7 +91760,7 @@ void loadHyperspectralImage(band_t image[2][1024][180], const char* filename) {
 extern "C"
 #endif
 void apatb_hyperspectral_hw_wrapped_sw(hls::stream<hls::axis<ap_uint<32>, 4, 5, 5>, 0> &, hls::stream<hls::axis<ap_uint<32>, 4, 5, 5>, 0> &);
-# 76 "/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp"
+# 79 "/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp"
 int main_axi (void) {
 
     int i, j, err;
@@ -91780,8 +91783,8 @@ int main_axi (void) {
     band_t closest_pixel_hw[180];
     band_t closest_pixel_sw[180];
 
-    dist_t min_distance_hw;
-    dist_t min_distance_sw;
+    float min_distance_hw;
+    float min_distance_sw;
 
     int min_pixel_index_i_hw;
     int min_pixel_index_i_sw;
@@ -91839,10 +91842,10 @@ int main_axi (void) {
 #ifndef HLS_FASTSIM
 #define hyperspectral_hw_wrapped apatb_hyperspectral_hw_wrapped_sw
 #endif
-# 153 "/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp"
+# 156 "/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp"
 hyperspectral_hw_wrapped (inp_stream, out_stream);
 #undef hyperspectral_hw_wrapped
-# 153 "/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp"
+# 156 "/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp"
 
 
 
@@ -91868,25 +91871,31 @@ hyperspectral_hw_wrapped (inp_stream, out_stream);
     conv_t c;
     c.in = w_d;
     min_distance_hw = c.out;
+    printf("min_distance: %f\n", min_distance_hw);
 
     hyperspectral_sw (image, ref_pixel, closest_pixel_sw, min_distance_sw, min_pixel_index_i_sw, min_pixel_index_j_sw);
 
     err = 0;
     for (int i = 0; i < 180; i++) {
+
         if (closest_pixel_hw[i] != closest_pixel_sw[i]) {
             err++;
             printf("Error en banda %d: closest_pixel_sw = %u, closest_pixel_hw = %u\r\n", i, closest_pixel_sw[i].to_uint(), closest_pixel_hw[i].to_uint());
         }
     }
 
+    printf("Pre-Check min_pixel_index_i: SW = %d, HW = %d\n", min_pixel_index_i_sw, min_pixel_index_i_hw);
+    printf("Pre-Check min_pixel_index_j: SW = %d, HW = %d\n", min_pixel_index_j_sw, min_pixel_index_j_hw);
+
     if (min_pixel_index_i_hw != min_pixel_index_i_sw || min_pixel_index_j_hw != min_pixel_index_j_sw) {
         err++;
         printf("Error en min_pixel_index_i: min_pixel_index_i_sw = %d, min_pixel_index_i_hw = %d\r\n", min_pixel_index_i_sw, min_pixel_index_i_hw);
     }
 
+    printf("Pre-Check min_distance: SW = %f, HW = %f\n", min_distance_sw, min_distance_hw);
     if (min_distance_hw != min_distance_sw) {
         err++;
-        printf("Error en min_distance: min_distance_sw = %u, min_distance_hw = %u\r\n", min_distance_sw.to_uint(), min_distance_hw.to_uint());
+        printf("Error en min_distance: min_distance_sw = %u, min_distance_hw = %u\r\n", min_distance_sw, min_distance_hw);
     }
 
     if (err == 0) {
@@ -91898,7 +91907,7 @@ hyperspectral_hw_wrapped (inp_stream, out_stream);
 
 }
 #endif
-# 206 "/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp"
+# 215 "/home/andresitocc99/Documentos/SSEE_Xilinx/Archivos_Fuente/Hyperspectral/DataFlow_2/hyperspectral_test.cpp"
 
 
 int main(void) {

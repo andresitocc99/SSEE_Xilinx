@@ -4545,7 +4545,7 @@ set psu_ddr_init_data {
 		# Register : PGCR0 @ 0XFD080010</p>
 
 		# Address Copy
-		# PSU_DDR_PHY_PGCR0_ADCP                                                          0x0
+		# PSU_DDR_PHY_PGCR0_ADCP                                                          0x1
 
 		# Reserved. Returns zeroes on reads.
 		# PSU_DDR_PHY_PGCR0_RESERVED_30_27                                                0x0
@@ -4575,8 +4575,8 @@ set psu_ddr_init_data {
 		# PSU_DDR_PHY_PGCR0_RESERVED_7_0                                                  0x0
 
 		# PHY General Configuration Register 0
-		#(OFFSET, MASK, VALUE)      (0XFD080010, 0xFFFFFFFFU ,0x07001E00U)  */
-    mask_write 0XFD080010 0xFFFFFFFF 0x07001E00
+		#(OFFSET, MASK, VALUE)      (0XFD080010, 0xFFFFFFFFU ,0x87001E00U)  */
+    mask_write 0XFD080010 0xFFFFFFFF 0x87001E00
 		# Register : PGCR2 @ 0XFD080018</p>
 
 		# Clear Training Status Registers

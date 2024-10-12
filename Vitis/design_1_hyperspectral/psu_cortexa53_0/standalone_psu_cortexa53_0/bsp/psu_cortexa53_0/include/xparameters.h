@@ -29,7 +29,7 @@
 /* Number of Fabric Resets */
 #define XPAR_NUM_FABRIC_RESETS 1
 
-#define STDIN_BASEADDRESS 0xFF000000
+#define STDIN_BASEADDRESS 0xFF010000
 #define STDOUT_BASEADDRESS 0xFF010000
 
 /******************************************************************/
@@ -64,7 +64,7 @@
 #define XPAR_AXI_DMA_0_S2MM_BURST_SIZE 16
 #define XPAR_AXI_DMA_0_MICRO_DMA 0
 #define XPAR_AXI_DMA_0_ADDR_WIDTH 32
-#define XPAR_AXI_DMA_0_SG_LENGTH_WIDTH 14
+#define XPAR_AXI_DMA_0_SG_LENGTH_WIDTH 23
 
 
 /******************************************************************/
@@ -87,7 +87,7 @@
 #define XPAR_AXIDMA_0_S2MM_BURST_SIZE 16
 #define XPAR_AXIDMA_0_MICRO_DMA 0
 #define XPAR_AXIDMA_0_c_addr_width 32
-#define XPAR_AXIDMA_0_c_sg_length_width 14
+#define XPAR_AXIDMA_0_c_sg_length_width 23
 
 
 /******************************************************************/

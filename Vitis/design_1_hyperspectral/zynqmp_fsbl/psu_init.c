@@ -5560,7 +5560,7 @@ unsigned long psu_ddr_init_data(void)
     * Register : PGCR0 @ 0XFD080010
 
     * Address Copy
-    *  PSU_DDR_PHY_PGCR0_ADCP                                      0x0
+    *  PSU_DDR_PHY_PGCR0_ADCP                                      0x1
 
     * Reserved. Returns zeroes on reads.
     *  PSU_DDR_PHY_PGCR0_RESERVED_30_27                            0x0
@@ -5590,9 +5590,9 @@ unsigned long psu_ddr_init_data(void)
     *  PSU_DDR_PHY_PGCR0_RESERVED_7_0                              0x0
 
     * PHY General Configuration Register 0
-    * (OFFSET, MASK, VALUE)      (0XFD080010, 0xFFFFFFFFU ,0x07001E00U)
+    * (OFFSET, MASK, VALUE)      (0XFD080010, 0xFFFFFFFFU ,0x87001E00U)
     */
-	PSU_Mask_Write(DDR_PHY_PGCR0_OFFSET, 0xFFFFFFFFU, 0x07001E00U);
+	PSU_Mask_Write(DDR_PHY_PGCR0_OFFSET, 0xFFFFFFFFU, 0x87001E00U);
 /*##################################################################### */
 
     /*

@@ -1,6 +1,5 @@
 #include "platform.h"
 #include "xparameters.h"
-
 #include "lib_hyperspectral_hw.h"
 #include "xscugic.h"
 #include "xaxidma.h"
@@ -74,20 +73,17 @@ int XHyperspectralSetupInterrupt() {
 	Xil_ExceptionEnable();
 	// Connect the Adder ISR to the exception table
 	//print("Connect the Adder ISR to the Exception handler table\n\r");
-	result = XScuGic_Connect(&ScuGic,XPAR_FABRIC_HYPERSPECTRAL_HW_0_INTERRUPT_INTR,(Xil_InterruptHandler)XHyperspectralStart,&xhyperspectral_dev);
+	/*sult = XScuGic_Connect(&ScuGic,XPAR_FABRIC_HYPERSPECTRAL_HW_0_INTERRUPT_INTR,(Xil_InterruptHandler)XCalmaxIsr,&xhyperspectral_dev);
 	if(result != XST_SUCCESS){
 		return result;
 	}
 	//print("Enable the Adder ISR\n\r");
-	XScuGic_Enable(&ScuGic,XPAR_FABRIC_HYPERSPECTRAL_HW_0_INTERRUPT_INTR);
+	XScuGic_Enable(&ScuGic,XPAR_FABRIC_HYPERSPECTRAL_HW_0_INTERRUPT_INTR);*/
 	return XST_SUCCESS;
 }
 
-int Setup_HW_Accelerator (uint16_t image[FILAS][COLUMNAS][BANDAS], int refPixel[2],
-        int maxBrightness[2], float *minDistance, int closestPixel[2],
-        unsigned int dma_sizeImage, unsigned int dma_sizeRefPixel,
-        unsigned int dma_sizeMaxBrightness, unsigned int dma_sizeMinDistance,
-        unsigned int dma_sizeClosestPixel) {
+int Setup_HW_Accelerator (void) {
+
 	int status = XHyperspectralSetup();
 	if(status != XST_SUCCESS){
 		print("Error: example setup failed\n");
@@ -102,6 +98,7 @@ int Setup_HW_Accelerator (uint16_t image[FILAS][COLUMNAS][BANDAS], int refPixel[
 	XHyperspectralStart(&xhyperspectral_dev);
 
 	return 0;
+
 }
 
 int Start_HW_Accelerator(void) {
@@ -121,65 +118,41 @@ int Start_HW_Accelerator(void) {
 	return 0;
 }
 
-int Run_HW_Accelerator(uint16_t image[FILAS][COLUMNAS][BANDAS], uint16_t refPixel[BANDAS], uint16_t closestPixel[BANDAS],
-                       float *minDistance, int *minPixelIndex_i, int *minPixelIndex_j,
-                       unsigned int dma_sizeImage, unsigned int dma_sizeRefPixel,
-                       unsigned int dma_sizeClosestPixel, unsigned int dma_sizeMinDistance,
-                       unsigned int dma_sizeIndices) {
-
-	// Transfer image to the hardware accelerator
-	int status = XAxiDma_SimpleTransfer(&AxiDma, (unsigned int)image, dma_sizeImage, XAXIDMA_DMA_TO_DEVICE);
-	if (status != XST_SUCCESS) {
-		xil_printf("Error: DMA transfer of image to device failed\n");
-		return XST_FAILURE;
-	}
+int Run_HW_Accelerator(uint16_t image[FILAS][COLUMNAS][BANDAS], uint16_t refPixel[BANDAS], DataBlock* result,
+                       unsigned int dma_sizeImage, unsigned int dma_sizeRefPixel, unsigned int dma_size_block) {
 
 	// Transfer refPixel to the hardware accelerator
-	status = XAxiDma_SimpleTransfer(&AxiDma, (unsigned int)refPixel, dma_sizeRefPixel, XAXIDMA_DMA_TO_DEVICE);
+	int status = XAxiDma_SimpleTransfer(&AxiDma, (uintptr_t)refPixel, dma_sizeRefPixel, XAXIDMA_DMA_TO_DEVICE);
 	if (status != XST_SUCCESS) {
 		xil_printf("Error: DMA transfer of refPixel to device failed\n");
 		return XST_FAILURE;
 	}
 
-	Start_HW_Accelerator();
-
 	while (XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE)) {}
 
-	// Transfer closestPixel from the hardware accelerator
-	status = XAxiDma_SimpleTransfer(&AxiDma, (unsigned int)closestPixel, dma_sizeClosestPixel, XAXIDMA_DEVICE_TO_DMA);
+	// Transfer image to the hardware accelerator
+	status = XAxiDma_SimpleTransfer(&AxiDma, (uintptr_t)image, dma_sizeImage, XAXIDMA_DMA_TO_DEVICE);
 	if (status != XST_SUCCESS) {
-		xil_printf("Error: DMA transfer of closestPixel from device failed\n");
+		xil_printf("Error: DMA transfer of image to device failed\n");
 		return XST_FAILURE;
 	}
 
-	// Transfer minPixelIndex_i y minPixelIndex_j desde el hardware acelerador
-	status = XAxiDma_SimpleTransfer(&AxiDma, (unsigned int)minPixelIndex_i, sizeof(int), XAXIDMA_DEVICE_TO_DMA);
+	status = XAxiDma_SimpleTransfer(&AxiDma, (uintptr_t)&result, dma_size_block, XAXIDMA_DEVICE_TO_DMA);
 	if (status != XST_SUCCESS) {
-		xil_printf("Error: DMA transfer of minPixelIndex_i from device failed\n");
+		print("Error: DMA transfer (C) from Vivado HLS block failed\n");
 		return XST_FAILURE;
 	}
 
-	status = XAxiDma_SimpleTransfer(&AxiDma, (unsigned int)minPixelIndex_j, sizeof(int), XAXIDMA_DEVICE_TO_DMA);
-	if (status != XST_SUCCESS) {
-		xil_printf("Error: DMA transfer of minPixelIndex_j from device failed\n");
-		return XST_FAILURE;
-	}
+	//whe (!ResultExample);
+	//sultExample = 0;
+	while (XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE)) {}
+	while ((XAxiDma_Busy(&AxiDma, XAXIDMA_DEVICE_TO_DMA)));
 
-	// Transfer minDistance from the hardware accelerator
-	status = XAxiDma_SimpleTransfer(&AxiDma, (unsigned int)minDistance, sizeof(float), XAXIDMA_DEVICE_TO_DMA);
-	if (status != XST_SUCCESS) {
-		xil_printf("Error: DMA transfer of minDistance from device failed\n");
-		return XST_FAILURE;
-	}
-
-	while (!ResultExample);
-	ResultExample = 0;
-
-	while (XAxiDma_Busy(&AxiDma, XAXIDMA_DEVICE_TO_DMA)) {}
-
-	/* Accelerator must be restarted for next use */
+	/* Accelerator must me restarted */
 	XHyperspectralStart(&xhyperspectral_dev);
 
 	return 0;
+
 }
+
 

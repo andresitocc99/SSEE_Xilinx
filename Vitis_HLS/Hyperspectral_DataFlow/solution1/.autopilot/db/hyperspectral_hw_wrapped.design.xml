@@ -5,30 +5,22 @@
 <ModuleName>hyperspectral_hw_wrapped</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666</InstName>
-<ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1</ModuleName>
+<InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653</InstName>
+<ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>2666</ID>
+<ID>2653</ID>
 </Instance>
 <Instance>
-<InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685</InstName>
-<ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2</ModuleName>
+<InstName>grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672</InstName>
+<ModuleName>hyperspectral_hw_wrapped_Pipeline_L1</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>2685</ID>
-<InstancesList>
-<Instance>
-<InstName>grp_sqrt_fixed_33_33_s_fu_4280</InstName>
-<ModuleName>sqrt_fixed_33_33_s</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>4280</ID>
-</Instance>
-</InstancesList>
+<ID>2672</ID>
 </Instance>
 <Instance>
-<InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069</InstName>
-<ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4</ModuleName>
+<InstName>grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056</InstName>
+<ModuleName>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>3069</ID>
+<ID>3056</ID>
 </Instance>
 </InstancesList>
 </TopModule>
@@ -36,9 +28,9 @@
 
 <ModuleInformation>
 <Module>
-<Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1</Name>
+<Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1</Name>
 <Loops>
-<VITIS_LOOP_50_1></VITIS_LOOP_50_1>
+<VITIS_LOOP_53_1></VITIS_LOOP_53_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -57,8 +49,8 @@
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_50_1>
-<Name>VITIS_LOOP_50_1</Name>
+<VITIS_LOOP_53_1>
+<Name>VITIS_LOOP_53_1</Name>
 <TripCount>90</TripCount>
 <Latency>90</Latency>
 <AbsoluteTimeLatency>0.900 us</AbsoluteTimeLatency>
@@ -67,7 +59,7 @@
 <PipelineType>yes</PipelineType>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_50_1>
+</VITIS_LOOP_53_1>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -92,7 +84,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -103,7 +95,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -114,7 +106,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -125,7 +117,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -136,7 +128,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -147,7 +139,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -346,150 +338,51 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>sqrt_fixed_33_33_s</Name>
-<PerformanceEstimates>
-<SummaryOfTimingAnalysis>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>2.70</ClockUncertainty>
-<TargetInitiationInterval>4294967295</TargetInitiationInterval>
-<EstimatedClockPeriod>7.166</EstimatedClockPeriod>
-</SummaryOfTimingAnalysis>
-<SummaryOfOverallLatency>
-<Best-caseLatency>3</Best-caseLatency>
-<Average-caseLatency>3</Average-caseLatency>
-<Worst-caseLatency>3</Worst-caseLatency>
-<Best-caseRealTimeLatency>30.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>30.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>30.000 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>4</PipelineDepth>
-<PipelineType>yes</PipelineType>
-</SummaryOfOverallLatency>
-</PerformanceEstimates>
-<AreaEstimates>
-<Resources>
-<FF>245</FF>
-<AVAIL_FF>141120</AVAIL_FF>
-<UTIL_FF>~0</UTIL_FF>
-<LUT>1402</LUT>
-<AVAIL_LUT>70560</AVAIL_LUT>
-<UTIL_LUT>1</UTIL_LUT>
-<BRAM_18K>0</BRAM_18K>
-<AVAIL_BRAM>432</AVAIL_BRAM>
-<UTIL_BRAM>0</UTIL_BRAM>
-<DSP>0</DSP>
-<AVAIL_DSP>360</AVAIL_DSP>
-<UTIL_DSP>0</UTIL_DSP>
-<URAM>0</URAM>
-<AVAIL_URAM>0</AVAIL_URAM>
-<UTIL_URAM>0</UTIL_URAM>
-</Resources>
-</AreaEstimates>
-<InterfaceSummary>
-<RtlPorts>
-<name>ap_clk</name>
-<Object>sqrt_fixed&lt;33, 33&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_rst</name>
-<Object>sqrt_fixed&lt;33, 33&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return</name>
-<Object>sqrt_fixed&lt;33, 33&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>17</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_ce</name>
-<Object>sqrt_fixed&lt;33, 33&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>x</name>
-<Object>x</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-</InterfaceSummary>
-</Module>
-<Module>
-<Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2</Name>
+<Name>hyperspectral_hw_wrapped_Pipeline_L1</Name>
 <Loops>
-<VITIS_LOOP_60_2></VITIS_LOOP_60_2>
+<L1></L1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>2.70</ClockUncertainty>
-<EstimatedClockPeriod>7.166</EstimatedClockPeriod>
+<EstimatedClockPeriod>6.675</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>184333</Best-caseLatency>
-<Average-caseLatency>184333</Average-caseLatency>
-<Worst-caseLatency>184333</Worst-caseLatency>
-<Best-caseRealTimeLatency>1.843 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>1.843 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>1.843 ms</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>184333</PipelineInitiationInterval>
+<Best-caseLatency>184702</Best-caseLatency>
+<Average-caseLatency>184702</Average-caseLatency>
+<Worst-caseLatency>184702</Worst-caseLatency>
+<Best-caseRealTimeLatency>1.847 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>1.847 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>1.847 ms</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>184702</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_60_2>
-<Name>VITIS_LOOP_60_2</Name>
+<L1>
+<Name>L1</Name>
 <TripCount>2048</TripCount>
-<Latency>184331</Latency>
-<AbsoluteTimeLatency>1.843 ms</AbsoluteTimeLatency>
+<Latency>184700</Latency>
+<AbsoluteTimeLatency>1.847 ms</AbsoluteTimeLatency>
 <PipelineII>90</PipelineII>
-<PipelineDepth>101</PipelineDepth>
+<PipelineDepth>470</PipelineDepth>
 <PipelineType>yes</PipelineType>
 <InstanceList>
-<Instance>grp_sqrt_fixed_33_33_s_fu_4280</Instance>
 </InstanceList>
-</VITIS_LOOP_60_2>
+</L1>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<DSP>180</DSP>
+<DSP>182</DSP>
 <AVAIL_DSP>360</AVAIL_DSP>
 <UTIL_DSP>50</UTIL_DSP>
-<FF>8550</FF>
+<FF>27460</FF>
 <AVAIL_FF>141120</AVAIL_FF>
-<UTIL_FF>6</UTIL_FF>
-<LUT>8673</LUT>
+<UTIL_FF>19</UTIL_FF>
+<LUT>17238</LUT>
 <AVAIL_LUT>70560</AVAIL_LUT>
-<UTIL_LUT>12</UTIL_LUT>
+<UTIL_LUT>24</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>432</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
@@ -501,7 +394,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_L1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -512,7 +405,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_L1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -523,7 +416,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_L1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -534,7 +427,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_L1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -545,7 +438,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_L1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -556,7 +449,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_L1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -8585,8 +8478,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs</name>
-<Object>lhs</Object>
+<name>ref_band1_V_cast</name>
+<Object>ref_band1_V_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8596,8 +8489,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_1</name>
-<Object>lhs_1</Object>
+<name>ref_band2_V_cast</name>
+<Object>ref_band2_V_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8607,8 +8500,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_2</name>
-<Object>lhs_2</Object>
+<name>ref_band1_V_1_cast</name>
+<Object>ref_band1_V_1_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8618,8 +8511,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_3</name>
-<Object>lhs_3</Object>
+<name>ref_band2_V_1_cast</name>
+<Object>ref_band2_V_1_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8629,8 +8522,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_4</name>
-<Object>lhs_4</Object>
+<name>ref_band1_V_2_cast</name>
+<Object>ref_band1_V_2_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8640,8 +8533,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_5</name>
-<Object>lhs_5</Object>
+<name>ref_band2_V_2_cast</name>
+<Object>ref_band2_V_2_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8651,8 +8544,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_6</name>
-<Object>lhs_6</Object>
+<name>ref_band1_V_3_cast</name>
+<Object>ref_band1_V_3_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8662,8 +8555,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_7</name>
-<Object>lhs_7</Object>
+<name>ref_band2_V_3_cast</name>
+<Object>ref_band2_V_3_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8673,8 +8566,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_8</name>
-<Object>lhs_8</Object>
+<name>ref_band1_V_4_cast</name>
+<Object>ref_band1_V_4_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8684,8 +8577,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_9</name>
-<Object>lhs_9</Object>
+<name>ref_band2_V_4_cast</name>
+<Object>ref_band2_V_4_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8695,8 +8588,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_10</name>
-<Object>lhs_10</Object>
+<name>ref_band1_V_5_cast</name>
+<Object>ref_band1_V_5_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8706,8 +8599,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_11</name>
-<Object>lhs_11</Object>
+<name>ref_band2_V_5_cast</name>
+<Object>ref_band2_V_5_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8717,8 +8610,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_12</name>
-<Object>lhs_12</Object>
+<name>ref_band1_V_6_cast</name>
+<Object>ref_band1_V_6_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8728,8 +8621,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_13</name>
-<Object>lhs_13</Object>
+<name>ref_band2_V_6_cast</name>
+<Object>ref_band2_V_6_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8739,8 +8632,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_14</name>
-<Object>lhs_14</Object>
+<name>ref_band1_V_7_cast</name>
+<Object>ref_band1_V_7_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8750,8 +8643,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_15</name>
-<Object>lhs_15</Object>
+<name>ref_band2_V_7_cast</name>
+<Object>ref_band2_V_7_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8761,8 +8654,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_16</name>
-<Object>lhs_16</Object>
+<name>ref_band1_V_8_cast</name>
+<Object>ref_band1_V_8_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8772,8 +8665,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_17</name>
-<Object>lhs_17</Object>
+<name>ref_band2_V_8_cast</name>
+<Object>ref_band2_V_8_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8783,8 +8676,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_18</name>
-<Object>lhs_18</Object>
+<name>ref_band1_V_9_cast</name>
+<Object>ref_band1_V_9_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8794,8 +8687,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_19</name>
-<Object>lhs_19</Object>
+<name>ref_band2_V_9_cast</name>
+<Object>ref_band2_V_9_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8805,8 +8698,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_20</name>
-<Object>lhs_20</Object>
+<name>ref_band1_V_10_cast</name>
+<Object>ref_band1_V_10_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8816,8 +8709,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_21</name>
-<Object>lhs_21</Object>
+<name>ref_band2_V_10_cast</name>
+<Object>ref_band2_V_10_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8827,8 +8720,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_22</name>
-<Object>lhs_22</Object>
+<name>ref_band1_V_11_cast</name>
+<Object>ref_band1_V_11_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8838,8 +8731,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_23</name>
-<Object>lhs_23</Object>
+<name>ref_band2_V_11_cast</name>
+<Object>ref_band2_V_11_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8849,8 +8742,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_24</name>
-<Object>lhs_24</Object>
+<name>ref_band1_V_12_cast</name>
+<Object>ref_band1_V_12_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8860,8 +8753,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_25</name>
-<Object>lhs_25</Object>
+<name>ref_band2_V_12_cast</name>
+<Object>ref_band2_V_12_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8871,8 +8764,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_26</name>
-<Object>lhs_26</Object>
+<name>ref_band1_V_13_cast</name>
+<Object>ref_band1_V_13_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8882,8 +8775,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_27</name>
-<Object>lhs_27</Object>
+<name>ref_band2_V_13_cast</name>
+<Object>ref_band2_V_13_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8893,8 +8786,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_28</name>
-<Object>lhs_28</Object>
+<name>ref_band1_V_14_cast</name>
+<Object>ref_band1_V_14_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8904,8 +8797,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_29</name>
-<Object>lhs_29</Object>
+<name>ref_band2_V_14_cast</name>
+<Object>ref_band2_V_14_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8915,8 +8808,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_30</name>
-<Object>lhs_30</Object>
+<name>ref_band1_V_15_cast</name>
+<Object>ref_band1_V_15_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8926,8 +8819,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_31</name>
-<Object>lhs_31</Object>
+<name>ref_band2_V_15_cast</name>
+<Object>ref_band2_V_15_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8937,8 +8830,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_32</name>
-<Object>lhs_32</Object>
+<name>ref_band1_V_16_cast</name>
+<Object>ref_band1_V_16_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8948,8 +8841,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_33</name>
-<Object>lhs_33</Object>
+<name>ref_band2_V_16_cast</name>
+<Object>ref_band2_V_16_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8959,8 +8852,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_34</name>
-<Object>lhs_34</Object>
+<name>ref_band1_V_17_cast</name>
+<Object>ref_band1_V_17_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8970,8 +8863,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_35</name>
-<Object>lhs_35</Object>
+<name>ref_band2_V_17_cast</name>
+<Object>ref_band2_V_17_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8981,8 +8874,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_36</name>
-<Object>lhs_36</Object>
+<name>ref_band1_V_18_cast</name>
+<Object>ref_band1_V_18_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8992,8 +8885,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_37</name>
-<Object>lhs_37</Object>
+<name>ref_band2_V_18_cast</name>
+<Object>ref_band2_V_18_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9003,8 +8896,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_38</name>
-<Object>lhs_38</Object>
+<name>ref_band1_V_19_cast</name>
+<Object>ref_band1_V_19_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9014,8 +8907,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_39</name>
-<Object>lhs_39</Object>
+<name>ref_band2_V_19_cast</name>
+<Object>ref_band2_V_19_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9025,8 +8918,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_40</name>
-<Object>lhs_40</Object>
+<name>ref_band1_V_20_cast</name>
+<Object>ref_band1_V_20_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9036,8 +8929,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_41</name>
-<Object>lhs_41</Object>
+<name>ref_band2_V_20_cast</name>
+<Object>ref_band2_V_20_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9047,8 +8940,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_42</name>
-<Object>lhs_42</Object>
+<name>ref_band1_V_21_cast</name>
+<Object>ref_band1_V_21_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9058,8 +8951,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_43</name>
-<Object>lhs_43</Object>
+<name>ref_band2_V_21_cast</name>
+<Object>ref_band2_V_21_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9069,8 +8962,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_44</name>
-<Object>lhs_44</Object>
+<name>ref_band1_V_22_cast</name>
+<Object>ref_band1_V_22_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9080,8 +8973,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_45</name>
-<Object>lhs_45</Object>
+<name>ref_band2_V_22_cast</name>
+<Object>ref_band2_V_22_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9091,8 +8984,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_46</name>
-<Object>lhs_46</Object>
+<name>ref_band1_V_23_cast</name>
+<Object>ref_band1_V_23_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9102,8 +8995,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_47</name>
-<Object>lhs_47</Object>
+<name>ref_band2_V_23_cast</name>
+<Object>ref_band2_V_23_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9113,8 +9006,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_48</name>
-<Object>lhs_48</Object>
+<name>ref_band1_V_24_cast</name>
+<Object>ref_band1_V_24_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9124,8 +9017,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_49</name>
-<Object>lhs_49</Object>
+<name>ref_band2_V_24_cast</name>
+<Object>ref_band2_V_24_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9135,8 +9028,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_50</name>
-<Object>lhs_50</Object>
+<name>ref_band1_V_25_cast</name>
+<Object>ref_band1_V_25_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9146,8 +9039,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_51</name>
-<Object>lhs_51</Object>
+<name>ref_band2_V_25_cast</name>
+<Object>ref_band2_V_25_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9157,8 +9050,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_52</name>
-<Object>lhs_52</Object>
+<name>ref_band1_V_26_cast</name>
+<Object>ref_band1_V_26_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9168,8 +9061,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_53</name>
-<Object>lhs_53</Object>
+<name>ref_band2_V_26_cast</name>
+<Object>ref_band2_V_26_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9179,8 +9072,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_54</name>
-<Object>lhs_54</Object>
+<name>ref_band1_V_27_cast</name>
+<Object>ref_band1_V_27_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9190,8 +9083,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_55</name>
-<Object>lhs_55</Object>
+<name>ref_band2_V_27_cast</name>
+<Object>ref_band2_V_27_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9201,8 +9094,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_56</name>
-<Object>lhs_56</Object>
+<name>ref_band1_V_28_cast</name>
+<Object>ref_band1_V_28_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9212,8 +9105,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_57</name>
-<Object>lhs_57</Object>
+<name>ref_band2_V_28_cast</name>
+<Object>ref_band2_V_28_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9223,8 +9116,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_58</name>
-<Object>lhs_58</Object>
+<name>ref_band1_V_29_cast</name>
+<Object>ref_band1_V_29_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9234,8 +9127,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_59</name>
-<Object>lhs_59</Object>
+<name>ref_band2_V_29_cast</name>
+<Object>ref_band2_V_29_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9245,8 +9138,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_60</name>
-<Object>lhs_60</Object>
+<name>ref_band1_V_30_cast</name>
+<Object>ref_band1_V_30_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9256,8 +9149,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_61</name>
-<Object>lhs_61</Object>
+<name>ref_band2_V_30_cast</name>
+<Object>ref_band2_V_30_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9267,8 +9160,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_62</name>
-<Object>lhs_62</Object>
+<name>ref_band1_V_31_cast</name>
+<Object>ref_band1_V_31_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9278,8 +9171,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_63</name>
-<Object>lhs_63</Object>
+<name>ref_band2_V_31_cast</name>
+<Object>ref_band2_V_31_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9289,8 +9182,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_64</name>
-<Object>lhs_64</Object>
+<name>ref_band1_V_32_cast</name>
+<Object>ref_band1_V_32_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9300,8 +9193,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_65</name>
-<Object>lhs_65</Object>
+<name>ref_band2_V_32_cast</name>
+<Object>ref_band2_V_32_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9311,8 +9204,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_66</name>
-<Object>lhs_66</Object>
+<name>ref_band1_V_33_cast</name>
+<Object>ref_band1_V_33_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9322,8 +9215,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_67</name>
-<Object>lhs_67</Object>
+<name>ref_band2_V_33_cast</name>
+<Object>ref_band2_V_33_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9333,8 +9226,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_68</name>
-<Object>lhs_68</Object>
+<name>ref_band1_V_34_cast</name>
+<Object>ref_band1_V_34_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9344,8 +9237,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_69</name>
-<Object>lhs_69</Object>
+<name>ref_band2_V_34_cast</name>
+<Object>ref_band2_V_34_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9355,8 +9248,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_70</name>
-<Object>lhs_70</Object>
+<name>ref_band1_V_35_cast</name>
+<Object>ref_band1_V_35_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9366,8 +9259,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_71</name>
-<Object>lhs_71</Object>
+<name>ref_band2_V_35_cast</name>
+<Object>ref_band2_V_35_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9377,8 +9270,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_72</name>
-<Object>lhs_72</Object>
+<name>ref_band1_V_36_cast</name>
+<Object>ref_band1_V_36_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9388,8 +9281,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_73</name>
-<Object>lhs_73</Object>
+<name>ref_band2_V_36_cast</name>
+<Object>ref_band2_V_36_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9399,8 +9292,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_74</name>
-<Object>lhs_74</Object>
+<name>ref_band1_V_37_cast</name>
+<Object>ref_band1_V_37_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9410,8 +9303,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_75</name>
-<Object>lhs_75</Object>
+<name>ref_band2_V_37_cast</name>
+<Object>ref_band2_V_37_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9421,8 +9314,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_76</name>
-<Object>lhs_76</Object>
+<name>ref_band1_V_38_cast</name>
+<Object>ref_band1_V_38_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9432,8 +9325,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_77</name>
-<Object>lhs_77</Object>
+<name>ref_band2_V_38_cast</name>
+<Object>ref_band2_V_38_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9443,8 +9336,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_78</name>
-<Object>lhs_78</Object>
+<name>ref_band1_V_39_cast</name>
+<Object>ref_band1_V_39_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9454,8 +9347,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_79</name>
-<Object>lhs_79</Object>
+<name>ref_band2_V_39_cast</name>
+<Object>ref_band2_V_39_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9465,8 +9358,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_80</name>
-<Object>lhs_80</Object>
+<name>ref_band1_V_40_cast</name>
+<Object>ref_band1_V_40_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9476,8 +9369,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_81</name>
-<Object>lhs_81</Object>
+<name>ref_band2_V_40_cast</name>
+<Object>ref_band2_V_40_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9487,8 +9380,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_82</name>
-<Object>lhs_82</Object>
+<name>ref_band1_V_41_cast</name>
+<Object>ref_band1_V_41_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9498,8 +9391,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_83</name>
-<Object>lhs_83</Object>
+<name>ref_band2_V_41_cast</name>
+<Object>ref_band2_V_41_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9509,8 +9402,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_84</name>
-<Object>lhs_84</Object>
+<name>ref_band1_V_42_cast</name>
+<Object>ref_band1_V_42_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9520,8 +9413,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_85</name>
-<Object>lhs_85</Object>
+<name>ref_band2_V_42_cast</name>
+<Object>ref_band2_V_42_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9531,8 +9424,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_86</name>
-<Object>lhs_86</Object>
+<name>ref_band1_V_43_cast</name>
+<Object>ref_band1_V_43_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9542,8 +9435,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_87</name>
-<Object>lhs_87</Object>
+<name>ref_band2_V_43_cast</name>
+<Object>ref_band2_V_43_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9553,8 +9446,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_88</name>
-<Object>lhs_88</Object>
+<name>ref_band1_V_44_cast</name>
+<Object>ref_band1_V_44_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9564,8 +9457,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_89</name>
-<Object>lhs_89</Object>
+<name>ref_band2_V_44_cast</name>
+<Object>ref_band2_V_44_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9575,8 +9468,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_90</name>
-<Object>lhs_90</Object>
+<name>ref_band1_V_45_cast</name>
+<Object>ref_band1_V_45_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9586,8 +9479,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_91</name>
-<Object>lhs_91</Object>
+<name>ref_band2_V_45_cast</name>
+<Object>ref_band2_V_45_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9597,8 +9490,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_92</name>
-<Object>lhs_92</Object>
+<name>ref_band1_V_46_cast</name>
+<Object>ref_band1_V_46_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9608,8 +9501,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_93</name>
-<Object>lhs_93</Object>
+<name>ref_band2_V_46_cast</name>
+<Object>ref_band2_V_46_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9619,8 +9512,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_94</name>
-<Object>lhs_94</Object>
+<name>ref_band1_V_47_cast</name>
+<Object>ref_band1_V_47_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9630,8 +9523,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_95</name>
-<Object>lhs_95</Object>
+<name>ref_band2_V_47_cast</name>
+<Object>ref_band2_V_47_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9641,8 +9534,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_96</name>
-<Object>lhs_96</Object>
+<name>ref_band1_V_48_cast</name>
+<Object>ref_band1_V_48_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9652,8 +9545,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_97</name>
-<Object>lhs_97</Object>
+<name>ref_band2_V_48_cast</name>
+<Object>ref_band2_V_48_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9663,8 +9556,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_98</name>
-<Object>lhs_98</Object>
+<name>ref_band1_V_49_cast</name>
+<Object>ref_band1_V_49_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9674,8 +9567,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_99</name>
-<Object>lhs_99</Object>
+<name>ref_band2_V_49_cast</name>
+<Object>ref_band2_V_49_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9685,8 +9578,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_100</name>
-<Object>lhs_100</Object>
+<name>ref_band1_V_50_cast</name>
+<Object>ref_band1_V_50_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9696,8 +9589,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_101</name>
-<Object>lhs_101</Object>
+<name>ref_band2_V_50_cast</name>
+<Object>ref_band2_V_50_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9707,8 +9600,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_102</name>
-<Object>lhs_102</Object>
+<name>ref_band1_V_51_cast</name>
+<Object>ref_band1_V_51_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9718,8 +9611,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_103</name>
-<Object>lhs_103</Object>
+<name>ref_band2_V_51_cast</name>
+<Object>ref_band2_V_51_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9729,8 +9622,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_104</name>
-<Object>lhs_104</Object>
+<name>ref_band1_V_52_cast</name>
+<Object>ref_band1_V_52_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9740,8 +9633,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_105</name>
-<Object>lhs_105</Object>
+<name>ref_band2_V_52_cast</name>
+<Object>ref_band2_V_52_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9751,8 +9644,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_106</name>
-<Object>lhs_106</Object>
+<name>ref_band1_V_53_cast</name>
+<Object>ref_band1_V_53_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9762,8 +9655,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_107</name>
-<Object>lhs_107</Object>
+<name>ref_band2_V_53_cast</name>
+<Object>ref_band2_V_53_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9773,8 +9666,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_108</name>
-<Object>lhs_108</Object>
+<name>ref_band1_V_54_cast</name>
+<Object>ref_band1_V_54_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9784,8 +9677,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_109</name>
-<Object>lhs_109</Object>
+<name>ref_band2_V_54_cast</name>
+<Object>ref_band2_V_54_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9795,8 +9688,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_110</name>
-<Object>lhs_110</Object>
+<name>ref_band1_V_55_cast</name>
+<Object>ref_band1_V_55_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9806,8 +9699,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_111</name>
-<Object>lhs_111</Object>
+<name>ref_band2_V_55_cast</name>
+<Object>ref_band2_V_55_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9817,8 +9710,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_112</name>
-<Object>lhs_112</Object>
+<name>ref_band1_V_56_cast</name>
+<Object>ref_band1_V_56_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9828,8 +9721,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_113</name>
-<Object>lhs_113</Object>
+<name>ref_band2_V_56_cast</name>
+<Object>ref_band2_V_56_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9839,8 +9732,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_114</name>
-<Object>lhs_114</Object>
+<name>ref_band1_V_57_cast</name>
+<Object>ref_band1_V_57_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9850,8 +9743,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_115</name>
-<Object>lhs_115</Object>
+<name>ref_band2_V_57_cast</name>
+<Object>ref_band2_V_57_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9861,8 +9754,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_116</name>
-<Object>lhs_116</Object>
+<name>ref_band1_V_58_cast</name>
+<Object>ref_band1_V_58_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9872,8 +9765,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_117</name>
-<Object>lhs_117</Object>
+<name>ref_band2_V_58_cast</name>
+<Object>ref_band2_V_58_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9883,8 +9776,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_118</name>
-<Object>lhs_118</Object>
+<name>ref_band1_V_59_cast</name>
+<Object>ref_band1_V_59_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9894,8 +9787,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_119</name>
-<Object>lhs_119</Object>
+<name>ref_band2_V_59_cast</name>
+<Object>ref_band2_V_59_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9905,8 +9798,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_120</name>
-<Object>lhs_120</Object>
+<name>ref_band1_V_60_cast</name>
+<Object>ref_band1_V_60_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9916,8 +9809,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_121</name>
-<Object>lhs_121</Object>
+<name>ref_band2_V_60_cast</name>
+<Object>ref_band2_V_60_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9927,8 +9820,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_122</name>
-<Object>lhs_122</Object>
+<name>ref_band1_V_61_cast</name>
+<Object>ref_band1_V_61_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9938,8 +9831,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_123</name>
-<Object>lhs_123</Object>
+<name>ref_band2_V_61_cast</name>
+<Object>ref_band2_V_61_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9949,8 +9842,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_124</name>
-<Object>lhs_124</Object>
+<name>ref_band1_V_62_cast</name>
+<Object>ref_band1_V_62_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9960,8 +9853,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_125</name>
-<Object>lhs_125</Object>
+<name>ref_band2_V_62_cast</name>
+<Object>ref_band2_V_62_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9971,8 +9864,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_126</name>
-<Object>lhs_126</Object>
+<name>ref_band1_V_63_cast</name>
+<Object>ref_band1_V_63_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9982,8 +9875,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_127</name>
-<Object>lhs_127</Object>
+<name>ref_band2_V_63_cast</name>
+<Object>ref_band2_V_63_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -9993,8 +9886,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_128</name>
-<Object>lhs_128</Object>
+<name>ref_band1_V_64_cast</name>
+<Object>ref_band1_V_64_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10004,8 +9897,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_129</name>
-<Object>lhs_129</Object>
+<name>ref_band2_V_64_cast</name>
+<Object>ref_band2_V_64_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10015,8 +9908,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_130</name>
-<Object>lhs_130</Object>
+<name>ref_band1_V_65_cast</name>
+<Object>ref_band1_V_65_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10026,8 +9919,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_131</name>
-<Object>lhs_131</Object>
+<name>ref_band2_V_65_cast</name>
+<Object>ref_band2_V_65_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10037,8 +9930,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_132</name>
-<Object>lhs_132</Object>
+<name>ref_band1_V_66_cast</name>
+<Object>ref_band1_V_66_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10048,8 +9941,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_133</name>
-<Object>lhs_133</Object>
+<name>ref_band2_V_66_cast</name>
+<Object>ref_band2_V_66_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10059,8 +9952,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_134</name>
-<Object>lhs_134</Object>
+<name>ref_band1_V_67_cast</name>
+<Object>ref_band1_V_67_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10070,8 +9963,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_135</name>
-<Object>lhs_135</Object>
+<name>ref_band2_V_67_cast</name>
+<Object>ref_band2_V_67_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10081,8 +9974,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_136</name>
-<Object>lhs_136</Object>
+<name>ref_band1_V_68_cast</name>
+<Object>ref_band1_V_68_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10092,8 +9985,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_137</name>
-<Object>lhs_137</Object>
+<name>ref_band2_V_68_cast</name>
+<Object>ref_band2_V_68_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10103,8 +9996,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_138</name>
-<Object>lhs_138</Object>
+<name>ref_band1_V_69_cast</name>
+<Object>ref_band1_V_69_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10114,8 +10007,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_139</name>
-<Object>lhs_139</Object>
+<name>ref_band2_V_69_cast</name>
+<Object>ref_band2_V_69_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10125,8 +10018,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_140</name>
-<Object>lhs_140</Object>
+<name>ref_band1_V_70_cast</name>
+<Object>ref_band1_V_70_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10136,8 +10029,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_141</name>
-<Object>lhs_141</Object>
+<name>ref_band2_V_70_cast</name>
+<Object>ref_band2_V_70_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10147,8 +10040,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_142</name>
-<Object>lhs_142</Object>
+<name>ref_band1_V_71_cast</name>
+<Object>ref_band1_V_71_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10158,8 +10051,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_143</name>
-<Object>lhs_143</Object>
+<name>ref_band2_V_71_cast</name>
+<Object>ref_band2_V_71_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10169,8 +10062,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_144</name>
-<Object>lhs_144</Object>
+<name>ref_band1_V_72_cast</name>
+<Object>ref_band1_V_72_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10180,8 +10073,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_145</name>
-<Object>lhs_145</Object>
+<name>ref_band2_V_72_cast</name>
+<Object>ref_band2_V_72_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10191,8 +10084,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_146</name>
-<Object>lhs_146</Object>
+<name>ref_band1_V_73_cast</name>
+<Object>ref_band1_V_73_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10202,8 +10095,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_147</name>
-<Object>lhs_147</Object>
+<name>ref_band2_V_73_cast</name>
+<Object>ref_band2_V_73_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10213,8 +10106,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_148</name>
-<Object>lhs_148</Object>
+<name>ref_band1_V_74_cast</name>
+<Object>ref_band1_V_74_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10224,8 +10117,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_149</name>
-<Object>lhs_149</Object>
+<name>ref_band2_V_74_cast</name>
+<Object>ref_band2_V_74_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10235,8 +10128,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_150</name>
-<Object>lhs_150</Object>
+<name>ref_band1_V_75_cast</name>
+<Object>ref_band1_V_75_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10246,8 +10139,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_151</name>
-<Object>lhs_151</Object>
+<name>ref_band2_V_75_cast</name>
+<Object>ref_band2_V_75_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10257,8 +10150,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_152</name>
-<Object>lhs_152</Object>
+<name>ref_band1_V_76_cast</name>
+<Object>ref_band1_V_76_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10268,8 +10161,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_153</name>
-<Object>lhs_153</Object>
+<name>ref_band2_V_76_cast</name>
+<Object>ref_band2_V_76_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10279,8 +10172,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_154</name>
-<Object>lhs_154</Object>
+<name>ref_band1_V_77_cast</name>
+<Object>ref_band1_V_77_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10290,8 +10183,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_155</name>
-<Object>lhs_155</Object>
+<name>ref_band2_V_77_cast</name>
+<Object>ref_band2_V_77_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10301,8 +10194,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_156</name>
-<Object>lhs_156</Object>
+<name>ref_band1_V_78_cast</name>
+<Object>ref_band1_V_78_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10312,8 +10205,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_157</name>
-<Object>lhs_157</Object>
+<name>ref_band2_V_78_cast</name>
+<Object>ref_band2_V_78_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10323,8 +10216,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_158</name>
-<Object>lhs_158</Object>
+<name>ref_band1_V_79_cast</name>
+<Object>ref_band1_V_79_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10334,8 +10227,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_159</name>
-<Object>lhs_159</Object>
+<name>ref_band2_V_79_cast</name>
+<Object>ref_band2_V_79_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10345,8 +10238,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_160</name>
-<Object>lhs_160</Object>
+<name>ref_band1_V_80_cast</name>
+<Object>ref_band1_V_80_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10356,8 +10249,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_161</name>
-<Object>lhs_161</Object>
+<name>ref_band2_V_80_cast</name>
+<Object>ref_band2_V_80_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10367,8 +10260,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_162</name>
-<Object>lhs_162</Object>
+<name>ref_band1_V_81_cast</name>
+<Object>ref_band1_V_81_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10378,8 +10271,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_163</name>
-<Object>lhs_163</Object>
+<name>ref_band2_V_81_cast</name>
+<Object>ref_band2_V_81_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10389,8 +10282,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_164</name>
-<Object>lhs_164</Object>
+<name>ref_band1_V_82_cast</name>
+<Object>ref_band1_V_82_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10400,8 +10293,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_165</name>
-<Object>lhs_165</Object>
+<name>ref_band2_V_82_cast</name>
+<Object>ref_band2_V_82_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10411,8 +10304,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_166</name>
-<Object>lhs_166</Object>
+<name>ref_band1_V_83_cast</name>
+<Object>ref_band1_V_83_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10422,8 +10315,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_167</name>
-<Object>lhs_167</Object>
+<name>ref_band2_V_83_cast</name>
+<Object>ref_band2_V_83_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10433,8 +10326,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_168</name>
-<Object>lhs_168</Object>
+<name>ref_band1_V_84_cast</name>
+<Object>ref_band1_V_84_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10444,8 +10337,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_169</name>
-<Object>lhs_169</Object>
+<name>ref_band2_V_84_cast</name>
+<Object>ref_band2_V_84_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10455,8 +10348,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_170</name>
-<Object>lhs_170</Object>
+<name>ref_band1_V_85_cast</name>
+<Object>ref_band1_V_85_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10466,8 +10359,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_171</name>
-<Object>lhs_171</Object>
+<name>ref_band2_V_85_cast</name>
+<Object>ref_band2_V_85_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10477,8 +10370,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_172</name>
-<Object>lhs_172</Object>
+<name>ref_band1_V_86_cast</name>
+<Object>ref_band1_V_86_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10488,8 +10381,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_173</name>
-<Object>lhs_173</Object>
+<name>ref_band2_V_86_cast</name>
+<Object>ref_band2_V_86_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10499,8 +10392,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_174</name>
-<Object>lhs_174</Object>
+<name>ref_band1_V_87_cast</name>
+<Object>ref_band1_V_87_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10510,8 +10403,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_175</name>
-<Object>lhs_175</Object>
+<name>ref_band2_V_87_cast</name>
+<Object>ref_band2_V_87_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10521,8 +10414,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_176</name>
-<Object>lhs_176</Object>
+<name>ref_band1_V_88_cast</name>
+<Object>ref_band1_V_88_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10532,8 +10425,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_177</name>
-<Object>lhs_177</Object>
+<name>ref_band2_V_88_cast</name>
+<Object>ref_band2_V_88_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10543,8 +10436,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_178</name>
-<Object>lhs_178</Object>
+<name>ref_band1_V_89_cast</name>
+<Object>ref_band1_V_89_cast</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10554,8 +10447,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>lhs_179</name>
-<Object>lhs_179</Object>
+<name>zext_ln63</name>
+<Object>zext_ln63</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -10563,6 +10456,28 @@
 <Dir>in</Dir>
 <Bits>16</Bits>
 <Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>min_distance_out</name>
+<Object>min_distance_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_vld</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>min_distance_out_ap_vld</name>
+<Object>min_distance_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_vld</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
 <name>min_pixel_index_i_out</name>
@@ -10630,34 +10545,12 @@
 <Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
-<RtlPorts>
-<name>min_distance_V_out</name>
-<Object>min_distance_V_out</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>min_distance_V_out_ap_vld</name>
-<Object>min_distance_V_out</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4</Name>
+<Name>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2</Name>
 <Loops>
-<VITIS_LOOP_88_4></VITIS_LOOP_88_4>
+<VITIS_LOOP_97_2></VITIS_LOOP_97_2>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -10676,8 +10569,8 @@
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_88_4>
-<Name>VITIS_LOOP_88_4</Name>
+<VITIS_LOOP_97_2>
+<Name>VITIS_LOOP_97_2</Name>
 <TripCount>90</TripCount>
 <Latency>90</Latency>
 <AbsoluteTimeLatency>0.900 us</AbsoluteTimeLatency>
@@ -10686,7 +10579,7 @@
 <PipelineType>yes</PipelineType>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_88_4>
+</VITIS_LOOP_97_2>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -10694,7 +10587,7 @@
 <FF>19</FF>
 <AVAIL_FF>141120</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>1980</LUT>
+<LUT>1969</LUT>
 <AVAIL_LUT>70560</AVAIL_LUT>
 <UTIL_LUT>2</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -10711,7 +10604,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -10722,7 +10615,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -10733,7 +10626,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -10744,7 +10637,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -10755,7 +10648,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -10766,7 +10659,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4</Object>
+<Object>hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -10831,8 +10724,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>idxprom72</name>
-<Object>idxprom72</Object>
+<name>idxprom70</name>
+<Object>idxprom70</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -16833,16 +16726,16 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>2.70</ClockUncertainty>
-<EstimatedClockPeriod>7.166</EstimatedClockPeriod>
+<EstimatedClockPeriod>6.675</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>184618</Best-caseLatency>
-<Average-caseLatency>184618</Average-caseLatency>
-<Worst-caseLatency>184618</Worst-caseLatency>
-<Best-caseRealTimeLatency>1.846 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>1.846 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>1.846 ms</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>184619</PipelineInitiationInterval>
+<Best-caseLatency>184987</Best-caseLatency>
+<Average-caseLatency>184987</Average-caseLatency>
+<Worst-caseLatency>184987</Worst-caseLatency>
+<Best-caseRealTimeLatency>1.850 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>1.850 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>1.850 ms</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>184988</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
@@ -16851,15 +16744,15 @@
 <BRAM_18K>1</BRAM_18K>
 <AVAIL_BRAM>432</AVAIL_BRAM>
 <UTIL_BRAM>~0</UTIL_BRAM>
-<DSP>180</DSP>
+<DSP>182</DSP>
 <AVAIL_DSP>360</AVAIL_DSP>
 <UTIL_DSP>50</UTIL_DSP>
-<FF>14482</FF>
+<FF>33392</FF>
 <AVAIL_FF>141120</AVAIL_FF>
-<UTIL_FF>10</UTIL_FF>
-<LUT>19273</LUT>
+<UTIL_FF>23</UTIL_FF>
+<LUT>27809</LUT>
 <AVAIL_LUT>70560</AVAIL_LUT>
-<UTIL_LUT>27</UTIL_LUT>
+<UTIL_LUT>39</UTIL_LUT>
 <URAM>0</URAM>
 <AVAIL_URAM>0</AVAIL_URAM>
 <UTIL_URAM>0</UTIL_URAM>

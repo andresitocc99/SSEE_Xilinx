@@ -1,23 +1,79 @@
-04:44:13 DEBUG : Logs will be stored at '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/IDE.log'.
-04:44:14 INFO  : Launching XSCT server: xsct -n  -interactive /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/temp_xsdb_launch_script.tcl
-04:44:14 INFO  : Registering command handlers for Vitis TCF services
-04:44:14 INFO  : Platform repository initialization has completed.
-04:44:16 INFO  : XSCT server has started successfully.
-04:44:16 INFO  : plnx-install-location is set to ''
-04:44:16 INFO  : Successfully done setting XSCT server connection channel  
-04:44:16 INFO  : Successfully done query RDI_DATADIR 
-04:44:16 INFO  : Successfully done setting workspace for the tool. 
-04:45:04 INFO  : Result from executing command 'getProjects': design_1_hyperspectral
-04:45:04 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
-04:45:04 WARN  : An unexpected exception occurred in the module 'platform project logging'
-04:45:05 INFO  : Platform 'design_1_hyperspectral' is added to custom repositories.
-04:45:15 INFO  : Platform 'design_1_hyperspectral' is added to custom repositories.
-05:55:48 DEBUG : Logs will be stored at '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/IDE.log'.
-05:55:48 INFO  : Launching XSCT server: xsct -n  -interactive /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/temp_xsdb_launch_script.tcl
-05:55:50 INFO  : Platform repository initialization has completed.
-05:55:50 INFO  : Registering command handlers for Vitis TCF services
-05:55:50 INFO  : XSCT server has started successfully.
-05:55:50 INFO  : Successfully done setting XSCT server connection channel  
-05:55:50 INFO  : plnx-install-location is set to ''
-05:55:50 INFO  : Successfully done query RDI_DATADIR 
-05:55:50 INFO  : Successfully done setting workspace for the tool. 
+04:40:12 DEBUG : Logs will be stored at '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/IDE.log'.
+04:40:16 INFO  : Launching XSCT server: xsct -n  -interactive /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/temp_xsdb_launch_script.tcl
+04:40:16 INFO  : Registering command handlers for Vitis TCF services
+04:40:17 INFO  : Platform repository initialization has completed.
+04:40:20 INFO  : XSCT server has started successfully.
+04:40:21 INFO  : Successfully done setting XSCT server connection channel  
+04:40:21 INFO  : plnx-install-location is set to ''
+04:40:21 INFO  : Successfully done query RDI_DATADIR 
+04:40:21 INFO  : Successfully done setting workspace for the tool. 
+04:41:10 INFO  : Result from executing command 'getProjects': design_1_hyperspectral
+04:41:10 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+04:41:10 WARN  : An unexpected exception occurred in the module 'platform project logging'
+04:41:11 INFO  : Platform 'design_1_hyperspectral' is added to custom repositories.
+04:41:22 INFO  : Platform 'design_1_hyperspectral' is added to custom repositories.
+04:45:52 INFO  : Result from executing command 'getProjects': design_1_hyperspectral
+04:45:52 INFO  : Result from executing command 'getPlatforms': design_1_hyperspectral|/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/design_1_hyperspectral/export/design_1_hyperspectral/design_1_hyperspectral.xpfm;xilinx_zcu102_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+04:45:55 INFO  : Checking for BSP changes to sync application flags for project 'hyperspectral'...
+04:46:04 INFO  : Updating application flags with new BSP settings...
+04:46:04 INFO  : Successfully updated application flags for project hyperspectral.
+04:46:55 INFO  : Checking for BSP changes to sync application flags for project 'hyperspectral'...
+04:47:04 INFO  : Checking for BSP changes to sync application flags for project 'hyperspectral'...
+04:49:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:49:44 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+04:49:44 INFO  : 'jtag frequency' command is executed.
+04:49:44 INFO  : Sourcing of '/tools/Xilinx/Vitis/2022.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+04:49:44 INFO  : Context for 'APU' is selected.
+04:49:45 INFO  : System reset is completed.
+04:49:48 INFO  : 'after 3000' command is executed.
+04:49:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+04:49:51 INFO  : Device configured successfully with "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/hyperspectral/_ide/bitstream/design_1_hyperspectral.bit"
+04:49:51 INFO  : Context for 'APU' is selected.
+04:49:52 INFO  : Hardware design and registers information is loaded from '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/design_1_hyperspectral/export/design_1_hyperspectral/hw/design_1_hyperspectral.xsa'.
+04:49:52 INFO  : 'configparams force-mem-access 1' command is executed.
+04:49:52 INFO  : Context for 'APU' is selected.
+04:49:52 INFO  : Boot mode is read from the target.
+04:49:52 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+04:49:52 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+04:49:52 INFO  : The application '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/design_1_hyperspectral/export/design_1_hyperspectral/sw/design_1_hyperspectral/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+04:49:52 INFO  : 'set bp_49_52_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+04:49:53 INFO  : 'con -block -timeout 60' command is executed.
+04:49:53 INFO  : 'bpremove $bp_49_52_fsbl_bp' command is executed.
+04:49:53 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+04:49:53 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+04:49:54 INFO  : The application '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/hyperspectral/Debug/hyperspectral.elf' is downloaded to processor 'psu_cortexa53_0'.
+04:49:54 INFO  : 'configparams force-mem-access 0' command is executed.
+04:49:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2022.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/hyperspectral/_ide/bitstream/design_1_hyperspectral.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/design_1_hyperspectral/export/design_1_hyperspectral/hw/design_1_hyperspectral.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/design_1_hyperspectral/export/design_1_hyperspectral/sw/design_1_hyperspectral/boot/fsbl.elf
+set bp_49_52_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_49_52_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/hyperspectral/Debug/hyperspectral.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+04:49:54 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+04:49:54 INFO  : 'con' command is executed.
+04:49:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+04:49:54 INFO  : Launch script is exported to file '/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/hyperspectral_system/_ide/scripts/debugger_hyperspectral-default.tcl'
+04:53:46 INFO  : Disconnected from the channel tcfchan#3.

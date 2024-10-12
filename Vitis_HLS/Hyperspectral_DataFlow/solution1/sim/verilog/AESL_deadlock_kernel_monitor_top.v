@@ -10,16 +10,16 @@ wire [0:0] inst_block_sigs;
 wire kernel_block;
 
 assign axis_block_sigs[0] = ~AESL_inst_hyperspectral_hw_wrapped.out_stream_TDATA_blk_n;
-assign axis_block_sigs[1] = ~AESL_inst_hyperspectral_hw_wrapped.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666.in_stream_TDATA_blk_n;
-assign axis_block_sigs[2] = ~AESL_inst_hyperspectral_hw_wrapped.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685.in_stream_TDATA_blk_n;
-assign axis_block_sigs[3] = ~AESL_inst_hyperspectral_hw_wrapped.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069.out_stream_TDATA_blk_n;
+assign axis_block_sigs[1] = ~AESL_inst_hyperspectral_hw_wrapped.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653.in_stream_TDATA_blk_n;
+assign axis_block_sigs[2] = ~AESL_inst_hyperspectral_hw_wrapped.grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672.in_stream_TDATA_blk_n;
+assign axis_block_sigs[3] = ~AESL_inst_hyperspectral_hw_wrapped.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056.out_stream_TDATA_blk_n;
 
 assign inst_block_sigs[0] = 1'b0;
 
 assign inst_idle_sigs[0] = 1'b0;
-assign inst_idle_sigs[1] = AESL_inst_hyperspectral_hw_wrapped.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1_fu_2666.ap_idle;
-assign inst_idle_sigs[2] = AESL_inst_hyperspectral_hw_wrapped.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2_fu_2685.ap_idle;
-assign inst_idle_sigs[3] = AESL_inst_hyperspectral_hw_wrapped.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4_fu_3069.ap_idle;
+assign inst_idle_sigs[1] = AESL_inst_hyperspectral_hw_wrapped.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_53_1_fu_2653.ap_idle;
+assign inst_idle_sigs[2] = AESL_inst_hyperspectral_hw_wrapped.grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672.ap_idle;
+assign inst_idle_sigs[3] = AESL_inst_hyperspectral_hw_wrapped.grp_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_97_2_fu_3056.ap_idle;
 
 AESL_deadlock_idx0_monitor AESL_deadlock_idx0_monitor_U (
     .clock(kernel_monitor_clock),

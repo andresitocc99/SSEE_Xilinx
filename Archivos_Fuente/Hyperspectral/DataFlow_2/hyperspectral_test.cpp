@@ -8,16 +8,19 @@
 
 void loadHyperspectralImage(band_t image[FILAS][COLUMNAS][BANDAS], const char* filename);
 
-void hyperspectral_sw(band_t image[FILAS][COLUMNAS][BANDAS], band_t ref_pixel[BANDAS], band_t closest_pixel_sw[BANDAS], dist_t &min_distance, int &min_pixel_index_i, int &min_pixel_index_j) {
+void hyperspectral_sw(band_t image[FILAS][COLUMNAS][BANDAS], band_t ref_pixel[BANDAS], band_t closest_pixel_sw[BANDAS], float &min_distance, int &min_pixel_index_i, int &min_pixel_index_j) {
 
     min_distance = MAX_DIST;
-    dist_t distance;
+    float distance;
 
     for (int i = 0; i < FILAS; i++) {
     	for (int j = 0; j < COLUMNAS; j++) {
     		for (int k = 0; k < BANDAS; k += 2) {
-    			if (k == 0) distance = 0;
-				calculate_distance(ref_pixel[k], ref_pixel[k + 1], image[i][j][k], image[i][j][k + 1], distance);
+    			if (k == 0){
+    				distance = 0;
+    			}
+
+    			calculate_distance(ref_pixel[k], ref_pixel[k + 1], image[i][j][k], image[i][j][k + 1], distance);
 				if (k== BANDAS-2) {
 					distance = hls::sqrt(distance);
 					if (distance < min_distance) {
@@ -95,8 +98,8 @@ int main_axi (void) {
     band_t closest_pixel_hw[BANDAS];
     band_t closest_pixel_sw[BANDAS];
 
-    dist_t min_distance_hw;
-    dist_t min_distance_sw;
+    float min_distance_hw;
+    float min_distance_sw;
 
     int min_pixel_index_i_hw;
     int min_pixel_index_i_sw;
@@ -175,25 +178,31 @@ int main_axi (void) {
     conv_t c;
     c.in = w_d;
     min_distance_hw = c.out;
+    printf("min_distance: %f\n", min_distance_hw);
 
     hyperspectral_sw (image, ref_pixel, closest_pixel_sw, min_distance_sw, min_pixel_index_i_sw, min_pixel_index_j_sw);
 
     err = 0;
     for (int i = 0; i < BANDAS; i++) {
+    	//printf("Banda %d: SW = %u, HW = %u\n", i, closest_pixel_sw[i].to_uint(), closest_pixel_hw[i].to_uint());
         if (closest_pixel_hw[i] != closest_pixel_sw[i]) {
             err++;
             printf("Error en banda %d: closest_pixel_sw = %u, closest_pixel_hw = %u\r\n", i, closest_pixel_sw[i].to_uint(), closest_pixel_hw[i].to_uint());
         }
     }
 
+    printf("Pre-Check min_pixel_index_i: SW = %d, HW = %d\n", min_pixel_index_i_sw, min_pixel_index_i_hw);
+    printf("Pre-Check min_pixel_index_j: SW = %d, HW = %d\n", min_pixel_index_j_sw, min_pixel_index_j_hw);
+
     if (min_pixel_index_i_hw != min_pixel_index_i_sw || min_pixel_index_j_hw != min_pixel_index_j_sw) {
         err++;
         printf("Error en min_pixel_index_i: min_pixel_index_i_sw = %d, min_pixel_index_i_hw = %d\r\n", min_pixel_index_i_sw, min_pixel_index_i_hw);
     }
 
+    printf("Pre-Check min_distance: SW = %f, HW = %f\n", min_distance_sw, min_distance_hw);
     if (min_distance_hw != min_distance_sw) {
         err++;
-        printf("Error en min_distance: min_distance_sw = %u, min_distance_hw = %u\r\n", min_distance_sw.to_uint(), min_distance_hw.to_uint());
+        printf("Error en min_distance: min_distance_sw = %u, min_distance_hw = %u\r\n", min_distance_sw, min_distance_hw);
     }
 
     if (err == 0) {
