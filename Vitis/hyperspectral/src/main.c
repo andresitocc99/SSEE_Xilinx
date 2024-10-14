@@ -8,6 +8,7 @@
 #include "xparameters.h"
 #include "ff.h"
 #include <float.h>
+#include "diskio.h"
 
 #include <stdint.h>
 
@@ -18,8 +19,6 @@
 void hyperspectral_operation_ref(uint16_t image[FILAS][COLUMNAS][BANDAS],
                                  uint16_t refPixel[BANDAS],
                                  DataBlock* result_sw);
-void calculate_distance (uint16_t ref_band1, uint16_t ref_band2, uint16_t band1, uint16_t band2, float *distance);
-
 // TIMER Instance
 XTmrCtr timer_dev;
 
@@ -31,6 +30,7 @@ static FATFS fat_fs;
 u32 mount_filesystem() {
     TCHAR *Path = "0:/";
     FRESULT res;
+
     res = f_mount(&fat_fs, Path, 1);
 
     if (res != FR_OK) {
@@ -43,6 +43,7 @@ u32 mount_filesystem() {
 u32 umount_filesystem() {
     TCHAR *Path = "0:/";
     FRESULT res;
+
     res = f_mount(NULL, Path, 0);
 
     if (res != FR_OK) {
@@ -70,12 +71,21 @@ u32 LoadFile(uint16_t image [FILAS][COLUMNAS][BANDAS]){
 
     f_read(&fp, image, bytes_size, &bytes_read);
     if (res != FR_OK || bytes_size != bytes_read) {
-    	xil_printf("could not open the file %d\n\r",res);
-    	f_close(&fp);
-    	return XST_FAILURE;
-
+        xil_printf("Error reading the file %d\n\r", res);
+        f_close(&fp);
+        return XST_FAILURE;
     }
     f_close(&fp);
+
+    for (int i = 0; i < FILAS; i++) {
+        for (int j = 0; j < COLUMNAS; j++) {
+            for (int k = 0; k < BANDAS; k++) {
+                if (image[i][j][k] > 0x0FFF) { // 0x0FFF = 4095 en decimal
+                    xil_printf("Valor fuera de rango en [%d][%d][%d]: %d\n\r", i, j, k, image[i][j][k]);
+                }
+            }
+        }
+    }
 
     return XST_SUCCESS;
 }
@@ -117,8 +127,8 @@ int main() {
 	int status;
 
 	// INPUTS
-	uint16_t _Alignas(32) image[FILAS][COLUMNAS][BANDAS];
-	uint16_t _Alignas(32) refPixel[BANDAS];
+	uint16_t  image[FILAS][COLUMNAS][BANDAS];
+	uint16_t  refPixel[BANDAS];
 
 	// OUTPUTS
 	DataBlock result_hw;
@@ -127,6 +137,10 @@ int main() {
 	unsigned int dma_sizeImage = FILAS * COLUMNAS * BANDAS * sizeof(uint16_t);
 	unsigned int dma_sizeRefPixel = BANDAS * sizeof(uint16_t);
 	unsigned int dma_size_block = sizeof(result_sw);
+	printf("Size of Image structure: %u bytes\n",dma_sizeImage);
+	printf("Size of RefPixel structure: %u bytes\n", dma_sizeRefPixel);
+	printf("Size of DataBlock structure: %u bytes\n", dma_size_block);
+
 
 	float acc_factor;
 	unsigned int init_time, curr_time, calibration;
@@ -198,14 +212,20 @@ int main() {
 	// Flush the cache
 	Xil_DCacheFlushRange((uintptr_t)image, dma_sizeImage);
 	Xil_DCacheFlushRange((uintptr_t)refPixel, dma_sizeRefPixel);
-	Xil_DCacheFlushRange((uintptr_t)&result_sw, dma_size_block);
+
 
 	print("\rCache cleared\n\r");
 
 	for (i = 0; i < NUM_TESTS; i++) {
-		status = Run_HW_Accelerator(image, refPixel, &result_sw,
+		status = Run_HW_Accelerator(image, refPixel, &result_hw,
 									dma_sizeImage, dma_sizeRefPixel, dma_size_block);
 	}
+
+	Xil_DCacheInvalidateRange((uintptr_t)&result_hw, dma_size_block);
+
+
+
+
 
 	end_time = XTmrCtr_GetValue(&timer_dev, XPAR_AXI_TIMER_0_DEVICE_ID);
 	run_time_hw = end_time - begin_time - calibration;
@@ -255,19 +275,26 @@ int main() {
 void hyperspectral_operation_ref (uint16_t image[FILAS][COLUMNAS][BANDAS], uint16_t refPixel[BANDAS], DataBlock* result_sw) {
 	int i, j, k;
 	result_sw->minDistance = FLT_MAX;
-	float distance;
+	float distance, diff1, diff2;
 
 	for (i = 0; i < FILAS; i++) {
 		for (j = 0; j < COLUMNAS; j++) {
-			distance = 0;
 			for (k = 0; k < BANDAS; k+=2) {
-				calculate_distance(refPixel[k], refPixel[k+1], image[i][j][k], image[i][j][k + 1], &distance);
-			}
-			distance = sqrt(distance);
-			if (distance < result_sw->minDistance) {
-				result_sw->minDistance = distance;
-				result_sw->minPixelIndex_i = i;
-				result_sw->minPixelIndex_j = j;
+				if (k == 0) {
+					distance = 0;
+				}
+				diff1 = refPixel[k] - image[i][j][k];
+				diff2 = refPixel[k+1] - image[i][j][k+1];
+				distance += diff1 * diff1 + diff2 * diff2;
+
+				if (k == BANDAS-2) {
+					distance = sqrt(distance);
+					if (distance < result_sw->minDistance) {
+						result_sw->minDistance = distance;
+						result_sw->minPixelIndex_i = i;
+						result_sw->minPixelIndex_j = j;
+					}
+				}
 			}
 		}
 	}
@@ -275,12 +302,6 @@ void hyperspectral_operation_ref (uint16_t image[FILAS][COLUMNAS][BANDAS], uint1
 	for (k = 0; k < BANDAS; k++) {
 		result_sw->closestPixel[k] = image[result_sw->minPixelIndex_i][result_sw->minPixelIndex_j][k];
 	}
-}
-
-void calculate_distance (uint16_t ref_band1, uint16_t ref_band2, uint16_t band1, uint16_t band2, float *distance) {
-	float diff1 = ref_band1 - band1;
-	float diff2 = ref_band2 - band2;
-	*distance += diff1 * diff1 + diff2 * diff2;
 }
 
 

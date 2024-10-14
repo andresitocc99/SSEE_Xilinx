@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
-| Date         : Sat Oct 12 04:28:58 2024
+| Date         : Mon Oct 14 02:33:04 2024
 | Host         : andresitocc99 running 64-bit Ubuntu 24.04.1 LTS
 | Command      : report_utilization -file design_1_hyperspectral_hw_wra_0_0_utilization_synth.rpt -pb design_1_hyperspectral_hw_wra_0_0_utilization_synth.pb
 | Design       : design_1_hyperspectral_hw_wra_0_0
@@ -32,16 +32,16 @@ Table of Contents
 +----------------------------+-------+-------+------------+-----------+-------+
 |          Site Type         |  Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+-------+-------+------------+-----------+-------+
-| CLB LUTs*                  | 18115 |     0 |          0 |     70560 | 25.67 |
-|   LUT as Logic             | 11628 |     0 |          0 |     70560 | 16.48 |
-|   LUT as Memory            |  6487 |     0 |          0 |     28800 | 22.52 |
+| CLB LUTs*                  | 16189 |     0 |          0 |     70560 | 22.94 |
+|   LUT as Logic             |  9670 |     0 |          0 |     70560 | 13.70 |
+|   LUT as Memory            |  6519 |     0 |          0 |     28800 | 22.64 |
 |     LUT as Distributed RAM |  2880 |     0 |            |           |       |
-|     LUT as Shift Register  |  3607 |     0 |            |           |       |
-| CLB Registers              | 24445 |     0 |          0 |    141120 | 17.32 |
-|   Register as Flip Flop    | 24445 |     0 |          0 |    141120 | 17.32 |
+|     LUT as Shift Register  |  3639 |     0 |            |           |       |
+| CLB Registers              | 25835 |     0 |          0 |    141120 | 18.31 |
+|   Register as Flip Flop    | 25835 |     0 |          0 |    141120 | 18.31 |
 |   Register as Latch        |     0 |     0 |          0 |    141120 |  0.00 |
-| CARRY8                     |  1098 |     0 |          0 |      8820 | 12.45 |
-| F7 Muxes                   |   398 |     0 |          0 |     35280 |  1.13 |
+| CARRY8                     |   664 |     0 |          0 |      8820 |  7.53 |
+| F7 Muxes                   |   385 |     0 |          0 |     35280 |  1.09 |
 | F8 Muxes                   |   128 |     0 |          0 |     17640 |  0.73 |
 | F9 Muxes                   |     0 |     0 |          0 |      8820 |  0.00 |
 +----------------------------+-------+-------+------------+-----------+-------+
@@ -63,7 +63,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 8     |          Yes |         Set |            - |
-| 24437 |          Yes |       Reset |            - |
+| 25827 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -87,8 +87,8 @@ Table of Contents
 +----------------+------+-------+------------+-----------+-------+
 |    Site Type   | Used | Fixed | Prohibited | Available | Util% |
 +----------------+------+-------+------------+-----------+-------+
-| DSPs           |  182 |     0 |          0 |       360 | 50.56 |
-|   DSP48E2 only |  182 |       |            |           |       |
+| DSPs           |   10 |     0 |          0 |       360 |  2.78 |
+|   DSP48E2 only |   10 |       |            |           |       |
 +----------------+------+-------+------------+-----------+-------+
 
 
@@ -152,19 +152,19 @@ Table of Contents
 +----------+-------+---------------------+
 | Ref Name |  Used | Functional Category |
 +----------+-------+---------------------+
-| FDRE     | 24437 |            Register |
-| LUT6     |  4074 |                 CLB |
-| SRL16E   |  3607 |                 CLB |
-| LUT4     |  3360 |                 CLB |
-| LUT2     |  3170 |                 CLB |
+| FDRE     | 25827 |            Register |
+| LUT6     |  4293 |                 CLB |
+| SRL16E   |  3639 |                 CLB |
+| LUT4     |  3316 |                 CLB |
 | RAMS32   |  2880 |                 CLB |
-| CARRY8   |  1098 |                 CLB |
-| LUT3     |   779 |                 CLB |
-| LUT5     |   490 |                 CLB |
-| MUXF7    |   398 |                 CLB |
-| DSP48E2  |   182 |          Arithmetic |
-| LUT1     |   165 |                 CLB |
+| LUT3     |  1219 |                 CLB |
+| LUT5     |   859 |                 CLB |
+| CARRY8   |   664 |                 CLB |
+| LUT2     |   454 |                 CLB |
+| MUXF7    |   385 |                 CLB |
 | MUXF8    |   128 |                 CLB |
+| LUT1     |    37 |                 CLB |
+| DSP48E2  |    10 |          Arithmetic |
 | FDSE     |     8 |            Register |
 | RAMB18E2 |     1 |            BLOCKRAM |
 +----------+-------+---------------------+

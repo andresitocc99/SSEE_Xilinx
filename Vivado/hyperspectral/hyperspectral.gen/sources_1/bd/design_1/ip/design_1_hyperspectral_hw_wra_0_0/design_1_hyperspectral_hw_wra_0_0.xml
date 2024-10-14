@@ -1232,11 +1232,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Oct 10 01:45:59 UTC 2024</spirit:value>
+            <spirit:value>Mon Oct 14 00:29:07 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:00d7dbef</spirit:value>
+            <spirit:value>9:1d507599</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1247,7 +1247,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:00d7dbef</spirit:value>
+            <spirit:value>9:1d507599</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1263,11 +1263,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Oct 10 01:45:59 UTC 2024</spirit:value>
+            <spirit:value>Mon Oct 14 00:29:07 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:00d7dbef</spirit:value>
+            <spirit:value>9:1d507599</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1310,11 +1310,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Oct 10 01:45:59 UTC 2024</spirit:value>
+            <spirit:value>Mon Oct 14 00:29:07 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:bc2e8946</spirit:value>
+            <spirit:value>9:67347ece</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1330,11 +1330,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Oct 10 01:45:59 UTC 2024</spirit:value>
+            <spirit:value>Mon Oct 14 00:29:07 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:bc2e8946</spirit:value>
+            <spirit:value>9:67347ece</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1348,11 +1348,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Oct 10 01:45:59 UTC 2024</spirit:value>
+            <spirit:value>Mon Oct 14 00:29:07 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:00d7dbef</spirit:value>
+            <spirit:value>9:1d507599</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1365,8 +1365,12 @@
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Oct 14 00:33:08 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:00d7dbef</spirit:value>
+            <spirit:value>9:1d507599</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2124,7 +2128,23 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/ip/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/ip/hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8c56/hdl/ip/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8c56/hdl/ip/hyperspectral_hw_wrapped_sitofp_32s_32_4_no_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8c56/hdl/ip/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8c56/hdl/ip/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2133,71 +2153,71 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_CONTROL_BUS_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_CONTROL_BUS_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_flow_control_loop_pipe_sequential_init.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_hls_deadlock_idx0_monitor.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_hls_deadlock_kernel_monitor_top.vh</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_flow_control_loop_pipe_sequential_init.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_hls_deadlock_idx0_monitor.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_hls_deadlock_kernel_monitor_top.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_52_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mux_1798_32_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_93_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_pixels_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_mux_1798_32_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_ref_pixel_V_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_pixels_RAM_AUTO_1R1W.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_ref_pixel_V_RAM_AUTO_1R1W.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_sqrt_fixed_33_33_s.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_sitofp_32s_32_4_no_dsp_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -2362,92 +2382,112 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_CONTROL_BUS_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_CONTROL_BUS_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_flow_control_loop_pipe_sequential_init.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_hls_deadlock_idx0_monitor.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_hls_deadlock_kernel_monitor_top.vh</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_flow_control_loop_pipe_sequential_init.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_50_1.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_60_2.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_88_4.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_hls_deadlock_idx0_monitor.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32ns_32_4_1.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_hls_deadlock_kernel_monitor_top.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mac_muladd_17s_17s_32s_32_4_1.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mul_mul_17s_17s_32_4_1.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_52_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_mux_1798_32_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_93_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_pixels_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_mux_1798_32_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_ref_pixel_V_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_pixels_RAM_AUTO_1R1W.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_ref_pixel_V_RAM_AUTO_1R1W.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_sqrt_fixed_33_33_s.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_regslice_both.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped_sitofp_32s_32_4_no_dsp_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/verilog/hyperspectral_hw_wrapped.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/verilog/hyperspectral_hw_wrapped.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8a62/hdl/ip/hyperspectral_hw_wrapped_uitofp_32ns_32_4_no_dsp_1_ip.v</spirit:name>
+        <spirit:name>../../ipshared/8c56/hdl/ip/hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8c56/hdl/ip/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8c56/hdl/ip/hyperspectral_hw_wrapped_sitofp_32s_32_4_no_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8c56/hdl/ip/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8c56/hdl/ip/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2573,7 +2613,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">184618</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">184997</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -2598,7 +2638,7 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>Hyperspectral_hw_wrapped</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2113771242</xilinx:coreRevision>
+      <xilinx:coreRevision>2113776922</xilinx:coreRevision>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -2676,10 +2716,10 @@
       <xilinx:xilinxVersion>2022.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="0ddb1c9a"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="5a8d4e02"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3c54e873"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4313774d"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="162e3f65"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="29db3f49"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="59f0e518"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="75bafa08"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

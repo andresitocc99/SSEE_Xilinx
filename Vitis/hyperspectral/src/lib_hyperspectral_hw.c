@@ -137,15 +137,15 @@ int Run_HW_Accelerator(uint16_t image[FILAS][COLUMNAS][BANDAS], uint16_t refPixe
 		return XST_FAILURE;
 	}
 
-	status = XAxiDma_SimpleTransfer(&AxiDma, (uintptr_t)&result, dma_size_block, XAXIDMA_DEVICE_TO_DMA);
+	status = XAxiDma_SimpleTransfer(&AxiDma, (uintptr_t)result, dma_size_block, XAXIDMA_DEVICE_TO_DMA);
 	if (status != XST_SUCCESS) {
 		print("Error: DMA transfer (C) from Vivado HLS block failed\n");
 		return XST_FAILURE;
 	}
 
-	//whe (!ResultExample);
-	//sultExample = 0;
-	while (XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE)) {}
+	//while (!ResultExample);
+	//ResultExample = 0;
+	//while (XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE)) {}
 	while ((XAxiDma_Busy(&AxiDma, XAXIDMA_DEVICE_TO_DMA)));
 
 	/* Accelerator must me restarted */

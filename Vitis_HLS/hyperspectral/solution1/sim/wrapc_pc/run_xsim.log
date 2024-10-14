@@ -1,0 +1,761 @@
+Archivo cargado correctamente
+DEBUGGING AXI4 STREAMING DATA TYPES!
+min_distance: 2066.662109
+min_distance: 2066.662109
+Pre-Check min_pixel_index_i: SW = 0, HW = 0
+Pre-Check min_pixel_index_j: SW = 527, HW = 527
+Pre-Check min_distance: SW = 2066.662109, HW = 2066.662109
+Test OK!
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_hyperspectral_hw_wrapped_top glbl -Oenable_linking_all_libraries -prj hyperspectral_hw_wrapped.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_14 --lib ieee_proposed=./ieee_proposed -s hyperspectral_hw_wrapped 
+Multi-threading is on. Using 30 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/ip/xil_defaultlib/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/ip/xil_defaultlib/hyperspectral_hw_wrapped_sitofp_32s_32_4_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_sitofp_32s_32_4_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/ip/xil_defaultlib/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/ip/xil_defaultlib/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/ip/xil_defaultlib/hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/AESL_axi_slave_CONTROL_BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_CONTROL_BUS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_fmul_32ns_32ns_32_4_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/hyperspectral_hw_wrapped.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/hyperspectral_hw_wrapped_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/AESL_axi_s_in_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_in_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_93_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_93_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/hyperspectral_hw_wrapped_sitofp_32s_32_4_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_sitofp_32s_32_4_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/hyperspectral_hw_wrapped_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_regslice_both
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_regslice_both_w1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/hyperspectral_hw_wrapped_mux_1798_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_mux_1798_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_52_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_VITIS_LOOP_52_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+WARNING: [VRFC 10-3824] variable 'block_delay' must explicitly be declared as automatic or static [/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v:34]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/hyperspectral_hw_wrapped_ref_pixel_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_ref_pixel_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/hyperspectral_hw_wrapped_pixels_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_pixels_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_fsqrt_32ns_32ns_32_10_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_fcmp_32ns_32ns_1_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/hyperspectral_hw_wrapped_CONTROL_BUS_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_CONTROL_BUS_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/AESL_axi_s_out_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_out_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/hyperspectral_hw_wrapped.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_hyperspectral_hw_wrapped_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hyperspectral_hw_wrapped_hyperspectral_hw_wrapped_Pipeline_L1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'axis_block_info' remains unconnected for this instance [/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v:24]
+WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:47]
+WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:55]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package floating_point_v7_1_14.floating_point_v7_1_14_viv_comp
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package floating_point_v7_1_14.floating_point_v7_1_14_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_14.floating_point_v7_1_14_exp_table...
+Compiling package mult_gen_v12_0_18.mult_gen_v12_0_18_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_14.floating_point_v7_1_14_pkg
+Compiling package floating_point_v7_1_14.flt_utils
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package floating_point_v7_1_14.vt2mutils
+Compiling package floating_point_v7_1_14.vt2mcomps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_pixels_...
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_ref_pix...
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_flow_co...
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_hypersp...
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=7,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=24,length=0,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=16,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=4,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=48,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=24,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_14.dsp48e1_wrapper [\dsp48e1_wrapper(c_part="xczu3eg...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [delay_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=13,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=27,length=0)\]
+Compiling architecture synth of entity floating_point_v7_1_14.align_add_dsp48e1_sgl [\align_add_dsp48e1_sgl(c_xdevice...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=5,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_14.lead_zero_encode_shift [\lead_zero_encode_shift(ab_fw=24...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=3,length=0)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110010101001011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010001010111110000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101110101000001111...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=2)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,ca...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=25,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_14.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,c_wi...]
+Compiling architecture rtl of entity floating_point_v7_1_14.norm_and_round_dsp48e1_sgl [\norm_and_round_dsp48e1_sgl(c_mu...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10011001100110011001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111000000001111...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=9,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=8,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=10)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_14.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare [\compare(c_xdevicefamily="zynqup...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=8)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=9)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=2,length=2,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(length=2,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=2,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=12,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_add_exp_sp [\flt_add_exp_sp(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=23)\]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_add_dsp [\flt_add_dsp(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_add [\flt_add(c_xdevicefamily="zynqup...]
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=32,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14_viv [\floating_point_v7_1_14_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14 [\floating_point_v7_1_14(c_xdevic...]
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_fadd_32...
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_fadd_32...
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=17,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_14.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_14.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_14.fix_mult_dsp48e1_sgl [\fix_mult_dsp48e1_sgl(registers=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.fix_mult [\fix_mult(c_xdevicefamily="zynqu...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=8,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_14.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=2,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=4,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=3,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=14,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="z...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=30,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=18,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_14.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_14.flt_round_dsp_opt_full [\flt_round_dsp_opt_full(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_mult [\flt_mult(c_xdevicefamily="zynqu...]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14_viv [\floating_point_v7_1_14_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14 [\floating_point_v7_1_14(c_xdevic...]
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_fmul_32...
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_fmul_32...
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_14.norm_zero_det [\norm_zero_det(data_width=7,norm...]
+Compiling architecture rtl of entity floating_point_v7_1_14.mux4 [\mux4(c_xdevicefamily="zynquplus...]
+Compiling architecture rtl of entity floating_point_v7_1_14.mux4 [\mux4(c_xdevicefamily="zynquplus...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=2,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_14.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=32)\]
+Compiling architecture rtl of entity floating_point_v7_1_14.shift_msb_first [\shift_msb_first(a_width=32,resu...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_14.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity floating_point_v7_1_14.fix_to_flt_conv_exp [\fix_to_flt_conv_exp(c_xdevicefa...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture struct of entity floating_point_v7_1_14.fix_to_flt_conv [\fix_to_flt_conv(c_xdevicefamily...]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14_viv [\floating_point_v7_1_14_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14 [\floating_point_v7_1_14(c_xdevic...]
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_sitofp_...
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_sitofp_...
+Compiling architecture synth of entity floating_point_v7_1_14.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare_ne_im [\compare_ne_im(c_xdevicefamily="...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=11,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare_eq [\compare_eq(c_xdevicefamily="zyn...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_14.fp_cmp [\fp_cmp(c_xdevicefamily="zynqupl...]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14_viv [\floating_point_v7_1_14_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14 [\floating_point_v7_1_14(c_xdevic...]
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_fcmp_32...
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_fcmp_32...
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=26,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=5,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=6,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=22,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=7,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=20)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=8,fast_input=true)\]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=5)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=9,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=6,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=10,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=11,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=12)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=12,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=10,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=13,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=14,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=15,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=4)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=15,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=16,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=13)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=17,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=18,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=19,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=19,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=20,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=17)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=21,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=22,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=23,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=20,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=23,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=24,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=21)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=25,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=26,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=27,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=28,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=25)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=29,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=26)\]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_sqrt_mant [\flt_sqrt_mant(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=8,length=7,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_14.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=2,length=7,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(length=7,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_sqrt_exp [\flt_sqrt_exp(c_xdevicefamily="n...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=12,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_14.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture virtex of entity floating_point_v7_1_14.flt_sqrt [\flt_sqrt(c_xdevicefamily="zynqu...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14_viv [\floating_point_v7_1_14_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14 [\floating_point_v7_1_14(c_xdevic...]
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_fsqrt_3...
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_fsqrt_3...
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_hypersp...
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_mux_179...
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_hypersp...
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_CONTROL...
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_regslic...
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_regslic...
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_regslic...
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped_regslic...
+Compiling module xil_defaultlib.hyperspectral_hw_wrapped
+Compiling module xil_defaultlib.fifo(DEPTH=184410,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=184410,WIDTH=4)
+Compiling module xil_defaultlib.fifo(DEPTH=184410,WIDTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=184410,WIDTH=5)
+Compiling module xil_defaultlib.AESL_axi_s_in_stream
+Compiling module xil_defaultlib.fifo(DEPTH=93,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=93,WIDTH=4)
+Compiling module xil_defaultlib.fifo(DEPTH=93,WIDTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=93,WIDTH=5)
+Compiling module xil_defaultlib.AESL_axi_s_out_stream
+Compiling module xil_defaultlib.AESL_axi_slave_CONTROL_BUS
+WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:47]
+WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:55]
+Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
+Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=90)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_hyperspectral_hw_wrapped_t...
+Compiling module work.glbl
+Built simulation snapshot hyperspectral_hw_wrapped
+
+****** xsim v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/hyperspectral_hw_wrapped/xsim_script.tcl
+# xsim {hyperspectral_hw_wrapped} -autoloadwcfg -tclbatch {hyperspectral_hw_wrapped.tcl}
+Time resolution is 1 ps
+source hyperspectral_hw_wrapped.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2215 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2265 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2315 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2365 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2415 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2465 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2515 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2565 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2615 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2665 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2715 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2765 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2815 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2865 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2915 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2965 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3015 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3065 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3125 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3175 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3225 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3275 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3325 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3375 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3425 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3475 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3525 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3575 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3625 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3675 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3725 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3775 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3825 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3875 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3925 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3975 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4035 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4085 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4135 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4185 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4235 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4285 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4335 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4385 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4435 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4485 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4535 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4585 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4635 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4685 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4735 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4785 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4835 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4885 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4945 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4995 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5045 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5095 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5145 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5195 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5245 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5295 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5345 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5395 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5445 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5495 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5545 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5595 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5645 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5695 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5745 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5795 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1846255 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U9/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1846305 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1846355 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1846405 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1846455 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1846505 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1846555 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1846605 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1846655 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1846705 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1846755 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1846805 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1846855 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1846905 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1846955 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847005 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847055 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847105 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847155 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847205 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847255 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847305 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847355 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847405 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847455 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847505 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847555 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847605 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847655 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847705 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847755 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847805 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847855 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847905 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1847955 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848005 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848055 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848105 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848155 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848205 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848255 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848305 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848355 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848405 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848455 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848505 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848555 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848605 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848655 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848705 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848755 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848805 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848855 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848905 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1848955 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1849005 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1849055 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1849105 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1849155 ns  Iteration: 11  Process: /apatb_hyperspectral_hw_wrapped_top/AESL_inst_hyperspectral_hw_wrapped/grp_hyperspectral_hw_wrapped_Pipeline_L1_fu_2672/fadd_32ns_32ns_32_5_full_dsp_1_U10/hyperspectral_hw_wrapped_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 1 / 1 [100.00%] @ "1850225000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1850285 ns : File "/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral/solution1/sim/verilog/hyperspectral_hw_wrapped.autotb.v" Line 446
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:02:31 . Memory (MB): peak = 2708.805 ; gain = 0.000 ; free physical = 16279 ; free virtual = 24028
+## quit
+INFO: xsimkernel Simulation Memory Usage: 210716 KB (Peak: 291628 KB), Simulation CPU Usage: 150480 ms
+INFO: [Common 17-206] Exiting xsim at Mon Oct 14 21:06:09 2024...
+Archivo cargado correctamente
+DEBUGGING AXI4 STREAMING DATA TYPES!
+min_distance: 2066.662109
+Pre-Check min_pixel_index_i: SW = 0, HW = 0
+Pre-Check min_pixel_index_j: SW = 527, HW = 527
+Pre-Check min_distance: SW = 2066.662109, HW = 2066.662109
+Test OK!

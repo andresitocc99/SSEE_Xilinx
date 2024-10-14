@@ -1,0 +1,25 @@
+
+#ifndef H_LIB_EXAMPLE_HW_H
+#define H_LIB_EXAMPLE_HW_H
+
+#define FILAS 2
+#define COLUMNAS 1024
+#define BANDAS 180
+#include <stdint.h>
+#include <stdalign.h>
+
+typedef struct {
+    uint16_t closestPixel[BANDAS];
+    int minPixelIndex_i;
+    int minPixelIndex_j;
+    float minDistance;
+} DataBlock;
+
+int Run_HW_Accelerator (uint16_t image[FILAS][COLUMNAS][BANDAS], uint16_t refPixel[BANDAS], DataBlock* result,
+        				unsigned int dma_sizeImage, unsigned int dma_sizeRefPixel, unsigned int dma_size_block);
+
+int Start_HW_Accelerator(void);
+
+#endif
+
+

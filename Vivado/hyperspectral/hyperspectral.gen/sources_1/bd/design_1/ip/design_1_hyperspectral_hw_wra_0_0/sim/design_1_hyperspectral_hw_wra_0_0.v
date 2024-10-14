@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:hyperspectral_hw_wrapped:1.0
-// IP Revision: 2113771242
+// IP Revision: 2113776922
 
 `timescale 1ns/1ps
 

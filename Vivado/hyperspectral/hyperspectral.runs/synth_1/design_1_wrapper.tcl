@@ -83,7 +83,7 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:ultra96v2:part0:1.0 [current_project]
-set_property ip_repo_paths /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1 [current_project]
+set_property ip_repo_paths /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral [current_project]
 update_ip_catalog
 set_property ip_output_repo /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
@@ -91,19 +91,19 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
 add_files /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0_2/design_1_zynq_ultra_ps_e_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0_2/design_1_zynq_ultra_ps_e_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0_2/design_1_axi_timer_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0_2/design_1_axi_timer_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0_2/design_1_axi_dma_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0_2/design_1_axi_dma_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0_2/design_1_axi_dma_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0_2/constraints/hyperspectral_hw_wrapped_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_xbar_0_2/design_1_xbar_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0_3/design_1_auto_ds_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0_3/design_1_auto_ds_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0_3/design_1_auto_ds_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0_3/design_1_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/constraints/hyperspectral_hw_wrapped_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0.xdc]
 set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0_ooc.xdc]
@@ -128,12 +128,12 @@ set_property used_in_implementation false [get_files -all /home/andresitocc99/Do
 set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_24/bd_afc3_m00wn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_25/bd_afc3_m00bn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/ooc.xdc]
-set_property used_in_synthesis false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0_4/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0_4/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0_4/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0_4/bd_0/ip/ip_0/bd_f60c_ila_lib_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0_4/bd_0/bd_f60c_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0_4/design_1_system_ila_0_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/bd_f60c_ila_lib_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/bd_f60c_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }
@@ -148,8 +148,6 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
-
-read_checkpoint -auto_incremental -incremental /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

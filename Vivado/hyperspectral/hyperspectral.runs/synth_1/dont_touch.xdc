@@ -4,25 +4,25 @@
 # Block Designs: bd/design_1/design_1.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1 || ORIG_REF_NAME==design_1} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0_2/design_1_zynq_ultra_ps_e_0_0.xci
+# IP: bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_zynq_ultra_ps_e_0_0 || ORIG_REF_NAME==design_1_zynq_ultra_ps_e_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_axi_timer_0_0_2/design_1_axi_timer_0_0.xci
+# IP: bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_timer_0_0 || ORIG_REF_NAME==design_1_axi_timer_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_axi_dma_0_0_2/design_1_axi_dma_0_0.xci
+# IP: bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_dma_0_0 || ORIG_REF_NAME==design_1_axi_dma_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0_2/design_1_hyperspectral_hw_wra_0_0.xci
+# IP: bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/design_1_hyperspectral_hw_wra_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_hyperspectral_hw_wra_0_0 || ORIG_REF_NAME==design_1_hyperspectral_hw_wra_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_xbar_0_2/design_1_xbar_0.xci
+# IP: bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xbar_0 || ORIG_REF_NAME==design_1_xbar_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_auto_ds_0_3/design_1_auto_ds_0.xci
+# IP: bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_ds_0 || ORIG_REF_NAME==design_1_auto_ds_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_auto_pc_0_3/design_1_auto_pc_0.xci
+# IP: bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_0 || ORIG_REF_NAME==design_1_auto_pc_0} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_ps8_0_axi_periph_0/design_1_ps8_0_axi_periph_0.xci
@@ -34,7 +34,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_rs
 # IP: bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_smc_0 || ORIG_REF_NAME==design_1_axi_smc_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_system_ila_0_0_4/design_1_system_ila_0_0.xci
+# IP: bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_system_ila_0_0 || ORIG_REF_NAME==design_1_system_ila_0_0} -quiet] -quiet
 
 # XDC: /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/design_1_ooc.xdc

@@ -132,7 +132,7 @@ OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.cache/wt [current_project]
   set_property parent.project_path /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.xpr [current_project]
-  set_property ip_repo_paths /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1 [current_project]
+  set_property ip_repo_paths /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral [current_project]
   update_ip_catalog
   set_property ip_output_repo /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]

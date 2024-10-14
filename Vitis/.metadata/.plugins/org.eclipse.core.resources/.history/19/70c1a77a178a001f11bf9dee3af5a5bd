@@ -1,0 +1,292 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include "platform.h"
+#include "xtmrctr.h"
+#include "xaxidma.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "ff.h"
+#include <float.h>
+
+#include <stdint.h>
+
+#include "lib_hyperspectral_hw.h"
+
+#define NUM_TESTS 1
+
+void hyperspectral_operation_ref(uint16_t image[FILAS][COLUMNAS][BANDAS],
+                                 uint16_t refPixel[BANDAS],
+                                 DataBlock* result_sw);
+void calculate_distance (uint16_t ref_band1, uint16_t ref_band2, uint16_t band1, uint16_t band2, float *distance);
+
+// TIMER Instance
+XTmrCtr timer_dev;
+
+// AXI DMA Instance
+XAxiDma AxiDma;
+
+static FATFS fat_fs;
+
+u32 mount_filesystem() {
+    TCHAR *Path = "0:/";
+    FRESULT res;
+    res = f_mount(&fat_fs, Path, 1);
+
+    if (res != FR_OK) {
+        xil_printf("mount failed %d\n\r",res);
+        return XST_FAILURE;
+    }
+    return XST_SUCCESS;
+}
+
+u32 umount_filesystem() {
+    TCHAR *Path = "0:/";
+    FRESULT res;
+    res = f_mount(NULL, Path, 0);
+
+    if (res != FR_OK) {
+        xil_printf("umount failed %d\n\r",res);
+        return XST_FAILURE;
+    }
+    return XST_SUCCESS;
+}
+
+u32 LoadFile(uint16_t image [FILAS][COLUMNAS][BANDAS]){
+    FIL fp;
+    u32 bytes_read = 0;
+
+    if (mount_filesystem() == XST_FAILURE)
+        return XST_FAILURE;
+
+    FRESULT res = f_open(&fp, "cuboH.bin", FA_READ);
+    if (res != FR_OK) {
+        xil_printf("could not open the file %d\n\r",res);
+        return XST_FAILURE;
+    }
+
+    u32 bytes_size = FILAS * COLUMNAS * BANDAS * sizeof(uint16_t);
+
+
+    f_read(&fp, image, bytes_size, &bytes_read);
+    if (res != FR_OK || bytes_size != bytes_read) {
+    	xil_printf("could not open the file %d\n\r",res);
+    	f_close(&fp);
+    	return XST_FAILURE;
+
+    }
+    f_close(&fp);
+
+    return XST_SUCCESS;
+}
+
+int init_dma() {
+	XAxiDma_Config *CfgPtr;
+	int status;
+
+	CfgPtr = XAxiDma_LookupConfig( (XPAR_AXI_DMA_0_DEVICE_ID) );
+	if(!CfgPtr){
+		print("Error looking for AXI DMA config\n\r");
+		return XST_FAILURE;
+	}
+	status = XAxiDma_CfgInitialize(&AxiDma,CfgPtr);
+	if(status != XST_SUCCESS){
+		print("Error initializing DMA\n\r");
+		return XST_FAILURE;
+	}
+	//check for scatter gather mode
+	if(XAxiDma_HasSg(&AxiDma)){
+		print("Error DMA configured in SG mode\n\r");
+		return XST_FAILURE;
+	}
+	/* Disable interrupts, we use polling mode */
+	XAxiDma_IntrDisable(&AxiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
+	XAxiDma_IntrDisable(&AxiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
+
+	// Reset DMA
+	XAxiDma_Reset(&AxiDma);
+	while (!XAxiDma_ResetIsDone(&AxiDma)) {}
+
+	return XST_SUCCESS;
+}
+
+int main() {
+
+	int i;
+	int err = 0;
+	int status;
+
+	// INPUTS
+	uint16_t _Alignas(32) image[FILAS][COLUMNAS][BANDAS];
+	uint16_t _Alignas(32) refPixel[BANDAS];
+
+	// OUTPUTS
+	DataBlock result_hw;
+	DataBlock result_sw;
+
+	unsigned int dma_sizeImage = FILAS * COLUMNAS * BANDAS * sizeof(uint16_t);
+	unsigned int dma_sizeRefPixel = BANDAS * sizeof(uint16_t);
+	unsigned int dma_size_block = sizeof(result_sw);
+
+	float acc_factor;
+	unsigned int init_time, curr_time, calibration;
+	unsigned int begin_time;
+	unsigned int end_time;
+	unsigned int run_time_sw = 0;
+	unsigned int run_time_hw = 0;
+
+	init_platform();
+
+	LoadFile(image);
+
+	// INIT DMA
+	status = init_dma();
+	if(status != XST_SUCCESS){
+		print("\rError: DMA init failed\n");
+		return XST_FAILURE;
+	}
+	print("\nDMA Init done\n");
+
+	// Setup HW timer
+	status = XTmrCtr_Initialize(&timer_dev, XPAR_AXI_TIMER_0_DEVICE_ID);
+	if(status != XST_SUCCESS) {
+		print("Error: timer setup failed\n");
+	}
+	XTmrCtr_SetOptions(&timer_dev, XPAR_AXI_TIMER_0_DEVICE_ID, XTC_ENABLE_ALL_OPTION);
+
+	// Calibrate HW timer
+	XTmrCtr_Reset(&timer_dev, XPAR_AXI_TIMER_0_DEVICE_ID);
+	init_time = XTmrCtr_GetValue(&timer_dev, XPAR_AXI_TIMER_0_DEVICE_ID);
+	curr_time = XTmrCtr_GetValue(&timer_dev, XPAR_AXI_TIMER_0_DEVICE_ID);
+	calibration = curr_time - init_time;
+
+	// Loop measurement
+	XTmrCtr_Reset(&timer_dev, XPAR_AXI_TIMER_0_DEVICE_ID);
+	begin_time = XTmrCtr_GetValue(&timer_dev, XPAR_AXI_TIMER_0_DEVICE_ID);
+	for (i = 0; i < NUM_TESTS; i++);
+	end_time = XTmrCtr_GetValue(&timer_dev, XPAR_AXI_TIMER_0_DEVICE_ID);
+	run_time_sw = end_time - begin_time - calibration;
+	xil_printf("Loop time for %d iterations is %d cycles\n", NUM_TESTS, run_time_sw);
+
+
+	// INPUT DATA INITIATION
+
+	for (i = 0; i < BANDAS; i++) {
+		refPixel[i] = 100;
+	}
+
+	result_hw.minDistance = FLT_MAX;
+	result_sw.minDistance = FLT_MAX;
+
+	xil_printf("Running Hyperspectral Image Processing in SW\n");
+	XTmrCtr_Reset(&timer_dev, XPAR_AXI_TIMER_0_DEVICE_ID);
+	begin_time = XTmrCtr_GetValue(&timer_dev, XPAR_AXI_TIMER_0_DEVICE_ID);
+	for (i = 0; i < NUM_TESTS; i++) {
+		hyperspectral_operation_ref (image, refPixel, &result_sw);
+	}
+	end_time = XTmrCtr_GetValue(&timer_dev, XPAR_AXI_TIMER_0_DEVICE_ID);
+	run_time_sw = end_time - begin_time - calibration;
+	xil_printf("\nTotal run time for SW on Processor is %d cycles over %d tests.\n",
+			run_time_sw/NUM_TESTS, NUM_TESTS);
+
+	// Setup HW Accelerator
+	XTmrCtr_Reset(&timer_dev, XPAR_AXI_TIMER_0_DEVICE_ID);
+	begin_time = XTmrCtr_GetValue(&timer_dev, XPAR_AXI_TIMER_0_DEVICE_ID);
+
+	status = Start_HW_Accelerator();
+
+	// Flush the cache
+	Xil_DCacheFlushRange((uintptr_t)image, dma_sizeImage);
+	Xil_DCacheFlushRange((uintptr_t)refPixel, dma_sizeRefPixel);
+
+
+	print("\rCache cleared\n\r");
+
+	for (i = 0; i < NUM_TESTS; i++) {
+		status = Run_HW_Accelerator(image, refPixel, &result_hw,
+									dma_sizeImage, dma_sizeRefPixel, dma_size_block);
+	}
+
+	Xil_DCacheInvalidateRange((uintptr_t)&result_hw, dma_size_block);
+
+
+
+
+
+	end_time = XTmrCtr_GetValue(&timer_dev, XPAR_AXI_TIMER_0_DEVICE_ID);
+	run_time_hw = end_time - begin_time - calibration;
+	xil_printf(
+			"Total run time for AXI DMA + HW accelerator is %d cycles over %d tests\n",
+			run_time_hw/NUM_TESTS, NUM_TESTS);
+
+	// Compare the results from sw and hw
+
+	for (i = 0; i < BANDAS; i++) {
+		if (result_sw.closestPixel[i] != result_hw.closestPixel[i]) {
+			err++;
+			printf("Mismatch in closestPixel[%d]: SW=%u, HW=%u\n", i, result_sw.closestPixel[i], result_hw.closestPixel[i]);
+		}
+	}
+
+	if (result_sw.minPixelIndex_i != result_hw.minPixelIndex_i || result_sw.minPixelIndex_j != result_hw.minPixelIndex_j) {
+		err++;
+		printf("Mismatch in minPixelIndex_i: SW=%d, HW=%d\n", result_sw.minPixelIndex_i, result_hw.minPixelIndex_i);
+		printf("Mismatch in minPixelIndex_j: SW=%d, HW=%d\n", result_sw.minPixelIndex_j, result_hw.minPixelIndex_j);
+	}
+
+	if (result_sw.minDistance != result_hw.minDistance) {
+		err++;
+	    printf("Mismatch in minDistance: SW=%f, HW=%f\n", result_sw.minDistance, result_hw.minDistance);
+	}
+
+	// HW vs. SW speedup factor
+	acc_factor = (float) run_time_sw / (float) run_time_hw;
+	//xil_printf("Acceleration factor: %d.%d \n\n",
+	//		(int) acc_factor, (int) (acc_factor * 1000) % 1000);
+
+	printf("\r\033[1mAcceleration factor: %d.%d \033[0m\r\n\r\n",
+			   (int) acc_factor, (int) (acc_factor * 1000) % 1000);
+
+	if (err == 0)
+		print("SW and HW results match!\n\n");
+	else
+		printf("ERROR: results mismatch (%d)\n\n",err);
+
+
+	cleanup_platform();
+	return 0;
+
+}
+
+void hyperspectral_operation_ref (uint16_t image[FILAS][COLUMNAS][BANDAS], uint16_t refPixel[BANDAS], DataBlock* result_sw) {
+	int i, j, k;
+	result_sw->minDistance = FLT_MAX;
+	float distance;
+
+	for (i = 0; i < FILAS; i++) {
+		for (j = 0; j < COLUMNAS; j++) {
+			distance = 0;
+			for (k = 0; k < BANDAS; k+=2) {
+				calculate_distance(refPixel[k], refPixel[k+1], image[i][j][k], image[i][j][k + 1], &distance);
+			}
+			distance = sqrt(distance);
+			if (distance < result_sw->minDistance) {
+				result_sw->minDistance = distance;
+				result_sw->minPixelIndex_i = i;
+				result_sw->minPixelIndex_j = j;
+			}
+		}
+	}
+
+	for (k = 0; k < BANDAS; k++) {
+		result_sw->closestPixel[k] = image[result_sw->minPixelIndex_i][result_sw->minPixelIndex_j][k];
+	}
+}
+
+void calculate_distance (uint16_t ref_band1, uint16_t ref_band2, uint16_t band1, uint16_t band2, float *distance) {
+	float diff1 = ref_band1 - band1;
+	float diff2 = ref_band2 - band2;
+	*distance += diff1 * diff1 + diff2 * diff2;
+}
+
+

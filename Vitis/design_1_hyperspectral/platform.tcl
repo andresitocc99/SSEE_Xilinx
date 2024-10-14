@@ -28,3 +28,7 @@ bsp write
 bsp reload
 catch {bsp regenerate}
 platform generate
+platform generate
+platform active {design_1_hyperspectral}
+platform active {design_1_hyperspectral}
+platform generate -domains 

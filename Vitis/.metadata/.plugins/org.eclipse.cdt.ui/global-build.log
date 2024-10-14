@@ -1,7 +1,12 @@
 Nothing to build in platform 'design_1_hyperspectral'
 
-04:47:04 **** Incremental Build of configuration Debug for project hyperspectral ****
+20:53:28 **** Incremental Build of configuration Debug for project hyperspectral ****
 make all 
+Building file: ../src/lib_hyperspectral_hw.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lib_hyperspectral_hw.o" -I/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/design_1_hyperspectral/export/design_1_hyperspectral/sw/design_1_hyperspectral/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/lib_hyperspectral_hw.d" -MT"src/lib_hyperspectral_hw.o" -o "src/lib_hyperspectral_hw.o" "../src/lib_hyperspectral_hw.c"
+Finished building: ../src/lib_hyperspectral_hw.c
+ 
 Building target: hyperspectral.elf
 Invoking: ARM v8 gcc linker
 aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/design_1_hyperspectral/export/design_1_hyperspectral/sw/design_1_hyperspectral/standalone_psu_cortexa53_0/bsplib/lib -o "hyperspectral.elf" ./src/lib_hyperspectral_hw.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,-lm,--end-group
@@ -10,13 +15,6 @@ Finished building target: hyperspectral.elf
 Invoking: ARM v8 Print Size
 aarch64-none-elf-size hyperspectral.elf  |tee "hyperspectral.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 163403	   7896	1583437	1754736	 1ac670	hyperspectral.elf
+ 163803	   7896	1583485	1755184	 1ac830	hyperspectral.elf
 Finished building: hyperspectral.elf.size
  
-04:47:05 **** Incremental Build of configuration Debug for project hyperspectral_system ****
-make all 
-Generating bif file for the system project
-Executing command '::scw::generate_bif -xpfm /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/design_1_hyperspectral/export/design_1_hyperspectral/design_1_hyperspectral.xpfm -domains standalone_psu_cortexa53_0 -bifpath /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/hyperspectral_system/Debug/system.bif' on XSCT
-sdcard_gen --xpfm /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/design_1_hyperspectral/export/design_1_hyperspectral/design_1_hyperspectral.xpfm --sys_config design_1_hyperspectral --bif /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/hyperspectral_system/Debug/system.bif --bitstream /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/hyperspectral/_ide/bitstream/design_1_hyperspectral.bit --elf /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/hyperspectral/Debug/hyperspectral.elf,psu_cortexa53_0
-creating BOOT.BIN using /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/hyperspectral/_ide/bitstream/design_1_hyperspectral.bit
-Running /tools/Xilinx/Vitis/2022.1/bin/bootgen -arch zynqmp -image /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis/hyperspectral_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

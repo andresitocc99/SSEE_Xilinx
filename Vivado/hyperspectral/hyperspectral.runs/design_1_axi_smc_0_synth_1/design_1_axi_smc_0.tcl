@@ -85,7 +85,7 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:ultra96v2:part0:1.0 [current_project]
-set_property ip_repo_paths /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1 [current_project]
+set_property ip_repo_paths /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral [current_project]
 update_ip_catalog
 set_property ip_output_repo /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]

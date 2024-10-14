@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="hyperspectral" solutionName="solution1" date="2024-10-14T21:11:53.234+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L1' (loop 'L1'): Unable to enforce a carried dependence constraint (II = 89, distance = 1, offset = 1) between axis read operation ('empty_103') on port 'in_stream_V_data_V' and axis read operation ('empty_14') on port 'in_stream_V_data_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="hyperspectral" solutionName="solution1" date="2024-10-14T21:11:39.276+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L1' (loop 'L1'): Unable to enforce a carried dependence constraint (II = 87, distance = 1, offset = 1) between axis read operation ('empty_101') on port 'in_stream_V_data_V' and axis read operation ('empty_14') on port 'in_stream_V_data_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="hyperspectral" solutionName="solution1" date="2024-10-14T21:11:37.756+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L1' (loop 'L1'): Unable to enforce a carried dependence constraint (II = 83, distance = 1, offset = 1) between axis read operation ('empty_97') on port 'in_stream_V_data_V' and axis read operation ('empty_14') on port 'in_stream_V_data_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="hyperspectral" solutionName="solution1" date="2024-10-14T21:11:37.722+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L1' (loop 'L1'): Unable to enforce a carried dependence constraint (II = 68, distance = 1, offset = 1) between axis read operation ('empty_82') on port 'in_stream_V_data_V' and axis read operation ('empty_14') on port 'in_stream_V_data_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="hyperspectral" solutionName="solution1" date="2024-10-14T21:11:37.212+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L1' (loop 'L1'): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1) between axis read operation ('empty_19') on port 'in_stream_V_data_V' and axis read operation ('empty_14') on port 'in_stream_V_data_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="hyperspectral" solutionName="solution1" date="2024-10-14T21:11:36.703+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L1' (loop 'L1'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between axis read operation ('empty_18') on port 'in_stream_V_data_V' and axis read operation ('empty_14') on port 'in_stream_V_data_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="hyperspectral" solutionName="solution1" date="2024-10-14T21:11:36.190+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L1' (loop 'L1'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between axis read operation ('empty_17') on port 'in_stream_V_data_V' and axis read operation ('empty_14') on port 'in_stream_V_data_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="hyperspectral" solutionName="solution1" date="2024-10-14T21:11:36.177+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'hyperspectral_hw_wrapped_Pipeline_L1' (loop 'L1'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between axis read operation ('empty_16') on port 'in_stream_V_data_V' and axis read operation ('empty_14') on port 'in_stream_V_data_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="hyperspectral" solutionName="solution1" date="2024-10-14T21:11:36.165+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

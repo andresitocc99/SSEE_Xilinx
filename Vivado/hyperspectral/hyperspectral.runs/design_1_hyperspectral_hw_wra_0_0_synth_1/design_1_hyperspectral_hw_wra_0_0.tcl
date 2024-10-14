@@ -84,14 +84,14 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:ultra96v2:part0:1.0 [current_project]
-set_property ip_repo_paths /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/Hyperspectral_DataFlow/solution1 [current_project]
+set_property ip_repo_paths /home/andresitocc99/Documentos/SSEE_Xilinx/Vitis_HLS/hyperspectral [current_project]
 update_ip_catalog
 set_property ip_output_repo /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.srcs/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0_2/design_1_hyperspectral_hw_wra_0_0.xci
-set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0_2/constraints/hyperspectral_hw_wrapped_ooc.xdc]
+read_ip -quiet /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.srcs/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/design_1_hyperspectral_hw_wra_0_0.xci
+set_property used_in_implementation false [get_files -all /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/constraints/hyperspectral_hw_wrapped_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -162,32 +162,32 @@ create_report "design_1_hyperspectral_hw_wra_0_0_synth_1_synth_report_utilizatio
 OPTRACE "synth reports" END { }
 
 if { [catch {
-  file copy -force /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1/design_1_hyperspectral_hw_wra_0_0.dcp /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0_2/design_1_hyperspectral_hw_wra_0_0.dcp
+  file copy -force /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1/design_1_hyperspectral_hw_wra_0_0.dcp /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/design_1_hyperspectral_hw_wra_0_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0_2/design_1_hyperspectral_hw_wra_0_0_stub.v
+  write_verilog -force -mode synth_stub /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/design_1_hyperspectral_hw_wra_0_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0_2/design_1_hyperspectral_hw_wra_0_0_stub.vhdl
+  write_vhdl -force -mode synth_stub /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/design_1_hyperspectral_hw_wra_0_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0_2/design_1_hyperspectral_hw_wra_0_0_sim_netlist.v
+  write_verilog -force -mode funcsim /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/design_1_hyperspectral_hw_wra_0_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0_2/design_1_hyperspectral_hw_wra_0_0_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/design_1_hyperspectral_hw_wra_0_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -197,32 +197,32 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1/design_1_hyperspectral_hw_wra_0_0.dcp /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0_2/design_1_hyperspectral_hw_wra_0_0.dcp
+  file copy -force /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1/design_1_hyperspectral_hw_wra_0_0.dcp /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/design_1_hyperspectral_hw_wra_0_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1/design_1_hyperspectral_hw_wra_0_0_stub.v /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0_2/design_1_hyperspectral_hw_wra_0_0_stub.v
+  file rename -force /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1/design_1_hyperspectral_hw_wra_0_0_stub.v /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/design_1_hyperspectral_hw_wra_0_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1/design_1_hyperspectral_hw_wra_0_0_stub.vhdl /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0_2/design_1_hyperspectral_hw_wra_0_0_stub.vhdl
+  file rename -force /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1/design_1_hyperspectral_hw_wra_0_0_stub.vhdl /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/design_1_hyperspectral_hw_wra_0_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1/design_1_hyperspectral_hw_wra_0_0_sim_netlist.v /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0_2/design_1_hyperspectral_hw_wra_0_0_sim_netlist.v
+  file rename -force /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1/design_1_hyperspectral_hw_wra_0_0_sim_netlist.v /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/design_1_hyperspectral_hw_wra_0_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1/design_1_hyperspectral_hw_wra_0_0_sim_netlist.vhdl /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0_2/design_1_hyperspectral_hw_wra_0_0_sim_netlist.vhdl
+  file rename -force /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.runs/design_1_hyperspectral_hw_wra_0_0_synth_1/design_1_hyperspectral_hw_wra_0_0_sim_netlist.vhdl /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/design_1_hyperspectral_hw_wra_0_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -231,13 +231,13 @@ if { [catch {
 
 if {[file isdir /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.ip_user_files/ip/design_1_hyperspectral_hw_wra_0_0]} {
   catch { 
-    file copy -force /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0_2/design_1_hyperspectral_hw_wra_0_0_stub.v /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.ip_user_files/ip/design_1_hyperspectral_hw_wra_0_0
+    file copy -force /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/design_1_hyperspectral_hw_wra_0_0_stub.v /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.ip_user_files/ip/design_1_hyperspectral_hw_wra_0_0
   }
 }
 
 if {[file isdir /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.ip_user_files/ip/design_1_hyperspectral_hw_wra_0_0]} {
   catch { 
-    file copy -force /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0_2/design_1_hyperspectral_hw_wra_0_0_stub.vhdl /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.ip_user_files/ip/design_1_hyperspectral_hw_wra_0_0
+    file copy -force /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.gen/sources_1/bd/design_1/ip/design_1_hyperspectral_hw_wra_0_0/design_1_hyperspectral_hw_wra_0_0_stub.vhdl /home/andresitocc99/Documentos/SSEE_Xilinx/Vivado/hyperspectral/hyperspectral.ip_user_files/ip/design_1_hyperspectral_hw_wra_0_0
   }
 }
 file delete __synthesis_is_running__

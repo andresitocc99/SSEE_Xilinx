@@ -1,0 +1,14 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../Archivos_Fuente/Hyperspectral/dataflow_main/hyperspectral_test.cpp in debug mode
+   Generating csim.exe
+Archivo cargado correctamente
+DEBUGGING AXI4 STREAMING DATA TYPES!
+min_distance: 2066.662109
+min_distance: 2066.662109
+Pre-Check min_pixel_index_i: SW = 0, HW = 0
+Pre-Check min_pixel_index_j: SW = 527, HW = 527
+Pre-Check min_distance: SW = 2066.662109, HW = 2066.662109
+Test OK!
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
